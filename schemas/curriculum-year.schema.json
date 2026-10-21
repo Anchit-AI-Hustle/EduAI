@@ -1,275 +1,375 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://everyyear.school/schemas/curriculum-year.schema.json",
-  "title": "EveryYear Curriculum Year Plan Schema",
+  "$id": "curriculum-year.schema.json",
+  "title": "Curriculum year skeleton (one board, one year)",
+  "description": "Every year has its own plan. Content marked basis=product-default is a design choice, not board syllabus. Board facts must cite source_ids.",
   "type": "object",
-  "additionalProperties": false,
+  "$defs": {
+    "sourceIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^SRC-[A-Z0-9-]+$"
+      }
+    },
+    "status": {
+      "enum": [
+        "sourced",
+        "partially-sourced",
+        "skeleton",
+        "gap",
+        "not-applicable"
+      ]
+    },
+    "basis": {
+      "enum": [
+        "board-mandated",
+        "national-framework",
+        "product-default",
+        "not-yet-sourced"
+      ]
+    },
+    "block": {
+      "type": "object",
+      "required": [
+        "status",
+        "basis"
+      ],
+      "properties": {
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "basis": {
+          "$ref": "#/$defs/basis"
+        },
+        "source_ids": {
+          "$ref": "#/$defs/sourceIds"
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
   "required": [
-    "schemaVersion",
-    "curriculumVersionId",
-    "boardId",
-    "boardName",
-    "yearId",
-    "yearLabel",
-    "nepStage",
-    "ageBandYears",
-    "groundingStatus",
-    "screenTimePolicy",
+    "skeleton_id",
+    "board_id",
+    "year_id",
+    "academic_session",
+    "nep_stage",
+    "coverage_status",
     "subjects",
-    "skillIds",
-    "termPlan",
-    "weeklyPlanTemplate",
-    "dailyLessonTemplate",
+    "skills",
+    "term_plan",
+    "weekly_plan",
+    "daily_lesson_template",
     "assessments",
-    "coCurricularPlan",
-    "extracurricularPlan",
-    "parentViewPlan",
-    "trackBridges",
-    "sourceIds",
-    "knownGaps"
+    "co_curricular",
+    "extracurricular",
+    "parent_view",
+    "scheme_notes",
+    "source_ids",
+    "gaps"
   ],
   "properties": {
-    "schemaVersion": {
-      "const": "1.0.0"
+    "skeleton_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
     },
-    "curriculumVersionId": {
-      "type": "string"
-    },
-    "boardId": {
+    "board_id": {
       "enum": [
-        "early-years",
+        "national-early-years",
         "cbse",
         "cisce",
         "nios",
         "state-boards"
       ]
     },
-    "boardName": {
+    "year_id": {
+      "type": "string",
+      "pattern": "^(home-0-3|nursery|lkg|ukg|class-(0[1-9]|1[0-2]))$"
+    },
+    "academic_session": {
       "type": "string"
     },
-    "yearId": {
+    "nep_stage": {
       "enum": [
-        "home-0-3",
-        "nursery",
-        "lkg",
-        "ukg",
-        "class-01",
-        "class-02",
-        "class-03",
-        "class-04",
-        "class-05",
-        "class-06",
-        "class-07",
-        "class-08",
-        "class-09",
-        "class-10",
-        "class-11",
-        "class-12"
+        "pre-foundational-home",
+        "foundational",
+        "preparatory",
+        "middle",
+        "secondary"
       ]
     },
-    "yearLabel": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": [
-        "en",
-        "hi"
-      ],
-      "properties": {
-        "en": {
-          "type": "string"
-        },
-        "hi": {
-          "type": "string"
-        }
-      }
-    },
-    "nepStage": {
-      "type": "string"
-    },
-    "ageBandYears": {
-      "type": "string"
-    },
-    "groundingStatus": {
+    "coverage_status": {
       "enum": [
-        "fully-sourced",
-        "deepened-grade-band",
-        "skeleton-with-labelled-gaps"
+        "sourced",
+        "partially-sourced",
+        "gap",
+        "defers-to-national-framework",
+        "not-offered-by-board"
       ]
     },
-    "screenTimePolicy": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": [
-        "maxMinutesPerDay",
-        "deliveryMode",
-        "guidelineSourceId"
-      ],
-      "properties": {
-        "maxMinutesPerDay": {
-          "type": "integer",
-          "minimum": 0,
-          "maximum": 360
-        },
-        "deliveryMode": {
-          "type": "string"
-        },
-        "guidelineSourceId": {
-          "type": "string"
+    "certification_point": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "scheme_notes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "text",
+          "source_ids"
+        ],
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "source_ids": {
+            "$ref": "#/$defs/sourceIds",
+            "minItems": 1
+          }
         }
       }
     },
     "subjects": {
       "type": "array",
-      "minItems": 1,
       "items": {
         "type": "object",
-        "additionalProperties": false,
         "required": [
-          "subjectId",
-          "name",
-          "compulsory",
-          "skillIds",
-          "sourceIds",
-          "units"
+          "subject_id",
+          "name_en",
+          "name_hi",
+          "skill_ids",
+          "status",
+          "source_ids"
         ],
         "properties": {
-          "subjectId": {
+          "subject_id": {
             "type": "string"
           },
-          "officialCode": {
+          "name_en": {
             "type": "string"
           },
-          "name": {
-            "type": "object",
-            "additionalProperties": false,
-            "required": [
-              "en",
-              "hi"
-            ],
-            "properties": {
-              "en": {
-                "type": "string"
-              },
-              "hi": {
-                "type": "string"
-              }
-            }
-          },
-          "compulsory": {
-            "type": "boolean"
-          },
-          "stream": {
+          "name_hi": {
             "type": "string"
           },
-          "textbooks": {
+          "name_hi_basis": {
+            "enum": [
+              "ui-translation",
+              "official"
+            ]
+          },
+          "skill_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 1
+          },
+          "ncert_textbook_titles": {
             "type": "array",
             "items": {
               "type": "string"
             }
           },
-          "skillIds": {
+          "language_slot": {
+            "enum": [
+              "R1",
+              "R2",
+              "R3",
+              "R1-or-R2",
+              "any",
+              null
+            ]
+          },
+          "status": {
+            "$ref": "#/$defs/status"
+          },
+          "source_ids": {
+            "$ref": "#/$defs/sourceIds"
+          },
+          "notes": {
             "type": "array",
-            "minItems": 1,
             "items": {
               "type": "string"
             }
           },
-          "sourceIds": {
+          "ncert_hindi_medium_titles": {
             "type": "array",
-            "minItems": 1,
             "items": {
               "type": "string"
-            }
-          },
-          "units": {
-            "type": "array",
-            "minItems": 1,
-            "items": {
-              "type": "object"
             }
           }
         }
       }
     },
-    "skillIds": {
+    "skills": {
       "type": "array",
-      "minItems": 1,
       "items": {
-        "type": "string"
-      }
-    },
-    "termPlan": {
-      "type": "array",
-      "minItems": 2,
-      "items": {
-        "type": "object"
-      }
-    },
-    "weeklyPlanTemplate": {
-      "type": "object"
-    },
-    "dailyLessonTemplate": {
-      "type": "object"
-    },
-    "assessments": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": [
-        "unitTests",
-        "internals",
-        "termExams",
-        "boardStyleMocks"
-      ],
-      "properties": {
-        "unitTests": {
-          "type": "object"
-        },
-        "internals": {
-          "type": "object"
-        },
-        "termExams": {
-          "type": "object"
-        },
-        "boardStyleMocks": {
-          "type": "object"
+        "type": "object",
+        "required": [
+          "skill_id",
+          "depth"
+        ],
+        "properties": {
+          "skill_id": {
+            "type": "string"
+          },
+          "depth": {
+            "enum": [
+              "domain-only",
+              "units",
+              "competencies"
+            ]
+          }
         }
       }
     },
-    "coCurricularPlan": {
-      "type": "array",
-      "minItems": 2,
-      "items": {
-        "type": "object"
+    "term_plan": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/block"
+        }
+      ],
+      "required": [
+        "terms"
+      ],
+      "properties": {
+        "terms": {
+          "type": "array"
+        }
       }
     },
-    "extracurricularPlan": {
-      "type": "array",
-      "minItems": 2,
-      "items": {
-        "type": "object"
+    "weekly_plan": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/block"
+        }
+      ],
+      "required": [
+        "weeks_per_year",
+        "sessions_per_week"
+      ]
+    },
+    "daily_lesson_template": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/block"
+        }
+      ],
+      "required": [
+        "loop",
+        "screen_minutes_cap"
+      ]
+    },
+    "assessments": {
+      "type": "object",
+      "required": [
+        "unit_tests",
+        "internals",
+        "term_exams",
+        "board_style_mocks"
+      ],
+      "properties": {
+        "unit_tests": {
+          "$ref": "#/$defs/block"
+        },
+        "internals": {
+          "$ref": "#/$defs/block"
+        },
+        "term_exams": {
+          "$ref": "#/$defs/block"
+        },
+        "board_style_mocks": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/block"
+            }
+          ],
+          "required": [
+            "applicable"
+          ]
+        }
       }
     },
-    "parentViewPlan": {
-      "type": "object"
+    "co_curricular": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/block"
+        }
+      ],
+      "required": [
+        "areas"
+      ]
     },
-    "trackBridges": {
+    "extracurricular": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/block"
+        }
+      ],
+      "required": [
+        "areas"
+      ]
+    },
+    "parent_view": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/block"
+        }
+      ],
+      "required": [
+        "sections"
+      ]
+    },
+    "source_ids": {
+      "$ref": "#/$defs/sourceIds"
+    },
+    "gaps": {
       "type": "array",
       "items": {
-        "type": "object"
+        "type": "object",
+        "required": [
+          "gap_id",
+          "missing",
+          "resolve_from",
+          "phase"
+        ],
+        "properties": {
+          "gap_id": {
+            "type": "string"
+          },
+          "missing": {
+            "type": "string",
+            "minLength": 10
+          },
+          "resolve_from": {
+            "type": "string",
+            "minLength": 5
+          },
+          "phase": {
+            "enum": [
+              "phase-1",
+              "phase-2",
+              "phase-3",
+              "phase-4"
+            ]
+          }
+        }
       }
     },
-    "sourceIds": {
-      "type": "array",
-      "minItems": 1,
-      "items": {
-        "type": "string"
-      }
+    "generated_by": {
+      "type": "string"
     },
-    "knownGaps": {
-      "type": "array",
-      "items": {
-        "type": "object"
-      }
+    "built_on": {
+      "type": "string"
     }
   }
 }
