@@ -1,12 +1,12 @@
-# Master Build Prompt for Claude Code: Autodidax
+# Master Build Prompt for Claude Code: Starward
 
-> Paste everything below this line into Claude Code, opened in the folder that contains this repo (`ai-school-full-stack`). Venture name is a variable: if the founder picks a different name, replace `Autodidax` everywhere via `VENTURE_NAME` in `config/venture.json`.
+> Paste everything below this line into Claude Code, opened in the folder that contains this repo (`ai-school-full-stack`). Venture name is a variable: if the founder picks a different name, replace `Starward` everywhere via `VENTURE_NAME` in `config/venture.json`.
 
 ---
 
 ## 0. Who you are working for and the end goal
 
-You are building **Autodidax** (from autodidact, "self-taught": a system that teaches itself to teach better, for learners who never stop learning): an AI-first learning system that covers a person's whole life of learning, from birth to retirement, in Hindi and English first, built on India's official frameworks, and that keeps itself current as those frameworks and the world change.
+You are building **Starward** ("toward the stars": every learner, every age, always moving up): an AI-first learning system that covers a person's whole life of learning, from birth to retirement, in Hindi and English first, built on India's official frameworks, and that keeps itself current as those frameworks and the world change.
 
 End goal, in one line: **any learner, any age, any path (school board, competitive exam, study abroad, vocation, profession, reskilling) gets an individual plan for every year, every week and every day, grounded only in verified sources, that adapts to them in real time and updates itself safely when the source curriculum changes.**
 

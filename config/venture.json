@@ -1,7 +1,9 @@
 {
-  "VENTURE_NAME": "Autodidax",
-  "meaning": "From autodidact (self-taught). The system improves itself and learners own their learning, at every age.",
-  "alternates_checked_2026_10_21": ["Scholeon", "Mathetiq", "Learnion", "LearnFlux"],
-  "known_collision": "Autodidax is the title of a JAX documentation tutorial (JAX core from scratch); not a product or company",
-  "status": "working name; no DNS on autodidax.com, .ai, .io, .in on 2026-10-21; trademark and domain purchase not yet done"
+  "VENTURE_NAME": "Starward",
+  "tagline_working": "Always moving up.",
+  "meaning": "Toward the stars: simple, intriguing, motivating; works for every age and every path",
+  "alternates_checked_2026_10_21": ["Learnward", "Skyward", "Firstlight", "Ember"],
+  "domain_signal_2026_10_21": "No DNS on starward.ai and starward.app; starward.com and starward.in already resolve (owned by others)",
+  "known_similar": "Starwords, a 2016 children's reading app (similar sound)",
+  "status": "working name; trademark search and domain purchase not yet done"
 }
