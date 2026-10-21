@@ -1,9 +1,11 @@
 {
-  "VENTURE_NAME": "Starward",
-  "tagline_working": "Always moving up.",
-  "meaning": "Toward the stars: simple, intriguing, motivating; works for every age and every path",
-  "alternates_checked_2026_10_21": ["Learnward", "Skyward", "Firstlight", "Ember"],
-  "domain_signal_2026_10_21": "No DNS on starward.ai and starward.app; starward.com and starward.in already resolve (owned by others)",
-  "known_similar": "Starwords, a 2016 children's reading app (similar sound)",
-  "status": "working name; trademark search and domain purchase not yet done"
+  "VENTURE_NAME": "EduAIon",
+  "pronunciation": "edu-eye-on",
+  "tagline_working": "AI on. Always learning.",
+  "meaning": "Edu + AI on (always on, always updating) + eon (a lifetime) + ion (energy, tech)",
+  "domain_check_2026_10_21": "Registry (RDAP) lookup: eduaion.com, eduaion.ai, eduaion.in, eduaion.app all NOT REGISTERED. Method validated against google.com, claude.ai, google.in, google.app (all returned registered). .io not checkable this way.",
+  "conflict_check_2026_10_21": "No business or product named EduAIon found. Plain EduAI is widely used (UBC EduAI Lab, EU EduAI project, EduAI apps), so always write EduAIon as one word.",
+  "rejected": {"EduAIra": "sounds like Eduauraa, an Indian Class 6-12 edtech on ZEE5", "EduAIVerse/AIEduverse": "Eduverse and Edverse in use; US EDUVERSE trademark filings; AI EduVerse programme in Korea", "EduAI": "domains taken, crowded, descriptive"},
+  "backups_all_four_domains_free": ["EduAIStar", "EduAIRise", "EduAIOne"],
+  "status": "working name; IP India trademark search and domain purchase not yet done"
 }
