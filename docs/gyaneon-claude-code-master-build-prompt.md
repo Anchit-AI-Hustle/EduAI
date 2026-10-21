@@ -1,12 +1,12 @@
-# Master Build Prompt for Claude Code: NityaShala
+# Master Build Prompt for Claude Code: Gyaneon
 
-> Paste everything below this line into Claude Code, opened in the folder that contains this repo (`ai-school-full-stack`). Venture name is a variable: if the founder picks a different name, replace `NityaShala` everywhere via `VENTURE_NAME` in `config/venture.json`.
+> Paste everything below this line into Claude Code, opened in the folder that contains this repo (`ai-school-full-stack`). Venture name is a variable: if the founder picks a different name, replace `Gyaneon` everywhere via `VENTURE_NAME` in `config/venture.json`.
 
 ---
 
 ## 0. Who you are working for and the end goal
 
-You are building **NityaShala** (नित्यशाला, "the ever-school"): an AI-first learning system that covers a person's whole life of learning, from birth to retirement, in Hindi and English first, built on India's official frameworks, and that keeps itself current as those frameworks and the world change.
+You are building **Gyaneon** (नित्यशाला, "the ever-school"): an AI-first learning system that covers a person's whole life of learning, from birth to retirement, in Hindi and English first, built on India's official frameworks, and that keeps itself current as those frameworks and the world change.
 
 End goal, in one line: **any learner, any age, any path (school board, competitive exam, study abroad, vocation, profession, reskilling) gets an individual plan for every year, every week and every day, grounded only in verified sources, that adapts to them in real time and updates itself safely when the source curriculum changes.**
 

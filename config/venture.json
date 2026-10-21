@@ -1,5 +1,7 @@
 {
-  "VENTURE_NAME": "NityaShala",
-  "VENTURE_NAME_HI": "नित्यशाला",
-  "status": "working name, trademark and domain not yet checked or bought"
+  "VENTURE_NAME": "Gyaneon",
+  "VENTURE_NAME_HI": "ज्ञानीऑन",
+  "meaning": "Gyan (knowledge) + eon (a lifetime, an age) - lifelong learning that keeps evolving",
+  "alternates_checked_2026_10_21": ["Vidyx", "VidyaFlux", "GyanFlux", "AeonShala"],
+  "status": "working name; no DNS on gyaneon.com, gyaneon.ai, gyaneon.in on 2026-10-21; trademark and domain purchase not yet done"
 }
