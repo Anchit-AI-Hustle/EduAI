@@ -1,7 +1,7 @@
 {
-  "VENTURE_NAME": "Gyaneon",
-  "VENTURE_NAME_HI": "ज्ञानीऑन",
-  "meaning": "Gyan (knowledge) + eon (a lifetime, an age) - lifelong learning that keeps evolving",
-  "alternates_checked_2026_10_21": ["Vidyx", "VidyaFlux", "GyanFlux", "AeonShala"],
-  "status": "working name; no DNS on gyaneon.com, gyaneon.ai, gyaneon.in on 2026-10-21; trademark and domain purchase not yet done"
+  "VENTURE_NAME": "Autodidax",
+  "meaning": "From autodidact (self-taught). The system improves itself and learners own their learning, at every age.",
+  "alternates_checked_2026_10_21": ["Scholeon", "Mathetiq", "Learnion", "LearnFlux"],
+  "known_collision": "Autodidax is the title of a JAX documentation tutorial (JAX core from scratch); not a product or company",
+  "status": "working name; no DNS on autodidax.com, .ai, .io, .in on 2026-10-21; trademark and domain purchase not yet done"
 }
