@@ -1,0 +1,25 @@
+{
+  "appId": "com.anchit.eduai",
+  "appName": "EduAI",
+  "webDir": "out",
+  "bundledWebRuntime": false,
+  "server": {
+    "url": "https://edu-ai.anchit-tandon.com",
+    "cleartext": false,
+    "allowNavigation": [
+      "edu-ai.anchit-tandon.com",
+      "*.anchit-tandon.com"
+    ]
+  },
+  "android": {
+    "backgroundColor": "#0a0e17",
+    "allowMixedContent": false,
+    "captureInput": true,
+    "webContentsDebuggingEnabled": true
+  },
+  "ios": {
+    "backgroundColor": "#0a0e17",
+    "contentInset": "always",
+    "preferredContentMode": "mobile"
+  }
+}
