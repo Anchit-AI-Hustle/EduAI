@@ -12,8 +12,9 @@
     "check:emdash": "node scripts/check-no-em-dashes.mjs",
     "check:names": "node scripts/check-file-names.mjs",
     "test:phase1": "node scripts/run-phase-1-acceptance-tests.mjs",
+    "test:phase3": "node scripts/run-phase-3-acceptance-tests.mjs",
     "test:viewports": "node scripts/verify-responsive-viewports.mjs",
-    "test": "node scripts/run-phase-1-acceptance-tests.mjs && node scripts/check-no-em-dashes.mjs && node scripts/check-file-names.mjs && node scripts/verify-responsive-viewports.mjs"
+    "test": "node scripts/run-phase-1-acceptance-tests.mjs && node scripts/run-phase-3-acceptance-tests.mjs && node scripts/check-no-em-dashes.mjs && node scripts/check-file-names.mjs && node scripts/verify-responsive-viewports.mjs"
   },
   "dependencies": {
     "@capacitor/core": "^8.5.3",

@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useMemo } from "react";
+import MiddleSchoolDeepDive from "./components/MiddleSchoolDeepDive";
 
 type Localized = { en: string; hi: string };
 
@@ -16,12 +17,13 @@ const UI_TEXT = {
     tabs: {
       planner: "1. Year, Week & Day Planner",
       diagnostic: "2. Adaptive Diagnostic",
-      lesson: "3. Daily Lesson Loop",
-      mocks: "4. Mock Exam Engine",
-      tracks: "5. Competitive & Global Tracks",
-      evolution: "6. Self-Evolving Engine (L1-L5)",
-      parent: "7. Parent View & Legal Risks",
-      venture: "8. Venture Thesis & 5 Q&A"
+      middleStage: "3. Middle Stage Deep Dive (Grades 6-8)",
+      lesson: "4. Daily Lesson Loop",
+      mocks: "5. Mock Exam Engine",
+      tracks: "6. Competitive & Global Tracks",
+      evolution: "7. Self-Evolving Engine (L1-L5)",
+      parent: "8. Parent View & Legal Risks",
+      venture: "9. Venture Thesis & 5 Q&A"
     },
     boardLabel: "Select Board / Framework",
     yearLabel: "Select Stage / Year (All 16 Stages)",
@@ -34,12 +36,13 @@ const UI_TEXT = {
     tabs: {
       planner: "1. वार्षिक, साप्ताहिक व दैनिक योजना",
       diagnostic: "2. अनुकूलित निदान (Diagnostic)",
-      lesson: "3. दैनिक पाठ चक्र (Lesson Loop)",
-      mocks: "4. मॉक परीक्षा इंजन",
-      tracks: "5. प्रतियोगी व विदेश ट्रैक",
-      evolution: "6. स्व-विकसित इंजन (L1-L5)",
-      parent: "7. अभिभावक दृश्य व विधिक जोखिम",
-      venture: "8. वेंचर रणनीति व 5 मुख्य प्रश्न"
+      middleStage: "3. माध्यमिक चरण गहरा अध्ययन (कक्षा 6-8)",
+      lesson: "4. दैनिक पाठ चक्र (Lesson Loop)",
+      mocks: "5. मॉक परीक्षा इंजन",
+      tracks: "6. प्रतियोगी व विदेश ट्रैक",
+      evolution: "7. स्व-विकसित इंजन (L1-L5)",
+      parent: "8. अभिभावक दृश्य व विधिक जोखिम",
+      venture: "9. वेंचर रणनीति व 5 मुख्य प्रश्न"
     },
     boardLabel: "बोर्ड / फ्रेमवर्क चुनें",
     yearLabel: "चरण / कक्षा चुनें (सभी 16 चरण)",
@@ -52,7 +55,7 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
   const [lang, setLang] = useState<"en" | "hi">("en");
   const [ventureBrand, setVentureBrand] = useState<string>(masterIndex.venture.ventureName || "EveryYear");
   const [activeTab, setActiveTab] = useState<
-    "planner" | "diagnostic" | "lesson" | "mocks" | "tracks" | "evolution" | "parent" | "venture"
+    "planner" | "diagnostic" | "middleStage" | "lesson" | "mocks" | "tracks" | "evolution" | "parent" | "venture"
   >("planner");
 
   const [selectedLearnerId, setSelectedLearnerId] = useState<string>(
@@ -776,7 +779,15 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
         </div>
       )}
 
-      {/* TAB 3: DAILY LESSON LOOP */}
+      {/* TAB: MIDDLE STAGE DEEP DIVE (CLASSES 6-8) */}
+      {activeTab === "middleStage" && (
+        <MiddleSchoolDeepDive
+          deepeningData={masterIndex.middleStageDeepening}
+          lang={lang}
+        />
+      )}
+
+      {/* TAB: DAILY LESSON LOOP */}
       {activeTab === "lesson" && activeCurriculum && (
         <div className="card">
           <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: "0.5rem" }}>

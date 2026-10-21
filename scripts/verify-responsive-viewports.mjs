@@ -48,12 +48,13 @@ async function run() {
     "26",
     "1. Year, Week &amp; Day Planner",
     "2. Adaptive Diagnostic",
-    "3. Daily Lesson Loop",
-    "4. Mock Exam Engine",
-    "5. Competitive &amp; Global Tracks",
-    "6. Self-Evolving Engine (L1-L5)",
-    "7. Parent View &amp; Legal Risks",
-    "8. Venture Thesis &amp; 5 Q&amp;A",
+    "3. Middle Stage Deep Dive",
+    "4. Daily Lesson Loop",
+    "5. Mock Exam Engine",
+    "6. Competitive &amp; Global Tracks",
+    "7. Self-Evolving Engine (L1-L5)",
+    "8. Parent View &amp; Legal Risks",
+    "9. Venture Thesis &amp; 5 Q&amp;A",
     "हिन्दी"
   ];
   for (const marker of requiredMarkers) {

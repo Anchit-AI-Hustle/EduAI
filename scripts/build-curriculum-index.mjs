@@ -13,6 +13,7 @@ const skillGraph = readJson("content/skill-graph/shared-skill-graph.json");
 const assessmentBank = readJson("content/assessments/diagnostic-and-mock-bank.json");
 const evolutionState = readJson("content/evolution/self-evolving-engine-state.json");
 const learners = readJson("content/learners/synthetic-learner-profiles.json");
+const middleStageDeepening = readJson("content/deepening/cbse-middle-stage-chapters.json");
 
 const curriculumDir = path.join(ROOT, "content/curriculum");
 const boardDirs = fs.readdirSync(curriculumDir).filter((d) =>
@@ -75,7 +76,8 @@ const masterIndex = {
   skillGraph,
   assessmentBank,
   evolutionState,
-  learners
+  learners,
+  middleStageDeepening
 };
 
 const outPath = path.join(ROOT, "content/index/curriculum-master-index.json");
