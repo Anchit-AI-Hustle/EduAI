@@ -1,0 +1,278 @@
+[
+  {
+    "schemaVersion": "1.0.0",
+    "learnerId": "learner01aaravcbse07",
+    "createdAt": "2026-10-22T00:00:00.000Z",
+    "identity": {
+      "displayName": "Aarav S. (Synthetic Demo)",
+      "preferredName": "Aarav",
+      "dateOfBirth": "2014-04",
+      "guardianContactRef": "guardian-vault-ref-001"
+    },
+    "education": {
+      "currentYearId": "class-07",
+      "boardId": "cbse",
+      "schoolType": "school-enrolled",
+      "completedYearIds": [
+        "nursery",
+        "lkg",
+        "ukg",
+        "class-01",
+        "class-02",
+        "class-03",
+        "class-04",
+        "class-05",
+        "class-06"
+      ],
+      "languages": [
+        {
+          "code": "en",
+          "role": "medium"
+        },
+        {
+          "code": "hi",
+          "role": "second-language"
+        }
+      ],
+      "mediumOfInstruction": "bilingual"
+    },
+    "goals": {
+      "targetTracks": [
+        "jee",
+        "sat"
+      ],
+      "targetExamYear": 2032,
+      "weeklyStudyMinutes": 660,
+      "notes": "Strengthening Class 6-7 Ganita Prakash fractions/integers before starting Class 8-9 JEE and Digital SAT foundation bridge."
+    },
+    "preferences": {
+      "uiLanguage": "en",
+      "contentLanguageMix": {
+        "explanation": "both",
+        "practice": "en"
+      },
+      "sessionLengthMinutes": 30,
+      "offlineFirst": true,
+      "parentViewEnabled": true
+    },
+    "consent": {
+      "status": "guardian-verified",
+      "policyVersion": "2026-10-22",
+      "consentedAt": "2026-10-22T00:00:00.000Z",
+      "guardianRelationship": "parent",
+      "verificationMethod": "digilocker",
+      "jurisdiction": "IN",
+      "dataProcessingConsent": true
+    },
+    "privacy": {
+      "dataResidency": "IN",
+      "retentionClass": "until-withdrawal",
+      "analyticsOptOut": true,
+      "thirdPartyAiProcessingAllowed": false
+    },
+    "diagnosticState": {
+      "lastDiagnosticId": "diag-session-aarav-01",
+      "lastDiagnosticAt": "2026-10-22T00:00:00.000Z",
+      "confidence": "high",
+      "masterySummary": [
+        {
+          "skillId": "math-integers-number-patterns",
+          "mastery": 0.86,
+          "evidenceCount": 12
+        },
+        {
+          "skillId": "math-ratios-linear-algebra-middle",
+          "mastery": 0.64,
+          "evidenceCount": 8
+        },
+        {
+          "skillId": "sci-curiosity-middle-inquiry",
+          "mastery": 0.82,
+          "evidenceCount": 10
+        },
+        {
+          "skillId": "soc-exploring-society-middle",
+          "mastery": 0.78,
+          "evidenceCount": 7
+        },
+        {
+          "skillId": "lang-bilingual-literature-middle",
+          "mastery": 0.88,
+          "evidenceCount": 9
+        }
+      ]
+    },
+    "planState": {
+      "activePlanId": "plan-cbse-class-07-aarav",
+      "curriculumVersion": "2026.1.0",
+      "planRevision": 2
+    },
+    "accessibility": {
+      "screenTimeCapMinutesPerDay": 60
+    }
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "learnerId": "learner02ananyaneet11",
+    "createdAt": "2026-10-22T00:00:00.000Z",
+    "identity": {
+      "displayName": "Ananya K. (Synthetic Demo)",
+      "preferredName": "Ananya",
+      "dateOfBirth": "2010-08",
+      "guardianContactRef": "guardian-vault-ref-002"
+    },
+    "education": {
+      "currentYearId": "class-11",
+      "boardId": "cbse",
+      "schoolType": "school-enrolled",
+      "completedYearIds": [
+        "class-01",
+        "class-02",
+        "class-03",
+        "class-04",
+        "class-05",
+        "class-06",
+        "class-07",
+        "class-08",
+        "class-09",
+        "class-10"
+      ],
+      "languages": [
+        {
+          "code": "hi",
+          "role": "first-language"
+        },
+        {
+          "code": "en",
+          "role": "medium"
+        }
+      ],
+      "mediumOfInstruction": "bilingual"
+    },
+    "goals": {
+      "targetTracks": [
+        "neet",
+        "cuet"
+      ],
+      "targetExamYear": 2028,
+      "weeklyStudyMinutes": 1080,
+      "notes": "Dual CBSE Class 11 PCB + NTA NEET UG 2028 synchronized preparation."
+    },
+    "preferences": {
+      "uiLanguage": "hi",
+      "contentLanguageMix": {
+        "explanation": "both",
+        "practice": "both"
+      },
+      "sessionLengthMinutes": 45,
+      "offlineFirst": true,
+      "parentViewEnabled": true
+    },
+    "consent": {
+      "status": "guardian-verified",
+      "policyVersion": "2026-10-22",
+      "consentedAt": "2026-10-22T00:00:00.000Z",
+      "guardianRelationship": "parent",
+      "verificationMethod": "digilocker",
+      "jurisdiction": "IN",
+      "dataProcessingConsent": true
+    },
+    "privacy": {
+      "dataResidency": "IN",
+      "retentionClass": "until-withdrawal",
+      "analyticsOptOut": true,
+      "thirdPartyAiProcessingAllowed": false
+    },
+    "diagnosticState": {
+      "lastDiagnosticId": "diag-session-ananya-01",
+      "lastDiagnosticAt": "2026-10-22T00:00:00.000Z",
+      "confidence": "high",
+      "masterySummary": [
+        {
+          "skillId": "sci-integrated-sec-9-10",
+          "mastery": 0.92,
+          "evidenceCount": 18
+        },
+        {
+          "skillId": "sci-biology-srsec-11-12",
+          "mastery": 0.76,
+          "evidenceCount": 14
+        },
+        {
+          "skillId": "sci-chemistry-srsec-11-12",
+          "mastery": 0.68,
+          "evidenceCount": 11
+        },
+        {
+          "skillId": "sci-physics-srsec-11-12",
+          "mastery": 0.59,
+          "evidenceCount": 9
+        }
+      ]
+    },
+    "planState": {
+      "activePlanId": "plan-cbse-class-11-ananya",
+      "curriculumVersion": "2026.1.0",
+      "planRevision": 1
+    },
+    "accessibility": {
+      "screenTimeCapMinutesPerDay": 120
+    }
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "learnerId": "learner03kabirhome02",
+    "createdAt": "2026-10-22T00:00:00.000Z",
+    "identity": {
+      "displayName": "Kabir M. (Caregiver Guided 0-3)",
+      "preferredName": "Kabir",
+      "dateOfBirth": "2024-11",
+      "guardianContactRef": "guardian-vault-ref-003"
+    },
+    "education": {
+      "currentYearId": "home-0-3",
+      "boardId": "early-years",
+      "schoolType": "home-learning",
+      "completedYearIds": [],
+      "languages": [
+        {
+          "code": "hi",
+          "role": "first-language"
+        },
+        {
+          "code": "en",
+          "role": "second-language"
+        }
+      ],
+      "mediumOfInstruction": "bilingual"
+    },
+    "goals": {
+      "weeklyStudyMinutes": 75,
+      "notes": "100% zero-screen caregiver-led sensory and bilingual oral stimulation under MWCD Navchetana 2024."
+    },
+    "preferences": {
+      "uiLanguage": "en",
+      "sessionLengthMinutes": 15,
+      "offlineFirst": true,
+      "parentViewEnabled": true
+    },
+    "consent": {
+      "status": "guardian-verified",
+      "policyVersion": "2026-10-22",
+      "consentedAt": "2026-10-22T00:00:00.000Z",
+      "guardianRelationship": "parent",
+      "verificationMethod": "payment-instrument",
+      "jurisdiction": "IN",
+      "dataProcessingConsent": true
+    },
+    "privacy": {
+      "dataResidency": "IN",
+      "retentionClass": "one-year",
+      "analyticsOptOut": true,
+      "thirdPartyAiProcessingAllowed": false
+    },
+    "accessibility": {
+      "screenTimeCapMinutesPerDay": 0
+    }
+  }
+]

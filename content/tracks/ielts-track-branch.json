@@ -1,0 +1,48 @@
+{
+  "trackId": "ielts",
+  "title": {
+    "en": "IELTS Academic English Proficiency Track",
+    "hi": "आईईएलटीएस (IELTS) अकादमिक अंग्रेजी दक्षता ट्रैक"
+  },
+  "category": "study-abroad",
+  "startingYearId": "class-09",
+  "targetYears": [
+    "class-09",
+    "class-10",
+    "class-11",
+    "class-12"
+  ],
+  "conductingBody": "British Council, IDP: IELTS Australia & Cambridge University Press & Assessment",
+  "sourceIds": [
+    "SRC-IELTS-ACADEMIC-2026"
+  ],
+  "examPattern": {
+    "mode": "4-Skill Assessment (Listening, Academic Reading, Academic Writing, Face-to-Face Speaking)",
+    "durationMinutes": 165,
+    "totalMarks": "Band 0 to 9 Scale (Half-band reporting across all 4 skills)",
+    "patternStatus": "sourced-official-pattern"
+  },
+  "prerequisiteSkillIds": [
+    "lit-sentence-reading-fluency",
+    "lang-bilingual-literature-middle"
+  ],
+  "coreTrackSkillIds": [
+    "lang-academic-rhetoric-global-exams"
+  ],
+  "domains": [
+    {
+      "name": "Listening (30 Minutes, 40 Questions) & Academic Reading (60 Minutes, 40 Questions)",
+      "topics": [
+        "4 recorded monologues and conversations across social and university contexts",
+        "3 long academic texts from journals/books testing skimming, logical argument, and writer opinion"
+      ]
+    },
+    {
+      "name": "Academic Writing (60 Minutes) & Speaking (11-14 Minutes)",
+      "topics": [
+        "Task 1 (150 words, 20 min): Visual chart/graph/process synthesis; Task 2 (250 words, 40 min): Discursive academic essay",
+        "Part 1 Introduction, Part 2 Individual Long Turn (Cue Card), Part 3 Two-Way Abstract Discussion"
+      ]
+    }
+  ]
+}

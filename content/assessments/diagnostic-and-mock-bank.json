@@ -1,0 +1,980 @@
+{
+  "schemaVersion": "1.0.0",
+  "updatedAt": "2026-10-22T00:00:00.000Z",
+  "diagnosticItems": [
+    {
+      "itemId": "diag-early-01",
+      "skillId": "num-pre-number-counting-20",
+      "domainId": "foundational-numeracy",
+      "targetYearId": "ukg",
+      "difficulty": "foundation",
+      "prompt": {
+        "en": "Aarav arranges clay beads in the pattern: Red, Blue, Red, Blue, Red, [ ? ]. Which bead comes next?",
+        "hi": "आरव मिट्टी के मोतियों को इस क्रम में रखता है: लाल, नीला, लाल, नीला, लाल, [ ? ]। अगला मोती कौन-सा होगा?"
+      },
+      "options": [
+        {
+          "en": "Blue",
+          "hi": "नीला"
+        },
+        {
+          "en": "Red",
+          "hi": "लाल"
+        },
+        {
+          "en": "Green",
+          "hi": "हरा"
+        },
+        {
+          "en": "Yellow",
+          "hi": "पीला"
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": {
+        "en": "The pattern alternates Red and Blue (ABAB). After Red, the next bead is Blue.",
+        "hi": "यह लाल और नीले का एकांतर (ABAB) पैटर्न है। लाल के बाद नीला मोती आएगा।"
+      },
+      "sourceIds": [
+        "SRC-MWCD-AADHARSHILA-2024",
+        "SRC-NCERT-NCFFS-2022"
+      ]
+    },
+    {
+      "itemId": "diag-found-02",
+      "skillId": "num-place-value-add-sub",
+      "domainId": "foundational-numeracy",
+      "targetYearId": "class-02",
+      "difficulty": "core",
+      "prompt": {
+        "en": "Meera has 3 bundles of 10 sticks and 14 loose sticks. What total number of sticks does she have?",
+        "hi": "मीरा के पास 10-10 तीलियों के 3 गट्ठर और 14 खुली तीलियां हैं। उसके पास कुल कितनी तीलियां हैं?"
+      },
+      "options": [
+        {
+          "en": "44",
+          "hi": "44"
+        },
+        {
+          "en": "314",
+          "hi": "314"
+        },
+        {
+          "en": "34",
+          "hi": "34"
+        },
+        {
+          "en": "17",
+          "hi": "17"
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": {
+        "en": "3 tens = 30, plus 14 ones (1 ten + 4 ones) = 4 tens and 4 ones = 44.",
+        "hi": "3 दहाई = 30, और 14 इकाई = 30 + 14 = 44 तीलियां।"
+      },
+      "sourceIds": [
+        "SRC-NCERT-NCFFS-2022"
+      ]
+    },
+    {
+      "itemId": "diag-prep-03",
+      "skillId": "num-mult-div-fractions-prep",
+      "domainId": "foundational-numeracy",
+      "targetYearId": "class-05",
+      "difficulty": "core",
+      "prompt": {
+        "en": "Which of the following fractions is equivalent to 3/4?",
+        "hi": "निम्नलिखित में से कौन-सी भिन्न 3/4 के समतुल्य है?"
+      },
+      "options": [
+        {
+          "en": "9/12",
+          "hi": "9/12"
+        },
+        {
+          "en": "6/12",
+          "hi": "6/12"
+        },
+        {
+          "en": "4/3",
+          "hi": "4/3"
+        },
+        {
+          "en": "7/8",
+          "hi": "7/8"
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": {
+        "en": "Multiplying numerator and denominator of 3/4 by 3 gives (3 x 3)/(4 x 3) = 9/12.",
+        "hi": "3/4 के अंश और हर को 3 से गुणा करने पर 9/12 प्राप्त होता है।"
+      },
+      "sourceIds": [
+        "SRC-NCERT-NCFSE-2023"
+      ]
+    },
+    {
+      "itemId": "diag-mid-math-04",
+      "skillId": "math-integers-number-patterns",
+      "domainId": "mathematics-core",
+      "targetYearId": "class-06",
+      "difficulty": "core",
+      "prompt": {
+        "en": "In Srinagar, the temperature at midnight is -4 C. By morning it drops by another 3 C. What is the morning temperature?",
+        "hi": "श्रीनगर में आधी रात का तापमान -4 C है। सुबह तक यह 3 C और गिर जाता है। सुबह का तापमान क्या है?"
+      },
+      "options": [
+        {
+          "en": "-7 C",
+          "hi": "-7 C"
+        },
+        {
+          "en": "-1 C",
+          "hi": "-1 C"
+        },
+        {
+          "en": "+7 C",
+          "hi": "+7 C"
+        },
+        {
+          "en": "+1 C",
+          "hi": "+1 C"
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": {
+        "en": "Starting at -4 and moving 3 units left on the number line gives (-4) + (-3) = -7 C.",
+        "hi": "संख्या रेखा पर -4 से 3 इकाई बाईं ओर जाने पर (-4) - 3 = -7 C मिलता है।"
+      },
+      "sourceIds": [
+        "SRC-NCERT-NCFSE-2023",
+        "SRC-CBSE-CURR-2026-27"
+      ]
+    },
+    {
+      "itemId": "diag-mid-alg-05",
+      "skillId": "math-ratios-linear-algebra-middle",
+      "domainId": "mathematics-core",
+      "targetYearId": "class-08",
+      "difficulty": "core",
+      "prompt": {
+        "en": "Solve for x: 3(2x - 1) = 4x + 7",
+        "hi": "x का मान ज्ञात कीजिए: 3(2x - 1) = 4x + 7"
+      },
+      "options": [
+        {
+          "en": "x = 5",
+          "hi": "x = 5"
+        },
+        {
+          "en": "x = 2",
+          "hi": "x = 2"
+        },
+        {
+          "en": "x = 4",
+          "hi": "x = 4"
+        },
+        {
+          "en": "x = -5",
+          "hi": "x = -5"
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": {
+        "en": "Expanding gives 6x - 3 = 4x + 7 -> 2x = 10 -> x = 5.",
+        "hi": "विस्तार करने पर 6x - 3 = 4x + 7 -> 2x = 10 -> x = 5 प्राप्त होता है।"
+      },
+      "sourceIds": [
+        "SRC-NCERT-NCFSE-2023",
+        "SRC-CBSE-CURR-2026-27"
+      ]
+    },
+    {
+      "itemId": "diag-mid-sci-06",
+      "skillId": "sci-curiosity-middle-inquiry",
+      "domainId": "science-and-inquiry",
+      "targetYearId": "class-07",
+      "difficulty": "core",
+      "prompt": {
+        "en": "When a few drops of dilute iodine solution are added to boiled rice, it turns blue-black. This indicates the presence of:",
+        "hi": "जब उबले हुए चावल में तनु आयोडीन घोल की कुछ बूंदें डाली जाती हैं, तो वह नीला-काला हो जाता है। यह किसकी उपस्थिति दर्शाता है?"
+      },
+      "options": [
+        {
+          "en": "Starch (Carbohydrate)",
+          "hi": "मंड (स्टार्च / कार्बोहाइड्रेट)"
+        },
+        {
+          "en": "Protein",
+          "hi": "प्रोटीन"
+        },
+        {
+          "en": "Fat",
+          "hi": "वसा"
+        },
+        {
+          "en": "Vitamin C",
+          "hi": "विटामिन सी"
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": {
+        "en": "Iodine reacts with amylose in starch to form a characteristic blue-black complex (NCERT Curiosity).",
+        "hi": "आयोडीन स्टार्च (मंड) के साथ अभिक्रिया करके नीला-काला रंग देता है (एनसीईआरटी जिज्ञासा)।"
+      },
+      "sourceIds": [
+        "SRC-NCERT-NCFSE-2023"
+      ]
+    },
+    {
+      "itemId": "diag-sec-math-07",
+      "skillId": "math-polynomials-quadratics-sec",
+      "domainId": "mathematics-core",
+      "targetYearId": "class-10",
+      "difficulty": "stretch",
+      "prompt": {
+        "en": "For what value of k does the quadratic equation x^2 - 6x + k = 0 have two equal real roots?",
+        "hi": "k के किस मान के लिए द्विघात समीकरण x^2 - 6x + k = 0 के दो बराबर वास्तविक मूल होंगे?"
+      },
+      "options": [
+        {
+          "en": "k = 9",
+          "hi": "k = 9"
+        },
+        {
+          "en": "k = 6",
+          "hi": "k = 6"
+        },
+        {
+          "en": "k = -9",
+          "hi": "k = -9"
+        },
+        {
+          "en": "k = 3",
+          "hi": "k = 3"
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": {
+        "en": "Equal real roots occur when discriminant D = b^2 - 4ac = 0 -> (-6)^2 - 4(1)(k) = 0 -> 36 - 4k = 0 -> k = 9.",
+        "hi": "बराबर मूलों के लिए विविक्तकर D = b^2 - 4ac = 0 -> 36 - 4k = 0 -> k = 9।"
+      },
+      "sourceIds": [
+        "SRC-CBSE-CURR-2026-27",
+        "SRC-NTA-JEEMAIN-2026"
+      ]
+    },
+    {
+      "itemId": "diag-srsec-calc-08",
+      "skillId": "math-calculus-vectors-srsec",
+      "domainId": "mathematics-core",
+      "targetYearId": "class-12",
+      "difficulty": "stretch",
+      "prompt": {
+        "en": "What is the derivative d/dx of f(x) = x^3 - 5x^2 + 7 at x = 2?",
+        "hi": "x = 2 पर फलन f(x) = x^3 - 5x^2 + 7 का अवकलज (d/dx) क्या है?"
+      },
+      "options": [
+        {
+          "en": "-8",
+          "hi": "-8"
+        },
+        {
+          "en": "12",
+          "hi": "12"
+        },
+        {
+          "en": "-4",
+          "hi": "-4"
+        },
+        {
+          "en": "0",
+          "hi": "0"
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": {
+        "en": "f'(x) = 3x^2 - 10x. Evaluating at x = 2 gives 3(4) - 10(2) = 12 - 20 = -8.",
+        "hi": "f'(x) = 3x^2 - 10x। x = 2 रखने पर 3(4) - 20 = -8 प्राप्त होता है।"
+      },
+      "sourceIds": [
+        "SRC-CBSE-CURR-2026-27",
+        "SRC-NTA-JEEMAIN-2026"
+      ]
+    },
+    {
+      "itemId": "diag-global-lang-09",
+      "skillId": "lang-academic-rhetoric-global-exams",
+      "domainId": "languages-and-communication",
+      "targetYearId": "class-11",
+      "difficulty": "stretch",
+      "prompt": {
+        "en": "Choose the punctuation that conforms to Standard English conventions: 'Solar microgrids reduce transmission losses ______ they require local battery storage to handle monsoon cloud cover.'",
+        "hi": "मानक अंग्रेजी विराम-चिह्न चुनें: 'Solar microgrids reduce transmission losses ______ they require local battery storage to handle monsoon cloud cover.'"
+      },
+      "options": [
+        {
+          "en": "losses; however,",
+          "hi": "losses; however,"
+        },
+        {
+          "en": "losses, however,",
+          "hi": "losses, however,"
+        },
+        {
+          "en": "losses however",
+          "hi": "losses however"
+        },
+        {
+          "en": "losses: however",
+          "hi": "losses: however"
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": {
+        "en": "Joining two independent clauses with the conjunctive adverb 'however' requires a semicolon before and a comma after.",
+        "hi": "दो स्वतंत्र उपवाक्यों को 'however' से जोड़ने के लिए पहले अर्धविराम (;) और बाद में अल्पविराम (,) आवश्यक है।"
+      },
+      "sourceIds": [
+        "SRC-CB-DIGITALSAT-2026",
+        "SRC-IELTS-ACADEMIC-2026"
+      ]
+    }
+  ],
+  "mockBlueprints": [
+    {
+      "blueprintId": "mock-cbse-class-10-science-math",
+      "title": {
+        "en": "CBSE Class 10 Competency-Based Board Mock",
+        "hi": "सीबीएसई कक्षा 10 दक्षता-आधारित बोर्ड मॉक"
+      },
+      "category": "board-mock",
+      "targetBoardOrTrack": "CBSE Class 10 (80 Marks Theory Blueprint)",
+      "durationMinutes": 180,
+      "totalMarksOrScale": "80 Marks (50% Competency/Case-Based, 20% MCQ, 30% Short/Long Response)",
+      "patternStatus": "sourced-official-pattern",
+      "sections": [
+        {
+          "sectionId": "sec-a",
+          "name": "Section A: Multiple Choice & Assertion-Reason",
+          "questionCount": 20,
+          "marksNote": "20 x 1 = 20 Marks",
+          "skillIds": [
+            "math-polynomials-quadratics-sec",
+            "sci-integrated-sec-9-10"
+          ]
+        },
+        {
+          "sectionId": "sec-b-d",
+          "name": "Sections B-D: Short & Long Constructed Response",
+          "questionCount": 14,
+          "marksNote": "48 Marks",
+          "skillIds": [
+            "math-trigonometry-coordinate-sec",
+            "sci-integrated-sec-9-10"
+          ]
+        },
+        {
+          "sectionId": "sec-e",
+          "name": "Section E: Competency Case-Study Units",
+          "questionCount": 3,
+          "marksNote": "3 x 4 = 12 Marks",
+          "skillIds": [
+            "math-trigonometry-coordinate-sec",
+            "soc-democratic-polity-economy-sec"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "SRC-CBSE-CURR-2026-27",
+        "SRC-CBSE-SECPART1-2026-27"
+      ],
+      "sampleItems": [
+        {
+          "itemId": "m-cbse10-1",
+          "skillId": "sci-integrated-sec-9-10",
+          "prompt": {
+            "en": "Two resistors of 4 Ohm and 12 Ohm are connected in parallel across a 6 V battery. What is the equivalent resistance of the circuit?",
+            "hi": "4 ओम और 12 ओम के दो प्रतिरोधक 6 V बैटरी के साथ समांतर क्रम में जुड़े हैं। परिपथ का तुल्य प्रतिरोध क्या है?"
+          },
+          "options": [
+            {
+              "en": "3 Ohm",
+              "hi": "3 ओम"
+            },
+            {
+              "en": "16 Ohm",
+              "hi": "16 ओम"
+            },
+            {
+              "en": "8 Ohm",
+              "hi": "8 ओम"
+            },
+            {
+              "en": "0.33 Ohm",
+              "hi": "0.33 ओम"
+            }
+          ],
+          "correctIndex": 0,
+          "explanation": {
+            "en": "1/Req = 1/4 + 1/12 = 4/12 = 1/3 -> Req = 3 Ohm.",
+            "hi": "1/Req = 1/4 + 1/12 = 4/12 = 1/3 -> तुल्य प्रतिरोध Req = 3 ओम।"
+          }
+        },
+        {
+          "itemId": "m-cbse10-2",
+          "skillId": "math-trigonometry-coordinate-sec",
+          "prompt": {
+            "en": "If sin(theta) = 3/5 for an acute angle theta, what is the value of cos(theta)?",
+            "hi": "यदि न्यून कोण theta के लिए sin(theta) = 3/5 है, तो cos(theta) का मान क्या होगा?"
+          },
+          "options": [
+            {
+              "en": "4/5",
+              "hi": "4/5"
+            },
+            {
+              "en": "3/4",
+              "hi": "3/4"
+            },
+            {
+              "en": "5/4",
+              "hi": "5/4"
+            },
+            {
+              "en": "2/5",
+              "hi": "2/5"
+            }
+          ],
+          "correctIndex": 0,
+          "explanation": {
+            "en": "Using sin^2(theta) + cos^2(theta) = 1 -> cos(theta) = sqrt(1 - 9/25) = sqrt(16/25) = 4/5.",
+            "hi": "sin^2(theta) + cos^2(theta) = 1 से cos(theta) = sqrt(1 - 9/25) = 4/5।"
+          }
+        }
+      ]
+    },
+    {
+      "blueprintId": "mock-jee-main-paper1",
+      "title": {
+        "en": "NTA JEE (Main) Paper 1 CBT Full Pattern Mock",
+        "hi": "एनटीए जेईई (मेन) पेपर 1 सीबीटी मॉक परीक्षा"
+      },
+      "category": "competitive-track",
+      "targetBoardOrTrack": "JEE Main B.E./B.Tech (300 Marks)",
+      "durationMinutes": 180,
+      "totalMarksOrScale": "300 Marks (75 Questions: +4 correct, -1 incorrect)",
+      "patternStatus": "sourced-official-pattern",
+      "sections": [
+        {
+          "sectionId": "jee-math",
+          "name": "Part I: Mathematics (20 MCQ + 5 Numerical)",
+          "questionCount": 25,
+          "marksNote": "100 Marks",
+          "skillIds": [
+            "math-calculus-vectors-srsec",
+            "math-polynomials-quadratics-sec"
+          ]
+        },
+        {
+          "sectionId": "jee-phy",
+          "name": "Part II: Physics (20 MCQ + 5 Numerical)",
+          "questionCount": 25,
+          "marksNote": "100 Marks",
+          "skillIds": [
+            "sci-physics-srsec-11-12"
+          ]
+        },
+        {
+          "sectionId": "jee-chem",
+          "name": "Part III: Chemistry (20 MCQ + 5 Numerical)",
+          "questionCount": 25,
+          "marksNote": "100 Marks",
+          "skillIds": [
+            "sci-chemistry-srsec-11-12"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "SRC-NTA-JEEMAIN-2026"
+      ],
+      "sampleItems": [
+        {
+          "itemId": "m-jee-1",
+          "skillId": "sci-physics-srsec-11-12",
+          "prompt": {
+            "en": "A particle of mass m is projected with velocity v at 45 degrees to the horizontal. What is the magnitude of its angular momentum about the point of projection at maximum height?",
+            "hi": "द्रव्यमान m के एक कण को क्षैतिज से 45 डिग्री पर वेग v से प्रक्षेपित किया जाता है। अधिकतम ऊंचाई पर प्रक्षेपण बिंदु के सापेक्ष इसका कोणीय संवेग क्या होगा?"
+          },
+          "options": [
+            {
+              "en": "m v^3 / (4 sqrt(2) g)",
+              "hi": "m v^3 / (4 sqrt(2) g)"
+            },
+            {
+              "en": "m v^3 / (2 sqrt(2) g)",
+              "hi": "m v^3 / (2 sqrt(2) g)"
+            },
+            {
+              "en": "zero",
+              "hi": "शून्य"
+            },
+            {
+              "en": "m v^2 / (2 g)",
+              "hi": "m v^2 / (2 g)"
+            }
+          ],
+          "correctIndex": 0,
+          "explanation": {
+            "en": "At max height H = v^2 sin^2(45)/(2g) = v^2/(4g), speed is v cos(45) = v/sqrt(2). Thus L = m (v/sqrt(2)) H = m v^3 / (4 sqrt(2) g).",
+            "hi": "अधिकतम ऊंचाई H = v^2/(4g) और क्षैतिज वेग v/sqrt(2) से L = m v_x H = m v^3 / (4 sqrt(2) g)।"
+          }
+        },
+        {
+          "itemId": "m-jee-2",
+          "skillId": "math-calculus-vectors-srsec",
+          "prompt": {
+            "en": "What is the value of the definite integral from 0 to pi/2 of sin^2(x) dx?",
+            "hi": "0 से pi/2 तक sin^2(x) dx के निश्चित समाकलन का मान क्या है?"
+          },
+          "options": [
+            {
+              "en": "pi / 4",
+              "hi": "pi / 4"
+            },
+            {
+              "en": "pi / 2",
+              "hi": "pi / 2"
+            },
+            {
+              "en": "1",
+              "hi": "1"
+            },
+            {
+              "en": "pi / 8",
+              "hi": "pi / 8"
+            }
+          ],
+          "correctIndex": 0,
+          "explanation": {
+            "en": "By symmetry I = int_0^(pi/2) sin^2(x) dx = int_0^(pi/2) cos^2(x) dx -> 2I = pi/2 -> I = pi/4.",
+            "hi": "सममिति गुणधर्म से 2I = pi/2, अतः I = pi/4।"
+          }
+        }
+      ]
+    },
+    {
+      "blueprintId": "mock-neet-ug",
+      "title": {
+        "en": "NTA NEET (UG) 720-Mark Medical Entrance Mock",
+        "hi": "एनटीए नीट (यूजी) 720-अंक मेडिकल प्रवेश मॉक"
+      },
+      "category": "competitive-track",
+      "targetBoardOrTrack": "NEET UG (Physics, Chemistry, Biology)",
+      "durationMinutes": 180,
+      "totalMarksOrScale": "720 Marks (180 Questions: +4 correct, -1 incorrect)",
+      "patternStatus": "sourced-official-pattern",
+      "sections": [
+        {
+          "sectionId": "neet-bio",
+          "name": "Biology (Botany & Zoology)",
+          "questionCount": 90,
+          "marksNote": "360 Marks",
+          "skillIds": [
+            "sci-biology-srsec-11-12"
+          ]
+        },
+        {
+          "sectionId": "neet-chem",
+          "name": "Chemistry",
+          "questionCount": 45,
+          "marksNote": "180 Marks",
+          "skillIds": [
+            "sci-chemistry-srsec-11-12"
+          ]
+        },
+        {
+          "sectionId": "neet-phy",
+          "name": "Physics",
+          "questionCount": 45,
+          "marksNote": "180 Marks",
+          "skillIds": [
+            "sci-physics-srsec-11-12"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "SRC-NTA-NEETUG-2026"
+      ],
+      "sampleItems": [
+        {
+          "itemId": "m-neet-1",
+          "skillId": "sci-biology-srsec-11-12",
+          "prompt": {
+            "en": "Which enzyme is thermostable and catalyses the extension step during Polymerase Chain Reaction (PCR)?",
+            "hi": "पॉलीमरेज़ चेन रिएक्शन (PCR) के दौरान कौन-सा ताप-स्थायी एंजाइम डीएनए विस्तार (extension) को उत्प्रेरित करता है?"
+          },
+          "options": [
+            {
+              "en": "Taq polymerase (from Thermus aquaticus)",
+              "hi": "टैक पॉलीमरेज़ (Thermus aquaticus से)"
+            },
+            {
+              "en": "DNA ligase",
+              "hi": "डीएनए लाइगेज"
+            },
+            {
+              "en": "EcoRI restriction endonuclease",
+              "hi": "EcoRI प्रतिबंधन एंजाइम"
+            },
+            {
+              "en": "RNA primase",
+              "hi": "आरएनए प्राइमेज़"
+            }
+          ],
+          "correctIndex": 0,
+          "explanation": {
+            "en": "Taq DNA polymerase isolated from Thermus aquaticus remains active during high-temperature denaturation in PCR.",
+            "hi": "Thermus aquaticus से प्राप्त टैक डीएनए पॉलीमरेज़ उच्च तापमान पर भी सक्रिय रहता है।"
+          }
+        },
+        {
+          "itemId": "m-neet-2",
+          "skillId": "sci-chemistry-srsec-11-12",
+          "prompt": {
+            "en": "For a first-order chemical reaction with rate constant k = 0.693 min^-1, what is the half-life (t_1/2)?",
+            "hi": "यदि किसी प्रथम कोटि की अभिक्रिया का वेग स्थिरांक k = 0.693 min^-1 है, तो उसकी अर्ध-आयु (t_1/2) क्या होगी?"
+          },
+          "options": [
+            {
+              "en": "1.0 minute",
+              "hi": "1.0 मिनट"
+            },
+            {
+              "en": "2.0 minutes",
+              "hi": "2.0 मिनट"
+            },
+            {
+              "en": "0.5 minute",
+              "hi": "0.5 मिनट"
+            },
+            {
+              "en": "0.693 minutes",
+              "hi": "0.693 मिनट"
+            }
+          ],
+          "correctIndex": 0,
+          "explanation": {
+            "en": "For first-order kinetics, t_1/2 = 0.693 / k = 0.693 / 0.693 = 1.0 minute.",
+            "hi": "प्रथम कोटि अभिक्रिया के लिए t_1/2 = 0.693 / k = 1.0 मिनट।"
+          }
+        }
+      ]
+    },
+    {
+      "blueprintId": "mock-cuet-ug-combined",
+      "title": {
+        "en": "NTA CUET (UG) Domain & General Test Mock",
+        "hi": "एनटीए सीयूईटी (यूजी) डोमेन और जनरल टेस्ट मॉक"
+      },
+      "category": "competitive-track",
+      "targetBoardOrTrack": "CUET UG (Languages + Class 12 Domain + General Test)",
+      "durationMinutes": 60,
+      "totalMarksOrScale": "250 Marks per paper (+5 correct, -1 incorrect)",
+      "patternStatus": "sourced-official-pattern",
+      "sections": [
+        {
+          "sectionId": "cuet-lang",
+          "name": "Section IA: Language Reading Comprehension",
+          "questionCount": 50,
+          "marksNote": "250 Marks",
+          "skillIds": [
+            "lang-academic-rhetoric-global-exams"
+          ]
+        },
+        {
+          "sectionId": "cuet-dom",
+          "name": "Section II/III: Domain & Quantitative Aptitude",
+          "questionCount": 50,
+          "marksNote": "250 Marks",
+          "skillIds": [
+            "soc-humanities-commerce-srsec",
+            "math-ratios-linear-algebra-middle"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "SRC-NTA-CUETUG-2026"
+      ],
+      "sampleItems": [
+        {
+          "itemId": "m-cuet-1",
+          "skillId": "soc-humanities-commerce-srsec",
+          "prompt": {
+            "en": "Which function of the Reserve Bank of India (RBI) describes its role as the 'lender of last resort' to commercial banks?",
+            "hi": "भारतीय रिज़र्व बैंक (RBI) का कौन-सा कार्य वाणिज्यिक बैंकों के लिए 'अंतिम ऋणदाता' की भूमिका दर्शाता है?"
+          },
+          "options": [
+            {
+              "en": "Bankers' Bank and Supervisor",
+              "hi": "बैंकों का बैंक और पर्यवेक्षक"
+            },
+            {
+              "en": "Issuer of Currency Notes",
+              "hi": "मुद्रा जारीकर्ता"
+            },
+            {
+              "en": "Custodian of Foreign Exchange",
+              "hi": "विदेशी मुद्रा संरक्षक"
+            },
+            {
+              "en": "Retail Deposit Collector",
+              "hi": "खुदरा जमा संग्रहकर्ता"
+            }
+          ],
+          "correctIndex": 0,
+          "explanation": {
+            "en": "As Bankers' Bank (NCERT Introductory Macroeconomics), RBI provides liquidity support to solvent commercial banks facing temporary crunches.",
+            "hi": "बैंकों के बैंक के रूप में RBI वाणिज्यिक बैंकों को संकट के समय तरलता सहायता प्रदान करता है।"
+          }
+        },
+        {
+          "itemId": "m-cuet-2",
+          "skillId": "math-ratios-linear-algebra-middle",
+          "prompt": {
+            "en": "If A and B can complete a project in 12 days and 24 days respectively, how many days will they take working together?",
+            "hi": "यदि A और B किसी कार्य को क्रमशः 12 दिन और 24 दिन में पूरा कर सकते हैं, तो दोनों मिलकर उसे कितने दिनों में पूरा करेंगे?"
+          },
+          "options": [
+            {
+              "en": "8 days",
+              "hi": "8 दिन"
+            },
+            {
+              "en": "9 days",
+              "hi": "9 दिन"
+            },
+            {
+              "en": "6 days",
+              "hi": "6 दिन"
+            },
+            {
+              "en": "18 days",
+              "hi": "18 दिन"
+            }
+          ],
+          "correctIndex": 0,
+          "explanation": {
+            "en": "Combined daily rate = 1/12 + 1/24 = 3/24 = 1/8 job per day -> 8 days.",
+            "hi": "संयुक्त कार्य दर = 1/12 + 1/24 = 3/24 = 1/8 प्रति दिन -> 8 दिन।"
+          }
+        }
+      ]
+    },
+    {
+      "blueprintId": "mock-upsc-prelims-gs",
+      "title": {
+        "en": "UPSC CSE Prelims GS Paper I & CSAT Foundation Mock",
+        "hi": "यूपीएससी प्रारंभिक सामान्य अध्ययन और सीसैट मॉक"
+      },
+      "category": "competitive-track",
+      "targetBoardOrTrack": "UPSC Civil Services Preliminary Exam (GS I + CSAT II)",
+      "durationMinutes": 120,
+      "totalMarksOrScale": "200 Marks (100 GS Questions; +2 correct, -0.66 incorrect)",
+      "patternStatus": "sourced-official-pattern",
+      "sections": [
+        {
+          "sectionId": "upsc-gs1",
+          "name": "GS Paper I: Polity, History, Geography, Economy & Ecology",
+          "questionCount": 100,
+          "marksNote": "200 Marks",
+          "skillIds": [
+            "soc-democratic-polity-economy-sec",
+            "soc-humanities-commerce-srsec"
+          ]
+        },
+        {
+          "sectionId": "upsc-csat",
+          "name": "GS Paper II (CSAT): Comprehension & Class X Numeracy",
+          "questionCount": 80,
+          "marksNote": "200 Marks (Qualifying 33%)",
+          "skillIds": [
+            "math-ratios-linear-algebra-middle",
+            "lang-academic-rhetoric-global-exams"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "SRC-UPSC-CSE-2026"
+      ],
+      "sampleItems": [
+        {
+          "itemId": "m-upsc-1",
+          "skillId": "soc-democratic-polity-economy-sec",
+          "prompt": {
+            "en": "Which Constitutional Amendment Act accorded constitutional status to Panchayati Raj Institutions under Part IX of the Constitution of India?",
+            "hi": "किस संविधान संशोधन अधिनियम ने भारत के संविधान के भाग IX के अंतर्गत पंचायती राज संस्थाओं को संवैधानिक दर्जा प्रदान किया?"
+          },
+          "options": [
+            {
+              "en": "73rd Constitutional Amendment Act, 1992",
+              "hi": "73वां संविधान संशोधन अधिनियम, 1992"
+            },
+            {
+              "en": "42nd Constitutional Amendment Act, 1976",
+              "hi": "42वां संविधान संशोधन अधिनियम, 1976"
+            },
+            {
+              "en": "86th Constitutional Amendment Act, 2002",
+              "hi": "86वां संविधान संशोधन अधिनियम, 2002"
+            },
+            {
+              "en": "44th Constitutional Amendment Act, 1978",
+              "hi": "44वां संविधान संशोधन अधिनियम, 1978"
+            }
+          ],
+          "correctIndex": 0,
+          "explanation": {
+            "en": "The 73rd Amendment Act, 1992 added Part IX (Articles 243 to 243-O) and the Eleventh Schedule for Panchayati Raj.",
+            "hi": "73वें संविधान संशोधन अधिनियम, 1992 द्वारा भाग IX और ग्यारहवीं अनुसूची जोड़ी गई।"
+          }
+        },
+        {
+          "itemId": "m-upsc-2",
+          "skillId": "soc-exploring-society-middle",
+          "prompt": {
+            "en": "The Great Bath and advanced citadel drainage systems are archaeological hallmarks of which Indus Valley site?",
+            "hi": "विशाल स्नानागार (Great Bath) और उन्नत जल-निकासी प्रणाली सिंधु घाटी सभ्यता के किस स्थल की विशेषता है?"
+          },
+          "options": [
+            {
+              "en": "Mohenjo-daro",
+              "hi": "मोहनजोदड़ो"
+            },
+            {
+              "en": "Lothal",
+              "hi": "लोथल"
+            },
+            {
+              "en": "Kalibangan",
+              "hi": "कालीबंगा"
+            },
+            {
+              "en": "Ropar",
+              "hi": "रोपड़"
+            }
+          ],
+          "correctIndex": 0,
+          "explanation": {
+            "en": "Mohenjo-daro features the brick-lined water-tight Great Bath documented in NCERT Exploring Society.",
+            "hi": "मोहनजोदड़ो में विशाल स्नानागार और सुव्यवस्थित जल निकासी प्रणाली पाई गई है।"
+          }
+        }
+      ]
+    },
+    {
+      "blueprintId": "mock-digital-sat-global",
+      "title": {
+        "en": "Digital SAT & IELTS/TOEFL Study Abroad Readiness Mock",
+        "hi": "डिजिटल सैट (SAT) और आईईएलटीएस/टोफल अध्ययन विदेश मॉक"
+      },
+      "category": "study-abroad",
+      "targetBoardOrTrack": "College Board Digital SAT (1600) + IELTS/TOEFL Academic",
+      "durationMinutes": 134,
+      "totalMarksOrScale": "1600 SAT Scale + CEFR C1 / Band 8.0 Rubric",
+      "patternStatus": "sourced-official-pattern",
+      "sections": [
+        {
+          "sectionId": "sat-rw",
+          "name": "Digital SAT Reading and Writing (Modules 1 & 2)",
+          "questionCount": 54,
+          "marksNote": "200-800 Scale (64 Min)",
+          "skillIds": [
+            "lang-academic-rhetoric-global-exams"
+          ]
+        },
+        {
+          "sectionId": "sat-math",
+          "name": "Digital SAT Math (Modules 1 & 2)",
+          "questionCount": 44,
+          "marksNote": "200-800 Scale (70 Min)",
+          "skillIds": [
+            "math-ratios-linear-algebra-middle",
+            "math-polynomials-quadratics-sec",
+            "math-trigonometry-coordinate-sec"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "SRC-CB-DIGITALSAT-2026",
+        "SRC-IELTS-ACADEMIC-2026",
+        "SRC-ETS-TOEFL-2026"
+      ],
+      "sampleItems": [
+        {
+          "itemId": "m-sat-1",
+          "skillId": "math-ratios-linear-algebra-middle",
+          "prompt": {
+            "en": "If 4x + 3y = 29 and 3x - 3y = 6, what is the value of x + y?",
+            "hi": "यदि 4x + 3y = 29 और 3x - 3y = 6 है, तो x + y का मान क्या होगा?"
+          },
+          "options": [
+            {
+              "en": "8",
+              "hi": "8"
+            },
+            {
+              "en": "5",
+              "hi": "5"
+            },
+            {
+              "en": "3",
+              "hi": "3"
+            },
+            {
+              "en": "10",
+              "hi": "10"
+            }
+          ],
+          "correctIndex": 0,
+          "explanation": {
+            "en": "Adding the two equations gives 7x = 35 -> x = 5. Substituting x = 5 into 4(5) + 3y = 29 gives 3y = 9 -> y = 3. Thus x + y = 8.",
+            "hi": "दोनों समीकरणों को जोड़ने पर 7x = 35 -> x = 5 तथा 4(5) + 3y = 29 -> y = 3। अतः x + y = 8।"
+          }
+        },
+        {
+          "itemId": "m-sat-2",
+          "skillId": "lang-academic-rhetoric-global-exams",
+          "prompt": {
+            "en": "Archaeologists studying stepwells in Gujarat note that these structures served dual purposes: providing year-round groundwater access and ______ cool communal gathering spaces during summer heatwaves.",
+            "hi": "गुजरात की बावड़ियों का अध्ययन करने वाले पुरातत्वविद् बताते हैं कि ये संरचनाएं दोहरे उद्देश्य पूरे करती थीं: वर्ष भर भूजल उपलब्ध कराना और ग्रीष्मकाल में शीतल सामुदायिक स्थान ______।"
+          },
+          "options": [
+            {
+              "en": "offering",
+              "hi": "प्रदान करना (offering)"
+            },
+            {
+              "en": "offered",
+              "hi": "offered"
+            },
+            {
+              "en": "to offer",
+              "hi": "to offer"
+            },
+            {
+              "en": "they offered",
+              "hi": "they offered"
+            }
+          ],
+          "correctIndex": 0,
+          "explanation": {
+            "en": "Parallel grammatical structure requires the participial phrase 'offering...' to match 'providing...'.",
+            "hi": "समानांतर व्याकरणिक संरचना के लिए 'providing' के साथ 'offering' का प्रयोग सही है।"
+          }
+        }
+      ]
+    }
+  ]
+}

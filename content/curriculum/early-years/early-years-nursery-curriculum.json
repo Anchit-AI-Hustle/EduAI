@@ -1,0 +1,430 @@
+{
+  "schemaVersion": "1.0.0",
+  "curriculumVersionId": "early-years-nursery@2026.1.0",
+  "boardId": "early-years",
+  "boardName": "MWCD Navchetana & Aadharshila / NCERT NCF-FS",
+  "yearId": "nursery",
+  "yearLabel": {
+    "en": "Nursery (Balvatika 1)",
+    "hi": "नर्सरी (बालवाटिका 1)"
+  },
+  "nepStage": "foundational-preschool-3-6",
+  "ageBandYears": "3-4 years",
+  "groundingStatus": "fully-sourced",
+  "screenTimePolicy": {
+    "maxMinutesPerDay": 15,
+    "deliveryMode": "co-viewed-caregiver-guided",
+    "guidelineSourceId": "SRC-IAP-SCREENTIME-2022"
+  },
+  "subjects": [
+    {
+      "subjectId": "panchakosha-play-wellness",
+      "name": {
+        "en": "Panchakosha Physical, Socio-Emotional & Aesthetic Play",
+        "hi": "पंचकोश शारीरिक, सामाजिक-भावनात्मक और कला खेल"
+      },
+      "compulsory": true,
+      "stream": "general",
+      "textbooks": [
+        "MWCD Aadharshila (2024) Weekly Play Calendar",
+        "NCERT Unmesh / Barkha Early Readers"
+      ],
+      "skillIds": [
+        "ecce-panchakosha-play"
+      ],
+      "sourceIds": [
+        "SRC-MWCD-AADHARSHILA-2024",
+        "SRC-NCERT-NCFFS-2022"
+      ],
+      "units": [
+        {
+          "unitId": "early-years-nursery-p1",
+          "title": {
+            "en": "Gross & Fine Motor Play: Clay, Origami, Balance & Rhythm",
+            "hi": "स्थूल और सूक्ष्म गामक खेल: मिट्टी, कागज कला और संतुलन"
+          },
+          "notionalHours": 120,
+          "skillIds": [
+            "ecce-panchakosha-play"
+          ],
+          "competencies": [
+            "Develops pincer grip, eye-hand coordination, and rhythmic balance",
+            "Collaborates with peers during circle time and outdoor play"
+          ]
+        }
+      ]
+    },
+    {
+      "subjectId": "early-bilingual-literacy",
+      "name": {
+        "en": "Oral Language, Kahani & Akshara/Phonics Readiness",
+        "hi": "मौखिक भाषा, कहानी और अक्षर/ध्वनि तत्परता"
+      },
+      "compulsory": true,
+      "stream": "general",
+      "textbooks": [
+        "NCERT NCF-FS 2022 Emergent Literacy Cards"
+      ],
+      "skillIds": [
+        "stim-bilingual-babble-words",
+        "lit-phonics-akshara-awareness"
+      ],
+      "sourceIds": [
+        "SRC-NCERT-NCFFS-2022",
+        "SRC-MWCD-AADHARSHILA-2024"
+      ],
+      "units": [
+        {
+          "unitId": "early-years-nursery-l1",
+          "title": {
+            "en": "Story Retelling, Rhyming Games & Sound-Symbol Discovery",
+            "hi": "कहानी सुनाना, तुकबंदी और ध्वनि-अक्षर पहचान"
+          },
+          "notionalHours": 120,
+          "skillIds": [
+            "lit-phonics-akshara-awareness"
+          ],
+          "competencies": [
+            "Identifies beginning sounds in Hindi and English words",
+            "Recognizes print directionality and core aksharas/letters"
+          ]
+        }
+      ]
+    },
+    {
+      "subjectId": "early-numeracy-shapes",
+      "name": {
+        "en": "Pre-Number Concepts, Patterns & Counting in Play",
+        "hi": "पूर्व-संख्या अवधारणाएं, पैटर्न और खेल-खेल में गिनती"
+      },
+      "compulsory": true,
+      "stream": "general",
+      "textbooks": [
+        "MWCD Aadharshila (2024) Cognitive & Numeracy Kit"
+      ],
+      "skillIds": [
+        "num-pre-number-counting-20"
+      ],
+      "sourceIds": [
+        "SRC-MWCD-AADHARSHILA-2024",
+        "SRC-NCERT-NCFFS-2022"
+      ],
+      "units": [
+        {
+          "unitId": "early-years-nursery-n1",
+          "title": {
+            "en": "Sorting, Spatial Comparison, Patterns & Counting 1-20",
+            "hi": "वर्गीकरण, तुलना, पैटर्न और 1-20 तक गिनती"
+          },
+          "notionalHours": 100,
+          "skillIds": [
+            "num-pre-number-counting-20"
+          ],
+          "competencies": [
+            "Compares size, weight, and quantity using concrete pebbles and beads",
+            "Counts up to 20 objects with one-to-one correspondence"
+          ]
+        }
+      ]
+    }
+  ],
+  "skillIds": [
+    "stim-bilingual-babble-words",
+    "ecce-panchakosha-play",
+    "lit-phonics-akshara-awareness",
+    "num-pre-number-counting-20"
+  ],
+  "termPlan": [
+    {
+      "termId": "term-1",
+      "title": {
+        "en": "Term 1: Foundational Concepts, Inquiry & Formative Portfolio",
+        "hi": "सत्र 1: मूल अवधारणाएं, अन्वेषण और रचनात्मक मूल्यांकन"
+      },
+      "weeks": 18,
+      "focusSkills": [
+        "stim-bilingual-babble-words",
+        "ecce-panchakosha-play"
+      ],
+      "milestoneAssessment": "Observational Holistic Progress Card (HPC) Check 1"
+    },
+    {
+      "termId": "term-2",
+      "title": {
+        "en": "Term 2: Applied Problem Solving, Integration & Annual Consolidation",
+        "hi": "सत्र 2: अनुप्रयुक्त समस्या समाधान, एकीकरण और वार्षिक पुनरावृत्ति"
+      },
+      "weeks": 18,
+      "focusSkills": [
+        "stim-bilingual-babble-words",
+        "ecce-panchakosha-play",
+        "lit-phonics-akshara-awareness",
+        "num-pre-number-counting-20"
+      ],
+      "milestoneAssessment": "Observational Holistic Progress Card (HPC) Check 2"
+    }
+  ],
+  "weeklyPlanTemplate": {
+    "studyDaysPerWeek": 5,
+    "totalMinutesPerWeek": 150,
+    "bufferPercent": 15,
+    "dailySchedule": [
+      {
+        "dayOfWeek": "Monday",
+        "blocks": [
+          {
+            "slot": "Block 1 (Core Concept)",
+            "subjectId": "panchakosha-play-wellness",
+            "minutes": 15,
+            "mode": "concept-and-example"
+          },
+          {
+            "slot": "Block 2 (Practice / Activity)",
+            "subjectId": "early-numeracy-shapes",
+            "minutes": 15,
+            "mode": "guided-practice"
+          }
+        ]
+      },
+      {
+        "dayOfWeek": "Tuesday",
+        "blocks": [
+          {
+            "slot": "Block 1 (Core Concept)",
+            "subjectId": "early-bilingual-literacy",
+            "minutes": 15,
+            "mode": "concept-and-example"
+          },
+          {
+            "slot": "Block 2 (Practice / Activity)",
+            "subjectId": "early-bilingual-literacy",
+            "minutes": 15,
+            "mode": "guided-practice"
+          }
+        ]
+      },
+      {
+        "dayOfWeek": "Wednesday",
+        "blocks": [
+          {
+            "slot": "Block 1 (Core Concept)",
+            "subjectId": "panchakosha-play-wellness",
+            "minutes": 15,
+            "mode": "concept-and-example"
+          },
+          {
+            "slot": "Block 2 (Practice / Activity)",
+            "subjectId": "early-bilingual-literacy",
+            "minutes": 15,
+            "mode": "guided-practice"
+          }
+        ]
+      },
+      {
+        "dayOfWeek": "Thursday",
+        "blocks": [
+          {
+            "slot": "Block 1 (Core Concept)",
+            "subjectId": "early-bilingual-literacy",
+            "minutes": 15,
+            "mode": "concept-and-example"
+          },
+          {
+            "slot": "Block 2 (Practice / Activity)",
+            "subjectId": "early-numeracy-shapes",
+            "minutes": 15,
+            "mode": "guided-practice"
+          }
+        ]
+      },
+      {
+        "dayOfWeek": "Friday",
+        "blocks": [
+          {
+            "slot": "Block 1 (Core Concept)",
+            "subjectId": "panchakosha-play-wellness",
+            "minutes": 15,
+            "mode": "concept-and-example"
+          },
+          {
+            "slot": "Block 2 (Practice / Activity)",
+            "subjectId": "early-bilingual-literacy",
+            "minutes": 15,
+            "mode": "guided-practice"
+          }
+        ]
+      }
+    ]
+  },
+  "dailyLessonTemplate": {
+    "sessionMinutes": 15,
+    "offlineFallbackReady": true,
+    "steps": [
+      {
+        "stepId": "step-1-hook",
+        "title": {
+          "en": "1. Prerequisite Warm-Up & Real-World Hook",
+          "hi": "1. पूर्व-ज्ञान पुनरावृत्ति और वास्तविक जीवन से जुड़ाव"
+        },
+        "minutes": 3,
+        "description": "2-question retrieval check on prerequisite skill node before introducing new concept."
+      },
+      {
+        "stepId": "step-2-concept",
+        "title": {
+          "en": "2. Sourced Concept & Worked Example (EN/HI)",
+          "hi": "2. प्रमाणित अवधारणा और हल किया गया उदाहरण (द्विभाषी)"
+        },
+        "minutes": 5,
+        "description": "Concise explanation grounded in official textbook/framework source with zero unverified claims."
+      },
+      {
+        "stepId": "step-3-practice",
+        "title": {
+          "en": "3. Adaptive Guided Practice & 3-Step Hint Ladder",
+          "hi": "3. निर्देशित अभ्यास और 3-स्तरीय संकेत सीढ़ी"
+        },
+        "minutes": 5,
+        "description": "3 to 5 scaffolded practice tasks (offline toy/workbook task for under-6, interactive problems for Classes 1-12)."
+      },
+      {
+        "stepId": "step-4-exit-check",
+        "title": {
+          "en": "4. Mastery Exit Ticket & Evidence Event",
+          "hi": "4. दक्षता जांच और प्रगति साक्ष्य"
+        },
+        "minutes": 3,
+        "description": "Deterministic mastery check that updates the learner's skill graph state and schedules spaced review."
+      }
+    ]
+  },
+  "assessments": {
+    "unitTests": {
+      "frequency": "Every 3 weeks via play-based observation checklist",
+      "format": "Caregiver/Teacher observational rubric (no written stress)",
+      "durationMinutes": 15,
+      "marksOrScale": "3-level developmental rubric (Emerging / Developing / Proficient)",
+      "patternStatus": "observational-rubric-no-written-exam",
+      "sourceIds": [
+        "SRC-NCERT-PARAKH-2024"
+      ]
+    },
+    "internals": {
+      "frequency": "Continuous across each term",
+      "format": "Periodic tests (5 marks), multiple assessment (5 marks), portfolio/workbooks (5 marks), subject enrichment/lab work (5 marks)",
+      "durationMinutes": 40,
+      "marksOrScale": "Holistic Progress Card portfolio",
+      "patternStatus": "observational-rubric-no-written-exam",
+      "sourceIds": [
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-CBSE-SECPART1-2026-27"
+      ]
+    },
+    "termExams": {
+      "frequency": "End of Term 1 (Week 18) and End of Term 2 (Week 36)",
+      "format": "Play and oral fluency showcase",
+      "durationMinutes": 20,
+      "marksOrScale": "Holistic Progress Card",
+      "patternStatus": "observational-rubric-no-written-exam",
+      "sourceIds": [
+        "SRC-NCERT-NCFSE-2023",
+        "SRC-CBSE-SECPART1-2026-27"
+      ]
+    },
+    "boardStyleMocks": {
+      "frequency": "End-of-year stage readiness synthesis",
+      "format": "PARAKH stage benchmark check (Classes 3, 5, 8)",
+      "durationMinutes": 0,
+      "marksOrScale": "Not applicable for early years",
+      "patternStatus": "observational-rubric-no-written-exam",
+      "sourceIds": [
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-CBSE-CURR-2026-27"
+      ]
+    }
+  },
+  "coCurricularPlan": [
+    {
+      "activityId": "nursery-कला-arts",
+      "domain": "Visual & Performing Arts (Kala)",
+      "title": {
+        "en": "Indian Art, Craft, Music & Theatre Studio",
+        "hi": "भारतीय कला, शिल्प, संगीत और रंगमंच"
+      },
+      "weeklyMinutes": 60,
+      "description": "Hands-on sketching, clay modelling, folk rhythm, and dramatic storytelling aligned with NCF-SE Art Education."
+    },
+    {
+      "activityId": "nursery-physical-yoga",
+      "domain": "Physical Education, Yoga & Wellness",
+      "title": {
+        "en": "Daily Outdoor Movement, Yoga & Indigenous Games",
+        "hi": "दैनिक आउटडोर खेल, योग और स्वदेशी खेल"
+      },
+      "weeklyMinutes": 120,
+      "description": "Structured physical play, flexibility, breathwork, and team coordination off-screen."
+    }
+  ],
+  "extracurricularPlan": [
+    {
+      "clubId": "nursery-peer-pod-stem",
+      "category": "STEM & Maker Peer Pod",
+      "title": {
+        "en": "Neighbourhood Science, Nature & Maker Pod",
+        "hi": "पड़ोस विज्ञान, प्रकृति और नवाचार समूह"
+      },
+      "frequency": "Weekly 60-minute collaborative session",
+      "peerPodMode": "Small group of 4-6 learners building offline experiments, nature journals, or coding projects together."
+    },
+    {
+      "clubId": "nursery-peer-pod-expression",
+      "category": "Bilingual Debate, Storytelling & Community Action",
+      "title": {
+        "en": "Bilingual Kahani, Debate & Seva Circle",
+        "hi": "द्विभाषी कहानी, वाद-विवाद और सेवा मंडल"
+      },
+      "frequency": "Bi-weekly 45-minute peer circle",
+      "peerPodMode": "Moderated oral expression, debate, and local community/environmental stewardship."
+    }
+  ],
+  "parentViewPlan": {
+    "cadence": "daily-caregiver-brief",
+    "sections": [
+      "Planned vs Completed Sessions & Weekly Buffer Status",
+      "Skill-Level Mastery Gains & Prerequisite Gaps Bridged",
+      "Screen Time Used vs Pediatric Cap (IAP Compliant)",
+      "Pinned Curriculum Version & Official Source Changelog",
+      "One Concrete Offline Family Action for the Week"
+    ],
+    "homeActions": [
+      {
+        "en": "Spend 15 minutes in screen-free serve-and-return storytelling and sorting household objects in your home language.",
+        "hi": "प्रतिदिन 15 मिनट बिना स्क्रीन के मातृभाषा में कहानी सुनाएं और घरेलू वस्तुओं से खेल-खेल में गिनती करें।"
+      },
+      {
+        "en": "Verify weekly peer-pod outdoor play and co-curricular art/movement completion.",
+        "hi": "साप्ताहिक सह-पाठयक्रम कला, योग और समूह खेल की पूर्णता सुनिश्चित करें।"
+      }
+    ],
+    "consentControls": [
+      "DPDP Act 2023 Section 9 Verifiable Guardian Consent Toggle",
+      "Daily Screen-Time Hard Cap Slider (IAP Guideline Enforced)",
+      "One-Click Full Learner JSON Export & Immediate Data Erasure"
+    ]
+  },
+  "trackBridges": [
+    {
+      "trackId": "jee",
+      "status": "not-started-yet",
+      "bridgedSkillIds": [],
+      "notes": "Competitive track branches activate from Class 8-9 after core numeracy and inquiry foundations are secure."
+    }
+  ],
+  "sourceIds": [
+    "SRC-IAP-SCREENTIME-2022",
+    "SRC-NCERT-PARAKH-2024",
+    "SRC-MWCD-AADHARSHILA-2024",
+    "SRC-NCERT-NCFFS-2022"
+  ],
+  "knownGaps": []
+}

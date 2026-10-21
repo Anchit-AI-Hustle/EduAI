@@ -1,0 +1,612 @@
+{
+  "schemaVersion": "1.0.0",
+  "curriculumVersionId": "cbse-class-06@2026.1.0",
+  "boardId": "cbse",
+  "boardName": "Central Board of Secondary Education (CBSE / NCERT)",
+  "yearId": "class-06",
+  "yearLabel": {
+    "en": "Class 6",
+    "hi": "कक्षा 6"
+  },
+  "nepStage": "middle-classes-6-8",
+  "ageBandYears": "11-12 years",
+  "groundingStatus": "deepened-grade-band",
+  "screenTimePolicy": {
+    "maxMinutesPerDay": 60,
+    "deliveryMode": "independent-with-breaks",
+    "guidelineSourceId": "SRC-IAP-SCREENTIME-2022"
+  },
+  "subjects": [
+    {
+      "subjectId": "mathematics-ganita-prakash",
+      "officialCode": "041-MID",
+      "name": {
+        "en": "Mathematics (Ganita Prakash)",
+        "hi": "गणित (गणित प्रकाश)"
+      },
+      "compulsory": true,
+      "stream": "general",
+      "textbooks": [
+        "NCERT Ganita Prakash (NCF-SE 2023 Series)"
+      ],
+      "skillIds": [
+        "math-integers-number-patterns",
+        "math-ratios-linear-algebra-middle",
+        "math-geometry-mensuration-middle"
+      ],
+      "sourceIds": [
+        "SRC-CBSE-CURR-2026-27",
+        "SRC-NCERT-NCFSE-2023",
+        "SRC-NCERT-NSTC-2023"
+      ],
+      "units": [
+        {
+          "unitId": "cbse-class-06-math-u1",
+          "title": {
+            "en": "Unit 1: Patterns in Mathematics, Prime Time & Number Play",
+            "hi": "इकाई 1: गणित में पैटर्न, अभाज्य संख्याएं और संख्या खेल"
+          },
+          "notionalHours": 45,
+          "skillIds": [
+            "math-integers-number-patterns"
+          ],
+          "competencies": [
+            "Identifies figurate number sequences, Virahanka numbers, and prime factorisation trees",
+            "Evaluates divisibility tests, HCF/LCM, and integer operations on the number line"
+          ]
+        },
+        {
+          "unitId": "cbse-class-06-math-u2",
+          "title": {
+            "en": "Unit 2: Fractions, Rational Numbers, Ratios & Linear Algebra",
+            "hi": "इकाई 2: भिन्न, परिमेय संख्याएं, अनुपात और रैखिक बीजगणित"
+          },
+          "notionalHours": 65,
+          "skillIds": [
+            "math-ratios-linear-algebra-middle"
+          ],
+          "competencies": [
+            "Models multi-step word problems using algebraic expressions and linear equations",
+            "Solves percentage, profit/loss, simple/compound interest, and direct/inverse proportion tasks"
+          ]
+        },
+        {
+          "unitId": "cbse-class-06-math-u3",
+          "title": {
+            "en": "Unit 3: Lines and Angles, Triangles, Symmetry & Perimeter/Area/Volume",
+            "hi": "इकाई 3: रेखाएं और कोण, त्रिभुज, सममिति तथा क्षेत्रमिति"
+          },
+          "notionalHours": 60,
+          "skillIds": [
+            "math-geometry-mensuration-middle"
+          ],
+          "competencies": [
+            "Constructs geometric figures with ruler and compass and proves triangle congruence",
+            "Computes area of polygons and surface area/volume of cubes, cuboids, and cylinders"
+          ]
+        }
+      ]
+    },
+    {
+      "subjectId": "science-curiosity",
+      "officialCode": "086-MID",
+      "name": {
+        "en": "Integrated Science (Curiosity)",
+        "hi": "एकीकृत विज्ञान (जिज्ञासा)"
+      },
+      "compulsory": true,
+      "stream": "general",
+      "textbooks": [
+        "NCERT Curiosity Science Textbook (NCF-SE 2023 Series)"
+      ],
+      "skillIds": [
+        "sci-curiosity-middle-inquiry"
+      ],
+      "sourceIds": [
+        "SRC-CBSE-CURR-2026-27",
+        "SRC-NCERT-NCFSE-2023",
+        "SRC-NCERT-NSTC-2023"
+      ],
+      "units": [
+        {
+          "unitId": "cbse-class-06-sci-u1",
+          "title": {
+            "en": "Unit 1: Materials Around Us, States of Water & Separation Methods",
+            "hi": "इकाई 1: हमारे चारों ओर के पदार्थ, जल की अवस्थाएं और पृथक्करण"
+          },
+          "notionalHours": 50,
+          "skillIds": [
+            "sci-curiosity-middle-inquiry"
+          ],
+          "competencies": [
+            "Classifies materials by solubility, density, conductivity, and chemical change",
+            "Designs filtration, evaporation, and distillation experiments"
+          ]
+        },
+        {
+          "unitId": "cbse-class-06-sci-u2",
+          "title": {
+            "en": "Unit 2: Living Creatures, Mindful Eating, Cell & Body Movements",
+            "hi": "इकाई 2: सजीव जगत, संतुलित आहार, कोशिका और शरीर की गति"
+          },
+          "notionalHours": 55,
+          "skillIds": [
+            "sci-curiosity-middle-inquiry"
+          ],
+          "competencies": [
+            "Tests food samples for carbohydrates, proteins, and fats and maps deficiency prevention",
+            "Explains plant/animal adaptations, respiration, and microscopic cell structures"
+          ]
+        },
+        {
+          "unitId": "cbse-class-06-sci-u3",
+          "title": {
+            "en": "Unit 3: Measurement of Length/Motion, Temperature, Magnets & Beyond Earth",
+            "hi": "इकाई 3: लंबाई और गति का मापन, तापमान, चुंबक और अंतरिक्ष"
+          },
+          "notionalHours": 55,
+          "skillIds": [
+            "sci-curiosity-middle-inquiry"
+          ],
+          "competencies": [
+            "Measures SI units, plots distance-time graphs, and builds simple electric and magnetic circuits",
+            "Explains heat transfer (conduction, convection, radiation) and solar system dynamics"
+          ]
+        }
+      ]
+    },
+    {
+      "subjectId": "social-science-exploring-society",
+      "officialCode": "087-MID",
+      "name": {
+        "en": "Social Science (Exploring Society: India and Beyond)",
+        "hi": "सामाजिक विज्ञान (समाज की खोज: भारत और उससे आगे)"
+      },
+      "compulsory": true,
+      "stream": "general",
+      "textbooks": [
+        "NCERT Exploring Society: India and Beyond (NCF-SE 2023 Series)"
+      ],
+      "skillIds": [
+        "soc-exploring-society-middle"
+      ],
+      "sourceIds": [
+        "SRC-CBSE-CURR-2026-27",
+        "SRC-NCERT-NCFSE-2023",
+        "SRC-NCERT-NSTC-2023"
+      ],
+      "units": [
+        {
+          "unitId": "cbse-class-06-soc-u1",
+          "title": {
+            "en": "Themes A & B: India and the World (Landforms, Oceans) & Tapestry of the Past",
+            "hi": "विषय A और B: भू-आकृतियां, महासागर और अतीत की धरोहर"
+          },
+          "notionalHours": 65,
+          "skillIds": [
+            "soc-exploring-society-middle"
+          ],
+          "competencies": [
+            "Locates latitudes, longitudes, time zones, and major landforms on thematic maps",
+            "Analyses Harappan urban planning, Vedic/Janapada traditions, and historical sources"
+          ]
+        },
+        {
+          "unitId": "cbse-class-06-soc-u2",
+          "title": {
+            "en": "Themes C, D & E: Cultural Heritage, Grassroots Democracy & Economic Life",
+            "hi": "विषय C, D और E: सांस्कृतिक विरासत, जमीनी लोकतंत्र और आर्थिक जीवन"
+          },
+          "notionalHours": 65,
+          "skillIds": [
+            "soc-exploring-society-middle"
+          ],
+          "competencies": [
+            "Compares Three-Tier Panchayati Raj and Urban Local Bodies governance structures",
+            "Classifies primary, secondary, and tertiary economic activities and household budgeting"
+          ]
+        }
+      ]
+    },
+    {
+      "subjectId": "languages-poorvi-malhar",
+      "name": {
+        "en": "Bilingual Languages: English (Poorvi) & Hindi (Malhar)",
+        "hi": "द्विभाषी भाषाएं: अंग्रेजी (पूर्वी) और हिंदी (मल्हार)"
+      },
+      "compulsory": true,
+      "stream": "general",
+      "textbooks": [
+        "NCERT Poorvi (English)",
+        "NCERT Malhar (Hindi)"
+      ],
+      "skillIds": [
+        "lang-bilingual-literature-middle"
+      ],
+      "sourceIds": [
+        "SRC-CBSE-CURR-2026-27",
+        "SRC-NCERT-NCFSE-2023"
+      ],
+      "units": [
+        {
+          "unitId": "cbse-class-06-lang-u1",
+          "title": {
+            "en": "Literature, Grammar in Context, Unseen Reading & Essay Writing",
+            "hi": "साहित्य पठन, संदर्भगत व्याकरण, अपठित गद्यांश और निबंध लेखन"
+          },
+          "notionalHours": 140,
+          "skillIds": [
+            "lang-bilingual-literature-middle"
+          ],
+          "competencies": [
+            "Synthesizes themes across Indian and global prose/poetry in Hindi and English",
+            "Drafts structured essays, notices, and formal letters with accurate syntax"
+          ]
+        }
+      ]
+    },
+    {
+      "subjectId": "computational-ai-vocational",
+      "officialCode": "901-AI",
+      "name": {
+        "en": "Computational Thinking, Coding & Vocational Exposure (Kaushal Bodh)",
+        "hi": "कम्प्यूटेशनल चिंतन, कोडिंग और कौशल बोध"
+      },
+      "compulsory": true,
+      "stream": "vocational",
+      "textbooks": [
+        "NCERT Kaushal Bodh (Vocational Education)",
+        "CBSE Coding & AI Modules"
+      ],
+      "skillIds": [
+        "comp-algorithmic-ai-literacy"
+      ],
+      "sourceIds": [
+        "SRC-CBSE-CURR-2026-27",
+        "SRC-NCERT-NCFSE-2023"
+      ],
+      "units": [
+        {
+          "unitId": "cbse-class-06-comp-u1",
+          "title": {
+            "en": "Algorithms, Data Tables, Python Basics & Ethical AI",
+            "hi": "एल्गोरिदम, डेटा तालिका, पायथन परिचय और नैतिक एआई"
+          },
+          "notionalHours": 60,
+          "skillIds": [
+            "comp-algorithmic-ai-literacy"
+          ],
+          "competencies": [
+            "Designs flowcharts, loops, and conditional logic for real-world problems",
+            "Completes hands-on Kaushal Bodh projects across data, ecology, and community service"
+          ]
+        }
+      ]
+    }
+  ],
+  "skillIds": [
+    "math-integers-number-patterns",
+    "math-ratios-linear-algebra-middle",
+    "math-geometry-mensuration-middle",
+    "sci-curiosity-middle-inquiry",
+    "soc-exploring-society-middle",
+    "lang-bilingual-literature-middle",
+    "comp-algorithmic-ai-literacy"
+  ],
+  "termPlan": [
+    {
+      "termId": "term-1",
+      "title": {
+        "en": "Term 1: Foundational Concepts, Inquiry & Formative Portfolio",
+        "hi": "सत्र 1: मूल अवधारणाएं, अन्वेषण और रचनात्मक मूल्यांकन"
+      },
+      "weeks": 18,
+      "focusSkills": [
+        "math-integers-number-patterns",
+        "math-ratios-linear-algebra-middle",
+        "math-geometry-mensuration-middle",
+        "sci-curiosity-middle-inquiry"
+      ],
+      "milestoneAssessment": "Term 1 Cumulative Competency & Practical Assessment"
+    },
+    {
+      "termId": "term-2",
+      "title": {
+        "en": "Term 2: Applied Problem Solving, Integration & Annual Consolidation",
+        "hi": "सत्र 2: अनुप्रयुक्त समस्या समाधान, एकीकरण और वार्षिक पुनरावृत्ति"
+      },
+      "weeks": 18,
+      "focusSkills": [
+        "math-integers-number-patterns",
+        "math-ratios-linear-algebra-middle",
+        "math-geometry-mensuration-middle",
+        "sci-curiosity-middle-inquiry",
+        "soc-exploring-society-middle",
+        "lang-bilingual-literature-middle",
+        "comp-algorithmic-ai-literacy"
+      ],
+      "milestoneAssessment": "Term 2 Annual Board-Pattern / Stage Mastery Examination"
+    }
+  ],
+  "weeklyPlanTemplate": {
+    "studyDaysPerWeek": 6,
+    "totalMinutesPerWeek": 600,
+    "bufferPercent": 15,
+    "dailySchedule": [
+      {
+        "dayOfWeek": "Monday",
+        "blocks": [
+          {
+            "slot": "Block 1 (Core Concept)",
+            "subjectId": "mathematics-ganita-prakash",
+            "minutes": 30,
+            "mode": "concept-and-example"
+          },
+          {
+            "slot": "Block 2 (Practice / Activity)",
+            "subjectId": "social-science-exploring-society",
+            "minutes": 30,
+            "mode": "guided-practice"
+          }
+        ]
+      },
+      {
+        "dayOfWeek": "Tuesday",
+        "blocks": [
+          {
+            "slot": "Block 1 (Core Concept)",
+            "subjectId": "science-curiosity",
+            "minutes": 30,
+            "mode": "concept-and-example"
+          },
+          {
+            "slot": "Block 2 (Practice / Activity)",
+            "subjectId": "science-curiosity",
+            "minutes": 30,
+            "mode": "guided-practice"
+          }
+        ]
+      },
+      {
+        "dayOfWeek": "Wednesday",
+        "blocks": [
+          {
+            "slot": "Block 1 (Core Concept)",
+            "subjectId": "mathematics-ganita-prakash",
+            "minutes": 30,
+            "mode": "concept-and-example"
+          },
+          {
+            "slot": "Block 2 (Practice / Activity)",
+            "subjectId": "science-curiosity",
+            "minutes": 30,
+            "mode": "guided-practice"
+          }
+        ]
+      },
+      {
+        "dayOfWeek": "Thursday",
+        "blocks": [
+          {
+            "slot": "Block 1 (Core Concept)",
+            "subjectId": "science-curiosity",
+            "minutes": 30,
+            "mode": "concept-and-example"
+          },
+          {
+            "slot": "Block 2 (Practice / Activity)",
+            "subjectId": "social-science-exploring-society",
+            "minutes": 30,
+            "mode": "guided-practice"
+          }
+        ]
+      },
+      {
+        "dayOfWeek": "Friday",
+        "blocks": [
+          {
+            "slot": "Block 1 (Core Concept)",
+            "subjectId": "mathematics-ganita-prakash",
+            "minutes": 30,
+            "mode": "concept-and-example"
+          },
+          {
+            "slot": "Block 2 (Practice / Activity)",
+            "subjectId": "science-curiosity",
+            "minutes": 30,
+            "mode": "guided-practice"
+          }
+        ]
+      },
+      {
+        "dayOfWeek": "Saturday",
+        "blocks": [
+          {
+            "slot": "Block 1 (Core Concept)",
+            "subjectId": "science-curiosity",
+            "minutes": 30,
+            "mode": "concept-and-example"
+          },
+          {
+            "slot": "Block 2 (Practice / Activity)",
+            "subjectId": "science-curiosity",
+            "minutes": 30,
+            "mode": "guided-practice"
+          }
+        ]
+      }
+    ]
+  },
+  "dailyLessonTemplate": {
+    "sessionMinutes": 30,
+    "offlineFallbackReady": true,
+    "steps": [
+      {
+        "stepId": "step-1-hook",
+        "title": {
+          "en": "1. Prerequisite Warm-Up & Real-World Hook",
+          "hi": "1. पूर्व-ज्ञान पुनरावृत्ति और वास्तविक जीवन से जुड़ाव"
+        },
+        "minutes": 6,
+        "description": "2-question retrieval check on prerequisite skill node before introducing new concept."
+      },
+      {
+        "stepId": "step-2-concept",
+        "title": {
+          "en": "2. Sourced Concept & Worked Example (EN/HI)",
+          "hi": "2. प्रमाणित अवधारणा और हल किया गया उदाहरण (द्विभाषी)"
+        },
+        "minutes": 9,
+        "description": "Concise explanation grounded in official textbook/framework source with zero unverified claims."
+      },
+      {
+        "stepId": "step-3-practice",
+        "title": {
+          "en": "3. Adaptive Guided Practice & 3-Step Hint Ladder",
+          "hi": "3. निर्देशित अभ्यास और 3-स्तरीय संकेत सीढ़ी"
+        },
+        "minutes": 9,
+        "description": "3 to 5 scaffolded practice tasks (offline toy/workbook task for under-6, interactive problems for Classes 1-12)."
+      },
+      {
+        "stepId": "step-4-exit-check",
+        "title": {
+          "en": "4. Mastery Exit Ticket & Evidence Event",
+          "hi": "4. दक्षता जांच और प्रगति साक्ष्य"
+        },
+        "minutes": 6,
+        "description": "Deterministic mastery check that updates the learner's skill graph state and schedules spaced review."
+      }
+    ]
+  },
+  "assessments": {
+    "unitTests": {
+      "frequency": "Every 2-3 weeks at unit completion",
+      "format": "20-mark competency check (MCQ + short structured response)",
+      "durationMinutes": 30,
+      "marksOrScale": "20 marks",
+      "patternStatus": "school-internal-formative",
+      "sourceIds": [
+        "SRC-NCERT-PARAKH-2024"
+      ]
+    },
+    "internals": {
+      "frequency": "Continuous across each term",
+      "format": "Periodic tests (5 marks), multiple assessment (5 marks), portfolio/workbooks (5 marks), subject enrichment/lab work (5 marks)",
+      "durationMinutes": 40,
+      "marksOrScale": "20 marks internal weightage",
+      "patternStatus": "sourced-official-pattern",
+      "sourceIds": [
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-CBSE-SECPART1-2026-27"
+      ]
+    },
+    "termExams": {
+      "frequency": "End of Term 1 (Week 18) and End of Term 2 (Week 36)",
+      "format": "Competency-based written and practical examination",
+      "durationMinutes": 180,
+      "marksOrScale": "80 marks theory + 20 marks internal (or 70 + 30 for senior lab sciences)",
+      "patternStatus": "sourced-official-pattern",
+      "sourceIds": [
+        "SRC-NCERT-NCFSE-2023",
+        "SRC-CBSE-SECPART1-2026-27"
+      ]
+    },
+    "boardStyleMocks": {
+      "frequency": "End-of-year stage readiness synthesis",
+      "format": "PARAKH stage benchmark check (Classes 3, 5, 8)",
+      "durationMinutes": 180,
+      "marksOrScale": "80 / 100 marks",
+      "patternStatus": "sourced-official-pattern",
+      "sourceIds": [
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-CBSE-CURR-2026-27"
+      ]
+    }
+  },
+  "coCurricularPlan": [
+    {
+      "activityId": "class-06-कला-arts",
+      "domain": "Visual & Performing Arts (Kala)",
+      "title": {
+        "en": "Indian Art, Craft, Music & Theatre Studio",
+        "hi": "भारतीय कला, शिल्प, संगीत और रंगमंच"
+      },
+      "weeklyMinutes": 60,
+      "description": "Hands-on sketching, clay modelling, folk rhythm, and dramatic storytelling aligned with NCF-SE Art Education."
+    },
+    {
+      "activityId": "class-06-physical-yoga",
+      "domain": "Physical Education, Yoga & Wellness",
+      "title": {
+        "en": "Daily Outdoor Movement, Yoga & Indigenous Games",
+        "hi": "दैनिक आउटडोर खेल, योग और स्वदेशी खेल"
+      },
+      "weeklyMinutes": 120,
+      "description": "Structured physical play, flexibility, breathwork, and team coordination off-screen."
+    }
+  ],
+  "extracurricularPlan": [
+    {
+      "clubId": "class-06-peer-pod-stem",
+      "category": "STEM & Maker Peer Pod",
+      "title": {
+        "en": "Neighbourhood Science, Nature & Maker Pod",
+        "hi": "पड़ोस विज्ञान, प्रकृति और नवाचार समूह"
+      },
+      "frequency": "Weekly 60-minute collaborative session",
+      "peerPodMode": "Small group of 4-6 learners building offline experiments, nature journals, or coding projects together."
+    },
+    {
+      "clubId": "class-06-peer-pod-expression",
+      "category": "Bilingual Debate, Storytelling & Community Action",
+      "title": {
+        "en": "Bilingual Kahani, Debate & Seva Circle",
+        "hi": "द्विभाषी कहानी, वाद-विवाद और सेवा मंडल"
+      },
+      "frequency": "Bi-weekly 45-minute peer circle",
+      "peerPodMode": "Moderated oral expression, debate, and local community/environmental stewardship."
+    }
+  ],
+  "parentViewPlan": {
+    "cadence": "weekly-family-digest",
+    "sections": [
+      "Planned vs Completed Sessions & Weekly Buffer Status",
+      "Skill-Level Mastery Gains & Prerequisite Gaps Bridged",
+      "Screen Time Used vs Pediatric Cap (IAP Compliant)",
+      "Pinned Curriculum Version & Official Source Changelog",
+      "One Concrete Offline Family Action for the Week"
+    ],
+    "homeActions": [
+      {
+        "en": "Review your child's 1-page weekly mastery digest and ask them to teach you one concept they solved this week.",
+        "hi": "सप्ताह के अंत में बच्चे की प्रगति रिपोर्ट देखें और उनसे इस सप्ताह सीखा गया एक विषय समझाने को कहें।"
+      },
+      {
+        "en": "Verify weekly peer-pod outdoor play and co-curricular art/movement completion.",
+        "hi": "साप्ताहिक सह-पाठयक्रम कला, योग और समूह खेल की पूर्णता सुनिश्चित करें।"
+      }
+    ],
+    "consentControls": [
+      "DPDP Act 2023 Section 9 Verifiable Guardian Consent Toggle",
+      "Daily Screen-Time Hard Cap Slider (IAP Guideline Enforced)",
+      "One-Click Full Learner JSON Export & Immediate Data Erasure"
+    ]
+  },
+  "trackBridges": [
+    {
+      "trackId": "jee",
+      "status": "not-started-yet",
+      "bridgedSkillIds": [],
+      "notes": "Competitive track branches activate from Class 8-9 after core numeracy and inquiry foundations are secure."
+    }
+  ],
+  "sourceIds": [
+    "SRC-IAP-SCREENTIME-2022",
+    "SRC-NCERT-PARAKH-2024",
+    "SRC-CBSE-CURR-2026-27",
+    "SRC-NCERT-NCFSE-2023",
+    "SRC-NCERT-NSTC-2023"
+  ],
+  "knownGaps": []
+}

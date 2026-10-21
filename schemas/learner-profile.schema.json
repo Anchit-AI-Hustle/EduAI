@@ -1,132 +1,409 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "learner-profile.schema.json",
-  "title": "Learner profile",
-  "description": "Data-minimised by design: birth year-month only, no government IDs, no free-text health data. Minors require a guardian consent record (DPDP Act 2023 s.9 and DPDP Rules 2025; substantive obligations from 14 May 2027).",
+  "$id": "https://everyyear.school/schemas/learner-profile.schema.json",
+  "title": "EveryYear Learner Profile Schema",
   "type": "object",
-  "required": ["schema_version", "learner_id", "created_at", "is_minor", "birth_year_month", "languages", "enrolment", "skill_mastery", "device_and_network", "screen_time_policy", "parent_view_prefs", "data_retention"],
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "learnerId",
+    "createdAt",
+    "education",
+    "preferences",
+    "consent",
+    "privacy"
+  ],
   "properties": {
-    "schema_version": { "const": "1.0.0" },
-    "learner_id": { "type": "string", "format": "uuid" },
-    "created_at": { "type": "string", "format": "date-time" },
-    "is_minor": { "type": "boolean" },
-    "birth_year_month": { "type": "string", "pattern": "^(19|20)\\d{2}-(0[1-9]|1[0-2])$" },
-    "nickname": { "type": "string", "maxLength": 40 },
-    "languages": {
-      "type": "object",
-      "required": ["home_languages", "instruction_language"],
-      "properties": {
-        "home_languages": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
-        "instruction_language": { "enum": ["en", "hi"] },
-        "r1": { "type": ["string", "null"] },
-        "r2": { "type": ["string", "null"] },
-        "r3": { "type": ["string", "null"] }
-      },
-      "additionalProperties": false
+    "schemaVersion": {
+      "const": "1.0.0"
     },
-    "enrolment": {
-      "type": "object",
-      "required": ["board_id", "current_year_id", "certification_route"],
-      "properties": {
-        "board_id": { "enum": ["national-early-years", "cbse", "cisce", "nios", "state-boards"] },
-        "current_year_id": { "type": "string", "pattern": "^(home-0-3|nursery|lkg|ukg|class-(0[1-9]|1[0-2]))$" },
-        "academic_session": { "type": "string" },
-        "certification_route": { "enum": ["nios-open-schooling", "enrolled-in-cbse-school", "enrolled-in-cisce-school", "enrolled-in-state-board-school", "not-applicable-early-years", "undecided"] }
-      },
-      "additionalProperties": false
+    "learnerId": {
+      "type": "string",
+      "pattern": "^[a-z0-9]{10,32}$"
     },
-    "placement": {
+    "createdAt": {
+      "type": "string"
+    },
+    "updatedAt": {
+      "type": "string"
+    },
+    "identity": {
       "type": "object",
+      "additionalProperties": false,
       "properties": {
-        "diagnostic_version": { "type": "string" },
-        "taken_at": { "type": "string", "format": "date-time" },
-        "placed_year_by_skill": { "type": "object", "additionalProperties": { "type": "string" } },
-        "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
+        "displayName": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80
+        },
+        "preferredName": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 40
+        },
+        "dateOfBirth": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}(-\\d{2})?$"
+        },
+        "guardianContactRef": {
+          "type": "string",
+          "minLength": 6
+        }
       }
     },
-    "skill_mastery": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "required": ["skill_id", "mastery", "evidence_count"],
-        "properties": {
-          "skill_id": { "type": "string" },
-          "mastery": { "type": "number", "minimum": 0, "maximum": 1 },
-          "evidence_count": { "type": "integer", "minimum": 0 },
-          "last_assessed_at": { "type": "string", "format": "date-time" }
+    "education": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "currentYearId",
+        "boardId",
+        "languages"
+      ],
+      "properties": {
+        "currentYearId": {
+          "enum": [
+            "home-0-3",
+            "nursery",
+            "lkg",
+            "ukg",
+            "class-01",
+            "class-02",
+            "class-03",
+            "class-04",
+            "class-05",
+            "class-06",
+            "class-07",
+            "class-08",
+            "class-09",
+            "class-10",
+            "class-11",
+            "class-12"
+          ]
         },
-        "additionalProperties": false
+        "boardId": {
+          "enum": [
+            "early-years",
+            "cbse",
+            "cisce",
+            "nios",
+            "state-boards"
+          ]
+        },
+        "stateBoardId": {
+          "type": "string"
+        },
+        "schoolType": {
+          "enum": [
+            "school-enrolled",
+            "home-learning",
+            "open-schooling",
+            "hybrid",
+            "unverified"
+          ]
+        },
+        "completedYearIds": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        },
+        "languages": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "code",
+              "role"
+            ],
+            "properties": {
+              "code": {
+                "enum": [
+                  "en",
+                  "hi",
+                  "other"
+                ]
+              },
+              "otherLabel": {
+                "type": "string"
+              },
+              "role": {
+                "enum": [
+                  "medium",
+                  "first-language",
+                  "second-language",
+                  "third-language"
+                ]
+              }
+            }
+          }
+        },
+        "priorBoardIds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "mediumOfInstruction": {
+          "enum": [
+            "en",
+            "hi",
+            "bilingual",
+            "other"
+          ]
+        }
       }
     },
     "goals": {
       "type": "object",
+      "additionalProperties": false,
       "properties": {
-        "track_ids": { "type": "array", "items": { "enum": ["jee-main", "jee-advanced", "neet-ug", "cuet-ug", "upsc-cse", "sat", "act", "ielts", "toefl"] } }
+        "targetTracks": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "jee",
+              "neet",
+              "cuet",
+              "upsc",
+              "sat",
+              "act",
+              "ielts",
+              "toefl"
+            ]
+          }
+        },
+        "targetExamYear": {
+          "type": "integer",
+          "minimum": 2026,
+          "maximum": 2045
+        },
+        "weeklyStudyMinutes": {
+          "type": "integer",
+          "minimum": 30,
+          "maximum": 3600
+        },
+        "notes": {
+          "type": "string",
+          "maxLength": 500
+        }
+      }
+    },
+    "preferences": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "uiLanguage"
+      ],
+      "properties": {
+        "uiLanguage": {
+          "enum": [
+            "en",
+            "hi"
+          ]
+        },
+        "contentLanguageMix": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "explanation": {
+              "enum": [
+                "en",
+                "hi",
+                "both"
+              ]
+            },
+            "practice": {
+              "enum": [
+                "en",
+                "hi",
+                "both"
+              ]
+            }
+          }
+        },
+        "sessionLengthMinutes": {
+          "type": "integer",
+          "minimum": 5,
+          "maximum": 90
+        },
+        "offlineFirst": {
+          "type": "boolean"
+        },
+        "parentViewEnabled": {
+          "type": "boolean"
+        },
+        "reducedMotion": {
+          "type": "boolean"
+        }
+      }
+    },
+    "consent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "policyVersion"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "not-required",
+            "guardian-pending",
+            "guardian-verified",
+            "guardian-declined",
+            "withdrawn"
+          ]
+        },
+        "policyVersion": {
+          "type": "string"
+        },
+        "consentedAt": {
+          "type": "string"
+        },
+        "guardianRelationship": {
+          "enum": [
+            "parent",
+            "legal-guardian",
+            "other"
+          ]
+        },
+        "verificationMethod": {
+          "enum": [
+            "school-attestation",
+            "digilocker",
+            "payment-instrument",
+            "in-person",
+            "other"
+          ]
+        },
+        "jurisdiction": {
+          "enum": [
+            "IN"
+          ]
+        },
+        "dataProcessingConsent": {
+          "type": "boolean"
+        },
+        "mediaConsent": {
+          "type": "boolean"
+        }
+      }
+    },
+    "privacy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "dataResidency",
+        "retentionClass",
+        "analyticsOptOut"
+      ],
+      "properties": {
+        "dataResidency": {
+          "const": "IN"
+        },
+        "retentionClass": {
+          "enum": [
+            "session",
+            "one-year",
+            "until-withdrawal",
+            "legal-minimum"
+          ]
+        },
+        "analyticsOptOut": {
+          "type": "boolean"
+        },
+        "thirdPartyAiProcessingAllowed": {
+          "type": "boolean"
+        },
+        "exportRequestedAt": {
+          "type": "string"
+        },
+        "deletionRequestedAt": {
+          "type": "string"
+        }
+      }
+    },
+    "diagnosticState": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "lastDiagnosticId": {
+          "type": "string"
+        },
+        "lastDiagnosticAt": {
+          "type": "string"
+        },
+        "confidence": {
+          "enum": [
+            "low",
+            "medium",
+            "high"
+          ]
+        },
+        "masterySummary": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "skillId",
+              "mastery",
+              "evidenceCount"
+            ],
+            "properties": {
+              "skillId": {
+                "type": "string"
+              },
+              "mastery": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              },
+              "evidenceCount": {
+                "type": "integer",
+                "minimum": 0
+              }
+            }
+          }
+        }
+      }
+    },
+    "planState": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "activePlanId": {
+          "type": "string"
+        },
+        "curriculumVersion": {
+          "type": "string"
+        },
+        "planRevision": {
+          "type": "integer",
+          "minimum": 1
+        }
       }
     },
     "accessibility": {
       "type": "object",
+      "additionalProperties": false,
       "properties": {
-        "audio_first": { "type": "boolean" },
-        "font_scale": { "type": "number", "minimum": 1, "maximum": 2 },
-        "reduced_motion": { "type": "boolean" }
-      },
-      "additionalProperties": false
-    },
-    "device_and_network": {
-      "type": "object",
-      "required": ["primary_device", "bandwidth", "offline_packs_enabled"],
-      "properties": {
-        "primary_device": { "enum": ["phone", "tablet", "laptop", "shared-family-device", "no-device-caregiver-led"] },
-        "bandwidth": { "enum": ["offline", "2g", "3g", "4g-or-better", "broadband"] },
-        "offline_packs_enabled": { "type": "boolean" }
-      },
-      "additionalProperties": false
-    },
-    "screen_time_policy": {
-      "type": "object",
-      "required": ["daily_learner_screen_minutes_cap", "basis"],
-      "properties": {
-        "daily_learner_screen_minutes_cap": { "type": "integer", "minimum": 0, "maximum": 600 },
-        "basis": { "enum": ["who-under-5-guideline", "guardian-set", "product-default-school-age"] }
-      },
-      "additionalProperties": false
-    },
-    "guardian_consent": {
-      "type": "object",
-      "required": ["guardian_ref", "relationship", "verification_method", "scopes", "notice_version", "granted_at"],
-      "properties": {
-        "guardian_ref": { "type": "string", "format": "uuid" },
-        "relationship": { "enum": ["parent", "lawful-guardian"] },
-        "verification_method": {
-          "enum": ["identity-and-age-already-held-by-fiduciary", "voluntarily-provided-details-verified", "government-authorised-virtual-token"],
-          "description": "Paraphrases the verifiable-consent mechanisms in DPDP Rules 2025 Rule 10. Confirm wording against the gazette before Phase 2 (gap G-LEGAL-RULE-10-TEXT)."
+        "accommodations": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
         },
-        "scopes": { "type": "array", "items": { "enum": ["learning-delivery", "progress-reports-to-guardian", "diagnostic-assessment", "anonymised-outcome-research"] }, "minItems": 1 },
-        "notice_version": { "type": "string" },
-        "granted_at": { "type": "string", "format": "date-time" },
-        "withdrawn_at": { "type": ["string", "null"], "format": "date-time" }
-      },
-      "additionalProperties": false
-    },
-    "parent_view_prefs": {
-      "type": "object",
-      "required": ["language", "digest"],
-      "properties": {
-        "language": { "enum": ["en", "hi"] },
-        "digest": { "enum": ["daily", "weekly", "off"] }
-      },
-      "additionalProperties": false
-    },
-    "data_retention": {
-      "type": "object",
-      "required": ["erase_after_inactive_days"],
-      "properties": { "erase_after_inactive_days": { "type": "integer", "minimum": 30 } },
-      "additionalProperties": false
+        "screenTimeCapMinutesPerDay": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 480
+        }
+      }
     }
-  },
-  "allOf": [
-    { "if": { "properties": { "is_minor": { "const": true } } }, "then": { "required": ["guardian_consent"] } }
-  ],
-  "additionalProperties": false
+  }
 }

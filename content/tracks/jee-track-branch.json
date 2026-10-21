@@ -1,0 +1,69 @@
+{
+  "trackId": "jee",
+  "title": {
+    "en": "JEE (Main & Advanced) Engineering Track",
+    "hi": "जेईई (मेन और एडवांस्ड) इंजीनियरिंग ट्रैक"
+  },
+  "category": "competitive-india",
+  "startingYearId": "class-08",
+  "targetYears": [
+    "class-08",
+    "class-09",
+    "class-10",
+    "class-11",
+    "class-12"
+  ],
+  "conductingBody": "National Testing Agency (NTA) & IIT Joint Admission Board",
+  "sourceIds": [
+    "SRC-NTA-JEEMAIN-2026",
+    "SRC-CBSE-CURR-2026-27"
+  ],
+  "examPattern": {
+    "mode": "Computer Based Test (CBT)",
+    "durationMinutes": 180,
+    "totalMarks": "300 Marks (75 Questions: 25 each in Mathematics, Physics, Chemistry; +4/-1 marking)",
+    "patternStatus": "sourced-official-pattern"
+  },
+  "prerequisiteSkillIds": [
+    "math-ratios-linear-algebra-middle",
+    "math-geometry-mensuration-middle",
+    "sci-curiosity-middle-inquiry"
+  ],
+  "coreTrackSkillIds": [
+    "math-polynomials-quadratics-sec",
+    "math-trigonometry-coordinate-sec",
+    "math-calculus-vectors-srsec",
+    "sci-physics-srsec-11-12",
+    "sci-chemistry-srsec-11-12"
+  ],
+  "domains": [
+    {
+      "name": "Mathematics (Units 1-14)",
+      "topics": [
+        "Sets, Complex Numbers & Quadratics",
+        "Matrices & Determinants",
+        "Permutations, Combinations & Binomial",
+        "Integral & Differential Calculus",
+        "Coordinate Geometry & 3D Vectors",
+        "Statistics & Probability"
+      ]
+    },
+    {
+      "name": "Physics (Units 1-20)",
+      "topics": [
+        "Kinematics, Laws of Motion, Work/Energy & Rotational Dynamics",
+        "Gravitation, Properties of Solids/Liquids & Thermodynamics",
+        "Electrostatics, Current Electricity, Magnetism & EMI/AC",
+        "Optics, Dual Nature, Atoms/Nuclei & Electronic Devices"
+      ]
+    },
+    {
+      "name": "Chemistry (Units 1-20)",
+      "topics": [
+        "Physical: Atomic Structure, Thermodynamics, Equilibrium, Electrochemistry, Kinetics",
+        "Inorganic: Classification, Bonding, p/d/f-Block & Coordination Compounds",
+        "Organic: Hydrocarbons, Haloalkanes, Oxygen/Nitrogen Compounds & Biomolecules"
+      ]
+    }
+  ]
+}

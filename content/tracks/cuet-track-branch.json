@@ -1,0 +1,62 @@
+{
+  "trackId": "cuet",
+  "title": {
+    "en": "CUET (UG) Central & Participating Universities Track",
+    "hi": "सीयूईटी (यूजी) केंद्रीय विश्वविद्यालय प्रवेश ट्रैक"
+  },
+  "category": "competitive-india",
+  "startingYearId": "class-09",
+  "targetYears": [
+    "class-09",
+    "class-10",
+    "class-11",
+    "class-12"
+  ],
+  "conductingBody": "National Testing Agency (NTA)",
+  "sourceIds": [
+    "SRC-NTA-CUETUG-2026",
+    "SRC-CBSE-CURR-2026-27"
+  ],
+  "examPattern": {
+    "mode": "Hybrid / Computer Based Test (CBT)",
+    "durationMinutes": 60,
+    "totalMarks": "Per-Paper Scoring (+5 for correct, -1 for incorrect across Languages, Domain Subjects, and General Test)",
+    "patternStatus": "sourced-official-pattern"
+  },
+  "prerequisiteSkillIds": [
+    "lang-bilingual-literature-middle",
+    "math-ratios-linear-algebra-middle"
+  ],
+  "coreTrackSkillIds": [
+    "lang-academic-rhetoric-global-exams",
+    "math-calculus-vectors-srsec",
+    "sci-physics-srsec-11-12",
+    "sci-chemistry-srsec-11-12",
+    "sci-biology-srsec-11-12",
+    "soc-humanities-commerce-srsec"
+  ],
+  "domains": [
+    {
+      "name": "Section IA & IB: Languages",
+      "topics": [
+        "Reading Comprehension (Factual, Narrative, Literary)",
+        "Verbal Ability, Rearranging Parts, Vocabulary & Synonyms/Antonyms"
+      ]
+    },
+    {
+      "name": "Section II: Domain Subjects (Class 12 NCERT Aligned)",
+      "topics": [
+        "Sciences (Mathematics, Physics, Chemistry, Biology, Computer Science)",
+        "Humanities & Social Sciences (History, Political Science, Geography, Sociology)",
+        "Commerce (Accountancy, Economics, Business Studies)"
+      ]
+    },
+    {
+      "name": "Section III: General Test",
+      "topics": [
+        "Quantitative Reasoning (up to Class 8/10 NCERT)",
+        "Logical & Analytical Reasoning, General Knowledge & Current Affairs"
+      ]
+    }
+  ]
+}

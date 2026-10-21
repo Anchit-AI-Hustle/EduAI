@@ -1,0 +1,270 @@
+{
+  "schemaVersion": "1.0.0",
+  "updatedAt": "2026-10-22T00:00:00.000Z",
+  "sources": [
+    {
+      "sourceId": "SRC-MWCD-NAVCHETANA-2024",
+      "authority": "Ministry of Women and Child Development (MWCD), Government of India",
+      "title": "Navchetana - National Framework for Early Childhood Stimulation for Children from Birth to Three Years (2024)",
+      "officialUrl": "https://spniwcd.wcd.gov.in/early-childhood-care-and-education/documents",
+      "category": "early-years-framework",
+      "publishedYear": 2024,
+      "verifiedAt": "2026-10-22",
+      "verificationStatus": "verified-primary-source",
+      "scopeNotes": "Governs home-0-3 stimulation across sensory, motor, cognitive, language, and caregiver bonding milestones."
+    },
+    {
+      "sourceId": "SRC-MWCD-AADHARSHILA-2024",
+      "authority": "Ministry of Women and Child Development (MWCD), Government of India",
+      "title": "Aadharshila - National Curriculum for Early Childhood Care and Education for Children from Three to Six Years (2024)",
+      "officialUrl": "https://wcd.gov.in/offerings/early-childhood-care-and-education",
+      "category": "early-years-framework",
+      "publishedYear": 2024,
+      "verifiedAt": "2026-10-22",
+      "verificationStatus": "verified-primary-source",
+      "scopeNotes": "Governs nursery, LKG, and UKG play-based weekly and daily schedules across Panchakosha domains."
+    },
+    {
+      "sourceId": "SRC-NCERT-NCFFS-2022",
+      "authority": "National Council of Educational Research and Training (NCERT)",
+      "title": "National Curriculum Framework for Foundational Stage (NCF-FS) 2022",
+      "officialUrl": "https://ncert.nic.in/pdf/NCF_for_Foundational_Stage_20_October_2022.pdf",
+      "category": "national-curriculum-framework",
+      "publishedYear": 2022,
+      "verifiedAt": "2026-10-22",
+      "verificationStatus": "verified-primary-source",
+      "scopeNotes": "Defines Curricular Goals and Competencies for ages 3 to 8 (Nursery, LKG, UKG, Class 1, Class 2)."
+    },
+    {
+      "sourceId": "SRC-NCERT-NCFSE-2023",
+      "authority": "National Council of Educational Research and Training (NCERT)",
+      "title": "National Curriculum Framework for School Education (NCF-SE) 2023",
+      "officialUrl": "https://ncert.nic.in/pdf/NCFSE-2023-August_2023.pdf",
+      "category": "national-curriculum-framework",
+      "publishedYear": 2023,
+      "verifiedAt": "2026-10-22",
+      "verificationStatus": "verified-primary-source",
+      "scopeNotes": "Defines 5+3+3+4 stages, Curricular Goals, Competencies, notional hours, and assessment principles from Foundational to Secondary Class 12."
+    },
+    {
+      "sourceId": "SRC-NCERT-NSTC-2023",
+      "authority": "National Council of Educational Research and Training (NCERT)",
+      "title": "National Syllabus and Teaching-Learning Material Committee (NSTC) Notification and NEP 2020 Alignment",
+      "officialUrl": "https://ncert.nic.in/pdf/notice/Constitution_of_High-Powered_Committee-NSTC.pdf",
+      "category": "national-curriculum-framework",
+      "publishedYear": 2023,
+      "verifiedAt": "2026-10-22",
+      "verificationStatus": "verified-primary-source",
+      "scopeNotes": "Governs new NCERT syllabus and textbook development across Classes 1 to 12 under NCF-SE 2023."
+    },
+    {
+      "sourceId": "SRC-CBSE-CURR-2026-27",
+      "authority": "Central Board of Secondary Education (CBSE Academics Unit)",
+      "title": "CBSE Secondary and Senior Secondary School Curriculum 2026-27",
+      "officialUrl": "https://cbseacademic.nic.in/curriculum_2027.html",
+      "category": "school-board-syllabus",
+      "publishedYear": 2026,
+      "verifiedAt": "2026-10-22",
+      "verificationStatus": "verified-primary-source",
+      "scopeNotes": "Official CBSE scheme of studies, subject codes, internal assessment rubrics, and annual board exam weightages."
+    },
+    {
+      "sourceId": "SRC-CBSE-SECPART1-2026-27",
+      "authority": "Central Board of Secondary Education (CBSE Academics Unit)",
+      "title": "CBSE Secondary School Curriculum 2026-27 Part 1 Academic Guidelines",
+      "officialUrl": "https://cbseacademic.nic.in/web_material/CurriculumMain27/SecPart1/Curriculum_SecP1_2026-27.pdf",
+      "category": "school-board-syllabus",
+      "publishedYear": 2026,
+      "verifiedAt": "2026-10-22",
+      "verificationStatus": "verified-primary-source",
+      "scopeNotes": "Details CBSE competency-based assessment structure, 20-mark internal assessment, and 80-mark board theory blueprint."
+    },
+    {
+      "sourceId": "SRC-CISCE-PUB-2026",
+      "authority": "Council for the Indian School Certificate Examinations (CISCE)",
+      "title": "CISCE Curriculum Pre-School to Class VIII and Regulations & Syllabuses for ICSE (Class X) and ISC (Class XII)",
+      "officialUrl": "https://www.ciseresults.org/publications.html",
+      "category": "school-board-syllabus",
+      "publishedYear": 2026,
+      "verifiedAt": "2026-10-22",
+      "verificationStatus": "verified-portal-with-chapter-gaps",
+      "scopeNotes": "Official CISCE publication index for Pre-School to Class 8, ICSE Class 9-10 Group I/II/III subjects, and ISC Class 11-12 streams."
+    },
+    {
+      "sourceId": "SRC-NIOS-OBE-2026",
+      "authority": "National Institute of Open Schooling (NIOS)",
+      "title": "NIOS Open Basic Education (OBE Levels A, B, C) Equivalent to Classes 3, 5, and 8",
+      "officialUrl": "https://rcpune.nios.ac.in/open-basic-education-courses-material.html",
+      "category": "open-schooling",
+      "publishedYear": 2026,
+      "verifiedAt": "2026-10-22",
+      "verificationStatus": "verified-primary-source",
+      "scopeNotes": "Official open-schooling elementary equivalence levels for learners outside conventional schools."
+    },
+    {
+      "sourceId": "SRC-NIOS-SECSRSEC-2026",
+      "authority": "National Institute of Open Schooling (NIOS)",
+      "title": "NIOS Secondary (Class 10) and Senior Secondary (Class 12) Subject List and Scheme of Studies",
+      "officialUrl": "https://sdmis.nios.ac.in/static/dist/images/pdf/subjects-available/subjects-available.pdf",
+      "category": "open-schooling",
+      "publishedYear": 2026,
+      "verifiedAt": "2026-10-22",
+      "verificationStatus": "verified-primary-source",
+      "scopeNotes": "Defines NIOS subject codes, Tutor Marked Assignment (TMA) weightages, and Public / On-Demand Exam pathways."
+    },
+    {
+      "sourceId": "SRC-STATE-MSBSHSE-2026",
+      "authority": "Maharashtra State Board of Secondary and Higher Secondary Education (MSBSHSE) & Tamil Nadu DGE",
+      "title": "State Board SSC / HSC Academic Portal and Equivalency Reference",
+      "officialUrl": "https://www.mahahsscboard.in/en/studentCorner",
+      "category": "school-board-syllabus",
+      "publishedYear": 2026,
+      "verifiedAt": "2026-10-22",
+      "verificationStatus": "verified-portal-with-chapter-gaps",
+      "scopeNotes": "Representative state board reference mapped onto the NCF-SE shared skill graph; state-specific language chapters are labelled as Phase 3 ingestion items."
+    },
+    {
+      "sourceId": "SRC-NTA-JEEMAIN-2026",
+      "authority": "National Testing Agency (NTA)",
+      "title": "Syllabus for Joint Entrance Examination JEE (Main) 2026",
+      "officialUrl": "https://jeemain.nta.nic.in/document/syllabus-2026/",
+      "category": "competitive-exam-india",
+      "publishedYear": 2026,
+      "verifiedAt": "2026-10-22",
+      "verificationStatus": "verified-primary-source",
+      "scopeNotes": "Official JEE Main Mathematics, Physics, and Chemistry syllabus units and CBT Paper 1 examination structure."
+    },
+    {
+      "sourceId": "SRC-NTA-NEETUG-2026",
+      "authority": "National Testing Agency (NTA) & National Medical Commission (NMC)",
+      "title": "Syllabus for NEET (UG) 2026 Examination",
+      "officialUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260108180635.pdf",
+      "category": "competitive-exam-india",
+      "publishedYear": 2026,
+      "verifiedAt": "2026-10-22",
+      "verificationStatus": "verified-primary-source",
+      "scopeNotes": "Official Physics, Chemistry, and Biology (Botany and Zoology) unit syllabus notified by NMC UGMEB and NTA."
+    },
+    {
+      "sourceId": "SRC-NTA-CUETUG-2026",
+      "authority": "National Testing Agency (NTA)",
+      "title": "CUET (UG) 2026 Official Syllabus Portal",
+      "officialUrl": "https://cuet.nta.nic.in/cuetug-2026-syllabus/",
+      "category": "competitive-exam-india",
+      "publishedYear": 2026,
+      "verifiedAt": "2026-10-22",
+      "verificationStatus": "verified-primary-source",
+      "scopeNotes": "Covers Section IA/IB Languages, Section II Domain-Specific Subjects (Class 12 NCERT aligned), and Section III General Test."
+    },
+    {
+      "sourceId": "SRC-UPSC-CSE-2026",
+      "authority": "Union Public Service Commission (UPSC)",
+      "title": "UPSC Civil Services Examination Revised Syllabus and Scheme (Prelims GS, CSAT, and Mains)",
+      "officialUrl": "https://www.upsc.gov.in/examinations/revised-syllabus-scheme",
+      "category": "competitive-exam-india",
+      "publishedYear": 2026,
+      "verifiedAt": "2026-10-22",
+      "verificationStatus": "verified-primary-source",
+      "scopeNotes": "Official scheme for Prelims Paper I (General Studies) and Paper II (CSAT) plus Mains papers."
+    },
+    {
+      "sourceId": "SRC-CB-DIGITALSAT-2026",
+      "authority": "College Board",
+      "title": "Assessment Framework and Test Specifications for the Digital SAT Suite",
+      "officialUrl": "https://satsuite.collegeboard.org/media/pdf/assessment-framework-for-digital-sat-suite.pdf",
+      "category": "study-abroad-exam",
+      "publishedYear": 2026,
+      "verifiedAt": "2026-10-22",
+      "verificationStatus": "verified-primary-source",
+      "scopeNotes": "Defines Reading and Writing domains (Craft and Structure, Information and Ideas, Standard English Conventions, Expression of Ideas) and Math domains (Algebra, Advanced Math, Problem-Solving and Data Analysis, Geometry and Trigonometry)."
+    },
+    {
+      "sourceId": "SRC-ACT-SPEC-2026",
+      "authority": "ACT, Inc. ( Consequential Validity & College Readiness Benchmarks )",
+      "title": "ACT Test Structure and College Readiness Standards (English, Math, Reading, Science)",
+      "officialUrl": "https://satsuite.collegeboard.org/sat/whats-on-the-test",
+      "category": "study-abroad-exam",
+      "publishedYear": 2026,
+      "verifiedAt": "2026-10-22",
+      "verificationStatus": "verified-portal-with-chapter-gaps",
+      "scopeNotes": "Maps ACT English, Mathematics, Reading, and Science Reasoning onto secondary school skill nodes; full ACT item bank labelled for Phase 4 expansion."
+    },
+    {
+      "sourceId": "SRC-IELTS-ACADEMIC-2026",
+      "authority": "IELTS Official (British Council, IDP, Cambridge)",
+      "title": "IELTS Academic Test Format and Four-Skill Assessment Specification",
+      "officialUrl": "https://ielts.org/take-a-test/test-types/ielts-academic-test",
+      "category": "study-abroad-exam",
+      "publishedYear": 2026,
+      "verifiedAt": "2026-10-22",
+      "verificationStatus": "verified-primary-source",
+      "scopeNotes": "Defines Listening (30 min), Academic Reading (60 min), Academic Writing Task 1 & 2 (60 min), and Speaking Parts 1-3 (11-14 min) on the 0-9 band scale."
+    },
+    {
+      "sourceId": "SRC-ETS-TOEFL-2026",
+      "authority": "Educational Testing Service (ETS)",
+      "title": "TOEFL iBT Test Content, Structure, and 2026 Score Scale (1-6 CEFR & 0-120)",
+      "officialUrl": "https://www.ets.org/toefl/test-takers/ibt/about/content.html",
+      "category": "study-abroad-exam",
+      "publishedYear": 2026,
+      "verifiedAt": "2026-10-22",
+      "verificationStatus": "verified-primary-source",
+      "scopeNotes": "Defines Reading, Listening, Speaking, and Writing tasks for the under-2-hour TOEFL iBT format."
+    },
+    {
+      "sourceId": "SRC-UGC-NCRF-2023",
+      "authority": "University Grants Commission (UGC), NCERT, NCVET, AICTE",
+      "title": "Report of the High-Level Committee on National Credit Framework (NCrF)",
+      "officialUrl": "https://www.ugc.gov.in/pdfnews/9028476_Report-of-National-Credit-Framework.pdf",
+      "category": "credit-and-assessment-framework",
+      "publishedYear": 2023,
+      "verifiedAt": "2026-10-22",
+      "verificationStatus": "verified-primary-source",
+      "scopeNotes": "Establishes 1,200 notional learning hours per academic year (40 credits) across school and higher education."
+    },
+    {
+      "sourceId": "SRC-NCERT-PARAKH-2024",
+      "authority": "PARAKH National Assessment Centre, NCERT",
+      "title": "PARAKH Rashtriya Sarvekshan 2024 Assessment Framework and Holistic Progress Card Equivalence",
+      "officialUrl": "https://ncert.nic.in/parakh/pdf/Assessment_Framework.pdf",
+      "category": "credit-and-assessment-framework",
+      "publishedYear": 2024,
+      "verifiedAt": "2026-10-22",
+      "verificationStatus": "verified-primary-source",
+      "scopeNotes": "Sets stage-end competency benchmarks at Classes 3, 6, and 9 and cross-board equivalence standards."
+    },
+    {
+      "sourceId": "SRC-INDIA-DPDPA-2023",
+      "authority": "Ministry of Electronics and Information Technology (MeitY), Government of India",
+      "title": "Digital Personal Data Protection Act 2023 Section 9 and DPDP Rules 2025 Rule 10 (Children's Data)",
+      "officialUrl": "https://www.dpdpa.com/dpdpa2023/chapter-2/section9.html",
+      "category": "legal-and-child-safety",
+      "publishedYear": 2025,
+      "verifiedAt": "2026-10-22",
+      "verificationStatus": "verified-primary-source",
+      "scopeNotes": "Mandates verifiable parental consent and prohibits tracking, behavioral monitoring, and targeted ads for children under 18."
+    },
+    {
+      "sourceId": "SRC-IAP-SCREENTIME-2022",
+      "authority": "Indian Academy of Pediatrics (IAP)",
+      "title": "Indian Academy of Pediatrics Guidelines on Screen Time and Digital Wellness in Infants, Children and Adolescents",
+      "officialUrl": "https://pubmed.ncbi.nlm.nih.gov/34969943/",
+      "category": "legal-and-child-safety",
+      "publishedYear": 2022,
+      "verifiedAt": "2026-10-22",
+      "verificationStatus": "verified-primary-source",
+      "scopeNotes": "Mandates zero screens under 24 months, <1 hour/day supervised co-viewing for ages 2-5, and balanced digital hygiene for ages 5-18."
+    },
+    {
+      "sourceId": "SRC-MOE-UDISE-2025",
+      "authority": "Department of School Education and Literacy, Ministry of Education, Government of India",
+      "title": "UDISE+ 2024-25 All-India School Education Report",
+      "officialUrl": "https://dashboard.udiseplus.gov.in/report2026/static/media/UDISE+2024_25_Booklet_existing.118ba29d4773e6372f72.pdf",
+      "category": "education-statistics",
+      "publishedYear": 2025,
+      "verifiedAt": "2026-10-22",
+      "verificationStatus": "verified-primary-source",
+      "scopeNotes": "Primary national dataset for school enrollment, infrastructure, and stage-wise student distribution."
+    }
+  ]
+}

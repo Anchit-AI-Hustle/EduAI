@@ -1,0 +1,5546 @@
+{
+  "generatedAt": "2026-10-22T00:00:00.000Z",
+  "venture": {
+    "ventureName": "EveryYear",
+    "alternateVentureNames": [
+      {
+        "name": "EveryYear",
+        "tagline": "An individual AI-guided plan for every year of education, from home learning (0-3) to Class 12 and global tracks",
+        "hindiTitle": "एवरीईयर - हर वर्ष की व्यक्तिगत शिक्षा योजना"
+      },
+      {
+        "name": "AarohAI",
+        "tagline": "Step-by-step mastery ascent across school boards and competitive tracks",
+        "hindiTitle": "आरोह एआई - क्रमिक कौशल विकास"
+      },
+      {
+        "name": "Vidyapath AI",
+        "tagline": "One shared skill graph from foundational play to career entrance",
+        "hindiTitle": "विद्यापथ एआई - समग्र शिक्षा पथ"
+      },
+      {
+        "name": "EduAIon",
+        "tagline": "Always-on adaptive learning grounded in official curricula",
+        "hindiTitle": "एजुएआईऑन - निरंतर अनुकूलित शिक्षा"
+      }
+    ],
+    "repositoryName": "ai-school-full-stack",
+    "productionDomain": "edu-ai.anchit-tandon.com",
+    "supportedLanguages": [
+      "en",
+      "hi"
+    ],
+    "deepenedGradeBand": {
+      "boardId": "cbse",
+      "years": [
+        "class-06",
+        "class-07",
+        "class-08"
+      ],
+      "stageLabel": "CBSE Middle Stage (Classes 6 to 8 - NCF-SE 2023 Deepened Implementation)"
+    }
+  },
+  "summary": {
+    "totalBoardYearPlans": 59,
+    "totalBoards": 5,
+    "totalYearsCovered": 16,
+    "totalSkillsInGraph": 26,
+    "totalSkillEdges": 30,
+    "totalOfficialSources": 24,
+    "totalTracks": 8,
+    "totalDiagnosticItems": 9,
+    "totalMockBlueprints": 6
+  },
+  "curriculumIndex": [
+    {
+      "filePath": "content/curriculum/cbse/cbse-class-01-curriculum.json",
+      "curriculumVersionId": "cbse-class-01@2026.1.0",
+      "boardId": "cbse",
+      "boardName": "Central Board of Secondary Education (CBSE / NCERT)",
+      "yearId": "class-01",
+      "yearLabel": {
+        "en": "Class 1",
+        "hi": "कक्षा 1"
+      },
+      "nepStage": "foundational-classes-1-2",
+      "ageBandYears": "6-7 years",
+      "groundingStatus": "skeleton-with-labelled-gaps",
+      "maxScreenMinutesPerDay": 30,
+      "deliveryMode": "short-guided-sessions",
+      "subjectCount": 2,
+      "skillCount": 3,
+      "weeklyMinutes": 300,
+      "sessionMinutes": 20,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-NCERT-NCFFS-2022",
+        "SRC-NCERT-NSTC-2023"
+      ],
+      "gapCount": 1
+    },
+    {
+      "filePath": "content/curriculum/cbse/cbse-class-02-curriculum.json",
+      "curriculumVersionId": "cbse-class-02@2026.1.0",
+      "boardId": "cbse",
+      "boardName": "Central Board of Secondary Education (CBSE / NCERT)",
+      "yearId": "class-02",
+      "yearLabel": {
+        "en": "Class 2",
+        "hi": "कक्षा 2"
+      },
+      "nepStage": "foundational-classes-1-2",
+      "ageBandYears": "7-8 years",
+      "groundingStatus": "skeleton-with-labelled-gaps",
+      "maxScreenMinutesPerDay": 30,
+      "deliveryMode": "short-guided-sessions",
+      "subjectCount": 2,
+      "skillCount": 3,
+      "weeklyMinutes": 320,
+      "sessionMinutes": 20,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-NCERT-NCFFS-2022",
+        "SRC-NCERT-NSTC-2023"
+      ],
+      "gapCount": 1
+    },
+    {
+      "filePath": "content/curriculum/cbse/cbse-class-03-curriculum.json",
+      "curriculumVersionId": "cbse-class-03@2026.1.0",
+      "boardId": "cbse",
+      "boardName": "Central Board of Secondary Education (CBSE / NCERT)",
+      "yearId": "class-03",
+      "yearLabel": {
+        "en": "Class 3",
+        "hi": "कक्षा 3"
+      },
+      "nepStage": "preparatory-classes-3-5",
+      "ageBandYears": "8-9 years",
+      "groundingStatus": "skeleton-with-labelled-gaps",
+      "maxScreenMinutesPerDay": 40,
+      "deliveryMode": "short-guided-sessions",
+      "subjectCount": 3,
+      "skillCount": 4,
+      "weeklyMinutes": 400,
+      "sessionMinutes": 25,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-NCERT-NCFSE-2023",
+        "SRC-NCERT-NSTC-2023"
+      ],
+      "gapCount": 1
+    },
+    {
+      "filePath": "content/curriculum/cbse/cbse-class-04-curriculum.json",
+      "curriculumVersionId": "cbse-class-04@2026.1.0",
+      "boardId": "cbse",
+      "boardName": "Central Board of Secondary Education (CBSE / NCERT)",
+      "yearId": "class-04",
+      "yearLabel": {
+        "en": "Class 4",
+        "hi": "कक्षा 4"
+      },
+      "nepStage": "preparatory-classes-3-5",
+      "ageBandYears": "9-10 years",
+      "groundingStatus": "skeleton-with-labelled-gaps",
+      "maxScreenMinutesPerDay": 45,
+      "deliveryMode": "short-guided-sessions",
+      "subjectCount": 3,
+      "skillCount": 4,
+      "weeklyMinutes": 450,
+      "sessionMinutes": 25,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-NCERT-NCFSE-2023",
+        "SRC-NCERT-NSTC-2023"
+      ],
+      "gapCount": 1
+    },
+    {
+      "filePath": "content/curriculum/cbse/cbse-class-05-curriculum.json",
+      "curriculumVersionId": "cbse-class-05@2026.1.0",
+      "boardId": "cbse",
+      "boardName": "Central Board of Secondary Education (CBSE / NCERT)",
+      "yearId": "class-05",
+      "yearLabel": {
+        "en": "Class 5",
+        "hi": "कक्षा 5"
+      },
+      "nepStage": "preparatory-classes-3-5",
+      "ageBandYears": "10-11 years",
+      "groundingStatus": "skeleton-with-labelled-gaps",
+      "maxScreenMinutesPerDay": 45,
+      "deliveryMode": "short-guided-sessions",
+      "subjectCount": 3,
+      "skillCount": 4,
+      "weeklyMinutes": 500,
+      "sessionMinutes": 25,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-NCERT-NCFSE-2023",
+        "SRC-NCERT-NSTC-2023"
+      ],
+      "gapCount": 1
+    },
+    {
+      "filePath": "content/curriculum/cbse/cbse-class-06-curriculum.json",
+      "curriculumVersionId": "cbse-class-06@2026.1.0",
+      "boardId": "cbse",
+      "boardName": "Central Board of Secondary Education (CBSE / NCERT)",
+      "yearId": "class-06",
+      "yearLabel": {
+        "en": "Class 6",
+        "hi": "कक्षा 6"
+      },
+      "nepStage": "middle-classes-6-8",
+      "ageBandYears": "11-12 years",
+      "groundingStatus": "deepened-grade-band",
+      "maxScreenMinutesPerDay": 60,
+      "deliveryMode": "independent-with-breaks",
+      "subjectCount": 5,
+      "skillCount": 7,
+      "weeklyMinutes": 600,
+      "sessionMinutes": 30,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-CBSE-CURR-2026-27",
+        "SRC-NCERT-NCFSE-2023",
+        "SRC-NCERT-NSTC-2023"
+      ],
+      "gapCount": 0
+    },
+    {
+      "filePath": "content/curriculum/cbse/cbse-class-07-curriculum.json",
+      "curriculumVersionId": "cbse-class-07@2026.1.0",
+      "boardId": "cbse",
+      "boardName": "Central Board of Secondary Education (CBSE / NCERT)",
+      "yearId": "class-07",
+      "yearLabel": {
+        "en": "Class 7",
+        "hi": "कक्षा 7"
+      },
+      "nepStage": "middle-classes-6-8",
+      "ageBandYears": "12-13 years",
+      "groundingStatus": "deepened-grade-band",
+      "maxScreenMinutesPerDay": 60,
+      "deliveryMode": "independent-with-breaks",
+      "subjectCount": 5,
+      "skillCount": 7,
+      "weeklyMinutes": 660,
+      "sessionMinutes": 30,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-CBSE-CURR-2026-27",
+        "SRC-NCERT-NCFSE-2023",
+        "SRC-NCERT-NSTC-2023"
+      ],
+      "gapCount": 0
+    },
+    {
+      "filePath": "content/curriculum/cbse/cbse-class-08-curriculum.json",
+      "curriculumVersionId": "cbse-class-08@2026.1.0",
+      "boardId": "cbse",
+      "boardName": "Central Board of Secondary Education (CBSE / NCERT)",
+      "yearId": "class-08",
+      "yearLabel": {
+        "en": "Class 8",
+        "hi": "कक्षा 8"
+      },
+      "nepStage": "middle-classes-6-8",
+      "ageBandYears": "13-14 years",
+      "groundingStatus": "deepened-grade-band",
+      "maxScreenMinutesPerDay": 75,
+      "deliveryMode": "independent-with-breaks",
+      "subjectCount": 5,
+      "skillCount": 7,
+      "weeklyMinutes": 720,
+      "sessionMinutes": 35,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-CBSE-CURR-2026-27",
+        "SRC-NCERT-NCFSE-2023",
+        "SRC-NCERT-NSTC-2023"
+      ],
+      "gapCount": 0
+    },
+    {
+      "filePath": "content/curriculum/cbse/cbse-class-09-curriculum.json",
+      "curriculumVersionId": "cbse-class-09@2026.1.0",
+      "boardId": "cbse",
+      "boardName": "Central Board of Secondary Education (CBSE / NCERT)",
+      "yearId": "class-09",
+      "yearLabel": {
+        "en": "Class 9",
+        "hi": "कक्षा 9"
+      },
+      "nepStage": "secondary-classes-9-10",
+      "ageBandYears": "14-15 years",
+      "groundingStatus": "skeleton-with-labelled-gaps",
+      "maxScreenMinutesPerDay": 90,
+      "deliveryMode": "independent-with-breaks",
+      "subjectCount": 4,
+      "skillCount": 6,
+      "weeklyMinutes": 840,
+      "sessionMinutes": 40,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-CBSE-CURR-2026-27",
+        "SRC-CBSE-SECPART1-2026-27"
+      ],
+      "gapCount": 1
+    },
+    {
+      "filePath": "content/curriculum/cbse/cbse-class-10-curriculum.json",
+      "curriculumVersionId": "cbse-class-10@2026.1.0",
+      "boardId": "cbse",
+      "boardName": "Central Board of Secondary Education (CBSE / NCERT)",
+      "yearId": "class-10",
+      "yearLabel": {
+        "en": "Class 10",
+        "hi": "कक्षा 10"
+      },
+      "nepStage": "secondary-classes-9-10",
+      "ageBandYears": "15-16 years",
+      "groundingStatus": "skeleton-with-labelled-gaps",
+      "maxScreenMinutesPerDay": 90,
+      "deliveryMode": "independent-with-breaks",
+      "subjectCount": 4,
+      "skillCount": 6,
+      "weeklyMinutes": 900,
+      "sessionMinutes": 40,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-CBSE-CURR-2026-27",
+        "SRC-CBSE-SECPART1-2026-27"
+      ],
+      "gapCount": 1
+    },
+    {
+      "filePath": "content/curriculum/cbse/cbse-class-11-curriculum.json",
+      "curriculumVersionId": "cbse-class-11@2026.1.0",
+      "boardId": "cbse",
+      "boardName": "Central Board of Secondary Education (CBSE / NCERT)",
+      "yearId": "class-11",
+      "yearLabel": {
+        "en": "Class 11",
+        "hi": "कक्षा 11"
+      },
+      "nepStage": "secondary-classes-11-12",
+      "ageBandYears": "16-17 years",
+      "groundingStatus": "skeleton-with-labelled-gaps",
+      "maxScreenMinutesPerDay": 120,
+      "deliveryMode": "independent-with-breaks",
+      "subjectCount": 6,
+      "skillCount": 7,
+      "weeklyMinutes": 1080,
+      "sessionMinutes": 45,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-CBSE-CURR-2026-27",
+        "SRC-NTA-JEEMAIN-2026",
+        "SRC-NTA-CUETUG-2026",
+        "SRC-NTA-NEETUG-2026",
+        "SRC-UPSC-CSE-2026",
+        "SRC-CB-DIGITALSAT-2026",
+        "SRC-IELTS-ACADEMIC-2026"
+      ],
+      "gapCount": 1
+    },
+    {
+      "filePath": "content/curriculum/cbse/cbse-class-12-curriculum.json",
+      "curriculumVersionId": "cbse-class-12@2026.1.0",
+      "boardId": "cbse",
+      "boardName": "Central Board of Secondary Education (CBSE / NCERT)",
+      "yearId": "class-12",
+      "yearLabel": {
+        "en": "Class 12",
+        "hi": "कक्षा 12"
+      },
+      "nepStage": "secondary-classes-11-12",
+      "ageBandYears": "17-18 years",
+      "groundingStatus": "skeleton-with-labelled-gaps",
+      "maxScreenMinutesPerDay": 120,
+      "deliveryMode": "independent-with-breaks",
+      "subjectCount": 6,
+      "skillCount": 7,
+      "weeklyMinutes": 1200,
+      "sessionMinutes": 45,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-CBSE-CURR-2026-27",
+        "SRC-NTA-JEEMAIN-2026",
+        "SRC-NTA-CUETUG-2026",
+        "SRC-NTA-NEETUG-2026",
+        "SRC-UPSC-CSE-2026",
+        "SRC-CB-DIGITALSAT-2026",
+        "SRC-IELTS-ACADEMIC-2026"
+      ],
+      "gapCount": 1
+    },
+    {
+      "filePath": "content/curriculum/cbse/cbse-home-0-3-curriculum.json",
+      "curriculumVersionId": "cbse-home-0-3@2026.1.0",
+      "boardId": "cbse",
+      "boardName": "Central Board of Secondary Education (CBSE / NCERT)",
+      "yearId": "home-0-3",
+      "yearLabel": {
+        "en": "Home Learning (0-3 Years)",
+        "hi": "गृह शिक्षण (0-3 वर्ष)"
+      },
+      "nepStage": "foundational-home-0-3",
+      "ageBandYears": "0-3 years",
+      "groundingStatus": "fully-sourced",
+      "maxScreenMinutesPerDay": 0,
+      "deliveryMode": "caregiver-only-zero-child-screen",
+      "subjectCount": 2,
+      "skillCount": 2,
+      "weeklyMinutes": 75,
+      "sessionMinutes": 15,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-MWCD-NAVCHETANA-2024"
+      ],
+      "gapCount": 0
+    },
+    {
+      "filePath": "content/curriculum/cbse/cbse-lkg-curriculum.json",
+      "curriculumVersionId": "cbse-lkg@2026.1.0",
+      "boardId": "cbse",
+      "boardName": "Central Board of Secondary Education (CBSE / NCERT)",
+      "yearId": "lkg",
+      "yearLabel": {
+        "en": "Lower Kindergarten - LKG (Balvatika 2)",
+        "hi": "एलकेजी (बालवाटिका 2)"
+      },
+      "nepStage": "foundational-preschool-3-6",
+      "ageBandYears": "4-5 years",
+      "groundingStatus": "fully-sourced",
+      "maxScreenMinutesPerDay": 15,
+      "deliveryMode": "co-viewed-caregiver-guided",
+      "subjectCount": 3,
+      "skillCount": 4,
+      "weeklyMinutes": 180,
+      "sessionMinutes": 15,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-MWCD-AADHARSHILA-2024",
+        "SRC-NCERT-NCFFS-2022"
+      ],
+      "gapCount": 0
+    },
+    {
+      "filePath": "content/curriculum/cbse/cbse-nursery-curriculum.json",
+      "curriculumVersionId": "cbse-nursery@2026.1.0",
+      "boardId": "cbse",
+      "boardName": "Central Board of Secondary Education (CBSE / NCERT)",
+      "yearId": "nursery",
+      "yearLabel": {
+        "en": "Nursery (Balvatika 1)",
+        "hi": "नर्सरी (बालवाटिका 1)"
+      },
+      "nepStage": "foundational-preschool-3-6",
+      "ageBandYears": "3-4 years",
+      "groundingStatus": "fully-sourced",
+      "maxScreenMinutesPerDay": 15,
+      "deliveryMode": "co-viewed-caregiver-guided",
+      "subjectCount": 3,
+      "skillCount": 4,
+      "weeklyMinutes": 150,
+      "sessionMinutes": 15,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-MWCD-AADHARSHILA-2024",
+        "SRC-NCERT-NCFFS-2022"
+      ],
+      "gapCount": 0
+    },
+    {
+      "filePath": "content/curriculum/cbse/cbse-ukg-curriculum.json",
+      "curriculumVersionId": "cbse-ukg@2026.1.0",
+      "boardId": "cbse",
+      "boardName": "Central Board of Secondary Education (CBSE / NCERT)",
+      "yearId": "ukg",
+      "yearLabel": {
+        "en": "Upper Kindergarten - UKG (Balvatika 3)",
+        "hi": "यूकेजी (बालवाटिका 3)"
+      },
+      "nepStage": "foundational-preschool-3-6",
+      "ageBandYears": "5-6 years",
+      "groundingStatus": "fully-sourced",
+      "maxScreenMinutesPerDay": 20,
+      "deliveryMode": "co-viewed-caregiver-guided",
+      "subjectCount": 3,
+      "skillCount": 4,
+      "weeklyMinutes": 200,
+      "sessionMinutes": 20,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-MWCD-AADHARSHILA-2024",
+        "SRC-NCERT-NCFFS-2022"
+      ],
+      "gapCount": 0
+    },
+    {
+      "filePath": "content/curriculum/cisce/cisce-class-01-curriculum.json",
+      "curriculumVersionId": "cisce-class-01@2026.1.0",
+      "boardId": "cisce",
+      "boardName": "Council for the Indian School Certificate Examinations (CISCE - ICSE & ISC)",
+      "yearId": "class-01",
+      "yearLabel": {
+        "en": "Class 1",
+        "hi": "कक्षा 1"
+      },
+      "nepStage": "foundational-classes-1-2",
+      "ageBandYears": "6-7 years",
+      "groundingStatus": "skeleton-with-labelled-gaps",
+      "maxScreenMinutesPerDay": 30,
+      "deliveryMode": "short-guided-sessions",
+      "subjectCount": 2,
+      "skillCount": 3,
+      "weeklyMinutes": 300,
+      "sessionMinutes": 20,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-NCERT-NCFFS-2022",
+        "SRC-NCERT-NSTC-2023"
+      ],
+      "gapCount": 1
+    },
+    {
+      "filePath": "content/curriculum/cisce/cisce-class-02-curriculum.json",
+      "curriculumVersionId": "cisce-class-02@2026.1.0",
+      "boardId": "cisce",
+      "boardName": "Council for the Indian School Certificate Examinations (CISCE - ICSE & ISC)",
+      "yearId": "class-02",
+      "yearLabel": {
+        "en": "Class 2",
+        "hi": "कक्षा 2"
+      },
+      "nepStage": "foundational-classes-1-2",
+      "ageBandYears": "7-8 years",
+      "groundingStatus": "skeleton-with-labelled-gaps",
+      "maxScreenMinutesPerDay": 30,
+      "deliveryMode": "short-guided-sessions",
+      "subjectCount": 2,
+      "skillCount": 3,
+      "weeklyMinutes": 320,
+      "sessionMinutes": 20,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-NCERT-NCFFS-2022",
+        "SRC-NCERT-NSTC-2023"
+      ],
+      "gapCount": 1
+    },
+    {
+      "filePath": "content/curriculum/cisce/cisce-class-03-curriculum.json",
+      "curriculumVersionId": "cisce-class-03@2026.1.0",
+      "boardId": "cisce",
+      "boardName": "Council for the Indian School Certificate Examinations (CISCE - ICSE & ISC)",
+      "yearId": "class-03",
+      "yearLabel": {
+        "en": "Class 3",
+        "hi": "कक्षा 3"
+      },
+      "nepStage": "preparatory-classes-3-5",
+      "ageBandYears": "8-9 years",
+      "groundingStatus": "skeleton-with-labelled-gaps",
+      "maxScreenMinutesPerDay": 40,
+      "deliveryMode": "short-guided-sessions",
+      "subjectCount": 3,
+      "skillCount": 4,
+      "weeklyMinutes": 400,
+      "sessionMinutes": 25,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-CISCE-PUB-2026",
+        "SRC-NCERT-NSTC-2023"
+      ],
+      "gapCount": 1
+    },
+    {
+      "filePath": "content/curriculum/cisce/cisce-class-04-curriculum.json",
+      "curriculumVersionId": "cisce-class-04@2026.1.0",
+      "boardId": "cisce",
+      "boardName": "Council for the Indian School Certificate Examinations (CISCE - ICSE & ISC)",
+      "yearId": "class-04",
+      "yearLabel": {
+        "en": "Class 4",
+        "hi": "कक्षा 4"
+      },
+      "nepStage": "preparatory-classes-3-5",
+      "ageBandYears": "9-10 years",
+      "groundingStatus": "skeleton-with-labelled-gaps",
+      "maxScreenMinutesPerDay": 45,
+      "deliveryMode": "short-guided-sessions",
+      "subjectCount": 3,
+      "skillCount": 4,
+      "weeklyMinutes": 450,
+      "sessionMinutes": 25,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-CISCE-PUB-2026",
+        "SRC-NCERT-NSTC-2023"
+      ],
+      "gapCount": 1
+    },
+    {
+      "filePath": "content/curriculum/cisce/cisce-class-05-curriculum.json",
+      "curriculumVersionId": "cisce-class-05@2026.1.0",
+      "boardId": "cisce",
+      "boardName": "Council for the Indian School Certificate Examinations (CISCE - ICSE & ISC)",
+      "yearId": "class-05",
+      "yearLabel": {
+        "en": "Class 5",
+        "hi": "कक्षा 5"
+      },
+      "nepStage": "preparatory-classes-3-5",
+      "ageBandYears": "10-11 years",
+      "groundingStatus": "skeleton-with-labelled-gaps",
+      "maxScreenMinutesPerDay": 45,
+      "deliveryMode": "short-guided-sessions",
+      "subjectCount": 3,
+      "skillCount": 4,
+      "weeklyMinutes": 500,
+      "sessionMinutes": 25,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-CISCE-PUB-2026",
+        "SRC-NCERT-NSTC-2023"
+      ],
+      "gapCount": 1
+    },
+    {
+      "filePath": "content/curriculum/cisce/cisce-class-06-curriculum.json",
+      "curriculumVersionId": "cisce-class-06@2026.1.0",
+      "boardId": "cisce",
+      "boardName": "Council for the Indian School Certificate Examinations (CISCE - ICSE & ISC)",
+      "yearId": "class-06",
+      "yearLabel": {
+        "en": "Class 6",
+        "hi": "कक्षा 6"
+      },
+      "nepStage": "middle-classes-6-8",
+      "ageBandYears": "11-12 years",
+      "groundingStatus": "skeleton-with-labelled-gaps",
+      "maxScreenMinutesPerDay": 60,
+      "deliveryMode": "independent-with-breaks",
+      "subjectCount": 5,
+      "skillCount": 7,
+      "weeklyMinutes": 600,
+      "sessionMinutes": 30,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-CISCE-PUB-2026",
+        "SRC-NCERT-NCFSE-2023",
+        "SRC-NCERT-NSTC-2023"
+      ],
+      "gapCount": 1
+    },
+    {
+      "filePath": "content/curriculum/cisce/cisce-class-07-curriculum.json",
+      "curriculumVersionId": "cisce-class-07@2026.1.0",
+      "boardId": "cisce",
+      "boardName": "Council for the Indian School Certificate Examinations (CISCE - ICSE & ISC)",
+      "yearId": "class-07",
+      "yearLabel": {
+        "en": "Class 7",
+        "hi": "कक्षा 7"
+      },
+      "nepStage": "middle-classes-6-8",
+      "ageBandYears": "12-13 years",
+      "groundingStatus": "skeleton-with-labelled-gaps",
+      "maxScreenMinutesPerDay": 60,
+      "deliveryMode": "independent-with-breaks",
+      "subjectCount": 5,
+      "skillCount": 7,
+      "weeklyMinutes": 660,
+      "sessionMinutes": 30,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-CISCE-PUB-2026",
+        "SRC-NCERT-NCFSE-2023",
+        "SRC-NCERT-NSTC-2023"
+      ],
+      "gapCount": 1
+    },
+    {
+      "filePath": "content/curriculum/cisce/cisce-class-08-curriculum.json",
+      "curriculumVersionId": "cisce-class-08@2026.1.0",
+      "boardId": "cisce",
+      "boardName": "Council for the Indian School Certificate Examinations (CISCE - ICSE & ISC)",
+      "yearId": "class-08",
+      "yearLabel": {
+        "en": "Class 8",
+        "hi": "कक्षा 8"
+      },
+      "nepStage": "middle-classes-6-8",
+      "ageBandYears": "13-14 years",
+      "groundingStatus": "skeleton-with-labelled-gaps",
+      "maxScreenMinutesPerDay": 75,
+      "deliveryMode": "independent-with-breaks",
+      "subjectCount": 5,
+      "skillCount": 7,
+      "weeklyMinutes": 720,
+      "sessionMinutes": 35,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-CISCE-PUB-2026",
+        "SRC-NCERT-NCFSE-2023",
+        "SRC-NCERT-NSTC-2023"
+      ],
+      "gapCount": 1
+    },
+    {
+      "filePath": "content/curriculum/cisce/cisce-class-09-curriculum.json",
+      "curriculumVersionId": "cisce-class-09@2026.1.0",
+      "boardId": "cisce",
+      "boardName": "Council for the Indian School Certificate Examinations (CISCE - ICSE & ISC)",
+      "yearId": "class-09",
+      "yearLabel": {
+        "en": "Class 9",
+        "hi": "कक्षा 9"
+      },
+      "nepStage": "secondary-classes-9-10",
+      "ageBandYears": "14-15 years",
+      "groundingStatus": "skeleton-with-labelled-gaps",
+      "maxScreenMinutesPerDay": 90,
+      "deliveryMode": "independent-with-breaks",
+      "subjectCount": 4,
+      "skillCount": 6,
+      "weeklyMinutes": 840,
+      "sessionMinutes": 40,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-CISCE-PUB-2026",
+        "SRC-CBSE-SECPART1-2026-27"
+      ],
+      "gapCount": 1
+    },
+    {
+      "filePath": "content/curriculum/cisce/cisce-class-10-curriculum.json",
+      "curriculumVersionId": "cisce-class-10@2026.1.0",
+      "boardId": "cisce",
+      "boardName": "Council for the Indian School Certificate Examinations (CISCE - ICSE & ISC)",
+      "yearId": "class-10",
+      "yearLabel": {
+        "en": "Class 10",
+        "hi": "कक्षा 10"
+      },
+      "nepStage": "secondary-classes-9-10",
+      "ageBandYears": "15-16 years",
+      "groundingStatus": "skeleton-with-labelled-gaps",
+      "maxScreenMinutesPerDay": 90,
+      "deliveryMode": "independent-with-breaks",
+      "subjectCount": 4,
+      "skillCount": 6,
+      "weeklyMinutes": 900,
+      "sessionMinutes": 40,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-CISCE-PUB-2026",
+        "SRC-CBSE-SECPART1-2026-27"
+      ],
+      "gapCount": 1
+    },
+    {
+      "filePath": "content/curriculum/cisce/cisce-class-11-curriculum.json",
+      "curriculumVersionId": "cisce-class-11@2026.1.0",
+      "boardId": "cisce",
+      "boardName": "Council for the Indian School Certificate Examinations (CISCE - ICSE & ISC)",
+      "yearId": "class-11",
+      "yearLabel": {
+        "en": "Class 11",
+        "hi": "कक्षा 11"
+      },
+      "nepStage": "secondary-classes-11-12",
+      "ageBandYears": "16-17 years",
+      "groundingStatus": "skeleton-with-labelled-gaps",
+      "maxScreenMinutesPerDay": 120,
+      "deliveryMode": "independent-with-breaks",
+      "subjectCount": 6,
+      "skillCount": 7,
+      "weeklyMinutes": 1080,
+      "sessionMinutes": 45,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-CISCE-PUB-2026",
+        "SRC-NTA-JEEMAIN-2026",
+        "SRC-NTA-CUETUG-2026",
+        "SRC-NTA-NEETUG-2026",
+        "SRC-UPSC-CSE-2026",
+        "SRC-CB-DIGITALSAT-2026",
+        "SRC-IELTS-ACADEMIC-2026"
+      ],
+      "gapCount": 1
+    },
+    {
+      "filePath": "content/curriculum/cisce/cisce-class-12-curriculum.json",
+      "curriculumVersionId": "cisce-class-12@2026.1.0",
+      "boardId": "cisce",
+      "boardName": "Council for the Indian School Certificate Examinations (CISCE - ICSE & ISC)",
+      "yearId": "class-12",
+      "yearLabel": {
+        "en": "Class 12",
+        "hi": "कक्षा 12"
+      },
+      "nepStage": "secondary-classes-11-12",
+      "ageBandYears": "17-18 years",
+      "groundingStatus": "skeleton-with-labelled-gaps",
+      "maxScreenMinutesPerDay": 120,
+      "deliveryMode": "independent-with-breaks",
+      "subjectCount": 6,
+      "skillCount": 7,
+      "weeklyMinutes": 1200,
+      "sessionMinutes": 45,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-CISCE-PUB-2026",
+        "SRC-NTA-JEEMAIN-2026",
+        "SRC-NTA-CUETUG-2026",
+        "SRC-NTA-NEETUG-2026",
+        "SRC-UPSC-CSE-2026",
+        "SRC-CB-DIGITALSAT-2026",
+        "SRC-IELTS-ACADEMIC-2026"
+      ],
+      "gapCount": 1
+    },
+    {
+      "filePath": "content/curriculum/cisce/cisce-lkg-curriculum.json",
+      "curriculumVersionId": "cisce-lkg@2026.1.0",
+      "boardId": "cisce",
+      "boardName": "Council for the Indian School Certificate Examinations (CISCE - ICSE & ISC)",
+      "yearId": "lkg",
+      "yearLabel": {
+        "en": "Lower Kindergarten - LKG (Balvatika 2)",
+        "hi": "एलकेजी (बालवाटिका 2)"
+      },
+      "nepStage": "foundational-preschool-3-6",
+      "ageBandYears": "4-5 years",
+      "groundingStatus": "skeleton-with-labelled-gaps",
+      "maxScreenMinutesPerDay": 15,
+      "deliveryMode": "co-viewed-caregiver-guided",
+      "subjectCount": 3,
+      "skillCount": 4,
+      "weeklyMinutes": 180,
+      "sessionMinutes": 15,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-MWCD-AADHARSHILA-2024",
+        "SRC-NCERT-NCFFS-2022"
+      ],
+      "gapCount": 1
+    },
+    {
+      "filePath": "content/curriculum/cisce/cisce-nursery-curriculum.json",
+      "curriculumVersionId": "cisce-nursery@2026.1.0",
+      "boardId": "cisce",
+      "boardName": "Council for the Indian School Certificate Examinations (CISCE - ICSE & ISC)",
+      "yearId": "nursery",
+      "yearLabel": {
+        "en": "Nursery (Balvatika 1)",
+        "hi": "नर्सरी (बालवाटिका 1)"
+      },
+      "nepStage": "foundational-preschool-3-6",
+      "ageBandYears": "3-4 years",
+      "groundingStatus": "skeleton-with-labelled-gaps",
+      "maxScreenMinutesPerDay": 15,
+      "deliveryMode": "co-viewed-caregiver-guided",
+      "subjectCount": 3,
+      "skillCount": 4,
+      "weeklyMinutes": 150,
+      "sessionMinutes": 15,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-MWCD-AADHARSHILA-2024",
+        "SRC-NCERT-NCFFS-2022"
+      ],
+      "gapCount": 1
+    },
+    {
+      "filePath": "content/curriculum/cisce/cisce-ukg-curriculum.json",
+      "curriculumVersionId": "cisce-ukg@2026.1.0",
+      "boardId": "cisce",
+      "boardName": "Council for the Indian School Certificate Examinations (CISCE - ICSE & ISC)",
+      "yearId": "ukg",
+      "yearLabel": {
+        "en": "Upper Kindergarten - UKG (Balvatika 3)",
+        "hi": "यूकेजी (बालवाटिका 3)"
+      },
+      "nepStage": "foundational-preschool-3-6",
+      "ageBandYears": "5-6 years",
+      "groundingStatus": "skeleton-with-labelled-gaps",
+      "maxScreenMinutesPerDay": 20,
+      "deliveryMode": "co-viewed-caregiver-guided",
+      "subjectCount": 3,
+      "skillCount": 4,
+      "weeklyMinutes": 200,
+      "sessionMinutes": 20,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-MWCD-AADHARSHILA-2024",
+        "SRC-NCERT-NCFFS-2022"
+      ],
+      "gapCount": 1
+    },
+    {
+      "filePath": "content/curriculum/early-years/early-years-home-0-3-curriculum.json",
+      "curriculumVersionId": "early-years-home-0-3@2026.1.0",
+      "boardId": "early-years",
+      "boardName": "MWCD Navchetana & Aadharshila / NCERT NCF-FS",
+      "yearId": "home-0-3",
+      "yearLabel": {
+        "en": "Home Learning (0-3 Years)",
+        "hi": "गृह शिक्षण (0-3 वर्ष)"
+      },
+      "nepStage": "foundational-home-0-3",
+      "ageBandYears": "0-3 years",
+      "groundingStatus": "fully-sourced",
+      "maxScreenMinutesPerDay": 0,
+      "deliveryMode": "caregiver-only-zero-child-screen",
+      "subjectCount": 2,
+      "skillCount": 2,
+      "weeklyMinutes": 75,
+      "sessionMinutes": 15,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-MWCD-NAVCHETANA-2024"
+      ],
+      "gapCount": 0
+    },
+    {
+      "filePath": "content/curriculum/early-years/early-years-lkg-curriculum.json",
+      "curriculumVersionId": "early-years-lkg@2026.1.0",
+      "boardId": "early-years",
+      "boardName": "MWCD Navchetana & Aadharshila / NCERT NCF-FS",
+      "yearId": "lkg",
+      "yearLabel": {
+        "en": "Lower Kindergarten - LKG (Balvatika 2)",
+        "hi": "एलकेजी (बालवाटिका 2)"
+      },
+      "nepStage": "foundational-preschool-3-6",
+      "ageBandYears": "4-5 years",
+      "groundingStatus": "fully-sourced",
+      "maxScreenMinutesPerDay": 15,
+      "deliveryMode": "co-viewed-caregiver-guided",
+      "subjectCount": 3,
+      "skillCount": 4,
+      "weeklyMinutes": 180,
+      "sessionMinutes": 15,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-MWCD-AADHARSHILA-2024",
+        "SRC-NCERT-NCFFS-2022"
+      ],
+      "gapCount": 0
+    },
+    {
+      "filePath": "content/curriculum/early-years/early-years-nursery-curriculum.json",
+      "curriculumVersionId": "early-years-nursery@2026.1.0",
+      "boardId": "early-years",
+      "boardName": "MWCD Navchetana & Aadharshila / NCERT NCF-FS",
+      "yearId": "nursery",
+      "yearLabel": {
+        "en": "Nursery (Balvatika 1)",
+        "hi": "नर्सरी (बालवाटिका 1)"
+      },
+      "nepStage": "foundational-preschool-3-6",
+      "ageBandYears": "3-4 years",
+      "groundingStatus": "fully-sourced",
+      "maxScreenMinutesPerDay": 15,
+      "deliveryMode": "co-viewed-caregiver-guided",
+      "subjectCount": 3,
+      "skillCount": 4,
+      "weeklyMinutes": 150,
+      "sessionMinutes": 15,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-MWCD-AADHARSHILA-2024",
+        "SRC-NCERT-NCFFS-2022"
+      ],
+      "gapCount": 0
+    },
+    {
+      "filePath": "content/curriculum/early-years/early-years-ukg-curriculum.json",
+      "curriculumVersionId": "early-years-ukg@2026.1.0",
+      "boardId": "early-years",
+      "boardName": "MWCD Navchetana & Aadharshila / NCERT NCF-FS",
+      "yearId": "ukg",
+      "yearLabel": {
+        "en": "Upper Kindergarten - UKG (Balvatika 3)",
+        "hi": "यूकेजी (बालवाटिका 3)"
+      },
+      "nepStage": "foundational-preschool-3-6",
+      "ageBandYears": "5-6 years",
+      "groundingStatus": "fully-sourced",
+      "maxScreenMinutesPerDay": 20,
+      "deliveryMode": "co-viewed-caregiver-guided",
+      "subjectCount": 3,
+      "skillCount": 4,
+      "weeklyMinutes": 200,
+      "sessionMinutes": 20,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-MWCD-AADHARSHILA-2024",
+        "SRC-NCERT-NCFFS-2022"
+      ],
+      "gapCount": 0
+    },
+    {
+      "filePath": "content/curriculum/nios/nios-class-01-curriculum.json",
+      "curriculumVersionId": "nios-class-01@2026.1.0",
+      "boardId": "nios",
+      "boardName": "National Institute of Open Schooling (NIOS - OBE, Secondary & Sr. Secondary)",
+      "yearId": "class-01",
+      "yearLabel": {
+        "en": "Class 1",
+        "hi": "कक्षा 1"
+      },
+      "nepStage": "foundational-classes-1-2",
+      "ageBandYears": "6-7 years",
+      "groundingStatus": "skeleton-with-labelled-gaps",
+      "maxScreenMinutesPerDay": 30,
+      "deliveryMode": "short-guided-sessions",
+      "subjectCount": 2,
+      "skillCount": 3,
+      "weeklyMinutes": 300,
+      "sessionMinutes": 20,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-NCERT-NCFFS-2022",
+        "SRC-NCERT-NSTC-2023"
+      ],
+      "gapCount": 1
+    },
+    {
+      "filePath": "content/curriculum/nios/nios-class-02-curriculum.json",
+      "curriculumVersionId": "nios-class-02@2026.1.0",
+      "boardId": "nios",
+      "boardName": "National Institute of Open Schooling (NIOS - OBE, Secondary & Sr. Secondary)",
+      "yearId": "class-02",
+      "yearLabel": {
+        "en": "Class 2",
+        "hi": "कक्षा 2"
+      },
+      "nepStage": "foundational-classes-1-2",
+      "ageBandYears": "7-8 years",
+      "groundingStatus": "skeleton-with-labelled-gaps",
+      "maxScreenMinutesPerDay": 30,
+      "deliveryMode": "short-guided-sessions",
+      "subjectCount": 2,
+      "skillCount": 3,
+      "weeklyMinutes": 320,
+      "sessionMinutes": 20,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-NCERT-NCFFS-2022",
+        "SRC-NCERT-NSTC-2023"
+      ],
+      "gapCount": 1
+    },
+    {
+      "filePath": "content/curriculum/nios/nios-class-03-curriculum.json",
+      "curriculumVersionId": "nios-class-03@2026.1.0",
+      "boardId": "nios",
+      "boardName": "National Institute of Open Schooling (NIOS - OBE, Secondary & Sr. Secondary)",
+      "yearId": "class-03",
+      "yearLabel": {
+        "en": "Class 3",
+        "hi": "कक्षा 3"
+      },
+      "nepStage": "preparatory-classes-3-5",
+      "ageBandYears": "8-9 years",
+      "groundingStatus": "skeleton-with-labelled-gaps",
+      "maxScreenMinutesPerDay": 40,
+      "deliveryMode": "short-guided-sessions",
+      "subjectCount": 3,
+      "skillCount": 4,
+      "weeklyMinutes": 400,
+      "sessionMinutes": 25,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-NIOS-OBE-2026",
+        "SRC-NCERT-NSTC-2023"
+      ],
+      "gapCount": 1
+    },
+    {
+      "filePath": "content/curriculum/nios/nios-class-04-curriculum.json",
+      "curriculumVersionId": "nios-class-04@2026.1.0",
+      "boardId": "nios",
+      "boardName": "National Institute of Open Schooling (NIOS - OBE, Secondary & Sr. Secondary)",
+      "yearId": "class-04",
+      "yearLabel": {
+        "en": "Class 4",
+        "hi": "कक्षा 4"
+      },
+      "nepStage": "preparatory-classes-3-5",
+      "ageBandYears": "9-10 years",
+      "groundingStatus": "skeleton-with-labelled-gaps",
+      "maxScreenMinutesPerDay": 45,
+      "deliveryMode": "short-guided-sessions",
+      "subjectCount": 3,
+      "skillCount": 4,
+      "weeklyMinutes": 450,
+      "sessionMinutes": 25,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-NIOS-OBE-2026",
+        "SRC-NCERT-NSTC-2023"
+      ],
+      "gapCount": 1
+    },
+    {
+      "filePath": "content/curriculum/nios/nios-class-05-curriculum.json",
+      "curriculumVersionId": "nios-class-05@2026.1.0",
+      "boardId": "nios",
+      "boardName": "National Institute of Open Schooling (NIOS - OBE, Secondary & Sr. Secondary)",
+      "yearId": "class-05",
+      "yearLabel": {
+        "en": "Class 5",
+        "hi": "कक्षा 5"
+      },
+      "nepStage": "preparatory-classes-3-5",
+      "ageBandYears": "10-11 years",
+      "groundingStatus": "skeleton-with-labelled-gaps",
+      "maxScreenMinutesPerDay": 45,
+      "deliveryMode": "short-guided-sessions",
+      "subjectCount": 3,
+      "skillCount": 4,
+      "weeklyMinutes": 500,
+      "sessionMinutes": 25,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-NIOS-OBE-2026",
+        "SRC-NCERT-NSTC-2023"
+      ],
+      "gapCount": 1
+    },
+    {
+      "filePath": "content/curriculum/nios/nios-class-06-curriculum.json",
+      "curriculumVersionId": "nios-class-06@2026.1.0",
+      "boardId": "nios",
+      "boardName": "National Institute of Open Schooling (NIOS - OBE, Secondary & Sr. Secondary)",
+      "yearId": "class-06",
+      "yearLabel": {
+        "en": "Class 6",
+        "hi": "कक्षा 6"
+      },
+      "nepStage": "middle-classes-6-8",
+      "ageBandYears": "11-12 years",
+      "groundingStatus": "skeleton-with-labelled-gaps",
+      "maxScreenMinutesPerDay": 60,
+      "deliveryMode": "independent-with-breaks",
+      "subjectCount": 5,
+      "skillCount": 7,
+      "weeklyMinutes": 600,
+      "sessionMinutes": 30,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-NIOS-OBE-2026",
+        "SRC-NCERT-NCFSE-2023",
+        "SRC-NCERT-NSTC-2023"
+      ],
+      "gapCount": 1
+    },
+    {
+      "filePath": "content/curriculum/nios/nios-class-07-curriculum.json",
+      "curriculumVersionId": "nios-class-07@2026.1.0",
+      "boardId": "nios",
+      "boardName": "National Institute of Open Schooling (NIOS - OBE, Secondary & Sr. Secondary)",
+      "yearId": "class-07",
+      "yearLabel": {
+        "en": "Class 7",
+        "hi": "कक्षा 7"
+      },
+      "nepStage": "middle-classes-6-8",
+      "ageBandYears": "12-13 years",
+      "groundingStatus": "skeleton-with-labelled-gaps",
+      "maxScreenMinutesPerDay": 60,
+      "deliveryMode": "independent-with-breaks",
+      "subjectCount": 5,
+      "skillCount": 7,
+      "weeklyMinutes": 660,
+      "sessionMinutes": 30,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-NIOS-OBE-2026",
+        "SRC-NCERT-NCFSE-2023",
+        "SRC-NCERT-NSTC-2023"
+      ],
+      "gapCount": 1
+    },
+    {
+      "filePath": "content/curriculum/nios/nios-class-08-curriculum.json",
+      "curriculumVersionId": "nios-class-08@2026.1.0",
+      "boardId": "nios",
+      "boardName": "National Institute of Open Schooling (NIOS - OBE, Secondary & Sr. Secondary)",
+      "yearId": "class-08",
+      "yearLabel": {
+        "en": "Class 8",
+        "hi": "कक्षा 8"
+      },
+      "nepStage": "middle-classes-6-8",
+      "ageBandYears": "13-14 years",
+      "groundingStatus": "skeleton-with-labelled-gaps",
+      "maxScreenMinutesPerDay": 75,
+      "deliveryMode": "independent-with-breaks",
+      "subjectCount": 5,
+      "skillCount": 7,
+      "weeklyMinutes": 720,
+      "sessionMinutes": 35,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-NIOS-OBE-2026",
+        "SRC-NCERT-NCFSE-2023",
+        "SRC-NCERT-NSTC-2023"
+      ],
+      "gapCount": 1
+    },
+    {
+      "filePath": "content/curriculum/nios/nios-class-09-curriculum.json",
+      "curriculumVersionId": "nios-class-09@2026.1.0",
+      "boardId": "nios",
+      "boardName": "National Institute of Open Schooling (NIOS - OBE, Secondary & Sr. Secondary)",
+      "yearId": "class-09",
+      "yearLabel": {
+        "en": "Class 9",
+        "hi": "कक्षा 9"
+      },
+      "nepStage": "secondary-classes-9-10",
+      "ageBandYears": "14-15 years",
+      "groundingStatus": "skeleton-with-labelled-gaps",
+      "maxScreenMinutesPerDay": 90,
+      "deliveryMode": "independent-with-breaks",
+      "subjectCount": 4,
+      "skillCount": 6,
+      "weeklyMinutes": 840,
+      "sessionMinutes": 40,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-NIOS-SECSRSEC-2026",
+        "SRC-CBSE-SECPART1-2026-27"
+      ],
+      "gapCount": 1
+    },
+    {
+      "filePath": "content/curriculum/nios/nios-class-10-curriculum.json",
+      "curriculumVersionId": "nios-class-10@2026.1.0",
+      "boardId": "nios",
+      "boardName": "National Institute of Open Schooling (NIOS - OBE, Secondary & Sr. Secondary)",
+      "yearId": "class-10",
+      "yearLabel": {
+        "en": "Class 10",
+        "hi": "कक्षा 10"
+      },
+      "nepStage": "secondary-classes-9-10",
+      "ageBandYears": "15-16 years",
+      "groundingStatus": "skeleton-with-labelled-gaps",
+      "maxScreenMinutesPerDay": 90,
+      "deliveryMode": "independent-with-breaks",
+      "subjectCount": 4,
+      "skillCount": 6,
+      "weeklyMinutes": 900,
+      "sessionMinutes": 40,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-NIOS-SECSRSEC-2026",
+        "SRC-CBSE-SECPART1-2026-27"
+      ],
+      "gapCount": 1
+    },
+    {
+      "filePath": "content/curriculum/nios/nios-class-11-curriculum.json",
+      "curriculumVersionId": "nios-class-11@2026.1.0",
+      "boardId": "nios",
+      "boardName": "National Institute of Open Schooling (NIOS - OBE, Secondary & Sr. Secondary)",
+      "yearId": "class-11",
+      "yearLabel": {
+        "en": "Class 11",
+        "hi": "कक्षा 11"
+      },
+      "nepStage": "secondary-classes-11-12",
+      "ageBandYears": "16-17 years",
+      "groundingStatus": "skeleton-with-labelled-gaps",
+      "maxScreenMinutesPerDay": 120,
+      "deliveryMode": "independent-with-breaks",
+      "subjectCount": 6,
+      "skillCount": 7,
+      "weeklyMinutes": 1080,
+      "sessionMinutes": 45,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-NIOS-SECSRSEC-2026",
+        "SRC-NTA-JEEMAIN-2026",
+        "SRC-NTA-CUETUG-2026",
+        "SRC-NTA-NEETUG-2026",
+        "SRC-UPSC-CSE-2026",
+        "SRC-CB-DIGITALSAT-2026",
+        "SRC-IELTS-ACADEMIC-2026"
+      ],
+      "gapCount": 1
+    },
+    {
+      "filePath": "content/curriculum/nios/nios-class-12-curriculum.json",
+      "curriculumVersionId": "nios-class-12@2026.1.0",
+      "boardId": "nios",
+      "boardName": "National Institute of Open Schooling (NIOS - OBE, Secondary & Sr. Secondary)",
+      "yearId": "class-12",
+      "yearLabel": {
+        "en": "Class 12",
+        "hi": "कक्षा 12"
+      },
+      "nepStage": "secondary-classes-11-12",
+      "ageBandYears": "17-18 years",
+      "groundingStatus": "skeleton-with-labelled-gaps",
+      "maxScreenMinutesPerDay": 120,
+      "deliveryMode": "independent-with-breaks",
+      "subjectCount": 6,
+      "skillCount": 7,
+      "weeklyMinutes": 1200,
+      "sessionMinutes": 45,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-NIOS-SECSRSEC-2026",
+        "SRC-NTA-JEEMAIN-2026",
+        "SRC-NTA-CUETUG-2026",
+        "SRC-NTA-NEETUG-2026",
+        "SRC-UPSC-CSE-2026",
+        "SRC-CB-DIGITALSAT-2026",
+        "SRC-IELTS-ACADEMIC-2026"
+      ],
+      "gapCount": 1
+    },
+    {
+      "filePath": "content/curriculum/state-boards/state-boards-class-01-curriculum.json",
+      "curriculumVersionId": "state-boards-class-01@2026.1.0",
+      "boardId": "state-boards",
+      "boardName": "State Boards (SCERT / MSBSHSE / TN-DGE Equivalency Spine)",
+      "yearId": "class-01",
+      "yearLabel": {
+        "en": "Class 1",
+        "hi": "कक्षा 1"
+      },
+      "nepStage": "foundational-classes-1-2",
+      "ageBandYears": "6-7 years",
+      "groundingStatus": "skeleton-with-labelled-gaps",
+      "maxScreenMinutesPerDay": 30,
+      "deliveryMode": "short-guided-sessions",
+      "subjectCount": 2,
+      "skillCount": 3,
+      "weeklyMinutes": 300,
+      "sessionMinutes": 20,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-NCERT-NCFFS-2022",
+        "SRC-NCERT-NSTC-2023"
+      ],
+      "gapCount": 1
+    },
+    {
+      "filePath": "content/curriculum/state-boards/state-boards-class-02-curriculum.json",
+      "curriculumVersionId": "state-boards-class-02@2026.1.0",
+      "boardId": "state-boards",
+      "boardName": "State Boards (SCERT / MSBSHSE / TN-DGE Equivalency Spine)",
+      "yearId": "class-02",
+      "yearLabel": {
+        "en": "Class 2",
+        "hi": "कक्षा 2"
+      },
+      "nepStage": "foundational-classes-1-2",
+      "ageBandYears": "7-8 years",
+      "groundingStatus": "skeleton-with-labelled-gaps",
+      "maxScreenMinutesPerDay": 30,
+      "deliveryMode": "short-guided-sessions",
+      "subjectCount": 2,
+      "skillCount": 3,
+      "weeklyMinutes": 320,
+      "sessionMinutes": 20,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-NCERT-NCFFS-2022",
+        "SRC-NCERT-NSTC-2023"
+      ],
+      "gapCount": 1
+    },
+    {
+      "filePath": "content/curriculum/state-boards/state-boards-class-03-curriculum.json",
+      "curriculumVersionId": "state-boards-class-03@2026.1.0",
+      "boardId": "state-boards",
+      "boardName": "State Boards (SCERT / MSBSHSE / TN-DGE Equivalency Spine)",
+      "yearId": "class-03",
+      "yearLabel": {
+        "en": "Class 3",
+        "hi": "कक्षा 3"
+      },
+      "nepStage": "preparatory-classes-3-5",
+      "ageBandYears": "8-9 years",
+      "groundingStatus": "skeleton-with-labelled-gaps",
+      "maxScreenMinutesPerDay": 40,
+      "deliveryMode": "short-guided-sessions",
+      "subjectCount": 3,
+      "skillCount": 4,
+      "weeklyMinutes": 400,
+      "sessionMinutes": 25,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-NCERT-NCFSE-2023",
+        "SRC-NCERT-NSTC-2023"
+      ],
+      "gapCount": 1
+    },
+    {
+      "filePath": "content/curriculum/state-boards/state-boards-class-04-curriculum.json",
+      "curriculumVersionId": "state-boards-class-04@2026.1.0",
+      "boardId": "state-boards",
+      "boardName": "State Boards (SCERT / MSBSHSE / TN-DGE Equivalency Spine)",
+      "yearId": "class-04",
+      "yearLabel": {
+        "en": "Class 4",
+        "hi": "कक्षा 4"
+      },
+      "nepStage": "preparatory-classes-3-5",
+      "ageBandYears": "9-10 years",
+      "groundingStatus": "skeleton-with-labelled-gaps",
+      "maxScreenMinutesPerDay": 45,
+      "deliveryMode": "short-guided-sessions",
+      "subjectCount": 3,
+      "skillCount": 4,
+      "weeklyMinutes": 450,
+      "sessionMinutes": 25,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-NCERT-NCFSE-2023",
+        "SRC-NCERT-NSTC-2023"
+      ],
+      "gapCount": 1
+    },
+    {
+      "filePath": "content/curriculum/state-boards/state-boards-class-05-curriculum.json",
+      "curriculumVersionId": "state-boards-class-05@2026.1.0",
+      "boardId": "state-boards",
+      "boardName": "State Boards (SCERT / MSBSHSE / TN-DGE Equivalency Spine)",
+      "yearId": "class-05",
+      "yearLabel": {
+        "en": "Class 5",
+        "hi": "कक्षा 5"
+      },
+      "nepStage": "preparatory-classes-3-5",
+      "ageBandYears": "10-11 years",
+      "groundingStatus": "skeleton-with-labelled-gaps",
+      "maxScreenMinutesPerDay": 45,
+      "deliveryMode": "short-guided-sessions",
+      "subjectCount": 3,
+      "skillCount": 4,
+      "weeklyMinutes": 500,
+      "sessionMinutes": 25,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-NCERT-NCFSE-2023",
+        "SRC-NCERT-NSTC-2023"
+      ],
+      "gapCount": 1
+    },
+    {
+      "filePath": "content/curriculum/state-boards/state-boards-class-06-curriculum.json",
+      "curriculumVersionId": "state-boards-class-06@2026.1.0",
+      "boardId": "state-boards",
+      "boardName": "State Boards (SCERT / MSBSHSE / TN-DGE Equivalency Spine)",
+      "yearId": "class-06",
+      "yearLabel": {
+        "en": "Class 6",
+        "hi": "कक्षा 6"
+      },
+      "nepStage": "middle-classes-6-8",
+      "ageBandYears": "11-12 years",
+      "groundingStatus": "skeleton-with-labelled-gaps",
+      "maxScreenMinutesPerDay": 60,
+      "deliveryMode": "independent-with-breaks",
+      "subjectCount": 5,
+      "skillCount": 7,
+      "weeklyMinutes": 600,
+      "sessionMinutes": 30,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-STATE-MSBSHSE-2026",
+        "SRC-NCERT-NCFSE-2023",
+        "SRC-NCERT-NSTC-2023"
+      ],
+      "gapCount": 1
+    },
+    {
+      "filePath": "content/curriculum/state-boards/state-boards-class-07-curriculum.json",
+      "curriculumVersionId": "state-boards-class-07@2026.1.0",
+      "boardId": "state-boards",
+      "boardName": "State Boards (SCERT / MSBSHSE / TN-DGE Equivalency Spine)",
+      "yearId": "class-07",
+      "yearLabel": {
+        "en": "Class 7",
+        "hi": "कक्षा 7"
+      },
+      "nepStage": "middle-classes-6-8",
+      "ageBandYears": "12-13 years",
+      "groundingStatus": "skeleton-with-labelled-gaps",
+      "maxScreenMinutesPerDay": 60,
+      "deliveryMode": "independent-with-breaks",
+      "subjectCount": 5,
+      "skillCount": 7,
+      "weeklyMinutes": 660,
+      "sessionMinutes": 30,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-STATE-MSBSHSE-2026",
+        "SRC-NCERT-NCFSE-2023",
+        "SRC-NCERT-NSTC-2023"
+      ],
+      "gapCount": 1
+    },
+    {
+      "filePath": "content/curriculum/state-boards/state-boards-class-08-curriculum.json",
+      "curriculumVersionId": "state-boards-class-08@2026.1.0",
+      "boardId": "state-boards",
+      "boardName": "State Boards (SCERT / MSBSHSE / TN-DGE Equivalency Spine)",
+      "yearId": "class-08",
+      "yearLabel": {
+        "en": "Class 8",
+        "hi": "कक्षा 8"
+      },
+      "nepStage": "middle-classes-6-8",
+      "ageBandYears": "13-14 years",
+      "groundingStatus": "skeleton-with-labelled-gaps",
+      "maxScreenMinutesPerDay": 75,
+      "deliveryMode": "independent-with-breaks",
+      "subjectCount": 5,
+      "skillCount": 7,
+      "weeklyMinutes": 720,
+      "sessionMinutes": 35,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-STATE-MSBSHSE-2026",
+        "SRC-NCERT-NCFSE-2023",
+        "SRC-NCERT-NSTC-2023"
+      ],
+      "gapCount": 1
+    },
+    {
+      "filePath": "content/curriculum/state-boards/state-boards-class-09-curriculum.json",
+      "curriculumVersionId": "state-boards-class-09@2026.1.0",
+      "boardId": "state-boards",
+      "boardName": "State Boards (SCERT / MSBSHSE / TN-DGE Equivalency Spine)",
+      "yearId": "class-09",
+      "yearLabel": {
+        "en": "Class 9",
+        "hi": "कक्षा 9"
+      },
+      "nepStage": "secondary-classes-9-10",
+      "ageBandYears": "14-15 years",
+      "groundingStatus": "skeleton-with-labelled-gaps",
+      "maxScreenMinutesPerDay": 90,
+      "deliveryMode": "independent-with-breaks",
+      "subjectCount": 4,
+      "skillCount": 6,
+      "weeklyMinutes": 840,
+      "sessionMinutes": 40,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-STATE-MSBSHSE-2026",
+        "SRC-CBSE-SECPART1-2026-27"
+      ],
+      "gapCount": 1
+    },
+    {
+      "filePath": "content/curriculum/state-boards/state-boards-class-10-curriculum.json",
+      "curriculumVersionId": "state-boards-class-10@2026.1.0",
+      "boardId": "state-boards",
+      "boardName": "State Boards (SCERT / MSBSHSE / TN-DGE Equivalency Spine)",
+      "yearId": "class-10",
+      "yearLabel": {
+        "en": "Class 10",
+        "hi": "कक्षा 10"
+      },
+      "nepStage": "secondary-classes-9-10",
+      "ageBandYears": "15-16 years",
+      "groundingStatus": "skeleton-with-labelled-gaps",
+      "maxScreenMinutesPerDay": 90,
+      "deliveryMode": "independent-with-breaks",
+      "subjectCount": 4,
+      "skillCount": 6,
+      "weeklyMinutes": 900,
+      "sessionMinutes": 40,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-STATE-MSBSHSE-2026",
+        "SRC-CBSE-SECPART1-2026-27"
+      ],
+      "gapCount": 1
+    },
+    {
+      "filePath": "content/curriculum/state-boards/state-boards-class-11-curriculum.json",
+      "curriculumVersionId": "state-boards-class-11@2026.1.0",
+      "boardId": "state-boards",
+      "boardName": "State Boards (SCERT / MSBSHSE / TN-DGE Equivalency Spine)",
+      "yearId": "class-11",
+      "yearLabel": {
+        "en": "Class 11",
+        "hi": "कक्षा 11"
+      },
+      "nepStage": "secondary-classes-11-12",
+      "ageBandYears": "16-17 years",
+      "groundingStatus": "skeleton-with-labelled-gaps",
+      "maxScreenMinutesPerDay": 120,
+      "deliveryMode": "independent-with-breaks",
+      "subjectCount": 6,
+      "skillCount": 7,
+      "weeklyMinutes": 1080,
+      "sessionMinutes": 45,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-STATE-MSBSHSE-2026",
+        "SRC-NTA-JEEMAIN-2026",
+        "SRC-NTA-CUETUG-2026",
+        "SRC-NTA-NEETUG-2026",
+        "SRC-UPSC-CSE-2026",
+        "SRC-CB-DIGITALSAT-2026",
+        "SRC-IELTS-ACADEMIC-2026"
+      ],
+      "gapCount": 1
+    },
+    {
+      "filePath": "content/curriculum/state-boards/state-boards-class-12-curriculum.json",
+      "curriculumVersionId": "state-boards-class-12@2026.1.0",
+      "boardId": "state-boards",
+      "boardName": "State Boards (SCERT / MSBSHSE / TN-DGE Equivalency Spine)",
+      "yearId": "class-12",
+      "yearLabel": {
+        "en": "Class 12",
+        "hi": "कक्षा 12"
+      },
+      "nepStage": "secondary-classes-11-12",
+      "ageBandYears": "17-18 years",
+      "groundingStatus": "skeleton-with-labelled-gaps",
+      "maxScreenMinutesPerDay": 120,
+      "deliveryMode": "independent-with-breaks",
+      "subjectCount": 6,
+      "skillCount": 7,
+      "weeklyMinutes": 1200,
+      "sessionMinutes": 45,
+      "sourceIds": [
+        "SRC-IAP-SCREENTIME-2022",
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-STATE-MSBSHSE-2026",
+        "SRC-NTA-JEEMAIN-2026",
+        "SRC-NTA-CUETUG-2026",
+        "SRC-NTA-NEETUG-2026",
+        "SRC-UPSC-CSE-2026",
+        "SRC-CB-DIGITALSAT-2026",
+        "SRC-IELTS-ACADEMIC-2026"
+      ],
+      "gapCount": 1
+    }
+  ],
+  "tracks": [
+    {
+      "trackId": "act",
+      "title": {
+        "en": "ACT College Readiness Assessment Track",
+        "hi": "एसीटी (ACT) अध्ययन विदेश ट्रैक"
+      },
+      "category": "study-abroad",
+      "startingYearId": "class-09",
+      "targetYears": [
+        "class-09",
+        "class-10",
+        "class-11",
+        "class-12"
+      ],
+      "conductingBody": "ACT, Inc.",
+      "sourceIds": [
+        "SRC-ACT-SPEC-2026",
+        "SRC-CB-DIGITALSAT-2026"
+      ],
+      "examPattern": {
+        "mode": "Digital / Paper Multiple-Choice Assessment",
+        "durationMinutes": 175,
+        "totalMarks": "1 to 36 Composite Scale across English, Math, Reading, and Science",
+        "patternStatus": "sourced-official-pattern"
+      },
+      "prerequisiteSkillIds": [
+        "lang-bilingual-literature-middle",
+        "math-ratios-linear-algebra-middle",
+        "sci-curiosity-middle-inquiry"
+      ],
+      "coreTrackSkillIds": [
+        "lang-academic-rhetoric-global-exams",
+        "math-polynomials-quadratics-sec",
+        "math-trigonometry-coordinate-sec",
+        "sci-integrated-sec-9-10"
+      ],
+      "domains": [
+        {
+          "name": "English & Reading",
+          "topics": [
+            "Production of Writing, Knowledge of Language & Conventions of Standard English",
+            "Key Ideas and Details, Craft and Structure, Integration of Knowledge"
+          ]
+        },
+        {
+          "name": "Mathematics & Science Reasoning",
+          "topics": [
+            "Number & Quantity, Algebra, Functions, Geometry, Statistics & Probability",
+            "Data Representation, Research Summaries & Conflicting Viewpoints in Science"
+          ]
+        }
+      ]
+    },
+    {
+      "trackId": "cuet",
+      "title": {
+        "en": "CUET (UG) Central & Participating Universities Track",
+        "hi": "सीयूईटी (यूजी) केंद्रीय विश्वविद्यालय प्रवेश ट्रैक"
+      },
+      "category": "competitive-india",
+      "startingYearId": "class-09",
+      "targetYears": [
+        "class-09",
+        "class-10",
+        "class-11",
+        "class-12"
+      ],
+      "conductingBody": "National Testing Agency (NTA)",
+      "sourceIds": [
+        "SRC-NTA-CUETUG-2026",
+        "SRC-CBSE-CURR-2026-27"
+      ],
+      "examPattern": {
+        "mode": "Hybrid / Computer Based Test (CBT)",
+        "durationMinutes": 60,
+        "totalMarks": "Per-Paper Scoring (+5 for correct, -1 for incorrect across Languages, Domain Subjects, and General Test)",
+        "patternStatus": "sourced-official-pattern"
+      },
+      "prerequisiteSkillIds": [
+        "lang-bilingual-literature-middle",
+        "math-ratios-linear-algebra-middle"
+      ],
+      "coreTrackSkillIds": [
+        "lang-academic-rhetoric-global-exams",
+        "math-calculus-vectors-srsec",
+        "sci-physics-srsec-11-12",
+        "sci-chemistry-srsec-11-12",
+        "sci-biology-srsec-11-12",
+        "soc-humanities-commerce-srsec"
+      ],
+      "domains": [
+        {
+          "name": "Section IA & IB: Languages",
+          "topics": [
+            "Reading Comprehension (Factual, Narrative, Literary)",
+            "Verbal Ability, Rearranging Parts, Vocabulary & Synonyms/Antonyms"
+          ]
+        },
+        {
+          "name": "Section II: Domain Subjects (Class 12 NCERT Aligned)",
+          "topics": [
+            "Sciences (Mathematics, Physics, Chemistry, Biology, Computer Science)",
+            "Humanities & Social Sciences (History, Political Science, Geography, Sociology)",
+            "Commerce (Accountancy, Economics, Business Studies)"
+          ]
+        },
+        {
+          "name": "Section III: General Test",
+          "topics": [
+            "Quantitative Reasoning (up to Class 8/10 NCERT)",
+            "Logical & Analytical Reasoning, General Knowledge & Current Affairs"
+          ]
+        }
+      ]
+    },
+    {
+      "trackId": "ielts",
+      "title": {
+        "en": "IELTS Academic English Proficiency Track",
+        "hi": "आईईएलटीएस (IELTS) अकादमिक अंग्रेजी दक्षता ट्रैक"
+      },
+      "category": "study-abroad",
+      "startingYearId": "class-09",
+      "targetYears": [
+        "class-09",
+        "class-10",
+        "class-11",
+        "class-12"
+      ],
+      "conductingBody": "British Council, IDP: IELTS Australia & Cambridge University Press & Assessment",
+      "sourceIds": [
+        "SRC-IELTS-ACADEMIC-2026"
+      ],
+      "examPattern": {
+        "mode": "4-Skill Assessment (Listening, Academic Reading, Academic Writing, Face-to-Face Speaking)",
+        "durationMinutes": 165,
+        "totalMarks": "Band 0 to 9 Scale (Half-band reporting across all 4 skills)",
+        "patternStatus": "sourced-official-pattern"
+      },
+      "prerequisiteSkillIds": [
+        "lit-sentence-reading-fluency",
+        "lang-bilingual-literature-middle"
+      ],
+      "coreTrackSkillIds": [
+        "lang-academic-rhetoric-global-exams"
+      ],
+      "domains": [
+        {
+          "name": "Listening (30 Minutes, 40 Questions) & Academic Reading (60 Minutes, 40 Questions)",
+          "topics": [
+            "4 recorded monologues and conversations across social and university contexts",
+            "3 long academic texts from journals/books testing skimming, logical argument, and writer opinion"
+          ]
+        },
+        {
+          "name": "Academic Writing (60 Minutes) & Speaking (11-14 Minutes)",
+          "topics": [
+            "Task 1 (150 words, 20 min): Visual chart/graph/process synthesis; Task 2 (250 words, 40 min): Discursive academic essay",
+            "Part 1 Introduction, Part 2 Individual Long Turn (Cue Card), Part 3 Two-Way Abstract Discussion"
+          ]
+        }
+      ]
+    },
+    {
+      "trackId": "jee",
+      "title": {
+        "en": "JEE (Main & Advanced) Engineering Track",
+        "hi": "जेईई (मेन और एडवांस्ड) इंजीनियरिंग ट्रैक"
+      },
+      "category": "competitive-india",
+      "startingYearId": "class-08",
+      "targetYears": [
+        "class-08",
+        "class-09",
+        "class-10",
+        "class-11",
+        "class-12"
+      ],
+      "conductingBody": "National Testing Agency (NTA) & IIT Joint Admission Board",
+      "sourceIds": [
+        "SRC-NTA-JEEMAIN-2026",
+        "SRC-CBSE-CURR-2026-27"
+      ],
+      "examPattern": {
+        "mode": "Computer Based Test (CBT)",
+        "durationMinutes": 180,
+        "totalMarks": "300 Marks (75 Questions: 25 each in Mathematics, Physics, Chemistry; +4/-1 marking)",
+        "patternStatus": "sourced-official-pattern"
+      },
+      "prerequisiteSkillIds": [
+        "math-ratios-linear-algebra-middle",
+        "math-geometry-mensuration-middle",
+        "sci-curiosity-middle-inquiry"
+      ],
+      "coreTrackSkillIds": [
+        "math-polynomials-quadratics-sec",
+        "math-trigonometry-coordinate-sec",
+        "math-calculus-vectors-srsec",
+        "sci-physics-srsec-11-12",
+        "sci-chemistry-srsec-11-12"
+      ],
+      "domains": [
+        {
+          "name": "Mathematics (Units 1-14)",
+          "topics": [
+            "Sets, Complex Numbers & Quadratics",
+            "Matrices & Determinants",
+            "Permutations, Combinations & Binomial",
+            "Integral & Differential Calculus",
+            "Coordinate Geometry & 3D Vectors",
+            "Statistics & Probability"
+          ]
+        },
+        {
+          "name": "Physics (Units 1-20)",
+          "topics": [
+            "Kinematics, Laws of Motion, Work/Energy & Rotational Dynamics",
+            "Gravitation, Properties of Solids/Liquids & Thermodynamics",
+            "Electrostatics, Current Electricity, Magnetism & EMI/AC",
+            "Optics, Dual Nature, Atoms/Nuclei & Electronic Devices"
+          ]
+        },
+        {
+          "name": "Chemistry (Units 1-20)",
+          "topics": [
+            "Physical: Atomic Structure, Thermodynamics, Equilibrium, Electrochemistry, Kinetics",
+            "Inorganic: Classification, Bonding, p/d/f-Block & Coordination Compounds",
+            "Organic: Hydrocarbons, Haloalkanes, Oxygen/Nitrogen Compounds & Biomolecules"
+          ]
+        }
+      ]
+    },
+    {
+      "trackId": "neet",
+      "title": {
+        "en": "NEET (UG) Medical Entrance Track",
+        "hi": "नीट (यूजी) मेडिकल प्रवेश ट्रैक"
+      },
+      "category": "competitive-india",
+      "startingYearId": "class-08",
+      "targetYears": [
+        "class-08",
+        "class-09",
+        "class-10",
+        "class-11",
+        "class-12"
+      ],
+      "conductingBody": "National Testing Agency (NTA) & National Medical Commission (NMC)",
+      "sourceIds": [
+        "SRC-NTA-NEETUG-2026",
+        "SRC-CBSE-CURR-2026-27"
+      ],
+      "examPattern": {
+        "mode": "Pen and Paper (OMR)",
+        "durationMinutes": 180,
+        "totalMarks": "720 Marks (180 Compulsory Questions: 45 Physics, 45 Chemistry, 90 Biology; +4/-1 marking)",
+        "patternStatus": "sourced-official-pattern"
+      },
+      "prerequisiteSkillIds": [
+        "sci-curiosity-middle-inquiry",
+        "math-ratios-linear-algebra-middle"
+      ],
+      "coreTrackSkillIds": [
+        "sci-integrated-sec-9-10",
+        "sci-biology-srsec-11-12",
+        "sci-chemistry-srsec-11-12",
+        "sci-physics-srsec-11-12"
+      ],
+      "domains": [
+        {
+          "name": "Biology - Botany & Zoology (Units 1-10)",
+          "topics": [
+            "Diversity in Living World & Structural Organisation",
+            "Cell Structure & Function, Plant Physiology & Human Physiology",
+            "Reproduction, Genetics & Evolution",
+            "Biology and Human Welfare, Biotechnology & Ecology"
+          ]
+        },
+        {
+          "name": "Chemistry (Units 1-20)",
+          "topics": [
+            "Physical Chemistry (Mole Concept, Thermodynamics, Equilibrium, Kinetics, Electrochemistry)",
+            "Inorganic Chemistry (Periodic Table, Bonding, d/f Block, Coordination)",
+            "Organic Chemistry (GOC, Hydrocarbons, Functional Groups, Biomolecules)"
+          ]
+        },
+        {
+          "name": "Physics (Units 1-20)",
+          "topics": [
+            "Mechanics, Thermal Physics & Oscillations/Waves",
+            "Electrostatics, Current Electricity, Magnetic Effects & Optics",
+            "Modern Physics & Semiconductor Electronics"
+          ]
+        }
+      ]
+    },
+    {
+      "trackId": "sat",
+      "title": {
+        "en": "College Board Digital SAT Track",
+        "hi": "कॉलेज बोर्ड डिजिटल सैट (SAT) अध्ययन विदेश ट्रैक"
+      },
+      "category": "study-abroad",
+      "startingYearId": "class-08",
+      "targetYears": [
+        "class-08",
+        "class-09",
+        "class-10",
+        "class-11",
+        "class-12"
+      ],
+      "conductingBody": "College Board",
+      "sourceIds": [
+        "SRC-CB-DIGITALSAT-2026"
+      ],
+      "examPattern": {
+        "mode": "Digital Adaptive (2-Stage Multistage Adaptive Testing in Bluebook)",
+        "durationMinutes": 134,
+        "totalMarks": "400 to 1600 Scale (200-800 Reading and Writing + 200-800 Math)",
+        "patternStatus": "sourced-official-pattern"
+      },
+      "prerequisiteSkillIds": [
+        "lang-bilingual-literature-middle",
+        "math-ratios-linear-algebra-middle",
+        "math-geometry-mensuration-middle"
+      ],
+      "coreTrackSkillIds": [
+        "lang-academic-rhetoric-global-exams",
+        "math-polynomials-quadratics-sec",
+        "math-trigonometry-coordinate-sec"
+      ],
+      "domains": [
+        {
+          "name": "Reading and Writing (64 Minutes, 54 Questions across 2 Modules)",
+          "topics": [
+            "Craft and Structure (~28%): Words in Context, Text Structure and Purpose, Cross-Text Connections",
+            "Information and Ideas (~26%): Central Ideas, Command of Textual/Quantitative Evidence, Inferences",
+            "Standard English Conventions (~26%): Boundaries, Form, Structure, and Sense",
+            "Expression of Ideas (~20%): Rhetorical Synthesis and Transitions"
+          ]
+        },
+        {
+          "name": "Math (70 Minutes, 44 Questions across 2 Modules)",
+          "topics": [
+            "Algebra (~35%): Linear equations, systems, and inequalities",
+            "Advanced Math (~35%): Equivalent expressions, nonlinear equations, quadratics, exponentials",
+            "Problem-Solving and Data Analysis (~15%): Ratios, rates, percentages, probability, statistical inference",
+            "Geometry and Trigonometry (~15%): Area/volume, lines/angles/triangles, right-triangle trig, circles"
+          ]
+        }
+      ]
+    },
+    {
+      "trackId": "toefl",
+      "title": {
+        "en": "ETS TOEFL iBT Academic English Track",
+        "hi": "टोफल (TOEFL iBT) अकादमिक अंग्रेजी ट्रैक"
+      },
+      "category": "study-abroad",
+      "startingYearId": "class-09",
+      "targetYears": [
+        "class-09",
+        "class-10",
+        "class-11",
+        "class-12"
+      ],
+      "conductingBody": "Educational Testing Service (ETS)",
+      "sourceIds": [
+        "SRC-ETS-TOEFL-2026"
+      ],
+      "examPattern": {
+        "mode": "Internet-Based Test (iBT) - Reading, Listening, Speaking, Writing",
+        "durationMinutes": 116,
+        "totalMarks": "0 to 120 Scale (30 per section) paired with ETS 1 to 6 CEFR-aligned scale (2026 update)",
+        "patternStatus": "sourced-official-pattern"
+      },
+      "prerequisiteSkillIds": [
+        "lit-sentence-reading-fluency",
+        "lang-bilingual-literature-middle"
+      ],
+      "coreTrackSkillIds": [
+        "lang-academic-rhetoric-global-exams"
+      ],
+      "domains": [
+        {
+          "name": "Reading (35 Min, 20 Questions) & Listening (36 Min, 28 Questions)",
+          "topics": [
+            "2 university-level passages (700 words each) testing rhetorical purpose, inference, and summary",
+            "3 academic lectures and 2 campus conversations testing attitude, organization, and connection"
+          ]
+        },
+        {
+          "name": "Speaking (16 Min, 4 Tasks) & Writing (29 Min, 2 Tasks)",
+          "topics": [
+            "1 Independent Speaking task + 3 Integrated Reading/Listening/Speaking tasks",
+            "Integrated Writing task (20 min) + Writing for an Academic Discussion task (10 min)"
+          ]
+        }
+      ]
+    },
+    {
+      "trackId": "upsc",
+      "title": {
+        "en": "UPSC Civil Services (CSE) NCERT Foundation & Prelims/Mains Spine",
+        "hi": "यूपीएससी सिविल सेवा (सीएसई) एनसीईआरटी आधार और प्रारंभिक/मुख्य ट्रैक"
+      },
+      "category": "competitive-india",
+      "startingYearId": "class-08",
+      "targetYears": [
+        "class-08",
+        "class-09",
+        "class-10",
+        "class-11",
+        "class-12"
+      ],
+      "conductingBody": "Union Public Service Commission (UPSC)",
+      "sourceIds": [
+        "SRC-UPSC-CSE-2026",
+        "SRC-NCERT-NCFSE-2023"
+      ],
+      "examPattern": {
+        "mode": "Prelims Objective (GS Paper I + CSAT Paper II) -> Mains Written (9 Papers) -> Personality Test",
+        "durationMinutes": 120,
+        "totalMarks": "Prelims: 200 Marks per paper (CSAT qualifying at 33%); Mains: 1750 Marks + 275 Interview",
+        "patternStatus": "sourced-official-pattern"
+      },
+      "prerequisiteSkillIds": [
+        "soc-exploring-society-middle",
+        "math-ratios-linear-algebra-middle",
+        "lang-bilingual-literature-middle"
+      ],
+      "coreTrackSkillIds": [
+        "soc-democratic-polity-economy-sec",
+        "soc-humanities-commerce-srsec",
+        "sci-integrated-sec-9-10",
+        "lang-academic-rhetoric-global-exams"
+      ],
+      "domains": [
+        {
+          "name": "General Studies Paper I (NCERT Class 6-12 Spine)",
+          "topics": [
+            "Indian Polity and Governance (Constitution, Rights, Federalism, Panchayati Raj)",
+            "History of India and Indian National Movement + Art & Culture",
+            "Indian and World Geography + Environment, Biodiversity & Climate Change",
+            "Economic and Social Development, Sustainable Development & General Science"
+          ]
+        },
+        {
+          "name": "CSAT Paper II (Class X Level Numeracy & Comprehension)",
+          "topics": [
+            "Reading Comprehension & Interpersonal Communication",
+            "Logical Reasoning, Analytical Ability & Data Interpretation",
+            "Basic Numeracy (Numbers, Orders of Magnitude - Class X Level)"
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "SRC-MWCD-NAVCHETANA-2024",
+      "authority": "Ministry of Women and Child Development (MWCD), Government of India",
+      "title": "Navchetana - National Framework for Early Childhood Stimulation for Children from Birth to Three Years (2024)",
+      "officialUrl": "https://spniwcd.wcd.gov.in/early-childhood-care-and-education/documents",
+      "category": "early-years-framework",
+      "publishedYear": 2024,
+      "verifiedAt": "2026-10-22",
+      "verificationStatus": "verified-primary-source",
+      "scopeNotes": "Governs home-0-3 stimulation across sensory, motor, cognitive, language, and caregiver bonding milestones."
+    },
+    {
+      "sourceId": "SRC-MWCD-AADHARSHILA-2024",
+      "authority": "Ministry of Women and Child Development (MWCD), Government of India",
+      "title": "Aadharshila - National Curriculum for Early Childhood Care and Education for Children from Three to Six Years (2024)",
+      "officialUrl": "https://wcd.gov.in/offerings/early-childhood-care-and-education",
+      "category": "early-years-framework",
+      "publishedYear": 2024,
+      "verifiedAt": "2026-10-22",
+      "verificationStatus": "verified-primary-source",
+      "scopeNotes": "Governs nursery, LKG, and UKG play-based weekly and daily schedules across Panchakosha domains."
+    },
+    {
+      "sourceId": "SRC-NCERT-NCFFS-2022",
+      "authority": "National Council of Educational Research and Training (NCERT)",
+      "title": "National Curriculum Framework for Foundational Stage (NCF-FS) 2022",
+      "officialUrl": "https://ncert.nic.in/pdf/NCF_for_Foundational_Stage_20_October_2022.pdf",
+      "category": "national-curriculum-framework",
+      "publishedYear": 2022,
+      "verifiedAt": "2026-10-22",
+      "verificationStatus": "verified-primary-source",
+      "scopeNotes": "Defines Curricular Goals and Competencies for ages 3 to 8 (Nursery, LKG, UKG, Class 1, Class 2)."
+    },
+    {
+      "sourceId": "SRC-NCERT-NCFSE-2023",
+      "authority": "National Council of Educational Research and Training (NCERT)",
+      "title": "National Curriculum Framework for School Education (NCF-SE) 2023",
+      "officialUrl": "https://ncert.nic.in/pdf/NCFSE-2023-August_2023.pdf",
+      "category": "national-curriculum-framework",
+      "publishedYear": 2023,
+      "verifiedAt": "2026-10-22",
+      "verificationStatus": "verified-primary-source",
+      "scopeNotes": "Defines 5+3+3+4 stages, Curricular Goals, Competencies, notional hours, and assessment principles from Foundational to Secondary Class 12."
+    },
+    {
+      "sourceId": "SRC-NCERT-NSTC-2023",
+      "authority": "National Council of Educational Research and Training (NCERT)",
+      "title": "National Syllabus and Teaching-Learning Material Committee (NSTC) Notification and NEP 2020 Alignment",
+      "officialUrl": "https://ncert.nic.in/pdf/notice/Constitution_of_High-Powered_Committee-NSTC.pdf",
+      "category": "national-curriculum-framework",
+      "publishedYear": 2023,
+      "verifiedAt": "2026-10-22",
+      "verificationStatus": "verified-primary-source",
+      "scopeNotes": "Governs new NCERT syllabus and textbook development across Classes 1 to 12 under NCF-SE 2023."
+    },
+    {
+      "sourceId": "SRC-CBSE-CURR-2026-27",
+      "authority": "Central Board of Secondary Education (CBSE Academics Unit)",
+      "title": "CBSE Secondary and Senior Secondary School Curriculum 2026-27",
+      "officialUrl": "https://cbseacademic.nic.in/curriculum_2027.html",
+      "category": "school-board-syllabus",
+      "publishedYear": 2026,
+      "verifiedAt": "2026-10-22",
+      "verificationStatus": "verified-primary-source",
+      "scopeNotes": "Official CBSE scheme of studies, subject codes, internal assessment rubrics, and annual board exam weightages."
+    },
+    {
+      "sourceId": "SRC-CBSE-SECPART1-2026-27",
+      "authority": "Central Board of Secondary Education (CBSE Academics Unit)",
+      "title": "CBSE Secondary School Curriculum 2026-27 Part 1 Academic Guidelines",
+      "officialUrl": "https://cbseacademic.nic.in/web_material/CurriculumMain27/SecPart1/Curriculum_SecP1_2026-27.pdf",
+      "category": "school-board-syllabus",
+      "publishedYear": 2026,
+      "verifiedAt": "2026-10-22",
+      "verificationStatus": "verified-primary-source",
+      "scopeNotes": "Details CBSE competency-based assessment structure, 20-mark internal assessment, and 80-mark board theory blueprint."
+    },
+    {
+      "sourceId": "SRC-CISCE-PUB-2026",
+      "authority": "Council for the Indian School Certificate Examinations (CISCE)",
+      "title": "CISCE Curriculum Pre-School to Class VIII and Regulations & Syllabuses for ICSE (Class X) and ISC (Class XII)",
+      "officialUrl": "https://www.ciseresults.org/publications.html",
+      "category": "school-board-syllabus",
+      "publishedYear": 2026,
+      "verifiedAt": "2026-10-22",
+      "verificationStatus": "verified-portal-with-chapter-gaps",
+      "scopeNotes": "Official CISCE publication index for Pre-School to Class 8, ICSE Class 9-10 Group I/II/III subjects, and ISC Class 11-12 streams."
+    },
+    {
+      "sourceId": "SRC-NIOS-OBE-2026",
+      "authority": "National Institute of Open Schooling (NIOS)",
+      "title": "NIOS Open Basic Education (OBE Levels A, B, C) Equivalent to Classes 3, 5, and 8",
+      "officialUrl": "https://rcpune.nios.ac.in/open-basic-education-courses-material.html",
+      "category": "open-schooling",
+      "publishedYear": 2026,
+      "verifiedAt": "2026-10-22",
+      "verificationStatus": "verified-primary-source",
+      "scopeNotes": "Official open-schooling elementary equivalence levels for learners outside conventional schools."
+    },
+    {
+      "sourceId": "SRC-NIOS-SECSRSEC-2026",
+      "authority": "National Institute of Open Schooling (NIOS)",
+      "title": "NIOS Secondary (Class 10) and Senior Secondary (Class 12) Subject List and Scheme of Studies",
+      "officialUrl": "https://sdmis.nios.ac.in/static/dist/images/pdf/subjects-available/subjects-available.pdf",
+      "category": "open-schooling",
+      "publishedYear": 2026,
+      "verifiedAt": "2026-10-22",
+      "verificationStatus": "verified-primary-source",
+      "scopeNotes": "Defines NIOS subject codes, Tutor Marked Assignment (TMA) weightages, and Public / On-Demand Exam pathways."
+    },
+    {
+      "sourceId": "SRC-STATE-MSBSHSE-2026",
+      "authority": "Maharashtra State Board of Secondary and Higher Secondary Education (MSBSHSE) & Tamil Nadu DGE",
+      "title": "State Board SSC / HSC Academic Portal and Equivalency Reference",
+      "officialUrl": "https://www.mahahsscboard.in/en/studentCorner",
+      "category": "school-board-syllabus",
+      "publishedYear": 2026,
+      "verifiedAt": "2026-10-22",
+      "verificationStatus": "verified-portal-with-chapter-gaps",
+      "scopeNotes": "Representative state board reference mapped onto the NCF-SE shared skill graph; state-specific language chapters are labelled as Phase 3 ingestion items."
+    },
+    {
+      "sourceId": "SRC-NTA-JEEMAIN-2026",
+      "authority": "National Testing Agency (NTA)",
+      "title": "Syllabus for Joint Entrance Examination JEE (Main) 2026",
+      "officialUrl": "https://jeemain.nta.nic.in/document/syllabus-2026/",
+      "category": "competitive-exam-india",
+      "publishedYear": 2026,
+      "verifiedAt": "2026-10-22",
+      "verificationStatus": "verified-primary-source",
+      "scopeNotes": "Official JEE Main Mathematics, Physics, and Chemistry syllabus units and CBT Paper 1 examination structure."
+    },
+    {
+      "sourceId": "SRC-NTA-NEETUG-2026",
+      "authority": "National Testing Agency (NTA) & National Medical Commission (NMC)",
+      "title": "Syllabus for NEET (UG) 2026 Examination",
+      "officialUrl": "https://www.nta.ac.in/Download/Notice/Notice_20260108180635.pdf",
+      "category": "competitive-exam-india",
+      "publishedYear": 2026,
+      "verifiedAt": "2026-10-22",
+      "verificationStatus": "verified-primary-source",
+      "scopeNotes": "Official Physics, Chemistry, and Biology (Botany and Zoology) unit syllabus notified by NMC UGMEB and NTA."
+    },
+    {
+      "sourceId": "SRC-NTA-CUETUG-2026",
+      "authority": "National Testing Agency (NTA)",
+      "title": "CUET (UG) 2026 Official Syllabus Portal",
+      "officialUrl": "https://cuet.nta.nic.in/cuetug-2026-syllabus/",
+      "category": "competitive-exam-india",
+      "publishedYear": 2026,
+      "verifiedAt": "2026-10-22",
+      "verificationStatus": "verified-primary-source",
+      "scopeNotes": "Covers Section IA/IB Languages, Section II Domain-Specific Subjects (Class 12 NCERT aligned), and Section III General Test."
+    },
+    {
+      "sourceId": "SRC-UPSC-CSE-2026",
+      "authority": "Union Public Service Commission (UPSC)",
+      "title": "UPSC Civil Services Examination Revised Syllabus and Scheme (Prelims GS, CSAT, and Mains)",
+      "officialUrl": "https://www.upsc.gov.in/examinations/revised-syllabus-scheme",
+      "category": "competitive-exam-india",
+      "publishedYear": 2026,
+      "verifiedAt": "2026-10-22",
+      "verificationStatus": "verified-primary-source",
+      "scopeNotes": "Official scheme for Prelims Paper I (General Studies) and Paper II (CSAT) plus Mains papers."
+    },
+    {
+      "sourceId": "SRC-CB-DIGITALSAT-2026",
+      "authority": "College Board",
+      "title": "Assessment Framework and Test Specifications for the Digital SAT Suite",
+      "officialUrl": "https://satsuite.collegeboard.org/media/pdf/assessment-framework-for-digital-sat-suite.pdf",
+      "category": "study-abroad-exam",
+      "publishedYear": 2026,
+      "verifiedAt": "2026-10-22",
+      "verificationStatus": "verified-primary-source",
+      "scopeNotes": "Defines Reading and Writing domains (Craft and Structure, Information and Ideas, Standard English Conventions, Expression of Ideas) and Math domains (Algebra, Advanced Math, Problem-Solving and Data Analysis, Geometry and Trigonometry)."
+    },
+    {
+      "sourceId": "SRC-ACT-SPEC-2026",
+      "authority": "ACT, Inc. ( Consequential Validity & College Readiness Benchmarks )",
+      "title": "ACT Test Structure and College Readiness Standards (English, Math, Reading, Science)",
+      "officialUrl": "https://satsuite.collegeboard.org/sat/whats-on-the-test",
+      "category": "study-abroad-exam",
+      "publishedYear": 2026,
+      "verifiedAt": "2026-10-22",
+      "verificationStatus": "verified-portal-with-chapter-gaps",
+      "scopeNotes": "Maps ACT English, Mathematics, Reading, and Science Reasoning onto secondary school skill nodes; full ACT item bank labelled for Phase 4 expansion."
+    },
+    {
+      "sourceId": "SRC-IELTS-ACADEMIC-2026",
+      "authority": "IELTS Official (British Council, IDP, Cambridge)",
+      "title": "IELTS Academic Test Format and Four-Skill Assessment Specification",
+      "officialUrl": "https://ielts.org/take-a-test/test-types/ielts-academic-test",
+      "category": "study-abroad-exam",
+      "publishedYear": 2026,
+      "verifiedAt": "2026-10-22",
+      "verificationStatus": "verified-primary-source",
+      "scopeNotes": "Defines Listening (30 min), Academic Reading (60 min), Academic Writing Task 1 & 2 (60 min), and Speaking Parts 1-3 (11-14 min) on the 0-9 band scale."
+    },
+    {
+      "sourceId": "SRC-ETS-TOEFL-2026",
+      "authority": "Educational Testing Service (ETS)",
+      "title": "TOEFL iBT Test Content, Structure, and 2026 Score Scale (1-6 CEFR & 0-120)",
+      "officialUrl": "https://www.ets.org/toefl/test-takers/ibt/about/content.html",
+      "category": "study-abroad-exam",
+      "publishedYear": 2026,
+      "verifiedAt": "2026-10-22",
+      "verificationStatus": "verified-primary-source",
+      "scopeNotes": "Defines Reading, Listening, Speaking, and Writing tasks for the under-2-hour TOEFL iBT format."
+    },
+    {
+      "sourceId": "SRC-UGC-NCRF-2023",
+      "authority": "University Grants Commission (UGC), NCERT, NCVET, AICTE",
+      "title": "Report of the High-Level Committee on National Credit Framework (NCrF)",
+      "officialUrl": "https://www.ugc.gov.in/pdfnews/9028476_Report-of-National-Credit-Framework.pdf",
+      "category": "credit-and-assessment-framework",
+      "publishedYear": 2023,
+      "verifiedAt": "2026-10-22",
+      "verificationStatus": "verified-primary-source",
+      "scopeNotes": "Establishes 1,200 notional learning hours per academic year (40 credits) across school and higher education."
+    },
+    {
+      "sourceId": "SRC-NCERT-PARAKH-2024",
+      "authority": "PARAKH National Assessment Centre, NCERT",
+      "title": "PARAKH Rashtriya Sarvekshan 2024 Assessment Framework and Holistic Progress Card Equivalence",
+      "officialUrl": "https://ncert.nic.in/parakh/pdf/Assessment_Framework.pdf",
+      "category": "credit-and-assessment-framework",
+      "publishedYear": 2024,
+      "verifiedAt": "2026-10-22",
+      "verificationStatus": "verified-primary-source",
+      "scopeNotes": "Sets stage-end competency benchmarks at Classes 3, 6, and 9 and cross-board equivalence standards."
+    },
+    {
+      "sourceId": "SRC-INDIA-DPDPA-2023",
+      "authority": "Ministry of Electronics and Information Technology (MeitY), Government of India",
+      "title": "Digital Personal Data Protection Act 2023 Section 9 and DPDP Rules 2025 Rule 10 (Children's Data)",
+      "officialUrl": "https://www.dpdpa.com/dpdpa2023/chapter-2/section9.html",
+      "category": "legal-and-child-safety",
+      "publishedYear": 2025,
+      "verifiedAt": "2026-10-22",
+      "verificationStatus": "verified-primary-source",
+      "scopeNotes": "Mandates verifiable parental consent and prohibits tracking, behavioral monitoring, and targeted ads for children under 18."
+    },
+    {
+      "sourceId": "SRC-IAP-SCREENTIME-2022",
+      "authority": "Indian Academy of Pediatrics (IAP)",
+      "title": "Indian Academy of Pediatrics Guidelines on Screen Time and Digital Wellness in Infants, Children and Adolescents",
+      "officialUrl": "https://pubmed.ncbi.nlm.nih.gov/34969943/",
+      "category": "legal-and-child-safety",
+      "publishedYear": 2022,
+      "verifiedAt": "2026-10-22",
+      "verificationStatus": "verified-primary-source",
+      "scopeNotes": "Mandates zero screens under 24 months, <1 hour/day supervised co-viewing for ages 2-5, and balanced digital hygiene for ages 5-18."
+    },
+    {
+      "sourceId": "SRC-MOE-UDISE-2025",
+      "authority": "Department of School Education and Literacy, Ministry of Education, Government of India",
+      "title": "UDISE+ 2024-25 All-India School Education Report",
+      "officialUrl": "https://dashboard.udiseplus.gov.in/report2026/static/media/UDISE+2024_25_Booklet_existing.118ba29d4773e6372f72.pdf",
+      "category": "education-statistics",
+      "publishedYear": 2025,
+      "verifiedAt": "2026-10-22",
+      "verificationStatus": "verified-primary-source",
+      "scopeNotes": "Primary national dataset for school enrollment, infrastructure, and stage-wise student distribution."
+    }
+  ],
+  "skillGraph": {
+    "schemaVersion": "1.0.0",
+    "graphVersion": "1.2.0",
+    "updatedAt": "2026-10-22T00:00:00.000Z",
+    "domains": [
+      {
+        "id": "early-stimulation-motor",
+        "name": {
+          "en": "Early Childhood Stimulation & Panchakosha Development",
+          "hi": "प्रारंभिक बाल प्रोत्साहन और पंचकोश विकास"
+        },
+        "description": "Sensory, gross/fine motor, socio-emotional, and play-based stimulation for birth to 6 years under MWCD Navchetana and Aadharshila."
+      },
+      {
+        "id": "foundational-literacy",
+        "name": {
+          "en": "Foundational Bilingual Literacy (Hindi & English)",
+          "hi": "बुनियादी द्विभाषी साक्षरता (हिंदी और अंग्रेजी)"
+        },
+        "description": "Oral language, phonological awareness, decoding, reading fluency, and early writing across Nursery to Class 5."
+      },
+      {
+        "id": "foundational-numeracy",
+        "name": {
+          "en": "Foundational Numeracy & Spatial Sense",
+          "hi": "बुनियादी संख्या ज्ञान और स्थानिक समझ"
+        },
+        "description": "Pre-number concepts, counting, place value, four operations, shapes, and measurement from Nursery to Class 5."
+      },
+      {
+        "id": "mathematics-core",
+        "name": {
+          "en": "Middle & Secondary Mathematics",
+          "hi": "माध्यमिक और उच्चतर गणित"
+        },
+        "description": "Number systems, algebra, geometry, mensuration, trigonometry, calculus, probability, and statistics from Class 6 to Class 12 and competitive tracks."
+      },
+      {
+        "id": "science-and-inquiry",
+        "name": {
+          "en": "Science, Physics, Chemistry & Biology",
+          "hi": "विज्ञान, भौतिकी, रसायन और जीवविज्ञान"
+        },
+        "description": "Environmental studies, scientific inquiry, physics, chemistry, and biology from Class 3 to Class 12 and JEE/NEET tracks."
+      },
+      {
+        "id": "social-science-and-humanities",
+        "name": {
+          "en": "Social Science, Polity, Economy & History",
+          "hi": "सामाजिक विज्ञान, राजव्यवस्था, अर्थव्यवस्था और इतिहास"
+        },
+        "description": "History, geography, social and political life, economics, and Indian constitutional foundations from Class 6 to Class 12 and UPSC/CUET tracks."
+      },
+      {
+        "id": "languages-and-communication",
+        "name": {
+          "en": "Academic Reading, Rhetoric & Global English/Hindi",
+          "hi": "शैक्षणिक पठन, लेखन और वैश्विक भाषा कौशल"
+        },
+        "description": "Reading comprehension, grammar conventions, analytical writing, and speaking proficiency for Classes 6-12 and SAT/ACT/IELTS/TOEFL."
+      },
+      {
+        "id": "computational-and-ai-literacy",
+        "name": {
+          "en": "Computational Thinking, Data & AI Literacy",
+          "hi": "कम्प्यूटेशनल चिंतन, डेटा और एआई साक्षरता"
+        },
+        "description": "Algorithmic logic, data representation, coding fundamentals, and responsible AI literacy across Middle and Secondary stages."
+      }
+    ],
+    "skills": [
+      {
+        "id": "stim-sensory-motor-0-3",
+        "name": {
+          "en": "Sensory Tracking, Grasp & Caregiver Bonding",
+          "hi": "संवेदी समन्वय, पकड़ और देखभालकर्ता जुड़ाव"
+        },
+        "domainId": "early-stimulation-motor",
+        "stage": {
+          "fromYearId": "home-0-3",
+          "toYearId": "home-0-3"
+        },
+        "description": "Infant and toddler sensory tracking, object permanence, rhythmic movement, and responsive serve-and-return caregiver interaction.",
+        "prerequisites": [],
+        "successCriteria": [
+          "Follows moving objects and responds to caregiver voice and gestures",
+          "Manipulates safe household objects, stacks blocks, and coordinates balance"
+        ],
+        "evidenceTypes": [
+          "teacher-observation",
+          "practical"
+        ],
+        "boardAlignments": [
+          {
+            "boardId": "early-years",
+            "yearId": "home-0-3",
+            "subject": "Sensory & Motor Stimulation",
+            "sourceId": "SRC-MWCD-NAVCHETANA-2024",
+            "alignmentStrength": "direct"
+          },
+          {
+            "boardId": "cbse",
+            "yearId": "home-0-3",
+            "subject": "Sensory & Motor Stimulation",
+            "sourceId": "SRC-MWCD-NAVCHETANA-2024",
+            "alignmentStrength": "direct"
+          }
+        ],
+        "trackBranches": [],
+        "status": "active"
+      },
+      {
+        "id": "stim-bilingual-babble-words",
+        "name": {
+          "en": "First Words, Songs & Bilingual Listening (0-3)",
+          "hi": "प्रथम शब्द, बालगीत और द्विभाषी श्रवण (0-3)"
+        },
+        "domainId": "early-stimulation-motor",
+        "stage": {
+          "fromYearId": "home-0-3",
+          "toYearId": "nursery"
+        },
+        "description": "Oral stimulation through mother-tongue and English rhymes, naming everyday objects, and two-word expressive phrases.",
+        "prerequisites": [
+          "stim-sensory-motor-0-3"
+        ],
+        "successCriteria": [
+          "Points to named household objects and body parts in home language",
+          "Uses simple words and gestures to express needs during play"
+        ],
+        "evidenceTypes": [
+          "teacher-observation",
+          "oral-reading"
+        ],
+        "boardAlignments": [
+          {
+            "boardId": "early-years",
+            "yearId": "home-0-3",
+            "subject": "Oral Language & Songs",
+            "sourceId": "SRC-MWCD-NAVCHETANA-2024",
+            "alignmentStrength": "direct"
+          }
+        ],
+        "trackBranches": [],
+        "status": "active"
+      },
+      {
+        "id": "ecce-panchakosha-play",
+        "name": {
+          "en": "Panchakosha Motor, Socio-Emotional & Creative Play",
+          "hi": "पंचकोश शारीरिक, सामाजिक-भावनात्मक और रचनात्मक खेल"
+        },
+        "domainId": "early-stimulation-motor",
+        "stage": {
+          "fromYearId": "nursery",
+          "toYearId": "ukg"
+        },
+        "description": "Fine motor clay/paper work, turn-taking in group games, emotion recognition, and rhythmic movement under Aadharshila and NCF-FS.",
+        "prerequisites": [
+          "stim-sensory-motor-0-3"
+        ],
+        "successCriteria": [
+          "Demonstrates fine-motor control with crayons, beads, and paper folding",
+          "Takes turns, shares materials, and follows 2-step game rules in a peer pod"
+        ],
+        "evidenceTypes": [
+          "teacher-observation",
+          "project"
+        ],
+        "boardAlignments": [
+          {
+            "boardId": "early-years",
+            "yearId": "nursery",
+            "subject": "Panchakosha Play & Wellness",
+            "sourceId": "SRC-MWCD-AADHARSHILA-2024",
+            "alignmentStrength": "direct"
+          },
+          {
+            "boardId": "early-years",
+            "yearId": "lkg",
+            "subject": "Panchakosha Play & Wellness",
+            "sourceId": "SRC-NCERT-NCFFS-2022",
+            "alignmentStrength": "direct"
+          },
+          {
+            "boardId": "early-years",
+            "yearId": "ukg",
+            "subject": "Panchakosha Play & Wellness",
+            "sourceId": "SRC-NCERT-NCFFS-2022",
+            "alignmentStrength": "direct"
+          }
+        ],
+        "trackBranches": [],
+        "status": "active"
+      },
+      {
+        "id": "lit-phonics-akshara-awareness",
+        "name": {
+          "en": "Phonological & Akshara Sound-Symbol Awareness",
+          "hi": "ध्वनि जागरूकता और अक्षर-ध्वनि पहचान"
+        },
+        "domainId": "foundational-literacy",
+        "stage": {
+          "fromYearId": "nursery",
+          "toYearId": "class-01"
+        },
+        "description": "Recognizing beginning and ending sounds, rhyming patterns, Devanagari Varnamala aksharas, and English letter-sound correspondence.",
+        "prerequisites": [
+          "stim-bilingual-babble-words"
+        ],
+        "successCriteria": [
+          "Identifies initial sounds of familiar Hindi and English words",
+          "Matches core Devanagari aksharas and English letters to their phonetic sounds"
+        ],
+        "evidenceTypes": [
+          "diagnostic-item",
+          "oral-reading"
+        ],
+        "boardAlignments": [
+          {
+            "boardId": "early-years",
+            "yearId": "lkg",
+            "subject": "Foundational Language",
+            "sourceId": "SRC-NCERT-NCFFS-2022",
+            "alignmentStrength": "direct"
+          },
+          {
+            "boardId": "cbse",
+            "yearId": "class-01",
+            "subject": "English & Hindi (Mridang / Sarangi)",
+            "sourceId": "SRC-NCERT-NCFFS-2022",
+            "alignmentStrength": "direct"
+          }
+        ],
+        "trackBranches": [],
+        "status": "active"
+      },
+      {
+        "id": "lit-sentence-reading-fluency",
+        "name": {
+          "en": "Guided Story Reading & Comprehension (Classes 1-5)",
+          "hi": "धाराप्रवाह कहानी पठन और अर्थग्रहण (कक्षा 1-5)"
+        },
+        "domainId": "foundational-literacy",
+        "stage": {
+          "fromYearId": "class-01",
+          "toYearId": "class-05"
+        },
+        "description": "Reading short graded stories with comprehension in Hindi and English, answering literal and inferential questions, and writing short paragraphs.",
+        "prerequisites": [
+          "lit-phonics-akshara-awareness"
+        ],
+        "successCriteria": [
+          "Reads age-graded text aloud at target fluency with comprehension",
+          "Answers who, what, why questions and writes 4-6 coherent sentences"
+        ],
+        "evidenceTypes": [
+          "diagnostic-item",
+          "oral-reading",
+          "lesson-exit-ticket"
+        ],
+        "boardAlignments": [
+          {
+            "boardId": "cbse",
+            "yearId": "class-02",
+            "subject": "English & Hindi",
+            "sourceId": "SRC-NCERT-NCFFS-2022",
+            "alignmentStrength": "direct"
+          },
+          {
+            "boardId": "cbse",
+            "yearId": "class-04",
+            "subject": "Languages (Santoor / Veena)",
+            "sourceId": "SRC-NCERT-NCFSE-2023",
+            "alignmentStrength": "direct"
+          },
+          {
+            "boardId": "nios",
+            "yearId": "class-03",
+            "subject": "OBE Level A Languages",
+            "sourceId": "SRC-NIOS-OBE-2026",
+            "alignmentStrength": "direct"
+          }
+        ],
+        "trackBranches": [],
+        "status": "active"
+      },
+      {
+        "id": "num-pre-number-counting-20",
+        "name": {
+          "en": "Pre-Number Sorting, Patterns & Counting 1 to 20",
+          "hi": "पूर्व-संख्या वर्गीकरण, पैटर्न और 1 से 20 तक गिनती"
+        },
+        "domainId": "foundational-numeracy",
+        "stage": {
+          "fromYearId": "nursery",
+          "toYearId": "ukg"
+        },
+        "description": "One-to-one correspondence, comparing more/less, sorting by shape and size, and counting concrete objects up to 20.",
+        "prerequisites": [
+          "ecce-panchakosha-play"
+        ],
+        "successCriteria": [
+          "Counts up to 20 objects accurately using one-to-one correspondence",
+          "Extends simple ABAB and AABB visual patterns"
+        ],
+        "evidenceTypes": [
+          "diagnostic-item",
+          "lesson-exit-ticket"
+        ],
+        "boardAlignments": [
+          {
+            "boardId": "early-years",
+            "yearId": "ukg",
+            "subject": "Early Numeracy & Shapes",
+            "sourceId": "SRC-NCERT-NCFFS-2022",
+            "alignmentStrength": "direct"
+          }
+        ],
+        "trackBranches": [],
+        "status": "active"
+      },
+      {
+        "id": "num-place-value-add-sub",
+        "name": {
+          "en": "Base-10 Place Value, Addition & Subtraction",
+          "hi": "स्थानीय मान, जोड़ और घटाव"
+        },
+        "domainId": "foundational-numeracy",
+        "stage": {
+          "fromYearId": "class-01",
+          "toYearId": "class-03"
+        },
+        "description": "Understanding tens, hundreds, and thousands, regrouping in addition and subtraction, and solving word problems.",
+        "prerequisites": [
+          "num-pre-number-counting-20"
+        ],
+        "successCriteria": [
+          "Decomposes 2-digit and 3-digit numbers into hundreds, tens, and ones",
+          "Solves addition and subtraction word problems with regrouping"
+        ],
+        "evidenceTypes": [
+          "diagnostic-item",
+          "lesson-exit-ticket",
+          "unit-test"
+        ],
+        "boardAlignments": [
+          {
+            "boardId": "cbse",
+            "yearId": "class-01",
+            "subject": "Mathematics (Joyful Mathematics)",
+            "sourceId": "SRC-NCERT-NCFFS-2022",
+            "alignmentStrength": "direct"
+          },
+          {
+            "boardId": "cbse",
+            "yearId": "class-03",
+            "subject": "Mathematics (Maths Mela)",
+            "sourceId": "SRC-NCERT-NCFSE-2023",
+            "alignmentStrength": "direct"
+          }
+        ],
+        "trackBranches": [],
+        "status": "active"
+      },
+      {
+        "id": "num-mult-div-fractions-prep",
+        "name": {
+          "en": "Multiplication, Division, Factors & Introductory Fractions",
+          "hi": "गुणा, भाग, गुणनखंड और भिन्न की शुरुआत"
+        },
+        "domainId": "foundational-numeracy",
+        "stage": {
+          "fromYearId": "class-03",
+          "toYearId": "class-05"
+        },
+        "description": "Multi-digit multiplication and division, multiples and factors, equivalent fractions, decimals, and area/perimeter of rectangles.",
+        "prerequisites": [
+          "num-place-value-add-sub"
+        ],
+        "successCriteria": [
+          "Performs multi-digit division and interprets remainders in context",
+          "Compares fractions with unlike denominators using equivalence"
+        ],
+        "evidenceTypes": [
+          "diagnostic-item",
+          "unit-test",
+          "term-exam"
+        ],
+        "boardAlignments": [
+          {
+            "boardId": "cbse",
+            "yearId": "class-04",
+            "subject": "Mathematics",
+            "sourceId": "SRC-NCERT-NCFSE-2023",
+            "alignmentStrength": "direct"
+          },
+          {
+            "boardId": "cbse",
+            "yearId": "class-05",
+            "subject": "Mathematics",
+            "sourceId": "SRC-NCERT-NCFSE-2023",
+            "alignmentStrength": "direct"
+          },
+          {
+            "boardId": "nios",
+            "yearId": "class-05",
+            "subject": "OBE Level B Mathematics",
+            "sourceId": "SRC-NIOS-OBE-2026",
+            "alignmentStrength": "direct"
+          }
+        ],
+        "trackBranches": [],
+        "status": "active"
+      },
+      {
+        "id": "math-integers-number-patterns",
+        "name": {
+          "en": "Integers, Prime Factorisation & Number Patterns (Ganita Prakash)",
+          "hi": "पूर्णांक, अभाज्य गुणनखंड और संख्या पैटर्न (गणित प्रकाश)"
+        },
+        "domainId": "mathematics-core",
+        "stage": {
+          "fromYearId": "class-06",
+          "toYearId": "class-07"
+        },
+        "description": "Patterns in numbers, prime time factorisation, negative integers on the number line, and operations on rational numbers.",
+        "prerequisites": [
+          "num-mult-div-fractions-prep"
+        ],
+        "successCriteria": [
+          "Adds, subtracts, multiplies, and divides signed integers and fractions accurately",
+          "Identifies figurate number sequences, HCF/LCM, and divisibility properties"
+        ],
+        "evidenceTypes": [
+          "diagnostic-item",
+          "lesson-exit-ticket",
+          "unit-test",
+          "term-exam"
+        ],
+        "boardAlignments": [
+          {
+            "boardId": "cbse",
+            "yearId": "class-06",
+            "subject": "Mathematics (Ganita Prakash)",
+            "sourceId": "SRC-NCERT-NCFSE-2023",
+            "alignmentStrength": "direct"
+          },
+          {
+            "boardId": "cisce",
+            "yearId": "class-06",
+            "subject": "Mathematics",
+            "sourceId": "SRC-CISCE-PUB-2026",
+            "alignmentStrength": "direct"
+          }
+        ],
+        "trackBranches": [
+          {
+            "trackId": "sat",
+            "role": "foundation",
+            "officialExamRef": "Problem-Solving and Data Analysis"
+          },
+          {
+            "trackId": "cuet",
+            "role": "foundation",
+            "officialExamRef": "Section III Quantitative Reasoning"
+          }
+        ],
+        "status": "active"
+      },
+      {
+        "id": "math-ratios-linear-algebra-middle",
+        "name": {
+          "en": "Algebraic Expressions, Linear Equations & Proportional Reasoning",
+          "hi": "बीजीय व्यंजक, रैखिक समीकरण और अनुपात-समानुपात"
+        },
+        "domainId": "mathematics-core",
+        "stage": {
+          "fromYearId": "class-06",
+          "toYearId": "class-08"
+        },
+        "description": "Forming algebraic expressions, solving one-variable linear equations, percentages, compound interest, and direct/inverse proportions.",
+        "prerequisites": [
+          "math-integers-number-patterns"
+        ],
+        "successCriteria": [
+          "Translates word problems into single-variable linear equations and solves them",
+          "Applies ratio, percentage change, and direct/inverse proportion in real scenarios"
+        ],
+        "evidenceTypes": [
+          "diagnostic-item",
+          "unit-test",
+          "term-exam"
+        ],
+        "boardAlignments": [
+          {
+            "boardId": "cbse",
+            "yearId": "class-07",
+            "subject": "Mathematics (Ganita Prakash)",
+            "sourceId": "SRC-NCERT-NCFSE-2023",
+            "alignmentStrength": "direct"
+          },
+          {
+            "boardId": "cbse",
+            "yearId": "class-08",
+            "subject": "Mathematics (Ganita Prakash)",
+            "sourceId": "SRC-NCERT-NCFSE-2023",
+            "alignmentStrength": "direct"
+          },
+          {
+            "boardId": "nios",
+            "yearId": "class-08",
+            "subject": "OBE Level C Mathematics",
+            "sourceId": "SRC-NIOS-OBE-2026",
+            "alignmentStrength": "direct"
+          }
+        ],
+        "trackBranches": [
+          {
+            "trackId": "sat",
+            "role": "foundation",
+            "officialExamRef": "Digital SAT Algebra Domain"
+          },
+          {
+            "trackId": "act",
+            "role": "foundation",
+            "officialExamRef": "ACT Algebra Readiness"
+          },
+          {
+            "trackId": "upsc",
+            "role": "foundation",
+            "officialExamRef": "UPSC CSAT Basic Numeracy (Class X level)"
+          }
+        ],
+        "status": "active"
+      },
+      {
+        "id": "math-geometry-mensuration-middle",
+        "name": {
+          "en": "Euclidean Lines, Triangles, Symmetry & Mensuration",
+          "hi": "रेखाएं, त्रिभुज, सममिति और क्षेत्रमिति"
+        },
+        "domainId": "mathematics-core",
+        "stage": {
+          "fromYearId": "class-06",
+          "toYearId": "class-08"
+        },
+        "description": "Angle relationships, triangle congruence criteria, Pythagoras property, rotational symmetry, and surface area/volume of 3D solids.",
+        "prerequisites": [
+          "math-integers-number-patterns"
+        ],
+        "successCriteria": [
+          "Proves angle and triangle properties using parallel line and congruence rules",
+          "Computes area and volume of prisms, cylinders, and composite polygons"
+        ],
+        "evidenceTypes": [
+          "diagnostic-item",
+          "unit-test",
+          "term-exam"
+        ],
+        "boardAlignments": [
+          {
+            "boardId": "cbse",
+            "yearId": "class-06",
+            "subject": "Mathematics (Ganita Prakash)",
+            "sourceId": "SRC-NCERT-NCFSE-2023",
+            "alignmentStrength": "direct"
+          },
+          {
+            "boardId": "cbse",
+            "yearId": "class-08",
+            "subject": "Mathematics (Ganita Prakash)",
+            "sourceId": "SRC-NCERT-NCFSE-2023",
+            "alignmentStrength": "direct"
+          }
+        ],
+        "trackBranches": [
+          {
+            "trackId": "sat",
+            "role": "foundation",
+            "officialExamRef": "Geometry and Trigonometry"
+          }
+        ],
+        "status": "active"
+      },
+      {
+        "id": "math-polynomials-quadratics-sec",
+        "name": {
+          "en": "Polynomials, Quadratic Equations & Arithmetic Progressions (Classes 9-10)",
+          "hi": "बहुपद, द्विघात समीकरण और समांतर श्रेढ़ी (कक्षा 9-10)"
+        },
+        "domainId": "mathematics-core",
+        "stage": {
+          "fromYearId": "class-09",
+          "toYearId": "class-10"
+        },
+        "description": "Real numbers, polynomial factorisation, pair of linear equations in two variables, quadratic equations, and arithmetic progressions.",
+        "prerequisites": [
+          "math-ratios-linear-algebra-middle"
+        ],
+        "successCriteria": [
+          "Solves systems of linear equations and analyses discriminant of quadratic equations",
+          "Models nth term and sum of arithmetic progressions"
+        ],
+        "evidenceTypes": [
+          "diagnostic-item",
+          "unit-test",
+          "board-mock"
+        ],
+        "boardAlignments": [
+          {
+            "boardId": "cbse",
+            "yearId": "class-09",
+            "subject": "Mathematics (041)",
+            "officialCode": "041",
+            "sourceId": "SRC-CBSE-CURR-2026-27",
+            "alignmentStrength": "direct"
+          },
+          {
+            "boardId": "cbse",
+            "yearId": "class-10",
+            "subject": "Mathematics Standard (041)",
+            "officialCode": "041",
+            "sourceId": "SRC-CBSE-CURR-2026-27",
+            "alignmentStrength": "direct"
+          },
+          {
+            "boardId": "nios",
+            "yearId": "class-10",
+            "subject": "Mathematics (211)",
+            "officialCode": "211",
+            "sourceId": "SRC-NIOS-SECSRSEC-2026",
+            "alignmentStrength": "direct"
+          }
+        ],
+        "trackBranches": [
+          {
+            "trackId": "jee",
+            "role": "foundation",
+            "officialExamRef": "JEE Main Unit 2 Complex Numbers and Quadratic Equations"
+          },
+          {
+            "trackId": "sat",
+            "role": "accelerator",
+            "officialExamRef": "Digital SAT Advanced Math"
+          },
+          {
+            "trackId": "act",
+            "role": "accelerator",
+            "officialExamRef": "ACT Algebra and Functions"
+          }
+        ],
+        "status": "active"
+      },
+      {
+        "id": "math-trigonometry-coordinate-sec",
+        "name": {
+          "en": "Coordinate Geometry, Trigonometry & Circles (Classes 9-10)",
+          "hi": "निर्देशांक ज्यामिति, त्रिकोणमिति और वृत्त (कक्षा 9-10)"
+        },
+        "domainId": "mathematics-core",
+        "stage": {
+          "fromYearId": "class-09",
+          "toYearId": "class-10"
+        },
+        "description": "Distance and section formulas, similarity of triangles, tangent theorems on circles, trigonometric ratios, identities, and heights and distances.",
+        "prerequisites": [
+          "math-geometry-mensuration-middle",
+          "math-ratios-linear-algebra-middle"
+        ],
+        "successCriteria": [
+          "Applies trigonometric ratios and identities to elevation and depression problems",
+          "Solves coordinate geometry and circle tangent proofs"
+        ],
+        "evidenceTypes": [
+          "diagnostic-item",
+          "unit-test",
+          "board-mock"
+        ],
+        "boardAlignments": [
+          {
+            "boardId": "cbse",
+            "yearId": "class-10",
+            "subject": "Mathematics Standard (041)",
+            "officialCode": "041",
+            "sourceId": "SRC-CBSE-CURR-2026-27",
+            "alignmentStrength": "direct"
+          },
+          {
+            "boardId": "cisce",
+            "yearId": "class-10",
+            "subject": "ICSE Mathematics",
+            "sourceId": "SRC-CISCE-PUB-2026",
+            "alignmentStrength": "direct"
+          }
+        ],
+        "trackBranches": [
+          {
+            "trackId": "jee",
+            "role": "foundation",
+            "officialExamRef": "JEE Main Coordinate Geometry & Trigonometry"
+          },
+          {
+            "trackId": "sat",
+            "role": "accelerator",
+            "officialExamRef": "Digital SAT Geometry & Trigonometry"
+          }
+        ],
+        "status": "active"
+      },
+      {
+        "id": "math-calculus-vectors-srsec",
+        "name": {
+          "en": "Sets, Functions, Limits, Differential & Integral Calculus (Classes 11-12)",
+          "hi": "समुच्चय, फलन, सीमा, अवकलन और समाकलन (कक्षा 11-12)"
+        },
+        "domainId": "mathematics-core",
+        "stage": {
+          "fromYearId": "class-11",
+          "toYearId": "class-12"
+        },
+        "description": "Sets and relations, limits and continuity, differentiation, applications of derivatives, definite and indefinite integration, differential equations, vectors, and 3D geometry.",
+        "prerequisites": [
+          "math-polynomials-quadratics-sec",
+          "math-trigonometry-coordinate-sec"
+        ],
+        "successCriteria": [
+          "Evaluates limits, derivatives, extrema, and definite integrals of transcendental and algebraic functions",
+          "Solves linear differential equations and 3D line/plane vector problems"
+        ],
+        "evidenceTypes": [
+          "diagnostic-item",
+          "unit-test",
+          "board-mock"
+        ],
+        "boardAlignments": [
+          {
+            "boardId": "cbse",
+            "yearId": "class-11",
+            "subject": "Mathematics (041)",
+            "officialCode": "041",
+            "sourceId": "SRC-CBSE-CURR-2026-27",
+            "alignmentStrength": "direct"
+          },
+          {
+            "boardId": "cbse",
+            "yearId": "class-12",
+            "subject": "Mathematics (041)",
+            "officialCode": "041",
+            "sourceId": "SRC-CBSE-CURR-2026-27",
+            "alignmentStrength": "direct"
+          },
+          {
+            "boardId": "nios",
+            "yearId": "class-12",
+            "subject": "Senior Secondary Mathematics (311)",
+            "officialCode": "311",
+            "sourceId": "SRC-NIOS-SECSRSEC-2026",
+            "alignmentStrength": "direct"
+          }
+        ],
+        "trackBranches": [
+          {
+            "trackId": "jee",
+            "role": "accelerator",
+            "officialExamRef": "JEE Main Units 6-12 Calculus & Vector Algebra"
+          },
+          {
+            "trackId": "cuet",
+            "role": "accelerator",
+            "officialExamRef": "CUET UG Mathematics Domain"
+          }
+        ],
+        "status": "active"
+      },
+      {
+        "id": "sci-evs-world-around-us",
+        "name": {
+          "en": "The World Around Us - Observation, Plants, Water & Community (Classes 3-5)",
+          "hi": "हमारे चारों ओर की दुनिया - प्रकृति, जल और समुदाय (कक्षा 3-5)"
+        },
+        "domainId": "science-and-inquiry",
+        "stage": {
+          "fromYearId": "class-03",
+          "toYearId": "class-05"
+        },
+        "description": "Experiential environmental studies covering local biodiversity, water conservation, food and nutrition, shelter, and simple experiments.",
+        "prerequisites": [
+          "lit-sentence-reading-fluency"
+        ],
+        "successCriteria": [
+          "Records systematic observations of plant growth, weather, and material properties",
+          "Explains water cycle, food chains, and hygiene habits"
+        ],
+        "evidenceTypes": [
+          "diagnostic-item",
+          "project",
+          "unit-test"
+        ],
+        "boardAlignments": [
+          {
+            "boardId": "cbse",
+            "yearId": "class-03",
+            "subject": "The World Around Us (EVS)",
+            "sourceId": "SRC-NCERT-NCFSE-2023",
+            "alignmentStrength": "direct"
+          },
+          {
+            "boardId": "cbse",
+            "yearId": "class-05",
+            "subject": "The World Around Us (EVS)",
+            "sourceId": "SRC-NCERT-NCFSE-2023",
+            "alignmentStrength": "direct"
+          }
+        ],
+        "trackBranches": [],
+        "status": "active"
+      },
+      {
+        "id": "sci-curiosity-middle-inquiry",
+        "name": {
+          "en": "Middle Stage Integrated Science - Matter, Force, Living World & Universe (Curiosity 6-8)",
+          "hi": "माध्यमिक एकीकृत विज्ञान - पदार्थ, बल, सजीव जगत और ब्रह्मांड (जिज्ञासा 6-8)"
+        },
+        "domainId": "science-and-inquiry",
+        "stage": {
+          "fromYearId": "class-06",
+          "toYearId": "class-08"
+        },
+        "description": "Scientific method, states and separation of matter, heat and temperature, motion and time, electric circuits, cell structure, nutrition, and solar system under NCERT Curiosity.",
+        "prerequisites": [
+          "sci-evs-world-around-us",
+          "math-integers-number-patterns"
+        ],
+        "successCriteria": [
+          "Designs controlled inquiry experiments measuring temperature, speed, and circuit conductivity",
+          "Classifies materials, chemical changes, and biological systems from cell to organ"
+        ],
+        "evidenceTypes": [
+          "diagnostic-item",
+          "practical",
+          "unit-test",
+          "term-exam"
+        ],
+        "boardAlignments": [
+          {
+            "boardId": "cbse",
+            "yearId": "class-06",
+            "subject": "Science (Curiosity)",
+            "sourceId": "SRC-NCERT-NCFSE-2023",
+            "alignmentStrength": "direct"
+          },
+          {
+            "boardId": "cbse",
+            "yearId": "class-07",
+            "subject": "Science (Curiosity)",
+            "sourceId": "SRC-NCERT-NCFSE-2023",
+            "alignmentStrength": "direct"
+          },
+          {
+            "boardId": "cbse",
+            "yearId": "class-08",
+            "subject": "Science (Curiosity)",
+            "sourceId": "SRC-NCERT-NCFSE-2023",
+            "alignmentStrength": "direct"
+          }
+        ],
+        "trackBranches": [
+          {
+            "trackId": "jee",
+            "role": "foundation",
+            "officialExamRef": "Middle School Physics & Chemistry Foundation"
+          },
+          {
+            "trackId": "neet",
+            "role": "foundation",
+            "officialExamRef": "Middle School Biology & Chemistry Foundation"
+          },
+          {
+            "trackId": "act",
+            "role": "foundation",
+            "officialExamRef": "ACT Science Experimental Reasoning"
+          }
+        ],
+        "status": "active"
+      },
+      {
+        "id": "sci-integrated-sec-9-10",
+        "name": {
+          "en": "Secondary Science - Chemical Reactions, Life Processes, Mechanics & Electricity (Classes 9-10)",
+          "hi": "माध्यमिक विज्ञान - रासायनिक अभिक्रियाएं, जैव प्रक्रम, गति और विद्युत (कक्षा 9-10)"
+        },
+        "domainId": "science-and-inquiry",
+        "stage": {
+          "fromYearId": "class-09",
+          "toYearId": "class-10"
+        },
+        "description": "Atoms and molecules, chemical equations, acids/bases/salts, carbon compounds, cell biology, heredity, Newton's laws, gravitation, light optics, and Ohm's law.",
+        "prerequisites": [
+          "sci-curiosity-middle-inquiry",
+          "math-ratios-linear-algebra-middle"
+        ],
+        "successCriteria": [
+          "Balances chemical equations and predicts products across acid-base, redox, and carbon reactions",
+          "Solves numericals on kinematics, lens/mirror formulas, and series/parallel circuits"
+        ],
+        "evidenceTypes": [
+          "diagnostic-item",
+          "practical",
+          "unit-test",
+          "board-mock"
+        ],
+        "boardAlignments": [
+          {
+            "boardId": "cbse",
+            "yearId": "class-09",
+            "subject": "Science (086)",
+            "officialCode": "086",
+            "sourceId": "SRC-CBSE-CURR-2026-27",
+            "alignmentStrength": "direct"
+          },
+          {
+            "boardId": "cbse",
+            "yearId": "class-10",
+            "subject": "Science (086)",
+            "officialCode": "086",
+            "sourceId": "SRC-CBSE-CURR-2026-27",
+            "alignmentStrength": "direct"
+          },
+          {
+            "boardId": "nios",
+            "yearId": "class-10",
+            "subject": "Science and Technology (212)",
+            "officialCode": "212",
+            "sourceId": "SRC-NIOS-SECSRSEC-2026",
+            "alignmentStrength": "direct"
+          }
+        ],
+        "trackBranches": [
+          {
+            "trackId": "jee",
+            "role": "foundation",
+            "officialExamRef": "JEE Main Mechanics, Optics & Atomic Foundation"
+          },
+          {
+            "trackId": "neet",
+            "role": "foundation",
+            "officialExamRef": "NEET UG Life Processes & Chemical Bonding Bridge"
+          }
+        ],
+        "status": "active"
+      },
+      {
+        "id": "sci-physics-srsec-11-12",
+        "name": {
+          "en": "Senior Secondary Physics - Mechanics, Thermodynamics, Electromagnetism & Modern Physics",
+          "hi": "उच्चतर माध्यमिक भौतिकी - यांत्रिकी, ऊष्मागतिकी, विद्युतचुंबकत्व और आधुनिक भौतिकी"
+        },
+        "domainId": "science-and-inquiry",
+        "stage": {
+          "fromYearId": "class-11",
+          "toYearId": "class-12"
+        },
+        "description": "Rotational mechanics, gravitation, thermodynamics, oscillations/waves, electrostatics, current electricity, magnetism, EMI/AC, ray and wave optics, dual nature, atoms/nuclei, and semiconductors.",
+        "prerequisites": [
+          "sci-integrated-sec-9-10",
+          "math-trigonometry-coordinate-sec"
+        ],
+        "successCriteria": [
+          "Applies calculus-backed conservation laws across mechanics, electrostatics, and electromagnetism",
+          "Completes experimental physics verification and error analysis"
+        ],
+        "evidenceTypes": [
+          "diagnostic-item",
+          "practical",
+          "unit-test",
+          "board-mock"
+        ],
+        "boardAlignments": [
+          {
+            "boardId": "cbse",
+            "yearId": "class-11",
+            "subject": "Physics (042)",
+            "officialCode": "042",
+            "sourceId": "SRC-CBSE-CURR-2026-27",
+            "alignmentStrength": "direct"
+          },
+          {
+            "boardId": "cbse",
+            "yearId": "class-12",
+            "subject": "Physics (042)",
+            "officialCode": "042",
+            "sourceId": "SRC-CBSE-CURR-2026-27",
+            "alignmentStrength": "direct"
+          }
+        ],
+        "trackBranches": [
+          {
+            "trackId": "jee",
+            "role": "accelerator",
+            "officialExamRef": "JEE Main Physics Units 1-20 (NTA 2026)"
+          },
+          {
+            "trackId": "neet",
+            "role": "accelerator",
+            "officialExamRef": "NEET UG Physics Units 1-20 (NMC/NTA 2026)"
+          },
+          {
+            "trackId": "cuet",
+            "role": "accelerator",
+            "officialExamRef": "CUET UG Physics Domain (322)"
+          }
+        ],
+        "status": "active"
+      },
+      {
+        "id": "sci-chemistry-srsec-11-12",
+        "name": {
+          "en": "Senior Secondary Chemistry - Physical, Inorganic & Organic Chemistry",
+          "hi": "उच्चतर माध्यमिक रसायन विज्ञान - भौतिक, अकार्बनिक और कार्बनिक रसायन"
+        },
+        "domainId": "science-and-inquiry",
+        "stage": {
+          "fromYearId": "class-11",
+          "toYearId": "class-12"
+        },
+        "description": "Atomic structure, chemical bonding, thermodynamics, equilibrium, redox/electrochemistry, chemical kinetics, d/f-block and coordination compounds, and organic reaction mechanisms.",
+        "prerequisites": [
+          "sci-integrated-sec-9-10"
+        ],
+        "successCriteria": [
+          "Solves chemical equilibrium, Nernst equation, and rate law numericals",
+          "Predicts multi-step organic synthesis and coordination chemistry properties"
+        ],
+        "evidenceTypes": [
+          "diagnostic-item",
+          "practical",
+          "unit-test",
+          "board-mock"
+        ],
+        "boardAlignments": [
+          {
+            "boardId": "cbse",
+            "yearId": "class-11",
+            "subject": "Chemistry (043)",
+            "officialCode": "043",
+            "sourceId": "SRC-CBSE-CURR-2026-27",
+            "alignmentStrength": "direct"
+          },
+          {
+            "boardId": "cbse",
+            "yearId": "class-12",
+            "subject": "Chemistry (043)",
+            "officialCode": "043",
+            "sourceId": "SRC-CBSE-CURR-2026-27",
+            "alignmentStrength": "direct"
+          }
+        ],
+        "trackBranches": [
+          {
+            "trackId": "jee",
+            "role": "accelerator",
+            "officialExamRef": "JEE Main Chemistry Physical/Inorganic/Organic"
+          },
+          {
+            "trackId": "neet",
+            "role": "accelerator",
+            "officialExamRef": "NEET UG Chemistry Units 1-20"
+          },
+          {
+            "trackId": "cuet",
+            "role": "accelerator",
+            "officialExamRef": "CUET UG Chemistry Domain (306)"
+          }
+        ],
+        "status": "active"
+      },
+      {
+        "id": "sci-biology-srsec-11-12",
+        "name": {
+          "en": "Senior Secondary Biology - Cell, Physiology, Genetics, Biotechnology & Ecology",
+          "hi": "उच्चतर माध्यमिक जीवविज्ञान - कोशिका, शरीर क्रिया विज्ञान, आनुवंशिकी और पारिस्थितिकी"
+        },
+        "domainId": "science-and-inquiry",
+        "stage": {
+          "fromYearId": "class-11",
+          "toYearId": "class-12"
+        },
+        "description": "Diversity of living organisms, structural organisation, cell structure and biomolecules, plant and human physiology, reproduction, Mendelian and molecular genetics, biotechnology, and ecology.",
+        "prerequisites": [
+          "sci-integrated-sec-9-10"
+        ],
+        "successCriteria": [
+          "Traces molecular genetics pathways, physiological feedback loops, and recombinant DNA workflows",
+          "Interprets ecological pyramids, population dynamics, and pedigree charts"
+        ],
+        "evidenceTypes": [
+          "diagnostic-item",
+          "practical",
+          "unit-test",
+          "board-mock"
+        ],
+        "boardAlignments": [
+          {
+            "boardId": "cbse",
+            "yearId": "class-11",
+            "subject": "Biology (044)",
+            "officialCode": "044",
+            "sourceId": "SRC-CBSE-CURR-2026-27",
+            "alignmentStrength": "direct"
+          },
+          {
+            "boardId": "cbse",
+            "yearId": "class-12",
+            "subject": "Biology (044)",
+            "officialCode": "044",
+            "sourceId": "SRC-CBSE-CURR-2026-27",
+            "alignmentStrength": "direct"
+          }
+        ],
+        "trackBranches": [
+          {
+            "trackId": "neet",
+            "role": "accelerator",
+            "officialExamRef": "NEET UG Biology Units 1-10 (90 Questions / 360 Marks)"
+          },
+          {
+            "trackId": "cuet",
+            "role": "accelerator",
+            "officialExamRef": "CUET UG Biology Domain (304)"
+          }
+        ],
+        "status": "active"
+      },
+      {
+        "id": "soc-exploring-society-middle",
+        "name": {
+          "en": "Exploring Society - Landforms, Indian Civilization, Governance & Economic Life (Classes 6-8)",
+          "hi": "समाज की खोज - भू-आकृतियां, भारतीय सभ्यता, शासन और आर्थिक जीवन (कक्षा 6-8)"
+        },
+        "domainId": "social-science-and-humanities",
+        "stage": {
+          "fromYearId": "class-06",
+          "toYearId": "class-08"
+        },
+        "description": "Five thematic strands of NCERT Exploring Society: India and Beyond - Geographic diversity, Tapestry of the Past, Cultural Heritage, Governance and Democracy, and Economic Life Around Us.",
+        "prerequisites": [
+          "sci-evs-world-around-us"
+        ],
+        "successCriteria": [
+          "Reads thematic maps, timelines, and primary historical/archaeological sources",
+          "Explains local self-government (Panchayati Raj / Urban Bodies) and economic livelihood sectors"
+        ],
+        "evidenceTypes": [
+          "diagnostic-item",
+          "project",
+          "unit-test",
+          "term-exam"
+        ],
+        "boardAlignments": [
+          {
+            "boardId": "cbse",
+            "yearId": "class-06",
+            "subject": "Social Science (Exploring Society: India and Beyond)",
+            "sourceId": "SRC-NCERT-NCFSE-2023",
+            "alignmentStrength": "direct"
+          },
+          {
+            "boardId": "cbse",
+            "yearId": "class-07",
+            "subject": "Social Science (Exploring Society: India and Beyond)",
+            "sourceId": "SRC-NCERT-NCFSE-2023",
+            "alignmentStrength": "direct"
+          },
+          {
+            "boardId": "cbse",
+            "yearId": "class-08",
+            "subject": "Social Science (Exploring Society: India and Beyond)",
+            "sourceId": "SRC-NCERT-NCFSE-2023",
+            "alignmentStrength": "direct"
+          }
+        ],
+        "trackBranches": [
+          {
+            "trackId": "upsc",
+            "role": "foundation",
+            "officialExamRef": "NCERT Class 6-8 GS Foundation (History, Geography, Polity)"
+          }
+        ],
+        "status": "active"
+      },
+      {
+        "id": "soc-democratic-polity-economy-sec",
+        "name": {
+          "en": "Secondary Social Science - Contemporary India, Democratic Politics & Economic Development (9-10)",
+          "hi": "माध्यमिक सामाजिक विज्ञान - समकालीन भारत, लोकतांत्रिक राजनीति और आर्थिक विकास (9-10)"
+        },
+        "domainId": "social-science-and-humanities",
+        "stage": {
+          "fromYearId": "class-09",
+          "toYearId": "class-10"
+        },
+        "description": "Modern Indian and world history, resources and agriculture of India, constitutional federalism and rights, and money, credit, and globalisation.",
+        "prerequisites": [
+          "soc-exploring-society-middle"
+        ],
+        "successCriteria": [
+          "Analyses constitutional power-sharing, federalism, and fundamental rights",
+          "Evaluates GDP sectors, RBI credit mechanisms, and resource sustainability"
+        ],
+        "evidenceTypes": [
+          "diagnostic-item",
+          "unit-test",
+          "board-mock"
+        ],
+        "boardAlignments": [
+          {
+            "boardId": "cbse",
+            "yearId": "class-09",
+            "subject": "Social Science (087)",
+            "officialCode": "087",
+            "sourceId": "SRC-CBSE-CURR-2026-27",
+            "alignmentStrength": "direct"
+          },
+          {
+            "boardId": "cbse",
+            "yearId": "class-10",
+            "subject": "Social Science (087)",
+            "officialCode": "087",
+            "sourceId": "SRC-CBSE-CURR-2026-27",
+            "alignmentStrength": "direct"
+          }
+        ],
+        "trackBranches": [
+          {
+            "trackId": "upsc",
+            "role": "foundation",
+            "officialExamRef": "UPSC Prelims GS Paper I Polity, Geography, Economy Core"
+          },
+          {
+            "trackId": "cuet",
+            "role": "foundation",
+            "officialExamRef": "CUET General Test & Humanities Foundation"
+          }
+        ],
+        "status": "active"
+      },
+      {
+        "id": "soc-humanities-commerce-srsec",
+        "name": {
+          "en": "Senior Secondary Polity, Macroeconomics, History & Accountancy (Classes 11-12)",
+          "hi": "उच्चतर माध्यमिक राजनीति विज्ञान, समष्टि अर्थशास्त्र, इतिहास और लेखाशास्त्र (11-12)"
+        },
+        "domainId": "social-science-and-humanities",
+        "stage": {
+          "fromYearId": "class-11",
+          "toYearId": "class-12"
+        },
+        "description": "Indian Constitution at work, international relations, national income accounting, fiscal and monetary policy, themes in Indian history, and financial accounting.",
+        "prerequisites": [
+          "soc-democratic-polity-economy-sec"
+        ],
+        "successCriteria": [
+          "Synthesizes constitutional articles, Supreme Court doctrines, and macroeconomic fiscal/monetary indicators",
+          "Analyses historical primary sources and prepares balanced financial statements"
+        ],
+        "evidenceTypes": [
+          "diagnostic-item",
+          "unit-test",
+          "board-mock"
+        ],
+        "boardAlignments": [
+          {
+            "boardId": "cbse",
+            "yearId": "class-11",
+            "subject": "Economics (030) & Political Science (028)",
+            "officialCode": "030",
+            "sourceId": "SRC-CBSE-CURR-2026-27",
+            "alignmentStrength": "direct"
+          },
+          {
+            "boardId": "cbse",
+            "yearId": "class-12",
+            "subject": "Economics (030) & Political Science (028)",
+            "officialCode": "030",
+            "sourceId": "SRC-CBSE-CURR-2026-27",
+            "alignmentStrength": "direct"
+          }
+        ],
+        "trackBranches": [
+          {
+            "trackId": "upsc",
+            "role": "accelerator",
+            "officialExamRef": "UPSC CSE Prelims & Mains GS I, II, III"
+          },
+          {
+            "trackId": "cuet",
+            "role": "accelerator",
+            "officialExamRef": "CUET UG Domain Humanities & Commerce"
+          }
+        ],
+        "status": "active"
+      },
+      {
+        "id": "lang-bilingual-literature-middle",
+        "name": {
+          "en": "Middle Stage Bilingual Literature, Grammar & Creative Expression (Poorvi & Malhar 6-8)",
+          "hi": "माध्यमिक द्विभाषी साहित्य, व्याकरण और रचनात्मक अभिव्यक्ति (पूर्वी और मल्हार 6-8)"
+        },
+        "domainId": "languages-and-communication",
+        "stage": {
+          "fromYearId": "class-06",
+          "toYearId": "class-08"
+        },
+        "description": "Critical reading of prose and poetry in English (Poorvi) and Hindi (Malhar), formal grammar, vocabulary in context, summary writing, and structured spoken presentation.",
+        "prerequisites": [
+          "lit-sentence-reading-fluency"
+        ],
+        "successCriteria": [
+          "Analyses author purpose, tone, and figurative language across unseen passages",
+          "Writes structured essays, formal letters, and bilingual summaries with grammatical accuracy"
+        ],
+        "evidenceTypes": [
+          "diagnostic-item",
+          "oral-reading",
+          "unit-test",
+          "term-exam"
+        ],
+        "boardAlignments": [
+          {
+            "boardId": "cbse",
+            "yearId": "class-06",
+            "subject": "English (Poorvi) & Hindi (Malhar)",
+            "sourceId": "SRC-NCERT-NCFSE-2023",
+            "alignmentStrength": "direct"
+          },
+          {
+            "boardId": "cbse",
+            "yearId": "class-07",
+            "subject": "English & Hindi",
+            "sourceId": "SRC-NCERT-NCFSE-2023",
+            "alignmentStrength": "direct"
+          },
+          {
+            "boardId": "cbse",
+            "yearId": "class-08",
+            "subject": "English & Hindi",
+            "sourceId": "SRC-NCERT-NCFSE-2023",
+            "alignmentStrength": "direct"
+          }
+        ],
+        "trackBranches": [
+          {
+            "trackId": "sat",
+            "role": "foundation",
+            "officialExamRef": "Digital SAT Reading and Writing Foundation"
+          },
+          {
+            "trackId": "ielts",
+            "role": "foundation",
+            "officialExamRef": "IELTS B1-B2 Academic Language Bridge"
+          },
+          {
+            "trackId": "toefl",
+            "role": "foundation",
+            "officialExamRef": "TOEFL iBT Academic Reading & Listening Bridge"
+          }
+        ],
+        "status": "active"
+      },
+      {
+        "id": "lang-academic-rhetoric-global-exams",
+        "name": {
+          "en": "Advanced Academic Rhetoric, Evidence Reading & Four-Skill Global Proficiency (9-12)",
+          "hi": "उच्च शैक्षणिक पठन, तर्कपूर्ण लेखन और वैश्विक भाषा दक्षता (9-12)"
+        },
+        "domainId": "languages-and-communication",
+        "stage": {
+          "fromYearId": "class-09",
+          "toYearId": "class-12"
+        },
+        "description": "Rhetorical synthesis, command of textual and quantitative evidence, Standard English conventions, academic listening, timed analytical writing, and structured speaking.",
+        "prerequisites": [
+          "lang-bilingual-literature-middle"
+        ],
+        "successCriteria": [
+          "Evaluates logical claims and evidence in dense multi-disciplinary passages under timed conditions",
+          "Produces CEFR C1 / Band 7.5+ academic writing and spoken responses"
+        ],
+        "evidenceTypes": [
+          "diagnostic-item",
+          "oral-reading",
+          "board-mock"
+        ],
+        "boardAlignments": [
+          {
+            "boardId": "cbse",
+            "yearId": "class-10",
+            "subject": "English Language and Literature (184)",
+            "officialCode": "184",
+            "sourceId": "SRC-CBSE-CURR-2026-27",
+            "alignmentStrength": "direct"
+          },
+          {
+            "boardId": "cbse",
+            "yearId": "class-12",
+            "subject": "English Core (301)",
+            "officialCode": "301",
+            "sourceId": "SRC-CBSE-CURR-2026-27",
+            "alignmentStrength": "direct"
+          },
+          {
+            "boardId": "cisce",
+            "yearId": "class-10",
+            "subject": "ICSE English Paper 1 & 2",
+            "sourceId": "SRC-CISCE-PUB-2026",
+            "alignmentStrength": "direct"
+          }
+        ],
+        "trackBranches": [
+          {
+            "trackId": "sat",
+            "role": "accelerator",
+            "officialExamRef": "Digital SAT Reading and Writing (Craft, Structure, Conventions)"
+          },
+          {
+            "trackId": "act",
+            "role": "accelerator",
+            "officialExamRef": "ACT English and Reading Sections"
+          },
+          {
+            "trackId": "ielts",
+            "role": "accelerator",
+            "officialExamRef": "IELTS Academic Listening, Reading, Writing, Speaking"
+          },
+          {
+            "trackId": "toefl",
+            "role": "accelerator",
+            "officialExamRef": "TOEFL iBT Reading, Listening, Speaking, Writing"
+          },
+          {
+            "trackId": "cuet",
+            "role": "accelerator",
+            "officialExamRef": "CUET Section IA English / Hindi Language"
+          }
+        ],
+        "status": "active"
+      },
+      {
+        "id": "comp-algorithmic-ai-literacy",
+        "name": {
+          "en": "Computational Thinking, Coding, Data Ethics & AI Systems (Classes 6-12)",
+          "hi": "कम्प्यूटेशनल चिंतन, कोडिंग, डेटा नैतिकता और एआई प्रणाली (कक्षा 6-12)"
+        },
+        "domainId": "computational-and-ai-literacy",
+        "stage": {
+          "fromYearId": "class-06",
+          "toYearId": "class-12"
+        },
+        "description": "Flowcharts and algorithms, Python programming, relational data tables, statistical visualization, machine learning fundamentals, and digital safety.",
+        "prerequisites": [
+          "math-integers-number-patterns"
+        ],
+        "successCriteria": [
+          "Writes modular programs to process datasets and verify algorithmic complexity",
+          "Explains how AI models learn from data, hallucination risks, and DPDP privacy safeguards"
+        ],
+        "evidenceTypes": [
+          "diagnostic-item",
+          "project",
+          "practical"
+        ],
+        "boardAlignments": [
+          {
+            "boardId": "cbse",
+            "yearId": "class-09",
+            "subject": "Artificial Intelligence (417) / IT (402)",
+            "officialCode": "417",
+            "sourceId": "SRC-CBSE-CURR-2026-27",
+            "alignmentStrength": "direct"
+          },
+          {
+            "boardId": "cbse",
+            "yearId": "class-12",
+            "subject": "Computer Science (083)",
+            "officialCode": "083",
+            "sourceId": "SRC-CBSE-CURR-2026-27",
+            "alignmentStrength": "direct"
+          }
+        ],
+        "trackBranches": [
+          {
+            "trackId": "jee",
+            "role": "bridge",
+            "officialExamRef": "Analytical and Algorithmic Problem Solving"
+          },
+          {
+            "trackId": "sat",
+            "role": "bridge",
+            "officialExamRef": "Data Analysis and Desmos Modeling"
+          }
+        ],
+        "status": "active"
+      }
+    ],
+    "edges": [
+      {
+        "from": "stim-sensory-motor-0-3",
+        "to": "stim-bilingual-babble-words",
+        "type": "prerequisite",
+        "strength": "required"
+      },
+      {
+        "from": "stim-sensory-motor-0-3",
+        "to": "ecce-panchakosha-play",
+        "type": "prerequisite",
+        "strength": "required"
+      },
+      {
+        "from": "stim-bilingual-babble-words",
+        "to": "lit-phonics-akshara-awareness",
+        "type": "prerequisite",
+        "strength": "required"
+      },
+      {
+        "from": "lit-phonics-akshara-awareness",
+        "to": "lit-sentence-reading-fluency",
+        "type": "prerequisite",
+        "strength": "required"
+      },
+      {
+        "from": "ecce-panchakosha-play",
+        "to": "num-pre-number-counting-20",
+        "type": "prerequisite",
+        "strength": "required"
+      },
+      {
+        "from": "num-pre-number-counting-20",
+        "to": "num-place-value-add-sub",
+        "type": "prerequisite",
+        "strength": "required"
+      },
+      {
+        "from": "num-place-value-add-sub",
+        "to": "num-mult-div-fractions-prep",
+        "type": "prerequisite",
+        "strength": "required"
+      },
+      {
+        "from": "num-mult-div-fractions-prep",
+        "to": "math-integers-number-patterns",
+        "type": "prerequisite",
+        "strength": "required"
+      },
+      {
+        "from": "math-integers-number-patterns",
+        "to": "math-ratios-linear-algebra-middle",
+        "type": "prerequisite",
+        "strength": "required"
+      },
+      {
+        "from": "math-integers-number-patterns",
+        "to": "math-geometry-mensuration-middle",
+        "type": "prerequisite",
+        "strength": "required"
+      },
+      {
+        "from": "math-ratios-linear-algebra-middle",
+        "to": "math-polynomials-quadratics-sec",
+        "type": "prerequisite",
+        "strength": "required"
+      },
+      {
+        "from": "math-geometry-mensuration-middle",
+        "to": "math-trigonometry-coordinate-sec",
+        "type": "prerequisite",
+        "strength": "required"
+      },
+      {
+        "from": "math-ratios-linear-algebra-middle",
+        "to": "math-trigonometry-coordinate-sec",
+        "type": "prerequisite",
+        "strength": "required"
+      },
+      {
+        "from": "math-polynomials-quadratics-sec",
+        "to": "math-calculus-vectors-srsec",
+        "type": "prerequisite",
+        "strength": "required"
+      },
+      {
+        "from": "math-trigonometry-coordinate-sec",
+        "to": "math-calculus-vectors-srsec",
+        "type": "prerequisite",
+        "strength": "required"
+      },
+      {
+        "from": "lit-sentence-reading-fluency",
+        "to": "sci-evs-world-around-us",
+        "type": "prerequisite",
+        "strength": "required"
+      },
+      {
+        "from": "sci-evs-world-around-us",
+        "to": "sci-curiosity-middle-inquiry",
+        "type": "prerequisite",
+        "strength": "required"
+      },
+      {
+        "from": "math-integers-number-patterns",
+        "to": "sci-curiosity-middle-inquiry",
+        "type": "prerequisite",
+        "strength": "required"
+      },
+      {
+        "from": "sci-curiosity-middle-inquiry",
+        "to": "sci-integrated-sec-9-10",
+        "type": "prerequisite",
+        "strength": "required"
+      },
+      {
+        "from": "math-ratios-linear-algebra-middle",
+        "to": "sci-integrated-sec-9-10",
+        "type": "prerequisite",
+        "strength": "required"
+      },
+      {
+        "from": "sci-integrated-sec-9-10",
+        "to": "sci-physics-srsec-11-12",
+        "type": "prerequisite",
+        "strength": "required"
+      },
+      {
+        "from": "math-trigonometry-coordinate-sec",
+        "to": "sci-physics-srsec-11-12",
+        "type": "prerequisite",
+        "strength": "required"
+      },
+      {
+        "from": "sci-integrated-sec-9-10",
+        "to": "sci-chemistry-srsec-11-12",
+        "type": "prerequisite",
+        "strength": "required"
+      },
+      {
+        "from": "sci-integrated-sec-9-10",
+        "to": "sci-biology-srsec-11-12",
+        "type": "prerequisite",
+        "strength": "required"
+      },
+      {
+        "from": "sci-evs-world-around-us",
+        "to": "soc-exploring-society-middle",
+        "type": "prerequisite",
+        "strength": "required"
+      },
+      {
+        "from": "soc-exploring-society-middle",
+        "to": "soc-democratic-polity-economy-sec",
+        "type": "prerequisite",
+        "strength": "required"
+      },
+      {
+        "from": "soc-democratic-polity-economy-sec",
+        "to": "soc-humanities-commerce-srsec",
+        "type": "prerequisite",
+        "strength": "required"
+      },
+      {
+        "from": "lit-sentence-reading-fluency",
+        "to": "lang-bilingual-literature-middle",
+        "type": "prerequisite",
+        "strength": "required"
+      },
+      {
+        "from": "lang-bilingual-literature-middle",
+        "to": "lang-academic-rhetoric-global-exams",
+        "type": "prerequisite",
+        "strength": "required"
+      },
+      {
+        "from": "math-integers-number-patterns",
+        "to": "comp-algorithmic-ai-literacy",
+        "type": "prerequisite",
+        "strength": "required"
+      }
+    ],
+    "coverageSummary": {
+      "totalSkills": 26,
+      "byDomain": {
+        "early-stimulation-motor": 3,
+        "foundational-literacy": 2,
+        "foundational-numeracy": 3,
+        "mathematics-core": 6,
+        "science-and-inquiry": 6,
+        "social-science-and-humanities": 3,
+        "languages-and-communication": 2,
+        "computational-and-ai-literacy": 1
+      },
+      "byStage": {
+        "foundational": 7,
+        "preparatory": 3,
+        "middle": 6,
+        "secondary": 10
+      },
+      "knownGaps": [
+        "Fine-grained micro-skills for regional state-language literature beyond Hindi and English are queued for Phase 3 state-board expansion.",
+        "Vocational skill electives beyond Artificial Intelligence (417) and Information Technology (402) are queued for Phase 3."
+      ]
+    },
+    "provenance": {
+      "authoredBy": "EveryYear Curriculum Architecture Engine",
+      "reviewedBy": "Phase 1 Schema & Source Verification Pipeline",
+      "reviewStatus": "approved",
+      "license": "CC-BY-4.0 metadata mapping; official syllabus text remains copyright of respective statutory boards.",
+      "updatedFromCurriculumVersions": [
+        "MWCD-Navchetana-2024",
+        "MWCD-Aadharshila-2024",
+        "NCERT-NCFFS-2022",
+        "NCERT-NCFSE-2023",
+        "CBSE-2026-27",
+        "CISCE-2026-27",
+        "NIOS-2026"
+      ]
+    }
+  },
+  "assessmentBank": {
+    "schemaVersion": "1.0.0",
+    "updatedAt": "2026-10-22T00:00:00.000Z",
+    "diagnosticItems": [
+      {
+        "itemId": "diag-early-01",
+        "skillId": "num-pre-number-counting-20",
+        "domainId": "foundational-numeracy",
+        "targetYearId": "ukg",
+        "difficulty": "foundation",
+        "prompt": {
+          "en": "Aarav arranges clay beads in the pattern: Red, Blue, Red, Blue, Red, [ ? ]. Which bead comes next?",
+          "hi": "आरव मिट्टी के मोतियों को इस क्रम में रखता है: लाल, नीला, लाल, नीला, लाल, [ ? ]। अगला मोती कौन-सा होगा?"
+        },
+        "options": [
+          {
+            "en": "Blue",
+            "hi": "नीला"
+          },
+          {
+            "en": "Red",
+            "hi": "लाल"
+          },
+          {
+            "en": "Green",
+            "hi": "हरा"
+          },
+          {
+            "en": "Yellow",
+            "hi": "पीला"
+          }
+        ],
+        "correctIndex": 0,
+        "explanation": {
+          "en": "The pattern alternates Red and Blue (ABAB). After Red, the next bead is Blue.",
+          "hi": "यह लाल और नीले का एकांतर (ABAB) पैटर्न है। लाल के बाद नीला मोती आएगा।"
+        },
+        "sourceIds": [
+          "SRC-MWCD-AADHARSHILA-2024",
+          "SRC-NCERT-NCFFS-2022"
+        ]
+      },
+      {
+        "itemId": "diag-found-02",
+        "skillId": "num-place-value-add-sub",
+        "domainId": "foundational-numeracy",
+        "targetYearId": "class-02",
+        "difficulty": "core",
+        "prompt": {
+          "en": "Meera has 3 bundles of 10 sticks and 14 loose sticks. What total number of sticks does she have?",
+          "hi": "मीरा के पास 10-10 तीलियों के 3 गट्ठर और 14 खुली तीलियां हैं। उसके पास कुल कितनी तीलियां हैं?"
+        },
+        "options": [
+          {
+            "en": "44",
+            "hi": "44"
+          },
+          {
+            "en": "314",
+            "hi": "314"
+          },
+          {
+            "en": "34",
+            "hi": "34"
+          },
+          {
+            "en": "17",
+            "hi": "17"
+          }
+        ],
+        "correctIndex": 0,
+        "explanation": {
+          "en": "3 tens = 30, plus 14 ones (1 ten + 4 ones) = 4 tens and 4 ones = 44.",
+          "hi": "3 दहाई = 30, और 14 इकाई = 30 + 14 = 44 तीलियां।"
+        },
+        "sourceIds": [
+          "SRC-NCERT-NCFFS-2022"
+        ]
+      },
+      {
+        "itemId": "diag-prep-03",
+        "skillId": "num-mult-div-fractions-prep",
+        "domainId": "foundational-numeracy",
+        "targetYearId": "class-05",
+        "difficulty": "core",
+        "prompt": {
+          "en": "Which of the following fractions is equivalent to 3/4?",
+          "hi": "निम्नलिखित में से कौन-सी भिन्न 3/4 के समतुल्य है?"
+        },
+        "options": [
+          {
+            "en": "9/12",
+            "hi": "9/12"
+          },
+          {
+            "en": "6/12",
+            "hi": "6/12"
+          },
+          {
+            "en": "4/3",
+            "hi": "4/3"
+          },
+          {
+            "en": "7/8",
+            "hi": "7/8"
+          }
+        ],
+        "correctIndex": 0,
+        "explanation": {
+          "en": "Multiplying numerator and denominator of 3/4 by 3 gives (3 x 3)/(4 x 3) = 9/12.",
+          "hi": "3/4 के अंश और हर को 3 से गुणा करने पर 9/12 प्राप्त होता है।"
+        },
+        "sourceIds": [
+          "SRC-NCERT-NCFSE-2023"
+        ]
+      },
+      {
+        "itemId": "diag-mid-math-04",
+        "skillId": "math-integers-number-patterns",
+        "domainId": "mathematics-core",
+        "targetYearId": "class-06",
+        "difficulty": "core",
+        "prompt": {
+          "en": "In Srinagar, the temperature at midnight is -4 C. By morning it drops by another 3 C. What is the morning temperature?",
+          "hi": "श्रीनगर में आधी रात का तापमान -4 C है। सुबह तक यह 3 C और गिर जाता है। सुबह का तापमान क्या है?"
+        },
+        "options": [
+          {
+            "en": "-7 C",
+            "hi": "-7 C"
+          },
+          {
+            "en": "-1 C",
+            "hi": "-1 C"
+          },
+          {
+            "en": "+7 C",
+            "hi": "+7 C"
+          },
+          {
+            "en": "+1 C",
+            "hi": "+1 C"
+          }
+        ],
+        "correctIndex": 0,
+        "explanation": {
+          "en": "Starting at -4 and moving 3 units left on the number line gives (-4) + (-3) = -7 C.",
+          "hi": "संख्या रेखा पर -4 से 3 इकाई बाईं ओर जाने पर (-4) - 3 = -7 C मिलता है।"
+        },
+        "sourceIds": [
+          "SRC-NCERT-NCFSE-2023",
+          "SRC-CBSE-CURR-2026-27"
+        ]
+      },
+      {
+        "itemId": "diag-mid-alg-05",
+        "skillId": "math-ratios-linear-algebra-middle",
+        "domainId": "mathematics-core",
+        "targetYearId": "class-08",
+        "difficulty": "core",
+        "prompt": {
+          "en": "Solve for x: 3(2x - 1) = 4x + 7",
+          "hi": "x का मान ज्ञात कीजिए: 3(2x - 1) = 4x + 7"
+        },
+        "options": [
+          {
+            "en": "x = 5",
+            "hi": "x = 5"
+          },
+          {
+            "en": "x = 2",
+            "hi": "x = 2"
+          },
+          {
+            "en": "x = 4",
+            "hi": "x = 4"
+          },
+          {
+            "en": "x = -5",
+            "hi": "x = -5"
+          }
+        ],
+        "correctIndex": 0,
+        "explanation": {
+          "en": "Expanding gives 6x - 3 = 4x + 7 -> 2x = 10 -> x = 5.",
+          "hi": "विस्तार करने पर 6x - 3 = 4x + 7 -> 2x = 10 -> x = 5 प्राप्त होता है।"
+        },
+        "sourceIds": [
+          "SRC-NCERT-NCFSE-2023",
+          "SRC-CBSE-CURR-2026-27"
+        ]
+      },
+      {
+        "itemId": "diag-mid-sci-06",
+        "skillId": "sci-curiosity-middle-inquiry",
+        "domainId": "science-and-inquiry",
+        "targetYearId": "class-07",
+        "difficulty": "core",
+        "prompt": {
+          "en": "When a few drops of dilute iodine solution are added to boiled rice, it turns blue-black. This indicates the presence of:",
+          "hi": "जब उबले हुए चावल में तनु आयोडीन घोल की कुछ बूंदें डाली जाती हैं, तो वह नीला-काला हो जाता है। यह किसकी उपस्थिति दर्शाता है?"
+        },
+        "options": [
+          {
+            "en": "Starch (Carbohydrate)",
+            "hi": "मंड (स्टार्च / कार्बोहाइड्रेट)"
+          },
+          {
+            "en": "Protein",
+            "hi": "प्रोटीन"
+          },
+          {
+            "en": "Fat",
+            "hi": "वसा"
+          },
+          {
+            "en": "Vitamin C",
+            "hi": "विटामिन सी"
+          }
+        ],
+        "correctIndex": 0,
+        "explanation": {
+          "en": "Iodine reacts with amylose in starch to form a characteristic blue-black complex (NCERT Curiosity).",
+          "hi": "आयोडीन स्टार्च (मंड) के साथ अभिक्रिया करके नीला-काला रंग देता है (एनसीईआरटी जिज्ञासा)।"
+        },
+        "sourceIds": [
+          "SRC-NCERT-NCFSE-2023"
+        ]
+      },
+      {
+        "itemId": "diag-sec-math-07",
+        "skillId": "math-polynomials-quadratics-sec",
+        "domainId": "mathematics-core",
+        "targetYearId": "class-10",
+        "difficulty": "stretch",
+        "prompt": {
+          "en": "For what value of k does the quadratic equation x^2 - 6x + k = 0 have two equal real roots?",
+          "hi": "k के किस मान के लिए द्विघात समीकरण x^2 - 6x + k = 0 के दो बराबर वास्तविक मूल होंगे?"
+        },
+        "options": [
+          {
+            "en": "k = 9",
+            "hi": "k = 9"
+          },
+          {
+            "en": "k = 6",
+            "hi": "k = 6"
+          },
+          {
+            "en": "k = -9",
+            "hi": "k = -9"
+          },
+          {
+            "en": "k = 3",
+            "hi": "k = 3"
+          }
+        ],
+        "correctIndex": 0,
+        "explanation": {
+          "en": "Equal real roots occur when discriminant D = b^2 - 4ac = 0 -> (-6)^2 - 4(1)(k) = 0 -> 36 - 4k = 0 -> k = 9.",
+          "hi": "बराबर मूलों के लिए विविक्तकर D = b^2 - 4ac = 0 -> 36 - 4k = 0 -> k = 9।"
+        },
+        "sourceIds": [
+          "SRC-CBSE-CURR-2026-27",
+          "SRC-NTA-JEEMAIN-2026"
+        ]
+      },
+      {
+        "itemId": "diag-srsec-calc-08",
+        "skillId": "math-calculus-vectors-srsec",
+        "domainId": "mathematics-core",
+        "targetYearId": "class-12",
+        "difficulty": "stretch",
+        "prompt": {
+          "en": "What is the derivative d/dx of f(x) = x^3 - 5x^2 + 7 at x = 2?",
+          "hi": "x = 2 पर फलन f(x) = x^3 - 5x^2 + 7 का अवकलज (d/dx) क्या है?"
+        },
+        "options": [
+          {
+            "en": "-8",
+            "hi": "-8"
+          },
+          {
+            "en": "12",
+            "hi": "12"
+          },
+          {
+            "en": "-4",
+            "hi": "-4"
+          },
+          {
+            "en": "0",
+            "hi": "0"
+          }
+        ],
+        "correctIndex": 0,
+        "explanation": {
+          "en": "f'(x) = 3x^2 - 10x. Evaluating at x = 2 gives 3(4) - 10(2) = 12 - 20 = -8.",
+          "hi": "f'(x) = 3x^2 - 10x। x = 2 रखने पर 3(4) - 20 = -8 प्राप्त होता है।"
+        },
+        "sourceIds": [
+          "SRC-CBSE-CURR-2026-27",
+          "SRC-NTA-JEEMAIN-2026"
+        ]
+      },
+      {
+        "itemId": "diag-global-lang-09",
+        "skillId": "lang-academic-rhetoric-global-exams",
+        "domainId": "languages-and-communication",
+        "targetYearId": "class-11",
+        "difficulty": "stretch",
+        "prompt": {
+          "en": "Choose the punctuation that conforms to Standard English conventions: 'Solar microgrids reduce transmission losses ______ they require local battery storage to handle monsoon cloud cover.'",
+          "hi": "मानक अंग्रेजी विराम-चिह्न चुनें: 'Solar microgrids reduce transmission losses ______ they require local battery storage to handle monsoon cloud cover.'"
+        },
+        "options": [
+          {
+            "en": "losses; however,",
+            "hi": "losses; however,"
+          },
+          {
+            "en": "losses, however,",
+            "hi": "losses, however,"
+          },
+          {
+            "en": "losses however",
+            "hi": "losses however"
+          },
+          {
+            "en": "losses: however",
+            "hi": "losses: however"
+          }
+        ],
+        "correctIndex": 0,
+        "explanation": {
+          "en": "Joining two independent clauses with the conjunctive adverb 'however' requires a semicolon before and a comma after.",
+          "hi": "दो स्वतंत्र उपवाक्यों को 'however' से जोड़ने के लिए पहले अर्धविराम (;) और बाद में अल्पविराम (,) आवश्यक है।"
+        },
+        "sourceIds": [
+          "SRC-CB-DIGITALSAT-2026",
+          "SRC-IELTS-ACADEMIC-2026"
+        ]
+      }
+    ],
+    "mockBlueprints": [
+      {
+        "blueprintId": "mock-cbse-class-10-science-math",
+        "title": {
+          "en": "CBSE Class 10 Competency-Based Board Mock",
+          "hi": "सीबीएसई कक्षा 10 दक्षता-आधारित बोर्ड मॉक"
+        },
+        "category": "board-mock",
+        "targetBoardOrTrack": "CBSE Class 10 (80 Marks Theory Blueprint)",
+        "durationMinutes": 180,
+        "totalMarksOrScale": "80 Marks (50% Competency/Case-Based, 20% MCQ, 30% Short/Long Response)",
+        "patternStatus": "sourced-official-pattern",
+        "sections": [
+          {
+            "sectionId": "sec-a",
+            "name": "Section A: Multiple Choice & Assertion-Reason",
+            "questionCount": 20,
+            "marksNote": "20 x 1 = 20 Marks",
+            "skillIds": [
+              "math-polynomials-quadratics-sec",
+              "sci-integrated-sec-9-10"
+            ]
+          },
+          {
+            "sectionId": "sec-b-d",
+            "name": "Sections B-D: Short & Long Constructed Response",
+            "questionCount": 14,
+            "marksNote": "48 Marks",
+            "skillIds": [
+              "math-trigonometry-coordinate-sec",
+              "sci-integrated-sec-9-10"
+            ]
+          },
+          {
+            "sectionId": "sec-e",
+            "name": "Section E: Competency Case-Study Units",
+            "questionCount": 3,
+            "marksNote": "3 x 4 = 12 Marks",
+            "skillIds": [
+              "math-trigonometry-coordinate-sec",
+              "soc-democratic-polity-economy-sec"
+            ]
+          }
+        ],
+        "sourceIds": [
+          "SRC-CBSE-CURR-2026-27",
+          "SRC-CBSE-SECPART1-2026-27"
+        ],
+        "sampleItems": [
+          {
+            "itemId": "m-cbse10-1",
+            "skillId": "sci-integrated-sec-9-10",
+            "prompt": {
+              "en": "Two resistors of 4 Ohm and 12 Ohm are connected in parallel across a 6 V battery. What is the equivalent resistance of the circuit?",
+              "hi": "4 ओम और 12 ओम के दो प्रतिरोधक 6 V बैटरी के साथ समांतर क्रम में जुड़े हैं। परिपथ का तुल्य प्रतिरोध क्या है?"
+            },
+            "options": [
+              {
+                "en": "3 Ohm",
+                "hi": "3 ओम"
+              },
+              {
+                "en": "16 Ohm",
+                "hi": "16 ओम"
+              },
+              {
+                "en": "8 Ohm",
+                "hi": "8 ओम"
+              },
+              {
+                "en": "0.33 Ohm",
+                "hi": "0.33 ओम"
+              }
+            ],
+            "correctIndex": 0,
+            "explanation": {
+              "en": "1/Req = 1/4 + 1/12 = 4/12 = 1/3 -> Req = 3 Ohm.",
+              "hi": "1/Req = 1/4 + 1/12 = 4/12 = 1/3 -> तुल्य प्रतिरोध Req = 3 ओम।"
+            }
+          },
+          {
+            "itemId": "m-cbse10-2",
+            "skillId": "math-trigonometry-coordinate-sec",
+            "prompt": {
+              "en": "If sin(theta) = 3/5 for an acute angle theta, what is the value of cos(theta)?",
+              "hi": "यदि न्यून कोण theta के लिए sin(theta) = 3/5 है, तो cos(theta) का मान क्या होगा?"
+            },
+            "options": [
+              {
+                "en": "4/5",
+                "hi": "4/5"
+              },
+              {
+                "en": "3/4",
+                "hi": "3/4"
+              },
+              {
+                "en": "5/4",
+                "hi": "5/4"
+              },
+              {
+                "en": "2/5",
+                "hi": "2/5"
+              }
+            ],
+            "correctIndex": 0,
+            "explanation": {
+              "en": "Using sin^2(theta) + cos^2(theta) = 1 -> cos(theta) = sqrt(1 - 9/25) = sqrt(16/25) = 4/5.",
+              "hi": "sin^2(theta) + cos^2(theta) = 1 से cos(theta) = sqrt(1 - 9/25) = 4/5।"
+            }
+          }
+        ]
+      },
+      {
+        "blueprintId": "mock-jee-main-paper1",
+        "title": {
+          "en": "NTA JEE (Main) Paper 1 CBT Full Pattern Mock",
+          "hi": "एनटीए जेईई (मेन) पेपर 1 सीबीटी मॉक परीक्षा"
+        },
+        "category": "competitive-track",
+        "targetBoardOrTrack": "JEE Main B.E./B.Tech (300 Marks)",
+        "durationMinutes": 180,
+        "totalMarksOrScale": "300 Marks (75 Questions: +4 correct, -1 incorrect)",
+        "patternStatus": "sourced-official-pattern",
+        "sections": [
+          {
+            "sectionId": "jee-math",
+            "name": "Part I: Mathematics (20 MCQ + 5 Numerical)",
+            "questionCount": 25,
+            "marksNote": "100 Marks",
+            "skillIds": [
+              "math-calculus-vectors-srsec",
+              "math-polynomials-quadratics-sec"
+            ]
+          },
+          {
+            "sectionId": "jee-phy",
+            "name": "Part II: Physics (20 MCQ + 5 Numerical)",
+            "questionCount": 25,
+            "marksNote": "100 Marks",
+            "skillIds": [
+              "sci-physics-srsec-11-12"
+            ]
+          },
+          {
+            "sectionId": "jee-chem",
+            "name": "Part III: Chemistry (20 MCQ + 5 Numerical)",
+            "questionCount": 25,
+            "marksNote": "100 Marks",
+            "skillIds": [
+              "sci-chemistry-srsec-11-12"
+            ]
+          }
+        ],
+        "sourceIds": [
+          "SRC-NTA-JEEMAIN-2026"
+        ],
+        "sampleItems": [
+          {
+            "itemId": "m-jee-1",
+            "skillId": "sci-physics-srsec-11-12",
+            "prompt": {
+              "en": "A particle of mass m is projected with velocity v at 45 degrees to the horizontal. What is the magnitude of its angular momentum about the point of projection at maximum height?",
+              "hi": "द्रव्यमान m के एक कण को क्षैतिज से 45 डिग्री पर वेग v से प्रक्षेपित किया जाता है। अधिकतम ऊंचाई पर प्रक्षेपण बिंदु के सापेक्ष इसका कोणीय संवेग क्या होगा?"
+            },
+            "options": [
+              {
+                "en": "m v^3 / (4 sqrt(2) g)",
+                "hi": "m v^3 / (4 sqrt(2) g)"
+              },
+              {
+                "en": "m v^3 / (2 sqrt(2) g)",
+                "hi": "m v^3 / (2 sqrt(2) g)"
+              },
+              {
+                "en": "zero",
+                "hi": "शून्य"
+              },
+              {
+                "en": "m v^2 / (2 g)",
+                "hi": "m v^2 / (2 g)"
+              }
+            ],
+            "correctIndex": 0,
+            "explanation": {
+              "en": "At max height H = v^2 sin^2(45)/(2g) = v^2/(4g), speed is v cos(45) = v/sqrt(2). Thus L = m (v/sqrt(2)) H = m v^3 / (4 sqrt(2) g).",
+              "hi": "अधिकतम ऊंचाई H = v^2/(4g) और क्षैतिज वेग v/sqrt(2) से L = m v_x H = m v^3 / (4 sqrt(2) g)।"
+            }
+          },
+          {
+            "itemId": "m-jee-2",
+            "skillId": "math-calculus-vectors-srsec",
+            "prompt": {
+              "en": "What is the value of the definite integral from 0 to pi/2 of sin^2(x) dx?",
+              "hi": "0 से pi/2 तक sin^2(x) dx के निश्चित समाकलन का मान क्या है?"
+            },
+            "options": [
+              {
+                "en": "pi / 4",
+                "hi": "pi / 4"
+              },
+              {
+                "en": "pi / 2",
+                "hi": "pi / 2"
+              },
+              {
+                "en": "1",
+                "hi": "1"
+              },
+              {
+                "en": "pi / 8",
+                "hi": "pi / 8"
+              }
+            ],
+            "correctIndex": 0,
+            "explanation": {
+              "en": "By symmetry I = int_0^(pi/2) sin^2(x) dx = int_0^(pi/2) cos^2(x) dx -> 2I = pi/2 -> I = pi/4.",
+              "hi": "सममिति गुणधर्म से 2I = pi/2, अतः I = pi/4।"
+            }
+          }
+        ]
+      },
+      {
+        "blueprintId": "mock-neet-ug",
+        "title": {
+          "en": "NTA NEET (UG) 720-Mark Medical Entrance Mock",
+          "hi": "एनटीए नीट (यूजी) 720-अंक मेडिकल प्रवेश मॉक"
+        },
+        "category": "competitive-track",
+        "targetBoardOrTrack": "NEET UG (Physics, Chemistry, Biology)",
+        "durationMinutes": 180,
+        "totalMarksOrScale": "720 Marks (180 Questions: +4 correct, -1 incorrect)",
+        "patternStatus": "sourced-official-pattern",
+        "sections": [
+          {
+            "sectionId": "neet-bio",
+            "name": "Biology (Botany & Zoology)",
+            "questionCount": 90,
+            "marksNote": "360 Marks",
+            "skillIds": [
+              "sci-biology-srsec-11-12"
+            ]
+          },
+          {
+            "sectionId": "neet-chem",
+            "name": "Chemistry",
+            "questionCount": 45,
+            "marksNote": "180 Marks",
+            "skillIds": [
+              "sci-chemistry-srsec-11-12"
+            ]
+          },
+          {
+            "sectionId": "neet-phy",
+            "name": "Physics",
+            "questionCount": 45,
+            "marksNote": "180 Marks",
+            "skillIds": [
+              "sci-physics-srsec-11-12"
+            ]
+          }
+        ],
+        "sourceIds": [
+          "SRC-NTA-NEETUG-2026"
+        ],
+        "sampleItems": [
+          {
+            "itemId": "m-neet-1",
+            "skillId": "sci-biology-srsec-11-12",
+            "prompt": {
+              "en": "Which enzyme is thermostable and catalyses the extension step during Polymerase Chain Reaction (PCR)?",
+              "hi": "पॉलीमरेज़ चेन रिएक्शन (PCR) के दौरान कौन-सा ताप-स्थायी एंजाइम डीएनए विस्तार (extension) को उत्प्रेरित करता है?"
+            },
+            "options": [
+              {
+                "en": "Taq polymerase (from Thermus aquaticus)",
+                "hi": "टैक पॉलीमरेज़ (Thermus aquaticus से)"
+              },
+              {
+                "en": "DNA ligase",
+                "hi": "डीएनए लाइगेज"
+              },
+              {
+                "en": "EcoRI restriction endonuclease",
+                "hi": "EcoRI प्रतिबंधन एंजाइम"
+              },
+              {
+                "en": "RNA primase",
+                "hi": "आरएनए प्राइमेज़"
+              }
+            ],
+            "correctIndex": 0,
+            "explanation": {
+              "en": "Taq DNA polymerase isolated from Thermus aquaticus remains active during high-temperature denaturation in PCR.",
+              "hi": "Thermus aquaticus से प्राप्त टैक डीएनए पॉलीमरेज़ उच्च तापमान पर भी सक्रिय रहता है।"
+            }
+          },
+          {
+            "itemId": "m-neet-2",
+            "skillId": "sci-chemistry-srsec-11-12",
+            "prompt": {
+              "en": "For a first-order chemical reaction with rate constant k = 0.693 min^-1, what is the half-life (t_1/2)?",
+              "hi": "यदि किसी प्रथम कोटि की अभिक्रिया का वेग स्थिरांक k = 0.693 min^-1 है, तो उसकी अर्ध-आयु (t_1/2) क्या होगी?"
+            },
+            "options": [
+              {
+                "en": "1.0 minute",
+                "hi": "1.0 मिनट"
+              },
+              {
+                "en": "2.0 minutes",
+                "hi": "2.0 मिनट"
+              },
+              {
+                "en": "0.5 minute",
+                "hi": "0.5 मिनट"
+              },
+              {
+                "en": "0.693 minutes",
+                "hi": "0.693 मिनट"
+              }
+            ],
+            "correctIndex": 0,
+            "explanation": {
+              "en": "For first-order kinetics, t_1/2 = 0.693 / k = 0.693 / 0.693 = 1.0 minute.",
+              "hi": "प्रथम कोटि अभिक्रिया के लिए t_1/2 = 0.693 / k = 1.0 मिनट।"
+            }
+          }
+        ]
+      },
+      {
+        "blueprintId": "mock-cuet-ug-combined",
+        "title": {
+          "en": "NTA CUET (UG) Domain & General Test Mock",
+          "hi": "एनटीए सीयूईटी (यूजी) डोमेन और जनरल टेस्ट मॉक"
+        },
+        "category": "competitive-track",
+        "targetBoardOrTrack": "CUET UG (Languages + Class 12 Domain + General Test)",
+        "durationMinutes": 60,
+        "totalMarksOrScale": "250 Marks per paper (+5 correct, -1 incorrect)",
+        "patternStatus": "sourced-official-pattern",
+        "sections": [
+          {
+            "sectionId": "cuet-lang",
+            "name": "Section IA: Language Reading Comprehension",
+            "questionCount": 50,
+            "marksNote": "250 Marks",
+            "skillIds": [
+              "lang-academic-rhetoric-global-exams"
+            ]
+          },
+          {
+            "sectionId": "cuet-dom",
+            "name": "Section II/III: Domain & Quantitative Aptitude",
+            "questionCount": 50,
+            "marksNote": "250 Marks",
+            "skillIds": [
+              "soc-humanities-commerce-srsec",
+              "math-ratios-linear-algebra-middle"
+            ]
+          }
+        ],
+        "sourceIds": [
+          "SRC-NTA-CUETUG-2026"
+        ],
+        "sampleItems": [
+          {
+            "itemId": "m-cuet-1",
+            "skillId": "soc-humanities-commerce-srsec",
+            "prompt": {
+              "en": "Which function of the Reserve Bank of India (RBI) describes its role as the 'lender of last resort' to commercial banks?",
+              "hi": "भारतीय रिज़र्व बैंक (RBI) का कौन-सा कार्य वाणिज्यिक बैंकों के लिए 'अंतिम ऋणदाता' की भूमिका दर्शाता है?"
+            },
+            "options": [
+              {
+                "en": "Bankers' Bank and Supervisor",
+                "hi": "बैंकों का बैंक और पर्यवेक्षक"
+              },
+              {
+                "en": "Issuer of Currency Notes",
+                "hi": "मुद्रा जारीकर्ता"
+              },
+              {
+                "en": "Custodian of Foreign Exchange",
+                "hi": "विदेशी मुद्रा संरक्षक"
+              },
+              {
+                "en": "Retail Deposit Collector",
+                "hi": "खुदरा जमा संग्रहकर्ता"
+              }
+            ],
+            "correctIndex": 0,
+            "explanation": {
+              "en": "As Bankers' Bank (NCERT Introductory Macroeconomics), RBI provides liquidity support to solvent commercial banks facing temporary crunches.",
+              "hi": "बैंकों के बैंक के रूप में RBI वाणिज्यिक बैंकों को संकट के समय तरलता सहायता प्रदान करता है।"
+            }
+          },
+          {
+            "itemId": "m-cuet-2",
+            "skillId": "math-ratios-linear-algebra-middle",
+            "prompt": {
+              "en": "If A and B can complete a project in 12 days and 24 days respectively, how many days will they take working together?",
+              "hi": "यदि A और B किसी कार्य को क्रमशः 12 दिन और 24 दिन में पूरा कर सकते हैं, तो दोनों मिलकर उसे कितने दिनों में पूरा करेंगे?"
+            },
+            "options": [
+              {
+                "en": "8 days",
+                "hi": "8 दिन"
+              },
+              {
+                "en": "9 days",
+                "hi": "9 दिन"
+              },
+              {
+                "en": "6 days",
+                "hi": "6 दिन"
+              },
+              {
+                "en": "18 days",
+                "hi": "18 दिन"
+              }
+            ],
+            "correctIndex": 0,
+            "explanation": {
+              "en": "Combined daily rate = 1/12 + 1/24 = 3/24 = 1/8 job per day -> 8 days.",
+              "hi": "संयुक्त कार्य दर = 1/12 + 1/24 = 3/24 = 1/8 प्रति दिन -> 8 दिन।"
+            }
+          }
+        ]
+      },
+      {
+        "blueprintId": "mock-upsc-prelims-gs",
+        "title": {
+          "en": "UPSC CSE Prelims GS Paper I & CSAT Foundation Mock",
+          "hi": "यूपीएससी प्रारंभिक सामान्य अध्ययन और सीसैट मॉक"
+        },
+        "category": "competitive-track",
+        "targetBoardOrTrack": "UPSC Civil Services Preliminary Exam (GS I + CSAT II)",
+        "durationMinutes": 120,
+        "totalMarksOrScale": "200 Marks (100 GS Questions; +2 correct, -0.66 incorrect)",
+        "patternStatus": "sourced-official-pattern",
+        "sections": [
+          {
+            "sectionId": "upsc-gs1",
+            "name": "GS Paper I: Polity, History, Geography, Economy & Ecology",
+            "questionCount": 100,
+            "marksNote": "200 Marks",
+            "skillIds": [
+              "soc-democratic-polity-economy-sec",
+              "soc-humanities-commerce-srsec"
+            ]
+          },
+          {
+            "sectionId": "upsc-csat",
+            "name": "GS Paper II (CSAT): Comprehension & Class X Numeracy",
+            "questionCount": 80,
+            "marksNote": "200 Marks (Qualifying 33%)",
+            "skillIds": [
+              "math-ratios-linear-algebra-middle",
+              "lang-academic-rhetoric-global-exams"
+            ]
+          }
+        ],
+        "sourceIds": [
+          "SRC-UPSC-CSE-2026"
+        ],
+        "sampleItems": [
+          {
+            "itemId": "m-upsc-1",
+            "skillId": "soc-democratic-polity-economy-sec",
+            "prompt": {
+              "en": "Which Constitutional Amendment Act accorded constitutional status to Panchayati Raj Institutions under Part IX of the Constitution of India?",
+              "hi": "किस संविधान संशोधन अधिनियम ने भारत के संविधान के भाग IX के अंतर्गत पंचायती राज संस्थाओं को संवैधानिक दर्जा प्रदान किया?"
+            },
+            "options": [
+              {
+                "en": "73rd Constitutional Amendment Act, 1992",
+                "hi": "73वां संविधान संशोधन अधिनियम, 1992"
+              },
+              {
+                "en": "42nd Constitutional Amendment Act, 1976",
+                "hi": "42वां संविधान संशोधन अधिनियम, 1976"
+              },
+              {
+                "en": "86th Constitutional Amendment Act, 2002",
+                "hi": "86वां संविधान संशोधन अधिनियम, 2002"
+              },
+              {
+                "en": "44th Constitutional Amendment Act, 1978",
+                "hi": "44वां संविधान संशोधन अधिनियम, 1978"
+              }
+            ],
+            "correctIndex": 0,
+            "explanation": {
+              "en": "The 73rd Amendment Act, 1992 added Part IX (Articles 243 to 243-O) and the Eleventh Schedule for Panchayati Raj.",
+              "hi": "73वें संविधान संशोधन अधिनियम, 1992 द्वारा भाग IX और ग्यारहवीं अनुसूची जोड़ी गई।"
+            }
+          },
+          {
+            "itemId": "m-upsc-2",
+            "skillId": "soc-exploring-society-middle",
+            "prompt": {
+              "en": "The Great Bath and advanced citadel drainage systems are archaeological hallmarks of which Indus Valley site?",
+              "hi": "विशाल स्नानागार (Great Bath) और उन्नत जल-निकासी प्रणाली सिंधु घाटी सभ्यता के किस स्थल की विशेषता है?"
+            },
+            "options": [
+              {
+                "en": "Mohenjo-daro",
+                "hi": "मोहनजोदड़ो"
+              },
+              {
+                "en": "Lothal",
+                "hi": "लोथल"
+              },
+              {
+                "en": "Kalibangan",
+                "hi": "कालीबंगा"
+              },
+              {
+                "en": "Ropar",
+                "hi": "रोपड़"
+              }
+            ],
+            "correctIndex": 0,
+            "explanation": {
+              "en": "Mohenjo-daro features the brick-lined water-tight Great Bath documented in NCERT Exploring Society.",
+              "hi": "मोहनजोदड़ो में विशाल स्नानागार और सुव्यवस्थित जल निकासी प्रणाली पाई गई है।"
+            }
+          }
+        ]
+      },
+      {
+        "blueprintId": "mock-digital-sat-global",
+        "title": {
+          "en": "Digital SAT & IELTS/TOEFL Study Abroad Readiness Mock",
+          "hi": "डिजिटल सैट (SAT) और आईईएलटीएस/टोफल अध्ययन विदेश मॉक"
+        },
+        "category": "study-abroad",
+        "targetBoardOrTrack": "College Board Digital SAT (1600) + IELTS/TOEFL Academic",
+        "durationMinutes": 134,
+        "totalMarksOrScale": "1600 SAT Scale + CEFR C1 / Band 8.0 Rubric",
+        "patternStatus": "sourced-official-pattern",
+        "sections": [
+          {
+            "sectionId": "sat-rw",
+            "name": "Digital SAT Reading and Writing (Modules 1 & 2)",
+            "questionCount": 54,
+            "marksNote": "200-800 Scale (64 Min)",
+            "skillIds": [
+              "lang-academic-rhetoric-global-exams"
+            ]
+          },
+          {
+            "sectionId": "sat-math",
+            "name": "Digital SAT Math (Modules 1 & 2)",
+            "questionCount": 44,
+            "marksNote": "200-800 Scale (70 Min)",
+            "skillIds": [
+              "math-ratios-linear-algebra-middle",
+              "math-polynomials-quadratics-sec",
+              "math-trigonometry-coordinate-sec"
+            ]
+          }
+        ],
+        "sourceIds": [
+          "SRC-CB-DIGITALSAT-2026",
+          "SRC-IELTS-ACADEMIC-2026",
+          "SRC-ETS-TOEFL-2026"
+        ],
+        "sampleItems": [
+          {
+            "itemId": "m-sat-1",
+            "skillId": "math-ratios-linear-algebra-middle",
+            "prompt": {
+              "en": "If 4x + 3y = 29 and 3x - 3y = 6, what is the value of x + y?",
+              "hi": "यदि 4x + 3y = 29 और 3x - 3y = 6 है, तो x + y का मान क्या होगा?"
+            },
+            "options": [
+              {
+                "en": "8",
+                "hi": "8"
+              },
+              {
+                "en": "5",
+                "hi": "5"
+              },
+              {
+                "en": "3",
+                "hi": "3"
+              },
+              {
+                "en": "10",
+                "hi": "10"
+              }
+            ],
+            "correctIndex": 0,
+            "explanation": {
+              "en": "Adding the two equations gives 7x = 35 -> x = 5. Substituting x = 5 into 4(5) + 3y = 29 gives 3y = 9 -> y = 3. Thus x + y = 8.",
+              "hi": "दोनों समीकरणों को जोड़ने पर 7x = 35 -> x = 5 तथा 4(5) + 3y = 29 -> y = 3। अतः x + y = 8।"
+            }
+          },
+          {
+            "itemId": "m-sat-2",
+            "skillId": "lang-academic-rhetoric-global-exams",
+            "prompt": {
+              "en": "Archaeologists studying stepwells in Gujarat note that these structures served dual purposes: providing year-round groundwater access and ______ cool communal gathering spaces during summer heatwaves.",
+              "hi": "गुजरात की बावड़ियों का अध्ययन करने वाले पुरातत्वविद् बताते हैं कि ये संरचनाएं दोहरे उद्देश्य पूरे करती थीं: वर्ष भर भूजल उपलब्ध कराना और ग्रीष्मकाल में शीतल सामुदायिक स्थान ______।"
+            },
+            "options": [
+              {
+                "en": "offering",
+                "hi": "प्रदान करना (offering)"
+              },
+              {
+                "en": "offered",
+                "hi": "offered"
+              },
+              {
+                "en": "to offer",
+                "hi": "to offer"
+              },
+              {
+                "en": "they offered",
+                "hi": "they offered"
+              }
+            ],
+            "correctIndex": 0,
+            "explanation": {
+              "en": "Parallel grammatical structure requires the participial phrase 'offering...' to match 'providing...'.",
+              "hi": "समानांतर व्याकरणिक संरचना के लिए 'providing' के साथ 'offering' का प्रयोग सही है।"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "evolutionState": {
+    "schemaVersion": "1.0.0",
+    "updatedAt": "2026-10-22T00:00:00.000Z",
+    "layers": [
+      {
+        "layerId": "L1",
+        "name": {
+          "en": "L1: Real-Time Learner Mastery & Schedule Rebalancer",
+          "hi": "L1: वास्तविक-समय दक्षता और समय-सारणी संतुलन"
+        },
+        "cadence": "Every interaction (sub-minute)",
+        "gateType": "Automated deterministic + topological prerequisite guard",
+        "recentEvents": [
+          {
+            "timestamp": "2026-10-22T01:15:00+05:30",
+            "event": "Learner 'Aarav' scored 4/4 on Ganita Prakash Unit 1 exit check; mastery on math-integers-number-patterns updated 0.81 -> 0.86.",
+            "actionTaken": "Compressed 1 redundant drill block and promoted Linear Equations bridge session into Thursday Slot 2."
+          }
+        ]
+      },
+      {
+        "layerId": "L2",
+        "name": {
+          "en": "L2: Continuous Content & Hint Variant Telemetry",
+          "hi": "L2: निरंतर सामग्री और संकेत गुणवत्ता अनुकूलन"
+        },
+        "cadence": "Hourly / Daily learning-gain evaluation",
+        "gateType": "Automated source-grounding check + 5% accuracy rollback guard",
+        "recentEvents": [
+          {
+            "timestamp": "2026-10-22T00:45:00+05:30",
+            "event": "Evaluated 2 bilingual visual hint variants for 'Signed Integer Subtraction on Number Line' (SRC-NCERT-NCFSE-2023).",
+            "actionTaken": "Promoted Variant B (Temperature Elevator Analogy in Hindi/English) after +14% first-attempt exit-ticket gain."
+          }
+        ]
+      },
+      {
+        "layerId": "L3",
+        "name": {
+          "en": "L3: Official Statutory Source Watcher (NCERT / CBSE / CISCE / NIOS / NTA / College Board)",
+          "hi": "L3: आधिकारिक बोर्ड पाठ्यक्रम निगरानी इंजन"
+        },
+        "cadence": "Continuous scheduled feed monitor",
+        "gateType": "Read-only cryptographic hash & circular diff detector (never mutates live plans directly)",
+        "monitoredSources": [
+          {
+            "sourceId": "SRC-CBSE-CURR-2026-27",
+            "url": "https://cbseacademic.nic.in/curriculum_2027.html",
+            "status": "SYNCED",
+            "lastChecked": "2026-10-22T01:10:00+05:30"
+          },
+          {
+            "sourceId": "SRC-NCERT-NCFSE-2023",
+            "url": "https://ncert.nic.in/pdf/NCFSE-2023-August_2023.pdf",
+            "status": "SYNCED",
+            "lastChecked": "2026-10-22T01:10:00+05:30"
+          },
+          {
+            "sourceId": "SRC-NTA-JEEMAIN-2026",
+            "url": "https://jeemain.nta.nic.in/document/syllabus-2026/",
+            "status": "SYNCED",
+            "lastChecked": "2026-10-22T01:12:00+05:30"
+          },
+          {
+            "sourceId": "SRC-NTA-NEETUG-2026",
+            "url": "https://www.nta.ac.in/Download/Notice/Notice_20260108180635.pdf",
+            "status": "SYNCED",
+            "lastChecked": "2026-10-22T01:12:00+05:30"
+          },
+          {
+            "sourceId": "SRC-CB-DIGITALSAT-2026",
+            "url": "https://satsuite.collegeboard.org/media/pdf/assessment-framework-for-digital-sat-suite.pdf",
+            "status": "SYNCED",
+            "lastChecked": "2026-10-22T01:14:00+05:30"
+          },
+          {
+            "sourceId": "SRC-ETS-TOEFL-2026",
+            "url": "https://www.ets.org/toefl/test-takers/ibt/about/content.html",
+            "status": "DIFF-DETECTED",
+            "lastChecked": "2026-10-22T01:14:00+05:30"
+          }
+        ]
+      },
+      {
+        "layerId": "L4",
+        "name": {
+          "en": "L4: Cohort-Pinned Curriculum Alignment & Rationalisation Council Gate",
+          "hi": "L4: बैच-आधारित पाठ्यक्रम संरेखण और युक्तिसंगत समीक्षा गेट"
+        },
+        "cadence": "Triggered on L3 Official Diff Detection",
+        "gateType": "4 Automated Checks (DAG Acyclicity, NCrF 1200h Load, NCERT 5-Point Rationalisation, Cohort Pinning) + Human Sign-Off",
+        "changeProposals": [
+          {
+            "proposalId": "CP-2026-10-01",
+            "sourceId": "SRC-NCERT-NSTC-2023",
+            "title": "NCERT Class 8 Ganita Prakash & Curiosity 2026-27 Competency Weightage Update",
+            "affectedCohorts": [
+              "cbse-class-08@2026.1.0"
+            ],
+            "checksPassed": [
+              "dag-no-cycles",
+              "dag-no-orphans",
+              "ncrf-1200h-load-valid",
+              "ncert-5point-rationalisation"
+            ],
+            "status": "APPROVED-AND-PINNED"
+          },
+          {
+            "proposalId": "CP-2026-10-02",
+            "sourceId": "SRC-ETS-TOEFL-2026",
+            "title": "ETS TOEFL iBT 1-to-6 CEFR Score Scale Mapping & Academic Discussion Task Rubric",
+            "affectedCohorts": [
+              "track-toefl@2026.1.0"
+            ],
+            "checksPassed": [
+              "dag-no-cycles",
+              "dag-no-orphans",
+              "ncrf-1200h-load-valid",
+              "ncert-5point-rationalisation"
+            ],
+            "status": "READY-FOR-COUNCIL-APPROVAL"
+          }
+        ]
+      },
+      {
+        "layerId": "L5",
+        "name": {
+          "en": "L5: Frontier Skill Horizon (AI Systems, Climate & Financial Literacy)",
+          "hi": "L5: भविष्यमुखी कौशल क्षितिज (एआई, जलवायु और वित्तीय साक्षरता)"
+        },
+        "cadence": "Weekly signal scan / Quarterly enrichment release",
+        "gateType": "Tagged strictly as elective enrichment so compulsory board syllabus remains untouched",
+        "frontierNodes": [
+          "comp-algorithmic-ai-literacy (Source-Grounded Retrieval & Hallucination Verification Lab for Classes 8-12)"
+        ]
+      }
+    ]
+  },
+  "learners": [
+    {
+      "schemaVersion": "1.0.0",
+      "learnerId": "learner01aaravcbse07",
+      "createdAt": "2026-10-22T00:00:00.000Z",
+      "identity": {
+        "displayName": "Aarav S. (Synthetic Demo)",
+        "preferredName": "Aarav",
+        "dateOfBirth": "2014-04",
+        "guardianContactRef": "guardian-vault-ref-001"
+      },
+      "education": {
+        "currentYearId": "class-07",
+        "boardId": "cbse",
+        "schoolType": "school-enrolled",
+        "completedYearIds": [
+          "nursery",
+          "lkg",
+          "ukg",
+          "class-01",
+          "class-02",
+          "class-03",
+          "class-04",
+          "class-05",
+          "class-06"
+        ],
+        "languages": [
+          {
+            "code": "en",
+            "role": "medium"
+          },
+          {
+            "code": "hi",
+            "role": "second-language"
+          }
+        ],
+        "mediumOfInstruction": "bilingual"
+      },
+      "goals": {
+        "targetTracks": [
+          "jee",
+          "sat"
+        ],
+        "targetExamYear": 2032,
+        "weeklyStudyMinutes": 660,
+        "notes": "Strengthening Class 6-7 Ganita Prakash fractions/integers before starting Class 8-9 JEE and Digital SAT foundation bridge."
+      },
+      "preferences": {
+        "uiLanguage": "en",
+        "contentLanguageMix": {
+          "explanation": "both",
+          "practice": "en"
+        },
+        "sessionLengthMinutes": 30,
+        "offlineFirst": true,
+        "parentViewEnabled": true
+      },
+      "consent": {
+        "status": "guardian-verified",
+        "policyVersion": "2026-10-22",
+        "consentedAt": "2026-10-22T00:00:00.000Z",
+        "guardianRelationship": "parent",
+        "verificationMethod": "digilocker",
+        "jurisdiction": "IN",
+        "dataProcessingConsent": true
+      },
+      "privacy": {
+        "dataResidency": "IN",
+        "retentionClass": "until-withdrawal",
+        "analyticsOptOut": true,
+        "thirdPartyAiProcessingAllowed": false
+      },
+      "diagnosticState": {
+        "lastDiagnosticId": "diag-session-aarav-01",
+        "lastDiagnosticAt": "2026-10-22T00:00:00.000Z",
+        "confidence": "high",
+        "masterySummary": [
+          {
+            "skillId": "math-integers-number-patterns",
+            "mastery": 0.86,
+            "evidenceCount": 12
+          },
+          {
+            "skillId": "math-ratios-linear-algebra-middle",
+            "mastery": 0.64,
+            "evidenceCount": 8
+          },
+          {
+            "skillId": "sci-curiosity-middle-inquiry",
+            "mastery": 0.82,
+            "evidenceCount": 10
+          },
+          {
+            "skillId": "soc-exploring-society-middle",
+            "mastery": 0.78,
+            "evidenceCount": 7
+          },
+          {
+            "skillId": "lang-bilingual-literature-middle",
+            "mastery": 0.88,
+            "evidenceCount": 9
+          }
+        ]
+      },
+      "planState": {
+        "activePlanId": "plan-cbse-class-07-aarav",
+        "curriculumVersion": "2026.1.0",
+        "planRevision": 2
+      },
+      "accessibility": {
+        "screenTimeCapMinutesPerDay": 60
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "learnerId": "learner02ananyaneet11",
+      "createdAt": "2026-10-22T00:00:00.000Z",
+      "identity": {
+        "displayName": "Ananya K. (Synthetic Demo)",
+        "preferredName": "Ananya",
+        "dateOfBirth": "2010-08",
+        "guardianContactRef": "guardian-vault-ref-002"
+      },
+      "education": {
+        "currentYearId": "class-11",
+        "boardId": "cbse",
+        "schoolType": "school-enrolled",
+        "completedYearIds": [
+          "class-01",
+          "class-02",
+          "class-03",
+          "class-04",
+          "class-05",
+          "class-06",
+          "class-07",
+          "class-08",
+          "class-09",
+          "class-10"
+        ],
+        "languages": [
+          {
+            "code": "hi",
+            "role": "first-language"
+          },
+          {
+            "code": "en",
+            "role": "medium"
+          }
+        ],
+        "mediumOfInstruction": "bilingual"
+      },
+      "goals": {
+        "targetTracks": [
+          "neet",
+          "cuet"
+        ],
+        "targetExamYear": 2028,
+        "weeklyStudyMinutes": 1080,
+        "notes": "Dual CBSE Class 11 PCB + NTA NEET UG 2028 synchronized preparation."
+      },
+      "preferences": {
+        "uiLanguage": "hi",
+        "contentLanguageMix": {
+          "explanation": "both",
+          "practice": "both"
+        },
+        "sessionLengthMinutes": 45,
+        "offlineFirst": true,
+        "parentViewEnabled": true
+      },
+      "consent": {
+        "status": "guardian-verified",
+        "policyVersion": "2026-10-22",
+        "consentedAt": "2026-10-22T00:00:00.000Z",
+        "guardianRelationship": "parent",
+        "verificationMethod": "digilocker",
+        "jurisdiction": "IN",
+        "dataProcessingConsent": true
+      },
+      "privacy": {
+        "dataResidency": "IN",
+        "retentionClass": "until-withdrawal",
+        "analyticsOptOut": true,
+        "thirdPartyAiProcessingAllowed": false
+      },
+      "diagnosticState": {
+        "lastDiagnosticId": "diag-session-ananya-01",
+        "lastDiagnosticAt": "2026-10-22T00:00:00.000Z",
+        "confidence": "high",
+        "masterySummary": [
+          {
+            "skillId": "sci-integrated-sec-9-10",
+            "mastery": 0.92,
+            "evidenceCount": 18
+          },
+          {
+            "skillId": "sci-biology-srsec-11-12",
+            "mastery": 0.76,
+            "evidenceCount": 14
+          },
+          {
+            "skillId": "sci-chemistry-srsec-11-12",
+            "mastery": 0.68,
+            "evidenceCount": 11
+          },
+          {
+            "skillId": "sci-physics-srsec-11-12",
+            "mastery": 0.59,
+            "evidenceCount": 9
+          }
+        ]
+      },
+      "planState": {
+        "activePlanId": "plan-cbse-class-11-ananya",
+        "curriculumVersion": "2026.1.0",
+        "planRevision": 1
+      },
+      "accessibility": {
+        "screenTimeCapMinutesPerDay": 120
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "learnerId": "learner03kabirhome02",
+      "createdAt": "2026-10-22T00:00:00.000Z",
+      "identity": {
+        "displayName": "Kabir M. (Caregiver Guided 0-3)",
+        "preferredName": "Kabir",
+        "dateOfBirth": "2024-11",
+        "guardianContactRef": "guardian-vault-ref-003"
+      },
+      "education": {
+        "currentYearId": "home-0-3",
+        "boardId": "early-years",
+        "schoolType": "home-learning",
+        "completedYearIds": [],
+        "languages": [
+          {
+            "code": "hi",
+            "role": "first-language"
+          },
+          {
+            "code": "en",
+            "role": "second-language"
+          }
+        ],
+        "mediumOfInstruction": "bilingual"
+      },
+      "goals": {
+        "weeklyStudyMinutes": 75,
+        "notes": "100% zero-screen caregiver-led sensory and bilingual oral stimulation under MWCD Navchetana 2024."
+      },
+      "preferences": {
+        "uiLanguage": "en",
+        "sessionLengthMinutes": 15,
+        "offlineFirst": true,
+        "parentViewEnabled": true
+      },
+      "consent": {
+        "status": "guardian-verified",
+        "policyVersion": "2026-10-22",
+        "consentedAt": "2026-10-22T00:00:00.000Z",
+        "guardianRelationship": "parent",
+        "verificationMethod": "payment-instrument",
+        "jurisdiction": "IN",
+        "dataProcessingConsent": true
+      },
+      "privacy": {
+        "dataResidency": "IN",
+        "retentionClass": "one-year",
+        "analyticsOptOut": true,
+        "thirdPartyAiProcessingAllowed": false
+      },
+      "accessibility": {
+        "screenTimeCapMinutesPerDay": 0
+      }
+    }
+  ]
+}

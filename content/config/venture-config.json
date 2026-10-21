@@ -1,0 +1,33 @@
+{
+  "ventureName": "EveryYear",
+  "alternateVentureNames": [
+    {
+      "name": "EveryYear",
+      "tagline": "An individual AI-guided plan for every year of education, from home learning (0-3) to Class 12 and global tracks",
+      "hindiTitle": "एवरीईयर - हर वर्ष की व्यक्तिगत शिक्षा योजना"
+    },
+    {
+      "name": "AarohAI",
+      "tagline": "Step-by-step mastery ascent across school boards and competitive tracks",
+      "hindiTitle": "आरोह एआई - क्रमिक कौशल विकास"
+    },
+    {
+      "name": "Vidyapath AI",
+      "tagline": "One shared skill graph from foundational play to career entrance",
+      "hindiTitle": "विद्यापथ एआई - समग्र शिक्षा पथ"
+    },
+    {
+      "name": "EduAIon",
+      "tagline": "Always-on adaptive learning grounded in official curricula",
+      "hindiTitle": "एजुएआईऑन - निरंतर अनुकूलित शिक्षा"
+    }
+  ],
+  "repositoryName": "ai-school-full-stack",
+  "productionDomain": "edu-ai.anchit-tandon.com",
+  "supportedLanguages": ["en", "hi"],
+  "deepenedGradeBand": {
+    "boardId": "cbse",
+    "years": ["class-06", "class-07", "class-08"],
+    "stageLabel": "CBSE Middle Stage (Classes 6 to 8 - NCF-SE 2023 Deepened Implementation)"
+  }
+}

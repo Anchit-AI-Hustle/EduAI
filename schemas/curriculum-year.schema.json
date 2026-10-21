@@ -1,375 +1,275 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "curriculum-year.schema.json",
-  "title": "Curriculum year skeleton (one board, one year)",
-  "description": "Every year has its own plan. Content marked basis=product-default is a design choice, not board syllabus. Board facts must cite source_ids.",
+  "$id": "https://everyyear.school/schemas/curriculum-year.schema.json",
+  "title": "EveryYear Curriculum Year Plan Schema",
   "type": "object",
-  "$defs": {
-    "sourceIds": {
-      "type": "array",
-      "items": {
-        "type": "string",
-        "pattern": "^SRC-[A-Z0-9-]+$"
-      }
-    },
-    "status": {
-      "enum": [
-        "sourced",
-        "partially-sourced",
-        "skeleton",
-        "gap",
-        "not-applicable"
-      ]
-    },
-    "basis": {
-      "enum": [
-        "board-mandated",
-        "national-framework",
-        "product-default",
-        "not-yet-sourced"
-      ]
-    },
-    "block": {
-      "type": "object",
-      "required": [
-        "status",
-        "basis"
-      ],
-      "properties": {
-        "status": {
-          "$ref": "#/$defs/status"
-        },
-        "basis": {
-          "$ref": "#/$defs/basis"
-        },
-        "source_ids": {
-          "$ref": "#/$defs/sourceIds"
-        },
-        "notes": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        }
-      }
-    }
-  },
+  "additionalProperties": false,
   "required": [
-    "skeleton_id",
-    "board_id",
-    "year_id",
-    "academic_session",
-    "nep_stage",
-    "coverage_status",
+    "schemaVersion",
+    "curriculumVersionId",
+    "boardId",
+    "boardName",
+    "yearId",
+    "yearLabel",
+    "nepStage",
+    "ageBandYears",
+    "groundingStatus",
+    "screenTimePolicy",
     "subjects",
-    "skills",
-    "term_plan",
-    "weekly_plan",
-    "daily_lesson_template",
+    "skillIds",
+    "termPlan",
+    "weeklyPlanTemplate",
+    "dailyLessonTemplate",
     "assessments",
-    "co_curricular",
-    "extracurricular",
-    "parent_view",
-    "scheme_notes",
-    "source_ids",
-    "gaps"
+    "coCurricularPlan",
+    "extracurricularPlan",
+    "parentViewPlan",
+    "trackBridges",
+    "sourceIds",
+    "knownGaps"
   ],
   "properties": {
-    "skeleton_id": {
-      "type": "string",
-      "pattern": "^[a-z0-9-]+$"
+    "schemaVersion": {
+      "const": "1.0.0"
     },
-    "board_id": {
+    "curriculumVersionId": {
+      "type": "string"
+    },
+    "boardId": {
       "enum": [
-        "national-early-years",
+        "early-years",
         "cbse",
         "cisce",
         "nios",
         "state-boards"
       ]
     },
-    "year_id": {
-      "type": "string",
-      "pattern": "^(home-0-3|nursery|lkg|ukg|class-(0[1-9]|1[0-2]))$"
-    },
-    "academic_session": {
+    "boardName": {
       "type": "string"
     },
-    "nep_stage": {
+    "yearId": {
       "enum": [
-        "pre-foundational-home",
-        "foundational",
-        "preparatory",
-        "middle",
-        "secondary"
+        "home-0-3",
+        "nursery",
+        "lkg",
+        "ukg",
+        "class-01",
+        "class-02",
+        "class-03",
+        "class-04",
+        "class-05",
+        "class-06",
+        "class-07",
+        "class-08",
+        "class-09",
+        "class-10",
+        "class-11",
+        "class-12"
       ]
     },
-    "coverage_status": {
+    "yearLabel": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "en",
+        "hi"
+      ],
+      "properties": {
+        "en": {
+          "type": "string"
+        },
+        "hi": {
+          "type": "string"
+        }
+      }
+    },
+    "nepStage": {
+      "type": "string"
+    },
+    "ageBandYears": {
+      "type": "string"
+    },
+    "groundingStatus": {
       "enum": [
-        "sourced",
-        "partially-sourced",
-        "gap",
-        "defers-to-national-framework",
-        "not-offered-by-board"
+        "fully-sourced",
+        "deepened-grade-band",
+        "skeleton-with-labelled-gaps"
       ]
     },
-    "certification_point": {
-      "type": [
-        "string",
-        "null"
-      ]
-    },
-    "scheme_notes": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "required": [
-          "text",
-          "source_ids"
-        ],
-        "properties": {
-          "text": {
-            "type": "string"
-          },
-          "source_ids": {
-            "$ref": "#/$defs/sourceIds",
-            "minItems": 1
-          }
+    "screenTimePolicy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "maxMinutesPerDay",
+        "deliveryMode",
+        "guidelineSourceId"
+      ],
+      "properties": {
+        "maxMinutesPerDay": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 360
+        },
+        "deliveryMode": {
+          "type": "string"
+        },
+        "guidelineSourceId": {
+          "type": "string"
         }
       }
     },
     "subjects": {
       "type": "array",
+      "minItems": 1,
       "items": {
         "type": "object",
+        "additionalProperties": false,
         "required": [
-          "subject_id",
-          "name_en",
-          "name_hi",
-          "skill_ids",
-          "status",
-          "source_ids"
+          "subjectId",
+          "name",
+          "compulsory",
+          "skillIds",
+          "sourceIds",
+          "units"
         ],
         "properties": {
-          "subject_id": {
+          "subjectId": {
             "type": "string"
           },
-          "name_en": {
+          "officialCode": {
             "type": "string"
           },
-          "name_hi": {
+          "name": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "en",
+              "hi"
+            ],
+            "properties": {
+              "en": {
+                "type": "string"
+              },
+              "hi": {
+                "type": "string"
+              }
+            }
+          },
+          "compulsory": {
+            "type": "boolean"
+          },
+          "stream": {
             "type": "string"
           },
-          "name_hi_basis": {
-            "enum": [
-              "ui-translation",
-              "official"
-            ]
-          },
-          "skill_ids": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "minItems": 1
-          },
-          "ncert_textbook_titles": {
+          "textbooks": {
             "type": "array",
             "items": {
               "type": "string"
             }
           },
-          "language_slot": {
-            "enum": [
-              "R1",
-              "R2",
-              "R3",
-              "R1-or-R2",
-              "any",
-              null
-            ]
-          },
-          "status": {
-            "$ref": "#/$defs/status"
-          },
-          "source_ids": {
-            "$ref": "#/$defs/sourceIds"
-          },
-          "notes": {
+          "skillIds": {
             "type": "array",
+            "minItems": 1,
             "items": {
               "type": "string"
             }
           },
-          "ncert_hindi_medium_titles": {
+          "sourceIds": {
             "type": "array",
+            "minItems": 1,
             "items": {
               "type": "string"
+            }
+          },
+          "units": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object"
             }
           }
         }
       }
     },
-    "skills": {
+    "skillIds": {
       "type": "array",
+      "minItems": 1,
       "items": {
-        "type": "object",
-        "required": [
-          "skill_id",
-          "depth"
-        ],
-        "properties": {
-          "skill_id": {
-            "type": "string"
-          },
-          "depth": {
-            "enum": [
-              "domain-only",
-              "units",
-              "competencies"
-            ]
-          }
-        }
+        "type": "string"
       }
     },
-    "term_plan": {
-      "allOf": [
-        {
-          "$ref": "#/$defs/block"
-        }
-      ],
-      "required": [
-        "terms"
-      ],
-      "properties": {
-        "terms": {
-          "type": "array"
-        }
+    "termPlan": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object"
       }
     },
-    "weekly_plan": {
-      "allOf": [
-        {
-          "$ref": "#/$defs/block"
-        }
-      ],
-      "required": [
-        "weeks_per_year",
-        "sessions_per_week"
-      ]
+    "weeklyPlanTemplate": {
+      "type": "object"
     },
-    "daily_lesson_template": {
-      "allOf": [
-        {
-          "$ref": "#/$defs/block"
-        }
-      ],
-      "required": [
-        "loop",
-        "screen_minutes_cap"
-      ]
+    "dailyLessonTemplate": {
+      "type": "object"
     },
     "assessments": {
       "type": "object",
+      "additionalProperties": false,
       "required": [
-        "unit_tests",
+        "unitTests",
         "internals",
-        "term_exams",
-        "board_style_mocks"
+        "termExams",
+        "boardStyleMocks"
       ],
       "properties": {
-        "unit_tests": {
-          "$ref": "#/$defs/block"
+        "unitTests": {
+          "type": "object"
         },
         "internals": {
-          "$ref": "#/$defs/block"
+          "type": "object"
         },
-        "term_exams": {
-          "$ref": "#/$defs/block"
+        "termExams": {
+          "type": "object"
         },
-        "board_style_mocks": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/block"
-            }
-          ],
-          "required": [
-            "applicable"
-          ]
+        "boardStyleMocks": {
+          "type": "object"
         }
       }
     },
-    "co_curricular": {
-      "allOf": [
-        {
-          "$ref": "#/$defs/block"
-        }
-      ],
-      "required": [
-        "areas"
-      ]
+    "coCurricularPlan": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object"
+      }
     },
-    "extracurricular": {
-      "allOf": [
-        {
-          "$ref": "#/$defs/block"
-        }
-      ],
-      "required": [
-        "areas"
-      ]
+    "extracurricularPlan": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object"
+      }
     },
-    "parent_view": {
-      "allOf": [
-        {
-          "$ref": "#/$defs/block"
-        }
-      ],
-      "required": [
-        "sections"
-      ]
+    "parentViewPlan": {
+      "type": "object"
     },
-    "source_ids": {
-      "$ref": "#/$defs/sourceIds"
-    },
-    "gaps": {
+    "trackBridges": {
       "type": "array",
       "items": {
-        "type": "object",
-        "required": [
-          "gap_id",
-          "missing",
-          "resolve_from",
-          "phase"
-        ],
-        "properties": {
-          "gap_id": {
-            "type": "string"
-          },
-          "missing": {
-            "type": "string",
-            "minLength": 10
-          },
-          "resolve_from": {
-            "type": "string",
-            "minLength": 5
-          },
-          "phase": {
-            "enum": [
-              "phase-1",
-              "phase-2",
-              "phase-3",
-              "phase-4"
-            ]
-          }
-        }
+        "type": "object"
       }
     },
-    "generated_by": {
-      "type": "string"
+    "sourceIds": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
     },
-    "built_on": {
-      "type": "string"
+    "knownGaps": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
     }
   }
 }

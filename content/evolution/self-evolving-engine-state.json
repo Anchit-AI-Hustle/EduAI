@@ -1,0 +1,138 @@
+{
+  "schemaVersion": "1.0.0",
+  "updatedAt": "2026-10-22T00:00:00.000Z",
+  "layers": [
+    {
+      "layerId": "L1",
+      "name": {
+        "en": "L1: Real-Time Learner Mastery & Schedule Rebalancer",
+        "hi": "L1: वास्तविक-समय दक्षता और समय-सारणी संतुलन"
+      },
+      "cadence": "Every interaction (sub-minute)",
+      "gateType": "Automated deterministic + topological prerequisite guard",
+      "recentEvents": [
+        {
+          "timestamp": "2026-10-22T01:15:00+05:30",
+          "event": "Learner 'Aarav' scored 4/4 on Ganita Prakash Unit 1 exit check; mastery on math-integers-number-patterns updated 0.81 -> 0.86.",
+          "actionTaken": "Compressed 1 redundant drill block and promoted Linear Equations bridge session into Thursday Slot 2."
+        }
+      ]
+    },
+    {
+      "layerId": "L2",
+      "name": {
+        "en": "L2: Continuous Content & Hint Variant Telemetry",
+        "hi": "L2: निरंतर सामग्री और संकेत गुणवत्ता अनुकूलन"
+      },
+      "cadence": "Hourly / Daily learning-gain evaluation",
+      "gateType": "Automated source-grounding check + 5% accuracy rollback guard",
+      "recentEvents": [
+        {
+          "timestamp": "2026-10-22T00:45:00+05:30",
+          "event": "Evaluated 2 bilingual visual hint variants for 'Signed Integer Subtraction on Number Line' (SRC-NCERT-NCFSE-2023).",
+          "actionTaken": "Promoted Variant B (Temperature Elevator Analogy in Hindi/English) after +14% first-attempt exit-ticket gain."
+        }
+      ]
+    },
+    {
+      "layerId": "L3",
+      "name": {
+        "en": "L3: Official Statutory Source Watcher (NCERT / CBSE / CISCE / NIOS / NTA / College Board)",
+        "hi": "L3: आधिकारिक बोर्ड पाठ्यक्रम निगरानी इंजन"
+      },
+      "cadence": "Continuous scheduled feed monitor",
+      "gateType": "Read-only cryptographic hash & circular diff detector (never mutates live plans directly)",
+      "monitoredSources": [
+        {
+          "sourceId": "SRC-CBSE-CURR-2026-27",
+          "url": "https://cbseacademic.nic.in/curriculum_2027.html",
+          "status": "SYNCED",
+          "lastChecked": "2026-10-22T01:10:00+05:30"
+        },
+        {
+          "sourceId": "SRC-NCERT-NCFSE-2023",
+          "url": "https://ncert.nic.in/pdf/NCFSE-2023-August_2023.pdf",
+          "status": "SYNCED",
+          "lastChecked": "2026-10-22T01:10:00+05:30"
+        },
+        {
+          "sourceId": "SRC-NTA-JEEMAIN-2026",
+          "url": "https://jeemain.nta.nic.in/document/syllabus-2026/",
+          "status": "SYNCED",
+          "lastChecked": "2026-10-22T01:12:00+05:30"
+        },
+        {
+          "sourceId": "SRC-NTA-NEETUG-2026",
+          "url": "https://www.nta.ac.in/Download/Notice/Notice_20260108180635.pdf",
+          "status": "SYNCED",
+          "lastChecked": "2026-10-22T01:12:00+05:30"
+        },
+        {
+          "sourceId": "SRC-CB-DIGITALSAT-2026",
+          "url": "https://satsuite.collegeboard.org/media/pdf/assessment-framework-for-digital-sat-suite.pdf",
+          "status": "SYNCED",
+          "lastChecked": "2026-10-22T01:14:00+05:30"
+        },
+        {
+          "sourceId": "SRC-ETS-TOEFL-2026",
+          "url": "https://www.ets.org/toefl/test-takers/ibt/about/content.html",
+          "status": "DIFF-DETECTED",
+          "lastChecked": "2026-10-22T01:14:00+05:30"
+        }
+      ]
+    },
+    {
+      "layerId": "L4",
+      "name": {
+        "en": "L4: Cohort-Pinned Curriculum Alignment & Rationalisation Council Gate",
+        "hi": "L4: बैच-आधारित पाठ्यक्रम संरेखण और युक्तिसंगत समीक्षा गेट"
+      },
+      "cadence": "Triggered on L3 Official Diff Detection",
+      "gateType": "4 Automated Checks (DAG Acyclicity, NCrF 1200h Load, NCERT 5-Point Rationalisation, Cohort Pinning) + Human Sign-Off",
+      "changeProposals": [
+        {
+          "proposalId": "CP-2026-10-01",
+          "sourceId": "SRC-NCERT-NSTC-2023",
+          "title": "NCERT Class 8 Ganita Prakash & Curiosity 2026-27 Competency Weightage Update",
+          "affectedCohorts": [
+            "cbse-class-08@2026.1.0"
+          ],
+          "checksPassed": [
+            "dag-no-cycles",
+            "dag-no-orphans",
+            "ncrf-1200h-load-valid",
+            "ncert-5point-rationalisation"
+          ],
+          "status": "APPROVED-AND-PINNED"
+        },
+        {
+          "proposalId": "CP-2026-10-02",
+          "sourceId": "SRC-ETS-TOEFL-2026",
+          "title": "ETS TOEFL iBT 1-to-6 CEFR Score Scale Mapping & Academic Discussion Task Rubric",
+          "affectedCohorts": [
+            "track-toefl@2026.1.0"
+          ],
+          "checksPassed": [
+            "dag-no-cycles",
+            "dag-no-orphans",
+            "ncrf-1200h-load-valid",
+            "ncert-5point-rationalisation"
+          ],
+          "status": "READY-FOR-COUNCIL-APPROVAL"
+        }
+      ]
+    },
+    {
+      "layerId": "L5",
+      "name": {
+        "en": "L5: Frontier Skill Horizon (AI Systems, Climate & Financial Literacy)",
+        "hi": "L5: भविष्यमुखी कौशल क्षितिज (एआई, जलवायु और वित्तीय साक्षरता)"
+      },
+      "cadence": "Weekly signal scan / Quarterly enrichment release",
+      "gateType": "Tagged strictly as elective enrichment so compulsory board syllabus remains untouched",
+      "frontierNodes": [
+        "comp-algorithmic-ai-literacy (Source-Grounded Retrieval & Hallucination Verification Lab for Classes 8-12)"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "trackId": "sat",
+  "title": {
+    "en": "College Board Digital SAT Track",
+    "hi": "कॉलेज बोर्ड डिजिटल सैट (SAT) अध्ययन विदेश ट्रैक"
+  },
+  "category": "study-abroad",
+  "startingYearId": "class-08",
+  "targetYears": [
+    "class-08",
+    "class-09",
+    "class-10",
+    "class-11",
+    "class-12"
+  ],
+  "conductingBody": "College Board",
+  "sourceIds": [
+    "SRC-CB-DIGITALSAT-2026"
+  ],
+  "examPattern": {
+    "mode": "Digital Adaptive (2-Stage Multistage Adaptive Testing in Bluebook)",
+    "durationMinutes": 134,
+    "totalMarks": "400 to 1600 Scale (200-800 Reading and Writing + 200-800 Math)",
+    "patternStatus": "sourced-official-pattern"
+  },
+  "prerequisiteSkillIds": [
+    "lang-bilingual-literature-middle",
+    "math-ratios-linear-algebra-middle",
+    "math-geometry-mensuration-middle"
+  ],
+  "coreTrackSkillIds": [
+    "lang-academic-rhetoric-global-exams",
+    "math-polynomials-quadratics-sec",
+    "math-trigonometry-coordinate-sec"
+  ],
+  "domains": [
+    {
+      "name": "Reading and Writing (64 Minutes, 54 Questions across 2 Modules)",
+      "topics": [
+        "Craft and Structure (~28%): Words in Context, Text Structure and Purpose, Cross-Text Connections",
+        "Information and Ideas (~26%): Central Ideas, Command of Textual/Quantitative Evidence, Inferences",
+        "Standard English Conventions (~26%): Boundaries, Form, Structure, and Sense",
+        "Expression of Ideas (~20%): Rhetorical Synthesis and Transitions"
+      ]
+    },
+    {
+      "name": "Math (70 Minutes, 44 Questions across 2 Modules)",
+      "topics": [
+        "Algebra (~35%): Linear equations, systems, and inequalities",
+        "Advanced Math (~35%): Equivalent expressions, nonlinear equations, quadratics, exponentials",
+        "Problem-Solving and Data Analysis (~15%): Ratios, rates, percentages, probability, statistical inference",
+        "Geometry and Trigonometry (~15%): Area/volume, lines/angles/triangles, right-triangle trig, circles"
+      ]
+    }
+  ]
+}

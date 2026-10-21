@@ -1,0 +1,48 @@
+{
+  "trackId": "toefl",
+  "title": {
+    "en": "ETS TOEFL iBT Academic English Track",
+    "hi": "टोफल (TOEFL iBT) अकादमिक अंग्रेजी ट्रैक"
+  },
+  "category": "study-abroad",
+  "startingYearId": "class-09",
+  "targetYears": [
+    "class-09",
+    "class-10",
+    "class-11",
+    "class-12"
+  ],
+  "conductingBody": "Educational Testing Service (ETS)",
+  "sourceIds": [
+    "SRC-ETS-TOEFL-2026"
+  ],
+  "examPattern": {
+    "mode": "Internet-Based Test (iBT) - Reading, Listening, Speaking, Writing",
+    "durationMinutes": 116,
+    "totalMarks": "0 to 120 Scale (30 per section) paired with ETS 1 to 6 CEFR-aligned scale (2026 update)",
+    "patternStatus": "sourced-official-pattern"
+  },
+  "prerequisiteSkillIds": [
+    "lit-sentence-reading-fluency",
+    "lang-bilingual-literature-middle"
+  ],
+  "coreTrackSkillIds": [
+    "lang-academic-rhetoric-global-exams"
+  ],
+  "domains": [
+    {
+      "name": "Reading (35 Min, 20 Questions) & Listening (36 Min, 28 Questions)",
+      "topics": [
+        "2 university-level passages (700 words each) testing rhetorical purpose, inference, and summary",
+        "3 academic lectures and 2 campus conversations testing attitude, organization, and connection"
+      ]
+    },
+    {
+      "name": "Speaking (16 Min, 4 Tasks) & Writing (29 Min, 2 Tasks)",
+      "topics": [
+        "1 Independent Speaking task + 3 Integrated Reading/Listening/Speaking tasks",
+        "Integrated Writing task (20 min) + Writing for an Academic Discussion task (10 min)"
+      ]
+    }
+  ]
+}

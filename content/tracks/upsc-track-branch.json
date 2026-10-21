@@ -1,0 +1,57 @@
+{
+  "trackId": "upsc",
+  "title": {
+    "en": "UPSC Civil Services (CSE) NCERT Foundation & Prelims/Mains Spine",
+    "hi": "यूपीएससी सिविल सेवा (सीएसई) एनसीईआरटी आधार और प्रारंभिक/मुख्य ट्रैक"
+  },
+  "category": "competitive-india",
+  "startingYearId": "class-08",
+  "targetYears": [
+    "class-08",
+    "class-09",
+    "class-10",
+    "class-11",
+    "class-12"
+  ],
+  "conductingBody": "Union Public Service Commission (UPSC)",
+  "sourceIds": [
+    "SRC-UPSC-CSE-2026",
+    "SRC-NCERT-NCFSE-2023"
+  ],
+  "examPattern": {
+    "mode": "Prelims Objective (GS Paper I + CSAT Paper II) -> Mains Written (9 Papers) -> Personality Test",
+    "durationMinutes": 120,
+    "totalMarks": "Prelims: 200 Marks per paper (CSAT qualifying at 33%); Mains: 1750 Marks + 275 Interview",
+    "patternStatus": "sourced-official-pattern"
+  },
+  "prerequisiteSkillIds": [
+    "soc-exploring-society-middle",
+    "math-ratios-linear-algebra-middle",
+    "lang-bilingual-literature-middle"
+  ],
+  "coreTrackSkillIds": [
+    "soc-democratic-polity-economy-sec",
+    "soc-humanities-commerce-srsec",
+    "sci-integrated-sec-9-10",
+    "lang-academic-rhetoric-global-exams"
+  ],
+  "domains": [
+    {
+      "name": "General Studies Paper I (NCERT Class 6-12 Spine)",
+      "topics": [
+        "Indian Polity and Governance (Constitution, Rights, Federalism, Panchayati Raj)",
+        "History of India and Indian National Movement + Art & Culture",
+        "Indian and World Geography + Environment, Biodiversity & Climate Change",
+        "Economic and Social Development, Sustainable Development & General Science"
+      ]
+    },
+    {
+      "name": "CSAT Paper II (Class X Level Numeracy & Comprehension)",
+      "topics": [
+        "Reading Comprehension & Interpersonal Communication",
+        "Logical Reasoning, Analytical Ability & Data Interpretation",
+        "Basic Numeracy (Numbers, Orders of Magnitude - Class X Level)"
+      ]
+    }
+  ]
+}

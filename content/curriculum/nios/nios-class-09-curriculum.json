@@ -1,0 +1,604 @@
+{
+  "schemaVersion": "1.0.0",
+  "curriculumVersionId": "nios-class-09@2026.1.0",
+  "boardId": "nios",
+  "boardName": "National Institute of Open Schooling (NIOS - OBE, Secondary & Sr. Secondary)",
+  "yearId": "class-09",
+  "yearLabel": {
+    "en": "Class 9",
+    "hi": "कक्षा 9"
+  },
+  "nepStage": "secondary-classes-9-10",
+  "ageBandYears": "14-15 years",
+  "groundingStatus": "skeleton-with-labelled-gaps",
+  "screenTimePolicy": {
+    "maxMinutesPerDay": 90,
+    "deliveryMode": "independent-with-breaks",
+    "guidelineSourceId": "SRC-IAP-SCREENTIME-2022"
+  },
+  "subjects": [
+    {
+      "subjectId": "secondary-mathematics",
+      "officialCode": "211",
+      "name": {
+        "en": "Mathematics Standard",
+        "hi": "गणित (मानक)"
+      },
+      "compulsory": true,
+      "stream": "general",
+      "textbooks": [
+        "NCERT Mathematics (Classes IX-X)",
+        "CBSE Academic Exemplar Problems"
+      ],
+      "skillIds": [
+        "math-polynomials-quadratics-sec",
+        "math-trigonometry-coordinate-sec"
+      ],
+      "sourceIds": [
+        "SRC-NIOS-SECSRSEC-2026",
+        "SRC-CBSE-SECPART1-2026-27"
+      ],
+      "units": [
+        {
+          "unitId": "nios-class-09-m1",
+          "title": {
+            "en": "Number Systems, Algebra (Polynomials, Linear & Quadratic Equations, AP)",
+            "hi": "संख्या पद्धति और बीजगणित (बहुपद, रैखिक व द्विघात समीकरण, समांतर श्रेढ़ी)"
+          },
+          "notionalHours": 90,
+          "skillIds": [
+            "math-polynomials-quadratics-sec"
+          ],
+          "competencies": [
+            "Solves quadratic and simultaneous linear equations",
+            "Applies arithmetic progressions and polynomial factor theorems"
+          ]
+        },
+        {
+          "unitId": "nios-class-09-m2",
+          "title": {
+            "en": "Coordinate Geometry, Triangles/Circles, Trigonometry, Mensuration & Statistics",
+            "hi": "निर्देशांक ज्यामिति, त्रिकोणमिति, वृत्त, क्षेत्रमिति और सांख्यिकी"
+          },
+          "notionalHours": 90,
+          "skillIds": [
+            "math-trigonometry-coordinate-sec"
+          ],
+          "competencies": [
+            "Proves similarity and tangent properties",
+            "Solves trigonometric identities, heights/distances, and grouped statistics"
+          ]
+        }
+      ]
+    },
+    {
+      "subjectId": "secondary-science",
+      "officialCode": "212",
+      "name": {
+        "en": "Science (Physics, Chemistry & Biology)",
+        "hi": "विज्ञान (भौतिकी, रसायन और जीवविज्ञान)"
+      },
+      "compulsory": true,
+      "stream": "general",
+      "textbooks": [
+        "NCERT Science & Laboratory Manual (Classes IX-X)"
+      ],
+      "skillIds": [
+        "sci-integrated-sec-9-10"
+      ],
+      "sourceIds": [
+        "SRC-NIOS-SECSRSEC-2026",
+        "SRC-CBSE-SECPART1-2026-27"
+      ],
+      "units": [
+        {
+          "unitId": "nios-class-09-s1",
+          "title": {
+            "en": "Chemical Substances, Carbon Compounds, Life Processes & Heredity",
+            "hi": "रासायनिक पदार्थ, कार्बन यौगिक, जैव प्रक्रम और आनुवंशिकता"
+          },
+          "notionalHours": 95,
+          "skillIds": [
+            "sci-integrated-sec-9-10"
+          ],
+          "competencies": [
+            "Analyses stoichiometry, pH scale, metallurgy, and physiological systems",
+            "Explains Mendelian inheritance and ecosystem energy flow"
+          ]
+        },
+        {
+          "unitId": "nios-class-09-s2",
+          "title": {
+            "en": "Force & Laws of Motion, Gravitation, Light Optics & Electricity/Magnetism",
+            "hi": "बल और गति के नियम, गुरुत्वाकर्षण, प्रकाशिकी और विद्युत-चुंबकत्व"
+          },
+          "notionalHours": 85,
+          "skillIds": [
+            "sci-integrated-sec-9-10"
+          ],
+          "competencies": [
+            "Solves ray-diagram numericals, Ohm's law circuits, and Joule heating problems",
+            "Completes 20-mark practical and internal portfolio investigations"
+          ]
+        }
+      ]
+    },
+    {
+      "subjectId": "secondary-social-science",
+      "officialCode": "213",
+      "name": {
+        "en": "Social Science (History, Geography, Political Science & Economics)",
+        "hi": "सामाजिक विज्ञान (इतिहास, भूगोल, राजनीति विज्ञान और अर्थशास्त्र)"
+      },
+      "compulsory": true,
+      "stream": "general",
+      "textbooks": [
+        "NCERT India and the Contemporary World, Contemporary India, Democratic Politics, Understanding Economic Development"
+      ],
+      "skillIds": [
+        "soc-democratic-polity-economy-sec"
+      ],
+      "sourceIds": [
+        "SRC-NIOS-SECSRSEC-2026",
+        "SRC-CBSE-SECPART1-2026-27"
+      ],
+      "units": [
+        {
+          "unitId": "nios-class-09-ss1",
+          "title": {
+            "en": "Nationalism, Resources of India, Federalism & Money/Credit/Development",
+            "hi": "राष्ट्रवाद, भारत के संसाधन, संघवाद तथा मुद्रा एवं साख"
+          },
+          "notionalHours": 140,
+          "skillIds": [
+            "soc-democratic-polity-economy-sec"
+          ],
+          "competencies": [
+            "Evaluates historical movements, constitutional federalism, and formal credit institutions",
+            "Interprets topographical and resource maps of India"
+          ]
+        }
+      ]
+    },
+    {
+      "subjectId": "secondary-languages-ai",
+      "officialCode": "LANG-AI-10",
+      "name": {
+        "en": "English (184), Hindi (002/085) & Artificial Intelligence (417)",
+        "hi": "अंग्रेजी (184), हिंदी (002/085) और कृत्रिम बुद्धिमत्ता (417)"
+      },
+      "compulsory": true,
+      "stream": "general",
+      "textbooks": [
+        "NCERT First Flight / Footprints / Kshitij / Kritika",
+        "CBSE AI (417) Handbook"
+      ],
+      "skillIds": [
+        "lang-academic-rhetoric-global-exams",
+        "comp-algorithmic-ai-literacy"
+      ],
+      "sourceIds": [
+        "SRC-NIOS-SECSRSEC-2026",
+        "SRC-CBSE-SECPART1-2026-27"
+      ],
+      "units": [
+        {
+          "unitId": "nios-class-09-la1",
+          "title": {
+            "en": "Analytical Writing, Literature Critique & AI Project Cycle (Python/Data)",
+            "hi": "विश्लेषणात्मक लेखन, साहित्य समीक्षा और एआई प्रोजेक्ट चक्र"
+          },
+          "notionalHours": 160,
+          "skillIds": [
+            "lang-academic-rhetoric-global-exams",
+            "comp-algorithmic-ai-literacy"
+          ],
+          "competencies": [
+            "Produces analytical paragraphs, formal correspondence, and literary analysis",
+            "Builds and evaluates an end-to-end Python AI project"
+          ]
+        }
+      ]
+    }
+  ],
+  "skillIds": [
+    "math-polynomials-quadratics-sec",
+    "math-trigonometry-coordinate-sec",
+    "sci-integrated-sec-9-10",
+    "soc-democratic-polity-economy-sec",
+    "lang-academic-rhetoric-global-exams",
+    "comp-algorithmic-ai-literacy"
+  ],
+  "termPlan": [
+    {
+      "termId": "term-1",
+      "title": {
+        "en": "Term 1: Foundational Concepts, Inquiry & Formative Portfolio",
+        "hi": "सत्र 1: मूल अवधारणाएं, अन्वेषण और रचनात्मक मूल्यांकन"
+      },
+      "weeks": 18,
+      "focusSkills": [
+        "math-polynomials-quadratics-sec",
+        "math-trigonometry-coordinate-sec",
+        "sci-integrated-sec-9-10"
+      ],
+      "milestoneAssessment": "Term 1 Cumulative Competency & Practical Assessment"
+    },
+    {
+      "termId": "term-2",
+      "title": {
+        "en": "Term 2: Applied Problem Solving, Integration & Annual Consolidation",
+        "hi": "सत्र 2: अनुप्रयुक्त समस्या समाधान, एकीकरण और वार्षिक पुनरावृत्ति"
+      },
+      "weeks": 18,
+      "focusSkills": [
+        "math-polynomials-quadratics-sec",
+        "math-trigonometry-coordinate-sec",
+        "sci-integrated-sec-9-10",
+        "soc-democratic-polity-economy-sec",
+        "lang-academic-rhetoric-global-exams",
+        "comp-algorithmic-ai-literacy"
+      ],
+      "milestoneAssessment": "Term 2 Annual Board-Pattern / Stage Mastery Examination"
+    }
+  ],
+  "weeklyPlanTemplate": {
+    "studyDaysPerWeek": 6,
+    "totalMinutesPerWeek": 840,
+    "bufferPercent": 15,
+    "dailySchedule": [
+      {
+        "dayOfWeek": "Monday",
+        "blocks": [
+          {
+            "slot": "Block 1 (Core Concept)",
+            "subjectId": "secondary-mathematics",
+            "minutes": 40,
+            "mode": "concept-and-example"
+          },
+          {
+            "slot": "Block 2 (Practice / Activity)",
+            "subjectId": "secondary-social-science",
+            "minutes": 40,
+            "mode": "guided-practice"
+          }
+        ]
+      },
+      {
+        "dayOfWeek": "Tuesday",
+        "blocks": [
+          {
+            "slot": "Block 1 (Core Concept)",
+            "subjectId": "secondary-science",
+            "minutes": 40,
+            "mode": "concept-and-example"
+          },
+          {
+            "slot": "Block 2 (Practice / Activity)",
+            "subjectId": "secondary-science",
+            "minutes": 40,
+            "mode": "guided-practice"
+          }
+        ]
+      },
+      {
+        "dayOfWeek": "Wednesday",
+        "blocks": [
+          {
+            "slot": "Block 1 (Core Concept)",
+            "subjectId": "secondary-mathematics",
+            "minutes": 40,
+            "mode": "concept-and-example"
+          },
+          {
+            "slot": "Block 2 (Practice / Activity)",
+            "subjectId": "secondary-science",
+            "minutes": 40,
+            "mode": "guided-practice"
+          }
+        ]
+      },
+      {
+        "dayOfWeek": "Thursday",
+        "blocks": [
+          {
+            "slot": "Block 1 (Core Concept)",
+            "subjectId": "secondary-science",
+            "minutes": 40,
+            "mode": "concept-and-example"
+          },
+          {
+            "slot": "Block 2 (Practice / Activity)",
+            "subjectId": "secondary-social-science",
+            "minutes": 40,
+            "mode": "guided-practice"
+          }
+        ]
+      },
+      {
+        "dayOfWeek": "Friday",
+        "blocks": [
+          {
+            "slot": "Block 1 (Core Concept)",
+            "subjectId": "secondary-mathematics",
+            "minutes": 40,
+            "mode": "concept-and-example"
+          },
+          {
+            "slot": "Block 2 (Practice / Activity)",
+            "subjectId": "secondary-science",
+            "minutes": 40,
+            "mode": "guided-practice"
+          }
+        ]
+      },
+      {
+        "dayOfWeek": "Saturday",
+        "blocks": [
+          {
+            "slot": "Block 1 (Core Concept)",
+            "subjectId": "secondary-science",
+            "minutes": 40,
+            "mode": "concept-and-example"
+          },
+          {
+            "slot": "Block 2 (Practice / Activity)",
+            "subjectId": "secondary-science",
+            "minutes": 40,
+            "mode": "guided-practice"
+          }
+        ]
+      }
+    ]
+  },
+  "dailyLessonTemplate": {
+    "sessionMinutes": 40,
+    "offlineFallbackReady": true,
+    "steps": [
+      {
+        "stepId": "step-1-hook",
+        "title": {
+          "en": "1. Prerequisite Warm-Up & Real-World Hook",
+          "hi": "1. पूर्व-ज्ञान पुनरावृत्ति और वास्तविक जीवन से जुड़ाव"
+        },
+        "minutes": 8,
+        "description": "2-question retrieval check on prerequisite skill node before introducing new concept."
+      },
+      {
+        "stepId": "step-2-concept",
+        "title": {
+          "en": "2. Sourced Concept & Worked Example (EN/HI)",
+          "hi": "2. प्रमाणित अवधारणा और हल किया गया उदाहरण (द्विभाषी)"
+        },
+        "minutes": 12,
+        "description": "Concise explanation grounded in official textbook/framework source with zero unverified claims."
+      },
+      {
+        "stepId": "step-3-practice",
+        "title": {
+          "en": "3. Adaptive Guided Practice & 3-Step Hint Ladder",
+          "hi": "3. निर्देशित अभ्यास और 3-स्तरीय संकेत सीढ़ी"
+        },
+        "minutes": 12,
+        "description": "3 to 5 scaffolded practice tasks (offline toy/workbook task for under-6, interactive problems for Classes 1-12)."
+      },
+      {
+        "stepId": "step-4-exit-check",
+        "title": {
+          "en": "4. Mastery Exit Ticket & Evidence Event",
+          "hi": "4. दक्षता जांच और प्रगति साक्ष्य"
+        },
+        "minutes": 8,
+        "description": "Deterministic mastery check that updates the learner's skill graph state and schedules spaced review."
+      }
+    ]
+  },
+  "assessments": {
+    "unitTests": {
+      "frequency": "Every 2-3 weeks at unit completion",
+      "format": "20-mark competency check (MCQ + short structured response)",
+      "durationMinutes": 30,
+      "marksOrScale": "20 marks",
+      "patternStatus": "school-internal-formative",
+      "sourceIds": [
+        "SRC-NCERT-PARAKH-2024"
+      ]
+    },
+    "internals": {
+      "frequency": "Continuous across each term",
+      "format": "Periodic tests (5 marks), multiple assessment (5 marks), portfolio/workbooks (5 marks), subject enrichment/lab work (5 marks)",
+      "durationMinutes": 40,
+      "marksOrScale": "20 marks internal weightage",
+      "patternStatus": "sourced-official-pattern",
+      "sourceIds": [
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-CBSE-SECPART1-2026-27"
+      ]
+    },
+    "termExams": {
+      "frequency": "End of Term 1 (Week 18) and End of Term 2 (Week 36)",
+      "format": "Competency-based written and practical examination",
+      "durationMinutes": 180,
+      "marksOrScale": "80 marks theory + 20 marks internal (or 70 + 30 for senior lab sciences)",
+      "patternStatus": "sourced-official-pattern",
+      "sourceIds": [
+        "SRC-NCERT-NCFSE-2023",
+        "SRC-CBSE-SECPART1-2026-27"
+      ]
+    },
+    "boardStyleMocks": {
+      "frequency": "Monthly full-length timed mock from Term 1 Week 8",
+      "format": "Official board blueprint (50% competency/case-based, 20% MCQ, 30% constructed response)",
+      "durationMinutes": 180,
+      "marksOrScale": "80 / 100 marks",
+      "patternStatus": "sourced-official-pattern",
+      "sourceIds": [
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-CBSE-CURR-2026-27"
+      ]
+    }
+  },
+  "coCurricularPlan": [
+    {
+      "activityId": "class-09-कला-arts",
+      "domain": "Visual & Performing Arts (Kala)",
+      "title": {
+        "en": "Indian Art, Craft, Music & Theatre Studio",
+        "hi": "भारतीय कला, शिल्प, संगीत और रंगमंच"
+      },
+      "weeklyMinutes": 60,
+      "description": "Hands-on sketching, clay modelling, folk rhythm, and dramatic storytelling aligned with NCF-SE Art Education."
+    },
+    {
+      "activityId": "class-09-physical-yoga",
+      "domain": "Physical Education, Yoga & Wellness",
+      "title": {
+        "en": "Daily Outdoor Movement, Yoga & Indigenous Games",
+        "hi": "दैनिक आउटडोर खेल, योग और स्वदेशी खेल"
+      },
+      "weeklyMinutes": 120,
+      "description": "Structured physical play, flexibility, breathwork, and team coordination off-screen."
+    }
+  ],
+  "extracurricularPlan": [
+    {
+      "clubId": "class-09-peer-pod-stem",
+      "category": "STEM & Maker Peer Pod",
+      "title": {
+        "en": "Neighbourhood Science, Nature & Maker Pod",
+        "hi": "पड़ोस विज्ञान, प्रकृति और नवाचार समूह"
+      },
+      "frequency": "Weekly 60-minute collaborative session",
+      "peerPodMode": "Small group of 4-6 learners building offline experiments, nature journals, or coding projects together."
+    },
+    {
+      "clubId": "class-09-peer-pod-expression",
+      "category": "Bilingual Debate, Storytelling & Community Action",
+      "title": {
+        "en": "Bilingual Kahani, Debate & Seva Circle",
+        "hi": "द्विभाषी कहानी, वाद-विवाद और सेवा मंडल"
+      },
+      "frequency": "Bi-weekly 45-minute peer circle",
+      "peerPodMode": "Moderated oral expression, debate, and local community/environmental stewardship."
+    }
+  ],
+  "parentViewPlan": {
+    "cadence": "weekly-family-digest",
+    "sections": [
+      "Planned vs Completed Sessions & Weekly Buffer Status",
+      "Skill-Level Mastery Gains & Prerequisite Gaps Bridged",
+      "Screen Time Used vs Pediatric Cap (IAP Compliant)",
+      "Pinned Curriculum Version & Official Source Changelog",
+      "One Concrete Offline Family Action for the Week"
+    ],
+    "homeActions": [
+      {
+        "en": "Review your child's 1-page weekly mastery digest and ask them to teach you one concept they solved this week.",
+        "hi": "सप्ताह के अंत में बच्चे की प्रगति रिपोर्ट देखें और उनसे इस सप्ताह सीखा गया एक विषय समझाने को कहें।"
+      },
+      {
+        "en": "Verify weekly peer-pod outdoor play and co-curricular art/movement completion.",
+        "hi": "साप्ताहिक सह-पाठयक्रम कला, योग और समूह खेल की पूर्णता सुनिश्चित करें।"
+      }
+    ],
+    "consentControls": [
+      "DPDP Act 2023 Section 9 Verifiable Guardian Consent Toggle",
+      "Daily Screen-Time Hard Cap Slider (IAP Guideline Enforced)",
+      "One-Click Full Learner JSON Export & Immediate Data Erasure"
+    ]
+  },
+  "trackBridges": [
+    {
+      "trackId": "jee",
+      "status": "active-track-branch",
+      "bridgedSkillIds": [
+        "math-polynomials-quadratics-sec",
+        "math-trigonometry-coordinate-sec",
+        "sci-integrated-sec-9-10"
+      ],
+      "notes": "Maps Mathematics, Physics, and Chemistry units directly to NTA JEE Main 2026 syllabus."
+    },
+    {
+      "trackId": "neet",
+      "status": "active-track-branch",
+      "bridgedSkillIds": [
+        "sci-integrated-sec-9-10"
+      ],
+      "notes": "Maps Physics, Chemistry, and Biology units to NMC/NTA NEET UG 2026 syllabus."
+    },
+    {
+      "trackId": "cuet",
+      "status": "foundation-bridge",
+      "bridgedSkillIds": [
+        "math-polynomials-quadratics-sec",
+        "math-trigonometry-coordinate-sec",
+        "sci-integrated-sec-9-10",
+        "soc-democratic-polity-economy-sec",
+        "lang-academic-rhetoric-global-exams",
+        "comp-algorithmic-ai-literacy"
+      ],
+      "notes": "Aligns Class 12 NCERT domain subjects and language/general aptitude with NTA CUET UG."
+    },
+    {
+      "trackId": "upsc",
+      "status": "foundation-bridge",
+      "bridgedSkillIds": [
+        "math-polynomials-quadratics-sec",
+        "math-trigonometry-coordinate-sec",
+        "soc-democratic-polity-economy-sec"
+      ],
+      "notes": "Builds NCERT Class 6-12 General Studies (Polity, History, Geography, Economy) and CSAT numeracy spine."
+    },
+    {
+      "trackId": "sat",
+      "status": "active-track-branch",
+      "bridgedSkillIds": [
+        "math-polynomials-quadratics-sec",
+        "math-trigonometry-coordinate-sec",
+        "lang-academic-rhetoric-global-exams"
+      ],
+      "notes": "Maps onto College Board Digital SAT Reading & Writing and Math adaptive domains."
+    },
+    {
+      "trackId": "act",
+      "status": "active-track-branch",
+      "bridgedSkillIds": [
+        "math-polynomials-quadratics-sec",
+        "math-trigonometry-coordinate-sec",
+        "sci-integrated-sec-9-10",
+        "lang-academic-rhetoric-global-exams"
+      ],
+      "notes": "Covers ACT English, Mathematics, Reading, and Science Reasoning benchmarks."
+    },
+    {
+      "trackId": "ielts",
+      "status": "active-track-branch",
+      "bridgedSkillIds": [
+        "lang-academic-rhetoric-global-exams"
+      ],
+      "notes": "Builds IELTS Academic 4-skill proficiency (Listening, Reading, Writing Task 1/2, Speaking)."
+    },
+    {
+      "trackId": "toefl",
+      "status": "active-track-branch",
+      "bridgedSkillIds": [
+        "lang-academic-rhetoric-global-exams"
+      ],
+      "notes": "Builds ETS TOEFL iBT academic reading, lecture listening, integrated speaking, and academic discussion writing."
+    }
+  ],
+  "sourceIds": [
+    "SRC-IAP-SCREENTIME-2022",
+    "SRC-NCERT-PARAKH-2024",
+    "SRC-NIOS-SECSRSEC-2026",
+    "SRC-CBSE-SECPART1-2026-27"
+  ],
+  "knownGaps": [
+    {
+      "gapId": "gap-nios-class-09-tma",
+      "area": "NIOS Annual Tutor Marked Assignment (TMA) Question Prompts",
+      "description": "NIOS subject codes and OBE/Secondary/Sr. Secondary structures are sourced; session-specific TMA question booklets are ingested per exam cycle in Phase 3.",
+      "targetPhase": "Phase 3"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "trackId": "act",
+  "title": {
+    "en": "ACT College Readiness Assessment Track",
+    "hi": "एसीटी (ACT) अध्ययन विदेश ट्रैक"
+  },
+  "category": "study-abroad",
+  "startingYearId": "class-09",
+  "targetYears": [
+    "class-09",
+    "class-10",
+    "class-11",
+    "class-12"
+  ],
+  "conductingBody": "ACT, Inc.",
+  "sourceIds": [
+    "SRC-ACT-SPEC-2026",
+    "SRC-CB-DIGITALSAT-2026"
+  ],
+  "examPattern": {
+    "mode": "Digital / Paper Multiple-Choice Assessment",
+    "durationMinutes": 175,
+    "totalMarks": "1 to 36 Composite Scale across English, Math, Reading, and Science",
+    "patternStatus": "sourced-official-pattern"
+  },
+  "prerequisiteSkillIds": [
+    "lang-bilingual-literature-middle",
+    "math-ratios-linear-algebra-middle",
+    "sci-curiosity-middle-inquiry"
+  ],
+  "coreTrackSkillIds": [
+    "lang-academic-rhetoric-global-exams",
+    "math-polynomials-quadratics-sec",
+    "math-trigonometry-coordinate-sec",
+    "sci-integrated-sec-9-10"
+  ],
+  "domains": [
+    {
+      "name": "English & Reading",
+      "topics": [
+        "Production of Writing, Knowledge of Language & Conventions of Standard English",
+        "Key Ideas and Details, Craft and Structure, Integration of Knowledge"
+      ]
+    },
+    {
+      "name": "Mathematics & Science Reasoning",
+      "topics": [
+        "Number & Quantity, Algebra, Functions, Geometry, Statistics & Probability",
+        "Data Representation, Research Summaries & Conflicting Viewpoints in Science"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1726 @@
+{
+  "schemaVersion": "1.0.0",
+  "graphVersion": "1.2.0",
+  "updatedAt": "2026-10-22T00:00:00.000Z",
+  "domains": [
+    {
+      "id": "early-stimulation-motor",
+      "name": {
+        "en": "Early Childhood Stimulation & Panchakosha Development",
+        "hi": "प्रारंभिक बाल प्रोत्साहन और पंचकोश विकास"
+      },
+      "description": "Sensory, gross/fine motor, socio-emotional, and play-based stimulation for birth to 6 years under MWCD Navchetana and Aadharshila."
+    },
+    {
+      "id": "foundational-literacy",
+      "name": {
+        "en": "Foundational Bilingual Literacy (Hindi & English)",
+        "hi": "बुनियादी द्विभाषी साक्षरता (हिंदी और अंग्रेजी)"
+      },
+      "description": "Oral language, phonological awareness, decoding, reading fluency, and early writing across Nursery to Class 5."
+    },
+    {
+      "id": "foundational-numeracy",
+      "name": {
+        "en": "Foundational Numeracy & Spatial Sense",
+        "hi": "बुनियादी संख्या ज्ञान और स्थानिक समझ"
+      },
+      "description": "Pre-number concepts, counting, place value, four operations, shapes, and measurement from Nursery to Class 5."
+    },
+    {
+      "id": "mathematics-core",
+      "name": {
+        "en": "Middle & Secondary Mathematics",
+        "hi": "माध्यमिक और उच्चतर गणित"
+      },
+      "description": "Number systems, algebra, geometry, mensuration, trigonometry, calculus, probability, and statistics from Class 6 to Class 12 and competitive tracks."
+    },
+    {
+      "id": "science-and-inquiry",
+      "name": {
+        "en": "Science, Physics, Chemistry & Biology",
+        "hi": "विज्ञान, भौतिकी, रसायन और जीवविज्ञान"
+      },
+      "description": "Environmental studies, scientific inquiry, physics, chemistry, and biology from Class 3 to Class 12 and JEE/NEET tracks."
+    },
+    {
+      "id": "social-science-and-humanities",
+      "name": {
+        "en": "Social Science, Polity, Economy & History",
+        "hi": "सामाजिक विज्ञान, राजव्यवस्था, अर्थव्यवस्था और इतिहास"
+      },
+      "description": "History, geography, social and political life, economics, and Indian constitutional foundations from Class 6 to Class 12 and UPSC/CUET tracks."
+    },
+    {
+      "id": "languages-and-communication",
+      "name": {
+        "en": "Academic Reading, Rhetoric & Global English/Hindi",
+        "hi": "शैक्षणिक पठन, लेखन और वैश्विक भाषा कौशल"
+      },
+      "description": "Reading comprehension, grammar conventions, analytical writing, and speaking proficiency for Classes 6-12 and SAT/ACT/IELTS/TOEFL."
+    },
+    {
+      "id": "computational-and-ai-literacy",
+      "name": {
+        "en": "Computational Thinking, Data & AI Literacy",
+        "hi": "कम्प्यूटेशनल चिंतन, डेटा और एआई साक्षरता"
+      },
+      "description": "Algorithmic logic, data representation, coding fundamentals, and responsible AI literacy across Middle and Secondary stages."
+    }
+  ],
+  "skills": [
+    {
+      "id": "stim-sensory-motor-0-3",
+      "name": {
+        "en": "Sensory Tracking, Grasp & Caregiver Bonding",
+        "hi": "संवेदी समन्वय, पकड़ और देखभालकर्ता जुड़ाव"
+      },
+      "domainId": "early-stimulation-motor",
+      "stage": {
+        "fromYearId": "home-0-3",
+        "toYearId": "home-0-3"
+      },
+      "description": "Infant and toddler sensory tracking, object permanence, rhythmic movement, and responsive serve-and-return caregiver interaction.",
+      "prerequisites": [],
+      "successCriteria": [
+        "Follows moving objects and responds to caregiver voice and gestures",
+        "Manipulates safe household objects, stacks blocks, and coordinates balance"
+      ],
+      "evidenceTypes": [
+        "teacher-observation",
+        "practical"
+      ],
+      "boardAlignments": [
+        {
+          "boardId": "early-years",
+          "yearId": "home-0-3",
+          "subject": "Sensory & Motor Stimulation",
+          "sourceId": "SRC-MWCD-NAVCHETANA-2024",
+          "alignmentStrength": "direct"
+        },
+        {
+          "boardId": "cbse",
+          "yearId": "home-0-3",
+          "subject": "Sensory & Motor Stimulation",
+          "sourceId": "SRC-MWCD-NAVCHETANA-2024",
+          "alignmentStrength": "direct"
+        }
+      ],
+      "trackBranches": [],
+      "status": "active"
+    },
+    {
+      "id": "stim-bilingual-babble-words",
+      "name": {
+        "en": "First Words, Songs & Bilingual Listening (0-3)",
+        "hi": "प्रथम शब्द, बालगीत और द्विभाषी श्रवण (0-3)"
+      },
+      "domainId": "early-stimulation-motor",
+      "stage": {
+        "fromYearId": "home-0-3",
+        "toYearId": "nursery"
+      },
+      "description": "Oral stimulation through mother-tongue and English rhymes, naming everyday objects, and two-word expressive phrases.",
+      "prerequisites": [
+        "stim-sensory-motor-0-3"
+      ],
+      "successCriteria": [
+        "Points to named household objects and body parts in home language",
+        "Uses simple words and gestures to express needs during play"
+      ],
+      "evidenceTypes": [
+        "teacher-observation",
+        "oral-reading"
+      ],
+      "boardAlignments": [
+        {
+          "boardId": "early-years",
+          "yearId": "home-0-3",
+          "subject": "Oral Language & Songs",
+          "sourceId": "SRC-MWCD-NAVCHETANA-2024",
+          "alignmentStrength": "direct"
+        }
+      ],
+      "trackBranches": [],
+      "status": "active"
+    },
+    {
+      "id": "ecce-panchakosha-play",
+      "name": {
+        "en": "Panchakosha Motor, Socio-Emotional & Creative Play",
+        "hi": "पंचकोश शारीरिक, सामाजिक-भावनात्मक और रचनात्मक खेल"
+      },
+      "domainId": "early-stimulation-motor",
+      "stage": {
+        "fromYearId": "nursery",
+        "toYearId": "ukg"
+      },
+      "description": "Fine motor clay/paper work, turn-taking in group games, emotion recognition, and rhythmic movement under Aadharshila and NCF-FS.",
+      "prerequisites": [
+        "stim-sensory-motor-0-3"
+      ],
+      "successCriteria": [
+        "Demonstrates fine-motor control with crayons, beads, and paper folding",
+        "Takes turns, shares materials, and follows 2-step game rules in a peer pod"
+      ],
+      "evidenceTypes": [
+        "teacher-observation",
+        "project"
+      ],
+      "boardAlignments": [
+        {
+          "boardId": "early-years",
+          "yearId": "nursery",
+          "subject": "Panchakosha Play & Wellness",
+          "sourceId": "SRC-MWCD-AADHARSHILA-2024",
+          "alignmentStrength": "direct"
+        },
+        {
+          "boardId": "early-years",
+          "yearId": "lkg",
+          "subject": "Panchakosha Play & Wellness",
+          "sourceId": "SRC-NCERT-NCFFS-2022",
+          "alignmentStrength": "direct"
+        },
+        {
+          "boardId": "early-years",
+          "yearId": "ukg",
+          "subject": "Panchakosha Play & Wellness",
+          "sourceId": "SRC-NCERT-NCFFS-2022",
+          "alignmentStrength": "direct"
+        }
+      ],
+      "trackBranches": [],
+      "status": "active"
+    },
+    {
+      "id": "lit-phonics-akshara-awareness",
+      "name": {
+        "en": "Phonological & Akshara Sound-Symbol Awareness",
+        "hi": "ध्वनि जागरूकता और अक्षर-ध्वनि पहचान"
+      },
+      "domainId": "foundational-literacy",
+      "stage": {
+        "fromYearId": "nursery",
+        "toYearId": "class-01"
+      },
+      "description": "Recognizing beginning and ending sounds, rhyming patterns, Devanagari Varnamala aksharas, and English letter-sound correspondence.",
+      "prerequisites": [
+        "stim-bilingual-babble-words"
+      ],
+      "successCriteria": [
+        "Identifies initial sounds of familiar Hindi and English words",
+        "Matches core Devanagari aksharas and English letters to their phonetic sounds"
+      ],
+      "evidenceTypes": [
+        "diagnostic-item",
+        "oral-reading"
+      ],
+      "boardAlignments": [
+        {
+          "boardId": "early-years",
+          "yearId": "lkg",
+          "subject": "Foundational Language",
+          "sourceId": "SRC-NCERT-NCFFS-2022",
+          "alignmentStrength": "direct"
+        },
+        {
+          "boardId": "cbse",
+          "yearId": "class-01",
+          "subject": "English & Hindi (Mridang / Sarangi)",
+          "sourceId": "SRC-NCERT-NCFFS-2022",
+          "alignmentStrength": "direct"
+        }
+      ],
+      "trackBranches": [],
+      "status": "active"
+    },
+    {
+      "id": "lit-sentence-reading-fluency",
+      "name": {
+        "en": "Guided Story Reading & Comprehension (Classes 1-5)",
+        "hi": "धाराप्रवाह कहानी पठन और अर्थग्रहण (कक्षा 1-5)"
+      },
+      "domainId": "foundational-literacy",
+      "stage": {
+        "fromYearId": "class-01",
+        "toYearId": "class-05"
+      },
+      "description": "Reading short graded stories with comprehension in Hindi and English, answering literal and inferential questions, and writing short paragraphs.",
+      "prerequisites": [
+        "lit-phonics-akshara-awareness"
+      ],
+      "successCriteria": [
+        "Reads age-graded text aloud at target fluency with comprehension",
+        "Answers who, what, why questions and writes 4-6 coherent sentences"
+      ],
+      "evidenceTypes": [
+        "diagnostic-item",
+        "oral-reading",
+        "lesson-exit-ticket"
+      ],
+      "boardAlignments": [
+        {
+          "boardId": "cbse",
+          "yearId": "class-02",
+          "subject": "English & Hindi",
+          "sourceId": "SRC-NCERT-NCFFS-2022",
+          "alignmentStrength": "direct"
+        },
+        {
+          "boardId": "cbse",
+          "yearId": "class-04",
+          "subject": "Languages (Santoor / Veena)",
+          "sourceId": "SRC-NCERT-NCFSE-2023",
+          "alignmentStrength": "direct"
+        },
+        {
+          "boardId": "nios",
+          "yearId": "class-03",
+          "subject": "OBE Level A Languages",
+          "sourceId": "SRC-NIOS-OBE-2026",
+          "alignmentStrength": "direct"
+        }
+      ],
+      "trackBranches": [],
+      "status": "active"
+    },
+    {
+      "id": "num-pre-number-counting-20",
+      "name": {
+        "en": "Pre-Number Sorting, Patterns & Counting 1 to 20",
+        "hi": "पूर्व-संख्या वर्गीकरण, पैटर्न और 1 से 20 तक गिनती"
+      },
+      "domainId": "foundational-numeracy",
+      "stage": {
+        "fromYearId": "nursery",
+        "toYearId": "ukg"
+      },
+      "description": "One-to-one correspondence, comparing more/less, sorting by shape and size, and counting concrete objects up to 20.",
+      "prerequisites": [
+        "ecce-panchakosha-play"
+      ],
+      "successCriteria": [
+        "Counts up to 20 objects accurately using one-to-one correspondence",
+        "Extends simple ABAB and AABB visual patterns"
+      ],
+      "evidenceTypes": [
+        "diagnostic-item",
+        "lesson-exit-ticket"
+      ],
+      "boardAlignments": [
+        {
+          "boardId": "early-years",
+          "yearId": "ukg",
+          "subject": "Early Numeracy & Shapes",
+          "sourceId": "SRC-NCERT-NCFFS-2022",
+          "alignmentStrength": "direct"
+        }
+      ],
+      "trackBranches": [],
+      "status": "active"
+    },
+    {
+      "id": "num-place-value-add-sub",
+      "name": {
+        "en": "Base-10 Place Value, Addition & Subtraction",
+        "hi": "स्थानीय मान, जोड़ और घटाव"
+      },
+      "domainId": "foundational-numeracy",
+      "stage": {
+        "fromYearId": "class-01",
+        "toYearId": "class-03"
+      },
+      "description": "Understanding tens, hundreds, and thousands, regrouping in addition and subtraction, and solving word problems.",
+      "prerequisites": [
+        "num-pre-number-counting-20"
+      ],
+      "successCriteria": [
+        "Decomposes 2-digit and 3-digit numbers into hundreds, tens, and ones",
+        "Solves addition and subtraction word problems with regrouping"
+      ],
+      "evidenceTypes": [
+        "diagnostic-item",
+        "lesson-exit-ticket",
+        "unit-test"
+      ],
+      "boardAlignments": [
+        {
+          "boardId": "cbse",
+          "yearId": "class-01",
+          "subject": "Mathematics (Joyful Mathematics)",
+          "sourceId": "SRC-NCERT-NCFFS-2022",
+          "alignmentStrength": "direct"
+        },
+        {
+          "boardId": "cbse",
+          "yearId": "class-03",
+          "subject": "Mathematics (Maths Mela)",
+          "sourceId": "SRC-NCERT-NCFSE-2023",
+          "alignmentStrength": "direct"
+        }
+      ],
+      "trackBranches": [],
+      "status": "active"
+    },
+    {
+      "id": "num-mult-div-fractions-prep",
+      "name": {
+        "en": "Multiplication, Division, Factors & Introductory Fractions",
+        "hi": "गुणा, भाग, गुणनखंड और भिन्न की शुरुआत"
+      },
+      "domainId": "foundational-numeracy",
+      "stage": {
+        "fromYearId": "class-03",
+        "toYearId": "class-05"
+      },
+      "description": "Multi-digit multiplication and division, multiples and factors, equivalent fractions, decimals, and area/perimeter of rectangles.",
+      "prerequisites": [
+        "num-place-value-add-sub"
+      ],
+      "successCriteria": [
+        "Performs multi-digit division and interprets remainders in context",
+        "Compares fractions with unlike denominators using equivalence"
+      ],
+      "evidenceTypes": [
+        "diagnostic-item",
+        "unit-test",
+        "term-exam"
+      ],
+      "boardAlignments": [
+        {
+          "boardId": "cbse",
+          "yearId": "class-04",
+          "subject": "Mathematics",
+          "sourceId": "SRC-NCERT-NCFSE-2023",
+          "alignmentStrength": "direct"
+        },
+        {
+          "boardId": "cbse",
+          "yearId": "class-05",
+          "subject": "Mathematics",
+          "sourceId": "SRC-NCERT-NCFSE-2023",
+          "alignmentStrength": "direct"
+        },
+        {
+          "boardId": "nios",
+          "yearId": "class-05",
+          "subject": "OBE Level B Mathematics",
+          "sourceId": "SRC-NIOS-OBE-2026",
+          "alignmentStrength": "direct"
+        }
+      ],
+      "trackBranches": [],
+      "status": "active"
+    },
+    {
+      "id": "math-integers-number-patterns",
+      "name": {
+        "en": "Integers, Prime Factorisation & Number Patterns (Ganita Prakash)",
+        "hi": "पूर्णांक, अभाज्य गुणनखंड और संख्या पैटर्न (गणित प्रकाश)"
+      },
+      "domainId": "mathematics-core",
+      "stage": {
+        "fromYearId": "class-06",
+        "toYearId": "class-07"
+      },
+      "description": "Patterns in numbers, prime time factorisation, negative integers on the number line, and operations on rational numbers.",
+      "prerequisites": [
+        "num-mult-div-fractions-prep"
+      ],
+      "successCriteria": [
+        "Adds, subtracts, multiplies, and divides signed integers and fractions accurately",
+        "Identifies figurate number sequences, HCF/LCM, and divisibility properties"
+      ],
+      "evidenceTypes": [
+        "diagnostic-item",
+        "lesson-exit-ticket",
+        "unit-test",
+        "term-exam"
+      ],
+      "boardAlignments": [
+        {
+          "boardId": "cbse",
+          "yearId": "class-06",
+          "subject": "Mathematics (Ganita Prakash)",
+          "sourceId": "SRC-NCERT-NCFSE-2023",
+          "alignmentStrength": "direct"
+        },
+        {
+          "boardId": "cisce",
+          "yearId": "class-06",
+          "subject": "Mathematics",
+          "sourceId": "SRC-CISCE-PUB-2026",
+          "alignmentStrength": "direct"
+        }
+      ],
+      "trackBranches": [
+        {
+          "trackId": "sat",
+          "role": "foundation",
+          "officialExamRef": "Problem-Solving and Data Analysis"
+        },
+        {
+          "trackId": "cuet",
+          "role": "foundation",
+          "officialExamRef": "Section III Quantitative Reasoning"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "math-ratios-linear-algebra-middle",
+      "name": {
+        "en": "Algebraic Expressions, Linear Equations & Proportional Reasoning",
+        "hi": "बीजीय व्यंजक, रैखिक समीकरण और अनुपात-समानुपात"
+      },
+      "domainId": "mathematics-core",
+      "stage": {
+        "fromYearId": "class-06",
+        "toYearId": "class-08"
+      },
+      "description": "Forming algebraic expressions, solving one-variable linear equations, percentages, compound interest, and direct/inverse proportions.",
+      "prerequisites": [
+        "math-integers-number-patterns"
+      ],
+      "successCriteria": [
+        "Translates word problems into single-variable linear equations and solves them",
+        "Applies ratio, percentage change, and direct/inverse proportion in real scenarios"
+      ],
+      "evidenceTypes": [
+        "diagnostic-item",
+        "unit-test",
+        "term-exam"
+      ],
+      "boardAlignments": [
+        {
+          "boardId": "cbse",
+          "yearId": "class-07",
+          "subject": "Mathematics (Ganita Prakash)",
+          "sourceId": "SRC-NCERT-NCFSE-2023",
+          "alignmentStrength": "direct"
+        },
+        {
+          "boardId": "cbse",
+          "yearId": "class-08",
+          "subject": "Mathematics (Ganita Prakash)",
+          "sourceId": "SRC-NCERT-NCFSE-2023",
+          "alignmentStrength": "direct"
+        },
+        {
+          "boardId": "nios",
+          "yearId": "class-08",
+          "subject": "OBE Level C Mathematics",
+          "sourceId": "SRC-NIOS-OBE-2026",
+          "alignmentStrength": "direct"
+        }
+      ],
+      "trackBranches": [
+        {
+          "trackId": "sat",
+          "role": "foundation",
+          "officialExamRef": "Digital SAT Algebra Domain"
+        },
+        {
+          "trackId": "act",
+          "role": "foundation",
+          "officialExamRef": "ACT Algebra Readiness"
+        },
+        {
+          "trackId": "upsc",
+          "role": "foundation",
+          "officialExamRef": "UPSC CSAT Basic Numeracy (Class X level)"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "math-geometry-mensuration-middle",
+      "name": {
+        "en": "Euclidean Lines, Triangles, Symmetry & Mensuration",
+        "hi": "रेखाएं, त्रिभुज, सममिति और क्षेत्रमिति"
+      },
+      "domainId": "mathematics-core",
+      "stage": {
+        "fromYearId": "class-06",
+        "toYearId": "class-08"
+      },
+      "description": "Angle relationships, triangle congruence criteria, Pythagoras property, rotational symmetry, and surface area/volume of 3D solids.",
+      "prerequisites": [
+        "math-integers-number-patterns"
+      ],
+      "successCriteria": [
+        "Proves angle and triangle properties using parallel line and congruence rules",
+        "Computes area and volume of prisms, cylinders, and composite polygons"
+      ],
+      "evidenceTypes": [
+        "diagnostic-item",
+        "unit-test",
+        "term-exam"
+      ],
+      "boardAlignments": [
+        {
+          "boardId": "cbse",
+          "yearId": "class-06",
+          "subject": "Mathematics (Ganita Prakash)",
+          "sourceId": "SRC-NCERT-NCFSE-2023",
+          "alignmentStrength": "direct"
+        },
+        {
+          "boardId": "cbse",
+          "yearId": "class-08",
+          "subject": "Mathematics (Ganita Prakash)",
+          "sourceId": "SRC-NCERT-NCFSE-2023",
+          "alignmentStrength": "direct"
+        }
+      ],
+      "trackBranches": [
+        {
+          "trackId": "sat",
+          "role": "foundation",
+          "officialExamRef": "Geometry and Trigonometry"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "math-polynomials-quadratics-sec",
+      "name": {
+        "en": "Polynomials, Quadratic Equations & Arithmetic Progressions (Classes 9-10)",
+        "hi": "बहुपद, द्विघात समीकरण और समांतर श्रेढ़ी (कक्षा 9-10)"
+      },
+      "domainId": "mathematics-core",
+      "stage": {
+        "fromYearId": "class-09",
+        "toYearId": "class-10"
+      },
+      "description": "Real numbers, polynomial factorisation, pair of linear equations in two variables, quadratic equations, and arithmetic progressions.",
+      "prerequisites": [
+        "math-ratios-linear-algebra-middle"
+      ],
+      "successCriteria": [
+        "Solves systems of linear equations and analyses discriminant of quadratic equations",
+        "Models nth term and sum of arithmetic progressions"
+      ],
+      "evidenceTypes": [
+        "diagnostic-item",
+        "unit-test",
+        "board-mock"
+      ],
+      "boardAlignments": [
+        {
+          "boardId": "cbse",
+          "yearId": "class-09",
+          "subject": "Mathematics (041)",
+          "officialCode": "041",
+          "sourceId": "SRC-CBSE-CURR-2026-27",
+          "alignmentStrength": "direct"
+        },
+        {
+          "boardId": "cbse",
+          "yearId": "class-10",
+          "subject": "Mathematics Standard (041)",
+          "officialCode": "041",
+          "sourceId": "SRC-CBSE-CURR-2026-27",
+          "alignmentStrength": "direct"
+        },
+        {
+          "boardId": "nios",
+          "yearId": "class-10",
+          "subject": "Mathematics (211)",
+          "officialCode": "211",
+          "sourceId": "SRC-NIOS-SECSRSEC-2026",
+          "alignmentStrength": "direct"
+        }
+      ],
+      "trackBranches": [
+        {
+          "trackId": "jee",
+          "role": "foundation",
+          "officialExamRef": "JEE Main Unit 2 Complex Numbers and Quadratic Equations"
+        },
+        {
+          "trackId": "sat",
+          "role": "accelerator",
+          "officialExamRef": "Digital SAT Advanced Math"
+        },
+        {
+          "trackId": "act",
+          "role": "accelerator",
+          "officialExamRef": "ACT Algebra and Functions"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "math-trigonometry-coordinate-sec",
+      "name": {
+        "en": "Coordinate Geometry, Trigonometry & Circles (Classes 9-10)",
+        "hi": "निर्देशांक ज्यामिति, त्रिकोणमिति और वृत्त (कक्षा 9-10)"
+      },
+      "domainId": "mathematics-core",
+      "stage": {
+        "fromYearId": "class-09",
+        "toYearId": "class-10"
+      },
+      "description": "Distance and section formulas, similarity of triangles, tangent theorems on circles, trigonometric ratios, identities, and heights and distances.",
+      "prerequisites": [
+        "math-geometry-mensuration-middle",
+        "math-ratios-linear-algebra-middle"
+      ],
+      "successCriteria": [
+        "Applies trigonometric ratios and identities to elevation and depression problems",
+        "Solves coordinate geometry and circle tangent proofs"
+      ],
+      "evidenceTypes": [
+        "diagnostic-item",
+        "unit-test",
+        "board-mock"
+      ],
+      "boardAlignments": [
+        {
+          "boardId": "cbse",
+          "yearId": "class-10",
+          "subject": "Mathematics Standard (041)",
+          "officialCode": "041",
+          "sourceId": "SRC-CBSE-CURR-2026-27",
+          "alignmentStrength": "direct"
+        },
+        {
+          "boardId": "cisce",
+          "yearId": "class-10",
+          "subject": "ICSE Mathematics",
+          "sourceId": "SRC-CISCE-PUB-2026",
+          "alignmentStrength": "direct"
+        }
+      ],
+      "trackBranches": [
+        {
+          "trackId": "jee",
+          "role": "foundation",
+          "officialExamRef": "JEE Main Coordinate Geometry & Trigonometry"
+        },
+        {
+          "trackId": "sat",
+          "role": "accelerator",
+          "officialExamRef": "Digital SAT Geometry & Trigonometry"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "math-calculus-vectors-srsec",
+      "name": {
+        "en": "Sets, Functions, Limits, Differential & Integral Calculus (Classes 11-12)",
+        "hi": "समुच्चय, फलन, सीमा, अवकलन और समाकलन (कक्षा 11-12)"
+      },
+      "domainId": "mathematics-core",
+      "stage": {
+        "fromYearId": "class-11",
+        "toYearId": "class-12"
+      },
+      "description": "Sets and relations, limits and continuity, differentiation, applications of derivatives, definite and indefinite integration, differential equations, vectors, and 3D geometry.",
+      "prerequisites": [
+        "math-polynomials-quadratics-sec",
+        "math-trigonometry-coordinate-sec"
+      ],
+      "successCriteria": [
+        "Evaluates limits, derivatives, extrema, and definite integrals of transcendental and algebraic functions",
+        "Solves linear differential equations and 3D line/plane vector problems"
+      ],
+      "evidenceTypes": [
+        "diagnostic-item",
+        "unit-test",
+        "board-mock"
+      ],
+      "boardAlignments": [
+        {
+          "boardId": "cbse",
+          "yearId": "class-11",
+          "subject": "Mathematics (041)",
+          "officialCode": "041",
+          "sourceId": "SRC-CBSE-CURR-2026-27",
+          "alignmentStrength": "direct"
+        },
+        {
+          "boardId": "cbse",
+          "yearId": "class-12",
+          "subject": "Mathematics (041)",
+          "officialCode": "041",
+          "sourceId": "SRC-CBSE-CURR-2026-27",
+          "alignmentStrength": "direct"
+        },
+        {
+          "boardId": "nios",
+          "yearId": "class-12",
+          "subject": "Senior Secondary Mathematics (311)",
+          "officialCode": "311",
+          "sourceId": "SRC-NIOS-SECSRSEC-2026",
+          "alignmentStrength": "direct"
+        }
+      ],
+      "trackBranches": [
+        {
+          "trackId": "jee",
+          "role": "accelerator",
+          "officialExamRef": "JEE Main Units 6-12 Calculus & Vector Algebra"
+        },
+        {
+          "trackId": "cuet",
+          "role": "accelerator",
+          "officialExamRef": "CUET UG Mathematics Domain"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "sci-evs-world-around-us",
+      "name": {
+        "en": "The World Around Us - Observation, Plants, Water & Community (Classes 3-5)",
+        "hi": "हमारे चारों ओर की दुनिया - प्रकृति, जल और समुदाय (कक्षा 3-5)"
+      },
+      "domainId": "science-and-inquiry",
+      "stage": {
+        "fromYearId": "class-03",
+        "toYearId": "class-05"
+      },
+      "description": "Experiential environmental studies covering local biodiversity, water conservation, food and nutrition, shelter, and simple experiments.",
+      "prerequisites": [
+        "lit-sentence-reading-fluency"
+      ],
+      "successCriteria": [
+        "Records systematic observations of plant growth, weather, and material properties",
+        "Explains water cycle, food chains, and hygiene habits"
+      ],
+      "evidenceTypes": [
+        "diagnostic-item",
+        "project",
+        "unit-test"
+      ],
+      "boardAlignments": [
+        {
+          "boardId": "cbse",
+          "yearId": "class-03",
+          "subject": "The World Around Us (EVS)",
+          "sourceId": "SRC-NCERT-NCFSE-2023",
+          "alignmentStrength": "direct"
+        },
+        {
+          "boardId": "cbse",
+          "yearId": "class-05",
+          "subject": "The World Around Us (EVS)",
+          "sourceId": "SRC-NCERT-NCFSE-2023",
+          "alignmentStrength": "direct"
+        }
+      ],
+      "trackBranches": [],
+      "status": "active"
+    },
+    {
+      "id": "sci-curiosity-middle-inquiry",
+      "name": {
+        "en": "Middle Stage Integrated Science - Matter, Force, Living World & Universe (Curiosity 6-8)",
+        "hi": "माध्यमिक एकीकृत विज्ञान - पदार्थ, बल, सजीव जगत और ब्रह्मांड (जिज्ञासा 6-8)"
+      },
+      "domainId": "science-and-inquiry",
+      "stage": {
+        "fromYearId": "class-06",
+        "toYearId": "class-08"
+      },
+      "description": "Scientific method, states and separation of matter, heat and temperature, motion and time, electric circuits, cell structure, nutrition, and solar system under NCERT Curiosity.",
+      "prerequisites": [
+        "sci-evs-world-around-us",
+        "math-integers-number-patterns"
+      ],
+      "successCriteria": [
+        "Designs controlled inquiry experiments measuring temperature, speed, and circuit conductivity",
+        "Classifies materials, chemical changes, and biological systems from cell to organ"
+      ],
+      "evidenceTypes": [
+        "diagnostic-item",
+        "practical",
+        "unit-test",
+        "term-exam"
+      ],
+      "boardAlignments": [
+        {
+          "boardId": "cbse",
+          "yearId": "class-06",
+          "subject": "Science (Curiosity)",
+          "sourceId": "SRC-NCERT-NCFSE-2023",
+          "alignmentStrength": "direct"
+        },
+        {
+          "boardId": "cbse",
+          "yearId": "class-07",
+          "subject": "Science (Curiosity)",
+          "sourceId": "SRC-NCERT-NCFSE-2023",
+          "alignmentStrength": "direct"
+        },
+        {
+          "boardId": "cbse",
+          "yearId": "class-08",
+          "subject": "Science (Curiosity)",
+          "sourceId": "SRC-NCERT-NCFSE-2023",
+          "alignmentStrength": "direct"
+        }
+      ],
+      "trackBranches": [
+        {
+          "trackId": "jee",
+          "role": "foundation",
+          "officialExamRef": "Middle School Physics & Chemistry Foundation"
+        },
+        {
+          "trackId": "neet",
+          "role": "foundation",
+          "officialExamRef": "Middle School Biology & Chemistry Foundation"
+        },
+        {
+          "trackId": "act",
+          "role": "foundation",
+          "officialExamRef": "ACT Science Experimental Reasoning"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "sci-integrated-sec-9-10",
+      "name": {
+        "en": "Secondary Science - Chemical Reactions, Life Processes, Mechanics & Electricity (Classes 9-10)",
+        "hi": "माध्यमिक विज्ञान - रासायनिक अभिक्रियाएं, जैव प्रक्रम, गति और विद्युत (कक्षा 9-10)"
+      },
+      "domainId": "science-and-inquiry",
+      "stage": {
+        "fromYearId": "class-09",
+        "toYearId": "class-10"
+      },
+      "description": "Atoms and molecules, chemical equations, acids/bases/salts, carbon compounds, cell biology, heredity, Newton's laws, gravitation, light optics, and Ohm's law.",
+      "prerequisites": [
+        "sci-curiosity-middle-inquiry",
+        "math-ratios-linear-algebra-middle"
+      ],
+      "successCriteria": [
+        "Balances chemical equations and predicts products across acid-base, redox, and carbon reactions",
+        "Solves numericals on kinematics, lens/mirror formulas, and series/parallel circuits"
+      ],
+      "evidenceTypes": [
+        "diagnostic-item",
+        "practical",
+        "unit-test",
+        "board-mock"
+      ],
+      "boardAlignments": [
+        {
+          "boardId": "cbse",
+          "yearId": "class-09",
+          "subject": "Science (086)",
+          "officialCode": "086",
+          "sourceId": "SRC-CBSE-CURR-2026-27",
+          "alignmentStrength": "direct"
+        },
+        {
+          "boardId": "cbse",
+          "yearId": "class-10",
+          "subject": "Science (086)",
+          "officialCode": "086",
+          "sourceId": "SRC-CBSE-CURR-2026-27",
+          "alignmentStrength": "direct"
+        },
+        {
+          "boardId": "nios",
+          "yearId": "class-10",
+          "subject": "Science and Technology (212)",
+          "officialCode": "212",
+          "sourceId": "SRC-NIOS-SECSRSEC-2026",
+          "alignmentStrength": "direct"
+        }
+      ],
+      "trackBranches": [
+        {
+          "trackId": "jee",
+          "role": "foundation",
+          "officialExamRef": "JEE Main Mechanics, Optics & Atomic Foundation"
+        },
+        {
+          "trackId": "neet",
+          "role": "foundation",
+          "officialExamRef": "NEET UG Life Processes & Chemical Bonding Bridge"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "sci-physics-srsec-11-12",
+      "name": {
+        "en": "Senior Secondary Physics - Mechanics, Thermodynamics, Electromagnetism & Modern Physics",
+        "hi": "उच्चतर माध्यमिक भौतिकी - यांत्रिकी, ऊष्मागतिकी, विद्युतचुंबकत्व और आधुनिक भौतिकी"
+      },
+      "domainId": "science-and-inquiry",
+      "stage": {
+        "fromYearId": "class-11",
+        "toYearId": "class-12"
+      },
+      "description": "Rotational mechanics, gravitation, thermodynamics, oscillations/waves, electrostatics, current electricity, magnetism, EMI/AC, ray and wave optics, dual nature, atoms/nuclei, and semiconductors.",
+      "prerequisites": [
+        "sci-integrated-sec-9-10",
+        "math-trigonometry-coordinate-sec"
+      ],
+      "successCriteria": [
+        "Applies calculus-backed conservation laws across mechanics, electrostatics, and electromagnetism",
+        "Completes experimental physics verification and error analysis"
+      ],
+      "evidenceTypes": [
+        "diagnostic-item",
+        "practical",
+        "unit-test",
+        "board-mock"
+      ],
+      "boardAlignments": [
+        {
+          "boardId": "cbse",
+          "yearId": "class-11",
+          "subject": "Physics (042)",
+          "officialCode": "042",
+          "sourceId": "SRC-CBSE-CURR-2026-27",
+          "alignmentStrength": "direct"
+        },
+        {
+          "boardId": "cbse",
+          "yearId": "class-12",
+          "subject": "Physics (042)",
+          "officialCode": "042",
+          "sourceId": "SRC-CBSE-CURR-2026-27",
+          "alignmentStrength": "direct"
+        }
+      ],
+      "trackBranches": [
+        {
+          "trackId": "jee",
+          "role": "accelerator",
+          "officialExamRef": "JEE Main Physics Units 1-20 (NTA 2026)"
+        },
+        {
+          "trackId": "neet",
+          "role": "accelerator",
+          "officialExamRef": "NEET UG Physics Units 1-20 (NMC/NTA 2026)"
+        },
+        {
+          "trackId": "cuet",
+          "role": "accelerator",
+          "officialExamRef": "CUET UG Physics Domain (322)"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "sci-chemistry-srsec-11-12",
+      "name": {
+        "en": "Senior Secondary Chemistry - Physical, Inorganic & Organic Chemistry",
+        "hi": "उच्चतर माध्यमिक रसायन विज्ञान - भौतिक, अकार्बनिक और कार्बनिक रसायन"
+      },
+      "domainId": "science-and-inquiry",
+      "stage": {
+        "fromYearId": "class-11",
+        "toYearId": "class-12"
+      },
+      "description": "Atomic structure, chemical bonding, thermodynamics, equilibrium, redox/electrochemistry, chemical kinetics, d/f-block and coordination compounds, and organic reaction mechanisms.",
+      "prerequisites": [
+        "sci-integrated-sec-9-10"
+      ],
+      "successCriteria": [
+        "Solves chemical equilibrium, Nernst equation, and rate law numericals",
+        "Predicts multi-step organic synthesis and coordination chemistry properties"
+      ],
+      "evidenceTypes": [
+        "diagnostic-item",
+        "practical",
+        "unit-test",
+        "board-mock"
+      ],
+      "boardAlignments": [
+        {
+          "boardId": "cbse",
+          "yearId": "class-11",
+          "subject": "Chemistry (043)",
+          "officialCode": "043",
+          "sourceId": "SRC-CBSE-CURR-2026-27",
+          "alignmentStrength": "direct"
+        },
+        {
+          "boardId": "cbse",
+          "yearId": "class-12",
+          "subject": "Chemistry (043)",
+          "officialCode": "043",
+          "sourceId": "SRC-CBSE-CURR-2026-27",
+          "alignmentStrength": "direct"
+        }
+      ],
+      "trackBranches": [
+        {
+          "trackId": "jee",
+          "role": "accelerator",
+          "officialExamRef": "JEE Main Chemistry Physical/Inorganic/Organic"
+        },
+        {
+          "trackId": "neet",
+          "role": "accelerator",
+          "officialExamRef": "NEET UG Chemistry Units 1-20"
+        },
+        {
+          "trackId": "cuet",
+          "role": "accelerator",
+          "officialExamRef": "CUET UG Chemistry Domain (306)"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "sci-biology-srsec-11-12",
+      "name": {
+        "en": "Senior Secondary Biology - Cell, Physiology, Genetics, Biotechnology & Ecology",
+        "hi": "उच्चतर माध्यमिक जीवविज्ञान - कोशिका, शरीर क्रिया विज्ञान, आनुवंशिकी और पारिस्थितिकी"
+      },
+      "domainId": "science-and-inquiry",
+      "stage": {
+        "fromYearId": "class-11",
+        "toYearId": "class-12"
+      },
+      "description": "Diversity of living organisms, structural organisation, cell structure and biomolecules, plant and human physiology, reproduction, Mendelian and molecular genetics, biotechnology, and ecology.",
+      "prerequisites": [
+        "sci-integrated-sec-9-10"
+      ],
+      "successCriteria": [
+        "Traces molecular genetics pathways, physiological feedback loops, and recombinant DNA workflows",
+        "Interprets ecological pyramids, population dynamics, and pedigree charts"
+      ],
+      "evidenceTypes": [
+        "diagnostic-item",
+        "practical",
+        "unit-test",
+        "board-mock"
+      ],
+      "boardAlignments": [
+        {
+          "boardId": "cbse",
+          "yearId": "class-11",
+          "subject": "Biology (044)",
+          "officialCode": "044",
+          "sourceId": "SRC-CBSE-CURR-2026-27",
+          "alignmentStrength": "direct"
+        },
+        {
+          "boardId": "cbse",
+          "yearId": "class-12",
+          "subject": "Biology (044)",
+          "officialCode": "044",
+          "sourceId": "SRC-CBSE-CURR-2026-27",
+          "alignmentStrength": "direct"
+        }
+      ],
+      "trackBranches": [
+        {
+          "trackId": "neet",
+          "role": "accelerator",
+          "officialExamRef": "NEET UG Biology Units 1-10 (90 Questions / 360 Marks)"
+        },
+        {
+          "trackId": "cuet",
+          "role": "accelerator",
+          "officialExamRef": "CUET UG Biology Domain (304)"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "soc-exploring-society-middle",
+      "name": {
+        "en": "Exploring Society - Landforms, Indian Civilization, Governance & Economic Life (Classes 6-8)",
+        "hi": "समाज की खोज - भू-आकृतियां, भारतीय सभ्यता, शासन और आर्थिक जीवन (कक्षा 6-8)"
+      },
+      "domainId": "social-science-and-humanities",
+      "stage": {
+        "fromYearId": "class-06",
+        "toYearId": "class-08"
+      },
+      "description": "Five thematic strands of NCERT Exploring Society: India and Beyond - Geographic diversity, Tapestry of the Past, Cultural Heritage, Governance and Democracy, and Economic Life Around Us.",
+      "prerequisites": [
+        "sci-evs-world-around-us"
+      ],
+      "successCriteria": [
+        "Reads thematic maps, timelines, and primary historical/archaeological sources",
+        "Explains local self-government (Panchayati Raj / Urban Bodies) and economic livelihood sectors"
+      ],
+      "evidenceTypes": [
+        "diagnostic-item",
+        "project",
+        "unit-test",
+        "term-exam"
+      ],
+      "boardAlignments": [
+        {
+          "boardId": "cbse",
+          "yearId": "class-06",
+          "subject": "Social Science (Exploring Society: India and Beyond)",
+          "sourceId": "SRC-NCERT-NCFSE-2023",
+          "alignmentStrength": "direct"
+        },
+        {
+          "boardId": "cbse",
+          "yearId": "class-07",
+          "subject": "Social Science (Exploring Society: India and Beyond)",
+          "sourceId": "SRC-NCERT-NCFSE-2023",
+          "alignmentStrength": "direct"
+        },
+        {
+          "boardId": "cbse",
+          "yearId": "class-08",
+          "subject": "Social Science (Exploring Society: India and Beyond)",
+          "sourceId": "SRC-NCERT-NCFSE-2023",
+          "alignmentStrength": "direct"
+        }
+      ],
+      "trackBranches": [
+        {
+          "trackId": "upsc",
+          "role": "foundation",
+          "officialExamRef": "NCERT Class 6-8 GS Foundation (History, Geography, Polity)"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "soc-democratic-polity-economy-sec",
+      "name": {
+        "en": "Secondary Social Science - Contemporary India, Democratic Politics & Economic Development (9-10)",
+        "hi": "माध्यमिक सामाजिक विज्ञान - समकालीन भारत, लोकतांत्रिक राजनीति और आर्थिक विकास (9-10)"
+      },
+      "domainId": "social-science-and-humanities",
+      "stage": {
+        "fromYearId": "class-09",
+        "toYearId": "class-10"
+      },
+      "description": "Modern Indian and world history, resources and agriculture of India, constitutional federalism and rights, and money, credit, and globalisation.",
+      "prerequisites": [
+        "soc-exploring-society-middle"
+      ],
+      "successCriteria": [
+        "Analyses constitutional power-sharing, federalism, and fundamental rights",
+        "Evaluates GDP sectors, RBI credit mechanisms, and resource sustainability"
+      ],
+      "evidenceTypes": [
+        "diagnostic-item",
+        "unit-test",
+        "board-mock"
+      ],
+      "boardAlignments": [
+        {
+          "boardId": "cbse",
+          "yearId": "class-09",
+          "subject": "Social Science (087)",
+          "officialCode": "087",
+          "sourceId": "SRC-CBSE-CURR-2026-27",
+          "alignmentStrength": "direct"
+        },
+        {
+          "boardId": "cbse",
+          "yearId": "class-10",
+          "subject": "Social Science (087)",
+          "officialCode": "087",
+          "sourceId": "SRC-CBSE-CURR-2026-27",
+          "alignmentStrength": "direct"
+        }
+      ],
+      "trackBranches": [
+        {
+          "trackId": "upsc",
+          "role": "foundation",
+          "officialExamRef": "UPSC Prelims GS Paper I Polity, Geography, Economy Core"
+        },
+        {
+          "trackId": "cuet",
+          "role": "foundation",
+          "officialExamRef": "CUET General Test & Humanities Foundation"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "soc-humanities-commerce-srsec",
+      "name": {
+        "en": "Senior Secondary Polity, Macroeconomics, History & Accountancy (Classes 11-12)",
+        "hi": "उच्चतर माध्यमिक राजनीति विज्ञान, समष्टि अर्थशास्त्र, इतिहास और लेखाशास्त्र (11-12)"
+      },
+      "domainId": "social-science-and-humanities",
+      "stage": {
+        "fromYearId": "class-11",
+        "toYearId": "class-12"
+      },
+      "description": "Indian Constitution at work, international relations, national income accounting, fiscal and monetary policy, themes in Indian history, and financial accounting.",
+      "prerequisites": [
+        "soc-democratic-polity-economy-sec"
+      ],
+      "successCriteria": [
+        "Synthesizes constitutional articles, Supreme Court doctrines, and macroeconomic fiscal/monetary indicators",
+        "Analyses historical primary sources and prepares balanced financial statements"
+      ],
+      "evidenceTypes": [
+        "diagnostic-item",
+        "unit-test",
+        "board-mock"
+      ],
+      "boardAlignments": [
+        {
+          "boardId": "cbse",
+          "yearId": "class-11",
+          "subject": "Economics (030) & Political Science (028)",
+          "officialCode": "030",
+          "sourceId": "SRC-CBSE-CURR-2026-27",
+          "alignmentStrength": "direct"
+        },
+        {
+          "boardId": "cbse",
+          "yearId": "class-12",
+          "subject": "Economics (030) & Political Science (028)",
+          "officialCode": "030",
+          "sourceId": "SRC-CBSE-CURR-2026-27",
+          "alignmentStrength": "direct"
+        }
+      ],
+      "trackBranches": [
+        {
+          "trackId": "upsc",
+          "role": "accelerator",
+          "officialExamRef": "UPSC CSE Prelims & Mains GS I, II, III"
+        },
+        {
+          "trackId": "cuet",
+          "role": "accelerator",
+          "officialExamRef": "CUET UG Domain Humanities & Commerce"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "lang-bilingual-literature-middle",
+      "name": {
+        "en": "Middle Stage Bilingual Literature, Grammar & Creative Expression (Poorvi & Malhar 6-8)",
+        "hi": "माध्यमिक द्विभाषी साहित्य, व्याकरण और रचनात्मक अभिव्यक्ति (पूर्वी और मल्हार 6-8)"
+      },
+      "domainId": "languages-and-communication",
+      "stage": {
+        "fromYearId": "class-06",
+        "toYearId": "class-08"
+      },
+      "description": "Critical reading of prose and poetry in English (Poorvi) and Hindi (Malhar), formal grammar, vocabulary in context, summary writing, and structured spoken presentation.",
+      "prerequisites": [
+        "lit-sentence-reading-fluency"
+      ],
+      "successCriteria": [
+        "Analyses author purpose, tone, and figurative language across unseen passages",
+        "Writes structured essays, formal letters, and bilingual summaries with grammatical accuracy"
+      ],
+      "evidenceTypes": [
+        "diagnostic-item",
+        "oral-reading",
+        "unit-test",
+        "term-exam"
+      ],
+      "boardAlignments": [
+        {
+          "boardId": "cbse",
+          "yearId": "class-06",
+          "subject": "English (Poorvi) & Hindi (Malhar)",
+          "sourceId": "SRC-NCERT-NCFSE-2023",
+          "alignmentStrength": "direct"
+        },
+        {
+          "boardId": "cbse",
+          "yearId": "class-07",
+          "subject": "English & Hindi",
+          "sourceId": "SRC-NCERT-NCFSE-2023",
+          "alignmentStrength": "direct"
+        },
+        {
+          "boardId": "cbse",
+          "yearId": "class-08",
+          "subject": "English & Hindi",
+          "sourceId": "SRC-NCERT-NCFSE-2023",
+          "alignmentStrength": "direct"
+        }
+      ],
+      "trackBranches": [
+        {
+          "trackId": "sat",
+          "role": "foundation",
+          "officialExamRef": "Digital SAT Reading and Writing Foundation"
+        },
+        {
+          "trackId": "ielts",
+          "role": "foundation",
+          "officialExamRef": "IELTS B1-B2 Academic Language Bridge"
+        },
+        {
+          "trackId": "toefl",
+          "role": "foundation",
+          "officialExamRef": "TOEFL iBT Academic Reading & Listening Bridge"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "lang-academic-rhetoric-global-exams",
+      "name": {
+        "en": "Advanced Academic Rhetoric, Evidence Reading & Four-Skill Global Proficiency (9-12)",
+        "hi": "उच्च शैक्षणिक पठन, तर्कपूर्ण लेखन और वैश्विक भाषा दक्षता (9-12)"
+      },
+      "domainId": "languages-and-communication",
+      "stage": {
+        "fromYearId": "class-09",
+        "toYearId": "class-12"
+      },
+      "description": "Rhetorical synthesis, command of textual and quantitative evidence, Standard English conventions, academic listening, timed analytical writing, and structured speaking.",
+      "prerequisites": [
+        "lang-bilingual-literature-middle"
+      ],
+      "successCriteria": [
+        "Evaluates logical claims and evidence in dense multi-disciplinary passages under timed conditions",
+        "Produces CEFR C1 / Band 7.5+ academic writing and spoken responses"
+      ],
+      "evidenceTypes": [
+        "diagnostic-item",
+        "oral-reading",
+        "board-mock"
+      ],
+      "boardAlignments": [
+        {
+          "boardId": "cbse",
+          "yearId": "class-10",
+          "subject": "English Language and Literature (184)",
+          "officialCode": "184",
+          "sourceId": "SRC-CBSE-CURR-2026-27",
+          "alignmentStrength": "direct"
+        },
+        {
+          "boardId": "cbse",
+          "yearId": "class-12",
+          "subject": "English Core (301)",
+          "officialCode": "301",
+          "sourceId": "SRC-CBSE-CURR-2026-27",
+          "alignmentStrength": "direct"
+        },
+        {
+          "boardId": "cisce",
+          "yearId": "class-10",
+          "subject": "ICSE English Paper 1 & 2",
+          "sourceId": "SRC-CISCE-PUB-2026",
+          "alignmentStrength": "direct"
+        }
+      ],
+      "trackBranches": [
+        {
+          "trackId": "sat",
+          "role": "accelerator",
+          "officialExamRef": "Digital SAT Reading and Writing (Craft, Structure, Conventions)"
+        },
+        {
+          "trackId": "act",
+          "role": "accelerator",
+          "officialExamRef": "ACT English and Reading Sections"
+        },
+        {
+          "trackId": "ielts",
+          "role": "accelerator",
+          "officialExamRef": "IELTS Academic Listening, Reading, Writing, Speaking"
+        },
+        {
+          "trackId": "toefl",
+          "role": "accelerator",
+          "officialExamRef": "TOEFL iBT Reading, Listening, Speaking, Writing"
+        },
+        {
+          "trackId": "cuet",
+          "role": "accelerator",
+          "officialExamRef": "CUET Section IA English / Hindi Language"
+        }
+      ],
+      "status": "active"
+    },
+    {
+      "id": "comp-algorithmic-ai-literacy",
+      "name": {
+        "en": "Computational Thinking, Coding, Data Ethics & AI Systems (Classes 6-12)",
+        "hi": "कम्प्यूटेशनल चिंतन, कोडिंग, डेटा नैतिकता और एआई प्रणाली (कक्षा 6-12)"
+      },
+      "domainId": "computational-and-ai-literacy",
+      "stage": {
+        "fromYearId": "class-06",
+        "toYearId": "class-12"
+      },
+      "description": "Flowcharts and algorithms, Python programming, relational data tables, statistical visualization, machine learning fundamentals, and digital safety.",
+      "prerequisites": [
+        "math-integers-number-patterns"
+      ],
+      "successCriteria": [
+        "Writes modular programs to process datasets and verify algorithmic complexity",
+        "Explains how AI models learn from data, hallucination risks, and DPDP privacy safeguards"
+      ],
+      "evidenceTypes": [
+        "diagnostic-item",
+        "project",
+        "practical"
+      ],
+      "boardAlignments": [
+        {
+          "boardId": "cbse",
+          "yearId": "class-09",
+          "subject": "Artificial Intelligence (417) / IT (402)",
+          "officialCode": "417",
+          "sourceId": "SRC-CBSE-CURR-2026-27",
+          "alignmentStrength": "direct"
+        },
+        {
+          "boardId": "cbse",
+          "yearId": "class-12",
+          "subject": "Computer Science (083)",
+          "officialCode": "083",
+          "sourceId": "SRC-CBSE-CURR-2026-27",
+          "alignmentStrength": "direct"
+        }
+      ],
+      "trackBranches": [
+        {
+          "trackId": "jee",
+          "role": "bridge",
+          "officialExamRef": "Analytical and Algorithmic Problem Solving"
+        },
+        {
+          "trackId": "sat",
+          "role": "bridge",
+          "officialExamRef": "Data Analysis and Desmos Modeling"
+        }
+      ],
+      "status": "active"
+    }
+  ],
+  "edges": [
+    {
+      "from": "stim-sensory-motor-0-3",
+      "to": "stim-bilingual-babble-words",
+      "type": "prerequisite",
+      "strength": "required"
+    },
+    {
+      "from": "stim-sensory-motor-0-3",
+      "to": "ecce-panchakosha-play",
+      "type": "prerequisite",
+      "strength": "required"
+    },
+    {
+      "from": "stim-bilingual-babble-words",
+      "to": "lit-phonics-akshara-awareness",
+      "type": "prerequisite",
+      "strength": "required"
+    },
+    {
+      "from": "lit-phonics-akshara-awareness",
+      "to": "lit-sentence-reading-fluency",
+      "type": "prerequisite",
+      "strength": "required"
+    },
+    {
+      "from": "ecce-panchakosha-play",
+      "to": "num-pre-number-counting-20",
+      "type": "prerequisite",
+      "strength": "required"
+    },
+    {
+      "from": "num-pre-number-counting-20",
+      "to": "num-place-value-add-sub",
+      "type": "prerequisite",
+      "strength": "required"
+    },
+    {
+      "from": "num-place-value-add-sub",
+      "to": "num-mult-div-fractions-prep",
+      "type": "prerequisite",
+      "strength": "required"
+    },
+    {
+      "from": "num-mult-div-fractions-prep",
+      "to": "math-integers-number-patterns",
+      "type": "prerequisite",
+      "strength": "required"
+    },
+    {
+      "from": "math-integers-number-patterns",
+      "to": "math-ratios-linear-algebra-middle",
+      "type": "prerequisite",
+      "strength": "required"
+    },
+    {
+      "from": "math-integers-number-patterns",
+      "to": "math-geometry-mensuration-middle",
+      "type": "prerequisite",
+      "strength": "required"
+    },
+    {
+      "from": "math-ratios-linear-algebra-middle",
+      "to": "math-polynomials-quadratics-sec",
+      "type": "prerequisite",
+      "strength": "required"
+    },
+    {
+      "from": "math-geometry-mensuration-middle",
+      "to": "math-trigonometry-coordinate-sec",
+      "type": "prerequisite",
+      "strength": "required"
+    },
+    {
+      "from": "math-ratios-linear-algebra-middle",
+      "to": "math-trigonometry-coordinate-sec",
+      "type": "prerequisite",
+      "strength": "required"
+    },
+    {
+      "from": "math-polynomials-quadratics-sec",
+      "to": "math-calculus-vectors-srsec",
+      "type": "prerequisite",
+      "strength": "required"
+    },
+    {
+      "from": "math-trigonometry-coordinate-sec",
+      "to": "math-calculus-vectors-srsec",
+      "type": "prerequisite",
+      "strength": "required"
+    },
+    {
+      "from": "lit-sentence-reading-fluency",
+      "to": "sci-evs-world-around-us",
+      "type": "prerequisite",
+      "strength": "required"
+    },
+    {
+      "from": "sci-evs-world-around-us",
+      "to": "sci-curiosity-middle-inquiry",
+      "type": "prerequisite",
+      "strength": "required"
+    },
+    {
+      "from": "math-integers-number-patterns",
+      "to": "sci-curiosity-middle-inquiry",
+      "type": "prerequisite",
+      "strength": "required"
+    },
+    {
+      "from": "sci-curiosity-middle-inquiry",
+      "to": "sci-integrated-sec-9-10",
+      "type": "prerequisite",
+      "strength": "required"
+    },
+    {
+      "from": "math-ratios-linear-algebra-middle",
+      "to": "sci-integrated-sec-9-10",
+      "type": "prerequisite",
+      "strength": "required"
+    },
+    {
+      "from": "sci-integrated-sec-9-10",
+      "to": "sci-physics-srsec-11-12",
+      "type": "prerequisite",
+      "strength": "required"
+    },
+    {
+      "from": "math-trigonometry-coordinate-sec",
+      "to": "sci-physics-srsec-11-12",
+      "type": "prerequisite",
+      "strength": "required"
+    },
+    {
+      "from": "sci-integrated-sec-9-10",
+      "to": "sci-chemistry-srsec-11-12",
+      "type": "prerequisite",
+      "strength": "required"
+    },
+    {
+      "from": "sci-integrated-sec-9-10",
+      "to": "sci-biology-srsec-11-12",
+      "type": "prerequisite",
+      "strength": "required"
+    },
+    {
+      "from": "sci-evs-world-around-us",
+      "to": "soc-exploring-society-middle",
+      "type": "prerequisite",
+      "strength": "required"
+    },
+    {
+      "from": "soc-exploring-society-middle",
+      "to": "soc-democratic-polity-economy-sec",
+      "type": "prerequisite",
+      "strength": "required"
+    },
+    {
+      "from": "soc-democratic-polity-economy-sec",
+      "to": "soc-humanities-commerce-srsec",
+      "type": "prerequisite",
+      "strength": "required"
+    },
+    {
+      "from": "lit-sentence-reading-fluency",
+      "to": "lang-bilingual-literature-middle",
+      "type": "prerequisite",
+      "strength": "required"
+    },
+    {
+      "from": "lang-bilingual-literature-middle",
+      "to": "lang-academic-rhetoric-global-exams",
+      "type": "prerequisite",
+      "strength": "required"
+    },
+    {
+      "from": "math-integers-number-patterns",
+      "to": "comp-algorithmic-ai-literacy",
+      "type": "prerequisite",
+      "strength": "required"
+    }
+  ],
+  "coverageSummary": {
+    "totalSkills": 26,
+    "byDomain": {
+      "early-stimulation-motor": 3,
+      "foundational-literacy": 2,
+      "foundational-numeracy": 3,
+      "mathematics-core": 6,
+      "science-and-inquiry": 6,
+      "social-science-and-humanities": 3,
+      "languages-and-communication": 2,
+      "computational-and-ai-literacy": 1
+    },
+    "byStage": {
+      "foundational": 7,
+      "preparatory": 3,
+      "middle": 6,
+      "secondary": 10
+    },
+    "knownGaps": [
+      "Fine-grained micro-skills for regional state-language literature beyond Hindi and English are queued for Phase 3 state-board expansion.",
+      "Vocational skill electives beyond Artificial Intelligence (417) and Information Technology (402) are queued for Phase 3."
+    ]
+  },
+  "provenance": {
+    "authoredBy": "EveryYear Curriculum Architecture Engine",
+    "reviewedBy": "Phase 1 Schema & Source Verification Pipeline",
+    "reviewStatus": "approved",
+    "license": "CC-BY-4.0 metadata mapping; official syllabus text remains copyright of respective statutory boards.",
+    "updatedFromCurriculumVersions": [
+      "MWCD-Navchetana-2024",
+      "MWCD-Aadharshila-2024",
+      "NCERT-NCFFS-2022",
+      "NCERT-NCFSE-2023",
+      "CBSE-2026-27",
+      "CISCE-2026-27",
+      "NIOS-2026"
+    ]
+  }
+}

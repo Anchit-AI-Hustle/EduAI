@@ -1,0 +1,64 @@
+{
+  "trackId": "neet",
+  "title": {
+    "en": "NEET (UG) Medical Entrance Track",
+    "hi": "नीट (यूजी) मेडिकल प्रवेश ट्रैक"
+  },
+  "category": "competitive-india",
+  "startingYearId": "class-08",
+  "targetYears": [
+    "class-08",
+    "class-09",
+    "class-10",
+    "class-11",
+    "class-12"
+  ],
+  "conductingBody": "National Testing Agency (NTA) & National Medical Commission (NMC)",
+  "sourceIds": [
+    "SRC-NTA-NEETUG-2026",
+    "SRC-CBSE-CURR-2026-27"
+  ],
+  "examPattern": {
+    "mode": "Pen and Paper (OMR)",
+    "durationMinutes": 180,
+    "totalMarks": "720 Marks (180 Compulsory Questions: 45 Physics, 45 Chemistry, 90 Biology; +4/-1 marking)",
+    "patternStatus": "sourced-official-pattern"
+  },
+  "prerequisiteSkillIds": [
+    "sci-curiosity-middle-inquiry",
+    "math-ratios-linear-algebra-middle"
+  ],
+  "coreTrackSkillIds": [
+    "sci-integrated-sec-9-10",
+    "sci-biology-srsec-11-12",
+    "sci-chemistry-srsec-11-12",
+    "sci-physics-srsec-11-12"
+  ],
+  "domains": [
+    {
+      "name": "Biology - Botany & Zoology (Units 1-10)",
+      "topics": [
+        "Diversity in Living World & Structural Organisation",
+        "Cell Structure & Function, Plant Physiology & Human Physiology",
+        "Reproduction, Genetics & Evolution",
+        "Biology and Human Welfare, Biotechnology & Ecology"
+      ]
+    },
+    {
+      "name": "Chemistry (Units 1-20)",
+      "topics": [
+        "Physical Chemistry (Mole Concept, Thermodynamics, Equilibrium, Kinetics, Electrochemistry)",
+        "Inorganic Chemistry (Periodic Table, Bonding, d/f Block, Coordination)",
+        "Organic Chemistry (GOC, Hydrocarbons, Functional Groups, Biomolecules)"
+      ]
+    },
+    {
+      "name": "Physics (Units 1-20)",
+      "topics": [
+        "Mechanics, Thermal Physics & Oscillations/Waves",
+        "Electrostatics, Current Electricity, Magnetic Effects & Optics",
+        "Modern Physics & Semiconductor Electronics"
+      ]
+    }
+  ]
+}

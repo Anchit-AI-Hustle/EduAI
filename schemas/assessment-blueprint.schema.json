@@ -1,0 +1,191 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://everyyear.school/schemas/assessment-blueprint.schema.json",
+  "title": "EveryYear Assessment and Diagnostic Item Bank Schema",
+  "description": "Schema for diagnostic items, unit tests, and mock examination blueprints linked to skill-graph nodes and official sources.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "updatedAt", "diagnosticItems", "mockBlueprints"],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0.0"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "diagnosticItems": {
+      "type": "array",
+      "minItems": 8,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "itemId",
+          "skillId",
+          "domainId",
+          "targetYearId",
+          "difficulty",
+          "prompt",
+          "options",
+          "correctIndex",
+          "explanation",
+          "sourceIds"
+        ],
+        "properties": {
+          "itemId": { "type": "string", "pattern": "^diag-[a-z0-9-]+$" },
+          "skillId": { "type": "string", "pattern": "^[a-z][a-z0-9-]{2,63}$" },
+          "domainId": { "type": "string" },
+          "targetYearId": { "type": "string" },
+          "difficulty": { "enum": ["foundation", "core", "stretch"] },
+          "prompt": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["en", "hi"],
+            "properties": {
+              "en": { "type": "string" },
+              "hi": { "type": "string" }
+            }
+          },
+          "options": {
+            "type": "array",
+            "minItems": 4,
+            "maxItems": 4,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["en", "hi"],
+              "properties": {
+                "en": { "type": "string" },
+                "hi": { "type": "string" }
+              }
+            }
+          },
+          "correctIndex": { "type": "integer", "minimum": 0, "maximum": 3 },
+          "explanation": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["en", "hi"],
+            "properties": {
+              "en": { "type": "string" },
+              "hi": { "type": "string" }
+            }
+          },
+          "sourceIds": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "type": "string", "pattern": "^SRC-[A-Z0-9-]+$" }
+          }
+        }
+      }
+    },
+    "mockBlueprints": {
+      "type": "array",
+      "minItems": 6,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "blueprintId",
+          "title",
+          "category",
+          "targetBoardOrTrack",
+          "durationMinutes",
+          "totalMarksOrScale",
+          "patternStatus",
+          "sections",
+          "sourceIds",
+          "sampleItems"
+        ],
+        "properties": {
+          "blueprintId": { "type": "string" },
+          "title": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["en", "hi"],
+            "properties": {
+              "en": { "type": "string" },
+              "hi": { "type": "string" }
+            }
+          },
+          "category": { "enum": ["board-mock", "competitive-track", "study-abroad"] },
+          "targetBoardOrTrack": { "type": "string" },
+          "durationMinutes": { "type": "integer", "minimum": 15 },
+          "totalMarksOrScale": { "type": "string" },
+          "patternStatus": { "enum": ["sourced-official-pattern", "pattern-labelled-gap"] },
+          "sections": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["sectionId", "name", "questionCount", "marksNote", "skillIds"],
+              "properties": {
+                "sectionId": { "type": "string" },
+                "name": { "type": "string" },
+                "questionCount": { "type": "integer", "minimum": 1 },
+                "marksNote": { "type": "string" },
+                "skillIds": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": { "type": "string" }
+                }
+              }
+            }
+          },
+          "sourceIds": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "type": "string", "pattern": "^SRC-[A-Z0-9-]+$" }
+          },
+          "sampleItems": {
+            "type": "array",
+            "minItems": 2,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["itemId", "skillId", "prompt", "options", "correctIndex", "explanation"],
+              "properties": {
+                "itemId": { "type": "string" },
+                "skillId": { "type": "string" },
+                "prompt": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": ["en", "hi"],
+                  "properties": {
+                    "en": { "type": "string" },
+                    "hi": { "type": "string" }
+                  }
+                },
+                "options": {
+                  "type": "array",
+                  "minItems": 4,
+                  "maxItems": 4,
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": ["en", "hi"],
+                    "properties": {
+                      "en": { "type": "string" },
+                      "hi": { "type": "string" }
+                    }
+                  }
+                },
+                "correctIndex": { "type": "integer", "minimum": 0, "maximum": 3 },
+                "explanation": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": ["en", "hi"],
+                  "properties": {
+                    "en": { "type": "string" },
+                    "hi": { "type": "string" }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,400 @@
+{
+  "schemaVersion": "1.0.0",
+  "curriculumVersionId": "nios-class-01@2026.1.0",
+  "boardId": "nios",
+  "boardName": "National Institute of Open Schooling (NIOS - OBE, Secondary & Sr. Secondary)",
+  "yearId": "class-01",
+  "yearLabel": {
+    "en": "Class 1",
+    "hi": "कक्षा 1"
+  },
+  "nepStage": "foundational-classes-1-2",
+  "ageBandYears": "6-7 years",
+  "groundingStatus": "skeleton-with-labelled-gaps",
+  "screenTimePolicy": {
+    "maxMinutesPerDay": 30,
+    "deliveryMode": "short-guided-sessions",
+    "guidelineSourceId": "SRC-IAP-SCREENTIME-2022"
+  },
+  "subjects": [
+    {
+      "subjectId": "languages-hindi-english",
+      "name": {
+        "en": "Bilingual Languages: Hindi (Sarangi) & English (Mridang)",
+        "hi": "द्विभाषी भाषाएं: हिंदी (सारंगी) और अंग्रेजी (मृदंग)"
+      },
+      "compulsory": true,
+      "stream": "general",
+      "textbooks": [
+        "NCERT Sarangi (Hindi)",
+        "NCERT Mridang (English)"
+      ],
+      "skillIds": [
+        "lit-phonics-akshara-awareness",
+        "lit-sentence-reading-fluency"
+      ],
+      "sourceIds": [
+        "SRC-NCERT-NCFFS-2022",
+        "SRC-NCERT-NSTC-2023"
+      ],
+      "units": [
+        {
+          "unitId": "nios-class-01-lang1",
+          "title": {
+            "en": "Akshara/Phonics Decoding, Poems & Guided Story Reading",
+            "hi": "अक्षर पठन, कविताएं और निर्देशित कहानी पठन"
+          },
+          "notionalHours": 180,
+          "skillIds": [
+            "lit-phonics-akshara-awareness",
+            "lit-sentence-reading-fluency"
+          ],
+          "competencies": [
+            "Reads short illustrated stories in Hindi and English",
+            "Writes simple words and sentences about family and nature"
+          ]
+        }
+      ]
+    },
+    {
+      "subjectId": "joyful-mathematics",
+      "name": {
+        "en": "Foundational Mathematics (Joyful Mathematics)",
+        "hi": "बुनियादी गणित (आनंदमय गणित)"
+      },
+      "compulsory": true,
+      "stream": "general",
+      "textbooks": [
+        "NCERT Joyful Mathematics"
+      ],
+      "skillIds": [
+        "num-place-value-add-sub"
+      ],
+      "sourceIds": [
+        "SRC-NCERT-NCFFS-2022",
+        "SRC-NCERT-NSTC-2023"
+      ],
+      "units": [
+        {
+          "unitId": "nios-class-01-math1",
+          "title": {
+            "en": "Place Value to 100/999, Addition, Subtraction & Shapes",
+            "hi": "स्थानीय मान, जोड़, घटाव और आकृतियां"
+          },
+          "notionalHours": 160,
+          "skillIds": [
+            "num-place-value-add-sub"
+          ],
+          "competencies": [
+            "Bundles tens and ones using concrete manipulatives",
+            "Solves everyday addition and subtraction word problems"
+          ]
+        }
+      ]
+    }
+  ],
+  "skillIds": [
+    "lit-phonics-akshara-awareness",
+    "lit-sentence-reading-fluency",
+    "num-place-value-add-sub"
+  ],
+  "termPlan": [
+    {
+      "termId": "term-1",
+      "title": {
+        "en": "Term 1: Foundational Concepts, Inquiry & Formative Portfolio",
+        "hi": "सत्र 1: मूल अवधारणाएं, अन्वेषण और रचनात्मक मूल्यांकन"
+      },
+      "weeks": 18,
+      "focusSkills": [
+        "lit-phonics-akshara-awareness",
+        "lit-sentence-reading-fluency"
+      ],
+      "milestoneAssessment": "Observational Holistic Progress Card (HPC) Check 1"
+    },
+    {
+      "termId": "term-2",
+      "title": {
+        "en": "Term 2: Applied Problem Solving, Integration & Annual Consolidation",
+        "hi": "सत्र 2: अनुप्रयुक्त समस्या समाधान, एकीकरण और वार्षिक पुनरावृत्ति"
+      },
+      "weeks": 18,
+      "focusSkills": [
+        "lit-phonics-akshara-awareness",
+        "lit-sentence-reading-fluency",
+        "num-place-value-add-sub"
+      ],
+      "milestoneAssessment": "Observational Holistic Progress Card (HPC) Check 2"
+    }
+  ],
+  "weeklyPlanTemplate": {
+    "studyDaysPerWeek": 5,
+    "totalMinutesPerWeek": 300,
+    "bufferPercent": 15,
+    "dailySchedule": [
+      {
+        "dayOfWeek": "Monday",
+        "blocks": [
+          {
+            "slot": "Block 1 (Core Concept)",
+            "subjectId": "languages-hindi-english",
+            "minutes": 20,
+            "mode": "concept-and-example"
+          },
+          {
+            "slot": "Block 2 (Practice / Activity)",
+            "subjectId": "joyful-mathematics",
+            "minutes": 20,
+            "mode": "guided-practice"
+          }
+        ]
+      },
+      {
+        "dayOfWeek": "Tuesday",
+        "blocks": [
+          {
+            "slot": "Block 1 (Core Concept)",
+            "subjectId": "joyful-mathematics",
+            "minutes": 20,
+            "mode": "concept-and-example"
+          },
+          {
+            "slot": "Block 2 (Practice / Activity)",
+            "subjectId": "joyful-mathematics",
+            "minutes": 20,
+            "mode": "guided-practice"
+          }
+        ]
+      },
+      {
+        "dayOfWeek": "Wednesday",
+        "blocks": [
+          {
+            "slot": "Block 1 (Core Concept)",
+            "subjectId": "languages-hindi-english",
+            "minutes": 20,
+            "mode": "concept-and-example"
+          },
+          {
+            "slot": "Block 2 (Practice / Activity)",
+            "subjectId": "joyful-mathematics",
+            "minutes": 20,
+            "mode": "guided-practice"
+          }
+        ]
+      },
+      {
+        "dayOfWeek": "Thursday",
+        "blocks": [
+          {
+            "slot": "Block 1 (Core Concept)",
+            "subjectId": "joyful-mathematics",
+            "minutes": 20,
+            "mode": "concept-and-example"
+          },
+          {
+            "slot": "Block 2 (Practice / Activity)",
+            "subjectId": "joyful-mathematics",
+            "minutes": 20,
+            "mode": "guided-practice"
+          }
+        ]
+      },
+      {
+        "dayOfWeek": "Friday",
+        "blocks": [
+          {
+            "slot": "Block 1 (Core Concept)",
+            "subjectId": "languages-hindi-english",
+            "minutes": 20,
+            "mode": "concept-and-example"
+          },
+          {
+            "slot": "Block 2 (Practice / Activity)",
+            "subjectId": "joyful-mathematics",
+            "minutes": 20,
+            "mode": "guided-practice"
+          }
+        ]
+      }
+    ]
+  },
+  "dailyLessonTemplate": {
+    "sessionMinutes": 20,
+    "offlineFallbackReady": true,
+    "steps": [
+      {
+        "stepId": "step-1-hook",
+        "title": {
+          "en": "1. Prerequisite Warm-Up & Real-World Hook",
+          "hi": "1. पूर्व-ज्ञान पुनरावृत्ति और वास्तविक जीवन से जुड़ाव"
+        },
+        "minutes": 4,
+        "description": "2-question retrieval check on prerequisite skill node before introducing new concept."
+      },
+      {
+        "stepId": "step-2-concept",
+        "title": {
+          "en": "2. Sourced Concept & Worked Example (EN/HI)",
+          "hi": "2. प्रमाणित अवधारणा और हल किया गया उदाहरण (द्विभाषी)"
+        },
+        "minutes": 6,
+        "description": "Concise explanation grounded in official textbook/framework source with zero unverified claims."
+      },
+      {
+        "stepId": "step-3-practice",
+        "title": {
+          "en": "3. Adaptive Guided Practice & 3-Step Hint Ladder",
+          "hi": "3. निर्देशित अभ्यास और 3-स्तरीय संकेत सीढ़ी"
+        },
+        "minutes": 6,
+        "description": "3 to 5 scaffolded practice tasks (offline toy/workbook task for under-6, interactive problems for Classes 1-12)."
+      },
+      {
+        "stepId": "step-4-exit-check",
+        "title": {
+          "en": "4. Mastery Exit Ticket & Evidence Event",
+          "hi": "4. दक्षता जांच और प्रगति साक्ष्य"
+        },
+        "minutes": 4,
+        "description": "Deterministic mastery check that updates the learner's skill graph state and schedules spaced review."
+      }
+    ]
+  },
+  "assessments": {
+    "unitTests": {
+      "frequency": "Every 3 weeks via play-based observation checklist",
+      "format": "Caregiver/Teacher observational rubric (no written stress)",
+      "durationMinutes": 15,
+      "marksOrScale": "3-level developmental rubric (Emerging / Developing / Proficient)",
+      "patternStatus": "observational-rubric-no-written-exam",
+      "sourceIds": [
+        "SRC-NCERT-PARAKH-2024"
+      ]
+    },
+    "internals": {
+      "frequency": "Continuous across each term",
+      "format": "Periodic tests (5 marks), multiple assessment (5 marks), portfolio/workbooks (5 marks), subject enrichment/lab work (5 marks)",
+      "durationMinutes": 40,
+      "marksOrScale": "Holistic Progress Card portfolio",
+      "patternStatus": "observational-rubric-no-written-exam",
+      "sourceIds": [
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-CBSE-SECPART1-2026-27"
+      ]
+    },
+    "termExams": {
+      "frequency": "End of Term 1 (Week 18) and End of Term 2 (Week 36)",
+      "format": "Play and oral fluency showcase",
+      "durationMinutes": 20,
+      "marksOrScale": "Holistic Progress Card",
+      "patternStatus": "observational-rubric-no-written-exam",
+      "sourceIds": [
+        "SRC-NCERT-NCFSE-2023",
+        "SRC-CBSE-SECPART1-2026-27"
+      ]
+    },
+    "boardStyleMocks": {
+      "frequency": "End-of-year stage readiness synthesis",
+      "format": "PARAKH stage benchmark check (Classes 3, 5, 8)",
+      "durationMinutes": 0,
+      "marksOrScale": "Not applicable for early years",
+      "patternStatus": "observational-rubric-no-written-exam",
+      "sourceIds": [
+        "SRC-NCERT-PARAKH-2024",
+        "SRC-CBSE-CURR-2026-27"
+      ]
+    }
+  },
+  "coCurricularPlan": [
+    {
+      "activityId": "class-01-कला-arts",
+      "domain": "Visual & Performing Arts (Kala)",
+      "title": {
+        "en": "Indian Art, Craft, Music & Theatre Studio",
+        "hi": "भारतीय कला, शिल्प, संगीत और रंगमंच"
+      },
+      "weeklyMinutes": 60,
+      "description": "Hands-on sketching, clay modelling, folk rhythm, and dramatic storytelling aligned with NCF-SE Art Education."
+    },
+    {
+      "activityId": "class-01-physical-yoga",
+      "domain": "Physical Education, Yoga & Wellness",
+      "title": {
+        "en": "Daily Outdoor Movement, Yoga & Indigenous Games",
+        "hi": "दैनिक आउटडोर खेल, योग और स्वदेशी खेल"
+      },
+      "weeklyMinutes": 120,
+      "description": "Structured physical play, flexibility, breathwork, and team coordination off-screen."
+    }
+  ],
+  "extracurricularPlan": [
+    {
+      "clubId": "class-01-peer-pod-stem",
+      "category": "STEM & Maker Peer Pod",
+      "title": {
+        "en": "Neighbourhood Science, Nature & Maker Pod",
+        "hi": "पड़ोस विज्ञान, प्रकृति और नवाचार समूह"
+      },
+      "frequency": "Weekly 60-minute collaborative session",
+      "peerPodMode": "Small group of 4-6 learners building offline experiments, nature journals, or coding projects together."
+    },
+    {
+      "clubId": "class-01-peer-pod-expression",
+      "category": "Bilingual Debate, Storytelling & Community Action",
+      "title": {
+        "en": "Bilingual Kahani, Debate & Seva Circle",
+        "hi": "द्विभाषी कहानी, वाद-विवाद और सेवा मंडल"
+      },
+      "frequency": "Bi-weekly 45-minute peer circle",
+      "peerPodMode": "Moderated oral expression, debate, and local community/environmental stewardship."
+    }
+  ],
+  "parentViewPlan": {
+    "cadence": "daily-caregiver-brief",
+    "sections": [
+      "Planned vs Completed Sessions & Weekly Buffer Status",
+      "Skill-Level Mastery Gains & Prerequisite Gaps Bridged",
+      "Screen Time Used vs Pediatric Cap (IAP Compliant)",
+      "Pinned Curriculum Version & Official Source Changelog",
+      "One Concrete Offline Family Action for the Week"
+    ],
+    "homeActions": [
+      {
+        "en": "Spend 15 minutes in screen-free serve-and-return storytelling and sorting household objects in your home language.",
+        "hi": "प्रतिदिन 15 मिनट बिना स्क्रीन के मातृभाषा में कहानी सुनाएं और घरेलू वस्तुओं से खेल-खेल में गिनती करें।"
+      },
+      {
+        "en": "Verify weekly peer-pod outdoor play and co-curricular art/movement completion.",
+        "hi": "साप्ताहिक सह-पाठयक्रम कला, योग और समूह खेल की पूर्णता सुनिश्चित करें।"
+      }
+    ],
+    "consentControls": [
+      "DPDP Act 2023 Section 9 Verifiable Guardian Consent Toggle",
+      "Daily Screen-Time Hard Cap Slider (IAP Guideline Enforced)",
+      "One-Click Full Learner JSON Export & Immediate Data Erasure"
+    ]
+  },
+  "trackBridges": [
+    {
+      "trackId": "jee",
+      "status": "not-started-yet",
+      "bridgedSkillIds": [],
+      "notes": "Competitive track branches activate from Class 8-9 after core numeracy and inquiry foundations are secure."
+    }
+  ],
+  "sourceIds": [
+    "SRC-IAP-SCREENTIME-2022",
+    "SRC-NCERT-PARAKH-2024",
+    "SRC-NCERT-NCFFS-2022",
+    "SRC-NCERT-NSTC-2023"
+  ],
+  "knownGaps": [
+    {
+      "gapId": "gap-nios-class-01-tma",
+      "area": "NIOS Annual Tutor Marked Assignment (TMA) Question Prompts",
+      "description": "NIOS subject codes and OBE/Secondary/Sr. Secondary structures are sourced; session-specific TMA question booklets are ingested per exam cycle in Phase 3.",
+      "targetPhase": "Phase 3"
+    }
+  ]
+}
