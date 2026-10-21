@@ -1,0 +1,673 @@
+{
+  "skeleton_id": "cbse-class-11",
+  "board_id": "cbse",
+  "year_id": "class-11",
+  "academic_session": "2026-27",
+  "nep_stage": "secondary",
+  "coverage_status": "partially-sourced",
+  "certification_point": null,
+  "scheme_notes": [
+    {
+      "text": "Subjects listed are those with NCERT textbooks for this class. Which subjects CBSE offers, stream rules and Core vs Elective language papers come from the Senior Secondary Curriculum Part-II 2026-27.",
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX",
+        "SRC-CBSE-CURRICULUM-2026-27-PAGE"
+      ]
+    }
+  ],
+  "subjects": [
+    {
+      "status": "partially-sourced",
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX",
+        "SRC-CBSE-CIRC-ACAD-14-2026",
+        "SRC-CBSE-CURRICULUM-2026-27-PAGE"
+      ],
+      "subject_id": "english",
+      "name_en": "English",
+      "name_hi": "अंग्रेज़ी",
+      "name_hi_basis": "ui-translation",
+      "skill_ids": [
+        "lang-english"
+      ],
+      "ncert_textbook_titles": [
+        "Hornbill",
+        "Snapshots Suppl.Reader English",
+        "Woven Words"
+      ],
+      "ncert_hindi_medium_titles": [],
+      "language_slot": "any",
+      "notes": []
+    },
+    {
+      "status": "partially-sourced",
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX",
+        "SRC-CBSE-CIRC-ACAD-14-2026",
+        "SRC-CBSE-CURRICULUM-2026-27-PAGE"
+      ],
+      "subject_id": "hindi",
+      "name_en": "Hindi",
+      "name_hi": "हिंदी",
+      "name_hi_basis": "ui-translation",
+      "skill_ids": [
+        "lang-hindi"
+      ],
+      "ncert_textbook_titles": [
+        "Aroh",
+        "Vitan",
+        "Antra",
+        "Antral"
+      ],
+      "ncert_hindi_medium_titles": [],
+      "language_slot": "any",
+      "notes": []
+    },
+    {
+      "status": "partially-sourced",
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX",
+        "SRC-CBSE-CIRC-ACAD-14-2026",
+        "SRC-CBSE-CURRICULUM-2026-27-PAGE"
+      ],
+      "subject_id": "sanskrit",
+      "name_en": "Sanskrit",
+      "name_hi": "संस्कृत",
+      "name_hi_basis": "ui-translation",
+      "skill_ids": [
+        "lang-sanskrit"
+      ],
+      "ncert_textbook_titles": [
+        "Bhaswati",
+        "Shashwati"
+      ],
+      "ncert_hindi_medium_titles": [],
+      "language_slot": "any",
+      "notes": []
+    },
+    {
+      "status": "partially-sourced",
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX",
+        "SRC-CBSE-CIRC-ACAD-14-2026",
+        "SRC-CBSE-CURRICULUM-2026-27-PAGE"
+      ],
+      "subject_id": "mathematics",
+      "name_en": "Mathematics",
+      "name_hi": "गणित",
+      "name_hi_basis": "ui-translation",
+      "skill_ids": [
+        "area-mathematics"
+      ],
+      "ncert_textbook_titles": [
+        "Mathematics"
+      ],
+      "ncert_hindi_medium_titles": [
+        "Ganit"
+      ],
+      "notes": []
+    },
+    {
+      "status": "partially-sourced",
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX",
+        "SRC-CBSE-CIRC-ACAD-14-2026",
+        "SRC-CBSE-CURRICULUM-2026-27-PAGE"
+      ],
+      "subject_id": "physics",
+      "name_en": "Physics",
+      "name_hi": "भौतिकी",
+      "name_hi_basis": "ui-translation",
+      "skill_ids": [
+        "ss-physics"
+      ],
+      "ncert_textbook_titles": [
+        "Physics Part-I",
+        "Physics Part-II"
+      ],
+      "ncert_hindi_medium_titles": [
+        "Bhautiki-I",
+        "Bhautiki-II"
+      ],
+      "notes": []
+    },
+    {
+      "status": "partially-sourced",
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX",
+        "SRC-CBSE-CIRC-ACAD-14-2026",
+        "SRC-CBSE-CURRICULUM-2026-27-PAGE"
+      ],
+      "subject_id": "chemistry",
+      "name_en": "Chemistry",
+      "name_hi": "रसायन विज्ञान",
+      "name_hi_basis": "ui-translation",
+      "skill_ids": [
+        "ss-chemistry"
+      ],
+      "ncert_textbook_titles": [
+        "Chemistry Part-I",
+        "Chemistry Part II"
+      ],
+      "ncert_hindi_medium_titles": [
+        "Rasayan Vigyan bhag-I",
+        "Rasayan Vigyan bhag-II"
+      ],
+      "notes": []
+    },
+    {
+      "status": "partially-sourced",
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX",
+        "SRC-CBSE-CIRC-ACAD-14-2026",
+        "SRC-CBSE-CURRICULUM-2026-27-PAGE"
+      ],
+      "subject_id": "biology",
+      "name_en": "Biology",
+      "name_hi": "जीव विज्ञान",
+      "name_hi_basis": "ui-translation",
+      "skill_ids": [
+        "ss-biology"
+      ],
+      "ncert_textbook_titles": [
+        "Biology"
+      ],
+      "ncert_hindi_medium_titles": [
+        "Jeev Vigyan"
+      ],
+      "notes": []
+    },
+    {
+      "status": "partially-sourced",
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX",
+        "SRC-CBSE-CIRC-ACAD-14-2026",
+        "SRC-CBSE-CURRICULUM-2026-27-PAGE"
+      ],
+      "subject_id": "accountancy",
+      "name_en": "Accountancy",
+      "name_hi": "लेखाशास्त्र",
+      "name_hi_basis": "ui-translation",
+      "skill_ids": [
+        "ss-accountancy"
+      ],
+      "ncert_textbook_titles": [
+        "Financial Accounting-I",
+        "Accountancy-II"
+      ],
+      "ncert_hindi_medium_titles": [
+        "Lekhashastra-I",
+        "Lekhashastra-II"
+      ],
+      "notes": []
+    },
+    {
+      "status": "partially-sourced",
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX",
+        "SRC-CBSE-CIRC-ACAD-14-2026",
+        "SRC-CBSE-CURRICULUM-2026-27-PAGE"
+      ],
+      "subject_id": "business-studies",
+      "name_en": "Business Studies",
+      "name_hi": "व्यवसाय अध्ययन",
+      "name_hi_basis": "ui-translation",
+      "skill_ids": [
+        "ss-business-studies"
+      ],
+      "ncert_textbook_titles": [
+        "Business Studies"
+      ],
+      "ncert_hindi_medium_titles": [
+        "Vyavsay Adhyanan"
+      ],
+      "notes": []
+    },
+    {
+      "status": "partially-sourced",
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX",
+        "SRC-CBSE-CIRC-ACAD-14-2026",
+        "SRC-CBSE-CURRICULUM-2026-27-PAGE"
+      ],
+      "subject_id": "economics",
+      "name_en": "Economics",
+      "name_hi": "अर्थशास्त्र",
+      "name_hi_basis": "ui-translation",
+      "skill_ids": [
+        "ss-economics"
+      ],
+      "ncert_textbook_titles": [
+        "Indian Economic Development",
+        "Statistics for Economics"
+      ],
+      "ncert_hindi_medium_titles": [
+        "Sankhyiki",
+        "Bhartiya Airthryavstha Ka Vikas"
+      ],
+      "notes": []
+    },
+    {
+      "status": "partially-sourced",
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX",
+        "SRC-CBSE-CIRC-ACAD-14-2026",
+        "SRC-CBSE-CURRICULUM-2026-27-PAGE"
+      ],
+      "subject_id": "history",
+      "name_en": "History",
+      "name_hi": "इतिहास",
+      "name_hi_basis": "ui-translation",
+      "skill_ids": [
+        "ss-history"
+      ],
+      "ncert_textbook_titles": [
+        "Themes in World History"
+      ],
+      "ncert_hindi_medium_titles": [
+        "Vishwa Itihas Ke Kuch Vishay"
+      ],
+      "notes": []
+    },
+    {
+      "status": "partially-sourced",
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX",
+        "SRC-CBSE-CIRC-ACAD-14-2026",
+        "SRC-CBSE-CURRICULUM-2026-27-PAGE"
+      ],
+      "subject_id": "geography",
+      "name_en": "Geography",
+      "name_hi": "भूगोल",
+      "name_hi_basis": "ui-translation",
+      "skill_ids": [
+        "ss-geography"
+      ],
+      "ncert_textbook_titles": [
+        "Fundamental of Physical Geography",
+        "India Physical Environment",
+        "Pratical Work in Geography"
+      ],
+      "ncert_hindi_medium_titles": [
+        "Bhautique Bhugol ke Mool Sidhant",
+        "Bhugol Main Prayogatmak Karya"
+      ],
+      "notes": []
+    },
+    {
+      "status": "partially-sourced",
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX",
+        "SRC-CBSE-CIRC-ACAD-14-2026",
+        "SRC-CBSE-CURRICULUM-2026-27-PAGE"
+      ],
+      "subject_id": "political-science",
+      "name_en": "Political Science",
+      "name_hi": "राजनीति विज्ञान",
+      "name_hi_basis": "ui-translation",
+      "skill_ids": [
+        "ss-political-science"
+      ],
+      "ncert_textbook_titles": [
+        "Political Theory",
+        "India Constitution at Work"
+      ],
+      "ncert_hindi_medium_titles": [
+        "Raajneeti Sidhant",
+        "Bharat ka Samvidhan Sidhant aur Vyavhar"
+      ],
+      "notes": []
+    },
+    {
+      "status": "partially-sourced",
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX",
+        "SRC-CBSE-CIRC-ACAD-14-2026",
+        "SRC-CBSE-CURRICULUM-2026-27-PAGE"
+      ],
+      "subject_id": "sociology",
+      "name_en": "Sociology",
+      "name_hi": "समाजशास्त्र",
+      "name_hi_basis": "ui-translation",
+      "skill_ids": [
+        "ss-sociology"
+      ],
+      "ncert_textbook_titles": [
+        "Introducing Sociology",
+        "Understanding Society"
+      ],
+      "ncert_hindi_medium_titles": [
+        "Samaj Shastra Parichay-I",
+        "Samaj ka Bodh"
+      ],
+      "notes": []
+    },
+    {
+      "status": "partially-sourced",
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX",
+        "SRC-CBSE-CIRC-ACAD-14-2026",
+        "SRC-CBSE-CURRICULUM-2026-27-PAGE"
+      ],
+      "subject_id": "psychology",
+      "name_en": "Psychology",
+      "name_hi": "मनोविज्ञान",
+      "name_hi_basis": "ui-translation",
+      "skill_ids": [
+        "ss-psychology"
+      ],
+      "ncert_textbook_titles": [
+        "Introduction to Psychology"
+      ],
+      "ncert_hindi_medium_titles": [
+        "Manovigyan"
+      ],
+      "notes": []
+    },
+    {
+      "status": "partially-sourced",
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX",
+        "SRC-CBSE-CIRC-ACAD-14-2026",
+        "SRC-CBSE-CURRICULUM-2026-27-PAGE"
+      ],
+      "subject_id": "computer-science",
+      "name_en": "Computer Science",
+      "name_hi": "कंप्यूटर विज्ञान",
+      "name_hi_basis": "ui-translation",
+      "skill_ids": [
+        "ss-computer-science"
+      ],
+      "ncert_textbook_titles": [
+        "Computer Science"
+      ],
+      "ncert_hindi_medium_titles": [],
+      "notes": []
+    },
+    {
+      "status": "partially-sourced",
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX",
+        "SRC-CBSE-CIRC-ACAD-14-2026",
+        "SRC-CBSE-CURRICULUM-2026-27-PAGE"
+      ],
+      "subject_id": "informatics-practices",
+      "name_en": "Informatics Practices",
+      "name_hi": "इन्फॉर्मेटिक्स प्रैक्टिसेज",
+      "name_hi_basis": "ui-translation",
+      "skill_ids": [
+        "ss-informatics-practices"
+      ],
+      "ncert_textbook_titles": [
+        "Informatics Practices"
+      ],
+      "ncert_hindi_medium_titles": [],
+      "notes": []
+    },
+    {
+      "status": "partially-sourced",
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX",
+        "SRC-CBSE-CIRC-ACAD-14-2026",
+        "SRC-CBSE-CURRICULUM-2026-27-PAGE"
+      ],
+      "subject_id": "home-science",
+      "name_en": "Home Science",
+      "name_hi": "गृह विज्ञान",
+      "name_hi_basis": "ui-translation",
+      "skill_ids": [
+        "ss-home-science"
+      ],
+      "ncert_textbook_titles": [
+        "Human Ecology and Family Sciences Part I",
+        "Human Ecology and Family Sciences Part II"
+      ],
+      "ncert_hindi_medium_titles": [],
+      "notes": []
+    },
+    {
+      "status": "partially-sourced",
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX",
+        "SRC-CBSE-CIRC-ACAD-14-2026",
+        "SRC-CBSE-CURRICULUM-2026-27-PAGE"
+      ],
+      "subject_id": "physical-education-wellbeing",
+      "name_en": "Health and Physical Education",
+      "name_hi": "शारीरिक शिक्षा और कल्याण",
+      "name_hi_basis": "ui-translation",
+      "skill_ids": [
+        "area-physical-education-wellbeing"
+      ],
+      "ncert_textbook_titles": [
+        "Health and Physical Education"
+      ],
+      "ncert_hindi_medium_titles": [],
+      "notes": []
+    }
+  ],
+  "skills": [
+    {
+      "skill_id": "lang-english",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "lang-hindi",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "lang-sanskrit",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "area-mathematics",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "ss-physics",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "ss-chemistry",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "ss-biology",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "ss-accountancy",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "ss-business-studies",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "ss-economics",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "ss-history",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "ss-geography",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "ss-political-science",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "ss-sociology",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "ss-psychology",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "ss-computer-science",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "ss-informatics-practices",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "ss-home-science",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "area-physical-education-wellbeing",
+      "depth": "domain-only"
+    }
+  ],
+  "term_plan": {
+    "status": "skeleton",
+    "basis": "product-default",
+    "terms": [
+      {
+        "term_id": "term-1",
+        "label_en": "Term 1",
+        "label_hi": "सत्र 1"
+      },
+      {
+        "term_id": "term-2",
+        "label_en": "Term 2",
+        "label_hi": "सत्र 2"
+      }
+    ],
+    "notes": [
+      "Two-term split is a product default until each board's academic calendar guidance is ingested."
+    ]
+  },
+  "weekly_plan": {
+    "status": "gap",
+    "basis": "not-yet-sourced",
+    "weeks_per_year": null,
+    "sessions_per_week": null,
+    "notes": [
+      "Periods per week per subject to come from each board's scheme of studies; product defaults set in Phase 2 where boards are silent."
+    ]
+  },
+  "daily_lesson_template": {
+    "status": "skeleton",
+    "basis": "product-default",
+    "loop": [
+      "recall-warm-up",
+      "new-idea",
+      "worked-example",
+      "guided-practice",
+      "independent-practice",
+      "exit-check",
+      "offline-practice-task"
+    ],
+    "screen_minutes_cap": null,
+    "source_ids": [],
+    "notes": [
+      "School-age screen cap is guardian-set; Phase 2 decides the product default."
+    ]
+  },
+  "assessments": {
+    "unit_tests": {
+      "status": "skeleton",
+      "basis": "product-default",
+      "notes": [
+        "One short unit check per unit once units are ingested."
+      ]
+    },
+    "internals": {
+      "status": "gap",
+      "basis": "not-yet-sourced",
+      "notes": [
+        "Board internal-assessment components and weights not yet ingested."
+      ]
+    },
+    "term_exams": {
+      "status": "skeleton",
+      "basis": "product-default",
+      "source_ids": [],
+      "notes": []
+    },
+    "board_style_mocks": {
+      "status": "not-applicable",
+      "basis": "product-default",
+      "applicable": false
+    }
+  },
+  "co_curricular": {
+    "status": "partially-sourced",
+    "basis": "board-mandated",
+    "areas": [
+      "Health and Physical Education"
+    ],
+    "source_ids": [
+      "SRC-NCERT-TEXTBOOK-INDEX"
+    ],
+    "notes": [
+      "Listed areas have official NCERT textbooks for this class."
+    ]
+  },
+  "extracurricular": {
+    "status": "skeleton",
+    "basis": "product-default",
+    "areas": [
+      "clubs",
+      "sports",
+      "competitions-and-olympiads",
+      "community-service",
+      "reading-programme",
+      "in-person-peer-group"
+    ],
+    "notes": [
+      "In-person peer activities are included on purpose to address the social learning risk."
+    ]
+  },
+  "parent_view": {
+    "status": "skeleton",
+    "basis": "product-default",
+    "sections": [
+      "this-week",
+      "skill-progress",
+      "assessments-and-feedback",
+      "screen-time",
+      "what-to-do-at-home",
+      "consent-and-data"
+    ]
+  },
+  "source_ids": [
+    "SRC-NCERT-TEXTBOOK-INDEX",
+    "SRC-CBSE-CIRC-ACAD-14-2026",
+    "SRC-CBSE-CURRICULUM-2026-27-PAGE"
+  ],
+  "gaps": [
+    {
+      "gap_id": "G-CBSE-CLASS-11-SUBJECT-OFFER",
+      "missing": "Official CBSE subject offer, combinations, Core vs Elective split for English and Hindi, and Applied Mathematics",
+      "resolve_from": "CBSE Senior Secondary Curriculum Part-II 2026-27",
+      "phase": "phase-2"
+    },
+    {
+      "gap_id": "G-CBSE-CLASS-11-UNITS",
+      "missing": "Unit and chapter level content and learning outcomes for this year",
+      "resolve_from": "CBSE Curriculum 2026-27 subject PDFs (cbseacademic.nic.in/curriculum_2027.html) and NCERT textbook contents",
+      "phase": "phase-3"
+    },
+    {
+      "gap_id": "G-CBSE-CLASS-11-PERIODS",
+      "missing": "Periods or sessions per week per subject",
+      "resolve_from": "Board scheme of studies; product default where the board is silent",
+      "phase": "phase-2"
+    },
+    {
+      "gap_id": "G-CBSE-CLASS-11-INTERNALS",
+      "missing": "Internal assessment components and weightage",
+      "resolve_from": "Board curriculum or assessment framework document",
+      "phase": "phase-3"
+    }
+  ],
+  "generated_by": "scripts/generate-curriculum-skeletons.mjs",
+  "built_on": "2026-10-21"
+}

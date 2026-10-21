@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0.0",
+  "learner_id": "3f2b6c1e-8a4d-4f7a-9c2e-1b5d7e9a0c11",
+  "created_at": "2026-10-21T09:00:00Z",
+  "is_minor": true,
+  "birth_year_month": "2017-06",
+  "nickname": "Test Learner",
+  "languages": {
+    "home_languages": [
+      "hi",
+      "en"
+    ],
+    "instruction_language": "hi",
+    "r1": "Hindi",
+    "r2": "English",
+    "r3": null
+  },
+  "enrolment": {
+    "board_id": "cbse",
+    "current_year_id": "class-04",
+    "academic_session": "2026-27",
+    "certification_route": "nios-open-schooling"
+  },
+  "placement": {
+    "diagnostic_version": "0.0.0-not-built",
+    "placed_year_by_skill": {
+      "area-mathematics": "class-04",
+      "lang-english": "class-03"
+    },
+    "confidence": 0.5
+  },
+  "skill_mastery": [
+    {
+      "skill_id": "area-mathematics",
+      "mastery": 0.4,
+      "evidence_count": 0
+    }
+  ],
+  "goals": {
+    "track_ids": []
+  },
+  "accessibility": {
+    "audio_first": false,
+    "font_scale": 1,
+    "reduced_motion": false
+  },
+  "device_and_network": {
+    "primary_device": "shared-family-device",
+    "bandwidth": "3g",
+    "offline_packs_enabled": true
+  },
+  "screen_time_policy": {
+    "daily_learner_screen_minutes_cap": 60,
+    "basis": "guardian-set"
+  },
+  "guardian_consent": {
+    "guardian_ref": "9a1c2e3d-4b5f-4c6a-8d7e-0f1a2b3c4d5e",
+    "relationship": "parent",
+    "verification_method": "voluntarily-provided-details-verified",
+    "scopes": [
+      "learning-delivery",
+      "progress-reports-to-guardian",
+      "diagnostic-assessment"
+    ],
+    "notice_version": "draft-0",
+    "granted_at": "2026-10-21T09:00:00Z",
+    "withdrawn_at": null
+  },
+  "parent_view_prefs": {
+    "language": "hi",
+    "digest": "weekly"
+  },
+  "data_retention": {
+    "erase_after_inactive_days": 365
+  }
+}

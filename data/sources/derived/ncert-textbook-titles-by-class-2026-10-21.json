@@ -1,0 +1,1508 @@
+{
+  "source_id": "SRC-NCERT-TEXTBOOK-INDEX",
+  "snapshot_file": "data/sources/snapshots/ncert-textbook-index-snapshot-2026-10-21.html",
+  "snapshot_taken_on": "2026-10-21",
+  "method": "Union of all live dropdown titles per class and subject; JavaScript comments stripped",
+  "blocks_parsed": 169,
+  "classes": {
+    "1": {
+      "English": [
+        "Mridang"
+      ],
+      "Mathematics": [
+        "Joyful-Mathematics (English)",
+        "Joyful-Mathematics (Hindi)",
+        "Joyful-Mathematics (Marathi)",
+        "Joyful-Mathematics (Sindhi)",
+        "Joyful-Mathematics (Punjabi)",
+        "Joyful-Mathematics (Gujarati)",
+        "Joyful-Mathematics (Malayalam)",
+        "Joyful-Mathematics (Konkani)",
+        "Joyful-Mathematics (Assamese)",
+        "Joyful-Mathematics (Maithili)",
+        "Joyful-Mathematics (Bodo)",
+        "Joyful-Mathematics (Sanskrit)",
+        "Joyful-Mathematics (Oriya)",
+        "Joyful-Mathematics (Bengali)",
+        "Joyful-Mathematics (Santhali)",
+        "Joyful-Mathematics (Manipuri)",
+        "Joyful-Mathematics (Urdu)",
+        "Joyful-Mathematics (Nepali)",
+        "Joyful-Mathematics (Telugu)",
+        "Joyful-Mathematics (Kannada)",
+        "Joyful-Mathematics (Tamil)",
+        "Joyful-Mathematics (Dogri)",
+        "Joyful-Mathematics (Kashmiri)"
+      ],
+      "Hindi": [
+        "Sarangi"
+      ],
+      "Urdu": [
+        "Shahnai"
+      ]
+    },
+    "2": {
+      "Mathematics": [
+        "Joyful-Mathematics (English)",
+        "Joyful-Mathematics (Hindi)",
+        "Joyful-Mathematics (Assamese)",
+        "Joyful-Mathematics (Punjabi)",
+        "Joyful-Mathematics (Gujarati)",
+        "Joyful-Mathematics (Malayalam)",
+        "Joyful-Mathematics (Maithli)",
+        "Joyful-Mathematics (Bodo)",
+        "Joyful-Mathematics (Marathi)",
+        "Joyful-Mathematics (Sindhi)",
+        "Joyful-Mathematics (Bengali)",
+        "Joyful-Mathematics (Sanskrit)",
+        "Joyful-Mathematics (Nepali)",
+        "Joyful-Mathematics (Oriya)",
+        "Joyful-Mathematics (Manipuri)",
+        "Joyful-Mathematics (Urdu)",
+        "Joyful-Mathematics (Santhali)",
+        "Joyful-Mathematics (Konkani)",
+        "Joyful-Mathematics (Kannada)",
+        "Joyful-Mathematics (Tamil)",
+        "Joyful-Mathematics (Telugu)",
+        "Joyful-Mathematics (Dogri)",
+        "Joyful-Mathematics (Kashmiri)"
+      ],
+      "Hindi": [
+        "Sarangi"
+      ],
+      "English": [
+        "Mridang"
+      ],
+      "Urdu": [
+        "Shahnai"
+      ]
+    },
+    "3": {
+      "Hindi": [
+        "Rimjhim",
+        "Veena"
+      ],
+      "Environmental Studies": [
+        "Looking Around",
+        "Aas-Pass",
+        "Aas-Pass(urdu)"
+      ],
+      "English": [
+        "Marigold",
+        "Santoor"
+      ],
+      "Mathematics": [
+        "Mathematics",
+        "Ganit",
+        "Riyazi Ka Jadoo-III(Urdu)",
+        "Maths Mela",
+        "Ganit Mela",
+        "Riyazi Mela",
+        "Maths Mela (Assamese)",
+        "Maths Mela (Bengali)",
+        "Maths Mela (Bodo)",
+        "Maths Mela (Dogri)",
+        "Maths Mela (Gujarati)",
+        "Maths Mela (Kannada)",
+        "Maths Mela (Maithili)",
+        "Maths Mela (Malayalam)",
+        "Maths Mela (Manipuri)",
+        "Maths Mela (Nepali)",
+        "Maths Mela (Odia)",
+        "Maths Mela (Punjabi)",
+        "Maths Mela (Santhali)",
+        "Maths Mela (Tamil)",
+        "Maths Mela (Telugu)",
+        "Maths Mela (Sanskrit)",
+        "Maths Mela (Marathi)",
+        "Maths Mela (Konkani)",
+        "Maths Mela (Sindhi)",
+        "Maths Mela (Kashmiri)"
+      ],
+      "Urdu": [
+        "Ibtedai Urdu",
+        "Sitar"
+      ],
+      "The World Around Us": [
+        "Our Wondrous World",
+        "Hamara Adhbhut Sansar",
+        "Hamari Hairat Angez Duniya",
+        "Our Wondrous World (Bengali)",
+        "Our Wondrous World (Odia)",
+        "Our Wondrous World (Marathi)",
+        "Our Wondrous World (Nepali)",
+        "Our Wondrous World (Telugu)",
+        "Our Wondrous World (Gujrati)",
+        "Our Wondrous World (Manipuri)",
+        "Our Wondrous World (Sanskrit)",
+        "Our Wondrous World (Assamese)",
+        "Our Wondrous World (Bodo)",
+        "Our Wondrous World (Punjabi)",
+        "Our Wondrous World (Malayalam)",
+        "Our Wondrous World (Maithili)",
+        "Our Wondrous World (Dogri)",
+        "Our Wondrous World (Kannada)",
+        "Our Wondrous World (Santhali)",
+        "Our Wondrous World (Tamil)",
+        "Our Wondrous World (Sindhi)",
+        "Our Wondrous World (Kashmiri)",
+        "Our Wondrous World (Konkani)"
+      ],
+      "Arts": [
+        "Bansuri - I",
+        "Bansuri - I (Hindi)",
+        "Bansuri - I (Urdu)",
+        "Bansuri - I (Bengali)",
+        "Bansuri - I (Maithili)",
+        "Bansuri - I (Manipuri)",
+        "Bansuri - I (Marathi)",
+        "Bansuri - I (Nepali)",
+        "Bansuri - I (Punjabi)",
+        "Bansuri - I (Bodo)",
+        "Bansuri - I (Gujarati)",
+        "Bansuri - I (Dogri)",
+        "Bansuri - I (Konkani)",
+        "Bansuri - I (Santhali)",
+        "Bansuri - I (Tamil)",
+        "Bansuri - I (Telugu)",
+        "Bansuri - I (Assamese)",
+        "Bansuri - I (Kannada)",
+        "Bansuri - I (Sanskrit)",
+        "Bansuri - I (Malayalam)",
+        "Bansuri - I (Odia)",
+        "Bansuri - I (Sindhi)",
+        "Bansuri - I (Kashmiri)"
+      ],
+      "Physical Education and Well Being": [
+        "Khel Yoga",
+        "Khel Yoga (Hindi)",
+        "Khel Yoga (Malayalam)",
+        "Khel Yoga (Bengali)",
+        "Khel Yoga (Gujarati)",
+        "Khel Yoga (Kannada)",
+        "Khel Yoga (Konkani)",
+        "Khel Yoga (Manipuri)",
+        "Khel Yoga (Nepali)",
+        "Khel Yoga (Odia)",
+        "Khel Yoga (Assamese)",
+        "Khel Yoga (Dogri)",
+        "Khel Yoga (Punjabi)",
+        "Khel Yoga (Sanskrit)",
+        "Khel Yoga (Santhali)",
+        "Khel Yoga (Tamil)",
+        "Khel Yoga (Marathi)",
+        "Khel Yoga (Bodo)",
+        "Khel Yoga (Telugu)",
+        "Khel Yoga (Maithili)",
+        "Khel Yoga (Urdu)",
+        "Khel Yoga (Sindhi)",
+        "Khel Yoga (Kashmiri)"
+      ]
+    },
+    "4": {
+      "Mathematics": [
+        "Math-Magic",
+        "Ganit Ka Jadu",
+        "Riyazi Ka Jadu(Urdu)",
+        "Math-Mela",
+        "Ganit Mela",
+        "Riyazi Mela",
+        "Math-Mela (Maithili)",
+        "Math-Mela (Punjabi)",
+        "Math-Mela (Gujarati)",
+        "Math-Mela (Dogri)",
+        "Math-Mela (Nepali)",
+        "Math-Mela (Manipuri)",
+        "Math-Mela (Assamese)",
+        "Math-Mela (Sindhi)",
+        "Math-Mela (Odia)",
+        "Math-Mela (Bodo)",
+        "Math-Mela (Bengali)",
+        "Math-Mela (Marathi)",
+        "Math-Mela (Kannada)",
+        "Math-Mela (Malayalam)",
+        "Math-Mela (Sanskrit)",
+        "Math-Mela (Tamil)",
+        "Math-Mela (Santhali)",
+        "Math-Mela (Telugu)",
+        "Math-Mela (Konkani)",
+        "Math-Mela (Kashmiri)"
+      ],
+      "Hindi": [
+        "Rimjhim",
+        "Veena"
+      ],
+      "Environmental Studies": [
+        "Looking Around(EVS)",
+        "Aas Paas",
+        "Aas-Paas(Urdu)"
+      ],
+      "The World Around Us": [
+        "Our Wonderous World",
+        "Hamara Adhbhut Sansar",
+        "Hamari Hairatangez Duniya",
+        "Our Wonderous World (Punjabi)",
+        "Our Wonderous World (Gujarati)",
+        "Our Wondrous World (Kannada)",
+        "Our Wondrous World (Sanskrit)",
+        "Our Wondrous World (Konkani)",
+        "Our Wondrous World (Bengali)",
+        "Our Wondrous World (Odia)",
+        "Our Wondrous World (Marathi)",
+        "Our Wondrous World (Malayalam)",
+        "Our Wondrous World (Bodo)",
+        "Our Wondrous World (Nepali)",
+        "Our Wondrous World (Assamese)",
+        "Our Wondrous World (Dogri)",
+        "Our Wondrous World (Manipuri)",
+        "Our Wondrous World (Tamil)",
+        "Our Wondrous World (Kashmiri)",
+        "Our Wondrous World (Telugu)",
+        "Our Wondrous World (Sindhi)",
+        "Our Wondrous World (Santhali)",
+        "Our Wondrous World (Maithili)"
+      ],
+      "English": [
+        "Marigold",
+        "Santoor"
+      ],
+      "Arts": [
+        "Bansuri",
+        "Bansuri - I (Hindi)",
+        "Bansuri - I (Urdu)",
+        "Bansuri - I (Odia)",
+        "Bansuri - I (Gujarati)",
+        "Bansuri - I (Punjabi)",
+        "Bansuri - I (Sindhi)",
+        "Bansuri - I (Tamil)",
+        "Bansuri - I (Bodo)",
+        "Bansuri - I (Nepali)",
+        "Bansuri - I (Konkani)",
+        "Bansuri - I (Assamese)",
+        "Bansuri - I (Bengali)",
+        "Bansuri - I (Dogri)",
+        "Bansuri - I (Manipuri)",
+        "Bansuri - I (Sanskrit)",
+        "Bansuri - I (Malayalam)",
+        "Bansuri - I (Kannada)",
+        "Bansuri - I (Kashmiri)",
+        "Bansuri - I (Maithili)",
+        "Bansuri - I (Marathi)",
+        "Bansuri - I (Santhali)",
+        "Bansuri - I (Telugu)"
+      ],
+      "Physical Education and Well Being": [
+        "Khel Yoga",
+        "Khel Yoga(Hindi)",
+        "Khel Yoga(Odia)",
+        "Khel Yoga(Gujarati)",
+        "Khel Yoga(Bengali)",
+        "Khel Yoga (Assamese)",
+        "Khel Yoga (Tamil)",
+        "Khel Yoga (Punjabi)",
+        "Khel Yoga (Marathi)",
+        "Khel Yoga (Telugu)",
+        "Khel Yoga (Dogri)",
+        "Khel Yoga (Kannada)",
+        "Khel Yoga (Nepali)",
+        "Khel Yoga (Sanskrit)",
+        "Khel Yoga (Kashmiri)",
+        "Khel Yoga (Malayalam)",
+        "Khel Yoga (Manipuri)",
+        "Khel Yoga (Bodo)",
+        "Khel Yoga (Maithili)",
+        "Khel Yoga (Konkani)",
+        "Khel Yoga (Sindhi)",
+        "Khel Yoga (Santhali)"
+      ],
+      "Urdu": [
+        "Ibtedai Urdu-IV",
+        "Sitaar"
+      ]
+    },
+    "5": {
+      "Mathematics": [
+        "Math-Mela",
+        "Ganit-Mela",
+        "Riyazi Mela",
+        "Math-Mela (Tamil)",
+        "Math-Mela (Marathi)",
+        "Math-Mela (Odia)",
+        "Math-Mela (Punjabi)",
+        "Math-Mela (Manipuri)",
+        "Math-Mela (Kannada)",
+        "Math-Mela (Nepali)",
+        "Math-Mela (Konkani)",
+        "Math-Mela (Assamese)",
+        "Math-Mela (Bodo)",
+        "Math-Mela (Bengali)",
+        "Math-Mela (Dogri)",
+        "Math-Mela (Malayalam)",
+        "Math-Mela (Telugu)",
+        "Math-Mela (Kashmiri)",
+        "Math-Mela (Gujarati)",
+        "Math-Mela (Sindhi)",
+        "Math-Mela (Santhali)",
+        "Math-Mela (Maithili)",
+        "Math-Mela (Sanskrit)",
+        "Math-Magic",
+        "Ganit",
+        "Riyazi Ka Jadoo(Urdu)"
+      ],
+      "Hindi": [
+        "Veena",
+        "Rimjhim"
+      ],
+      "English": [
+        "Santoor",
+        "Marigold"
+      ],
+      "The World Around Us": [
+        "Our Wonderous World",
+        "Hamara Adbhut Sansar",
+        "Hamari Hairatangez Duniya",
+        "Our Wonderous World (Odia)",
+        "Our Wonderous World (Gujarati)",
+        "Our Wonderous World (Santhali)",
+        "Our Wonderous World (Dogri)",
+        "Our Wonderous World (Malayalam)",
+        "Our Wonderous World (Sanskrit)",
+        "Our Wonderous World (Bengali)",
+        "Our Wonderous World (Nepali)",
+        "Our Wonderous World (Kannada)",
+        "Our Wonderous World (Punjabi)",
+        "Our Wonderous World (Tamil)",
+        "Our Wonderous World (Manipuri)",
+        "Our Wonderous World (Marathi)",
+        "Our Wonderous World (Telugu)",
+        "Our Wonderous World (Assamese)",
+        "Our Wonderous World (Kashmiri)",
+        "Our Wonderous World (Bodo)",
+        "Our Wonderous World (Maithili)",
+        "Our Wonderous World (Konkani)",
+        "Our Wonderous World (Sindhi)"
+      ],
+      "Arts": [
+        "Bansuri",
+        "Bansuri (Hindi)",
+        "Bansuri (Urdu)",
+        "Bansuri (Gujarati)",
+        "Bansuri (Maithili)",
+        "Bansuri (Odia)",
+        "Bansuri (Punjabi)",
+        "Bansuri (Kannada)",
+        "Bansuri (Bengali)",
+        "Bansuri (Dogri)",
+        "Bansuri (Tamil)",
+        "Bansuri (Kashmiri)",
+        "Bansuri (Nepali)",
+        "Bansuri (Assamese)",
+        "Bansuri (Sanskrit)",
+        "Bansuri (Marathi)",
+        "Bansuri (Sindhi)",
+        "Bansuri (Telugu)",
+        "Bansuri (Manipuri)",
+        "Bansuri (Malayalam)",
+        "Bansuri (Bodo)",
+        "Bansuri (Santhali)",
+        "Bansuri (Konkani)"
+      ],
+      "Physical Education and Well Being": [
+        "Khel Yoga",
+        "Khel Yoga(Odia)",
+        "Khel Yoga(Punjabi)",
+        "Khel Yoga(Kannada)",
+        "Khel Yoga(Bengali)",
+        "Khel Yoga(Tamil)",
+        "Khel Yoga(Nepali)",
+        "Khel Yoga(Maithili)",
+        "Khel Yoga(Manipuri)",
+        "Khel Yoga(Telugu)",
+        "Khel Yoga(Gujarati)",
+        "Khel Yoga(Assamese)",
+        "Khel Yoga(Konkani)",
+        "Khel Yoga(Sanskrit)",
+        "Khel Yoga(Bodo)",
+        "Khel Yoga(Dogri)",
+        "Khel Yoga(Kashmiri)",
+        "Khel Yoga(Marathi)",
+        "Khel Yoga(Santhali)",
+        "Khel Yoga(Sindhi)",
+        "Khel Yoga(Malayalam)"
+      ],
+      "Urdu": [
+        "Sitaar",
+        "Ibtedai Urdu Class-V",
+        "math-magic-V",
+        "EVS-V (Urdu)"
+      ],
+      "Environmental Studies": [
+        "Aas-Pass",
+        "Looking Around",
+        "Ass Pass(Urdu)"
+      ]
+    },
+    "6": {
+      "Hindi": [
+        "Malhar"
+      ],
+      "Vocational Education": [
+        "Kaushal Bodh",
+        "Kaushal Bodh (Hindi)",
+        "Kaushal Bodh (Bengali)",
+        "Kaushal Bodh (Bodo)",
+        "Kaushal Bodh (Dogri)",
+        "Kaushal Bodh (Konkani)",
+        "Kaushal Bodh (Odia)",
+        "Kaushal Bodh (Punjabi)",
+        "Kaushal Bodh (Malayalam)",
+        "Kaushal Bodh (Kannada)",
+        "Kaushal Bodh (Manipuri)",
+        "Kaushal Bodh (Tamil)",
+        "Kaushal Bodh (Gujarati)",
+        "Kaushal Bodh (Maithili)",
+        "Kaushal Bodh (Assamese)",
+        "Kaushal Bodh (Nepali)",
+        "Kaushal Bodh (Sanskrit)",
+        "Kaushal Bodh (Kashmiri)",
+        "Kaushal Bodh (Marathi)",
+        "Kaushal Bodh (Telugu)",
+        "Kaushal Bodh (Santhali)",
+        "Kaushal Bodh (Sindhi)"
+      ],
+      "Physical Education and Well Being": [
+        "Khel Yatra",
+        "Khel Yatra (Hindi)",
+        "Khel Yatra (Bengali)",
+        "Khel Yatra (Punjabi)",
+        "Khel Yatra (Assamese)",
+        "Khel Yatra (Tamil)",
+        "Khel Yatra (Nepali)",
+        "Khel Yatra (Odia)",
+        "Khel Yatra (Dogri)",
+        "Khel Yatra (Telugu)",
+        "Khel Yatra (Konkani)",
+        "Khel Yatra (Kannada)",
+        "Khel Yatra (Malayalam)",
+        "Khel Yatra (Bodo)",
+        "Khel Yatra (Kashmiri)",
+        "Khel Yatra (Manipuri)",
+        "Khel Yatra (Marathi)",
+        "Khel Yatra (Sanskrit)",
+        "Khel Yatra (Santhali)",
+        "Khel Yatra (Sindhi)",
+        "Khel Yatra (Maithili)",
+        "Khel Yatra (Gujarati)",
+        "Jismani Taleem aur Tandurusti"
+      ],
+      "English": [
+        "Poorvi"
+      ],
+      "Mathematics": [
+        "Ganita Prakash",
+        "Ganita Prakash (Hindi)",
+        "Ganita Prakash (Odia)",
+        "Ganita Prakash (Bodo)",
+        "Ganita Prakash (Malayalam)",
+        "Ganita Prakash (Punjabi)",
+        "Ganita Prakash (Sanskrit)",
+        "Ganita Prakash (Kannada)",
+        "Ganita Prakash (Tamil)",
+        "Ganita Prakash (Marathi)",
+        "Ganita Prakash (Bengali)",
+        "Ganita Prakash (Telugu)",
+        "Ganita Prakash (Maithili)",
+        "Ganita Prakash (Dogri)",
+        "Ganita Prakash (Nepali)",
+        "Ganita Prakash (Urdu)",
+        "Ganita Prakash (Assamese)",
+        "Ganita Prakash (Gujarati)",
+        "Ganita Prakash (Manipuri)",
+        "Ganita Prakash (Konkani)",
+        "Ganita Prakash (Santhali)",
+        "Ganita Prakash (Sindhi)",
+        "Ganita Prakash (Kashmiri)"
+      ],
+      "Social Science": [
+        "Exploring Society India and Beyond",
+        "Samaj Ka Aadhyan: Bharat or uske aage",
+        "Exploring Society India and Beyond (Kannada)",
+        "Exploring Society India and Beyond (Kashmiri)",
+        "Exploring Society India and Beyond (Odia)",
+        "Exploring Society India and Beyond (Manipuri)",
+        "Exploring Society India and Beyond (Marathi)",
+        "Exploring Society India and Beyond (Punjabi)",
+        "Exploring Society India and Beyond (Dogri)",
+        "Exploring Society India and Beyond (Gujrati)",
+        "Exploring Society India and Beyond (Malayalam)",
+        "Exploring Society India and Beyond (Sanskrit)",
+        "Exploring Society India and Beyond (Bengali)",
+        "Exploring Society India and Beyond (Bodo)",
+        "Exploring Society India and Beyond (Maithili)",
+        "Exploring Society India and Beyond (Nepali)",
+        "Exploring Society India and Beyond (Tamil)",
+        "Exploring Society India and Beyond (Telugu)",
+        "Muashre Ki Daryaft Hindustan aur Us Se Aage (Urdu)",
+        "Exploring Society India and Beyond (Santhali)",
+        "Exploring Society India and Beyond (Assamese)",
+        "Exploring Society India and Beyond (Konkani)",
+        "Exploring Society India and Beyond (Sindhi)"
+      ],
+      "Sanskrit": [
+        "Deepakam"
+      ],
+      "Science": [
+        "Curiosity",
+        "Jigyasa",
+        "Tajassus",
+        "Curiosity (Malayalam)",
+        "Curiosity (Tamil)",
+        "Curiosity (Kannada)",
+        "Curiosity (Maithili)",
+        "Curiosity (Punjabi)",
+        "Curiosity (Bengali)",
+        "Curiosity (Odia)",
+        "Curiosity (Konkani)",
+        "Curiosity (Manipuri)",
+        "Curiosity (Nepali)",
+        "Curiosity (Sanskrit)",
+        "Curiosity (Telugu)",
+        "Curiosity (Assamese)",
+        "Curiosity (Marathi)",
+        "Curiosity (Bodo)",
+        "Curiosity (Dogri)",
+        "Curiosity (Gujarati)",
+        "Curiosity (Santhali)",
+        "Curiosity (Kashmiri)",
+        "Curiosity (Sindhi)"
+      ],
+      "Arts": [
+        "Kriti-I",
+        "Kriti-I (Hindi)",
+        "Kriti-I (Bengali)",
+        "Kriti-I (Konkani)",
+        "Kriti-I (Bodo)",
+        "Kriti-I (Maithili)",
+        "Kriti-I (Manipuri)",
+        "Kriti-I (Assamese)",
+        "Kriti-I (Dogri)",
+        "Kriti-I (Odia)",
+        "Kriti-I (Tamil)",
+        "Kriti-I (Gujarati)",
+        "Kriti-I (Kannada)",
+        "Kriti-I (Malayalam)",
+        "Kriti-I (Marathi)",
+        "Kriti-I (Sanskrit)",
+        "Kriti-I (Nepali)",
+        "Kriti-I (Punjabi)",
+        "Kriti-I (Telugu)",
+        "Kriti-I (Kashmiri)",
+        "Kriti-I (Sindhi)",
+        "Kriti-I (Santhali)"
+      ],
+      "Urdu": [
+        "Khayal"
+      ],
+      "Punjabi": [
+        "Satluj"
+      ],
+      "Santhali": [
+        "Sobornakha"
+      ],
+      "Tamil": [
+        "Tamil"
+      ],
+      "Malayalam": [
+        "Malayalam"
+      ],
+      "Nepali": [
+        "Nepali"
+      ],
+      "Kannada": [
+        "Kannada"
+      ],
+      "Marathi": [
+        "Marathi"
+      ]
+    },
+    "7": {
+      "Mathematics": [
+        "Ganita Prakash",
+        "Ganita Prakash-II",
+        "Ganita Prakash(Hindi)",
+        "Ganita Prakash(Urdu)",
+        "Ganita Prakash-II (Hindi)",
+        "Ganita Prakash(Bengali)",
+        "Ganita Prakash(Gujarati)",
+        "Ganita Prakash(Punjabi)",
+        "Ganita Prakash(Nepali)",
+        "Ganita Prakash(Dogri)",
+        "Ganita Prakash(Tamil)",
+        "Ganita Prakash(Telugu)",
+        "Ganita Prakash(Marathi)",
+        "Ganita Prakash(Kannada)",
+        "Ganita Prakash(Bodo)",
+        "Ganita Prakash(Odia)",
+        "Ganita Prakash(Assamese)",
+        "Ganita Prakash(Konkani)",
+        "Ganita Prakash(Manipuri)",
+        "Ganita Prakash(Sanskrit)",
+        "Ganita Prakash(Sindhi)",
+        "Ganita Prakash(Kashmiri)",
+        "Ganita Prakash(Maithili)",
+        "Ganita Prakash(Malayalam)",
+        "Ganita Prakash(Santhali)",
+        "Ganita Prakash-II (Gujarati)",
+        "Ganita Prakash-II (Kannada)",
+        "Ganita Prakash-II (Marathi)",
+        "Ganita Prakash-II (Odia)",
+        "Ganita Prakash-II (Punjabi)",
+        "Ganita Prakash-II (Assamese)",
+        "Ganita Prakash-II (Bengali)",
+        "Ganita Prakash-II (Tamil)",
+        "Ganita Prakash-II (Malayalam)",
+        "Ganita Prakash-II (Telugu)",
+        "Ganita Prakash-II (Dogri)",
+        "Ganita Prakash-II (Bodo)",
+        "Ganita Prakash-II (Nepali)",
+        "Ganita Prakash-II (Sindhi)",
+        "Ganita Prakash-II (Manipuri)",
+        "Ganita Prakash-II (Maithili)",
+        "Ganita Prakash-II (Konkani)",
+        "Ganita Prakash-II (Sanskrit)",
+        "Ganita Prakash-II (Santhali)",
+        "Ganita Prakash-II (Kashmiri)"
+      ],
+      "Arts": [
+        "Kriti",
+        "Kriti-I (Hindi)",
+        "Kriti-I (Bengali)",
+        "Kriti-I (Punjabi)",
+        "Kriti-I (Sanskrit)",
+        "Kriti-I (Kannada)",
+        "Kriti-I (Odia)",
+        "Kriti-I (Marathi)",
+        "Kriti-I (Dogri)",
+        "Kriti-I (Bodo)",
+        "Kriti-I (Gujarati)",
+        "Kriti-I (Konkani)",
+        "Kriti-I (Assamese)",
+        "Kriti-I (Maithili)",
+        "Kriti-I (Santhali)",
+        "Kriti-I (Tamil)",
+        "Kriti-I (Nepali)",
+        "Kriti-I (Sindhi)",
+        "Kriti-I (Telugu)",
+        "Kriti-I (Manipuri)",
+        "Kriti-I (Malayalam)",
+        "Kriti-I (Kashmiri)"
+      ],
+      "Hindi": [
+        "Malhar"
+      ],
+      "Sanskrit": [
+        "Deepakam"
+      ],
+      "Science": [
+        "Curiosity",
+        "Jigyasa",
+        "Tajassus",
+        "Curiosity (Marathi)",
+        "Curiosity (Odia)",
+        "Curiosity (Bengali)",
+        "Curiosity (Punjabi)",
+        "Curiosity (Assamese)",
+        "Curiosity (Tamil)",
+        "Curiosity (Nepali)",
+        "Curiosity (Manipuri)",
+        "Curiosity (Telugu)",
+        "Curiosity (Bodo)",
+        "Curiosity (Santhali)",
+        "Curiosity (Kannada)",
+        "Curiosity (Dogri)",
+        "Curiosity (Konkani)",
+        "Curiosity (Kashmiri)",
+        "Curiosity (Malayalam)",
+        "Curiosity (Maithili)",
+        "Curiosity (Sanskrit)",
+        "Curiosity (Sindhi)",
+        "Curiosity (Gujarati)"
+      ],
+      "English": [
+        "Poorvi"
+      ],
+      "Social Science": [
+        "Exploring Society India and Beyond Part-I",
+        "Samaj Ka Aadhyan: Bharat or uske aage Part-I",
+        "Exploring Society India and Beyond Part-II",
+        "Samaj Ka Aadhyan: Bharat or uske aage Part-II",
+        "Muashrey ki Daryaft - Hindustan aur Uske age Part-I",
+        "Muashrey ki Daryaft - Hindustan aur Uske age Part-II",
+        "Exploring Society India and Beyond Part-I (Odia)",
+        "Exploring Society India and Beyond Part-I (Marathi)",
+        "Exploring Society India and Beyond Part-I (Punjabi)",
+        "Exploring Society India and Beyond Part-I (Konkani)",
+        "Exploring Society India and Beyond Part-I (Malayalam)",
+        "Exploring Society India and Beyond Part-I (Kannada)",
+        "Exploring Society India and Beyond Part-I (Dogri)",
+        "Exploring Society India and Beyond Part-I (Manipuri)",
+        "Exploring Society India and Beyond Part-I (Nepali)",
+        "Exploring Society India and Beyond Part-I (Sanskrit)",
+        "Exploring Society India and Beyond Part-I (Maithili)",
+        "Exploring Society India and Beyond Part-I (Assamese)",
+        "Exploring Society India and Beyond Part-I (Bengali)",
+        "Exploring Society India and Beyond Part-I (Bodo)",
+        "Exploring Society India and Beyond Part-I (Gujarati)",
+        "Exploring Society India and Beyond Part-I (Tamil)",
+        "Exploring Society India and Beyond Part-I (Santhali)",
+        "Exploring Society India and Beyond Part-I (Sindhi)",
+        "Exploring Society India and Beyond Part-I (Telugu)",
+        "Exploring Society India and Beyond Part-I (Kashmiri)",
+        "Exploring Society India and Beyond Part-II (Gujarati)",
+        "Exploring Society India and Beyond Part-II (Kannada)",
+        "Exploring Society India and Beyond Part-II (Odia)",
+        "Exploring Society India and Beyond Part-II (Punjabi)",
+        "Exploring Society India and Beyond Part-II (Bengali)",
+        "Exploring Society India and Beyond Part-II (Tamil)",
+        "Exploring Society India and Beyond Part-II (Malayalam)",
+        "Exploring Society India and Beyond Part-II (Assamese)",
+        "Exploring Society India and Beyond Part-II (Marathi)",
+        "Exploring Society India and Beyond Part-II (Telugu)",
+        "Exploring Society India and Beyond Part-II (Sanskrit)",
+        "Exploring Society India and Beyond Part-II (Konkani)",
+        "Exploring Society India and Beyond Part-II (Manipuri)",
+        "Exploring Society India and Beyond Part-II (Sindhi)",
+        "Exploring Society India and Beyond Part-II (Nepali)",
+        "Exploring Society India and Beyond Part-II (Bodo)",
+        "Exploring Society India and Beyond Part-II (Kashmiri)",
+        "Exploring Society India and Beyond Part-II (Santhali)",
+        "Exploring Society India and Beyond Part-II (Dogri)",
+        "Exploring Society India and Beyond Part-II (Maithili)"
+      ],
+      "Physical Education and Well Being": [
+        "Khel Yatra",
+        "Khel Yatra (Urdu)",
+        "Khel Yatra (Hindi)",
+        "Khel Yatra (Punjabi)",
+        "Khel Yatra (Dogri)",
+        "Khel Yatra (Santhali)",
+        "Khel Yatra (Malayalam)",
+        "Khel Yatra (Gujarati)",
+        "Khel Yatra (Odia)",
+        "Khel Yatra (Bengali)",
+        "Khel Yatra (Marathi)",
+        "Khel Yatra (Konkani)",
+        "Khel Yatra (Bodo)",
+        "Khel Yatra (Sanskrit)",
+        "Khel Yatra (Kannada)",
+        "Khel Yatra (Tamil)",
+        "Khel Yatra (Telugu)",
+        "Khel Yatra (Manipuri)",
+        "Khel Yatra (Nepali)",
+        "Khel Yatra (Assamese)",
+        "Khel Yatra (Kashmiri)",
+        "Khel Yatra (Maithili)",
+        "Khel Yatra (Sindhi)"
+      ],
+      "Vocational Education": [
+        "Kaushal Bodh",
+        "Kaushal Bodh(Hindi)",
+        "Kaushal Bodh(Telugu)",
+        "Kaushal Bodh(Odia)",
+        "Kaushal Bodh(Punjabi)",
+        "Kaushal Bodh(Gujarati)",
+        "Kaushal Bodh(Tamil)",
+        "Kaushal Bodh(Dogri)",
+        "Kaushal Bodh(Kannada)",
+        "Kaushal Bodh(Nepali)",
+        "Kaushal Bodh(Sanskrit)",
+        "Kaushal Bodh(Malayalam)",
+        "Kaushal Bodh(Konkani)",
+        "Kaushal Bodh(Bengali)",
+        "Kaushal Bodh(Bodo)",
+        "Kaushal Bodh(Kashmiri)",
+        "Kaushal Bodh(Maithili)",
+        "Kaushal Bodh(Marathi)",
+        "Kaushal Bodh(Santhali)",
+        "Kaushal Bodh(Assamese)",
+        "Kaushal Bodh(Manipuri)",
+        "Kaushal Bodh(Sindhi)"
+      ],
+      "Urdu": [
+        "Khayal"
+      ]
+    },
+    "8": {
+      "Mathematics": [
+        "Ganita Prakash Part-I",
+        "Ganita Prakash Part-II",
+        "Ganita Prakash Part-I (Hindi)",
+        "Ganita Prakash Part-II (Hindi)",
+        "Ganita Prakash Part-I (Urdu)",
+        "Ganita Prakash Part-I (Punjabi)",
+        "Ganita Prakash Part-I (Maithili)",
+        "Ganita Prakash Part-I (Marathi)",
+        "Ganita Prakash Part-I (Bengali)",
+        "Ganita Prakash Part-I (Bodo)",
+        "Ganita Prakash Part-I (Nepali)",
+        "Ganita Prakash Part-I (Odia)",
+        "Ganita Prakash Part-I (Kannada)",
+        "Ganita Prakash Part-I (Telugu)",
+        "Ganita Prakash Part-I (Dogri)",
+        "Ganita Prakash Part-I (Konkani)",
+        "Ganita Prakash Part-I (Tamil)",
+        "Ganita Prakash Part-I (Kashmiri)",
+        "Ganita Prakash Part-I (Manipuri)",
+        "Ganita Prakash Part-I (Sanskrit)",
+        "Ganita Prakash Part-I (Santhali)",
+        "Ganita Prakash Part-I (Malayalam)",
+        "Ganita Prakash Part-I (Sindhi)",
+        "Ganita Prakash Part-I (Assamese)",
+        "Ganita Prakash Part-I (Gujarati)",
+        "Ganita Prakash Part-II(Kannada)",
+        "Ganita Prakash Part-II(Odia)",
+        "Ganita Prakash Part-II(Punjabi)",
+        "Ganita Prakash Part-II(Gujarati)",
+        "Ganita Prakash Part-II(Tamil)",
+        "Ganita Prakash Part-II(Malayalam)",
+        "Ganita Prakash Part-II(Assamese)",
+        "Ganita Prakash Part-II(Marathi)",
+        "Ganita Prakash Part-II(Telugu)",
+        "Ganita Prakash Part-II(Bengali)",
+        "Ganita Prakash Part-II(Santhali)",
+        "Ganita Prakash Part-II(Sindhi)",
+        "Ganita Prakash Part-II(Manipuri)",
+        "Ganita Prakash Part-II(Bodo)",
+        "Ganita Prakash Part-II(Dogri)",
+        "Ganita Prakash Part-II(Sanskrit)",
+        "Ganita Prakash Part-II(Nepali)",
+        "Ganita Prakash Part-II(Konkani)",
+        "Ganita Prakash Part-II(Kashmiri)",
+        "Ganita Prakash Part-II(Maithili)",
+        "Mathematics",
+        "Ganit",
+        "Riyazi(Urdu)"
+      ],
+      "Arts": [
+        "Kriti",
+        "Kriti (Hindi)",
+        "Kriti (Urdu)",
+        "Kriti (Marathi)",
+        "Kriti (Tamil)",
+        "Kriti (Punjabi)",
+        "Kriti (Nepali)",
+        "Kriti (Odia)",
+        "Kriti (Dogri)",
+        "Kriti (Kannada)",
+        "Kriti (Malayalam)",
+        "Kriti (Bodo)",
+        "Kriti (Bengali)",
+        "Kriti (Telugu)",
+        "Kriti (Assamese)",
+        "Kriti (Kashmiri)",
+        "Kriti (Sanskrit)",
+        "Kriti (Gujarati)",
+        "Kriti (Konkani)",
+        "Kriti (Santhali)",
+        "Kriti (Maithili)",
+        "Kriti (Manipuri)",
+        "Kriti (Sindhi)"
+      ],
+      "Hindi": [
+        "Malhar",
+        "Vasant",
+        "Durva",
+        "Bharat Ki Khoj",
+        "Sanshipt Budhcharit"
+      ],
+      "Sanskrit": [
+        "Deepakam",
+        "Ruchira"
+      ],
+      "Science": [
+        "Curiosity",
+        "Jigyasa",
+        "Tajassus",
+        "Curiosity (Punjabi)",
+        "Curiosity (Tamil)",
+        "Curiosity (Odia)",
+        "Curiosity (Assamese)",
+        "Curiosity (Marathi)",
+        "Curiosity (Bengali)",
+        "Curiosity (Dogri)",
+        "Curiosity (Telugu)",
+        "Curiosity (Bodo)",
+        "Curiosity (Gujarati)",
+        "Curiosity (Manipuri)",
+        "Curiosity (Sanskrit)",
+        "Curiosity (Malayalam)",
+        "Curiosity (Kannada)",
+        "Curiosity (Konkani)",
+        "Curiosity (Maithili)",
+        "Curiosity (Nepali)",
+        "Curiosity (Santhali)",
+        "Curiosity (Sindhi)",
+        "Curiosity (Kashmiri)",
+        "Science",
+        "Vigyan",
+        "Science(Urdu)"
+      ],
+      "English": [
+        "Poorvi",
+        "Honeydew",
+        "It So Happend"
+      ],
+      "Social Science": [
+        "Exploring Society India and Beyond Part-I",
+        "Samaj Ka Aadhyan: Bharat or uske aage Part-I",
+        "Muashrey ki Daryaft - Hindustan Aur Uske Age Part-I",
+        "Exploring Society India and Beyond Part-II",
+        "Exploring Society India and Beyond Part-I (Odia)",
+        "Exploring Society India and Beyond Part-I (Sanskrit)",
+        "Exploring Society India and Beyond Part-I (Malayalam)",
+        "Exploring Society India and Beyond Part-I (Punjabi)",
+        "Exploring Society India and Beyond Part-I (Gujarati)",
+        "Exploring Society India and Beyond Part-I (Bengali)",
+        "Exploring Society India and Beyond Part-I (Tamil)",
+        "Exploring Society India and Beyond Part-I (Nepali)",
+        "Exploring Society India and Beyond Part-I (Manipuri)",
+        "Exploring Society India and Beyond Part-I (Kannada)",
+        "Exploring Society India and Beyond Part-I (Marathi)",
+        "Exploring Society India and Beyond Part-I (Dogri)",
+        "Exploring Society India and Beyond Part-I (Assamese)",
+        "Exploring Society India and Beyond Part-I (Konkani)",
+        "Exploring Society India and Beyond Part-I (Maithili)",
+        "Exploring Society India and Beyond Part-I (Bodo)",
+        "Exploring Society India and Beyond Part-I (Kashmiri)",
+        "Exploring Society India and Beyond Part-I (Santhali)",
+        "Exploring Society India and Beyond Part-I (Telugu)",
+        "Exploring Society India and Beyond Part-I (Sindhi)",
+        "Resource And Development(Geography)",
+        "Sansadhan Avam Vikas(Bhugol)",
+        "Social And Political Life",
+        "Samajik Avam Rajnatik Jeevan",
+        "Our-Pasts-III",
+        "Wasayel aur Taraqqui(Urdu)",
+        "Samaji Aur Siyasi Zindagi(Urdu)",
+        "Hamare Maazi-III (Urdu)"
+      ],
+      "Physical Education and Well Being": [
+        "Khel Yatra",
+        "Khel Yatra ( Hindi)",
+        "Khel Yatra (Urdu)",
+        "Khel Yatra (Punjabi)",
+        "Khel Yatra (Marathi)",
+        "Khel Yatra (Odia)",
+        "Khel Yatra (Malayalam)",
+        "Khel Yatra (Gujarati)",
+        "Khel Yatra (Sanskrit)",
+        "Khel Yatra (Nepali)",
+        "Khel Yatra (Tamil)",
+        "Khel Yatra (Bengali)",
+        "Khel Yatra (Dogri)",
+        "Khel Yatra (Bodo)",
+        "Khel Yatra (Kannada)",
+        "Khel Yatra (Telugu)",
+        "Khel Yatra (Manipuri)",
+        "Khel Yatra (Maithili)",
+        "Khel Yatra (Assamese)",
+        "Khel Yatra (Kashmiri)",
+        "Khel Yatra (Konkani)",
+        "Khel Yatra (Sindhi)",
+        "Khel Yatra (Santhali)"
+      ],
+      "Vocational Education": [
+        "Kaushal Bodh",
+        "Kaushal Bodh (Hindi)",
+        "Kaushal Bodh(Gujarati)",
+        "Kaushal Bodh(Bodo)",
+        "Kaushal Bodh(Odia)",
+        "Kaushal Bodh(Telugu)",
+        "Kaushal Bodh(Sanskrit)",
+        "Kaushal Bodh(Punjabi)",
+        "Kaushal Bodh(Nepali)",
+        "Kaushal Bodh(Marathi)",
+        "Kaushal Bodh(Kannada)",
+        "Kaushal Bodh(Tamil)",
+        "Kaushal Bodh(Dogri)",
+        "Kaushal Bodh(Konkani)",
+        "Kaushal Bodh(Maithili)",
+        "Kaushal Bodh(Malayalam)",
+        "Kaushal Bodh(Manipuri)",
+        "Kaushal Bodh(Santhali)",
+        "Kaushal Bodh(Bengali)",
+        "Kaushal Bodh(Assamese)",
+        "Kaushal Bodh(Sindhi)",
+        "Kaushal Bodh(Kashmiri)"
+      ],
+      "Urdu": [
+        "Khayal",
+        "Apni Zaban",
+        "Urdu Guldasta (Supl)",
+        "Door-Pass",
+        "Jaan Pahechan"
+      ],
+      "Class 8": [
+        "Class 8"
+      ],
+      "Environmental Education": [
+        "Project Books"
+      ]
+    },
+    "9": {
+      "English": [
+        "Kaveri"
+      ],
+      "Hindi": [
+        "Ganga"
+      ],
+      "Sanskrit": [
+        "Sharada",
+        "Risikulya(R2)"
+      ],
+      "Mathematics": [
+        "Ganita Manjari",
+        "Ganita Manjari PART-II",
+        "Ganita Manjari (Hindi)",
+        "Ganit Manjari (Urdu)"
+      ],
+      "Science": [
+        "Exploration",
+        "Anveshan"
+      ],
+      "Urdu": [
+        "Jamuna"
+      ],
+      "Social Science": [
+        "Understanding Society India and Beyond PART-I",
+        "Understanding Society India and Beyond PART-II"
+      ],
+      "Environmental Education": [
+        "Project Books"
+      ],
+      "Physical Education and Well Being": [
+        "Khel Praveen"
+      ],
+      "Skill Education": [
+        "Kaushal Vikas"
+      ],
+      "Vocational": [
+        "Cashier",
+        "Store Operations Assistant",
+        "Solanceous Crop Cultivator",
+        "Assistant Beauty Therapist",
+        "Animal Health Workers (Agriculture)",
+        "Hand Embroiderer (Addawala)",
+        "Hand Embroiderer",
+        "Plumber General",
+        "IT Domestic Data Entry Operator",
+        "Employability Skill"
+      ],
+      "ICT": [
+        "Coming Soon"
+      ],
+      "Arts": [
+        "Madhurima"
+      ]
+    },
+    "10": {
+      "Mathematics": [
+        "Mathematics",
+        "Ganit",
+        "Riyazi"
+      ],
+      "Science": [
+        "Science",
+        "Vigyan",
+        "Science(Urdu)"
+      ],
+      "Hindi": [
+        "Kshitij-2",
+        "Sparsh",
+        "Sanchayan Bhag-2",
+        "Kritika"
+      ],
+      "English": [
+        "First Flight",
+        "Foot Prints Without feet Supp. Reader",
+        "Words and Expressions  2"
+      ],
+      "Social Science": [
+        "Contemporary India",
+        "Samkalin Bharat",
+        "Aasri Hindustan-II",
+        "Understanding Economic Development",
+        "Arthik Vikas ki Samajh",
+        "Maashi Taraqqui Ki Samajh",
+        "India and the Contemporary World-II",
+        "Bharat Aur Samakalin Vishav-2",
+        "Hindustan Aur Asri Duniya",
+        "Democratic Politics",
+        "Loktantrik Rajniti",
+        "Jamhuri Siyasat-II"
+      ],
+      "Sanskrit": [
+        "Shemushi",
+        "Vyakaranavithi",
+        "Abhyaswaan Bhav-II"
+      ],
+      "Urdu": [
+        "Gulzar-e-Urdu",
+        "Nawa-e-Urdu",
+        "Jaan Pahechan",
+        "Door-Paas",
+        "Sab Rang"
+      ],
+      "Environmental Education": [
+        "Project Books"
+      ],
+      "Health and Physical Education": [
+        "Health and Physical Education"
+      ]
+    },
+    "11": {
+      "Sanskrit": [
+        "Bhaswati",
+        "Shashwati"
+      ],
+      "Accountancy": [
+        "Financial Accounting-I",
+        "Lekhashastra-I",
+        "Accountancy-II",
+        "Lekhashastra-II",
+        "Khatadari-I(Urdu)",
+        "Khatadari-II(Urdu)"
+      ],
+      "Business Studies": [
+        "Business Studies",
+        "Vyavsay Adhyanan",
+        "Karobari Mutalah I"
+      ],
+      "Chemistry": [
+        "Chemistry Part-I",
+        "Rasayan Vigyan bhag-I",
+        "Keemiya I",
+        "Chemistry Part II",
+        "Rasayan Vigyan bhag-II",
+        "Keemiya II"
+      ],
+      "Mathematics": [
+        "Mathematics",
+        "Ganit",
+        "Riyazi I"
+      ],
+      "Vocational": [
+        "Floriculturist- Protected Cultivation",
+        "Vision Technician",
+        "Floriculturist",
+        "General Duty Assistant",
+        "Dairy Farmer Enterpreneur"
+      ],
+      "Statistics": [],
+      "Biology": [
+        "Biology",
+        "Jeev Vigyan",
+        "Hayatiyaat"
+      ],
+      "Home Science": [
+        "Human Ecology and Family Sciences Part I",
+        "Human Ecology and Family Sciences Part II",
+        "Manav Paristhitiki evm pariwar vigyan Bhag-I",
+        "Manav Paristhitiki evm pariwar vigyan Bhag-II",
+        "Insani Mahauliyat aur Uloom e Khandandari-I",
+        "Insani Mahauliyat aur Uloom e Khandandari Part-II"
+      ],
+      "Psychology": [
+        "Introduction to Psychology",
+        "Manovigyan",
+        "Nafsiyaat"
+      ],
+      "Economics": [
+        "Indian Economic Development",
+        "Statistics for Economics",
+        "Sankhyiki",
+        "Bhartiya Airthryavstha Ka Vikas",
+        "Hindustan Ki Moaashi Tarraqqi(Urdu)",
+        "Shumariyaat Bar-e-Mushiyat(Urdu)"
+      ],
+      "Geography": [
+        "Fundamental of Physical Geography",
+        "Bhautique Bhugol ke Mool Sidhant",
+        "Hindustan Tabi'i Mahaul (Urdu)",
+        "Pratical Work in Geography",
+        "Bhugol Main Prayogatmak Karya",
+        "India Physical Environment",
+        "Bhart Bhautik Paryabaran",
+        "Jughrafia Mein Aamli Kam (Urdu)",
+        "Tabi'i Jughraiya Ka Mubadiyat (Urdu)"
+      ],
+      "Physics": [
+        "Physics Part-I",
+        "Bhautiki-I",
+        "Tabiyaat-I",
+        "Physics Part-II",
+        "Bhautiki-II",
+        "Tabiyaat-II"
+      ],
+      "Hindi": [
+        "Antra",
+        "Aroh",
+        "Vitan",
+        "Antral"
+      ],
+      "Sociology": [
+        "Introducing Sociology",
+        "Samaj Shastra Parichay-I",
+        "Samajiyaat Ka Tarf",
+        "Understanding Society",
+        "Samaj ka Bodh",
+        "Mutala-e-Muashira"
+      ],
+      "English": [
+        "Woven Words",
+        "Hornbill",
+        "Snapshots Suppl.Reader English"
+      ],
+      "Political Science": [
+        "Political Theory",
+        "Raajneeti Sidhant",
+        "Hindustani Aain aur Kaam",
+        "India Constitution at Work",
+        "Bharat ka Samvidhan Sidhant aur Vyavhar",
+        "Siyasi Nazaria"
+      ],
+      "History": [
+        "Themes in World History",
+        "Vishwa Itihas Ke Kuch Vishay",
+        "Tareekh-e-Alam per Mabni Mauzuaat Part I"
+      ],
+      "Heritage Crafts": [
+        "Living Craft Traditions of India",
+        "Hindustan me Dastkari Ki Riwayat"
+      ],
+      "Graphics design": [
+        "The story of graphic design",
+        "graphic design ek kahani"
+      ],
+      "Computers and Communication Technology": [
+        "CCT Part-I",
+        "CCT Part-II",
+        "Computer aur Sanchar Prodhogiki Part-I",
+        "Computer aur Sanchar Prodhogiki Part-II",
+        "Computer Aur Muwaslati Technology I",
+        "Computer Aur Muwaslati Technology II"
+      ],
+      "Fine Art": [
+        "An Introduction to Indian Art Part-I",
+        "Bhartiya Kala ka parichay"
+      ],
+      "Urdu": [
+        "Nai Awaz",
+        "Dhanak",
+        "Gulistan e Adab",
+        "Khyabane Urdu"
+      ],
+      "Creative Writing and Translation": [
+        "Srijan",
+        "Takhleequi Jauhar"
+      ],
+      "Informatics Practices": [
+        "Informatics Practices"
+      ],
+      "Biotechnology": [
+        "Biotechnology"
+      ],
+      "Computer Science": [
+        "Computer Science",
+        "Computer Science - Urdu"
+      ],
+      "Health and Physical Education": [
+        "Health and Physical Education"
+      ],
+      "Knowledge Traditions Practices of India": [
+        "Knowledge Traditions Practices of India"
+      ],
+      "Sangeet": [
+        "Tabla evam Pakhawaj",
+        "Hindustani Sangeet Gayan Evam Vadan"
+      ]
+    },
+    "12": {
+      "Accountancy": [
+        "Accountancy-I",
+        "Accountancy Part-II",
+        "Lekhashastra Part-I",
+        "Lekhashastra Part-II",
+        "Computerised Accounting System",
+        "Khatadari-I(Urdu)",
+        "Khatadari-II(Urdu)"
+      ],
+      "Mathematics": [
+        "Mathematics Part-I",
+        "Mathematics Part-II",
+        "Ganit-I",
+        "Ganit-II",
+        "Riyazi-I",
+        "Riyazi-II"
+      ],
+      "Physics": [
+        "Physics Part-I",
+        "Physics Part-II",
+        "Bhautiki-I",
+        "Bhautiki-II",
+        "Tabiyaat-I",
+        "Tabiyaat-II"
+      ],
+      "Hindi": [
+        "Antra",
+        "Aroh",
+        "Vitan",
+        "Antral Bhag 2"
+      ],
+      "English": [
+        "Kaliedoscope",
+        "Flamingo",
+        "Vistas"
+      ],
+      "Biotechnology": [
+        "Biotechnology"
+      ],
+      "Biology": [
+        "Biology",
+        "Jeev Vigyan",
+        "Hayatiyaat"
+      ],
+      "History": [
+        "Themes in Indian History-I",
+        "Bharatiya Itihas ke kuchh Vishay-I",
+        "Themes in Indian History-II",
+        "Bharatiya Itihas ke kuchh Vishay-II",
+        "Themes in Indian History-III",
+        "Bharatiya Itihas ke kuchh Vishay-III",
+        "Tareekh-e-Hind ke Mauzuaat-I(Urdu)",
+        "Tareekh-e-Hind ke Mauzuaat-II(Urdu)",
+        "Tareekh-e-Hind ke Mauzuaat-III(Urdu)"
+      ],
+      "Geography": [
+        "Fundamentals of Human Geography",
+        "Practical Work in Geography Part II",
+        "Manav Bhugol Ke Mool Sidhant",
+        "Bhugol main peryojnatmak pryogatmak karye",
+        "India -People And Economy",
+        "Bharat log aur arthvyasastha(Bhugol)",
+        "Insani Jughrafia Ke Buniyadi Usool(Urdu)",
+        "Hindustan Awam Aur Maishat(Urdu)",
+        "Jughrafia Mein Aamli Kam(Urdu)"
+      ],
+      "Psychology": [
+        "Psychology",
+        "Manovigyan",
+        "Nafsiat(Urdu)"
+      ],
+      "Sociology": [
+        "Indian Society",
+        "Bhartiya Samaj",
+        "Social Change and Development in India",
+        "Bharat main Samajik Parivartan aur Vikas",
+        "Hindustani Samaj(Urdu)",
+        "Hindustan Mein Samaji Tabdili Aur Taraqqi(Urdu)"
+      ],
+      "Chemistry": [
+        "Chemistry-I",
+        "Chemistry-II",
+        "Rasayan vigyan bhag I",
+        "Rasayan vigyan bhag II",
+        "Keemiya-I",
+        "Keemiya-II"
+      ],
+      "Sanskrit": [
+        "Bhaswati",
+        "Shaswati"
+      ],
+      "Political Science": [
+        "Contemporary World Politics",
+        "Samkalin Vishwa Rajniti",
+        "Politics in India Since Independence",
+        "Swatantra Bharat Mein Rajniti-II",
+        "Aasri Alami Siyasat(Urdu)",
+        "Azadi Ke Baad Hindustan Ki Siyasat(Urdu)"
+      ],
+      "Home Science": [
+        "Human Ecology and Family Sciences Part I",
+        "Human Ecology and Family Sciences Part II",
+        "Manav Paristhitik avam Parivar Vigyan Bhag 1",
+        "Manav Paristhitiki avam Parivar Vigyan Bhag 2"
+      ],
+      "Economics": [
+        "Introductory Microeconomics",
+        "Introductory Macroeconomics",
+        "Vyashthi Arthshasrta",
+        "Samashty Arthshastra Ek Parichay",
+        "Juzvi Maashiyat ka Taruf(Urdu)",
+        "Kulli Maashiyat Ka Taruf(Urdu)"
+      ],
+      "Business Studies": [
+        "Business Studies-I",
+        "Vyavasai Adhyan-I",
+        "Business Studies-II",
+        "Vyavasai Adhyan-II",
+        "Karobari Uloom I(Urdu)",
+        "Karobari Uloom II(Urdu)"
+      ],
+      "Urdu": [
+        "Gulistan-e- Adab",
+        "Khayaban-e-Urdu",
+        "Nai Awaz",
+        "Dhanak"
+      ],
+      "Heritage Crafts": [
+        "Hindustan me Dastkari Ki Riwayat",
+        "Craft Tradition of India",
+        "Bharatiya Hastkla Ki Paramparayen"
+      ],
+      "New Age Graphics Design": [
+        "New Age Graphics Design"
+      ],
+      "Creative Writing & Translation": [
+        "Srijan-II",
+        "Takhleequi Jauhar"
+      ],
+      "Fine Art": [
+        "An Introduction to Indian Art Part-II",
+        "Bhartiya Kala ka Itihaas Bhag 2"
+      ],
+      "Computer Science": [
+        "Computer Science"
+      ],
+      "Informatics Practices": [
+        "Informatics Practices"
+      ],
+      "Sangeet": [
+        "Tabla evam Pakhawaj",
+        "Hindustani Sangeet Gayan Evam Vaadan"
+      ]
+    },
+    "13": {
+      "Hindi": [
+        "Abhivyakti Aur Madhyam"
+      ],
+      "Sanskrit": [
+        "Sanskrit Sahitya parichay"
+      ],
+      "Heritage Crafts": [
+        "Exploring Craft Tradition of India",
+        "Bhartiya Hastkala Parmparaon ki Khoj"
+      ],
+      "Urdu": [
+        "Zuban-O-Adab ki Tareekh",
+        "Urdu Qwaid aur Insha",
+        "Izhar Aur Zara-e-Izhar"
+      ]
+    },
+    "14": {
+      "Vocational": [
+        "Organic Farming"
+      ]
+    }
+  }
+}

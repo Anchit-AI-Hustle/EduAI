@@ -1,0 +1,729 @@
+{
+  "graph_id": "shared-skill-graph",
+  "version": "0.1.0-domains",
+  "built_on": "2026-10-21",
+  "depth_note": "Domain level only. Units and competencies are added per board and grade in Phase 3, each mapped to these domains.",
+  "nodes": [
+    {
+      "skill_id": "ed-responsive-caregiving-stimulation",
+      "label_en": "Responsive caregiving and early stimulation (0-3)",
+      "label_hi": "उत्तरदायी देखभाल और प्रारंभिक उत्तेजना (0-3)",
+      "level": "domain",
+      "kind": "early-development",
+      "parent_id": null,
+      "source_ids": [
+        "SRC-RS-UQ319-2024-07-24"
+      ]
+    },
+    {
+      "skill_id": "ed-physical-motor",
+      "label_en": "Physical and motor development",
+      "label_hi": "शारीरिक और गतिक विकास",
+      "level": "domain",
+      "kind": "early-development",
+      "parent_id": null,
+      "source_ids": [
+        "SRC-PIB-POSHAN-BHI-PADHAI-BHI"
+      ]
+    },
+    {
+      "skill_id": "ed-cognitive",
+      "label_en": "Cognitive development",
+      "label_hi": "संज्ञानात्मक विकास",
+      "level": "domain",
+      "kind": "early-development",
+      "parent_id": null,
+      "source_ids": [
+        "SRC-PIB-POSHAN-BHI-PADHAI-BHI"
+      ]
+    },
+    {
+      "skill_id": "ed-socio-emotional-ethical",
+      "label_en": "Socio-emotional and ethical development",
+      "label_hi": "सामाजिक-भावनात्मक और नैतिक विकास",
+      "level": "domain",
+      "kind": "early-development",
+      "parent_id": null,
+      "source_ids": [
+        "SRC-PIB-POSHAN-BHI-PADHAI-BHI"
+      ]
+    },
+    {
+      "skill_id": "ed-cultural-artistic",
+      "label_en": "Cultural and artistic development",
+      "label_hi": "सांस्कृतिक और कलात्मक विकास",
+      "level": "domain",
+      "kind": "early-development",
+      "parent_id": null,
+      "source_ids": [
+        "SRC-PIB-POSHAN-BHI-PADHAI-BHI"
+      ]
+    },
+    {
+      "skill_id": "ed-communication-early-language",
+      "label_en": "Communication and early language",
+      "label_hi": "संवाद और प्रारंभिक भाषा",
+      "level": "domain",
+      "kind": "early-development",
+      "parent_id": null,
+      "source_ids": [
+        "SRC-PIB-POSHAN-BHI-PADHAI-BHI"
+      ]
+    },
+    {
+      "skill_id": "ed-literacy-numeracy",
+      "label_en": "Early literacy and numeracy",
+      "label_hi": "प्रारंभिक साक्षरता और संख्या ज्ञान",
+      "level": "domain",
+      "kind": "early-development",
+      "parent_id": null,
+      "source_ids": [
+        "SRC-PIB-POSHAN-BHI-PADHAI-BHI"
+      ]
+    },
+    {
+      "skill_id": "lang-english",
+      "label_en": "English",
+      "label_hi": "अंग्रेज़ी",
+      "level": "domain",
+      "kind": "language",
+      "parent_id": null,
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX"
+      ]
+    },
+    {
+      "skill_id": "lang-hindi",
+      "label_en": "Hindi",
+      "label_hi": "हिंदी",
+      "level": "domain",
+      "kind": "language",
+      "parent_id": null,
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX"
+      ]
+    },
+    {
+      "skill_id": "lang-sanskrit",
+      "label_en": "Sanskrit",
+      "label_hi": "संस्कृत",
+      "level": "domain",
+      "kind": "language",
+      "parent_id": null,
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX"
+      ]
+    },
+    {
+      "skill_id": "lang-urdu",
+      "label_en": "Urdu",
+      "label_hi": "उर्दू",
+      "level": "domain",
+      "kind": "language",
+      "parent_id": null,
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX"
+      ]
+    },
+    {
+      "skill_id": "lang-other-indian",
+      "label_en": "Other Indian languages (R3 options)",
+      "label_hi": "अन्य भारतीय भाषाएँ (R3 विकल्प)",
+      "level": "domain",
+      "kind": "language",
+      "parent_id": null,
+      "source_ids": [
+        "SRC-CBSE-CIRC-ACAD-33-2026"
+      ]
+    },
+    {
+      "skill_id": "area-mathematics",
+      "label_en": "Mathematics",
+      "label_hi": "गणित",
+      "level": "domain",
+      "kind": "curricular-area",
+      "parent_id": null,
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX"
+      ]
+    },
+    {
+      "skill_id": "area-world-around-us",
+      "label_en": "The World Around Us",
+      "label_hi": "हमारे आसपास की दुनिया",
+      "level": "domain",
+      "kind": "curricular-area",
+      "parent_id": null,
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX"
+      ]
+    },
+    {
+      "skill_id": "area-science",
+      "label_en": "Science",
+      "label_hi": "विज्ञान",
+      "level": "domain",
+      "kind": "curricular-area",
+      "parent_id": null,
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX"
+      ]
+    },
+    {
+      "skill_id": "area-social-science",
+      "label_en": "Social Science",
+      "label_hi": "सामाजिक विज्ञान",
+      "level": "domain",
+      "kind": "curricular-area",
+      "parent_id": null,
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX"
+      ]
+    },
+    {
+      "skill_id": "area-arts",
+      "label_en": "Arts education",
+      "label_hi": "कला शिक्षा",
+      "level": "domain",
+      "kind": "curricular-area",
+      "parent_id": null,
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX"
+      ]
+    },
+    {
+      "skill_id": "area-physical-education-wellbeing",
+      "label_en": "Physical education and well-being",
+      "label_hi": "शारीरिक शिक्षा और कल्याण",
+      "level": "domain",
+      "kind": "curricular-area",
+      "parent_id": null,
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX"
+      ]
+    },
+    {
+      "skill_id": "area-vocational-skill-education",
+      "label_en": "Vocational and skill education",
+      "label_hi": "व्यावसायिक और कौशल शिक्षा",
+      "level": "domain",
+      "kind": "curricular-area",
+      "parent_id": null,
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX"
+      ]
+    },
+    {
+      "skill_id": "ss-physics",
+      "label_en": "Physics",
+      "label_hi": "भौतिकी",
+      "level": "domain",
+      "kind": "senior-secondary-discipline",
+      "parent_id": null,
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX"
+      ]
+    },
+    {
+      "skill_id": "ss-chemistry",
+      "label_en": "Chemistry",
+      "label_hi": "रसायन विज्ञान",
+      "level": "domain",
+      "kind": "senior-secondary-discipline",
+      "parent_id": null,
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX"
+      ]
+    },
+    {
+      "skill_id": "ss-biology",
+      "label_en": "Biology",
+      "label_hi": "जीव विज्ञान",
+      "level": "domain",
+      "kind": "senior-secondary-discipline",
+      "parent_id": null,
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX"
+      ]
+    },
+    {
+      "skill_id": "ss-accountancy",
+      "label_en": "Accountancy",
+      "label_hi": "लेखाशास्त्र",
+      "level": "domain",
+      "kind": "senior-secondary-discipline",
+      "parent_id": null,
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX"
+      ]
+    },
+    {
+      "skill_id": "ss-business-studies",
+      "label_en": "Business Studies",
+      "label_hi": "व्यवसाय अध्ययन",
+      "level": "domain",
+      "kind": "senior-secondary-discipline",
+      "parent_id": null,
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX"
+      ]
+    },
+    {
+      "skill_id": "ss-economics",
+      "label_en": "Economics",
+      "label_hi": "अर्थशास्त्र",
+      "level": "domain",
+      "kind": "senior-secondary-discipline",
+      "parent_id": null,
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX"
+      ]
+    },
+    {
+      "skill_id": "ss-history",
+      "label_en": "History",
+      "label_hi": "इतिहास",
+      "level": "domain",
+      "kind": "senior-secondary-discipline",
+      "parent_id": null,
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX"
+      ]
+    },
+    {
+      "skill_id": "ss-geography",
+      "label_en": "Geography",
+      "label_hi": "भूगोल",
+      "level": "domain",
+      "kind": "senior-secondary-discipline",
+      "parent_id": null,
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX"
+      ]
+    },
+    {
+      "skill_id": "ss-political-science",
+      "label_en": "Political Science",
+      "label_hi": "राजनीति विज्ञान",
+      "level": "domain",
+      "kind": "senior-secondary-discipline",
+      "parent_id": null,
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX"
+      ]
+    },
+    {
+      "skill_id": "ss-sociology",
+      "label_en": "Sociology",
+      "label_hi": "समाजशास्त्र",
+      "level": "domain",
+      "kind": "senior-secondary-discipline",
+      "parent_id": null,
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX"
+      ]
+    },
+    {
+      "skill_id": "ss-psychology",
+      "label_en": "Psychology",
+      "label_hi": "मनोविज्ञान",
+      "level": "domain",
+      "kind": "senior-secondary-discipline",
+      "parent_id": null,
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX"
+      ]
+    },
+    {
+      "skill_id": "ss-computer-science",
+      "label_en": "Computer Science",
+      "label_hi": "कंप्यूटर विज्ञान",
+      "level": "domain",
+      "kind": "senior-secondary-discipline",
+      "parent_id": null,
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX"
+      ]
+    },
+    {
+      "skill_id": "ss-informatics-practices",
+      "label_en": "Informatics Practices",
+      "label_hi": "इन्फॉर्मेटिक्स प्रैक्टिसेज",
+      "level": "domain",
+      "kind": "senior-secondary-discipline",
+      "parent_id": null,
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX"
+      ]
+    },
+    {
+      "skill_id": "ss-home-science",
+      "label_en": "Home Science",
+      "label_hi": "गृह विज्ञान",
+      "level": "domain",
+      "kind": "senior-secondary-discipline",
+      "parent_id": null,
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX"
+      ]
+    },
+    {
+      "skill_id": "sat-reading-writing",
+      "label_en": "SAT Reading and Writing",
+      "label_hi": "SAT पठन और लेखन",
+      "level": "domain",
+      "kind": "exam-track-domain",
+      "parent_id": null,
+      "source_ids": [
+        "SRC-COLLEGEBOARD-SAT-CONTENT"
+      ]
+    },
+    {
+      "skill_id": "sat-rw-information-and-ideas",
+      "label_en": "SAT: Information and Ideas",
+      "label_hi": "SAT: Information and Ideas",
+      "level": "subdomain",
+      "kind": "exam-track-domain",
+      "parent_id": "sat-reading-writing",
+      "source_ids": [
+        "SRC-COLLEGEBOARD-SAT-CONTENT"
+      ]
+    },
+    {
+      "skill_id": "sat-rw-craft-and-structure",
+      "label_en": "SAT: Craft and Structure",
+      "label_hi": "SAT: Craft and Structure",
+      "level": "subdomain",
+      "kind": "exam-track-domain",
+      "parent_id": "sat-reading-writing",
+      "source_ids": [
+        "SRC-COLLEGEBOARD-SAT-CONTENT"
+      ]
+    },
+    {
+      "skill_id": "sat-rw-expression-of-ideas",
+      "label_en": "SAT: Expression of Ideas",
+      "label_hi": "SAT: Expression of Ideas",
+      "level": "subdomain",
+      "kind": "exam-track-domain",
+      "parent_id": "sat-reading-writing",
+      "source_ids": [
+        "SRC-COLLEGEBOARD-SAT-CONTENT"
+      ]
+    },
+    {
+      "skill_id": "sat-rw-standard-english-conventions",
+      "label_en": "SAT: Standard English Conventions",
+      "label_hi": "SAT: Standard English Conventions",
+      "level": "subdomain",
+      "kind": "exam-track-domain",
+      "parent_id": "sat-reading-writing",
+      "source_ids": [
+        "SRC-COLLEGEBOARD-SAT-CONTENT"
+      ]
+    },
+    {
+      "skill_id": "sat-math",
+      "label_en": "SAT Math",
+      "label_hi": "SAT गणित",
+      "level": "domain",
+      "kind": "exam-track-domain",
+      "parent_id": null,
+      "source_ids": [
+        "SRC-COLLEGEBOARD-SAT-CONTENT"
+      ]
+    },
+    {
+      "skill_id": "sat-math-algebra",
+      "label_en": "SAT: Algebra",
+      "label_hi": "SAT: Algebra",
+      "level": "subdomain",
+      "kind": "exam-track-domain",
+      "parent_id": "sat-math",
+      "source_ids": [
+        "SRC-COLLEGEBOARD-SAT-CONTENT"
+      ]
+    },
+    {
+      "skill_id": "sat-math-advanced-math",
+      "label_en": "SAT: Advanced Math",
+      "label_hi": "SAT: Advanced Math",
+      "level": "subdomain",
+      "kind": "exam-track-domain",
+      "parent_id": "sat-math",
+      "source_ids": [
+        "SRC-COLLEGEBOARD-SAT-CONTENT"
+      ]
+    },
+    {
+      "skill_id": "sat-math-problem-solving-data-analysis",
+      "label_en": "SAT: Problem-Solving and Data Analysis",
+      "label_hi": "SAT: Problem-Solving and Data Analysis",
+      "level": "subdomain",
+      "kind": "exam-track-domain",
+      "parent_id": "sat-math",
+      "source_ids": [
+        "SRC-COLLEGEBOARD-SAT-CONTENT"
+      ]
+    },
+    {
+      "skill_id": "sat-math-geometry-trigonometry",
+      "label_en": "SAT: Geometry and Trigonometry",
+      "label_hi": "SAT: Geometry and Trigonometry",
+      "level": "subdomain",
+      "kind": "exam-track-domain",
+      "parent_id": "sat-math",
+      "source_ids": [
+        "SRC-COLLEGEBOARD-SAT-CONTENT"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "ed-responsive-caregiving-stimulation",
+      "to": "ed-physical-motor",
+      "type": "prerequisite_of",
+      "basis": "design-assumption",
+      "source_ids": []
+    },
+    {
+      "from": "ed-responsive-caregiving-stimulation",
+      "to": "ed-cognitive",
+      "type": "prerequisite_of",
+      "basis": "design-assumption",
+      "source_ids": []
+    },
+    {
+      "from": "ed-responsive-caregiving-stimulation",
+      "to": "ed-socio-emotional-ethical",
+      "type": "prerequisite_of",
+      "basis": "design-assumption",
+      "source_ids": []
+    },
+    {
+      "from": "ed-responsive-caregiving-stimulation",
+      "to": "ed-communication-early-language",
+      "type": "prerequisite_of",
+      "basis": "design-assumption",
+      "source_ids": []
+    },
+    {
+      "from": "ed-communication-early-language",
+      "to": "lang-english",
+      "type": "prerequisite_of",
+      "basis": "design-assumption",
+      "source_ids": []
+    },
+    {
+      "from": "ed-communication-early-language",
+      "to": "lang-hindi",
+      "type": "prerequisite_of",
+      "basis": "design-assumption",
+      "source_ids": []
+    },
+    {
+      "from": "ed-literacy-numeracy",
+      "to": "area-mathematics",
+      "type": "prerequisite_of",
+      "basis": "design-assumption",
+      "source_ids": []
+    },
+    {
+      "from": "ed-literacy-numeracy",
+      "to": "lang-english",
+      "type": "prerequisite_of",
+      "basis": "design-assumption",
+      "source_ids": []
+    },
+    {
+      "from": "ed-literacy-numeracy",
+      "to": "lang-hindi",
+      "type": "prerequisite_of",
+      "basis": "design-assumption",
+      "source_ids": []
+    },
+    {
+      "from": "area-world-around-us",
+      "to": "area-science",
+      "type": "prerequisite_of",
+      "basis": "structural-sequence-in-official-books",
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX"
+      ]
+    },
+    {
+      "from": "area-world-around-us",
+      "to": "area-social-science",
+      "type": "prerequisite_of",
+      "basis": "structural-sequence-in-official-books",
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX"
+      ]
+    },
+    {
+      "from": "area-science",
+      "to": "ss-physics",
+      "type": "prerequisite_of",
+      "basis": "structural-sequence-in-official-books",
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX"
+      ]
+    },
+    {
+      "from": "area-science",
+      "to": "ss-chemistry",
+      "type": "prerequisite_of",
+      "basis": "structural-sequence-in-official-books",
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX"
+      ]
+    },
+    {
+      "from": "area-science",
+      "to": "ss-biology",
+      "type": "prerequisite_of",
+      "basis": "structural-sequence-in-official-books",
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX"
+      ]
+    },
+    {
+      "from": "area-social-science",
+      "to": "ss-history",
+      "type": "prerequisite_of",
+      "basis": "structural-sequence-in-official-books",
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX"
+      ]
+    },
+    {
+      "from": "area-social-science",
+      "to": "ss-geography",
+      "type": "prerequisite_of",
+      "basis": "structural-sequence-in-official-books",
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX"
+      ]
+    },
+    {
+      "from": "area-social-science",
+      "to": "ss-political-science",
+      "type": "prerequisite_of",
+      "basis": "structural-sequence-in-official-books",
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX"
+      ]
+    },
+    {
+      "from": "area-social-science",
+      "to": "ss-economics",
+      "type": "prerequisite_of",
+      "basis": "structural-sequence-in-official-books",
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX"
+      ]
+    },
+    {
+      "from": "area-social-science",
+      "to": "ss-sociology",
+      "type": "prerequisite_of",
+      "basis": "structural-sequence-in-official-books",
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX"
+      ]
+    },
+    {
+      "from": "area-mathematics",
+      "to": "ss-physics",
+      "type": "prerequisite_of",
+      "basis": "design-assumption",
+      "source_ids": []
+    },
+    {
+      "from": "area-mathematics",
+      "to": "sat-math",
+      "type": "maps_to",
+      "basis": "design-assumption",
+      "source_ids": []
+    },
+    {
+      "from": "lang-english",
+      "to": "sat-reading-writing",
+      "type": "maps_to",
+      "basis": "design-assumption",
+      "source_ids": []
+    },
+    {
+      "from": "sat-rw-information-and-ideas",
+      "to": "sat-reading-writing",
+      "type": "part_of",
+      "basis": "official-domain-structure",
+      "source_ids": [
+        "SRC-COLLEGEBOARD-SAT-CONTENT"
+      ]
+    },
+    {
+      "from": "sat-rw-craft-and-structure",
+      "to": "sat-reading-writing",
+      "type": "part_of",
+      "basis": "official-domain-structure",
+      "source_ids": [
+        "SRC-COLLEGEBOARD-SAT-CONTENT"
+      ]
+    },
+    {
+      "from": "sat-rw-expression-of-ideas",
+      "to": "sat-reading-writing",
+      "type": "part_of",
+      "basis": "official-domain-structure",
+      "source_ids": [
+        "SRC-COLLEGEBOARD-SAT-CONTENT"
+      ]
+    },
+    {
+      "from": "sat-rw-standard-english-conventions",
+      "to": "sat-reading-writing",
+      "type": "part_of",
+      "basis": "official-domain-structure",
+      "source_ids": [
+        "SRC-COLLEGEBOARD-SAT-CONTENT"
+      ]
+    },
+    {
+      "from": "sat-math-algebra",
+      "to": "sat-math",
+      "type": "part_of",
+      "basis": "official-domain-structure",
+      "source_ids": [
+        "SRC-COLLEGEBOARD-SAT-CONTENT"
+      ]
+    },
+    {
+      "from": "sat-math-advanced-math",
+      "to": "sat-math",
+      "type": "part_of",
+      "basis": "official-domain-structure",
+      "source_ids": [
+        "SRC-COLLEGEBOARD-SAT-CONTENT"
+      ]
+    },
+    {
+      "from": "sat-math-problem-solving-data-analysis",
+      "to": "sat-math",
+      "type": "part_of",
+      "basis": "official-domain-structure",
+      "source_ids": [
+        "SRC-COLLEGEBOARD-SAT-CONTENT"
+      ]
+    },
+    {
+      "from": "sat-math-geometry-trigonometry",
+      "to": "sat-math",
+      "type": "part_of",
+      "basis": "official-domain-structure",
+      "source_ids": [
+        "SRC-COLLEGEBOARD-SAT-CONTENT"
+      ]
+    }
+  ]
+}

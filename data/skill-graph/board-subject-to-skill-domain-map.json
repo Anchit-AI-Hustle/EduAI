@@ -1,0 +1,1042 @@
+{
+  "map_id": "board-subject-to-skill-domain-map",
+  "built_on": "2026-10-21",
+  "note": "Every board subject maps onto shared skill-graph domains so one learner record works across boards.",
+  "rows": [
+    {
+      "board_id": "cbse",
+      "year_id": "class-01",
+      "subject_id": "english",
+      "subject_name_en": "English",
+      "skill_ids": [
+        "lang-english"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-01",
+      "subject_id": "hindi",
+      "subject_name_en": "Hindi",
+      "skill_ids": [
+        "lang-hindi"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-01",
+      "subject_id": "mathematics",
+      "subject_name_en": "Mathematics",
+      "skill_ids": [
+        "area-mathematics"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-02",
+      "subject_id": "english",
+      "subject_name_en": "English",
+      "skill_ids": [
+        "lang-english"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-02",
+      "subject_id": "hindi",
+      "subject_name_en": "Hindi",
+      "skill_ids": [
+        "lang-hindi"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-02",
+      "subject_id": "mathematics",
+      "subject_name_en": "Mathematics",
+      "skill_ids": [
+        "area-mathematics"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-03",
+      "subject_id": "english",
+      "subject_name_en": "English",
+      "skill_ids": [
+        "lang-english"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-03",
+      "subject_id": "hindi",
+      "subject_name_en": "Hindi",
+      "skill_ids": [
+        "lang-hindi"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-03",
+      "subject_id": "mathematics",
+      "subject_name_en": "Mathematics",
+      "skill_ids": [
+        "area-mathematics"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-03",
+      "subject_id": "the-world-around-us",
+      "subject_name_en": "The World Around Us",
+      "skill_ids": [
+        "area-world-around-us"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-03",
+      "subject_id": "arts",
+      "subject_name_en": "Arts",
+      "skill_ids": [
+        "area-arts"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-03",
+      "subject_id": "physical-education-wellbeing",
+      "subject_name_en": "Physical Education and Well Being",
+      "skill_ids": [
+        "area-physical-education-wellbeing"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-04",
+      "subject_id": "english",
+      "subject_name_en": "English",
+      "skill_ids": [
+        "lang-english"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-04",
+      "subject_id": "hindi",
+      "subject_name_en": "Hindi",
+      "skill_ids": [
+        "lang-hindi"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-04",
+      "subject_id": "mathematics",
+      "subject_name_en": "Mathematics",
+      "skill_ids": [
+        "area-mathematics"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-04",
+      "subject_id": "the-world-around-us",
+      "subject_name_en": "The World Around Us",
+      "skill_ids": [
+        "area-world-around-us"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-04",
+      "subject_id": "arts",
+      "subject_name_en": "Arts",
+      "skill_ids": [
+        "area-arts"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-04",
+      "subject_id": "physical-education-wellbeing",
+      "subject_name_en": "Physical Education and Well Being",
+      "skill_ids": [
+        "area-physical-education-wellbeing"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-05",
+      "subject_id": "english",
+      "subject_name_en": "English",
+      "skill_ids": [
+        "lang-english"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-05",
+      "subject_id": "hindi",
+      "subject_name_en": "Hindi",
+      "skill_ids": [
+        "lang-hindi"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-05",
+      "subject_id": "mathematics",
+      "subject_name_en": "Mathematics",
+      "skill_ids": [
+        "area-mathematics"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-05",
+      "subject_id": "the-world-around-us",
+      "subject_name_en": "The World Around Us",
+      "skill_ids": [
+        "area-world-around-us"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-05",
+      "subject_id": "arts",
+      "subject_name_en": "Arts",
+      "skill_ids": [
+        "area-arts"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-05",
+      "subject_id": "physical-education-wellbeing",
+      "subject_name_en": "Physical Education and Well Being",
+      "skill_ids": [
+        "area-physical-education-wellbeing"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-06",
+      "subject_id": "english",
+      "subject_name_en": "English",
+      "skill_ids": [
+        "lang-english"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-06",
+      "subject_id": "hindi",
+      "subject_name_en": "Hindi",
+      "skill_ids": [
+        "lang-hindi"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-06",
+      "subject_id": "sanskrit",
+      "subject_name_en": "Sanskrit",
+      "skill_ids": [
+        "lang-sanskrit"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-06",
+      "subject_id": "mathematics",
+      "subject_name_en": "Mathematics",
+      "skill_ids": [
+        "area-mathematics"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-06",
+      "subject_id": "science",
+      "subject_name_en": "Science",
+      "skill_ids": [
+        "area-science"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-06",
+      "subject_id": "social-science",
+      "subject_name_en": "Social Science",
+      "skill_ids": [
+        "area-social-science"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-06",
+      "subject_id": "arts",
+      "subject_name_en": "Arts",
+      "skill_ids": [
+        "area-arts"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-06",
+      "subject_id": "physical-education-wellbeing",
+      "subject_name_en": "Physical Education and Well Being",
+      "skill_ids": [
+        "area-physical-education-wellbeing"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-06",
+      "subject_id": "vocational-education",
+      "subject_name_en": "Vocational Education",
+      "skill_ids": [
+        "area-vocational-skill-education"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-07",
+      "subject_id": "english",
+      "subject_name_en": "English",
+      "skill_ids": [
+        "lang-english"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-07",
+      "subject_id": "hindi",
+      "subject_name_en": "Hindi",
+      "skill_ids": [
+        "lang-hindi"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-07",
+      "subject_id": "sanskrit",
+      "subject_name_en": "Sanskrit",
+      "skill_ids": [
+        "lang-sanskrit"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-07",
+      "subject_id": "mathematics",
+      "subject_name_en": "Mathematics",
+      "skill_ids": [
+        "area-mathematics"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-07",
+      "subject_id": "science",
+      "subject_name_en": "Science",
+      "skill_ids": [
+        "area-science"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-07",
+      "subject_id": "social-science",
+      "subject_name_en": "Social Science",
+      "skill_ids": [
+        "area-social-science"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-07",
+      "subject_id": "arts",
+      "subject_name_en": "Arts",
+      "skill_ids": [
+        "area-arts"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-07",
+      "subject_id": "physical-education-wellbeing",
+      "subject_name_en": "Physical Education and Well Being",
+      "skill_ids": [
+        "area-physical-education-wellbeing"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-07",
+      "subject_id": "vocational-education",
+      "subject_name_en": "Vocational Education",
+      "skill_ids": [
+        "area-vocational-skill-education"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-08",
+      "subject_id": "english",
+      "subject_name_en": "English",
+      "skill_ids": [
+        "lang-english"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-08",
+      "subject_id": "hindi",
+      "subject_name_en": "Hindi",
+      "skill_ids": [
+        "lang-hindi"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-08",
+      "subject_id": "sanskrit",
+      "subject_name_en": "Sanskrit",
+      "skill_ids": [
+        "lang-sanskrit"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-08",
+      "subject_id": "mathematics",
+      "subject_name_en": "Mathematics",
+      "skill_ids": [
+        "area-mathematics"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-08",
+      "subject_id": "science",
+      "subject_name_en": "Science",
+      "skill_ids": [
+        "area-science"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-08",
+      "subject_id": "social-science",
+      "subject_name_en": "Social Science",
+      "skill_ids": [
+        "area-social-science"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-08",
+      "subject_id": "arts",
+      "subject_name_en": "Arts",
+      "skill_ids": [
+        "area-arts"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-08",
+      "subject_id": "physical-education-wellbeing",
+      "subject_name_en": "Physical Education and Well Being",
+      "skill_ids": [
+        "area-physical-education-wellbeing"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-08",
+      "subject_id": "vocational-education",
+      "subject_name_en": "Vocational Education",
+      "skill_ids": [
+        "area-vocational-skill-education"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-09",
+      "subject_id": "english",
+      "subject_name_en": "English",
+      "skill_ids": [
+        "lang-english"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-09",
+      "subject_id": "hindi",
+      "subject_name_en": "Hindi",
+      "skill_ids": [
+        "lang-hindi"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-09",
+      "subject_id": "sanskrit",
+      "subject_name_en": "Sanskrit",
+      "skill_ids": [
+        "lang-sanskrit"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-09",
+      "subject_id": "mathematics",
+      "subject_name_en": "Mathematics",
+      "skill_ids": [
+        "area-mathematics"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-09",
+      "subject_id": "science",
+      "subject_name_en": "Science",
+      "skill_ids": [
+        "area-science"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-09",
+      "subject_id": "social-science",
+      "subject_name_en": "Social Science",
+      "skill_ids": [
+        "area-social-science"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-09",
+      "subject_id": "arts",
+      "subject_name_en": "Arts",
+      "skill_ids": [
+        "area-arts"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-09",
+      "subject_id": "physical-education-wellbeing",
+      "subject_name_en": "Physical Education and Well Being",
+      "skill_ids": [
+        "area-physical-education-wellbeing"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-09",
+      "subject_id": "vocational-education",
+      "subject_name_en": "Skill Education",
+      "skill_ids": [
+        "area-vocational-skill-education"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-10",
+      "subject_id": "english",
+      "subject_name_en": "English",
+      "skill_ids": [
+        "lang-english"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-10",
+      "subject_id": "hindi",
+      "subject_name_en": "Hindi",
+      "skill_ids": [
+        "lang-hindi"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-10",
+      "subject_id": "sanskrit",
+      "subject_name_en": "Sanskrit",
+      "skill_ids": [
+        "lang-sanskrit"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-10",
+      "subject_id": "mathematics",
+      "subject_name_en": "Mathematics",
+      "skill_ids": [
+        "area-mathematics"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-10",
+      "subject_id": "science",
+      "subject_name_en": "Science",
+      "skill_ids": [
+        "area-science"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-10",
+      "subject_id": "social-science",
+      "subject_name_en": "Social Science",
+      "skill_ids": [
+        "area-social-science"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-10",
+      "subject_id": "physical-education-wellbeing",
+      "subject_name_en": "Health and Physical Education",
+      "skill_ids": [
+        "area-physical-education-wellbeing"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-11",
+      "subject_id": "english",
+      "subject_name_en": "English",
+      "skill_ids": [
+        "lang-english"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-11",
+      "subject_id": "hindi",
+      "subject_name_en": "Hindi",
+      "skill_ids": [
+        "lang-hindi"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-11",
+      "subject_id": "sanskrit",
+      "subject_name_en": "Sanskrit",
+      "skill_ids": [
+        "lang-sanskrit"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-11",
+      "subject_id": "mathematics",
+      "subject_name_en": "Mathematics",
+      "skill_ids": [
+        "area-mathematics"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-11",
+      "subject_id": "physics",
+      "subject_name_en": "Physics",
+      "skill_ids": [
+        "ss-physics"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-11",
+      "subject_id": "chemistry",
+      "subject_name_en": "Chemistry",
+      "skill_ids": [
+        "ss-chemistry"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-11",
+      "subject_id": "biology",
+      "subject_name_en": "Biology",
+      "skill_ids": [
+        "ss-biology"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-11",
+      "subject_id": "accountancy",
+      "subject_name_en": "Accountancy",
+      "skill_ids": [
+        "ss-accountancy"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-11",
+      "subject_id": "business-studies",
+      "subject_name_en": "Business Studies",
+      "skill_ids": [
+        "ss-business-studies"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-11",
+      "subject_id": "economics",
+      "subject_name_en": "Economics",
+      "skill_ids": [
+        "ss-economics"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-11",
+      "subject_id": "history",
+      "subject_name_en": "History",
+      "skill_ids": [
+        "ss-history"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-11",
+      "subject_id": "geography",
+      "subject_name_en": "Geography",
+      "skill_ids": [
+        "ss-geography"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-11",
+      "subject_id": "political-science",
+      "subject_name_en": "Political Science",
+      "skill_ids": [
+        "ss-political-science"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-11",
+      "subject_id": "sociology",
+      "subject_name_en": "Sociology",
+      "skill_ids": [
+        "ss-sociology"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-11",
+      "subject_id": "psychology",
+      "subject_name_en": "Psychology",
+      "skill_ids": [
+        "ss-psychology"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-11",
+      "subject_id": "computer-science",
+      "subject_name_en": "Computer Science",
+      "skill_ids": [
+        "ss-computer-science"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-11",
+      "subject_id": "informatics-practices",
+      "subject_name_en": "Informatics Practices",
+      "skill_ids": [
+        "ss-informatics-practices"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-11",
+      "subject_id": "home-science",
+      "subject_name_en": "Home Science",
+      "skill_ids": [
+        "ss-home-science"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-11",
+      "subject_id": "physical-education-wellbeing",
+      "subject_name_en": "Health and Physical Education",
+      "skill_ids": [
+        "area-physical-education-wellbeing"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-12",
+      "subject_id": "english",
+      "subject_name_en": "English",
+      "skill_ids": [
+        "lang-english"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-12",
+      "subject_id": "hindi",
+      "subject_name_en": "Hindi",
+      "skill_ids": [
+        "lang-hindi"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-12",
+      "subject_id": "sanskrit",
+      "subject_name_en": "Sanskrit",
+      "skill_ids": [
+        "lang-sanskrit"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-12",
+      "subject_id": "mathematics",
+      "subject_name_en": "Mathematics",
+      "skill_ids": [
+        "area-mathematics"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-12",
+      "subject_id": "physics",
+      "subject_name_en": "Physics",
+      "skill_ids": [
+        "ss-physics"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-12",
+      "subject_id": "chemistry",
+      "subject_name_en": "Chemistry",
+      "skill_ids": [
+        "ss-chemistry"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-12",
+      "subject_id": "biology",
+      "subject_name_en": "Biology",
+      "skill_ids": [
+        "ss-biology"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-12",
+      "subject_id": "accountancy",
+      "subject_name_en": "Accountancy",
+      "skill_ids": [
+        "ss-accountancy"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-12",
+      "subject_id": "business-studies",
+      "subject_name_en": "Business Studies",
+      "skill_ids": [
+        "ss-business-studies"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-12",
+      "subject_id": "economics",
+      "subject_name_en": "Economics",
+      "skill_ids": [
+        "ss-economics"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-12",
+      "subject_id": "history",
+      "subject_name_en": "History",
+      "skill_ids": [
+        "ss-history"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-12",
+      "subject_id": "geography",
+      "subject_name_en": "Geography",
+      "skill_ids": [
+        "ss-geography"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-12",
+      "subject_id": "political-science",
+      "subject_name_en": "Political Science",
+      "skill_ids": [
+        "ss-political-science"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-12",
+      "subject_id": "sociology",
+      "subject_name_en": "Sociology",
+      "skill_ids": [
+        "ss-sociology"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-12",
+      "subject_id": "psychology",
+      "subject_name_en": "Psychology",
+      "skill_ids": [
+        "ss-psychology"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-12",
+      "subject_id": "computer-science",
+      "subject_name_en": "Computer Science",
+      "skill_ids": [
+        "ss-computer-science"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-12",
+      "subject_id": "informatics-practices",
+      "subject_name_en": "Informatics Practices",
+      "skill_ids": [
+        "ss-informatics-practices"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "year_id": "class-12",
+      "subject_id": "home-science",
+      "subject_name_en": "Home Science",
+      "skill_ids": [
+        "ss-home-science"
+      ]
+    },
+    {
+      "board_id": "nios",
+      "year_id": "class-12",
+      "subject_id": "hindi",
+      "subject_name_en": "Hindi (301)",
+      "skill_ids": [
+        "lang-hindi"
+      ]
+    },
+    {
+      "board_id": "nios",
+      "year_id": "class-12",
+      "subject_id": "bengali",
+      "subject_name_en": "Bengali (303)",
+      "skill_ids": [
+        "lang-other-indian"
+      ]
+    },
+    {
+      "board_id": "nios",
+      "year_id": "class-12",
+      "subject_id": "gujarati",
+      "subject_name_en": "Gujarati (307)",
+      "skill_ids": [
+        "lang-other-indian"
+      ]
+    },
+    {
+      "board_id": "nios",
+      "year_id": "class-12",
+      "subject_id": "punjabi",
+      "subject_name_en": "Punjabi (310)",
+      "skill_ids": [
+        "lang-other-indian"
+      ]
+    },
+    {
+      "board_id": "nios",
+      "year_id": "class-12",
+      "subject_id": "physics",
+      "subject_name_en": "Physics (312)",
+      "skill_ids": [
+        "ss-physics"
+      ]
+    },
+    {
+      "board_id": "nios",
+      "year_id": "class-12",
+      "subject_id": "chemistry",
+      "subject_name_en": "Chemistry (313)",
+      "skill_ids": [
+        "ss-chemistry"
+      ]
+    },
+    {
+      "board_id": "nios",
+      "year_id": "class-12",
+      "subject_id": "biology",
+      "subject_name_en": "Biology (314)",
+      "skill_ids": [
+        "ss-biology"
+      ]
+    },
+    {
+      "board_id": "nios",
+      "year_id": "class-12",
+      "subject_id": "business-studies",
+      "subject_name_en": "Business Studies (319)",
+      "skill_ids": [
+        "ss-business-studies"
+      ]
+    },
+    {
+      "board_id": "nios",
+      "year_id": "class-12",
+      "subject_id": "psychology",
+      "subject_name_en": "Psychology (328)",
+      "skill_ids": [
+        "ss-psychology"
+      ]
+    },
+    {
+      "board_id": "nios",
+      "year_id": "class-12",
+      "subject_id": "computer-science",
+      "subject_name_en": "Computer Science (330)",
+      "skill_ids": [
+        "ss-computer-science"
+      ]
+    },
+    {
+      "board_id": "nios",
+      "year_id": "class-12",
+      "subject_id": "physical-education-and-yog",
+      "subject_name_en": "Physical Education and Yog (373)",
+      "skill_ids": [
+        "area-physical-education-wellbeing"
+      ]
+    }
+  ]
+}

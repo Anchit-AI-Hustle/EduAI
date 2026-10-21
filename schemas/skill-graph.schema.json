@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "skill-graph.schema.json",
+  "title": "Shared skill graph (all boards map onto these nodes)",
+  "type": "object",
+  "required": ["graph_id", "version", "nodes", "edges"],
+  "properties": {
+    "graph_id": { "type": "string" },
+    "version": { "type": "string" },
+    "nodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["skill_id", "label_en", "label_hi", "level", "kind", "source_ids"],
+        "properties": {
+          "skill_id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+          "label_en": { "type": "string" },
+          "label_hi": { "type": "string" },
+          "level": { "enum": ["domain", "subdomain", "unit", "competency"] },
+          "kind": { "enum": ["early-development", "language", "curricular-area", "senior-secondary-discipline", "exam-track-domain"] },
+          "parent_id": { "type": ["string", "null"] },
+          "source_ids": { "type": "array", "items": { "type": "string" }, "minItems": 1 }
+        },
+        "additionalProperties": false
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["from", "to", "type", "basis"],
+        "properties": {
+          "from": { "type": "string" },
+          "to": { "type": "string" },
+          "type": { "enum": ["prerequisite_of", "part_of", "maps_to"] },
+          "basis": { "enum": ["structural-sequence-in-official-books", "official-domain-structure", "design-assumption"] },
+          "source_ids": { "type": "array", "items": { "type": "string" } }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

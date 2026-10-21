@@ -1,0 +1,175 @@
+{
+  "skeleton_id": "cbse-home-0-3",
+  "board_id": "cbse",
+  "year_id": "home-0-3",
+  "academic_session": "2026-27",
+  "nep_stage": "pre-foundational-home",
+  "coverage_status": "defers-to-national-framework",
+  "certification_point": null,
+  "scheme_notes": [
+    {
+      "text": "Pre-primary years follow the national Foundational Stage frameworks; this file points to national-early-years for content.",
+      "source_ids": [
+        "SRC-MOE-DOSEL-ECCE-LETTER"
+      ]
+    }
+  ],
+  "subjects": [],
+  "skills": [
+    {
+      "skill_id": "ed-responsive-caregiving-stimulation",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "ed-physical-motor",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "ed-cognitive",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "ed-socio-emotional-ethical",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "ed-communication-early-language",
+      "depth": "domain-only"
+    }
+  ],
+  "term_plan": {
+    "status": "skeleton",
+    "basis": "product-default",
+    "terms": [
+      {
+        "term_id": "continuous-year",
+        "label_en": "Continuous year (observation-based, no exams)",
+        "label_hi": "पूरा वर्ष (अवलोकन आधारित, कोई परीक्षा नहीं)"
+      }
+    ]
+  },
+  "weekly_plan": {
+    "status": "gap",
+    "basis": "not-yet-sourced",
+    "weeks_per_year": null,
+    "sessions_per_week": null,
+    "notes": [
+      "Periods per week per subject to come from each board's scheme of studies; product defaults set in Phase 2 where boards are silent."
+    ]
+  },
+  "daily_lesson_template": {
+    "status": "skeleton",
+    "basis": "product-default",
+    "loop": [
+      "caregiver-reads-activity-card",
+      "responsive-play-and-talk",
+      "daily-routine-as-learning",
+      "caregiver-logs-observation"
+    ],
+    "screen_minutes_cap": 0,
+    "source_ids": [
+      "SRC-WHO-UNDER-5-ACTIVITY-SCREEN-SLEEP-2019",
+      "SRC-RS-UQ319-2024-07-24"
+    ],
+    "notes": [
+      "Child-facing screen time set to 0 for the whole 0-3 band. WHO 2019 does not recommend sedentary screen time under 2 and caps age 2 at 1 hour; this product is stricter so one rule covers the band. The app is caregiver-facing only."
+    ]
+  },
+  "assessments": {
+    "unit_tests": {
+      "status": "not-applicable",
+      "basis": "product-default",
+      "notes": [
+        "No tests before Class 1; progress is tracked through caregiver and teacher observation."
+      ]
+    },
+    "internals": {
+      "status": "skeleton",
+      "basis": "product-default",
+      "notes": [
+        "Observation log against development domains."
+      ]
+    },
+    "term_exams": {
+      "status": "not-applicable",
+      "basis": "product-default",
+      "notes": [
+        "No tests before Class 1; progress is tracked through caregiver and teacher observation."
+      ]
+    },
+    "board_style_mocks": {
+      "status": "not-applicable",
+      "basis": "product-default",
+      "notes": [
+        "No tests before Class 1; progress is tracked through caregiver and teacher observation."
+      ],
+      "applicable": false
+    }
+  },
+  "co_curricular": {
+    "status": "skeleton",
+    "basis": "national-framework",
+    "areas": [
+      "art-and-craft",
+      "music-and-movement",
+      "free-and-guided-play",
+      "storytelling"
+    ],
+    "source_ids": [
+      "SRC-PIB-POSHAN-BHI-PADHAI-BHI"
+    ],
+    "notes": [
+      "Areas mirror the cultural/artistic and physical/motor development domains."
+    ]
+  },
+  "extracurricular": {
+    "status": "skeleton",
+    "basis": "product-default",
+    "areas": [
+      "outdoor-play",
+      "family-activities",
+      "neighbourhood-walks"
+    ],
+    "notes": [
+      "In-person peer activities are included on purpose to address the social learning risk."
+    ]
+  },
+  "parent_view": {
+    "status": "skeleton",
+    "basis": "product-default",
+    "sections": [
+      "this-week",
+      "skill-progress",
+      "observations-and-milestones",
+      "screen-time",
+      "what-to-do-at-home",
+      "consent-and-data"
+    ]
+  },
+  "source_ids": [
+    "SRC-MOE-DOSEL-ECCE-LETTER",
+    "SRC-CBSE-CIRC-ACAD-48-2025"
+  ],
+  "gaps": [
+    {
+      "gap_id": "G-CBSE-HOME-0-3-BALVATIKA",
+      "missing": "Any CBSE-specific pre-primary (Balvatika) guidance for affiliated schools",
+      "resolve_from": "cbseacademic.nic.in circulars",
+      "phase": "phase-3"
+    },
+    {
+      "gap_id": "G-CBSE-HOME-0-3-UNITS",
+      "missing": "Unit and chapter level content and learning outcomes for this year",
+      "resolve_from": "data/curriculum/national-early-years",
+      "phase": "phase-3"
+    },
+    {
+      "gap_id": "G-CBSE-HOME-0-3-PERIODS",
+      "missing": "Periods or sessions per week per subject",
+      "resolve_from": "Board scheme of studies; product default where the board is silent",
+      "phase": "phase-2"
+    }
+  ],
+  "generated_by": "scripts/generate-curriculum-skeletons.mjs",
+  "built_on": "2026-10-21"
+}

@@ -1,0 +1,394 @@
+{
+  "skeleton_id": "nios-class-12",
+  "board_id": "nios",
+  "year_id": "class-12",
+  "academic_session": "2026-27",
+  "nep_stage": "secondary",
+  "coverage_status": "partially-sourced",
+  "certification_point": "NIOS Senior Secondary (equivalent to Class XII)",
+  "scheme_notes": [
+    {
+      "text": "NIOS Senior Secondary (equivalent to Class XII): minimum age 15; pass in at least 5 subjects including one or at most two languages; up to 7 subjects.",
+      "source_ids": [
+        "SRC-NIOS-FAQ",
+        "SRC-NIOS-SENIOR-SECONDARY-SCHEME"
+      ]
+    }
+  ],
+  "subjects": [
+    {
+      "status": "partially-sourced",
+      "source_ids": [
+        "SRC-NIOS-FAQ",
+        "SRC-NIOS-SENIOR-SECONDARY-SCHEME"
+      ],
+      "subject_id": "hindi",
+      "name_en": "Hindi (301)",
+      "name_hi": "हिंदी (301)",
+      "name_hi_basis": "ui-translation",
+      "skill_ids": [
+        "lang-hindi"
+      ],
+      "notes": []
+    },
+    {
+      "status": "partially-sourced",
+      "source_ids": [
+        "SRC-NIOS-FAQ",
+        "SRC-NIOS-SENIOR-SECONDARY-SCHEME"
+      ],
+      "subject_id": "bengali",
+      "name_en": "Bengali (303)",
+      "name_hi": "बांग्ला (303)",
+      "name_hi_basis": "ui-translation",
+      "skill_ids": [
+        "lang-other-indian"
+      ],
+      "notes": []
+    },
+    {
+      "status": "partially-sourced",
+      "source_ids": [
+        "SRC-NIOS-FAQ",
+        "SRC-NIOS-SENIOR-SECONDARY-SCHEME"
+      ],
+      "subject_id": "gujarati",
+      "name_en": "Gujarati (307)",
+      "name_hi": "गुजराती (307)",
+      "name_hi_basis": "ui-translation",
+      "skill_ids": [
+        "lang-other-indian"
+      ],
+      "notes": []
+    },
+    {
+      "status": "partially-sourced",
+      "source_ids": [
+        "SRC-NIOS-FAQ",
+        "SRC-NIOS-SENIOR-SECONDARY-SCHEME"
+      ],
+      "subject_id": "punjabi",
+      "name_en": "Punjabi (310)",
+      "name_hi": "पंजाबी (310)",
+      "name_hi_basis": "ui-translation",
+      "skill_ids": [
+        "lang-other-indian"
+      ],
+      "notes": []
+    },
+    {
+      "status": "partially-sourced",
+      "source_ids": [
+        "SRC-NIOS-FAQ",
+        "SRC-NIOS-SENIOR-SECONDARY-SCHEME"
+      ],
+      "subject_id": "physics",
+      "name_en": "Physics (312)",
+      "name_hi": "भौतिकी (312)",
+      "name_hi_basis": "ui-translation",
+      "skill_ids": [
+        "ss-physics"
+      ],
+      "notes": []
+    },
+    {
+      "status": "partially-sourced",
+      "source_ids": [
+        "SRC-NIOS-FAQ",
+        "SRC-NIOS-SENIOR-SECONDARY-SCHEME"
+      ],
+      "subject_id": "chemistry",
+      "name_en": "Chemistry (313)",
+      "name_hi": "रसायन विज्ञान (313)",
+      "name_hi_basis": "ui-translation",
+      "skill_ids": [
+        "ss-chemistry"
+      ],
+      "notes": []
+    },
+    {
+      "status": "partially-sourced",
+      "source_ids": [
+        "SRC-NIOS-FAQ",
+        "SRC-NIOS-SENIOR-SECONDARY-SCHEME"
+      ],
+      "subject_id": "biology",
+      "name_en": "Biology (314)",
+      "name_hi": "जीव विज्ञान (314)",
+      "name_hi_basis": "ui-translation",
+      "skill_ids": [
+        "ss-biology"
+      ],
+      "notes": []
+    },
+    {
+      "status": "partially-sourced",
+      "source_ids": [
+        "SRC-NIOS-FAQ",
+        "SRC-NIOS-SENIOR-SECONDARY-SCHEME"
+      ],
+      "subject_id": "business-studies",
+      "name_en": "Business Studies (319)",
+      "name_hi": "व्यवसाय अध्ययन (319)",
+      "name_hi_basis": "ui-translation",
+      "skill_ids": [
+        "ss-business-studies"
+      ],
+      "notes": []
+    },
+    {
+      "status": "partially-sourced",
+      "source_ids": [
+        "SRC-NIOS-FAQ",
+        "SRC-NIOS-SENIOR-SECONDARY-SCHEME"
+      ],
+      "subject_id": "psychology",
+      "name_en": "Psychology (328)",
+      "name_hi": "मनोविज्ञान (328)",
+      "name_hi_basis": "ui-translation",
+      "skill_ids": [
+        "ss-psychology"
+      ],
+      "notes": []
+    },
+    {
+      "status": "partially-sourced",
+      "source_ids": [
+        "SRC-NIOS-FAQ",
+        "SRC-NIOS-SENIOR-SECONDARY-SCHEME"
+      ],
+      "subject_id": "computer-science",
+      "name_en": "Computer Science (330)",
+      "name_hi": "कंप्यूटर विज्ञान (330)",
+      "name_hi_basis": "ui-translation",
+      "skill_ids": [
+        "ss-computer-science"
+      ],
+      "notes": []
+    },
+    {
+      "status": "partially-sourced",
+      "source_ids": [
+        "SRC-NIOS-FAQ",
+        "SRC-NIOS-SENIOR-SECONDARY-SCHEME"
+      ],
+      "subject_id": "physical-education-and-yog",
+      "name_en": "Physical Education and Yog (373)",
+      "name_hi": "शारीरिक शिक्षा और योग (373)",
+      "name_hi_basis": "ui-translation",
+      "skill_ids": [
+        "area-physical-education-wellbeing"
+      ],
+      "notes": []
+    }
+  ],
+  "skills": [
+    {
+      "skill_id": "lang-hindi",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "lang-other-indian",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "ss-physics",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "ss-chemistry",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "ss-biology",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "ss-business-studies",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "ss-psychology",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "ss-computer-science",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "area-physical-education-wellbeing",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "lang-english",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "area-mathematics",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "ss-accountancy",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "ss-economics",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "ss-history",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "ss-geography",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "ss-political-science",
+      "depth": "domain-only"
+    }
+  ],
+  "term_plan": {
+    "status": "skeleton",
+    "basis": "product-default",
+    "terms": [
+      {
+        "term_id": "term-1",
+        "label_en": "Term 1",
+        "label_hi": "सत्र 1"
+      },
+      {
+        "term_id": "term-2",
+        "label_en": "Term 2",
+        "label_hi": "सत्र 2"
+      }
+    ],
+    "notes": [
+      "Two-term split is a product default until each board's academic calendar guidance is ingested."
+    ]
+  },
+  "weekly_plan": {
+    "status": "gap",
+    "basis": "not-yet-sourced",
+    "weeks_per_year": null,
+    "sessions_per_week": null,
+    "notes": [
+      "Periods per week per subject to come from each board's scheme of studies; product defaults set in Phase 2 where boards are silent."
+    ]
+  },
+  "daily_lesson_template": {
+    "status": "skeleton",
+    "basis": "product-default",
+    "loop": [
+      "recall-warm-up",
+      "new-idea",
+      "worked-example",
+      "guided-practice",
+      "independent-practice",
+      "exit-check",
+      "offline-practice-task"
+    ],
+    "screen_minutes_cap": null,
+    "source_ids": [],
+    "notes": [
+      "School-age screen cap is guardian-set; Phase 2 decides the product default."
+    ]
+  },
+  "assessments": {
+    "unit_tests": {
+      "status": "skeleton",
+      "basis": "product-default",
+      "notes": [
+        "One short unit check per unit once units are ingested."
+      ]
+    },
+    "internals": {
+      "status": "gap",
+      "basis": "not-yet-sourced",
+      "notes": [
+        "Board internal-assessment components and weights not yet ingested."
+      ]
+    },
+    "term_exams": {
+      "status": "skeleton",
+      "basis": "product-default",
+      "source_ids": [],
+      "notes": []
+    },
+    "board_style_mocks": {
+      "status": "gap",
+      "basis": "not-yet-sourced",
+      "applicable": true,
+      "notes": [
+        "Certification year (NIOS Senior Secondary (equivalent to Class XII)). Paper pattern and marking scheme to be ingested from the board before mocks are generated."
+      ]
+    }
+  },
+  "co_curricular": {
+    "status": "gap",
+    "basis": "not-yet-sourced",
+    "areas": [],
+    "notes": [
+      "Board co-curricular requirements for this year not yet sourced."
+    ]
+  },
+  "extracurricular": {
+    "status": "skeleton",
+    "basis": "product-default",
+    "areas": [
+      "clubs",
+      "sports",
+      "competitions-and-olympiads",
+      "community-service",
+      "reading-programme",
+      "in-person-peer-group"
+    ],
+    "notes": [
+      "In-person peer activities are included on purpose to address the social learning risk."
+    ]
+  },
+  "parent_view": {
+    "status": "skeleton",
+    "basis": "product-default",
+    "sections": [
+      "this-week",
+      "skill-progress",
+      "assessments-and-feedback",
+      "screen-time",
+      "what-to-do-at-home",
+      "consent-and-data"
+    ]
+  },
+  "source_ids": [
+    "SRC-NIOS-FAQ",
+    "SRC-NIOS-SENIOR-SECONDARY-SCHEME"
+  ],
+  "gaps": [
+    {
+      "gap_id": "G-NIOS-CLASS-12-LEVEL-CONTENT",
+      "missing": "NIOS Senior Secondary (equivalent to Class XII): full subject list and course content not yet ingested (only part of the subject table was read)",
+      "resolve_from": "NIOS prospectus and NIOS self-learning material",
+      "phase": "phase-3"
+    },
+    {
+      "gap_id": "G-NIOS-CLASS-12-UNITS",
+      "missing": "Unit and chapter level content and learning outcomes for this year",
+      "resolve_from": "NIOS prospectus and self-learning material for the level",
+      "phase": "phase-3"
+    },
+    {
+      "gap_id": "G-NIOS-CLASS-12-PERIODS",
+      "missing": "Periods or sessions per week per subject",
+      "resolve_from": "Board scheme of studies; product default where the board is silent",
+      "phase": "phase-2"
+    },
+    {
+      "gap_id": "G-NIOS-CLASS-12-INTERNALS",
+      "missing": "Internal assessment components and weightage",
+      "resolve_from": "Board curriculum or assessment framework document",
+      "phase": "phase-3"
+    }
+  ],
+  "generated_by": "scripts/generate-curriculum-skeletons.mjs",
+  "built_on": "2026-10-21"
+}

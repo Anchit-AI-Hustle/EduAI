@@ -1,0 +1,170 @@
+{
+  "registry_id": "competitive-and-study-abroad-track-registry",
+  "built_on": "2026-10-21",
+  "phase": "phase-4 (registered now so the skill graph and learner profile can reference tracks)",
+  "tracks": [
+    {
+      "track_id": "jee-main",
+      "name": "JEE (Main)",
+      "conducting_body": "National Testing Agency",
+      "official_url": "https://jeemain.nta.nic.in/",
+      "source_ids": [
+        "SRC-NTA-JEE-MAIN"
+      ],
+      "earliest_start_year": "class-09",
+      "earliest_start_basis": "product-default per brief (tracks branch off from Class 8-9)",
+      "branches_from_skill_ids": [
+        "area-mathematics",
+        "ss-physics",
+        "ss-chemistry"
+      ],
+      "syllabus_status": "gap",
+      "notes": "Syllabus and eligibility to ingest from the current NTA information bulletin; site blocked from build environment."
+    },
+    {
+      "track_id": "jee-advanced",
+      "name": "JEE (Advanced)",
+      "conducting_body": "Indian Institutes of Technology",
+      "official_url": "https://jeeadv.ac.in/",
+      "source_ids": [
+        "SRC-JEE-ADVANCED"
+      ],
+      "earliest_start_year": "class-09",
+      "earliest_start_basis": "product-default per brief (tracks branch off from Class 8-9)",
+      "branches_from_skill_ids": [
+        "area-mathematics",
+        "ss-physics",
+        "ss-chemistry"
+      ],
+      "syllabus_status": "gap",
+      "notes": "Syllabus to ingest from jeeadv.ac.in."
+    },
+    {
+      "track_id": "neet-ug",
+      "name": "NEET (UG)",
+      "conducting_body": "National Testing Agency (syllabus by National Medical Commission)",
+      "official_url": "https://neet.nta.nic.in/",
+      "source_ids": [
+        "SRC-NTA-NEET-UG",
+        "SRC-NMC"
+      ],
+      "earliest_start_year": "class-09",
+      "earliest_start_basis": "product-default per brief (tracks branch off from Class 8-9)",
+      "branches_from_skill_ids": [
+        "ss-physics",
+        "ss-chemistry",
+        "ss-biology"
+      ],
+      "syllabus_status": "gap",
+      "notes": "Syllabus to ingest from NMC and the NTA bulletin."
+    },
+    {
+      "track_id": "cuet-ug",
+      "name": "CUET (UG)",
+      "conducting_body": "National Testing Agency",
+      "official_url": "https://cuet.nta.nic.in/",
+      "source_ids": [
+        "SRC-NTA-CUET-UG"
+      ],
+      "earliest_start_year": "class-09",
+      "earliest_start_basis": "product-default per brief (tracks branch off from Class 8-9)",
+      "branches_from_skill_ids": [
+        "lang-english",
+        "area-mathematics",
+        "area-social-science",
+        "area-science"
+      ],
+      "syllabus_status": "gap",
+      "notes": "Subject-wise syllabi to ingest; site blocked from build environment."
+    },
+    {
+      "track_id": "upsc-cse",
+      "name": "UPSC Civil Services Examination",
+      "conducting_body": "Union Public Service Commission",
+      "official_url": "https://upsc.gov.in/",
+      "source_ids": [
+        "SRC-UPSC"
+      ],
+      "earliest_start_year": "class-09",
+      "earliest_start_basis": "product-default per brief (tracks branch off from Class 8-9)",
+      "branches_from_skill_ids": [
+        "area-social-science",
+        "ss-history",
+        "ss-geography",
+        "ss-political-science",
+        "ss-economics"
+      ],
+      "syllabus_status": "gap",
+      "notes": "Long-horizon track (eligibility requires a degree); school years build foundations only. Syllabus to ingest from the CSE notification."
+    },
+    {
+      "track_id": "sat",
+      "name": "SAT",
+      "conducting_body": "College Board",
+      "official_url": "https://satsuite.collegeboard.org/sat",
+      "source_ids": [
+        "SRC-COLLEGEBOARD-SAT-CONTENT"
+      ],
+      "earliest_start_year": "class-09",
+      "earliest_start_basis": "product-default per brief (tracks branch off from Class 8-9)",
+      "branches_from_skill_ids": [
+        "sat-reading-writing",
+        "sat-math",
+        "lang-english",
+        "area-mathematics"
+      ],
+      "syllabus_status": "domains-sourced",
+      "notes": "Content domains sourced from College Board pages (snapshots stored). Skill-level specifications still to ingest."
+    },
+    {
+      "track_id": "act",
+      "name": "ACT",
+      "conducting_body": "ACT, Inc.",
+      "official_url": "https://www.act.org/",
+      "source_ids": [
+        "SRC-ACT"
+      ],
+      "earliest_start_year": "class-09",
+      "earliest_start_basis": "product-default per brief (tracks branch off from Class 8-9)",
+      "branches_from_skill_ids": [
+        "lang-english",
+        "area-mathematics",
+        "area-science"
+      ],
+      "syllabus_status": "gap",
+      "notes": "Test sections and specifications to ingest from act.org."
+    },
+    {
+      "track_id": "ielts",
+      "name": "IELTS",
+      "conducting_body": "IELTS partners",
+      "official_url": "https://ielts.org/",
+      "source_ids": [
+        "SRC-IELTS"
+      ],
+      "earliest_start_year": "class-08",
+      "earliest_start_basis": "product-default per brief (tracks branch off from Class 8-9)",
+      "branches_from_skill_ids": [
+        "lang-english"
+      ],
+      "syllabus_status": "gap",
+      "notes": "Format to ingest from ielts.org."
+    },
+    {
+      "track_id": "toefl",
+      "name": "TOEFL",
+      "conducting_body": "ETS",
+      "official_url": "https://www.ets.org/toefl.html",
+      "source_ids": [
+        "SRC-ETS-TOEFL"
+      ],
+      "earliest_start_year": "class-08",
+      "earliest_start_basis": "product-default per brief (tracks branch off from Class 8-9)",
+      "branches_from_skill_ids": [
+        "lang-english"
+      ],
+      "syllabus_status": "gap",
+      "notes": "Format to ingest from ets.org."
+    }
+  ]
+}

@@ -1,0 +1,427 @@
+{
+  "skeleton_id": "cbse-class-09",
+  "board_id": "cbse",
+  "year_id": "class-09",
+  "academic_session": "2026-27",
+  "nep_stage": "secondary",
+  "coverage_status": "partially-sourced",
+  "certification_point": null,
+  "scheme_notes": [
+    {
+      "text": "CBSE applies the NCF-2023 scheme of studies in Class IX from 2026-27.",
+      "source_ids": [
+        "SRC-CBSE-CIRC-ACAD-14-2026"
+      ]
+    },
+    {
+      "text": "From 1 July 2026 three languages (R1, R2, R3) are compulsory in Class IX, at least two native Indian languages; Class IX uses Class VI R3 textbooks until dedicated books exist; no Class X board exam for R3, assessment is school-based.",
+      "source_ids": [
+        "SRC-CBSE-CIRC-ACAD-33-2026"
+      ]
+    }
+  ],
+  "subjects": [
+    {
+      "status": "partially-sourced",
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX",
+        "SRC-CBSE-CIRC-ACAD-14-2026",
+        "SRC-CBSE-CURRICULUM-2026-27-PAGE",
+        "SRC-CBSE-CIRC-ACAD-33-2026",
+        "SRC-CBSE-CIRC-ACAD-49-2026"
+      ],
+      "subject_id": "english",
+      "name_en": "English",
+      "name_hi": "अंग्रेज़ी",
+      "name_hi_basis": "ui-translation",
+      "skill_ids": [
+        "lang-english"
+      ],
+      "ncert_textbook_titles": [
+        "Kaveri"
+      ],
+      "ncert_hindi_medium_titles": [],
+      "language_slot": "any",
+      "notes": []
+    },
+    {
+      "status": "partially-sourced",
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX",
+        "SRC-CBSE-CIRC-ACAD-14-2026",
+        "SRC-CBSE-CURRICULUM-2026-27-PAGE",
+        "SRC-CBSE-CIRC-ACAD-33-2026",
+        "SRC-CBSE-CIRC-ACAD-49-2026"
+      ],
+      "subject_id": "hindi",
+      "name_en": "Hindi",
+      "name_hi": "हिंदी",
+      "name_hi_basis": "ui-translation",
+      "skill_ids": [
+        "lang-hindi"
+      ],
+      "ncert_textbook_titles": [
+        "Ganga"
+      ],
+      "ncert_hindi_medium_titles": [],
+      "language_slot": "any",
+      "notes": []
+    },
+    {
+      "status": "partially-sourced",
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX",
+        "SRC-CBSE-CIRC-ACAD-14-2026",
+        "SRC-CBSE-CURRICULUM-2026-27-PAGE",
+        "SRC-CBSE-CIRC-ACAD-33-2026",
+        "SRC-CBSE-CIRC-ACAD-49-2026"
+      ],
+      "subject_id": "sanskrit",
+      "name_en": "Sanskrit",
+      "name_hi": "संस्कृत",
+      "name_hi_basis": "ui-translation",
+      "skill_ids": [
+        "lang-sanskrit"
+      ],
+      "ncert_textbook_titles": [
+        "Sharada",
+        "Risikulya(R2)"
+      ],
+      "ncert_hindi_medium_titles": [],
+      "language_slot": "any",
+      "notes": []
+    },
+    {
+      "status": "partially-sourced",
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX",
+        "SRC-CBSE-CIRC-ACAD-14-2026",
+        "SRC-CBSE-CURRICULUM-2026-27-PAGE",
+        "SRC-CBSE-CIRC-ACAD-33-2026",
+        "SRC-CBSE-CIRC-ACAD-49-2026"
+      ],
+      "subject_id": "mathematics",
+      "name_en": "Mathematics",
+      "name_hi": "गणित",
+      "name_hi_basis": "ui-translation",
+      "skill_ids": [
+        "area-mathematics"
+      ],
+      "ncert_textbook_titles": [
+        "Ganita Manjari",
+        "Ganita Manjari PART-II"
+      ],
+      "ncert_hindi_medium_titles": [
+        "Ganita Manjari (Hindi)"
+      ],
+      "notes": []
+    },
+    {
+      "status": "partially-sourced",
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX",
+        "SRC-CBSE-CIRC-ACAD-14-2026",
+        "SRC-CBSE-CURRICULUM-2026-27-PAGE",
+        "SRC-CBSE-CIRC-ACAD-33-2026",
+        "SRC-CBSE-CIRC-ACAD-49-2026"
+      ],
+      "subject_id": "science",
+      "name_en": "Science",
+      "name_hi": "विज्ञान",
+      "name_hi_basis": "ui-translation",
+      "skill_ids": [
+        "area-science"
+      ],
+      "ncert_textbook_titles": [
+        "Exploration"
+      ],
+      "ncert_hindi_medium_titles": [
+        "Anveshan"
+      ],
+      "notes": []
+    },
+    {
+      "status": "partially-sourced",
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX",
+        "SRC-CBSE-CIRC-ACAD-14-2026",
+        "SRC-CBSE-CURRICULUM-2026-27-PAGE",
+        "SRC-CBSE-CIRC-ACAD-33-2026",
+        "SRC-CBSE-CIRC-ACAD-49-2026"
+      ],
+      "subject_id": "social-science",
+      "name_en": "Social Science",
+      "name_hi": "सामाजिक विज्ञान",
+      "name_hi_basis": "ui-translation",
+      "skill_ids": [
+        "area-social-science"
+      ],
+      "ncert_textbook_titles": [
+        "Understanding Society India and Beyond PART-I",
+        "Understanding Society India and Beyond PART-II"
+      ],
+      "ncert_hindi_medium_titles": [],
+      "notes": []
+    },
+    {
+      "status": "partially-sourced",
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX",
+        "SRC-CBSE-CIRC-ACAD-14-2026",
+        "SRC-CBSE-CURRICULUM-2026-27-PAGE",
+        "SRC-CBSE-CIRC-ACAD-33-2026",
+        "SRC-CBSE-CIRC-ACAD-49-2026"
+      ],
+      "subject_id": "arts",
+      "name_en": "Arts",
+      "name_hi": "कला",
+      "name_hi_basis": "ui-translation",
+      "skill_ids": [
+        "area-arts"
+      ],
+      "ncert_textbook_titles": [
+        "Madhurima"
+      ],
+      "ncert_hindi_medium_titles": [],
+      "notes": []
+    },
+    {
+      "status": "partially-sourced",
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX",
+        "SRC-CBSE-CIRC-ACAD-14-2026",
+        "SRC-CBSE-CURRICULUM-2026-27-PAGE",
+        "SRC-CBSE-CIRC-ACAD-33-2026",
+        "SRC-CBSE-CIRC-ACAD-49-2026"
+      ],
+      "subject_id": "physical-education-wellbeing",
+      "name_en": "Physical Education and Well Being",
+      "name_hi": "शारीरिक शिक्षा और कल्याण",
+      "name_hi_basis": "ui-translation",
+      "skill_ids": [
+        "area-physical-education-wellbeing"
+      ],
+      "ncert_textbook_titles": [
+        "Khel Praveen"
+      ],
+      "ncert_hindi_medium_titles": [],
+      "notes": []
+    },
+    {
+      "status": "partially-sourced",
+      "source_ids": [
+        "SRC-NCERT-TEXTBOOK-INDEX",
+        "SRC-CBSE-CIRC-ACAD-14-2026",
+        "SRC-CBSE-CURRICULUM-2026-27-PAGE",
+        "SRC-CBSE-CIRC-ACAD-33-2026",
+        "SRC-CBSE-CIRC-ACAD-49-2026"
+      ],
+      "subject_id": "vocational-education",
+      "name_en": "Skill Education",
+      "name_hi": "व्यावसायिक शिक्षा",
+      "name_hi_basis": "ui-translation",
+      "skill_ids": [
+        "area-vocational-skill-education"
+      ],
+      "ncert_textbook_titles": [
+        "Kaushal Vikas"
+      ],
+      "ncert_hindi_medium_titles": [],
+      "notes": []
+    }
+  ],
+  "skills": [
+    {
+      "skill_id": "lang-english",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "lang-hindi",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "lang-sanskrit",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "area-mathematics",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "area-science",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "area-social-science",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "area-arts",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "area-physical-education-wellbeing",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "area-vocational-skill-education",
+      "depth": "domain-only"
+    }
+  ],
+  "term_plan": {
+    "status": "skeleton",
+    "basis": "product-default",
+    "terms": [
+      {
+        "term_id": "term-1",
+        "label_en": "Term 1",
+        "label_hi": "सत्र 1"
+      },
+      {
+        "term_id": "term-2",
+        "label_en": "Term 2",
+        "label_hi": "सत्र 2"
+      }
+    ],
+    "notes": [
+      "Two-term split is a product default until each board's academic calendar guidance is ingested."
+    ]
+  },
+  "weekly_plan": {
+    "status": "gap",
+    "basis": "not-yet-sourced",
+    "weeks_per_year": null,
+    "sessions_per_week": null,
+    "notes": [
+      "Periods per week per subject to come from each board's scheme of studies; product defaults set in Phase 2 where boards are silent."
+    ]
+  },
+  "daily_lesson_template": {
+    "status": "skeleton",
+    "basis": "product-default",
+    "loop": [
+      "recall-warm-up",
+      "new-idea",
+      "worked-example",
+      "guided-practice",
+      "independent-practice",
+      "exit-check",
+      "offline-practice-task"
+    ],
+    "screen_minutes_cap": null,
+    "source_ids": [],
+    "notes": [
+      "School-age screen cap is guardian-set; Phase 2 decides the product default."
+    ]
+  },
+  "assessments": {
+    "unit_tests": {
+      "status": "skeleton",
+      "basis": "product-default",
+      "notes": [
+        "One short unit check per unit once units are ingested."
+      ]
+    },
+    "internals": {
+      "status": "gap",
+      "basis": "not-yet-sourced",
+      "notes": [
+        "Board internal-assessment components and weights not yet ingested."
+      ]
+    },
+    "term_exams": {
+      "status": "skeleton",
+      "basis": "product-default",
+      "source_ids": [],
+      "notes": []
+    },
+    "board_style_mocks": {
+      "status": "not-applicable",
+      "basis": "product-default",
+      "applicable": false
+    }
+  },
+  "co_curricular": {
+    "status": "partially-sourced",
+    "basis": "board-mandated",
+    "areas": [
+      "Arts",
+      "Physical Education and Well Being",
+      "Skill Education"
+    ],
+    "source_ids": [
+      "SRC-NCERT-TEXTBOOK-INDEX"
+    ],
+    "notes": [
+      "Listed areas have official NCERT textbooks for this class."
+    ]
+  },
+  "extracurricular": {
+    "status": "skeleton",
+    "basis": "product-default",
+    "areas": [
+      "clubs",
+      "sports",
+      "competitions-and-olympiads",
+      "community-service",
+      "reading-programme",
+      "in-person-peer-group"
+    ],
+    "notes": [
+      "In-person peer activities are included on purpose to address the social learning risk."
+    ]
+  },
+  "parent_view": {
+    "status": "skeleton",
+    "basis": "product-default",
+    "sections": [
+      "this-week",
+      "skill-progress",
+      "assessments-and-feedback",
+      "screen-time",
+      "what-to-do-at-home",
+      "consent-and-data"
+    ]
+  },
+  "source_ids": [
+    "SRC-NCERT-TEXTBOOK-INDEX",
+    "SRC-CBSE-CIRC-ACAD-14-2026",
+    "SRC-CBSE-CURRICULUM-2026-27-PAGE",
+    "SRC-CBSE-CIRC-ACAD-33-2026",
+    "SRC-CBSE-CIRC-ACAD-49-2026"
+  ],
+  "gaps": [
+    {
+      "gap_id": "G-CBSE-CLASS-09-TWO-LEVEL-MATHS-SCIENCE",
+      "missing": "Reported two-level (standard and advanced) Mathematics and Science for Class IX from 2026-27 is unverified",
+      "resolve_from": "CBSE Secondary Curriculum Part-I 2026-27 (Class IX) initial pages",
+      "phase": "phase-2"
+    },
+    {
+      "gap_id": "G-CBSE-CLASS-09-ICT",
+      "missing": "ICT textbook listed by NCERT as Coming Soon",
+      "resolve_from": "NCERT textbook index on release",
+      "phase": "phase-3"
+    },
+    {
+      "gap_id": "G-CBSE-CLASS-09-UNITS",
+      "missing": "Unit and chapter level content and learning outcomes for this year",
+      "resolve_from": "CBSE Curriculum 2026-27 subject PDFs (cbseacademic.nic.in/curriculum_2027.html) and NCERT textbook contents",
+      "phase": "phase-3"
+    },
+    {
+      "gap_id": "G-CBSE-CLASS-09-PERIODS",
+      "missing": "Periods or sessions per week per subject",
+      "resolve_from": "Board scheme of studies; product default where the board is silent",
+      "phase": "phase-2"
+    },
+    {
+      "gap_id": "G-CBSE-CLASS-09-INTERNALS",
+      "missing": "Internal assessment components and weightage",
+      "resolve_from": "Board curriculum or assessment framework document",
+      "phase": "phase-3"
+    }
+  ],
+  "generated_by": "scripts/generate-curriculum-skeletons.mjs",
+  "built_on": "2026-10-21"
+}

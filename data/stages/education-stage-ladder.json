@@ -1,0 +1,255 @@
+{
+  "ladder_id": "education-stage-ladder",
+  "built_on": "2026-10-21",
+  "age_basis": "Foundational stage = 3 preschool years at ages 3-6 then Classes 1-2 at ages 6-8 (SRC-MOE-DOSEL-ECCE-LETTER, SRC-PRS-NEP-2020-SUMMARY). Per-year bands are derived by counting one year per class and are typical, not eligibility rules. Nursery, LKG and UKG are mapped to the three preschool years by convention (product assumption).",
+  "source_ids": [
+    "SRC-MOE-DOSEL-ECCE-LETTER",
+    "SRC-PRS-NEP-2020-SUMMARY",
+    "SRC-NEP-2020",
+    "SRC-RS-UQ319-2024-07-24",
+    "SRC-NIOS-OBE-GUIDELINE",
+    "SRC-NIOS-FAQ"
+  ],
+  "years": [
+    {
+      "order": 1,
+      "year_id": "home-0-3",
+      "label_en": "Home learning (ages 0-3)",
+      "label_hi": "घर पर सीखना (0-3 वर्ष)",
+      "nep_stage": "pre-foundational-home",
+      "typical_age_band": {
+        "from": 0,
+        "to": 3
+      },
+      "national_framework": "Navchetana (MWCD, 2024)",
+      "nios_certification_point": null,
+      "board_exam_year_cbse_cisce": false,
+      "competitive_tracks_open": false
+    },
+    {
+      "order": 2,
+      "year_id": "nursery",
+      "label_en": "Nursery",
+      "label_hi": "नर्सरी",
+      "nep_stage": "foundational",
+      "typical_age_band": {
+        "from": 3,
+        "to": 4
+      },
+      "national_framework": "Aadharshila (MWCD, 2024) and NCF-FS",
+      "nios_certification_point": null,
+      "board_exam_year_cbse_cisce": false,
+      "competitive_tracks_open": false
+    },
+    {
+      "order": 3,
+      "year_id": "lkg",
+      "label_en": "LKG",
+      "label_hi": "एलकेजी",
+      "nep_stage": "foundational",
+      "typical_age_band": {
+        "from": 4,
+        "to": 5
+      },
+      "national_framework": "Aadharshila (MWCD, 2024) and NCF-FS",
+      "nios_certification_point": null,
+      "board_exam_year_cbse_cisce": false,
+      "competitive_tracks_open": false
+    },
+    {
+      "order": 4,
+      "year_id": "ukg",
+      "label_en": "UKG",
+      "label_hi": "यूकेजी",
+      "nep_stage": "foundational",
+      "typical_age_band": {
+        "from": 5,
+        "to": 6
+      },
+      "national_framework": "Aadharshila (MWCD, 2024) and NCF-FS",
+      "nios_certification_point": null,
+      "board_exam_year_cbse_cisce": false,
+      "competitive_tracks_open": false
+    },
+    {
+      "order": 5,
+      "year_id": "class-01",
+      "label_en": "Class 1",
+      "label_hi": "कक्षा 1",
+      "nep_stage": "foundational",
+      "typical_age_band": {
+        "from": 6,
+        "to": 7
+      },
+      "national_framework": null,
+      "nios_certification_point": null,
+      "board_exam_year_cbse_cisce": false,
+      "competitive_tracks_open": false
+    },
+    {
+      "order": 6,
+      "year_id": "class-02",
+      "label_en": "Class 2",
+      "label_hi": "कक्षा 2",
+      "nep_stage": "foundational",
+      "typical_age_band": {
+        "from": 7,
+        "to": 8
+      },
+      "national_framework": null,
+      "nios_certification_point": null,
+      "board_exam_year_cbse_cisce": false,
+      "competitive_tracks_open": false
+    },
+    {
+      "order": 7,
+      "year_id": "class-03",
+      "label_en": "Class 3",
+      "label_hi": "कक्षा 3",
+      "nep_stage": "preparatory",
+      "typical_age_band": {
+        "from": 8,
+        "to": 9
+      },
+      "national_framework": null,
+      "nios_certification_point": "NIOS OBE Level A (equivalent to Class 3)",
+      "board_exam_year_cbse_cisce": false,
+      "competitive_tracks_open": false
+    },
+    {
+      "order": 8,
+      "year_id": "class-04",
+      "label_en": "Class 4",
+      "label_hi": "कक्षा 4",
+      "nep_stage": "preparatory",
+      "typical_age_band": {
+        "from": 9,
+        "to": 10
+      },
+      "national_framework": null,
+      "nios_certification_point": null,
+      "board_exam_year_cbse_cisce": false,
+      "competitive_tracks_open": false
+    },
+    {
+      "order": 9,
+      "year_id": "class-05",
+      "label_en": "Class 5",
+      "label_hi": "कक्षा 5",
+      "nep_stage": "preparatory",
+      "typical_age_band": {
+        "from": 10,
+        "to": 11
+      },
+      "national_framework": null,
+      "nios_certification_point": "NIOS OBE Level B (equivalent to Class 5)",
+      "board_exam_year_cbse_cisce": false,
+      "competitive_tracks_open": false
+    },
+    {
+      "order": 10,
+      "year_id": "class-06",
+      "label_en": "Class 6",
+      "label_hi": "कक्षा 6",
+      "nep_stage": "middle",
+      "typical_age_band": {
+        "from": 11,
+        "to": 12
+      },
+      "national_framework": null,
+      "nios_certification_point": null,
+      "board_exam_year_cbse_cisce": false,
+      "competitive_tracks_open": false
+    },
+    {
+      "order": 11,
+      "year_id": "class-07",
+      "label_en": "Class 7",
+      "label_hi": "कक्षा 7",
+      "nep_stage": "middle",
+      "typical_age_band": {
+        "from": 12,
+        "to": 13
+      },
+      "national_framework": null,
+      "nios_certification_point": null,
+      "board_exam_year_cbse_cisce": false,
+      "competitive_tracks_open": false
+    },
+    {
+      "order": 12,
+      "year_id": "class-08",
+      "label_en": "Class 8",
+      "label_hi": "कक्षा 8",
+      "nep_stage": "middle",
+      "typical_age_band": {
+        "from": 13,
+        "to": 14
+      },
+      "national_framework": null,
+      "nios_certification_point": "NIOS OBE Level C (equivalent to Class 8)",
+      "board_exam_year_cbse_cisce": false,
+      "competitive_tracks_open": true
+    },
+    {
+      "order": 13,
+      "year_id": "class-09",
+      "label_en": "Class 9",
+      "label_hi": "कक्षा 9",
+      "nep_stage": "secondary",
+      "typical_age_band": {
+        "from": 14,
+        "to": 15
+      },
+      "national_framework": null,
+      "nios_certification_point": null,
+      "board_exam_year_cbse_cisce": false,
+      "competitive_tracks_open": true
+    },
+    {
+      "order": 14,
+      "year_id": "class-10",
+      "label_en": "Class 10",
+      "label_hi": "कक्षा 10",
+      "nep_stage": "secondary",
+      "typical_age_band": {
+        "from": 15,
+        "to": 16
+      },
+      "national_framework": null,
+      "nios_certification_point": "NIOS Secondary (equivalent to Class X)",
+      "board_exam_year_cbse_cisce": true,
+      "competitive_tracks_open": true
+    },
+    {
+      "order": 15,
+      "year_id": "class-11",
+      "label_en": "Class 11",
+      "label_hi": "कक्षा 11",
+      "nep_stage": "secondary",
+      "typical_age_band": {
+        "from": 16,
+        "to": 17
+      },
+      "national_framework": null,
+      "nios_certification_point": null,
+      "board_exam_year_cbse_cisce": false,
+      "competitive_tracks_open": true
+    },
+    {
+      "order": 16,
+      "year_id": "class-12",
+      "label_en": "Class 12",
+      "label_hi": "कक्षा 12",
+      "nep_stage": "secondary",
+      "typical_age_band": {
+        "from": 17,
+        "to": 18
+      },
+      "national_framework": null,
+      "nios_certification_point": "NIOS Senior Secondary (equivalent to Class XII)",
+      "board_exam_year_cbse_cisce": true,
+      "competitive_tracks_open": true
+    }
+  ]
+}

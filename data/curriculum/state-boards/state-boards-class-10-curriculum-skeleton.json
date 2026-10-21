@@ -1,0 +1,186 @@
+{
+  "skeleton_id": "state-boards-class-10",
+  "board_id": "state-boards",
+  "year_id": "class-10",
+  "academic_session": "2026-27",
+  "nep_stage": "secondary",
+  "coverage_status": "gap",
+  "certification_point": null,
+  "scheme_notes": [],
+  "subjects": [],
+  "skills": [
+    {
+      "skill_id": "lang-english",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "lang-hindi",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "lang-sanskrit",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "area-mathematics",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "area-science",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "area-social-science",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "area-arts",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "area-physical-education-wellbeing",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "area-vocational-skill-education",
+      "depth": "domain-only"
+    }
+  ],
+  "term_plan": {
+    "status": "skeleton",
+    "basis": "product-default",
+    "terms": [
+      {
+        "term_id": "term-1",
+        "label_en": "Term 1",
+        "label_hi": "सत्र 1"
+      },
+      {
+        "term_id": "term-2",
+        "label_en": "Term 2",
+        "label_hi": "सत्र 2"
+      }
+    ],
+    "notes": [
+      "Two-term split is a product default until each board's academic calendar guidance is ingested."
+    ]
+  },
+  "weekly_plan": {
+    "status": "gap",
+    "basis": "not-yet-sourced",
+    "weeks_per_year": null,
+    "sessions_per_week": null,
+    "notes": [
+      "Periods per week per subject to come from each board's scheme of studies; product defaults set in Phase 2 where boards are silent."
+    ]
+  },
+  "daily_lesson_template": {
+    "status": "skeleton",
+    "basis": "product-default",
+    "loop": [
+      "recall-warm-up",
+      "new-idea",
+      "worked-example",
+      "guided-practice",
+      "independent-practice",
+      "exit-check",
+      "offline-practice-task"
+    ],
+    "screen_minutes_cap": null,
+    "source_ids": [],
+    "notes": [
+      "School-age screen cap is guardian-set; Phase 2 decides the product default."
+    ]
+  },
+  "assessments": {
+    "unit_tests": {
+      "status": "skeleton",
+      "basis": "product-default",
+      "notes": [
+        "One short unit check per unit once units are ingested."
+      ]
+    },
+    "internals": {
+      "status": "gap",
+      "basis": "not-yet-sourced",
+      "notes": [
+        "Board internal-assessment components and weights not yet ingested."
+      ]
+    },
+    "term_exams": {
+      "status": "skeleton",
+      "basis": "product-default",
+      "source_ids": [],
+      "notes": []
+    },
+    "board_style_mocks": {
+      "status": "not-applicable",
+      "basis": "product-default",
+      "applicable": false
+    }
+  },
+  "co_curricular": {
+    "status": "gap",
+    "basis": "not-yet-sourced",
+    "areas": [],
+    "notes": [
+      "Board co-curricular requirements for this year not yet sourced."
+    ]
+  },
+  "extracurricular": {
+    "status": "skeleton",
+    "basis": "product-default",
+    "areas": [
+      "clubs",
+      "sports",
+      "competitions-and-olympiads",
+      "community-service",
+      "reading-programme",
+      "in-person-peer-group"
+    ],
+    "notes": [
+      "In-person peer activities are included on purpose to address the social learning risk."
+    ]
+  },
+  "parent_view": {
+    "status": "skeleton",
+    "basis": "product-default",
+    "sections": [
+      "this-week",
+      "skill-progress",
+      "assessments-and-feedback",
+      "screen-time",
+      "what-to-do-at-home",
+      "consent-and-data"
+    ]
+  },
+  "source_ids": [],
+  "gaps": [
+    {
+      "gap_id": "G-STATE-CLASS-10-CATALOGUE",
+      "missing": "State and UT boards not yet catalogued; skills mapped from NEP stage via the shared graph",
+      "resolve_from": "Official websites of each state and UT school board, one registry entry per board",
+      "phase": "phase-3"
+    },
+    {
+      "gap_id": "G-STATE-BOARDS-CLASS-10-UNITS",
+      "missing": "Unit and chapter level content and learning outcomes for this year",
+      "resolve_from": "Each state or UT board's official syllabus site",
+      "phase": "phase-3"
+    },
+    {
+      "gap_id": "G-STATE-BOARDS-CLASS-10-PERIODS",
+      "missing": "Periods or sessions per week per subject",
+      "resolve_from": "Board scheme of studies; product default where the board is silent",
+      "phase": "phase-2"
+    },
+    {
+      "gap_id": "G-STATE-BOARDS-CLASS-10-INTERNALS",
+      "missing": "Internal assessment components and weightage",
+      "resolve_from": "Board curriculum or assessment framework document",
+      "phase": "phase-3"
+    }
+  ],
+  "generated_by": "scripts/generate-curriculum-skeletons.mjs",
+  "built_on": "2026-10-21"
+}

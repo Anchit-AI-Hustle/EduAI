@@ -1,0 +1,165 @@
+{
+  "registry_id": "board-registry",
+  "built_on": "2026-10-21",
+  "rollout_order": [
+    "cbse",
+    "cisce",
+    "state-boards",
+    "nios"
+  ],
+  "rollout_note": "Per brief: CBSE first, then ICSE (CISCE), state boards and NIOS. NIOS is the likely certification route for learners not enrolled in a school (see docs/risks-and-legal-register.md), so its skeleton is built now even though its depth comes later.",
+  "boards": [
+    {
+      "board_id": "national-early-years",
+      "name": "National early-years frameworks (Navchetana 0-3, Aadharshila 3-6, NCF-FS)",
+      "covers_years": [
+        "home-0-3",
+        "nursery",
+        "lkg",
+        "ukg"
+      ],
+      "certification_points": [],
+      "official_status": "national-framework",
+      "source_ids": [
+        "SRC-RS-UQ319-2024-07-24",
+        "SRC-MOE-DOSEL-ECCE-LETTER"
+      ]
+    },
+    {
+      "board_id": "cbse",
+      "name": "Central Board of Secondary Education",
+      "covers_years": [
+        "class-01",
+        "class-02",
+        "class-03",
+        "class-04",
+        "class-05",
+        "class-06",
+        "class-07",
+        "class-08",
+        "class-09",
+        "class-10",
+        "class-11",
+        "class-12"
+      ],
+      "early_years_handling": "defers-to-national-framework",
+      "certification_points": [
+        {
+          "year_id": "class-10",
+          "exam": "Secondary School Examination (Class X)"
+        },
+        {
+          "year_id": "class-12",
+          "exam": "Senior School Certificate Examination (Class XII)"
+        }
+      ],
+      "official_url": "https://cbseacademic.nic.in/curriculum_2027.html",
+      "source_ids": [
+        "SRC-CBSE-CIRC-ACAD-14-2026",
+        "SRC-CBSE-PRIVATE-CANDIDATE-BYELAWS"
+      ]
+    },
+    {
+      "board_id": "cisce",
+      "name": "Council for the Indian School Certificate Examinations",
+      "covers_years": [
+        "nursery",
+        "lkg",
+        "ukg",
+        "class-01",
+        "class-02",
+        "class-03",
+        "class-04",
+        "class-05",
+        "class-06",
+        "class-07",
+        "class-08",
+        "class-09",
+        "class-10",
+        "class-11",
+        "class-12"
+      ],
+      "certification_points": [
+        {
+          "year_id": "class-10",
+          "exam": "ICSE (Class X)"
+        },
+        {
+          "year_id": "class-12",
+          "exam": "ISC (Class XII)"
+        }
+      ],
+      "official_url": "https://cisce.org/?p=9225",
+      "source_ids": [
+        "SRC-CISCE-PUBLICATIONS"
+      ],
+      "notes": "Pre-school to Class VIII curriculum and full ICSE/ISC regulations not yet ingested; cisce.org blocked from build environment."
+    },
+    {
+      "board_id": "nios",
+      "name": "National Institute of Open Schooling",
+      "covers_years": [
+        "class-03",
+        "class-05",
+        "class-08",
+        "class-10",
+        "class-12"
+      ],
+      "preparation_years_mapped": true,
+      "certification_points": [
+        {
+          "year_id": "class-03",
+          "exam": "NIOS OBE Level A (equivalent to Class 3)"
+        },
+        {
+          "year_id": "class-05",
+          "exam": "NIOS OBE Level B (equivalent to Class 5)"
+        },
+        {
+          "year_id": "class-08",
+          "exam": "NIOS OBE Level C (equivalent to Class 8)"
+        },
+        {
+          "year_id": "class-10",
+          "exam": "NIOS Secondary (equivalent to Class X)"
+        },
+        {
+          "year_id": "class-12",
+          "exam": "NIOS Senior Secondary (equivalent to Class XII)"
+        }
+      ],
+      "official_url": "https://grs.nios.ac.in/faq",
+      "source_ids": [
+        "SRC-NIOS-OBE-GUIDELINE",
+        "SRC-NIOS-SDMIS-OBE",
+        "SRC-NIOS-FAQ",
+        "SRC-NIOS-SENIOR-SECONDARY-SCHEME"
+      ]
+    },
+    {
+      "board_id": "state-boards",
+      "name": "State and UT boards (placeholder, not yet catalogued)",
+      "covers_years": [
+        "nursery",
+        "lkg",
+        "ukg",
+        "class-01",
+        "class-02",
+        "class-03",
+        "class-04",
+        "class-05",
+        "class-06",
+        "class-07",
+        "class-08",
+        "class-09",
+        "class-10",
+        "class-11",
+        "class-12"
+      ],
+      "certification_points": [],
+      "official_status": "gap",
+      "source_ids": [],
+      "notes": "Each state board needs its own registry entry, sourced from that board's official syllabus site."
+    }
+  ]
+}

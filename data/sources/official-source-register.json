@@ -1,0 +1,460 @@
+{
+  "register_id": "official-source-register",
+  "compiled_on": "2026-10-21",
+  "verification_status_legend": {
+    "fetched-and-read": "Document fetched in full and read during the build",
+    "read-via-search-index": "Official document text read through a search index excerpt; full document still to be ingested",
+    "snapshot-stored": "Official page downloaded and stored under data/sources/snapshots",
+    "referenced-not-ingested": "Official URL confirmed by an official document; content not yet read",
+    "blocked-from-build-environment": "Official domain returned a proxy error (HTTP 503 or 403) from the build environment; content not read",
+    "secondary-only": "Fact currently rests on reputable secondary reporting; primary document must be attached before relying on it"
+  },
+  "sources": [
+    {
+      "source_id": "SRC-CBSE-CIRC-ACAD-14-2026",
+      "title": "CBSE Circular Acad-14/2026 (01.04.2026): Release of CBSE Curriculum for Academic Session 2026-27 for Classes IX-XII",
+      "issuing_body": "Central Board of Secondary Education",
+      "url": "https://cbseacademic.nic.in/web_material/Circulars/2026/14_Circular_2026.pdf",
+      "type": "primary-official",
+      "retrieved_on": "2026-10-21",
+      "verification_status": "fetched-and-read",
+      "supports": [
+        "Classes XI-XII curriculum released 1 April 2026, Classes IX-X on 2 April 2026",
+        "CBSE implements the NCF-2023 scheme of studies in Class IX from 2026-27",
+        "Curriculum documents live at cbseacademic.nic.in/curriculum_2027.html"
+      ]
+    },
+    {
+      "source_id": "SRC-CBSE-CURRICULUM-2026-27-PAGE",
+      "title": "CBSE Curriculum 2026-27 tab (Secondary Part-I Class IX, Secondary Part-I Class X, Senior Secondary Part-II XI-XII)",
+      "issuing_body": "Central Board of Secondary Education",
+      "url": "https://cbseacademic.nic.in/curriculum_2027.html",
+      "type": "primary-official",
+      "retrieved_on": "2026-10-21",
+      "verification_status": "blocked-from-build-environment",
+      "supports": [
+        "Subject-wise syllabus PDFs for Classes IX-XII (to ingest in Phase 3)"
+      ]
+    },
+    {
+      "source_id": "SRC-CBSE-CIRC-ACAD-33-2026",
+      "title": "CBSE Circular Acad-33/2026 (15.05.2026): Alignment of Scheme of Studies for Languages in Classes IX and X (2026-27 onwards) with NCF-SE 2023",
+      "issuing_body": "Central Board of Secondary Education",
+      "url": "https://cbseacademic.nic.in/web_material/Circulars/2026/33_Circular_2026_hi.pdf",
+      "type": "primary-official",
+      "retrieved_on": "2026-10-21",
+      "verification_status": "read-via-search-index",
+      "supports": [
+        "From 1 July 2026, three languages (R1, R2, R3) compulsory in Class IX, at least two native Indian languages",
+        "Class IX students use Class VI R3 textbooks (2026-27 edition) until dedicated R3 books exist",
+        "No Class X board exam for R3; R3 assessment school-based and internal"
+      ],
+      "notes": "Hindi version read via search excerpt; key clauses corroborated by multiple school circulars quoting Acad-33/2026. English version to ingest."
+    },
+    {
+      "source_id": "SRC-CBSE-CIRC-ACAD-49-2026",
+      "title": "CBSE Circular Acad-49/2026: three-language implementation details by batch (Classes VI to X, 2026-27)",
+      "issuing_body": "Central Board of Secondary Education",
+      "url": "https://cbseacademic.nic.in/web_material/Circulars/2026/49_Circular_2026.pdf",
+      "type": "primary-official",
+      "retrieved_on": "2026-10-21",
+      "verification_status": "read-via-search-index",
+      "supports": [
+        "Separate three-language rules for Class X (2026-27), Class IX (2026-27), Classes VII-VIII (2026-27) and Class VI (2026-27) batches",
+        "Two of three languages must be Bharatiya Bhashas"
+      ],
+      "notes": "Only fragments read. Full batch rules to ingest before Phase 2 placement logic uses them."
+    },
+    {
+      "source_id": "SRC-CBSE-CIRC-ACAD-12-2025",
+      "title": "CBSE Circular Acad-12/2025 (26.03.2025): Implementation of New Competency-Based Textbooks for Grades 4, 5, 7 and 8",
+      "issuing_body": "Central Board of Secondary Education",
+      "url": "https://www.cbseacademic.nic.in/web_material/Circulars/2025/12_Circular_2025.pdf",
+      "type": "primary-official",
+      "retrieved_on": "2026-10-21",
+      "verification_status": "read-via-search-index",
+      "supports": [
+        "New NCERT textbooks for Grades 4, 5, 7, 8 from 2025-26",
+        "Bridge programmes for Classes 5 and 8"
+      ]
+    },
+    {
+      "source_id": "SRC-CBSE-CIRC-ACAD-48-2025",
+      "title": "CBSE Circular Acad-48/2025 (28.07.2025): Availability of New Textbooks and Learning Outcomes for the Foundational Stage",
+      "issuing_body": "Central Board of Secondary Education",
+      "url": "https://cbseacademic.nic.in/web_material/Circulars/2025/48_Circular_2025.pdf",
+      "type": "primary-official",
+      "retrieved_on": "2026-10-21",
+      "verification_status": "read-via-search-index",
+      "supports": [
+        "New textbooks for Grades 5 and 8 (Santoor, Math Mela, Veena, Poorvi, Ganita Prakash, Curiosity)",
+        "Links NCERT Learning Outcomes for the Foundational Stage"
+      ]
+    },
+    {
+      "source_id": "SRC-CBSE-PRIVATE-CANDIDATE-BYELAWS",
+      "title": "CBSE Examination Bye-laws: Private Candidates (archive)",
+      "issuing_body": "Central Board of Secondary Education",
+      "url": "https://cbse.gov.in/cbsenew/Exambylaws_archive/Private Candidates.pdf",
+      "type": "primary-official",
+      "retrieved_on": "2026-10-21",
+      "verification_status": "read-via-search-index",
+      "supports": [
+        "Private candidature limited to defined categories (for example candidates who failed a previous Board exam, and specified categories of NCT Delhi residents)"
+      ],
+      "notes": "Archive copy. Current bye-laws to be confirmed; corroborated by Delhi High Court LPA 113/2025 citing amended bye-law 17(i)."
+    },
+    {
+      "source_id": "SRC-DELHI-HC-LPA-113-2025",
+      "title": "Delhi High Court judgment in LPA 113/2025 applying CBSE bye-law 17(i) on private candidates",
+      "issuing_body": "High Court of Delhi",
+      "url": "https://delhihighcourt.nic.in/app/showFileJudgment/68314022025LPA1132025_180620.pdf",
+      "type": "primary-official",
+      "retrieved_on": "2026-10-21",
+      "verification_status": "read-via-search-index",
+      "supports": [
+        "Under amended bye-law 17(i), a candidate who failed may re-appear only as a private candidate"
+      ]
+    },
+    {
+      "source_id": "SRC-NCERT-TEXTBOOK-INDEX",
+      "title": "NCERT e-textbook index (class, subject, book dropdowns)",
+      "issuing_body": "National Council of Educational Research and Training",
+      "url": "https://ncert.nic.in/textbook.php",
+      "type": "primary-official",
+      "retrieved_on": "2026-10-21",
+      "verification_status": "snapshot-stored",
+      "supports": [
+        "Textbook titles per class and subject for Classes 1-12"
+      ],
+      "notes": "Snapshot: data/sources/snapshots/ncert-textbook-index-snapshot-2026-10-21.html. Derived: data/sources/derived/ncert-textbook-titles-by-class-2026-10-21.json"
+    },
+    {
+      "source_id": "SRC-NCERT-PRICE-LIST-2025",
+      "title": "NCERT textbook rate list 2025 (Classes 1-12)",
+      "issuing_body": "National Council of Educational Research and Training",
+      "url": "https://ncertbooks.ncert.gov.in/static/Latest rate 2025.xlsx.pdf",
+      "type": "primary-official",
+      "retrieved_on": "2026-10-21",
+      "verification_status": "read-via-search-index",
+      "supports": [
+        "Current-series titles: Sarangi, Mridang, Joyful Mathematics (1-2); Veena, Santoor, Maths Mela, Our Wondrous World, Bansuri (3-5); Poorvi, Ganita Prakash, Curiosity (6-8)"
+      ]
+    },
+    {
+      "source_id": "SRC-NCERT-LO-FOUNDATIONAL",
+      "title": "NCERT Learning Outcomes for the Foundational Stage",
+      "issuing_body": "National Council of Educational Research and Training",
+      "url": "https://ncert.nic.in/pdf/publication/otherpublications/Learning_Outcome_for_the_Foundational_Stage.pdf",
+      "type": "primary-official",
+      "retrieved_on": "2026-10-21",
+      "verification_status": "referenced-not-ingested",
+      "supports": [
+        "Foundational-stage learning outcomes (to ingest in Phase 3)"
+      ]
+    },
+    {
+      "source_id": "SRC-MOE-DOSEL-ECCE-LETTER",
+      "title": "Ministry of Education (DoSEL) and Ministry of Women and Child Development joint communication on ECCE, Aadharshila, Navchetana and Jaadui Pitara",
+      "issuing_body": "Ministry of Education, Department of School Education and Literacy",
+      "url": "https://dsel.education.gov.in/sites/default/files/update/do_ecce.pdf",
+      "type": "primary-official",
+      "retrieved_on": "2026-10-21",
+      "verification_status": "read-via-search-index",
+      "supports": [
+        "Foundational stage = 3 years of preschool (ages 3-6) + Grades 1-2 (ages 6-8)",
+        "NCF-FS is the basis for Jaadui Pitara (DoSEL) and Aadharshila (MWCD)"
+      ]
+    },
+    {
+      "source_id": "SRC-RS-UQ319-2024-07-24",
+      "title": "Rajya Sabha Unstarred Question 319 answered 24.07.2024, Ministry of Women and Child Development",
+      "issuing_body": "Parliament of India (Rajya Sabha) / Ministry of Women and Child Development",
+      "url": "https://rsdebate.nic.in/bitstream/123456789/749295/1/PQ_265_24072024_U319_p565_p566.pdf",
+      "type": "primary-official",
+      "retrieved_on": "2026-10-21",
+      "verification_status": "read-via-search-index",
+      "supports": [
+        "Navchetana: National Framework for Early Childhood Stimulation for Children from Birth to Three Years, 2024",
+        "Aadharshila: National Curriculum for ECCE for Children from Three to Six Years, 2024",
+        "Both under the Poshan Bhi Padhai Bhi programme"
+      ]
+    },
+    {
+      "source_id": "SRC-PIB-POSHAN-BHI-PADHAI-BHI",
+      "title": "Poshan Bhi Padhai Bhi programme summary (PIB, reproduced by Vikaspedia)",
+      "issuing_body": "Press Information Bureau (via Vikaspedia, MeitY)",
+      "url": "https://en.vikaspedia.in/viewcontent/nutrition/poshan-bhi,-padhai-bhi-programme?lgn=en",
+      "type": "secondary-reported",
+      "retrieved_on": "2026-10-21",
+      "verification_status": "secondary-only",
+      "supports": [
+        "Development domains: physical/motor, cognitive, socio-emotional-ethical, cultural/artistic, communication and early language, literacy and numeracy",
+        "At least two hours of pre-school instruction daily at Anganwadi centres"
+      ],
+      "notes": "Attach the original PIB release before treating as primary."
+    },
+    {
+      "source_id": "SRC-NEP-2020",
+      "title": "National Education Policy 2020",
+      "issuing_body": "Ministry of Education, Government of India",
+      "url": "https://www.education.gov.in/sites/upload_files/mhrd/files/NEP_Final_English.pdf",
+      "type": "primary-official",
+      "retrieved_on": "2026-10-21",
+      "verification_status": "referenced-not-ingested",
+      "supports": [
+        "5+3+3+4 structure: Foundational (ages 3-8), Preparatory (Classes 3-5, ages 8-11), Middle (Classes 6-8, ages 11-14), Secondary (Classes 9-12, ages 14-18)",
+        "School examinations in Grades 3, 5 and 8"
+      ],
+      "notes": "Structure confirmed via PRS Legislative Research summary (SRC-PRS-NEP-2020-SUMMARY)."
+    },
+    {
+      "source_id": "SRC-PRS-NEP-2020-SUMMARY",
+      "title": "PRS Legislative Research: National Education Policy 2020 summary",
+      "issuing_body": "PRS Legislative Research",
+      "url": "https://prsindia.org/policy/report-summaries/national-education-policy-2020",
+      "type": "secondary-reported",
+      "retrieved_on": "2026-10-21",
+      "verification_status": "secondary-only",
+      "supports": [
+        "NEP 5+3+3+4 stage bands and ages",
+        "Examinations in Grades 3, 5 and 8"
+      ]
+    },
+    {
+      "source_id": "SRC-CISCE-PUBLICATIONS",
+      "title": "CISCE Publications: Regulations and Syllabuses (ICSE 2028, ICSE 2027, ISC 2027, ICSE and ISC 2026)",
+      "issuing_body": "Council for the Indian School Certificate Examinations",
+      "url": "https://cisce.org/?p=9225",
+      "type": "primary-official",
+      "retrieved_on": "2026-10-21",
+      "verification_status": "read-via-search-index",
+      "supports": [
+        "ICSE Regulations and Syllabuses for the 2028 examination are published (Class IX cohort of 2026-27)",
+        "ISC 2027 Regulations and Syllabuses are published"
+      ],
+      "notes": "cisce.org returned HTTP 403 to the build environment. ISC 2028 listing not confirmed on the official page."
+    },
+    {
+      "source_id": "SRC-NIOS-OBE-GUIDELINE",
+      "title": "NIOS Open Basic Education Programme Guideline (revised 01.08.2015)",
+      "issuing_body": "National Institute of Open Schooling",
+      "url": "https://www.nios.ac.in/media/documents/OBE_Guideline_revised 01.08.2015.pdf",
+      "type": "primary-official",
+      "retrieved_on": "2026-10-21",
+      "verification_status": "read-via-search-index",
+      "supports": [
+        "OBE Level A equivalent to Class 3, Level B to Class 5, Level C to Class 8",
+        "OBE recognised by Government of India as equivalent to formal school"
+      ]
+    },
+    {
+      "source_id": "SRC-NIOS-SDMIS-OBE",
+      "title": "NIOS SDMIS: About OBE programme",
+      "issuing_body": "National Institute of Open Schooling",
+      "url": "https://sdmis.nios.ac.in/modules/obe-registration/obe",
+      "type": "primary-official",
+      "retrieved_on": "2026-10-21",
+      "verification_status": "read-via-search-index",
+      "supports": [
+        "OBE extended in 2000 to children aged 6-14",
+        "Target group includes any interested child and children with special needs"
+      ]
+    },
+    {
+      "source_id": "SRC-NIOS-FAQ",
+      "title": "NIOS Frequently Asked Questions (Secondary and Senior Secondary admission)",
+      "issuing_body": "National Institute of Open Schooling",
+      "url": "https://grs.nios.ac.in/faq",
+      "type": "primary-official",
+      "retrieved_on": "2026-10-21",
+      "verification_status": "read-via-search-index",
+      "supports": [
+        "Secondary: passed Class VIII and at least 14 years old",
+        "Senior Secondary minimum age 15 years",
+        "Secondary offers 32 subjects including 17 languages",
+        "100% online admission"
+      ]
+    },
+    {
+      "source_id": "SRC-NIOS-SENIOR-SECONDARY-SCHEME",
+      "title": "NIOS Senior Secondary scheme of studies (Regional Centre Allahabad page)",
+      "issuing_body": "National Institute of Open Schooling",
+      "url": "https://rcallahabad.nios.ac.in/sr-secondary.html",
+      "type": "primary-official",
+      "retrieved_on": "2026-10-21",
+      "verification_status": "read-via-search-index",
+      "supports": [
+        "Pass requires minimum 5 subjects including one or at most two languages; maximum 7 subjects",
+        "Subject codes seen: 301 Hindi, 303 Bengali, 307 Gujarati, 310 Punjabi, 312 Physics, 313 Chemistry, 314 Biology, 319 Business Studies, 328 Psychology, 330 Computer Science, 342 Persian, 373 Physical Education and Yog, 374 Military Studies"
+      ],
+      "notes": "Partial table only. Full scheme to ingest from the NIOS prospectus."
+    },
+    {
+      "source_id": "SRC-NIOS-RC-DEHRADUN-FAQ",
+      "title": "NIOS Regional Centre Dehradun FAQs (open schooling system, recognition of certificates)",
+      "issuing_body": "National Institute of Open Schooling",
+      "url": "https://rcdehradun.nios.ac.in/faqs.html",
+      "type": "primary-official",
+      "retrieved_on": "2026-10-21",
+      "verification_status": "read-via-search-index",
+      "supports": [
+        "NIOS Secondary and Senior Secondary certificates have the same recognition as certificates of other Boards",
+        "NIOS is vested with authority to conduct public examinations at Secondary and Senior Secondary level",
+        "Senior Secondary minimum age 15 as on 31 July of the year of admission"
+      ]
+    },
+    {
+      "source_id": "SRC-DPDP-RULES-2025-COMMENCEMENT",
+      "title": "DPDP Act 2023 and DPDP Rules 2025: commencement dates and children's data provisions (law firm analysis citing the 14 Nov 2025 gazette)",
+      "issuing_body": "Shardul Amarchand Mangaldas & Co (analysis of MeitY gazette notification)",
+      "url": "https://www.amsshardul.com/insight/enforcement-of-the-dpdp-act-and-notification-of-the-dpdp-rules/",
+      "type": "secondary-reported",
+      "retrieved_on": "2026-10-21",
+      "verification_status": "secondary-only",
+      "supports": [
+        "Three commencement dates: 14 Nov 2025, 14 Nov 2026, 14 May 2027",
+        "Substantive obligations including verifiable parental consent apply from 14 May 2027",
+        "Certain fiduciaries (including educational institutions) exempt from verifiable consent and the tracking ban for limited purposes"
+      ],
+      "notes": "Attach the MeitY gazette (G.S.R.) text before Phase 2 consent flows are finalised."
+    },
+    {
+      "source_id": "SRC-WHO-UNDER-5-ACTIVITY-SCREEN-SLEEP-2019",
+      "title": "WHO Guidelines on physical activity, sedentary behaviour and sleep for children under 5 years of age (2019)",
+      "issuing_body": "World Health Organization",
+      "url": "https://healthpolicy-watch.news/who-recommends-young-children-play-more-watch-screens-less-get-plenty-of-sleep/",
+      "type": "secondary-reported",
+      "retrieved_on": "2026-10-21",
+      "verification_status": "secondary-only",
+      "supports": [
+        "Under 1 year: screen time not recommended",
+        "1 year: sedentary screen time not recommended; 2 years: no more than 1 hour",
+        "3-4 years: no more than 1 hour; less is better"
+      ],
+      "notes": "Multiple consistent reports. Attach the WHO publication itself before Phase 2."
+    },
+    {
+      "source_id": "SRC-COLLEGEBOARD-SAT-CONTENT",
+      "title": "College Board: What's on the SAT (Reading and Writing; Math)",
+      "issuing_body": "College Board",
+      "url": "https://satsuite.collegeboard.org/sat/whats-on-the-test",
+      "type": "primary-official",
+      "retrieved_on": "2026-10-21",
+      "verification_status": "snapshot-stored",
+      "supports": [
+        "Reading and Writing domains: Information and Ideas; Craft and Structure; Expression of Ideas; Standard English Conventions",
+        "Math domains: Algebra; Advanced Math; Problem-Solving and Data Analysis; Geometry and Trigonometry"
+      ],
+      "notes": "Snapshots of the reading-writing and math subpages stored under data/sources/snapshots."
+    },
+    {
+      "source_id": "SRC-NTA-JEE-MAIN",
+      "title": "JEE (Main) official site",
+      "issuing_body": "National Testing Agency",
+      "url": "https://jeemain.nta.nic.in/",
+      "type": "primary-official",
+      "retrieved_on": "2026-10-21",
+      "verification_status": "blocked-from-build-environment",
+      "supports": [
+        "Official home of JEE Main information bulletin and syllabus"
+      ]
+    },
+    {
+      "source_id": "SRC-JEE-ADVANCED",
+      "title": "JEE (Advanced) official site",
+      "issuing_body": "Indian Institutes of Technology (organising IIT for the year)",
+      "url": "https://jeeadv.ac.in/",
+      "type": "primary-official",
+      "retrieved_on": "2026-10-21",
+      "verification_status": "referenced-not-ingested",
+      "supports": [
+        "Official home of JEE Advanced syllabus and eligibility"
+      ]
+    },
+    {
+      "source_id": "SRC-NTA-NEET-UG",
+      "title": "NEET (UG) official site",
+      "issuing_body": "National Testing Agency",
+      "url": "https://neet.nta.nic.in/",
+      "type": "primary-official",
+      "retrieved_on": "2026-10-21",
+      "verification_status": "referenced-not-ingested",
+      "supports": [
+        "Official home of NEET UG information bulletin"
+      ]
+    },
+    {
+      "source_id": "SRC-NMC",
+      "title": "National Medical Commission",
+      "issuing_body": "National Medical Commission",
+      "url": "https://www.nmc.org.in/",
+      "type": "primary-official",
+      "retrieved_on": "2026-10-21",
+      "verification_status": "referenced-not-ingested",
+      "supports": [
+        "Issuer of the NEET UG syllabus"
+      ]
+    },
+    {
+      "source_id": "SRC-NTA-CUET-UG",
+      "title": "CUET (UG) official site",
+      "issuing_body": "National Testing Agency",
+      "url": "https://cuet.nta.nic.in/",
+      "type": "primary-official",
+      "retrieved_on": "2026-10-21",
+      "verification_status": "blocked-from-build-environment",
+      "supports": [
+        "Official home of CUET UG subject syllabi"
+      ]
+    },
+    {
+      "source_id": "SRC-UPSC",
+      "title": "Union Public Service Commission",
+      "issuing_body": "Union Public Service Commission",
+      "url": "https://upsc.gov.in/",
+      "type": "primary-official",
+      "retrieved_on": "2026-10-21",
+      "verification_status": "blocked-from-build-environment",
+      "supports": [
+        "Civil Services Examination notification and syllabus"
+      ]
+    },
+    {
+      "source_id": "SRC-ACT",
+      "title": "ACT official site",
+      "issuing_body": "ACT, Inc.",
+      "url": "https://www.act.org/",
+      "type": "primary-official",
+      "retrieved_on": "2026-10-21",
+      "verification_status": "referenced-not-ingested",
+      "supports": [
+        "ACT test content and structure"
+      ]
+    },
+    {
+      "source_id": "SRC-IELTS",
+      "title": "IELTS official site",
+      "issuing_body": "IELTS partners (British Council, IDP, Cambridge University Press and Assessment)",
+      "url": "https://ielts.org/",
+      "type": "primary-official",
+      "retrieved_on": "2026-10-21",
+      "verification_status": "referenced-not-ingested",
+      "supports": [
+        "IELTS test format"
+      ]
+    },
+    {
+      "source_id": "SRC-ETS-TOEFL",
+      "title": "TOEFL official site",
+      "issuing_body": "ETS",
+      "url": "https://www.ets.org/toefl.html",
+      "type": "primary-official",
+      "retrieved_on": "2026-10-21",
+      "verification_status": "referenced-not-ingested",
+      "supports": [
+        "TOEFL test format"
+      ]
+    }
+  ]
+}

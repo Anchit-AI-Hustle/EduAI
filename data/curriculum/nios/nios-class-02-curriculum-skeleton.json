@@ -1,0 +1,185 @@
+{
+  "skeleton_id": "nios-class-02",
+  "board_id": "nios",
+  "year_id": "class-02",
+  "academic_session": "2026-27",
+  "nep_stage": "foundational",
+  "coverage_status": "not-offered-by-board",
+  "certification_point": null,
+  "scheme_notes": [
+    {
+      "text": "NIOS Open Basic Education has three levels: A (equivalent to Class 3), B (Class 5), C (Class 8), recognised by the Government of India as equivalent to formal schooling; extended to children aged 6-14 in 2000.",
+      "source_ids": [
+        "SRC-NIOS-OBE-GUIDELINE",
+        "SRC-NIOS-SDMIS-OBE"
+      ]
+    }
+  ],
+  "subjects": [],
+  "skills": [
+    {
+      "skill_id": "lang-english",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "lang-hindi",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "area-mathematics",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "ed-physical-motor",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "ed-cultural-artistic",
+      "depth": "domain-only"
+    },
+    {
+      "skill_id": "ed-socio-emotional-ethical",
+      "depth": "domain-only"
+    }
+  ],
+  "term_plan": {
+    "status": "skeleton",
+    "basis": "product-default",
+    "terms": [
+      {
+        "term_id": "term-1",
+        "label_en": "Term 1",
+        "label_hi": "सत्र 1"
+      },
+      {
+        "term_id": "term-2",
+        "label_en": "Term 2",
+        "label_hi": "सत्र 2"
+      }
+    ],
+    "notes": [
+      "Two-term split is a product default until each board's academic calendar guidance is ingested."
+    ]
+  },
+  "weekly_plan": {
+    "status": "gap",
+    "basis": "not-yet-sourced",
+    "weeks_per_year": null,
+    "sessions_per_week": null,
+    "notes": [
+      "Periods per week per subject to come from each board's scheme of studies; product defaults set in Phase 2 where boards are silent."
+    ]
+  },
+  "daily_lesson_template": {
+    "status": "skeleton",
+    "basis": "product-default",
+    "loop": [
+      "recall-warm-up",
+      "new-idea",
+      "worked-example",
+      "guided-practice",
+      "independent-practice",
+      "exit-check",
+      "offline-practice-task"
+    ],
+    "screen_minutes_cap": null,
+    "source_ids": [],
+    "notes": [
+      "School-age screen cap is guardian-set; Phase 2 decides the product default."
+    ]
+  },
+  "assessments": {
+    "unit_tests": {
+      "status": "skeleton",
+      "basis": "product-default",
+      "notes": [
+        "One short unit check per unit once units are ingested."
+      ]
+    },
+    "internals": {
+      "status": "gap",
+      "basis": "not-yet-sourced",
+      "notes": [
+        "Board internal-assessment components and weights not yet ingested."
+      ]
+    },
+    "term_exams": {
+      "status": "skeleton",
+      "basis": "product-default",
+      "source_ids": [],
+      "notes": []
+    },
+    "board_style_mocks": {
+      "status": "not-applicable",
+      "basis": "product-default",
+      "applicable": false
+    }
+  },
+  "co_curricular": {
+    "status": "gap",
+    "basis": "not-yet-sourced",
+    "areas": [],
+    "notes": [
+      "Board co-curricular requirements for this year not yet sourced."
+    ]
+  },
+  "extracurricular": {
+    "status": "skeleton",
+    "basis": "product-default",
+    "areas": [
+      "clubs",
+      "sports",
+      "competitions-and-olympiads",
+      "community-service",
+      "reading-programme",
+      "in-person-peer-group"
+    ],
+    "notes": [
+      "In-person peer activities are included on purpose to address the social learning risk."
+    ]
+  },
+  "parent_view": {
+    "status": "skeleton",
+    "basis": "product-default",
+    "sections": [
+      "this-week",
+      "skill-progress",
+      "assessments-and-feedback",
+      "screen-time",
+      "what-to-do-at-home",
+      "consent-and-data"
+    ]
+  },
+  "source_ids": [
+    "SRC-NIOS-OBE-GUIDELINE",
+    "SRC-NIOS-SDMIS-OBE"
+  ],
+  "gaps": [
+    {
+      "gap_id": "G-NIOS-CLASS-02-PREPARATION-YEAR",
+      "missing": "NIOS has no separate certification for this year; plan prepares the learner for the next NIOS point (NIOS OBE Level A (equivalent to Class 3))",
+      "resolve_from": "NIOS course content for the next level, split across preparation years by product design",
+      "phase": "phase-3"
+    },
+    {
+      "gap_id": "G-NIOS-CLASS-02-UNITS",
+      "missing": "Unit and chapter level content and learning outcomes for this year",
+      "resolve_from": "NIOS prospectus and self-learning material for the level",
+      "phase": "phase-3"
+    },
+    {
+      "gap_id": "G-NIOS-CLASS-02-PERIODS",
+      "missing": "Periods or sessions per week per subject",
+      "resolve_from": "Board scheme of studies; product default where the board is silent",
+      "phase": "phase-2"
+    },
+    {
+      "gap_id": "G-NIOS-CLASS-02-INTERNALS",
+      "missing": "Internal assessment components and weightage",
+      "resolve_from": "Board curriculum or assessment framework document",
+      "phase": "phase-3"
+    }
+  ],
+  "generated_by": "scripts/generate-curriculum-skeletons.mjs",
+  "built_on": "2026-10-21"
+}

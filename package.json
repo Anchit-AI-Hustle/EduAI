@@ -1,0 +1,22 @@
+{
+  "name": "ai-school-full-stack",
+  "version": "0.1.0",
+  "description": "AI-first school: data architecture (Phase 1)",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "parse:ncert": "node scripts/parse-ncert-textbook-index.mjs",
+    "build:data": "node scripts/generate-curriculum-skeletons.mjs",
+    "build:reports": "node scripts/build-gap-and-source-reports.mjs",
+    "test:phase1": "node scripts/run-phase-1-acceptance-tests.mjs"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "ajv": "8.17.1",
+    "ajv-formats": "3.0.1"
+  },
+  "private": true,
+  "type": "module"
+}
