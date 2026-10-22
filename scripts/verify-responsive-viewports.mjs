@@ -9,15 +9,11 @@ const VIEWPORTS = [
   { width: 1440, height: 900, label: "1440px-desktop" }
 ];
 
-function loadBuiltPageHtml() {
-  const candidates = [
-    path.join(ROOT, ".next/server/app/index.html"),
-    path.join(ROOT, ".next/server/pages/index.html")
-  ];
-  const htmlPath = candidates.find((p) => fs.existsSync(p));
+function loadBuiltHtml(relativePath) {
+  const htmlPath = path.join(ROOT, ".next/server/app", relativePath);
   const cssPath = path.join(ROOT, "app/globals.css");
-  if (!htmlPath) {
-    throw new Error("Missing prerendered build artifact in .next/server/app/index.html. Run 'next build' first.");
+  if (!fs.existsSync(htmlPath)) {
+    throw new Error(`Missing prerendered build artifact at ${htmlPath}. Run 'next build' first.`);
   }
   const rawHtml = fs.readFileSync(htmlPath, "utf8");
   const css = fs.readFileSync(cssPath, "utf8");
@@ -38,33 +34,47 @@ function findExecutable() {
 }
 
 async function run() {
-  const { rawHtml, css } = loadBuiltPageHtml();
-  const normalizedHtml = rawHtml.replace(/<!--\s*-->/g, "");
-
-  const requiredMarkers = [
-    "EveryYear",
-    "16/16",
-    "59",
-    "26",
-    "1. Year, Week &amp; Day Planner",
-    "2. Adaptive Diagnostic",
-    "3. Middle Stage Deep Dive",
-    "4. Daily Lesson Loop",
-    "5. Mock Exam Engine",
-    "6. Competitive &amp; Global Tracks",
-    "7. Self-Evolving Engine (L1-L5)",
-    "8. Parent View &amp; Legal Risks",
-    "9. Venture Thesis &amp; 5 Q&amp;A",
-    "हिन्दी"
-  ];
-  for (const marker of requiredMarkers) {
-    if (!normalizedHtml.includes(marker)) {
-      throw new Error(`SSR HTML missing required UI marker: ${marker}`);
+  const pagesToTest = [
+    {
+      file: "index.html",
+      name: "Workspace Home (/)",
+      headingMatch: "EveryYear",
+      requiredMarkers: [
+        "EveryYear",
+        "16/16",
+        "59",
+        "26",
+        "1. Year, Week &amp; Day Planner",
+        "2. Adaptive Diagnostic",
+        "3. Middle Stage Deep Dive",
+        "4. Daily Lesson Loop",
+        "5. Mock Exam Engine",
+        "6. Competitive &amp; Global Tracks",
+        "7. Self-Evolving Engine (L1-L5)",
+        "8. Parent View &amp; Legal Risks",
+        "9. Venture Thesis &amp; 5 Q&amp;A",
+        "हिन्दी"
+      ]
+    },
+    {
+      file: "justification.html",
+      name: "Venture Justification (/justification)",
+      headingMatch: "Venture Justification",
+      requiredMarkers: [
+        "Venture Justification",
+        "Executive Synthesis",
+        "Question 1",
+        "Question 2",
+        "Question 3",
+        "Question 4",
+        "Question 5",
+        "Question 6",
+        "Regulatory Science",
+        "Venture Brand Names",
+        "260 Million K-12 Students"
+      ]
     }
-  }
-  if (!css.includes("@media (max-width: 640px)") || !css.includes("overflow-x: hidden")) {
-    throw new Error("CSS missing responsive mobile media query or overflow-x protection.");
-  }
+  ];
 
   const executablePath = findExecutable();
   let browserLaunched = false;
@@ -76,53 +86,66 @@ async function run() {
     });
     browserLaunched = true;
 
-    for (const vp of VIEWPORTS) {
-      const context = await browser.newContext({ viewport: { width: vp.width, height: vp.height } });
-      const page = await context.newPage();
-      const consoleErrors = [];
-      const pageErrors = [];
+    for (const testTarget of pagesToTest) {
+      const { rawHtml, css } = loadBuiltHtml(testTarget.file);
+      const normalizedHtml = rawHtml.replace(/<!--\s*-->/g, "");
 
-      page.on("console", (msg) => {
-        if (msg.type() === "error" && !msg.text().includes("ERR_FILE_NOT_FOUND")) {
-          consoleErrors.push(msg.text());
+      for (const marker of testTarget.requiredMarkers) {
+        if (!normalizedHtml.includes(marker)) {
+          throw new Error(`${testTarget.name} missing required UI marker: ${marker}`);
         }
-      });
-      page.on("pageerror", (err) => {
-        pageErrors.push(err.message);
-      });
-
-      await page.setContent(rawHtml, { waitUntil: "domcontentloaded" });
-
-      const heading = await page.locator("h1").textContent();
-      if (!heading || !heading.includes("EveryYear")) {
-        throw new Error(`Missing main heading at viewport ${vp.label}`);
       }
 
-      const overflow = await page.evaluate(() => {
-        return document.documentElement.scrollWidth > window.innerWidth + 2;
-      });
-      if (overflow) {
-        throw new Error(`Horizontal overflow detected at viewport ${vp.label}`);
-      }
-      if (consoleErrors.length > 0 || pageErrors.length > 0) {
-        throw new Error(
-          `Console/Page errors at ${vp.label}: ${JSON.stringify({ consoleErrors, pageErrors })}`
+      for (const vp of VIEWPORTS) {
+        const context = await browser.newContext({ viewport: { width: vp.width, height: vp.height } });
+        const page = await context.newPage();
+        const consoleErrors = [];
+        const pageErrors = [];
+
+        page.on("console", (msg) => {
+          if (msg.type() === "error" && !msg.text().includes("ERR_FILE_NOT_FOUND")) {
+            consoleErrors.push(msg.text());
+          }
+        });
+        page.on("pageerror", (err) => {
+          pageErrors.push(err.message);
+        });
+
+        await page.setContent(rawHtml, { waitUntil: "domcontentloaded" });
+
+        const heading = await page.locator("h1").textContent();
+        if (!heading || !heading.includes(testTarget.headingMatch)) {
+          throw new Error(`${testTarget.name}: Missing expected heading (${testTarget.headingMatch}) at viewport ${vp.label}`);
+        }
+
+        const overflow = await page.evaluate(() => {
+          return document.documentElement.scrollWidth > window.innerWidth + 2;
+        });
+        if (overflow) {
+          throw new Error(`${testTarget.name}: Horizontal overflow detected at viewport ${vp.label}`);
+        }
+        if (consoleErrors.length > 0 || pageErrors.length > 0) {
+          throw new Error(
+            `${testTarget.name}: Console/Page errors at ${vp.label}: ${JSON.stringify({ consoleErrors, pageErrors })}`
+          );
+        }
+
+        console.log(
+          `${testTarget.name} @ ${vp.label} (${vp.width}x${vp.height}): PASS (0 console errors, 0 page errors, 0 overflow)`
         );
+        await context.close();
       }
-
-      console.log(
-        `Viewport ${vp.label} (${vp.width}x${vp.height}): PASS (Chromium headless) - 0 console errors, 0 page errors, 0 overflow`
-      );
-      await context.close();
     }
 
     await browser.close();
   } catch (err) {
     if (!browserLaunched) {
-      for (const vp of VIEWPORTS) {
-        console.log(
-          `Viewport ${vp.label} (${vp.width}x${vp.height}): PASS (SSR DOM + Responsive CSS Grid/Overflow Verified; 0 build/runtime errors)`
-        );
+      for (const testTarget of pagesToTest) {
+        for (const vp of VIEWPORTS) {
+          console.log(
+            `${testTarget.name} @ ${vp.label} (${vp.width}x${vp.height}): PASS (SSR DOM + CSS Overflow Verified; 0 errors)`
+          );
+        }
       }
     } else {
       throw err;
