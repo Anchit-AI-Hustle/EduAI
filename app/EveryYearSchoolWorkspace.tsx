@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useMemo } from "react";
+import Link from "next/link";
 import MiddleSchoolDeepDive from "./components/MiddleSchoolDeepDive";
 
 type Localized = { en: string; hi: string };
@@ -222,6 +223,21 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
                 </option>
               ))}
             </select>
+            <Link
+              href="/justification"
+              className="control-pill"
+              style={{
+                textDecoration: "none",
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "0.35rem",
+                background: "rgba(99, 102, 241, 0.25)",
+                borderColor: "rgba(129, 140, 248, 0.6)",
+                color: "#e0e7ff"
+              }}
+            >
+              <span>Venture Thesis &amp; 6 Q&amp;A</span>
+            </Link>
             <button
               type="button"
               className={`control-pill ${lang === "en" ? "active" : ""}`}

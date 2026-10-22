@@ -32,8 +32,21 @@ export default function JustificationPage() {
           </div>
         </div>
 
+        {/* Quick Jump Navigation */}
+        <nav aria-label="Dossier Quick Jump" style={{ display: "flex", flexWrap: "wrap", gap: "0.45rem", marginBottom: "1.75rem", background: "#0d1527", padding: "0.6rem", borderRadius: "10px", border: "1px solid rgba(255,255,255,0.08)" }}>
+          <a href="#executive-synthesis" style={{ color: "#94a3b8", textDecoration: "none", fontSize: "0.78rem", padding: "0.35rem 0.65rem", borderRadius: "6px", background: "rgba(255,255,255,0.04)" }}>Executive Synthesis</a>
+          <a href="#who-will-use" style={{ color: "#94a3b8", textDecoration: "none", fontSize: "0.78rem", padding: "0.35rem 0.65rem", borderRadius: "6px", background: "rgba(255,255,255,0.04)" }}>Q1: Who Will Use</a>
+          <a href="#current-alternatives" style={{ color: "#94a3b8", textDecoration: "none", fontSize: "0.78rem", padding: "0.35rem 0.65rem", borderRadius: "6px", background: "rgba(255,255,255,0.04)" }}>Q2: Current Alternatives</a>
+          <a href="#market-size" style={{ color: "#94a3b8", textDecoration: "none", fontSize: "0.78rem", padding: "0.35rem 0.65rem", borderRadius: "6px", background: "rgba(255,255,255,0.04)" }}>Q3: Market Size (TAM)</a>
+          <a href="#why-better" style={{ color: "#94a3b8", textDecoration: "none", fontSize: "0.78rem", padding: "0.35rem 0.65rem", borderRadius: "6px", background: "rgba(255,255,255,0.04)" }}>Q4: Why Better</a>
+          <a href="#will-he-pay" style={{ color: "#94a3b8", textDecoration: "none", fontSize: "0.78rem", padding: "0.35rem 0.65rem", borderRadius: "6px", background: "rgba(255,255,255,0.04)" }}>Q5: Will He Pay</a>
+          <a href="#unsolved-problem" style={{ color: "#94a3b8", textDecoration: "none", fontSize: "0.78rem", padding: "0.35rem 0.65rem", borderRadius: "6px", background: "rgba(255,255,255,0.04)" }}>Q6: Unsolved Problem</a>
+          <a href="#cbse-vs-ai" style={{ color: "#94a3b8", textDecoration: "none", fontSize: "0.78rem", padding: "0.35rem 0.65rem", borderRadius: "6px", background: "rgba(255,255,255,0.04)" }}>CBSE vs AI Evolution</a>
+          <a href="#venture-brands" style={{ color: "#94a3b8", textDecoration: "none", fontSize: "0.78rem", padding: "0.35rem 0.65rem", borderRadius: "6px", background: "rgba(255,255,255,0.04)" }}>Venture Brands</a>
+        </nav>
+
         {/* Executive Summary Card */}
-        <section style={{ background: "#111827", border: "1px solid #1f2937", borderRadius: "12px", padding: "1.5rem", marginBottom: "2rem" }}>
+        <section id="executive-synthesis" style={{ background: "#111827", border: "1px solid #1f2937", borderRadius: "12px", padding: "1.5rem", marginBottom: "2rem" }}>
           <h2 style={{ fontSize: "1.25rem", color: "#38bdf8", marginTop: 0, marginBottom: "0.75rem" }}>
             Executive Synthesis: The Cradle-to-Career Educational Problem
           </h2>
@@ -71,7 +84,7 @@ export default function JustificationPage() {
         </section>
 
         {/* Question 1: Who will use? */}
-        <section style={{ background: "#111827", border: "1px solid #1f2937", borderRadius: "12px", padding: "1.5rem", marginBottom: "2rem" }}>
+        <section id="who-will-use" style={{ background: "#111827", border: "1px solid #1f2937", borderRadius: "12px", padding: "1.5rem", marginBottom: "2rem" }}>
           <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", marginBottom: "0.5rem" }}>
             <span style={{ background: "#4f46e5", color: "#ffffff", padding: "0.2rem 0.6rem", borderRadius: "6px", fontSize: "0.8rem", fontWeight: 700 }}>
               Question 1
@@ -123,7 +136,7 @@ export default function JustificationPage() {
         </section>
 
         {/* Question 2: What does he use currently? */}
-        <section style={{ background: "#111827", border: "1px solid #1f2937", borderRadius: "12px", padding: "1.5rem", marginBottom: "2rem" }}>
+        <section id="current-alternatives" style={{ background: "#111827", border: "1px solid #1f2937", borderRadius: "12px", padding: "1.5rem", marginBottom: "2rem" }}>
           <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", marginBottom: "0.5rem" }}>
             <span style={{ background: "#4f46e5", color: "#ffffff", padding: "0.2rem 0.6rem", borderRadius: "6px", fontSize: "0.8rem", fontWeight: 700 }}>
               Question 2
@@ -176,7 +189,7 @@ export default function JustificationPage() {
         </section>
 
         {/* Question 3: How many users face this problem? */}
-        <section style={{ background: "#111827", border: "1px solid #1f2937", borderRadius: "12px", padding: "1.5rem", marginBottom: "2rem" }}>
+        <section id="market-size" style={{ background: "#111827", border: "1px solid #1f2937", borderRadius: "12px", padding: "1.5rem", marginBottom: "2rem" }}>
           <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", marginBottom: "0.5rem" }}>
             <span style={{ background: "#4f46e5", color: "#ffffff", padding: "0.2rem 0.6rem", borderRadius: "6px", fontSize: "0.8rem", fontWeight: 700 }}>
               Question 3
@@ -218,7 +231,7 @@ export default function JustificationPage() {
         </section>
 
         {/* Question 4: Why will your product be better? */}
-        <section style={{ background: "#111827", border: "1px solid #1f2937", borderRadius: "12px", padding: "1.5rem", marginBottom: "2rem" }}>
+        <section id="why-better" style={{ background: "#111827", border: "1px solid #1f2937", borderRadius: "12px", padding: "1.5rem", marginBottom: "2rem" }}>
           <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", marginBottom: "0.5rem" }}>
             <span style={{ background: "#4f46e5", color: "#ffffff", padding: "0.2rem 0.6rem", borderRadius: "6px", fontSize: "0.8rem", fontWeight: 700 }}>
               Question 4
@@ -262,7 +275,7 @@ export default function JustificationPage() {
         </section>
 
         {/* Question 5: Will he pay? */}
-        <section style={{ background: "#111827", border: "1px solid #1f2937", borderRadius: "12px", padding: "1.5rem", marginBottom: "2rem" }}>
+        <section id="will-he-pay" style={{ background: "#111827", border: "1px solid #1f2937", borderRadius: "12px", padding: "1.5rem", marginBottom: "2rem" }}>
           <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", marginBottom: "0.5rem" }}>
             <span style={{ background: "#4f46e5", color: "#ffffff", padding: "0.2rem 0.6rem", borderRadius: "6px", fontSize: "0.8rem", fontWeight: 700 }}>
               Question 5
@@ -299,7 +312,7 @@ export default function JustificationPage() {
         </section>
 
         {/* Question 6: What is the real problem not solved right now? */}
-        <section style={{ background: "#111827", border: "1px solid #1f2937", borderRadius: "12px", padding: "1.5rem", marginBottom: "2rem" }}>
+        <section id="unsolved-problem" style={{ background: "#111827", border: "1px solid #1f2937", borderRadius: "12px", padding: "1.5rem", marginBottom: "2rem" }}>
           <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", marginBottom: "0.5rem" }}>
             <span style={{ background: "#4f46e5", color: "#ffffff", padding: "0.2rem 0.6rem", borderRadius: "6px", fontSize: "0.8rem", fontWeight: 700 }}>
               Question 6
@@ -325,7 +338,7 @@ export default function JustificationPage() {
         </section>
 
         {/* How CBSE Prepares Syllabus & Self-Evolving Engine */}
-        <section style={{ background: "#111827", border: "1px solid #1f2937", borderRadius: "12px", padding: "1.5rem", marginBottom: "2rem" }}>
+        <section id="cbse-vs-ai" style={{ background: "#111827", border: "1px solid #1f2937", borderRadius: "12px", padding: "1.5rem", marginBottom: "2rem" }}>
           <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", marginBottom: "0.5rem" }}>
             <span style={{ background: "#059669", color: "#ffffff", padding: "0.2rem 0.6rem", borderRadius: "6px", fontSize: "0.8rem", fontWeight: 700 }}>
               Regulatory Science
@@ -367,7 +380,7 @@ export default function JustificationPage() {
         </section>
 
         {/* Venture Naming Recommendations */}
-        <section style={{ background: "#111827", border: "1px solid #1f2937", borderRadius: "12px", padding: "1.5rem", marginBottom: "2rem" }}>
+        <section id="venture-brands" style={{ background: "#111827", border: "1px solid #1f2937", borderRadius: "12px", padding: "1.5rem", marginBottom: "2rem" }}>
           <h2 style={{ fontSize: "1.35rem", color: "#ffffff", marginTop: 0, marginBottom: "0.75rem" }}>
             Recommended Venture Brand Names
           </h2>
