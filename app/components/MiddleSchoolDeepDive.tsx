@@ -196,15 +196,15 @@ export default function MiddleSchoolDeepDive({
           </h2>
           <p style={{ margin: 0, color: "#94a3b8", fontSize: "0.88rem", maxWidth: "860px" }}>
             {isHindi
-              ? "एनसीईआरटी की आधिकारिक पाठ्यपुस्तकों (गणित प्रकाश, क्यूरियोसिटी, एक्सप्लोरिंग सोसाइटी, पूर्वी, मल्हार) पर आधारित पूर्ण पाठ्यक्रम, कौशल ग्राफ पूर्व-अपेक्षाएं और त्रि-स्तरीय बौद्धिक चुनौतियां।"
-              : "Exhaustive chapter-level learning outcomes from official NCERT NCF-SE 2023 textbooks (Ganita Prakash, Curiosity, Exploring Society, Poorvi, Malhar) linked to DAG prerequisite edges and tiered IQ challenges."}
+              ? "एनसीईआरटी की आधिकारिक पाठ्यपुस्तकों (गणित प्रकाश, क्यूरियोसिटी, एक्सप्लोरिंग सोसाइटी, पूर्वी, मल्हार) पर आधारित अध्याय-स्तरीय सीखने के परिणाम, कौशल ग्राफ पूर्व-अपेक्षाएं और त्रि-स्तरीय चुनौतियां।"
+              : "Chapter-level learning outcomes from official NCERT NCF-SE 2023 textbooks (Ganita Prakash, Curiosity, Exploring Society, Poorvi, Malhar) linked to prerequisite edges and tiered challenges."}
           </p>
         </div>
 
-        {/* Real-time Mastery IQ Metric */}
+        {/* Middle Stage mastery score */}
         <div style={{ background: "rgba(99, 102, 241, 0.12)", border: "1px solid rgba(99, 102, 241, 0.3)", borderRadius: "8px", padding: "0.6rem 1rem", textAlign: "right" }}>
           <div style={{ fontSize: "0.75rem", textTransform: "uppercase", letterSpacing: "0.05em", color: "#a5b4fc" }}>
-            {isHindi ? "माध्यमिक दक्षता सूचकांक" : "Middle Stage Mastery IQ"}
+            {isHindi ? "माध्यमिक दक्षता सूचकांक" : "Middle Stage Mastery Score"}
           </div>
           <div style={{ fontSize: "1.5rem", fontWeight: 800, color: "#818cf8" }}>
             {masteryScore} <span style={{ fontSize: "0.85rem", color: "#94a3b8" }}>/ 100</span>

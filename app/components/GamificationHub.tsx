@@ -353,7 +353,12 @@ export default function GamificationHub({
             <span style={{ fontSize: "0.8rem", color: "#34d399", fontWeight: 700 }}>Top 3 Promote</span>
           </div>
           <p style={{ fontSize: "0.86rem", color: "var(--text-secondary)", marginBottom: "0.85rem" }}>
-            Ranked by weekly challenge and lesson mastery points among verified grade-level peers.
+            <span className="badge badge-danger" style={{ marginRight: "0.4rem" }}>
+              {lang === "hi" ? "डेमो डेटा" : "Demo data"}
+            </span>
+            {lang === "hi"
+              ? "काल्पनिक साथी छात्र। असली लीग में खाते और अभिभावक की सहमति ज़रूरी होगी।"
+              : "Fictional peers. A real league needs accounts and guardian consent first."}
           </p>
 
           <div style={{ display: "flex", flexDirection: "column", gap: "0.45rem" }}>

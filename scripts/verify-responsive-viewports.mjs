@@ -22,13 +22,15 @@ function loadBuiltHtml(relativePath) {
 
 function findExecutable() {
   const candidates = [
+    process.env.CHROME_PATH,
+    "/opt/pw-browsers/chromium",
     "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
     "/Applications/Chromium.app/Contents/MacOS/Chromium",
     "/Applications/Brave Browser.app/Contents/MacOS/Brave Browser",
     "/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge"
   ];
   for (const c of candidates) {
-    if (fs.existsSync(c)) return c;
+    if (c && fs.existsSync(c)) return c;
   }
   return undefined;
 }
@@ -52,7 +54,7 @@ async function run() {
         "6. Competitive &amp; Global Tracks",
         "7. Self-Evolving Engine (L1-L5)",
         "8. Parent View &amp; Legal Risks",
-        "9. Venture Thesis &amp; 5 Q&amp;A",
+        "9. Venture Thesis &amp; 6 Q&amp;A",
         "हिन्दी"
       ]
     },
@@ -62,16 +64,16 @@ async function run() {
       headingMatch: "Venture Justification",
       requiredMarkers: [
         "Venture Justification",
-        "Executive Synthesis",
+        "Reality Check",
         "Question 1",
         "Question 2",
         "Question 3",
         "Question 4",
         "Question 5",
         "Question 6",
-        "Regulatory Science",
         "Venture Brand Names",
-        "260 Million K-12 Students"
+        "about 20 lakh",
+        "INR 199 or 499 / month"
       ]
     }
   ];
@@ -139,13 +141,21 @@ async function run() {
 
     await browser.close();
   } catch (err) {
-    if (!browserLaunched) {
+    if (!browserLaunched && !executablePath) {
+      // No browser binary found: still verify the prerendered markers, but report
+      // the viewport checks as skipped rather than passed. A binary that exists
+      // but fails to launch falls through and fails the run.
       for (const testTarget of pagesToTest) {
-        for (const vp of VIEWPORTS) {
-          console.log(
-            `${testTarget.name} @ ${vp.label} (${vp.width}x${vp.height}): PASS (SSR DOM + CSS Overflow Verified; 0 errors)`
-          );
+        const { rawHtml } = loadBuiltHtml(testTarget.file);
+        const normalizedHtml = rawHtml.replace(/<!--\s*-->/g, "");
+        for (const marker of testTarget.requiredMarkers) {
+          if (!normalizedHtml.includes(marker)) {
+            throw new Error(`${testTarget.name} missing required UI marker: ${marker}`);
+          }
         }
+        console.log(
+          `${testTarget.name}: markers PASS; viewport checks SKIPPED (no Chromium found, set CHROME_PATH)`
+        );
       }
     } else {
       throw err;

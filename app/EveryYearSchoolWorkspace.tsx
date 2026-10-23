@@ -4,6 +4,7 @@ import React, { useState, useMemo } from "react";
 import Link from "next/link";
 import MiddleSchoolDeepDive from "./components/MiddleSchoolDeepDive";
 import GamificationHub, { Quest, BadgeItem } from "./components/GamificationHub";
+import VentureThesisView from "./components/VentureThesisView";
 
 type Localized = { en: string; hi: string };
 
@@ -159,7 +160,7 @@ const INITIAL_BADGES: BadgeItem[] = [
 const UI_TEXT = {
   en: {
     subtitle:
-      "AI-First School & Self-Evolving Skill Graph: Home Learning (0-3), Nursery-Class 12, Competitive (JEE, NEET, CUET, UPSC) & Study Abroad (SAT, ACT, IELTS, TOEFL)",
+      "Prototype: a plan for every year of school, starting with CBSE Classes 6-8. Other boards, early years and exam tracks are included as data architecture.",
     tabs: {
       planner: "1. Year, Week & Day Planner",
       diagnostic: "2. Adaptive Diagnostic",
@@ -169,7 +170,7 @@ const UI_TEXT = {
       tracks: "6. Competitive & Global Tracks",
       evolution: "7. Self-Evolving Engine (L1-L5)",
       parent: "8. Parent View & Legal Risks",
-      venture: "9. Venture Thesis & 5 Q&A",
+      venture: "9. Venture Thesis & 6 Q&A",
       gamification: "10. Quests, Badges & XP Hub"
     },
     boardLabel: "Select Board / Framework",
@@ -179,7 +180,7 @@ const UI_TEXT = {
   },
   hi: {
     subtitle:
-      "एआई-प्रथम विद्यालय और स्व-विकसित कौशल ग्राफ: गृह शिक्षण (0-3), नर्सरी से कक्षा 12, प्रतियोगी परीक्षाएं (JEE, NEET, CUET, UPSC) और विदेश अध्ययन (SAT, ACT, IELTS, TOEFL)",
+      "प्रोटोटाइप: स्कूल के हर वर्ष की योजना, शुरुआत सीबीएसई कक्षा 6-8 से। अन्य बोर्ड, प्रारंभिक वर्ष और प्रतियोगी परीक्षा ट्रैक डेटा संरचना के रूप में शामिल हैं।",
     tabs: {
       planner: "1. वार्षिक, साप्ताहिक व दैनिक योजना",
       diagnostic: "2. अनुकूलित निदान (Diagnostic)",
@@ -189,7 +190,7 @@ const UI_TEXT = {
       tracks: "6. प्रतियोगी व विदेश ट्रैक",
       evolution: "7. स्व-विकसित इंजन (L1-L5)",
       parent: "8. अभिभावक दृश्य व विधिक जोखिम",
-      venture: "9. वेंचर रणनीति व 5 मुख्य प्रश्न",
+      venture: "9. वेंचर रणनीति व 6 मुख्य प्रश्न",
       gamification: "10. दैनिक क्वेस्ट, बैज व एक्सपी हब"
     },
     boardLabel: "बोर्ड / फ्रेमवर्क चुनें",
@@ -1207,7 +1208,7 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
                     }}
                   >
                     {exitChoice === 0
-                      ? "Mastery Evidence Event Recorded! L1 Engine promoted skill mastery (+0.05) and updated the weekly buffer."
+                      ? "Correct! In the full product this answer would be saved as mastery evidence and update the weekly plan. (Demo: nothing is saved.)"
                       : "Not quite - select Option A (the official sourced competency for this unit)."}
                   </div>
                 )}
@@ -1421,7 +1422,10 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
           <div className="card">
             <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: "0.75rem" }}>
               <div>
-                <span className="badge badge-green">5-Speed Governance Architecture</span>
+                <span className="badge badge-green">5-Speed Governance Architecture</span>{" "}
+                <span className="badge badge-danger">
+                  {lang === "en" ? "Demo data: illustrative events, engine not built yet" : "डेमो डेटा: उदाहरण घटनाएं, इंजन अभी बना नहीं"}
+                </span>
                 <h2 style={{ margin: "0.3rem 0" }}>
                   {lang === "en"
                     ? "Self-Evolving AI Curriculum Engine (Minute-by-Minute L1/L2 + Cohort-Gated L3/L4/L5)"
@@ -1555,10 +1559,10 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
                   checked={guardianConsentGranted}
                   onChange={(e) => setGuardianConsentGranted(e.target.checked)}
                 />
-                DPDP Act 2023 Section 9 & Rule 10 Verifiable Guardian Consent Active
+                Guardian consent (demo toggle, DPDP Act 2023 Section 9)
               </label>
               <p style={{ fontSize: "0.83rem", color: "var(--text-muted)", margin: "0.25rem 0" }}>
-                Zero behavioral tracking, zero targeted advertising, birth stored as YYYY-MM only ({activeLearner.identity.dateOfBirth}), data residency pinned to India (IN).
+                Design target: verifiable guardian consent before any data is stored, no targeted advertising, birth stored as YYYY-MM only ({activeLearner.identity.dateOfBirth}), data kept in India. This prototype stores nothing.
               </p>
             </div>
 
@@ -1635,7 +1639,7 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
               {
                 id: "RISK-02",
                 title: "Children's Data Law (DPDP Act 2023 Section 9 & Rule 10)",
-                url: "https://www.dpdpa.com/dpdpa2023/chapter-2/section9.html",
+                url: "https://www.meity.gov.in/static/uploads/2024/06/2bf1f0e9f04e6fb4f8fef35e82c42aa5.pdf",
                 detail:
                   "Mandatory verifiable parental consent, opaque learner IDs, YYYY-MM birth precision, and strict prohibition on behavioral tracking or targeted ads to minors."
               },
@@ -1688,88 +1692,8 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
         </div>
       )}
 
-      {/* TAB 8: VENTURE THESIS & 5 FOUNDER QUESTIONS */}
-      {activeTab === "venture" && (
-        <div className="card">
-          <h2>Venture Naming & Answers to the 5 Core Product Questions</h2>
-          <div className="table-wrap" style={{ marginBottom: "1rem" }}>
-            <table>
-              <thead>
-                <tr>
-                  <th>Question</th>
-                  <th>Primary-Sourced Answer & Strategic Wedge</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <strong>1. Who will use it?</strong>
-                  </td>
-                  <td>
-                    (a) K-12 school-enrolled students & parents (Nursery-Class 12 across CBSE, CISCE, State Boards) needing personalized pacing; (b) Class 8-12 aspirants combining school boards with JEE, NEET, CUET, UPSC, SAT, ACT, IELTS, or TOEFL; (c) Caregivers (0-6) and NIOS open-schooling families.
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <strong>2. What do they use currently?</strong>
-                  </td>
-                  <td>
-                    Fixed-pace school classrooms, disconnected neighbourhood tuition/coaching centers (Allen, Aakash, PW), passive video libraries (YouTube), and unpinned chatbots (ChatGPT) that hallucinate syllabus rules and lack longitudinal mastery tracking.
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <strong>3. How many users face this problem?</strong>
-                  </td>
-                  <td>
-                    <strong>24.8 Crore (248M) to 23.29 Crore K-12 students</strong> in India (
-                    <a
-                      href="https://dashboard.udiseplus.gov.in/report2026/static/media/UDISE+2023_24_Booklet_nep.f2ab818294eb169c0adc.pdf"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      UDISE+ Report
-                    </a>
-                    ), where over 50% face multi-year foundational gaps (
-                    <a
-                      href="https://asercentre.org/wp-content/uploads/2022/12/ASER-2024-National-findings.pdf"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      ASER 2024
-                    </a>
-                    ), plus <strong>55+ lakh annual test takers</strong> across NEET UG, JEE Main, CUET UG, UPSC, and study-abroad exams.
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <strong>4. Why will our product be better?</strong>
-                  </td>
-                  <td>
-                    One shared DAG skill graph mapping every board and exam together; a constrained year/week/day planner with a 15% rebalance buffer; strict primary-source pinning with zero syllabus hallucination; a 5-layer self-evolving curriculum engine; and native Hindi + English + Parent DPDP/IAP governance.
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <strong>5. Will they pay?</strong>
-                  </td>
-                  <td>
-                    Yes - families already spend INR 1,500-6,000/month on local tuitions and INR 40,000-2,50,000/year on coaching. Tiered pricing: Free diagnostic & syllabus explorer; INR 499-1,499/mo Core Annual Planner; INR 1,999-3,499/mo Board + Competitive Track Bundle.
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <strong>6. What is the real unsolved problem?</strong>
-                  </td>
-                  <td>
-                    Content availability is already solved by video apps. The real unsolved problem is <strong>longitudinal curriculum orchestration</strong>: reconciling fixed-date board syllabi and competitive tracks with an individual child&apos;s prerequisite mastery and daily family time budget.
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      )}
+      {/* TAB 8: VENTURE THESIS & 6 CORE QUESTIONS */}
+      {activeTab === "venture" && <VentureThesisView lang={lang} brandName={ventureBrand} />}
 
       {/* TAB 10: GAMIFICATION HUB (QUESTS, BADGES & XP) */}
       {activeTab === "gamification" && (
