@@ -3,6 +3,7 @@
 import React, { useState, useMemo } from "react";
 import Link from "next/link";
 import MiddleSchoolDeepDive from "./components/MiddleSchoolDeepDive";
+import GamificationHub, { Quest, BadgeItem } from "./components/GamificationHub";
 
 type Localized = { en: string; hi: string };
 
@@ -10,6 +11,150 @@ interface Props {
   masterIndex: any;
   initialCurricula: Record<string, any>;
 }
+
+function playRewardSound() {
+  if (typeof window === "undefined") return;
+  try {
+    const AudioCtx = window.AudioContext || (window as any).webkitAudioContext;
+    if (!AudioCtx) return;
+    const ctx = new AudioCtx();
+    const now = ctx.currentTime;
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+    osc.type = "sine";
+    osc.frequency.setValueAtTime(523.25, now);
+    osc.frequency.exponentialRampToValueAtTime(659.25, now + 0.08);
+    osc.frequency.exponentialRampToValueAtTime(783.99, now + 0.16);
+    osc.frequency.exponentialRampToValueAtTime(1046.5, now + 0.24);
+    gain.gain.setValueAtTime(0.12, now);
+    gain.gain.exponentialRampToValueAtTime(0.01, now + 0.38);
+    osc.connect(gain);
+    gain.connect(ctx.destination);
+    osc.start(now);
+    osc.stop(now + 0.4);
+  } catch {
+    // Autoplay fallback
+  }
+}
+
+function triggerHaptic(type: "light" | "medium" | "heavy" = "light") {
+  if (typeof window !== "undefined" && "vibrate" in navigator) {
+    try {
+      if (type === "light") navigator.vibrate(12);
+      else if (type === "medium") navigator.vibrate([15, 30, 20]);
+      else navigator.vibrate([30, 50, 40]);
+    } catch {
+      // Ignored
+    }
+  }
+}
+
+const LEVELS = [
+  { level: 1, title: "Novice Explorer", minXp: 0, nextXp: 300 },
+  { level: 2, title: "Curious Learner", minXp: 300, nextXp: 700 },
+  { level: 3, title: "Foundational Scholar", minXp: 700, nextXp: 1200 },
+  { level: 4, title: "Mastery Seeker", minXp: 1200, nextXp: 1900 },
+  { level: 5, title: "Olympiad Challenger", minXp: 1900, nextXp: 2800 },
+  { level: 6, title: "Concept Artisan", minXp: 2800, nextXp: 4000 },
+  { level: 7, title: "Cognitive Trailblazer", minXp: 4000, nextXp: 5500 },
+  { level: 8, title: "Research Fellow", minXp: 5500, nextXp: 7200 },
+  { level: 9, title: "Vedic Polymath", minXp: 7200, nextXp: 9000 },
+  { level: 10, title: "Grandmaster Sage", minXp: 9000, nextXp: 15000 }
+];
+
+const INITIAL_QUESTS: Quest[] = [
+  {
+    id: "quest-lesson",
+    title: "Daily Panchpadi Step",
+    description: "Complete at least 1 Adhiti or Bodh active lesson phase",
+    xpReward: 50,
+    completed: false,
+    progress: 0,
+    target: 1
+  },
+  {
+    id: "quest-challenge",
+    title: "Cognitive Problem Solver",
+    description: "Solve a Foundational or Standard tier challenge question",
+    xpReward: 75,
+    completed: false,
+    progress: 0,
+    target: 1
+  },
+  {
+    id: "quest-exit",
+    title: "Exit Ticket Mastery",
+    description: "Score 100% on the end-of-lesson exit diagnostic check",
+    xpReward: 100,
+    completed: false,
+    progress: 0,
+    target: 1
+  },
+  {
+    id: "quest-screen",
+    title: "Mindful Digital Wellness",
+    description: "Maintain focus time within IAP pediatric screen cap",
+    xpReward: 40,
+    completed: true,
+    progress: 1,
+    target: 1
+  }
+];
+
+const INITIAL_BADGES: BadgeItem[] = [
+  {
+    id: "badge-first-step",
+    name: "First Lesson Solved",
+    icon: "🌱",
+    description: "Completed your first NCF-SE 5-step learning loop",
+    earned: true,
+    unlockedAt: "Yesterday",
+    category: "mastery"
+  },
+  {
+    id: "badge-streak-7",
+    name: "7-Day Flame",
+    icon: "🔥",
+    description: "Studied consecutively for 7 days without missing a session",
+    earned: true,
+    unlockedAt: "Today",
+    category: "streak"
+  },
+  {
+    id: "badge-math-whiz",
+    name: "Ganita Explorer",
+    icon: "📐",
+    description: "Mastered Class 6 & 7 spatial geometry and fractions",
+    earned: true,
+    unlockedAt: "3 days ago",
+    category: "mastery"
+  },
+  {
+    id: "badge-olympiad",
+    name: "Olympiad Contender",
+    icon: "⚡",
+    description: "Attempted a Tier-3 Olympiad challenge question with zero hints",
+    earned: false,
+    category: "olympiad"
+  },
+  {
+    id: "badge-iap-guardian",
+    name: "Screen Time Guard",
+    icon: "🛡️",
+    description: "Respected the 60-minute IAP pediatric health boundary for 5 days",
+    earned: true,
+    unlockedAt: "Today",
+    category: "safety"
+  },
+  {
+    id: "badge-mock-champion",
+    name: "Exam Blueprint Master",
+    icon: "🎯",
+    description: "Completed a full simulated board examination blueprint",
+    earned: false,
+    category: "mastery"
+  }
+];
 
 const UI_TEXT = {
   en: {
@@ -24,7 +169,8 @@ const UI_TEXT = {
       tracks: "6. Competitive & Global Tracks",
       evolution: "7. Self-Evolving Engine (L1-L5)",
       parent: "8. Parent View & Legal Risks",
-      venture: "9. Venture Thesis & 5 Q&A"
+      venture: "9. Venture Thesis & 5 Q&A",
+      gamification: "10. Quests, Badges & XP Hub"
     },
     boardLabel: "Select Board / Framework",
     yearLabel: "Select Stage / Year (All 16 Stages)",
@@ -43,7 +189,8 @@ const UI_TEXT = {
       tracks: "6. प्रतियोगी व विदेश ट्रैक",
       evolution: "7. स्व-विकसित इंजन (L1-L5)",
       parent: "8. अभिभावक दृश्य व विधिक जोखिम",
-      venture: "9. वेंचर रणनीति व 5 मुख्य प्रश्न"
+      venture: "9. वेंचर रणनीति व 5 मुख्य प्रश्न",
+      gamification: "10. दैनिक क्वेस्ट, बैज व एक्सपी हब"
     },
     boardLabel: "बोर्ड / फ्रेमवर्क चुनें",
     yearLabel: "चरण / कक्षा चुनें (सभी 16 चरण)",
@@ -56,7 +203,7 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
   const [lang, setLang] = useState<"en" | "hi">("en");
   const [ventureBrand, setVentureBrand] = useState<string>(masterIndex.venture.ventureName || "EveryYear");
   const [activeTab, setActiveTab] = useState<
-    "planner" | "diagnostic" | "middleStage" | "lesson" | "mocks" | "tracks" | "evolution" | "parent" | "venture"
+    "planner" | "diagnostic" | "middleStage" | "lesson" | "mocks" | "tracks" | "evolution" | "parent" | "venture" | "gamification"
   >("planner");
 
   const [selectedLearnerId, setSelectedLearnerId] = useState<string>(
@@ -65,6 +212,42 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
   const [selectedBoard, setSelectedBoard] = useState<string>("cbse");
   const [selectedYear, setSelectedYear] = useState<string>("class-07");
   const [customDailyMinutes, setCustomDailyMinutes] = useState<number>(60);
+
+  // Gamification state
+  const [xp, setXp] = useState<number>(1420);
+  const [streak] = useState<number>(7);
+  const [soundEnabled, setSoundEnabled] = useState<boolean>(true);
+  const [xpToast, setXpToast] = useState<{ amount: number; reason: string } | null>(null);
+  const [quests, setQuests] = useState<Quest[]>(INITIAL_QUESTS);
+  const [badges, setBadges] = useState<BadgeItem[]>(INITIAL_BADGES);
+
+  const currentLevelInfo = useMemo(() => {
+    return LEVELS.slice().reverse().find((l) => xp >= l.minXp) || LEVELS[0];
+  }, [xp]);
+
+  const awardXp = (amount: number, reason: string) => {
+    setXp((prev) => prev + amount);
+    setXpToast({ amount, reason });
+    if (soundEnabled) {
+      playRewardSound();
+    }
+    triggerHaptic("medium");
+    setTimeout(() => {
+      setXpToast(null);
+    }, 2200);
+  };
+
+  const handleClaimQuest = (questId: string) => {
+    setQuests((prev) =>
+      prev.map((q) => {
+        if (q.id === questId && !q.completed) {
+          awardXp(q.xpReward, `Quest Claimed: ${q.title}`);
+          return { ...q, completed: true };
+        }
+        return q;
+      })
+    );
+  };
 
   // Diagnostic state
   const [diagAnswers, setDiagAnswers] = useState<Record<string, number>>({});
@@ -289,6 +472,65 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
         </div>
       </header>
 
+      {/* Floating Celebratory XP Toast */}
+      {xpToast && (
+        <div className="xp-toast" role="status" aria-live="polite">
+          <span style={{ fontSize: "1.2rem" }}>⚡</span>
+          <span>+{xpToast.amount} XP</span>
+          <span style={{ opacity: 0.9, fontSize: "0.85rem", fontWeight: 600 }}>{xpToast.reason}</span>
+        </div>
+      )}
+
+      {/* App-First Gamified Status Bar */}
+      <div className="mobile-status-strip" aria-label="Learner Gamification and Screen Time Status">
+        <div style={{ display: "flex", alignItems: "center", gap: "0.85rem", flexWrap: "wrap" }}>
+          <button
+            type="button"
+            onClick={() => setActiveTab("gamification")}
+            style={{ background: "transparent", border: "none", padding: 0, cursor: "pointer" }}
+            className="status-pill"
+          >
+            <span className="streak-flame">🔥</span>
+            <span style={{ color: "#fbbf24" }}>{streak}d Streak</span>
+          </button>
+          <button
+            type="button"
+            onClick={() => setActiveTab("gamification")}
+            style={{ background: "transparent", border: "none", padding: 0, cursor: "pointer" }}
+            className="status-pill"
+          >
+            <span>⚡</span>
+            <span style={{ color: "#818cf8" }}>{xp} XP</span>
+          </button>
+          <button
+            type="button"
+            onClick={() => setActiveTab("gamification")}
+            style={{ background: "transparent", border: "none", padding: 0, cursor: "pointer" }}
+            className="status-pill"
+          >
+            <span>🎖️</span>
+            <span style={{ color: "#34d399" }}>
+              Lvl {currentLevelInfo.level}: {currentLevelInfo.title}
+            </span>
+          </button>
+        </div>
+
+        <div style={{ display: "flex", alignItems: "center", gap: "0.6rem" }}>
+          <span className="status-pill" style={{ color: "var(--text-secondary)", fontSize: "0.78rem" }}>
+            ⏱️ Focus: {customDailyMinutes}/{parentScreenCap}m Cap
+          </span>
+          <button
+            type="button"
+            className="control-pill"
+            onClick={() => setSoundEnabled(!soundEnabled)}
+            style={{ padding: "0.25rem 0.6rem", fontSize: "0.76rem" }}
+            title="Toggle Reward Sound Effects"
+          >
+            {soundEnabled ? "🔊 FX On" : "🔇 FX Off"}
+          </button>
+        </div>
+      </div>
+
       {/* Global Context Selector Bar */}
       <section className="card" aria-label="Global Learner and Stage Controls">
         <div className="grid-3">
@@ -353,13 +595,18 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
             key={tabKey}
             type="button"
             className={`nav-tab ${activeTab === tabKey ? "active" : ""}`}
-            onClick={() => setActiveTab(tabKey)}
+            onClick={() => {
+              setActiveTab(tabKey);
+              triggerHaptic("light");
+            }}
           >
             {t.tabs[tabKey]}
           </button>
         ))}
       </nav>
 
+      {/* Smooth Animated Tab Content Container */}
+      <div key={activeTab} className="tab-content-enter">
       {/* TAB 1: YEAR, WEEK & DAY PLANNER */}
       {activeTab === "planner" && activeCurriculum && (
         <div>
@@ -457,7 +704,7 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
                     <div
                       key={u.unitId}
                       style={{
-                        background: "#ffffff",
+                        background: "var(--surface-elevated)",
                         border: "1px solid var(--border)",
                         borderRadius: "8px",
                         padding: "0.6rem",
@@ -740,7 +987,10 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
                   <button
                     type="button"
                     className="btn btn-primary"
-                    onClick={() => setDiagSubmitted(true)}
+                    onClick={() => {
+                      setDiagSubmitted(true);
+                      awardXp(100, "Diagnostic Placement Computed! 🧠");
+                    }}
                   >
                     Compute Skill Placement
                   </button>
@@ -754,6 +1004,7 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
                       }
                       setDiagAnswers(auto);
                       setDiagSubmitted(true);
+                      awardXp(100, "Diagnostic Placement Computed! 🧠");
                     }}
                   >
                     Demo Fill All Correct
@@ -763,7 +1014,7 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
                 {diagSubmitted && (
                   <div
                     style={{
-                      background: "#ffffff",
+                      background: "var(--surface-elevated)",
                       border: "1px solid var(--border)",
                       borderRadius: "10px",
                       padding: "0.85rem"
@@ -800,6 +1051,12 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
         <MiddleSchoolDeepDive
           deepeningData={masterIndex.middleStageDeepening}
           lang={lang}
+          onAwardXp={(amt, reason) => {
+            awardXp(amt, reason);
+            setQuests((prev) =>
+              prev.map((q) => (q.id === "quest-challenge" ? { ...q, progress: 1, completed: true } : q))
+            );
+          }}
         />
       )}
 
@@ -833,7 +1090,13 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
                 key={st.stepId}
                 type="button"
                 className={`btn ${lessonStepIndex === idx ? "btn-primary" : ""}`}
-                onClick={() => setLessonStepIndex(idx)}
+                onClick={() => {
+                  setLessonStepIndex(idx);
+                  awardXp(15, `Panchpadi Step ${idx + 1} Active! 📘`);
+                  setQuests((prev) =>
+                    prev.map((q) => (q.id === "quest-lesson" ? { ...q, progress: 1, completed: true } : q))
+                  );
+                }}
               >
                 {loc(st.title)} ({st.minutes}m)
               </button>
@@ -855,7 +1118,7 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
 
             <div
               style={{
-                background: "#ffffff",
+                background: "var(--surface-elevated)",
                 border: "1px solid var(--border)",
                 borderRadius: "8px",
                 padding: "0.85rem",
@@ -923,6 +1186,12 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
                     onClick={() => {
                       setExitChoice(cIdx);
                       setExitChecked(true);
+                      if (cIdx === 0) {
+                        awardXp(50, "Exit Ticket 100% Mastered! 🎯");
+                        setQuests((prev) =>
+                          prev.map((q) => (q.id === "quest-exit" ? { ...q, progress: 1, completed: true } : q))
+                        );
+                      }
                     }}
                   >
                     {String.fromCharCode(65 + cIdx)}. {choiceText}
@@ -1501,6 +1770,88 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
           </div>
         </div>
       )}
+
+      {/* TAB 10: GAMIFICATION HUB (QUESTS, BADGES & XP) */}
+      {activeTab === "gamification" && (
+        <GamificationHub
+          xp={xp}
+          streak={streak}
+          level={currentLevelInfo.level}
+          levelTitle={currentLevelInfo.title}
+          currentLevelBaseXp={currentLevelInfo.minXp}
+          nextLevelXp={currentLevelInfo.nextXp}
+          quests={quests}
+          badges={badges}
+          soundEnabled={soundEnabled}
+          onToggleSound={() => setSoundEnabled(!soundEnabled)}
+          onClaimQuest={handleClaimQuest}
+          lang={lang}
+        />
+      )}
+      </div>
+
+      {/* Native-Style Mobile Sticky Bottom Tab Navigation Bar */}
+      <nav className="mobile-bottom-bar" aria-label="Mobile Bottom App Navigation">
+        <button
+          type="button"
+          className={`mobile-tab-btn ${activeTab === "planner" ? "active" : ""}`}
+          onClick={() => {
+            setActiveTab("planner");
+            triggerHaptic("light");
+          }}
+        >
+          <span className="tab-icon">📅</span>
+          <span>Today</span>
+        </button>
+        <button
+          type="button"
+          className={`mobile-tab-btn ${activeTab === "lesson" ? "active" : ""}`}
+          onClick={() => {
+            setActiveTab("lesson");
+            triggerHaptic("light");
+          }}
+        >
+          <span className="tab-icon">📖</span>
+          <span>Lesson</span>
+        </button>
+        <button
+          type="button"
+          className={`mobile-tab-btn ${activeTab === "middleStage" ? "active" : ""}`}
+          onClick={() => {
+            setActiveTab("middleStage");
+            triggerHaptic("light");
+          }}
+        >
+          <span className="tab-icon">🧠</span>
+          <span>Skills</span>
+        </button>
+        <button
+          type="button"
+          className={`mobile-tab-btn ${activeTab === "gamification" ? "active" : ""}`}
+          onClick={() => {
+            setActiveTab("gamification");
+            triggerHaptic("light");
+          }}
+        >
+          <span className="tab-icon">⚡</span>
+          <span>Quests</span>
+        </button>
+        <button
+          type="button"
+          className={`mobile-tab-btn ${
+            ["parent", "mocks", "tracks", "evolution", "venture", "diagnostic"].includes(activeTab)
+              ? "active"
+              : ""
+          }`}
+          onClick={() => {
+            setActiveTab("parent");
+            triggerHaptic("light");
+          }}
+        >
+          <span className="tab-icon">⚙️</span>
+          <span>More</span>
+        </button>
+      </nav>
     </div>
   );
 }

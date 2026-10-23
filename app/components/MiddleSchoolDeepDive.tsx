@@ -57,12 +57,14 @@ interface Props {
   deepeningData?: MiddleStageDeepeningData;
   lang?: "en" | "hi";
   onAssignToTimetable?: (chapterTitle: string, tier: string) => void;
+  onAwardXp?: (amount: number, reason: string) => void;
 }
 
 export default function MiddleSchoolDeepDive({
   deepeningData,
   lang = "en",
-  onAssignToTimetable
+  onAssignToTimetable,
+  onAwardXp
 }: Props) {
   const [selectedYearId, setSelectedYearId] = useState<string>("class-06");
   const [selectedSubjectId, setSelectedSubjectId] = useState<string>("math-c06");
@@ -140,6 +142,10 @@ export default function MiddleSchoolDeepDive({
     if (userSelectedOption === currentChallenge.correctIndex) {
       const delta = activeTier === "accelerated" ? 4 : activeTier === "standard" ? 2 : 1;
       setMasteryScore((prev) => Math.min(100, prev + delta));
+      if (onAwardXp) {
+        const reward = activeTier === "accelerated" ? 60 : activeTier === "standard" ? 40 : 25;
+        onAwardXp(reward, `${activeTier.toUpperCase()} Challenge Solved! ⚡`);
+      }
     }
   };
 
