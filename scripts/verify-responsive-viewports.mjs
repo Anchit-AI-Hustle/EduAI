@@ -141,9 +141,10 @@ async function run() {
 
     await browser.close();
   } catch (err) {
-    if (!browserLaunched) {
-      // No browser available: still verify the prerendered markers, but report
-      // the viewport checks as skipped rather than passed.
+    if (!browserLaunched && !executablePath) {
+      // No browser binary found: still verify the prerendered markers, but report
+      // the viewport checks as skipped rather than passed. A binary that exists
+      // but fails to launch falls through and fails the run.
       for (const testTarget of pagesToTest) {
         const { rawHtml } = loadBuiltHtml(testTarget.file);
         const normalizedHtml = rawHtml.replace(/<!--\s*-->/g, "");
