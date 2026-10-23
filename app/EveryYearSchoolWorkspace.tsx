@@ -160,7 +160,7 @@ const INITIAL_BADGES: BadgeItem[] = [
 const UI_TEXT = {
   en: {
     subtitle:
-      "AI-First School & Self-Evolving Skill Graph: Home Learning (0-3), Nursery-Class 12, Competitive (JEE, NEET, CUET, UPSC) & Study Abroad (SAT, ACT, IELTS, TOEFL)",
+      "Prototype: a plan for every year of school, starting with CBSE Classes 6-8. Other boards, early years and exam tracks are included as data architecture.",
     tabs: {
       planner: "1. Year, Week & Day Planner",
       diagnostic: "2. Adaptive Diagnostic",
@@ -180,7 +180,7 @@ const UI_TEXT = {
   },
   hi: {
     subtitle:
-      "एआई-प्रथम विद्यालय और स्व-विकसित कौशल ग्राफ: गृह शिक्षण (0-3), नर्सरी से कक्षा 12, प्रतियोगी परीक्षाएं (JEE, NEET, CUET, UPSC) और विदेश अध्ययन (SAT, ACT, IELTS, TOEFL)",
+      "प्रोटोटाइप: स्कूल के हर वर्ष की योजना, शुरुआत सीबीएसई कक्षा 6-8 से। अन्य बोर्ड, प्रारंभिक वर्ष और प्रतियोगी परीक्षा ट्रैक डेटा संरचना के रूप में शामिल हैं।",
     tabs: {
       planner: "1. वार्षिक, साप्ताहिक व दैनिक योजना",
       diagnostic: "2. अनुकूलित निदान (Diagnostic)",
@@ -1208,7 +1208,7 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
                     }}
                   >
                     {exitChoice === 0
-                      ? "Mastery Evidence Event Recorded! L1 Engine promoted skill mastery (+0.05) and updated the weekly buffer."
+                      ? "Correct! In the full product this answer would be saved as mastery evidence and update the weekly plan. (Demo: nothing is saved.)"
                       : "Not quite - select Option A (the official sourced competency for this unit)."}
                   </div>
                 )}
@@ -1559,10 +1559,10 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
                   checked={guardianConsentGranted}
                   onChange={(e) => setGuardianConsentGranted(e.target.checked)}
                 />
-                DPDP Act 2023 Section 9 & Rule 10 Verifiable Guardian Consent Active
+                Guardian consent (demo toggle, DPDP Act 2023 Section 9)
               </label>
               <p style={{ fontSize: "0.83rem", color: "var(--text-muted)", margin: "0.25rem 0" }}>
-                Zero behavioral tracking, zero targeted advertising, birth stored as YYYY-MM only ({activeLearner.identity.dateOfBirth}), data residency pinned to India (IN).
+                Design target: verifiable guardian consent before any data is stored, no targeted advertising, birth stored as YYYY-MM only ({activeLearner.identity.dateOfBirth}), data kept in India. This prototype stores nothing.
               </p>
             </div>
 

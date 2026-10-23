@@ -102,7 +102,7 @@ const REALITY: { capability: string; status: keyof typeof STATUS_BADGE; evidence
     evidence: "All app state lives in the browser and resets on reload."
   },
   {
-    capability: "Parents pay INR 199 to 499 per month for diagnosis plus weekly plan",
+    capability: "Parents pay INR 199 or 499 per month for diagnosis plus weekly plan",
     status: "Hypothesis",
     evidence: "No users or pricing test yet. Needs a 20 to 50 family pilot."
   }
@@ -206,7 +206,7 @@ export default function JustificationPage() {
             <span className="badge badge-green">Primary wedge</span>
             <h3 style={{ fontSize: "1.05rem", color: "#38bdf8", marginTop: "0.4rem" }}>Parents of CBSE Class 6-8 students</h3>
             <p style={{ ...BODY, fontSize: "0.88rem" }}>
-              Urban and semi-urban families who already pay for tuition, study in English or Hindi, and worry about hidden gaps
+              Urban and semi-urban families who already pay for tuition, whose children study in English or Hindi, and who worry about hidden gaps
               before the Class 9 and 10 board years. CBSE Classes 6 to 8 are the only grades deepened to chapter level in this repository.
             </p>
           </div>
@@ -339,7 +339,7 @@ export default function JustificationPage() {
             <span className={STATUS_BADGE.Hypothesis}>Hypothesis</span>
             <h3 style={{ fontSize: "1.05rem", color: "#818cf8", margin: "0.4rem 0" }}>4. Price below tuition</h3>
             <p style={{ ...BODY, fontSize: "0.88rem", margin: 0 }}>
-              INR 199 to 499 per month, tested in a pilot (see Question 5).
+              INR 199 or INR 499 per month, the two price points to test in a pilot (see Question 5).
             </p>
           </div>
         </div>

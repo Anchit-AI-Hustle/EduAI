@@ -11,33 +11,35 @@ const THESIS_FILES = [
   "app/components/VentureThesisView.tsx"
 ];
 
+// Numbers match only as whole figures, so "499" does not match "1,499".
+const fig = (text) => new RegExp(`(?<![\\d,.])${text.replace(/[.%]/g, "\\$&")}(?![\\d,])`);
+
 const REQUIRED_FIGURES = [
-  { label: "UDISE+ 2024-25 total enrolment", text: "24.69 crore" },
-  { label: "CBSE Class 10 registrations 2025", text: "23.85 lakh" },
-  { label: "Private coaching share (national)", text: "27.0%" },
-  { label: "Private coaching share (urban)", text: "30.7%" },
-  { label: "Urban coaching spend per student", text: "3,988" },
-  { label: "Wedge size", text: "20 lakh" },
-  { label: "Pilot price point (low)", text: "199" },
-  { label: "Pilot price point (high)", text: "499" }
+  { label: "UDISE+ 2024-25 total enrolment", pattern: fig("24.69 crore") },
+  { label: "CBSE Class 10 registrations 2025", pattern: fig("23.85 lakh") },
+  { label: "Private coaching share (national)", pattern: fig("27.0%") },
+  { label: "Private coaching share (urban)", pattern: fig("30.7%") },
+  { label: "Urban coaching spend per student", pattern: fig("3,988") },
+  { label: "Wedge size", pattern: fig("20 lakh") },
+  { label: "Pilot price points (two options, not a range)", pattern: /(?<![\d,])199 or (?:INR |₹)?499(?![\d,])/ }
 ];
 
 // Figures and links retired on 2026-10-23 because they were inconsistent,
 // unsourced, or pointed at non-official domains.
 const RETIRED = [
-  "260 Million",
-  "28.5 Million",
-  "INR 799 / month",
-  "1,999-3,499",
-  "1,999 to INR 3,499",
-  "IQ indices",
-  "cisceboard.org",
-  "ciseresults.org",
-  "dpdpa.com",
-  "righttoeducation.in"
+  /260 Million/,
+  /28\.5 Million/,
+  /INR 799 \/ month/,
+  /(?:INR |₹)?499 ?(?:-|to) ?(?:INR |₹)?1,499/,
+  /1,999/,
+  /IQ indices/,
+  /cisceboard\.org/,
+  /ciseresults\.org/,
+  /dpdpa\.com/,
+  /righttoeducation\.in/
 ];
 
-const SCAN_DIRS = ["app", "docs", "content/sources", "content/config"];
+const SCAN_DIRS = ["app", "docs", "content", "config", "schemas"];
 const SCAN_FILES = ["README.md"];
 const SCAN_EXTS = new Set([".ts", ".tsx", ".md", ".json"]);
 
@@ -55,8 +57,8 @@ const failures = [];
 for (const file of THESIS_FILES) {
   const content = fs.readFileSync(path.join(ROOT, file), "utf8");
   for (const fig of REQUIRED_FIGURES) {
-    if (!content.includes(fig.text)) {
-      failures.push(`${file}: missing ${fig.label} ("${fig.text}")`);
+    if (!fig.pattern.test(content)) {
+      failures.push(`${file}: missing ${fig.label} (${fig.pattern})`);
     }
   }
 }
@@ -64,9 +66,9 @@ for (const file of THESIS_FILES) {
 const scanned = SCAN_DIRS.flatMap((d) => walk(d, [])).concat(SCAN_FILES);
 for (const file of scanned) {
   const content = fs.readFileSync(path.join(ROOT, file), "utf8");
-  for (const text of RETIRED) {
-    if (content.includes(text)) {
-      failures.push(`${file}: contains retired figure or link "${text}"`);
+  for (const pattern of RETIRED) {
+    if (pattern.test(content)) {
+      failures.push(`${file}: contains retired figure or link ${pattern}`);
     }
   }
 }

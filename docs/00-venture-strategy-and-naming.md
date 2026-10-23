@@ -39,7 +39,7 @@ The repository is a clickable prototype plus a data architecture, not a working 
 
 The **buyer is the parent; the user is the child.** The first segment (the wedge) matches the one grade band the repository has actually deepened:
 
-1. **Primary (wedge): parents of CBSE Class 6 to 8 students in urban and semi-urban India who already pay for tuition**, studying in English or Hindi, and worried about hidden gaps before the Class 9 and 10 board years.
+1. **Primary (wedge): parents of CBSE Class 6 to 8 students in urban and semi-urban India who already pay for tuition**, whose children study in English or Hindi, and who worry about hidden gaps before the Class 9 and 10 board years.
 2. **Secondary: NIOS and homeschooling families.** A small group with acute pain: nobody gives them structure, and certification routes through [NIOS](https://sdmis.nios.ac.in/).
 
 **Deferred (not in the first product):** JEE and NEET, CUET, UPSC, SAT and ACT, IELTS and TOEFL, and ages 0 to 3. Each is a separate business with strong incumbents. The track files and early-years skeletons stay in the repository as architecture, not as launch scope.

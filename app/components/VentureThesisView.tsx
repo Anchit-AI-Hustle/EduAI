@@ -20,13 +20,13 @@ export default function VentureThesisView({ lang, brandName }: VentureThesisView
       q_hi: "1. इसका उपयोग कौन करेगा?",
       ans_en: [
         "The buyer is the parent; the user is the child.",
-        "Primary wedge: parents of CBSE Class 6-8 students in urban and semi-urban India who already pay for tuition, study in English or Hindi, and worry about hidden gaps before the Class 9 and 10 board years. These are the only grades deepened to chapter level today.",
+        "Primary wedge: parents of CBSE Class 6-8 students in urban and semi-urban India who already pay for tuition, whose children study in English or Hindi, and who worry about hidden gaps before the Class 9 and 10 board years. These are the only grades deepened to chapter level today.",
         "Secondary: NIOS and homeschooling families, a small group with acute pain because nobody gives them a structured year.",
         "Deferred: JEE, NEET, CUET, UPSC, SAT, ACT, IELTS, TOEFL and ages 0-3. Each is a separate business with strong incumbents."
       ],
       ans_hi: [
         "खरीदार अभिभावक हैं; उपयोगकर्ता बच्चा है।",
-        "मुख्य शुरुआती वर्ग: शहरी व अर्ध-शहरी भारत में सीबीएसई कक्षा 6-8 के बच्चों के अभिभावक, जो पहले से ट्यूशन पर खर्च करते हैं, अंग्रेज़ी या हिंदी में पढ़ते हैं, और कक्षा 9-10 बोर्ड से पहले छिपी कमियों को लेकर चिंतित हैं। अभी केवल यही कक्षाएं अध्याय-स्तर तक विकसित हैं।",
+        "मुख्य शुरुआती वर्ग: शहरी व अर्ध-शहरी भारत में सीबीएसई कक्षा 6-8 के बच्चों के अभिभावक, जो पहले से ट्यूशन पर खर्च करते हैं, जिनके बच्चे अंग्रेज़ी या हिंदी में पढ़ते हैं, और जो कक्षा 9-10 बोर्ड से पहले छिपी कमियों को लेकर चिंतित हैं। अभी केवल यही कक्षाएं अध्याय-स्तर तक विकसित हैं।",
         "द्वितीयक वर्ग: एनआईओएस (NIOS) और घर पर पढ़ाने वाले परिवार, जिन्हें कोई संरचित वार्षिक योजना नहीं देता।",
         "बाद में: जेईई, नीट, सीयूईटी, यूपीएससी, सैट, एक्ट, आईईएलटीएस, टोफेल और 0-3 वर्ष। इनमें से हर एक अलग व्यवसाय है, जहां मज़बूत प्रतिस्पर्धी पहले से मौजूद हैं।"
       ]
@@ -74,14 +74,14 @@ export default function VentureThesisView({ lang, brandName }: VentureThesisView
         "1. Cross-grade diagnosis tied to this term's textbook, for example: \"the Ganita Prakash trouble is a Class 5 fractions gap\". Tutors do this by instinct; apps and chatbots do not.",
         "2. A small weekly plan that fits around school homework, moving must-do board content first when days are missed.",
         "3. A weekly parent report, at skill level, that shows whether it is working.",
-        "4. Price below tuition: INR 199 to 499 per month, to be tested in a pilot."
+        "4. Price below tuition: INR 199 or INR 499 per month, the two price points to test in a pilot."
       ],
       ans_hi: [
         "ईमानदार उत्तर: अभी यह बेहतर नहीं है। ये खूबियां डिज़ाइन की गई हैं, बनी नहीं हैं। यह ऐप डेमो डेटा वाला प्रोटोटाइप है।",
-        "1. इस सत्र की पाठ्यपुस्तक से जुड़ा, कक्षाओं के पार निदान, जैसे: \"गणित प्रकाश में कठिनाई असल में कक्षा 5 के भिन्न की कमी है\"। ट्यूटर यह अंदाज़े से करते हैं; ऐप्स और चैटबॉट बिल्कुल नहीं करते।",
+        "1. इस सत्र की पाठ्यपुस्तक से जुड़ा और पिछली कक्षाओं तक जाने वाला निदान, जैसे: \"गणित प्रकाश में कठिनाई असल में कक्षा 5 के भिन्न की कमी है\"। ट्यूटर यह अंदाज़े से करते हैं; ऐप्स और चैटबॉट बिल्कुल नहीं करते।",
         "2. स्कूल के गृहकार्य के साथ फिट होने वाली छोटी साप्ताहिक योजना, जिसमें छूटे दिनों पर ज़रूरी बोर्ड सामग्री पहले आगे बढ़ती है।",
         "3. अभिभावकों के लिए साप्ताहिक, कौशल-स्तर की रिपोर्ट, जो दिखाए कि योजना काम कर रही है या नहीं।",
-        "4. ट्यूशन से कम कीमत: ₹199 से ₹499 प्रति माह, जिसे पायलट में परखा जाएगा।"
+        "4. ट्यूशन से कम कीमत: ₹199 या ₹499 प्रति माह, ये दोनों कीमतें पायलट में परखी जाएंगी।"
       ]
     },
     {
@@ -95,7 +95,7 @@ export default function VentureThesisView({ lang, brandName }: VentureThesisView
         "• Pricing to test: Free (explorer plus one diagnostic report); Core at INR 199 or INR 499 per month (diagnosis, weekly plan, parent report); a per-learner licence for tuition teachers and small schools."
       ],
       ans_hi: [
-        "शायद हां, निदान और जवाबदेही के लिए (केवल \"योजना\" के लिए नहीं), और केवल उतनी ही कीमत पर जितना परिवार आज खर्च करते हैं। पायलट से पहले यह अप्रमाणित है।",
+        "शायद हां, पर निदान और जवाबदेही के लिए, \"योजना\" के लिए नहीं, और केवल उस कीमत पर जो परिवारों के आज के खर्च के आसपास हो। पायलट से पहले यह अप्रमाणित है।",
         "• मौजूदा खर्च: निजी कोचिंग पर प्रति छात्र औसत वार्षिक घरेलू खर्च शहरी क्षेत्रों में ₹3,988 और ग्रामीण क्षेत्रों में ₹1,793 है (NSS CMS: शिक्षा 2025)।",
         "• ₹799 से ₹1,499 प्रति माह वाला स्व-सेवा ऐप अधिकांश परिवारों के कोचिंग खर्च से अधिक है, और तभी सफल होगा जब वह ट्यूटर की पूरी जगह ले।",
         "• परखने योग्य मूल्य: निःशुल्क (एक्सप्लोरर और एक निदान रिपोर्ट); कोर ₹199 या ₹499 प्रति माह (निदान, साप्ताहिक योजना, अभिभावक रिपोर्ट); ट्यूशन शिक्षकों और छोटे स्कूलों के लिए प्रति-छात्र लाइसेंस।"
@@ -127,13 +127,13 @@ export default function VentureThesisView({ lang, brandName }: VentureThesisView
       {/* Banner */}
       <div className="card" style={{
         background: "linear-gradient(135deg, rgba(30, 41, 59, 0.8) 0%, rgba(15, 23, 42, 0.9) 100%)",
-        borderLeft: "4px solid var(--accent-indigo)"
+        borderLeft: "4px solid var(--primary)"
       }}>
         <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", marginBottom: "0.5rem" }}>
-          <span className="badge badge-indigo">
+          <span className="badge badge-blue">
             {isHi ? `${brandName} रणनीतिक थीसिस` : `${brandName} Strategic Thesis`}
           </span>
-          <span className="badge badge-cyan">{isHi ? "प्राथमिक डेटा आधारित" : "Primary Data Grounded"}</span>
+          <span className="badge badge-warn">{isHi ? "स्रोत-आधारित, अनुमान चिह्नित" : "Sourced, estimates labelled"}</span>
         </div>
         <h2 style={{ fontSize: "1.4rem", fontWeight: 700, marginBottom: "0.35rem" }}>
           {isHi
@@ -142,8 +142,8 @@ export default function VentureThesisView({ lang, brandName }: VentureThesisView
         </h2>
         <p style={{ color: "var(--text-secondary)", fontSize: "0.88rem" }}>
           {isHi
-            ? "प्राथमिक स्रोतों (UDISE+ 2024-25, NSS CMS: शिक्षा 2025) पर आधारित उत्तर। हर दावा बना हुआ, डिज़ाइन किया गया या परिकल्पना के रूप में चिह्नित है।"
-            : "Answers grounded in primary data (UDISE+ 2024-25, NSS CMS: Education 2025). Every claim is labelled built, designed, or hypothesis."}
+            ? "उत्तर प्राथमिक स्रोतों (UDISE+ 2024-25, NSS CMS: शिक्षा 2025) पर आधारित हैं। अनुमान और अभी न बनी सुविधाएं अलग से चिह्नित हैं।"
+            : "Answers grounded in primary data (UDISE+ 2024-25, NSS CMS: Education 2025). Estimates and features not yet built are labelled as such."}
         </p>
       </div>
 
@@ -164,7 +164,7 @@ export default function VentureThesisView({ lang, brandName }: VentureThesisView
                 padding: "0.75rem",
                 borderRadius: "8px",
                 backgroundColor: isActive ? "rgba(99, 102, 241, 0.2)" : "rgba(255, 255, 255, 0.03)",
-                border: isActive ? "1.5px solid var(--accent-indigo)" : "1px solid var(--border-color)",
+                border: isActive ? "1.5px solid var(--primary)" : "1px solid var(--border)",
                 color: isActive ? "#ffffff" : "var(--text-secondary)",
                 fontWeight: 600,
                 fontSize: "0.85rem",
@@ -180,7 +180,7 @@ export default function VentureThesisView({ lang, brandName }: VentureThesisView
 
       {/* Active Question Detail */}
       <div className="card" style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
-        <h3 style={{ fontSize: "1.2rem", fontWeight: 700, color: "var(--accent-cyan)" }}>
+        <h3 style={{ fontSize: "1.2rem", fontWeight: 700, color: "var(--cyan)" }}>
           {isHi ? questions[activeQuestion - 1].q_hi : questions[activeQuestion - 1].q_en}
         </h3>
         <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem" }}>
@@ -192,7 +192,7 @@ export default function VentureThesisView({ lang, brandName }: VentureThesisView
               padding: "0.6rem 0.85rem",
               borderRadius: "6px",
               backgroundColor: "rgba(255, 255, 255, 0.02)",
-              borderLeft: "3px solid var(--accent-indigo)"
+              borderLeft: "3px solid var(--primary)"
             }}>
               {line}
             </div>
@@ -203,7 +203,7 @@ export default function VentureThesisView({ lang, brandName }: VentureThesisView
       {/* Curriculum Governance & Self-Evolving Engine Deep-Dive */}
       <div className="card" style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
         <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", flexWrap: "wrap" }}>
-          <span className="badge badge-emerald">
+          <span className="badge badge-green">
             {isHi ? "सीबीएसई व राष्ट्रीय संस्थान कैसे पाठ्यक्रम तय करते हैं" : "How CBSE & NCERT Create & Update Syllabi"}
           </span>
           <span className="badge badge-warn">
@@ -228,27 +228,27 @@ export default function VentureThesisView({ lang, brandName }: VentureThesisView
             marginTop: "0.5rem"
           }}>
             <div style={{ padding: "0.75rem", borderRadius: "6px", backgroundColor: "rgba(6, 182, 212, 0.08)", border: "1px solid rgba(6, 182, 212, 0.2)" }}>
-              <strong style={{ color: "var(--accent-cyan)", fontSize: "0.85rem" }}>Layer 1: Real-Time Learner Model</strong>
+              <strong style={{ color: "var(--cyan)", fontSize: "0.85rem" }}>{isHi ? "परत 1: तात्कालिक शिक्षार्थी मॉडल" : "Layer 1: Real-Time Learner Model"}</strong>
               <p style={{ fontSize: "0.78rem", color: "var(--text-secondary)", marginTop: "0.2rem" }}>
-                Updates every interaction. Estimates per-skill prerequisite mastery from practice and check answers.
+                Updates every interaction. {isHi ? "अभ्यास और जांच के उत्तरों से हर कौशल की पूर्व-अपेक्षित दक्षता का अनुमान।" : "Estimates per-skill prerequisite mastery from practice and check answers."}
               </p>
             </div>
             <div style={{ padding: "0.75rem", borderRadius: "6px", backgroundColor: "rgba(16, 185, 129, 0.08)", border: "1px solid rgba(16, 185, 129, 0.2)" }}>
-              <strong style={{ color: "var(--accent-emerald)", fontSize: "0.85rem" }}>Layer 2: Daily Content Optimization</strong>
+              <strong style={{ color: "var(--accent)", fontSize: "0.85rem" }}>{isHi ? "परत 2: दैनिक सामग्री सुधार" : "Layer 2: Daily Content Optimization"}</strong>
               <p style={{ fontSize: "0.78rem", color: "var(--text-secondary)", marginTop: "0.2rem" }}>
-                Daily optimization. Promotes hints and problem variations that show highest measured learning gain across cohorts.
+                {isHi ? "रोज़ाना सुधार: जिन संकेतों और प्रश्न-रूपों से सबसे अधिक मापा गया लाभ हो, उन्हें आगे बढ़ाता है।" : "Daily optimization. Promotes hints and problem variations that show highest measured learning gain across cohorts."}
               </p>
             </div>
             <div style={{ padding: "0.75rem", borderRadius: "6px", backgroundColor: "rgba(245, 158, 11, 0.08)", border: "1px solid rgba(245, 158, 11, 0.2)" }}>
-              <strong style={{ color: "var(--accent-amber)", fontSize: "0.85rem" }}>Layer 3: Official Source Watcher</strong>
+              <strong style={{ color: "var(--warn)", fontSize: "0.85rem" }}>{isHi ? "परत 3: आधिकारिक स्रोत निगरानी" : "Layer 3: Official Source Watcher"}</strong>
               <p style={{ fontSize: "0.78rem", color: "var(--text-secondary)", marginTop: "0.2rem" }}>
-                Continuous monitoring of official gazettes, CBSE circulars, and NCERT indices to detect syllabus alterations.
+                {isHi ? "पाठ्यक्रम बदलाव पकड़ने के लिए आधिकारिक राजपत्र, सीबीएसई परिपत्र और एनसीईआरटी सूचियों की निगरानी।" : "Continuous monitoring of official gazettes, CBSE circulars, and NCERT indices to detect syllabus alterations."}
               </p>
             </div>
             <div style={{ padding: "0.75rem", borderRadius: "6px", backgroundColor: "rgba(99, 102, 241, 0.08)", border: "1px solid rgba(99, 102, 241, 0.2)" }}>
-              <strong style={{ color: "var(--accent-indigo)", fontSize: "0.85rem" }}>Layer 4: Cohort-Aware Change Proposals</strong>
+              <strong style={{ color: "var(--primary)", fontSize: "0.85rem" }}>{isHi ? "परत 4: बैच-आधारित बदलाव प्रस्ताव" : "Layer 4: Cohort-Aware Change Proposals"}</strong>
               <p style={{ fontSize: "0.78rem", color: "var(--text-secondary)", marginTop: "0.2rem" }}>
-                Requires human review before release. Validates DAG graph coherence, prevents orphaned prerequisites, and preserves batch integrity.
+                {isHi ? "लागू करने से पहले मानवीय समीक्षा ज़रूरी। कौशल ग्राफ की संगति जांचता है और चल रहे बैच की योजना सुरक्षित रखता है।" : "Requires human review before release. Validates DAG graph coherence, prevents orphaned prerequisites, and preserves batch integrity."}
               </p>
             </div>
           </div>
