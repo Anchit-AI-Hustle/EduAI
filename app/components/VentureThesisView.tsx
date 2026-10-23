@@ -12,20 +12,23 @@ export default function VentureThesisView({ lang, brandName }: VentureThesisView
   const isHi = lang === "hi";
   const [activeQuestion, setActiveQuestion] = useState<number>(1);
 
+  // Canonical answers live in docs/00-venture-strategy-and-naming.md (Section 2).
   const questions = [
     {
       num: 1,
       q_en: "1. Who will use it?",
       q_hi: "1. इसका उपयोग कौन करेगा?",
       ans_en: [
-        "1. K-12 Students & Parents (Nursery to Class 12 across CBSE, CISCE, and State Boards): Families seeking to escape one-pace classrooms and fragmented tuition by following an adaptive, prerequisite-aligned plan.",
-        "2. Dual-Track Aspirants (Classes 8-12 preparing for JEE, NEET, CUET, UPSC Foundation, SAT, IELTS, TOEFL): Students juggling board requirements with high-stakes competitive examinations who need a single unified roadmap without duplicate study hours.",
-        "3. Open-Schooling & Homeschool Families (Ages 0-18): Early stimulation for ages 0-3 (MWCD Navchetana), preschool play for ages 3-6 (Aadharshila, NCF-FS), and NIOS Open Basic Education / Secondary exam certification for flexible learners."
+        "The buyer is the parent; the user is the child.",
+        "Primary wedge: parents of CBSE Class 6-8 students in urban and semi-urban India who already pay for tuition, study in English or Hindi, and worry about hidden gaps before the Class 9 and 10 board years. These are the only grades deepened to chapter level today.",
+        "Secondary: NIOS and homeschooling families, a small group with acute pain because nobody gives them a structured year.",
+        "Deferred: JEE, NEET, CUET, UPSC, SAT, ACT, IELTS, TOEFL and ages 0-3. Each is a separate business with strong incumbents."
       ],
       ans_hi: [
-        "1. के-12 छात्र व अभिभावक (नर्सरी से 12वीं तक सीबीएसई, आईसीएसई व राज्य बोर्ड): वे परिवार जो स्कूल की एकसमान गति व कोचिंग की दौड़ से अलग अपने बच्चे के लिए व्यक्तिगत, पूर्व-ज्ञान आधारित योजना चाहते हैं।",
-        "2. दोहरे-मार्ग (Dual-Track) के छात्र (कक्षा 8-12, जेईई/नीट/सीयूईटी/सैट/आईईएलटीएस): वे छात्र जो बोर्ड परीक्षा और प्रवेश परीक्षा दोनों की तैयारी एक साथ कर रहे हैं और समय की बचत चाहते हैं।",
-        "3. मुक्त विद्यालयी व घरेलू शिक्षार्थी (आयु 0-18 वर्ष): 0-3 वर्ष के लिए नवचेतना, 3-6 वर्ष के लिए आधारशिला, और एनआईओएस (NIOS) के माध्यम से कानूनी मान्यता प्राप्त अध्ययन।"
+        "खरीदार अभिभावक हैं; उपयोगकर्ता बच्चा है।",
+        "मुख्य शुरुआती वर्ग: शहरी व अर्ध-शहरी भारत में सीबीएसई कक्षा 6-8 के बच्चों के अभिभावक, जो पहले से ट्यूशन पर खर्च करते हैं, अंग्रेज़ी या हिंदी में पढ़ते हैं, और कक्षा 9-10 बोर्ड से पहले छिपी कमियों को लेकर चिंतित हैं। अभी केवल यही कक्षाएं अध्याय-स्तर तक विकसित हैं।",
+        "द्वितीयक वर्ग: एनआईओएस (NIOS) और घर पर पढ़ाने वाले परिवार, जिन्हें कोई संरचित वार्षिक योजना नहीं देता।",
+        "बाद में: जेईई, नीट, सीयूईटी, यूपीएससी, सैट, एक्ट, आईईएलटीएस, टोफेल और 0-3 वर्ष। इनमें से हर एक अलग व्यवसाय है, जहां मज़बूत प्रतिस्पर्धी पहले से मौजूद हैं।"
       ]
     },
     {
@@ -33,16 +36,16 @@ export default function VentureThesisView({ lang, brandName }: VentureThesisView
       q_en: "2. What do they use currently?",
       q_hi: "2. वर्तमान में वे क्या उपयोग कर रहे हैं?",
       ans_en: [
-        "• Physical Schools & Textbooks: Fixed-calendar classrooms (NCERT/CBSE) that move by date, not by student understanding.",
-        "• Offline Neighborhood Tuitions & Coaching Factories: Local tutors for basic grades and intense test factories (Kota, PW, Allen) for Classes 9-12 that enforce their own rigid parallel schedule.",
-        "• Video-Library EdTech Apps & YouTube: Catalogues of pre-recorded lectures where students watch passively without personalized feedback or prerequisite gap diagnostics.",
-        "• Ad-Hoc LLM Chatbots: Generic ChatGPT / Claude / Gemini queries that answer isolated homework doubts but lack syllabus anchoring, longitudinal tracking, or board-specific constraints."
+        "• Neighbourhood tuition teacher (the real competitor): plans the week, holds the child accountable, clears doubts, and reports to parents on WhatsApp.",
+        "• School and textbooks (NCERT, CBSE, CISCE, State Boards): structure and certification, but the pace follows the calendar, not the child's mastery.",
+        "• Video apps and YouTube (PW, Vedantu, Byju's, Khan Academy, DIKSHA): unlimited content, no individual plan.",
+        "• General AI chatbots (ChatGPT, Gemini, Claude): free and improving fast, but they do not know the child's board version or textbook and keep no long-term mastery record."
       ],
       ans_hi: [
-        "• पारंपरिक विद्यालय व पाठ्यपुस्तकें: कैलेंडर के अनुसार चलने वाली कक्षाएं, जो छात्र की समझ के बजाय तारीखों के अनुसार आगे बढ़ती हैं।",
-        "• स्थानीय ट्यूशन व कोचिंग संस्थान: समानांतर दबाव बनाने वाली कोचिंग संस्थाएं जो स्कूल के पाठ्यक्रम से कटी होती हैं।",
-        "• वीडियो लाइब्रेरी ऐप्स व यूट्यूब: केवल व्याख्यान देखने वाले प्लेटफॉर्म, जिनमें न तो आईक्यू अनुकूलन है और न ही पूर्व-ज्ञान के अंतर की पहचान।",
-        "• सामान्य एआई चैटबॉट्स: अलग-थलग गृहकार्य के उत्तर देने वाले चैटबॉट, जिनमें बोर्ड परीक्षा के सत्यापन और दीर्घकालिक पाठ्यक्रम का अभाव है।"
+        "• स्थानीय ट्यूशन शिक्षक (असली प्रतिस्पर्धी): सप्ताह की योजना बनाते हैं, बच्चे को जवाबदेह रखते हैं, शंकाएं दूर करते हैं, और व्हाट्सऐप पर अभिभावकों को बताते हैं।",
+        "• विद्यालय व पाठ्यपुस्तकें (NCERT, CBSE, CISCE, राज्य बोर्ड): संरचना और प्रमाणन देते हैं, पर गति कैलेंडर से तय होती है, बच्चे की समझ से नहीं।",
+        "• वीडियो ऐप्स व यूट्यूब (PW, Vedantu, Byju's, Khan Academy, DIKSHA): असीमित सामग्री, पर कोई व्यक्तिगत योजना नहीं।",
+        "• सामान्य एआई चैटबॉट (ChatGPT, Gemini, Claude): मुफ़्त और तेज़ी से बेहतर हो रहे हैं, पर बच्चे का बोर्ड संस्करण या पाठ्यपुस्तक नहीं जानते और दीर्घकालिक प्रगति का रिकॉर्ड नहीं रखते।"
       ]
     },
     {
@@ -50,16 +53,16 @@ export default function VentureThesisView({ lang, brandName }: VentureThesisView
       q_en: "3. How many users face this problem?",
       q_hi: "3. कितने उपयोगकर्ता इस समस्या का सामना कर रहे हैं?",
       ans_en: [
-        "• 24.8 Crore (248 Million) Enrolled K-12 Students in India: Documented across 14.7 lakh schools in Ministry of Education UDISE+ 2023-24 and 2024-25 reports.",
-        "• 50%+ Foundational Deficit: National surveys (ASER 2024, PARAKH Rashtriya Sarvekshan 2024) confirm that over half of Class 5 students lack Class 2 level reading and basic division mastery, creating compounding deficits.",
-        "• 55+ Lakh High-Stakes Competitive Aspirants: Annual registrations include 20+ lakh in NEET UG, 13-14 lakh in JEE Main, 13-15 lakh in CUET UG, 10+ lakh in UPSC CSE, plus hundreds of thousands taking SAT/IELTS.",
-        "• 3.5+ Lakh Open Schooling Enrolments: NIOS enrolls hundreds of thousands annually seeking flexible, accredited pathways."
+        "• All school students: 24.69 crore in 14.71 lakh schools (UDISE+ 2024-25). This headline is not the market.",
+        "• CBSE Class 10 registrations, 2025: about 23.85 lakh (as reported), so CBSE Classes 6-8 hold about 70 lakh students (estimate).",
+        "• 27.0% of students take private coaching nationally, 30.7% in urban areas (NSS CMS: Education 2025).",
+        "• Wedge: about 20 lakh CBSE Class 6-8 families already paying for help (estimate: 70 lakh x about 30%)."
       ],
       ans_hi: [
-        "• भारत में 24.8 करोड़ (248 मिलियन) नामांकित स्कूली छात्र: शिक्षा मंत्रालय की UDISE+ 2023-24 और 2024-25 रिपोर्ट के अनुसार 14.7 लाख से अधिक स्कूलों में।",
-        "• 50% से अधिक बुनियादी सीखने की कमी: असर (ASER 2024) और परख (PARAKH 2024) के अनुसार कक्षा 5 के आधे से अधिक छात्र कक्षा 2 के बुनियादी गणित व वाचन में संघर्ष करते हैं।",
-        "• 55 लाख से अधिक प्रतियोगी परीक्षा अभ्यर्थी: नीट में 20+ लाख, जेईई मेन में 13-14 लाख, सीयूईटी में 14 लाख, और यूपीएससी में 10+ लाख अभ्यर्थी प्रतिवर्ष।",
-        "• 3.5 लाख से अधिक मुक्त विद्यालयी छात्र: एनआईओएस में प्रतिवर्ष नामांकित होने वाले छात्र।"
+        "• कुल स्कूली छात्र: 14.71 लाख स्कूलों में 24.69 करोड़ (UDISE+ 2024-25)। यह कुल संख्या हमारा बाज़ार नहीं है।",
+        "• सीबीएसई कक्षा 10 पंजीकरण, 2025: लगभग 23.85 लाख (रिपोर्ट के अनुसार), इसलिए सीबीएसई कक्षा 6-8 में लगभग 70 लाख छात्र (अनुमान)।",
+        "• देश में 27.0% छात्र निजी कोचिंग लेते हैं, शहरी क्षेत्रों में 30.7% (NSS CMS: शिक्षा 2025)।",
+        "• शुरुआती बाज़ार: सीबीएसई कक्षा 6-8 के लगभग 20 लाख परिवार जो पहले से अतिरिक्त पढ़ाई पर खर्च करते हैं (अनुमान: 70 लाख x लगभग 30%)।"
       ]
     },
     {
@@ -67,16 +70,18 @@ export default function VentureThesisView({ lang, brandName }: VentureThesisView
       q_en: "4. Why will our product be better?",
       q_hi: "4. हमारा उत्पाद बेहतर क्यों होगा?",
       ans_en: [
-        "1. Unified Prerequisite Skill Graph: Maps CBSE, ICSE, NIOS, JEE, NEET, and SAT onto one directed acyclic graph. When a student stumbles on quadratic equations, it pinpoints the exact Class 7 signed integer gap.",
-        "2. Day-Level Calendar Timetable with Dynamic Rebalancer: Creates a realistic daily schedule matching student challenge agility, capped screen time, and built-in 15% buffer slots for missed days.",
-        "3. Zero Syllabus Hallucination: Every subject, chapter, and test item carries a verified primary source_id from official bodies (NCERT, CBSE, CISCE, NIOS, College Board). Gaps are labeled, never fabricated.",
-        "4. 5-Layer Self-Evolving Engine: Balances real-time learner model updates (L1) and daily item optimization (L2) with human-governed, cohort-aware board syllabus updates (L3/L4)."
+        "Honest answer: it is not better yet. These advantages are designed, not built. This app is a prototype with demo data.",
+        "1. Cross-grade diagnosis tied to this term's textbook, for example: \"the Ganita Prakash trouble is a Class 5 fractions gap\". Tutors do this by instinct; apps and chatbots do not.",
+        "2. A small weekly plan that fits around school homework, moving must-do board content first when days are missed.",
+        "3. A weekly parent report, at skill level, that shows whether it is working.",
+        "4. Price below tuition: INR 199 to 499 per month, to be tested in a pilot."
       ],
       ans_hi: [
-        "1. एकीकृत कौशल ग्राफ (Shared Skill Graph): सीबीएसई, आईसीएसई, एनआईओएस और जेईई/नीट को एक ही ग्राफ से जोड़ता है। कक्षा 9 में द्विघात समीकरण में अटकने पर कक्षा 7 के पूर्णांक नियमों की कमी तुरंत पकड़ में आती है।",
-        "2. दैनिक स्तर समय-सारणी और स्वतः पुनर्संतुलन: छात्र की आईक्यू और गति के अनुसार दैनिक असाइनमेंट, बाल स्वास्थ्य अनुसार स्क्रीन-टाइम, और 15% बफर स्लॉट।",
-        "3. शून्य मतिभ्रम (Zero Hallucination): प्रत्येक विषय और पाठ का आधिकारिक स्रोत आईडी (NCERT/CBSE) से सत्यापन।",
-        "4. 5-स्तरीय स्व-विकसित तंत्र: तात्कालिक सीखने की प्रगति और बैच-सुरक्षित पाठ्यक्रम अद्यतन का संतुलित समन्वय।"
+        "ईमानदार उत्तर: अभी यह बेहतर नहीं है। ये खूबियां डिज़ाइन की गई हैं, बनी नहीं हैं। यह ऐप डेमो डेटा वाला प्रोटोटाइप है।",
+        "1. इस सत्र की पाठ्यपुस्तक से जुड़ा, कक्षाओं के पार निदान, जैसे: \"गणित प्रकाश में कठिनाई असल में कक्षा 5 के भिन्न की कमी है\"। ट्यूटर यह अंदाज़े से करते हैं; ऐप्स और चैटबॉट बिल्कुल नहीं करते।",
+        "2. स्कूल के गृहकार्य के साथ फिट होने वाली छोटी साप्ताहिक योजना, जिसमें छूटे दिनों पर ज़रूरी बोर्ड सामग्री पहले आगे बढ़ती है।",
+        "3. अभिभावकों के लिए साप्ताहिक, कौशल-स्तर की रिपोर्ट, जो दिखाए कि योजना काम कर रही है या नहीं।",
+        "4. ट्यूशन से कम कीमत: ₹199 से ₹499 प्रति माह, जिसे पायलट में परखा जाएगा।"
       ]
     },
     {
@@ -84,14 +89,16 @@ export default function VentureThesisView({ lang, brandName }: VentureThesisView
       q_en: "5. Will they pay?",
       q_hi: "5. क्या वे भुगतान करेंगे?",
       ans_en: [
-        "• High Existing Household Spend: Indian families already spend INR 1,500 to INR 6,000/month on after-school tuitions and INR 40,000 to INR 2,50,000/year on test coaching.",
-        "• Value Proposition: Replaces multiple uncoordinated tuitions with one coherent, board-aligned platform at a fraction of offline coaching fees.",
-        "• Monetization Tiers: Free diagnostic & syllabus matrix; INR 499-1,499/month for core daily timetable and lesson loop; INR 1,999-3,499/month for integrated board + competitive test bundle."
+        "Probably yes, for diagnosis plus accountability (not for \"a plan\"), and only at a price near what families spend today. Unproven until a pilot.",
+        "• Current spend: average annual household spend on private coaching is INR 3,988 per student in urban areas and INR 1,793 in rural areas (NSS CMS: Education 2025).",
+        "• A self-serve app at INR 799 to 1,499 per month is above what most families spend on coaching, and only wins if it fully replaces the tutor.",
+        "• Pricing to test: Free (explorer plus one diagnostic report); Core at INR 199 or INR 499 per month (diagnosis, weekly plan, parent report); a per-learner licence for tuition teachers and small schools."
       ],
       ans_hi: [
-        "• परिवारों का मौजूदा खर्च: भारतीय परिवार पहले से ही स्थानीय ट्यूशन पर ₹1,500 - ₹6,000/माह और कोचिंग पर ₹40,000 - ₹2,50,000/वर्ष खर्च करते हैं।",
-        "• मूल्य प्रस्ताव: कई अलग-थलग ट्यूशनों की जगह एक एकीकृत, आधिकारिक-बोर्ड समर्थित प्रणाली जो ऑफलाइन कोचिंग से कहीं अधिक किफायती और प्रभावी है।",
-        "• मूल्य निर्धारण टियर: निःशुल्क डायग्नोस्टिक; ₹499-1,499/माह (दैनिक समय-सारणी व पाठ चक्र); ₹1,999-3,499/माह (बोर्ड + प्रतियोगी परीक्षा बंडल)।"
+        "शायद हां, निदान और जवाबदेही के लिए (केवल \"योजना\" के लिए नहीं), और केवल उतनी ही कीमत पर जितना परिवार आज खर्च करते हैं। पायलट से पहले यह अप्रमाणित है।",
+        "• मौजूदा खर्च: निजी कोचिंग पर प्रति छात्र औसत वार्षिक घरेलू खर्च शहरी क्षेत्रों में ₹3,988 और ग्रामीण क्षेत्रों में ₹1,793 है (NSS CMS: शिक्षा 2025)।",
+        "• ₹799 से ₹1,499 प्रति माह वाला स्व-सेवा ऐप अधिकांश परिवारों के कोचिंग खर्च से अधिक है, और तभी सफल होगा जब वह ट्यूटर की पूरी जगह ले।",
+        "• परखने योग्य मूल्य: निःशुल्क (एक्सप्लोरर और एक निदान रिपोर्ट); कोर ₹199 या ₹499 प्रति माह (निदान, साप्ताहिक योजना, अभिभावक रिपोर्ट); ट्यूशन शिक्षकों और छोटे स्कूलों के लिए प्रति-छात्र लाइसेंस।"
       ]
     },
     {
@@ -99,12 +106,18 @@ export default function VentureThesisView({ lang, brandName }: VentureThesisView
       q_en: "6. What is the real problem not solved right now?",
       q_hi: "6. वह वास्तविक समस्या क्या है जो अभी हल नहीं हुई है?",
       ans_en: [
-        "The real unsolved problem is the coordination and coherence gap between fixed-calendar institutional syllabi and an individual learner's real prerequisite mastery state.",
-        "Content is abundant (millions of videos exist on YouTube and EdTech). What is missing is curriculum orchestration: diagnosing where the student actually is on the prerequisite graph, fitting learning into an achievable daily time budget, adjusting dynamically when life happens, and updating safely as boards revise standards."
+        "Content is now free and unlimited. What nobody provides cheaply is diagnosis plus follow-through:",
+        "1. Knowing exactly which earlier-grade skills this child is missing, mapped to the textbook they use this term.",
+        "2. Turning that into 20 to 30 minutes a day the child will actually do, alongside school homework.",
+        "3. Showing the parent whether it is working.",
+        "The hardest part is follow-through, not information. Getting a 12-year-old to open an app daily without a human pushing them is the unsolved problem, and the reason tuition teachers still win."
       ],
       ans_hi: [
-        "वास्तविक अनसुलझी समस्या यह है कि संस्थागत स्कूल कैलेंडर (जो केवल तारीखों के आधार पर चलता है) और छात्र की वास्तविक सीखने की स्थिति के बीच कोई तालमेल नहीं है।",
-        "सामग्री की कोई कमी नहीं है (लाखों वीडियो उपलब्ध हैं)। कमी है पाठ्यक्रम संचालन (Curriculum Orchestration) की: यह जानना कि छात्र वास्तव में किस पूर्व-ज्ञान स्तर पर है, उसे दैनिक समय-सारणी में व्यवस्थित करना, और बोर्ड के परिवर्तनों के अनुसार सुरक्षित रूप से आगे बढ़ना।"
+        "अब सामग्री मुफ़्त और असीमित है। जो कोई सस्ते में नहीं देता, वह है निदान और उस पर लगातार अमल:",
+        "1. ठीक-ठीक जानना कि इस बच्चे में पिछली कक्षाओं के कौन से कौशल कम हैं, और वे इस सत्र की पाठ्यपुस्तक से कैसे जुड़ते हैं।",
+        "2. उसे रोज़ 20 से 30 मिनट के ऐसे काम में बदलना जो बच्चा स्कूल के गृहकार्य के साथ सच में करे।",
+        "3. अभिभावक को दिखाना कि यह काम कर रहा है या नहीं।",
+        "सबसे कठिन हिस्सा जानकारी नहीं, लगातार अमल है। बिना किसी व्यक्ति के कहे 12 साल के बच्चे से रोज़ ऐप खुलवाना ही अनसुलझी समस्या है, और यही कारण है कि ट्यूशन शिक्षक अब भी जीतते हैं।"
       ]
     }
   ];
@@ -129,8 +142,8 @@ export default function VentureThesisView({ lang, brandName }: VentureThesisView
         </h2>
         <p style={{ color: "var(--text-secondary)", fontSize: "0.88rem" }}>
           {isHi
-            ? "भारत के 24.8 करोड़ छात्रों, 55 लाख प्रतियोगी अभ्यर्थियों और बोर्ड पाठ्यक्रम निर्माण प्रणाली का विस्तृत विश्लेषण।"
-            : "Data-backed answers across market size (UDISE+, ASER 2024), user psychology, pricing elasticity, and curriculum governance."}
+            ? "प्राथमिक स्रोतों (UDISE+ 2024-25, NSS CMS: शिक्षा 2025) पर आधारित उत्तर। हर दावा बना हुआ, डिज़ाइन किया गया या परिकल्पना के रूप में चिह्नित है।"
+            : "Answers grounded in primary data (UDISE+ 2024-25, NSS CMS: Education 2025). Every claim is labelled built, designed, or hypothesis."}
         </p>
       </div>
 
@@ -189,9 +202,12 @@ export default function VentureThesisView({ lang, brandName }: VentureThesisView
 
       {/* Curriculum Governance & Self-Evolving Engine Deep-Dive */}
       <div className="card" style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
-        <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", flexWrap: "wrap" }}>
           <span className="badge badge-emerald">
             {isHi ? "सीबीएसई व राष्ट्रीय संस्थान कैसे पाठ्यक्रम तय करते हैं" : "How CBSE & NCERT Create & Update Syllabi"}
+          </span>
+          <span className="badge badge-warn">
+            {isHi ? "एआई परतें: डिज़ाइन की गईं, अभी बनी नहीं" : "AI layers: designed, not built yet"}
           </span>
         </div>
         <h3 style={{ fontSize: "1.15rem", fontWeight: 700 }}>
@@ -214,7 +230,7 @@ export default function VentureThesisView({ lang, brandName }: VentureThesisView
             <div style={{ padding: "0.75rem", borderRadius: "6px", backgroundColor: "rgba(6, 182, 212, 0.08)", border: "1px solid rgba(6, 182, 212, 0.2)" }}>
               <strong style={{ color: "var(--accent-cyan)", fontSize: "0.85rem" }}>Layer 1: Real-Time Learner Model</strong>
               <p style={{ fontSize: "0.78rem", color: "var(--text-secondary)", marginTop: "0.2rem" }}>
-                Updates every interaction. Calibrates student problem-solving velocity, IQ agility, and prerequisite mastery state.
+                Updates every interaction. Estimates per-skill prerequisite mastery from practice and check answers.
               </p>
             </div>
             <div style={{ padding: "0.75rem", borderRadius: "6px", backgroundColor: "rgba(16, 185, 129, 0.08)", border: "1px solid rgba(16, 185, 129, 0.2)" }}>

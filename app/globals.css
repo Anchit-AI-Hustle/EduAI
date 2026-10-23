@@ -612,4 +612,30 @@ tr:hover td {
   .kpi-strip {
     grid-template-columns: repeat(2, 1fr);
   }
+  /* Tables marked .stack-table become one labelled card per row on phones. */
+  .stack-table thead {
+    display: none;
+  }
+  .stack-table,
+  .stack-table tbody,
+  .stack-table tr,
+  .stack-table td {
+    display: block;
+    width: 100%;
+  }
+  .stack-table tr {
+    padding: 0.5rem 0;
+  }
+  .stack-table td {
+    padding: 0.3rem 0.9rem !important;
+  }
+  .stack-table td[data-label]::before {
+    content: attr(data-label);
+    display: block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
 }

@@ -83,12 +83,12 @@
       "sourceId": "SRC-CISCE-PUB-2026",
       "authority": "Council for the Indian School Certificate Examinations (CISCE)",
       "title": "CISCE Curriculum Pre-School to Class VIII and Regulations & Syllabuses for ICSE (Class X) and ISC (Class XII)",
-      "officialUrl": "https://www.ciseresults.org/publications.html",
+      "officialUrl": "https://cisce.org/",
       "category": "school-board-syllabus",
       "publishedYear": 2026,
       "verifiedAt": "2026-10-22",
       "verificationStatus": "verified-portal-with-chapter-gaps",
-      "scopeNotes": "Official CISCE publication index for Pre-School to Class 8, ICSE Class 9-10 Group I/II/III subjects, and ISC Class 11-12 streams."
+      "scopeNotes": "Official CISCE portal (cisce.org) for Pre-School to Class 8 curriculum, ICSE Class 9-10 and ISC Class 11-12 Regulations and Syllabuses. The portal blocks automated retrieval, so chapter-level content is not yet ingested."
     },
     {
       "sourceId": "SRC-NIOS-OBE-2026",
@@ -236,13 +236,13 @@
     {
       "sourceId": "SRC-INDIA-DPDPA-2023",
       "authority": "Ministry of Electronics and Information Technology (MeitY), Government of India",
-      "title": "Digital Personal Data Protection Act 2023 Section 9 and DPDP Rules 2025 Rule 10 (Children's Data)",
-      "officialUrl": "https://www.dpdpa.com/dpdpa2023/chapter-2/section9.html",
+      "title": "Digital Personal Data Protection Act 2023 (Gazette of India, 11 Aug 2023), Section 9 Children's Data",
+      "officialUrl": "https://www.meity.gov.in/static/uploads/2024/06/2bf1f0e9f04e6fb4f8fef35e82c42aa5.pdf",
       "category": "legal-and-child-safety",
-      "publishedYear": 2025,
+      "publishedYear": 2023,
       "verifiedAt": "2026-10-22",
       "verificationStatus": "verified-primary-source",
-      "scopeNotes": "Mandates verifiable parental consent and prohibits tracking, behavioral monitoring, and targeted ads for children under 18."
+      "scopeNotes": "Section 9 mandates verifiable parental consent and prohibits tracking, behavioural monitoring, and targeted ads for children under 18. DPDP Rules 2025 text (consent mechanism and exemptions) is not yet attached; see gap G-LEGAL-RULE-10-TEXT."
     },
     {
       "sourceId": "SRC-IAP-SCREENTIME-2022",
@@ -265,6 +265,17 @@
       "verifiedAt": "2026-10-22",
       "verificationStatus": "verified-primary-source",
       "scopeNotes": "Primary national dataset for school enrollment, infrastructure, and stage-wise student distribution."
+    },
+    {
+      "sourceId": "SRC-MOSPI-CMSE-2025",
+      "authority": "National Statistics Office (NSO), Ministry of Statistics and Programme Implementation (MoSPI), via Press Information Bureau",
+      "title": "Comprehensive Modular Survey: Education 2025 (NSS 80th Round, April to June 2025) Key Findings",
+      "officialUrl": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2160863",
+      "category": "education-statistics",
+      "publishedYear": 2025,
+      "verifiedAt": "2026-10-23",
+      "verificationStatus": "verified-primary-source",
+      "scopeNotes": "27.0% of school students took private coaching in the current academic year (urban 30.7%, rural 25.5%). Average annual household spend on private coaching per student: urban INR 3,988, rural INR 1,793, rising to INR 6,384 nationally at higher secondary."
     }
   ]
 }

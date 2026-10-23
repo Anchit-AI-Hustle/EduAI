@@ -52,7 +52,7 @@ async function run() {
         "6. Competitive &amp; Global Tracks",
         "7. Self-Evolving Engine (L1-L5)",
         "8. Parent View &amp; Legal Risks",
-        "9. Venture Thesis &amp; 5 Q&amp;A",
+        "9. Venture Thesis &amp; 6 Q&amp;A",
         "हिन्दी"
       ]
     },
@@ -62,16 +62,16 @@ async function run() {
       headingMatch: "Venture Justification",
       requiredMarkers: [
         "Venture Justification",
-        "Executive Synthesis",
+        "Reality Check",
         "Question 1",
         "Question 2",
         "Question 3",
         "Question 4",
         "Question 5",
         "Question 6",
-        "Regulatory Science",
         "Venture Brand Names",
-        "260 Million K-12 Students"
+        "about 20 lakh",
+        "INR 199 or 499 / month"
       ]
     }
   ];
