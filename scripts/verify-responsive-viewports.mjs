@@ -65,6 +65,7 @@ async function run() {
       requiredMarkers: [
         "Venture Justification",
         "Reality Check",
+        "हिन्दी",
         "Question 1",
         "Question 2",
         "Question 3",
@@ -84,7 +85,8 @@ async function run() {
         "Pariksha Saathi",
         "Independent pitch, not affiliated with Amar Ujala",
         "~54 lakh",
-        "छात्र अनुभव",
+        "हिन्दी",
+        "Student demo",
         "Revenue model",
         "Why it fits Amar Ujala",
         "Why it works: 6 questions"
@@ -97,6 +99,7 @@ async function run() {
       requiredMarkers: [
         "Independent pitch, not affiliated with Amar Ujala",
         "Who will use it?",
+        "हिन्दी",
         "What do they use currently?",
         "How many users face this problem?",
         "Why will it be better?",
