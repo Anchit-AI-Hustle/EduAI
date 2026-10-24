@@ -10,9 +10,9 @@ function readJson(relPath) {
 
 const ajv = new Ajv2020({ allErrors: true, strict: false, validateFormats: false });
 
-const learnerSchema = readJson("schemas/learner-profile.schema.json");
-const skillGraphSchema = readJson("schemas/skill-graph.schema.json");
-const curriculumYearSchema = readJson("schemas/curriculum-year.schema.json");
+const learnerSchema = readJson("schemas/content-learner-profile.schema.json");
+const skillGraphSchema = readJson("schemas/content-skill-graph.schema.json");
+const curriculumYearSchema = readJson("schemas/content-curriculum-year.schema.json");
 const sourceCatalogSchema = readJson("schemas/official-source-catalog.schema.json");
 const assessmentSchema = readJson("schemas/assessment-blueprint.schema.json");
 

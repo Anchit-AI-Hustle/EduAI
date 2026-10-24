@@ -1,0 +1,275 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://everyyear.school/schemas/content-curriculum-year.schema.json",
+  "title": "EveryYear Curriculum Year Plan Schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "curriculumVersionId",
+    "boardId",
+    "boardName",
+    "yearId",
+    "yearLabel",
+    "nepStage",
+    "ageBandYears",
+    "groundingStatus",
+    "screenTimePolicy",
+    "subjects",
+    "skillIds",
+    "termPlan",
+    "weeklyPlanTemplate",
+    "dailyLessonTemplate",
+    "assessments",
+    "coCurricularPlan",
+    "extracurricularPlan",
+    "parentViewPlan",
+    "trackBridges",
+    "sourceIds",
+    "knownGaps"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0.0"
+    },
+    "curriculumVersionId": {
+      "type": "string"
+    },
+    "boardId": {
+      "enum": [
+        "early-years",
+        "cbse",
+        "cisce",
+        "nios",
+        "state-boards"
+      ]
+    },
+    "boardName": {
+      "type": "string"
+    },
+    "yearId": {
+      "enum": [
+        "home-0-3",
+        "nursery",
+        "lkg",
+        "ukg",
+        "class-01",
+        "class-02",
+        "class-03",
+        "class-04",
+        "class-05",
+        "class-06",
+        "class-07",
+        "class-08",
+        "class-09",
+        "class-10",
+        "class-11",
+        "class-12"
+      ]
+    },
+    "yearLabel": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "en",
+        "hi"
+      ],
+      "properties": {
+        "en": {
+          "type": "string"
+        },
+        "hi": {
+          "type": "string"
+        }
+      }
+    },
+    "nepStage": {
+      "type": "string"
+    },
+    "ageBandYears": {
+      "type": "string"
+    },
+    "groundingStatus": {
+      "enum": [
+        "fully-sourced",
+        "deepened-grade-band",
+        "skeleton-with-labelled-gaps"
+      ]
+    },
+    "screenTimePolicy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "maxMinutesPerDay",
+        "deliveryMode",
+        "guidelineSourceId"
+      ],
+      "properties": {
+        "maxMinutesPerDay": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 360
+        },
+        "deliveryMode": {
+          "type": "string"
+        },
+        "guidelineSourceId": {
+          "type": "string"
+        }
+      }
+    },
+    "subjects": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "subjectId",
+          "name",
+          "compulsory",
+          "skillIds",
+          "sourceIds",
+          "units"
+        ],
+        "properties": {
+          "subjectId": {
+            "type": "string"
+          },
+          "officialCode": {
+            "type": "string"
+          },
+          "name": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "en",
+              "hi"
+            ],
+            "properties": {
+              "en": {
+                "type": "string"
+              },
+              "hi": {
+                "type": "string"
+              }
+            }
+          },
+          "compulsory": {
+            "type": "boolean"
+          },
+          "stream": {
+            "type": "string"
+          },
+          "textbooks": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "skillIds": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          },
+          "sourceIds": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          },
+          "units": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    },
+    "skillIds": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "termPlan": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object"
+      }
+    },
+    "weeklyPlanTemplate": {
+      "type": "object"
+    },
+    "dailyLessonTemplate": {
+      "type": "object"
+    },
+    "assessments": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "unitTests",
+        "internals",
+        "termExams",
+        "boardStyleMocks"
+      ],
+      "properties": {
+        "unitTests": {
+          "type": "object"
+        },
+        "internals": {
+          "type": "object"
+        },
+        "termExams": {
+          "type": "object"
+        },
+        "boardStyleMocks": {
+          "type": "object"
+        }
+      }
+    },
+    "coCurricularPlan": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object"
+      }
+    },
+    "extracurricularPlan": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object"
+      }
+    },
+    "parentViewPlan": {
+      "type": "object"
+    },
+    "trackBridges": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "sourceIds": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "knownGaps": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  }
+}
