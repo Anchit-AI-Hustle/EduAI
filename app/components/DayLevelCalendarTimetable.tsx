@@ -39,7 +39,8 @@ const INITIAL_DAYS: TimetableDay[] = [
         estimatedMinutes: 25,
         completed: true,
         score: 95,
-        skillFocus: "Quantitative Induction"
+        skillFocus: "Inverse proportion",
+        skillFocus_hi: "प्रतिलोम समानुपात"
       },
       {
         id: "asg-02",
@@ -50,7 +51,8 @@ const INITIAL_DAYS: TimetableDay[] = [
         estimatedMinutes: 20,
         completed: true,
         score: 90,
-        skillFocus: "Hypothesis Testing"
+        skillFocus: "Forces & friction",
+        skillFocus_hi: "बल व घर्षण"
       }
     ]
   },
@@ -73,7 +75,8 @@ const INITIAL_DAYS: TimetableDay[] = [
         estimatedMinutes: 25,
         completed: false,
         score: undefined,
-        skillFocus: "Verbal Syllogism"
+        skillFocus: "Critical reading",
+        skillFocus_hi: "आलोचनात्मक पठन"
       },
       {
         id: "asg-04",
@@ -84,7 +87,8 @@ const INITIAL_DAYS: TimetableDay[] = [
         estimatedMinutes: 15,
         completed: false,
         score: undefined,
-        skillFocus: "Systemic Modelling"
+        skillFocus: "Federalism",
+        skillFocus_hi: "संघवाद"
       }
     ]
   },
@@ -107,7 +111,8 @@ const INITIAL_DAYS: TimetableDay[] = [
         estimatedMinutes: 30,
         completed: false,
         score: undefined,
-        skillFocus: "Spatial Transformation"
+        skillFocus: "Angles of polygons",
+        skillFocus_hi: "बहुभुज के कोण"
       },
       {
         id: "asg-06",
@@ -118,7 +123,8 @@ const INITIAL_DAYS: TimetableDay[] = [
         estimatedMinutes: 20,
         completed: false,
         score: undefined,
-        skillFocus: "Pattern Extrapolation"
+        skillFocus: "Refraction of light",
+        skillFocus_hi: "प्रकाश का अपवर्तन"
       }
     ]
   },
@@ -141,7 +147,8 @@ const INITIAL_DAYS: TimetableDay[] = [
         estimatedMinutes: 25,
         completed: false,
         score: undefined,
-        skillFocus: "Algorithmic Recursion"
+        skillFocus: "Search algorithms",
+        skillFocus_hi: "खोज एल्गोरिदम"
       },
       {
         id: "asg-08",
@@ -152,7 +159,8 @@ const INITIAL_DAYS: TimetableDay[] = [
         estimatedMinutes: 20,
         completed: false,
         score: undefined,
-        skillFocus: "Symbolic Algebra"
+        skillFocus: "Balancing chemical equations",
+        skillFocus_hi: "रासायनिक समीकरण संतुलन"
       }
     ]
   },
@@ -175,7 +183,8 @@ const INITIAL_DAYS: TimetableDay[] = [
         estimatedMinutes: 35,
         completed: false,
         score: undefined,
-        skillFocus: "Mixed Skill Review"
+        skillFocus: "Mixed skill review",
+        skillFocus_hi: "मिश्रित कौशल पुनरावृत्ति"
       },
       {
         id: "asg-10",
@@ -186,7 +195,8 @@ const INITIAL_DAYS: TimetableDay[] = [
         estimatedMinutes: 20,
         completed: false,
         score: undefined,
-        skillFocus: "Metacognition"
+        skillFocus: "Error review",
+        skillFocus_hi: "त्रुटि समीक्षा"
       }
     ]
   },
@@ -209,7 +219,8 @@ const INITIAL_DAYS: TimetableDay[] = [
         estimatedMinutes: 30,
         completed: false,
         score: undefined,
-        skillFocus: "Empirical Reasoning"
+        skillFocus: "Data handling & graphs",
+        skillFocus_hi: "आंकड़ों का प्रबंधन व ग्राफ"
       }
     ]
   },
@@ -231,7 +242,8 @@ const INITIAL_DAYS: TimetableDay[] = [
         challengeTier: "Foundational",
         estimatedMinutes: 0,
         completed: true,
-        skillFocus: "Rest & Cognitive Consolidation"
+        skillFocus: "Catch-up & rest",
+        skillFocus_hi: "छूटा काम व विश्राम"
       }
     ]
   }
@@ -295,7 +307,8 @@ export default function DayLevelCalendarTimetable({
               challengeTier: "High Agility" as const,
               estimatedMinutes: 25,
               completed: false,
-              skillFocus: "Spatial Transformation"
+              skillFocus: "Angles of polygons",
+              skillFocus_hi: "बहुभुज के कोण"
             }
           ]
         };
@@ -324,13 +337,13 @@ export default function DayLevelCalendarTimetable({
               </span>
               <span className="badge badge-indigo">
                 {isHi
-                  ? `केंद्रित कौशल: ${focusSkill.skill_hi} (${focusSkill.total} में से ${focusSkill.correct} सही)`
+                  ? `मुख्य कौशल: ${focusSkill.skill_hi} (${focusSkill.total} में से ${focusSkill.correct} सही)`
                   : `Focus skill: ${focusSkill.skill_en} (${focusSkill.correct} of ${focusSkill.total} correct)`}
               </span>
             </div>
             <h2 style={{ fontSize: "1.4rem", fontWeight: 700, marginBottom: "0.35rem" }}>
               {isHi
-                ? "छात्र की क्षमता अनुसार अनुकूलित दैनिक समय-सारणी व असाइनमेंट"
+                ? "व्यक्तिगत दैनिक समय-सारणी व असाइनमेंट योजना"
                 : "Personalised Day-Level Timetable & Dynamic Assignment Schedule"}
             </h2>
             <p style={{ color: "var(--text-secondary)", fontSize: "0.88rem", maxWidth: "800px" }}>
@@ -494,7 +507,7 @@ export default function DayLevelCalendarTimetable({
                     </div>
                     <div style={{ fontSize: "0.75rem", color: "var(--text-muted)", marginTop: "0.2rem" }}>
                       {isHi ? "कौशल: " : "Skill focus: "}
-                      <span style={{ color: "var(--text-secondary)" }}>{asg.skillFocus}</span>
+                      <span style={{ color: "var(--text-secondary)" }}>{isHi ? asg.skillFocus_hi : asg.skillFocus}</span>
                     </div>
                   </div>
                 </div>

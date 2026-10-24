@@ -7,8 +7,6 @@ interface CognitiveDiagnosticProps {
   lang: LanguageMode;
   onAssessmentComplete?: (results: {
     skillMastery: SkillMastery[];
-    placedLevel: string;
-    gapDetected: string;
     recommendedTier: string;
   }) => void;
 }
@@ -110,7 +108,7 @@ const ITEM_SKILLS: Record<string, { skillId: string; prereqClass: number }> = {
   "diag-01": { skillId: "number-patterns", prereqClass: 6 },
   "diag-02": { skillId: "ratio-proportion", prereqClass: 7 },
   "diag-03": { skillId: "number-patterns", prereqClass: 6 },
-  "diag-04": { skillId: "ratio-proportion", prereqClass: 8 }
+  "diag-04": { skillId: "ratio-proportion", prereqClass: 7 }
 };
 
 function computeSkillMastery(answers: Record<number, number>): SkillMastery[] {
@@ -137,8 +135,14 @@ function computeSkillMastery(answers: Record<number, number>): SkillMastery[] {
 }
 
 function tierFor(percentage: number) {
-  return percentage >= 75 ? "High Agility" : percentage >= 50 ? "Standard" : "Foundational Scaffold";
+  return percentage >= 75 ? "High Agility" : percentage >= 50 ? "Standard" : "Foundational";
 }
+
+const TIER_HI: Record<string, string> = {
+  "High Agility": "उन्नत",
+  Standard: "मानक",
+  Foundational: "बुनियादी"
+};
 
 export default function CognitiveDiagnostic({
   lang,
@@ -168,11 +172,8 @@ export default function CognitiveDiagnostic({
       if (onAssessmentComplete) {
         const skillMastery = computeSkillMastery(selectedAnswers);
         const correct = skillMastery.reduce((sum, m) => sum + m.correct, 0);
-        const firstGap = skillMastery.find((m) => m.likelyGapClass !== null);
         onAssessmentComplete({
           skillMastery,
-          placedLevel: "Class 8 (Accelerated STEM)",
-          gapDetected: firstGap ? `${firstGap.skill_en}: likely gap at Class ${firstGap.likelyGapClass}` : "None found",
           recommendedTier: tierFor(Math.round((correct / SAMPLE_CHALLENGES.length) * 100))
         });
       }
@@ -222,7 +223,7 @@ export default function CognitiveDiagnostic({
             </h2>
             <p style={{ color: "var(--text-secondary)", fontSize: "0.88rem", maxWidth: "800px" }}>
               {isHi
-                ? "यह छोटी जांच दिखाती है कि छात्र ने किन कौशलों में दक्षता पा ली है और किनमें पिछली कक्षा की कोई कमी होने की संभावना है। हर कौशल पर कुछ ही प्रश्न हैं, इसलिए यह एक शुरुआती संकेत है, बुद्धि का माप नहीं। परिणाम दैनिक समय-सारणी में असाइनमेंट का स्तर (Tier) तय करते हैं।"
+                ? "यह छोटी जांच दिखाती है कि आपके बच्चे ने किन कौशलों में दक्षता पा ली है और किनमें पिछली कक्षा की कोई कमी होने की संभावना है। हर कौशल पर कुछ ही प्रश्न हैं, इसलिए यह एक शुरुआती संकेत है, बुद्धि का माप नहीं। परिणाम दैनिक समय-सारणी में असाइनमेंट का स्तर (Tier) तय करते हैं।"
                 : "This short check shows which skills your child has mastered and which likely have an earlier-class gap. With only a few questions per skill it is an early signal, not a measure of intelligence. Results set the assignment tier in the daily timetable."}
             </p>
           </div>
@@ -243,7 +244,7 @@ export default function CognitiveDiagnostic({
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "0.5rem" }}>
             <div>
               <span className="badge badge-cyan" style={{ marginRight: "0.5rem" }}>
-                {currentChallenge.domain}
+                {isHi ? SKILLS[ITEM_SKILLS[currentChallenge.id].skillId].hi : SKILLS[ITEM_SKILLS[currentChallenge.id].skillId].en}
               </span>
               <span className="badge badge-amber">
                 {currentChallenge.difficulty.toUpperCase()}
@@ -417,7 +418,7 @@ export default function CognitiveDiagnostic({
                   {isHi ? "दैनिक असाइनमेंट स्तर" : "Calibrated Day Tier"}
                 </span>
                 <div style={{ fontSize: "1.4rem", fontWeight: 700, color: "var(--accent-amber)", marginTop: "0.2rem" }}>
-                  {tierFor(scoreData.percentage)}
+                  {isHi ? TIER_HI[tierFor(scoreData.percentage)] : tierFor(scoreData.percentage)}
                 </div>
                 <span style={{ fontSize: "0.75rem", color: "var(--text-secondary)" }}>
                   {isHi ? "कैलेंडर असाइनमेंट टियर" : "Assigned in Day Calendar"}

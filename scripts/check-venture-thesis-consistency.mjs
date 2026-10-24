@@ -32,11 +32,13 @@ const RETIRED = [
   /INR 799 \/ month/,
   /(?:INR |₹)?499 ?(?:-|to) ?(?:INR |₹)?1,499/,
   /1,999/,
-  /IQ indices/,
-  // Retired 2026-10-24: a short quiz cannot measure IQ, and labelling a child
-  // with one misleads parents (DPDP Act 2023 Section 9). Report per-skill mastery.
-  /\bIQ\b/,
-  /आईक्यू/,
+  // Retired 2026-10-24 (replaces "IQ indices"): a short quiz cannot measure IQ,
+  // and labelling a child with one misleads parents (DPDP Act 2023 Section 9).
+  // Report per-skill mastery instead.
+  /\bI\.?Q\.?s?\b/i,
+  /intelligence quotient/i,
+  /आई\.?\s?क्यू/,
+  /बुद्धि\s?लब्धि/,
   /cisceboard\.org/,
   /ciseresults\.org/,
   /dpdpa\.com/,
@@ -44,7 +46,7 @@ const RETIRED = [
 ];
 
 const SCAN_DIRS = ["app", "docs", "content", "config", "schemas"];
-const SCAN_FILES = ["README.md"];
+const SCAN_FILES = ["README.md", "public/manifest.json"];
 const SCAN_EXTS = new Set([".ts", ".tsx", ".md", ".json"]);
 
 function walk(dir, out) {

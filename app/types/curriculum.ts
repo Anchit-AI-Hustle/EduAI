@@ -113,5 +113,6 @@ export interface TimetableDay {
     completed: boolean;
     score?: number;
     skillFocus: string;
+    skillFocus_hi: string;
   }[];
 }
