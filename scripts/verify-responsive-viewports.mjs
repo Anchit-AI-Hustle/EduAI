@@ -107,6 +107,41 @@ async function run() {
         "What is the real problem not solved right now?",
         "What Would Prove It Wrong"
       ]
+    },
+    {
+      file: "aage-kya.html",
+      name: "Aage Kya (/aage-kya)",
+      headingMatch: "Aage Kya",
+      requiredMarkers: [
+        "Independent pitch, not affiliated with Amar Ujala",
+        "हिंदी",
+        "25.99 lakh",
+        "8,375",
+        "37,000+",
+        "1. Student demo",
+        "2. College dashboard",
+        "3. Revenue model",
+        "4. One platform",
+        "Strategy, roadmap and the 6 questions"
+      ]
+    },
+    {
+      file: "aage-kya/plan.html",
+      name: "Aage Kya Plan (/aage-kya/plan)",
+      headingMatch: "Strategy, Roadmap and the Six Questions",
+      requiredMarkers: [
+        "Independent pitch, not affiliated with Amar Ujala",
+        "हिंदी",
+        "Why I replaced my first idea (Pariksha Saathi)",
+        "1. Who will use it?",
+        "2. What do they use currently?",
+        "3. How many users face this problem?",
+        "4. Why will it be better?",
+        "5. Will they pay?",
+        "6. What is the real problem not solved right now?",
+        "Roadmap",
+        "What would make me stop"
+      ]
     }
   ];
 
