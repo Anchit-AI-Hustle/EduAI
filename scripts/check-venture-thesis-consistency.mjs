@@ -33,6 +33,10 @@ const RETIRED = [
   /(?:INR |₹)?499 ?(?:-|to) ?(?:INR |₹)?1,499/,
   /1,999/,
   /IQ indices/,
+  // Retired 2026-10-24: a short quiz cannot measure IQ, and labelling a child
+  // with one misleads parents (DPDP Act 2023 Section 9). Report per-skill mastery.
+  /\bIQ\b/,
+  /आईक्यू/,
   /cisceboard\.org/,
   /ciseresults\.org/,
   /dpdpa\.com/,

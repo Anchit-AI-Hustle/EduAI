@@ -1,13 +1,23 @@
 "use client";
 
 import React, { useState } from "react";
-import { LanguageMode, TimetableDay } from "../types/curriculum";
+import { LanguageMode, SkillMastery, TimetableDay } from "../types/curriculum";
 
 interface DayLevelCalendarTimetableProps {
   lang: LanguageMode;
   calibratedTier?: string;
-  calibratedIQ?: number;
+  focusSkill?: SkillMastery;
 }
+
+// Demo learner until the diagnostic result is passed in.
+const DEMO_FOCUS_SKILL: SkillMastery = {
+  skillId: "ratio-proportion",
+  skill_en: "Ratio & proportion",
+  skill_hi: "अनुपात व समानुपात",
+  correct: 1,
+  total: 2,
+  likelyGapClass: 7
+};
 
 const INITIAL_DAYS: TimetableDay[] = [
   {
@@ -29,7 +39,7 @@ const INITIAL_DAYS: TimetableDay[] = [
         estimatedMinutes: 25,
         completed: true,
         score: 95,
-        cognitiveIQDimension: "Quantitative Induction"
+        skillFocus: "Quantitative Induction"
       },
       {
         id: "asg-02",
@@ -40,7 +50,7 @@ const INITIAL_DAYS: TimetableDay[] = [
         estimatedMinutes: 20,
         completed: true,
         score: 90,
-        cognitiveIQDimension: "Hypothesis Testing"
+        skillFocus: "Hypothesis Testing"
       }
     ]
   },
@@ -63,7 +73,7 @@ const INITIAL_DAYS: TimetableDay[] = [
         estimatedMinutes: 25,
         completed: false,
         score: undefined,
-        cognitiveIQDimension: "Verbal Syllogism"
+        skillFocus: "Verbal Syllogism"
       },
       {
         id: "asg-04",
@@ -74,7 +84,7 @@ const INITIAL_DAYS: TimetableDay[] = [
         estimatedMinutes: 15,
         completed: false,
         score: undefined,
-        cognitiveIQDimension: "Systemic Modelling"
+        skillFocus: "Systemic Modelling"
       }
     ]
   },
@@ -97,7 +107,7 @@ const INITIAL_DAYS: TimetableDay[] = [
         estimatedMinutes: 30,
         completed: false,
         score: undefined,
-        cognitiveIQDimension: "Spatial Transformation"
+        skillFocus: "Spatial Transformation"
       },
       {
         id: "asg-06",
@@ -108,7 +118,7 @@ const INITIAL_DAYS: TimetableDay[] = [
         estimatedMinutes: 20,
         completed: false,
         score: undefined,
-        cognitiveIQDimension: "Pattern Extrapolation"
+        skillFocus: "Pattern Extrapolation"
       }
     ]
   },
@@ -131,7 +141,7 @@ const INITIAL_DAYS: TimetableDay[] = [
         estimatedMinutes: 25,
         completed: false,
         score: undefined,
-        cognitiveIQDimension: "Algorithmic Recursion"
+        skillFocus: "Algorithmic Recursion"
       },
       {
         id: "asg-08",
@@ -142,7 +152,7 @@ const INITIAL_DAYS: TimetableDay[] = [
         estimatedMinutes: 20,
         completed: false,
         score: undefined,
-        cognitiveIQDimension: "Symbolic Algebra"
+        skillFocus: "Symbolic Algebra"
       }
     ]
   },
@@ -165,7 +175,7 @@ const INITIAL_DAYS: TimetableDay[] = [
         estimatedMinutes: 35,
         completed: false,
         score: undefined,
-        cognitiveIQDimension: "Multi-Domain IQ Agility"
+        skillFocus: "Mixed Skill Review"
       },
       {
         id: "asg-10",
@@ -176,7 +186,7 @@ const INITIAL_DAYS: TimetableDay[] = [
         estimatedMinutes: 20,
         completed: false,
         score: undefined,
-        cognitiveIQDimension: "Metacognition"
+        skillFocus: "Metacognition"
       }
     ]
   },
@@ -199,7 +209,7 @@ const INITIAL_DAYS: TimetableDay[] = [
         estimatedMinutes: 30,
         completed: false,
         score: undefined,
-        cognitiveIQDimension: "Empirical Reasoning"
+        skillFocus: "Empirical Reasoning"
       }
     ]
   },
@@ -221,7 +231,7 @@ const INITIAL_DAYS: TimetableDay[] = [
         challengeTier: "Foundational",
         estimatedMinutes: 0,
         completed: true,
-        cognitiveIQDimension: "Rest & Cognitive Consolidation"
+        skillFocus: "Rest & Cognitive Consolidation"
       }
     ]
   }
@@ -230,7 +240,7 @@ const INITIAL_DAYS: TimetableDay[] = [
 export default function DayLevelCalendarTimetable({
   lang,
   calibratedTier = "High Agility",
-  calibratedIQ = 124,
+  focusSkill = DEMO_FOCUS_SKILL,
 }: DayLevelCalendarTimetableProps) {
   const isHi = lang === "hi";
   const [days, setDays] = useState<TimetableDay[]>(INITIAL_DAYS);
@@ -285,7 +295,7 @@ export default function DayLevelCalendarTimetable({
               challengeTier: "High Agility" as const,
               estimatedMinutes: 25,
               completed: false,
-              cognitiveIQDimension: "Spatial Transformation"
+              skillFocus: "Spatial Transformation"
             }
           ]
         };
@@ -313,7 +323,9 @@ export default function DayLevelCalendarTimetable({
                 {isHi ? `सक्रिय स्तर: ${calibratedTier}` : `Active Tier: ${calibratedTier}`}
               </span>
               <span className="badge badge-indigo">
-                {isHi ? `आईक्यू सूचकांक: ${calibratedIQ}` : `Cognitive Index: ${calibratedIQ}`}
+                {isHi
+                  ? `केंद्रित कौशल: ${focusSkill.skill_hi} (${focusSkill.total} में से ${focusSkill.correct} सही)`
+                  : `Focus skill: ${focusSkill.skill_en} (${focusSkill.correct} of ${focusSkill.total} correct)`}
               </span>
             </div>
             <h2 style={{ fontSize: "1.4rem", fontWeight: 700, marginBottom: "0.35rem" }}>
@@ -323,8 +335,8 @@ export default function DayLevelCalendarTimetable({
             </h2>
             <p style={{ color: "var(--text-secondary)", fontSize: "0.88rem", maxWidth: "800px" }}>
               {isHi
-                ? "यह समय-सारणी छात्र की आईक्यू और चुनौती सुलझाने की गति के आधार पर प्रत्येक दिन के असाइनमेंट तय करती है। यदि कोई दिन छूट जाए, तो 15% बफर स्लॉट स्वतः पढ़ाई को संतुलित कर देता है।"
-                : "Each day features curated challenges matched to the student's problem-solving agility. Screen time is strictly capped per pediatric standards, and missed days automatically shift into weekly buffer slots."}
+                ? "यह समय-सारणी उन कौशलों के आधार पर प्रत्येक दिन के असाइनमेंट तय करती है जिनमें छात्र की दक्षता अभी अधूरी है। स्क्रीन समय बाल-स्वास्थ्य मानकों के अनुसार सीमित है, और यदि कोई दिन छूट जाए तो साप्ताहिक बफर स्लॉट स्वतः पढ़ाई को संतुलित कर देता है।"
+                : "Each day's assignments target the skills the student has not yet mastered. Screen time is strictly capped per pediatric standards, and missed days automatically shift into weekly buffer slots."}
             </p>
           </div>
 
@@ -481,8 +493,8 @@ export default function DayLevelCalendarTimetable({
                       {isHi ? asg.title_hi : asg.title_en}
                     </div>
                     <div style={{ fontSize: "0.75rem", color: "var(--text-muted)", marginTop: "0.2rem" }}>
-                      {isHi ? "संज्ञानात्मक आयाम: " : "Cognitive Dimension: "}
-                      <span style={{ color: "var(--text-secondary)" }}>{asg.cognitiveIQDimension}</span>
+                      {isHi ? "कौशल: " : "Skill focus: "}
+                      <span style={{ color: "var(--text-secondary)" }}>{asg.skillFocus}</span>
                     </div>
                   </div>
                 </div>
