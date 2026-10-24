@@ -28,7 +28,7 @@ export default function LanguageToggle({
         aria-pressed={lang === "hi"}
         onClick={() => onChange("hi")}
       >
-        हिन्दी
+        हिंदी
       </button>
     </div>
   );

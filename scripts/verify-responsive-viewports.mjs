@@ -55,7 +55,7 @@ async function run() {
         "7. Self-Evolving Engine (L1-L5)",
         "8. Parent View &amp; Legal Risks",
         "9. Venture Thesis &amp; 6 Q&amp;A",
-        "हिन्दी"
+        "हिंदी"
       ]
     },
     {
@@ -65,7 +65,7 @@ async function run() {
       requiredMarkers: [
         "Venture Justification",
         "Reality Check",
-        "हिन्दी",
+        "हिंदी",
         "Question 1",
         "Question 2",
         "Question 3",
@@ -85,7 +85,7 @@ async function run() {
         "Pariksha Saathi",
         "Independent pitch, not affiliated with Amar Ujala",
         "~54 lakh",
-        "हिन्दी",
+        "हिंदी",
         "Student demo",
         "Revenue model",
         "Why it fits Amar Ujala",
@@ -99,7 +99,7 @@ async function run() {
       requiredMarkers: [
         "Independent pitch, not affiliated with Amar Ujala",
         "Who will use it?",
-        "हिन्दी",
+        "हिंदी",
         "What do they use currently?",
         "How many users face this problem?",
         "Why will it be better?",
