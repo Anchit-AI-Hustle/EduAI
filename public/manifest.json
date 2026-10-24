@@ -1,7 +1,7 @@
 {
   "name": "EduAI - AI-First School & Skill Engine",
   "short_name": "EduAI",
-  "description": "Personalised cradle-to-career learning path on official standards, day-level calendar, and challenge IQ scoring",
+  "description": "Personalised cradle-to-career learning path on official standards, day-level calendar, and per-skill mastery checks",
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait-primary",

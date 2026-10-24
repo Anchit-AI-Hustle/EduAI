@@ -1,14 +1,12 @@
 "use client";
 
 import React, { useState } from "react";
-import { ChallengeItem, LanguageMode } from "../types/curriculum";
+import { ChallengeItem, LanguageMode, SkillMastery } from "../types/curriculum";
 
 interface CognitiveDiagnosticProps {
   lang: LanguageMode;
   onAssessmentComplete?: (results: {
-    iqScore: number;
-    placedLevel: string;
-    gapDetected: string;
+    skillMastery: SkillMastery[];
     recommendedTier: string;
   }) => void;
 }
@@ -16,7 +14,7 @@ interface CognitiveDiagnosticProps {
 const SAMPLE_CHALLENGES: ChallengeItem[] = [
   {
     id: "diag-01",
-    domain: "Fluid Logic & Pattern IQ",
+    domain: "Number Patterns & Logic",
     title_en: "Recursive Number Grid Sequence",
     title_hi: "संख्या ग्रिड अनुक्रम पहेली",
     question_en: "Identify the missing value in the 3x3 matrix: [Row 1: 4, 9, 13], [Row 2: 7, 16, 23], [Row 3: 5, 25, ?]",
@@ -98,6 +96,54 @@ const SAMPLE_CHALLENGES: ChallengeItem[] = [
   }
 ];
 
+// Each item probes one skill and its earliest prerequisite class. A miss points
+// to that class as the likely gap; with two items per skill it is a lead to
+// check, not a confirmed cause.
+const SKILLS: Record<string, { en: string; hi: string }> = {
+  "number-patterns": { en: "Number patterns & properties", hi: "संख्या पैटर्न व गुणधर्म" },
+  "ratio-proportion": { en: "Ratio & proportion", hi: "अनुपात व समानुपात" }
+};
+
+const ITEM_SKILLS: Record<string, { skillId: string; prereqClass: number }> = {
+  "diag-01": { skillId: "number-patterns", prereqClass: 6 },
+  "diag-02": { skillId: "ratio-proportion", prereqClass: 7 },
+  "diag-03": { skillId: "number-patterns", prereqClass: 6 },
+  "diag-04": { skillId: "ratio-proportion", prereqClass: 7 }
+};
+
+function computeSkillMastery(answers: Record<number, number>): SkillMastery[] {
+  const bySkill = new Map<string, SkillMastery>();
+  SAMPLE_CHALLENGES.forEach((c, idx) => {
+    const { skillId, prereqClass } = ITEM_SKILLS[c.id];
+    const entry = bySkill.get(skillId) ?? {
+      skillId,
+      skill_en: SKILLS[skillId].en,
+      skill_hi: SKILLS[skillId].hi,
+      correct: 0,
+      total: 0,
+      likelyGapClass: null
+    };
+    entry.total += 1;
+    if (answers[idx] === c.correctIndex) {
+      entry.correct += 1;
+    } else if (entry.likelyGapClass === null || prereqClass < entry.likelyGapClass) {
+      entry.likelyGapClass = prereqClass;
+    }
+    bySkill.set(skillId, entry);
+  });
+  return [...bySkill.values()];
+}
+
+function tierFor(percentage: number) {
+  return percentage >= 75 ? "High Agility" : percentage >= 50 ? "Standard" : "Foundational";
+}
+
+const TIER_HI: Record<string, string> = {
+  "High Agility": "उन्नत",
+  Standard: "मानक",
+  Foundational: "बुनियादी"
+};
+
 export default function CognitiveDiagnostic({
   lang,
   onAssessmentComplete,
@@ -124,11 +170,11 @@ export default function CognitiveDiagnostic({
     } else {
       setIsSubmitted(true);
       if (onAssessmentComplete) {
+        const skillMastery = computeSkillMastery(selectedAnswers);
+        const correct = skillMastery.reduce((sum, m) => sum + m.correct, 0);
         onAssessmentComplete({
-          iqScore: 124,
-          placedLevel: "Class 8 (Accelerated STEM)",
-          gapDetected: "Inverse Proportions bridge needed (Class 8 NCERT Ch 13)",
-          recommendedTier: "High Agility"
+          skillMastery,
+          recommendedTier: tierFor(Math.round((correct / SAMPLE_CHALLENGES.length) * 100))
         });
       }
     }
@@ -148,9 +194,7 @@ export default function CognitiveDiagnostic({
       }
     });
     const percentage = Math.round((correct / SAMPLE_CHALLENGES.length) * 100);
-    // Cognitive index: baseline 100 + scale factor
-    const cognitiveIQ = 95 + Math.round((correct / SAMPLE_CHALLENGES.length) * 35);
-    return { correct, total: SAMPLE_CHALLENGES.length, percentage, cognitiveIQ };
+    return { correct, total: SAMPLE_CHALLENGES.length, percentage, skillMastery: computeSkillMastery(selectedAnswers) };
   };
 
   const scoreData = calculateScore();
@@ -166,7 +210,7 @@ export default function CognitiveDiagnostic({
           <div>
             <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", marginBottom: "0.5rem" }}>
               <span className="badge badge-indigo">
-                {isHi ? "एआई संज्ञानात्मक व आईक्यू प्लेसमेंट इंजन" : "AI Cognitive & IQ Placement Engine"}
+                {isHi ? "कौशल-वार दक्षता जांच" : "Per-Skill Mastery Check"}
               </span>
               <span className="badge badge-emerald">
                 {isHi ? "दैनिक समय-सारणी से जुड़ा हुआ" : "Connected to Day Calendar"}
@@ -174,13 +218,13 @@ export default function CognitiveDiagnostic({
             </div>
             <h2 style={{ fontSize: "1.4rem", fontWeight: 700, marginBottom: "0.35rem" }}>
               {isHi
-                ? "छात्र की समस्या-समाधान क्षमता व आईक्यू आधारित मूल्यांकन"
-                : "Personalised Challenge Agility & Cognitive IQ Evaluation"}
+                ? "कौशल दक्षता निदान: पिछली कक्षा की कमी पहचानें"
+                : "Skill Mastery Diagnostic: Find the Earlier-Class Gap"}
             </h2>
             <p style={{ color: "var(--text-secondary)", fontSize: "0.88rem", maxWidth: "800px" }}>
               {isHi
-                ? "यह डायग्नोस्टिक छात्र की तात्कालिक तर्कशक्ति, गणितीय गति और वैचारिक समझ का परीक्षण करता है। इसके परिणाम सीधे दैनिक समय-सारणी में असाइनमेंट की कठिनाई स्तर (Tier) को निर्धारित करते हैं।"
-                : "This diagnostic measures real-time reasoning velocity, quantitative agility, and prerequisite mastery. Results calibrate the daily timetable assignments and adjust challenge tiers to prevent boredom or cognitive fatigue."}
+                ? "यह छोटी जांच दिखाती है कि आपके बच्चे ने किन कौशलों में दक्षता पा ली है और किनमें पिछली कक्षा की कोई कमी होने की संभावना है। हर कौशल पर कुछ ही प्रश्न हैं, इसलिए यह एक शुरुआती संकेत है, बुद्धि का माप नहीं। परिणाम दैनिक समय-सारणी में असाइनमेंट का स्तर (Tier) तय करते हैं।"
+                : "This short check shows which skills your child has mastered and which likely have an earlier-class gap. With only a few questions per skill it is an early signal, not a measure of intelligence. Results set the assignment tier in the daily timetable."}
             </p>
           </div>
           <div style={{ textAlign: "right" }}>
@@ -200,7 +244,7 @@ export default function CognitiveDiagnostic({
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "0.5rem" }}>
             <div>
               <span className="badge badge-cyan" style={{ marginRight: "0.5rem" }}>
-                {currentChallenge.domain}
+                {isHi ? SKILLS[ITEM_SKILLS[currentChallenge.id].skillId].hi : SKILLS[ITEM_SKILLS[currentChallenge.id].skillId].en}
               </span>
               <span className="badge badge-amber">
                 {currentChallenge.difficulty.toUpperCase()}
@@ -316,7 +360,7 @@ export default function CognitiveDiagnostic({
           </div>
         </div>
       ) : (
-        /* Result & IQ Diagnosis Card */
+        /* Result & per-skill mastery card */
         <div style={{ display: "flex", flexDirection: "column", gap: "1.25rem" }}>
           <div className="card" style={{
             background: "linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(15, 23, 42, 0.9) 100%)",
@@ -332,7 +376,7 @@ export default function CognitiveDiagnostic({
             </div>
 
             <h3 style={{ fontSize: "1.35rem", fontWeight: 700, marginBottom: "0.75rem" }}>
-              {isHi ? "छात्र संज्ञानात्मक विश्लेषण व आईक्यू रिपोर्ट" : "Learner Cognitive Profile & IQ Calibration Report"}
+              {isHi ? "कौशल-वार दक्षता रिपोर्ट" : "Mastery by Skill Report"}
             </h3>
 
             <div style={{
@@ -341,17 +385,21 @@ export default function CognitiveDiagnostic({
               gap: "1rem",
               margin: "1rem 0"
             }}>
-              <div style={{ background: "rgba(255, 255, 255, 0.04)", padding: "1rem", borderRadius: "8px", border: "1px solid var(--border-color)" }}>
-                <span style={{ fontSize: "0.75rem", color: "var(--text-muted)" }}>
-                  {isHi ? "संज्ञानात्मक आईक्यू सूचकांक" : "Cognitive IQ Agility"}
-                </span>
-                <div style={{ fontSize: "1.75rem", fontWeight: 800, color: "var(--accent-cyan)", marginTop: "0.2rem" }}>
-                  {scoreData.cognitiveIQ}
+              {scoreData.skillMastery.map((m) => (
+                <div key={m.skillId} style={{ background: "rgba(255, 255, 255, 0.04)", padding: "1rem", borderRadius: "8px", border: "1px solid var(--border-color)" }}>
+                  <span style={{ fontSize: "0.75rem", color: "var(--text-muted)" }}>
+                    {isHi ? m.skill_hi : m.skill_en}
+                  </span>
+                  <div style={{ fontSize: "1.4rem", fontWeight: 700, color: "var(--accent-cyan)", marginTop: "0.2rem" }}>
+                    {isHi ? `${m.total} में से ${m.correct} सही` : `${m.correct} of ${m.total} correct`}
+                  </div>
+                  <span style={{ fontSize: "0.75rem", color: m.likelyGapClass === null ? "var(--accent-emerald)" : "var(--accent-rose)" }}>
+                    {m.likelyGapClass === null
+                      ? (isHi ? "इस जांच में कोई कमी नहीं मिली" : "No gap found in this check")
+                      : (isHi ? `संभावित कमी: कक्षा ${m.likelyGapClass}` : `Likely gap at Class ${m.likelyGapClass}`)}
+                  </span>
                 </div>
-                <span style={{ fontSize: "0.75rem", color: "var(--accent-emerald)" }}>
-                  {isHi ? "उच्च तार्किक क्षमता" : "High Analytical Agility"}
-                </span>
-              </div>
+              ))}
 
               <div style={{ background: "rgba(255, 255, 255, 0.04)", padding: "1rem", borderRadius: "8px", border: "1px solid var(--border-color)" }}>
                 <span style={{ fontSize: "0.75rem", color: "var(--text-muted)" }}>
@@ -370,22 +418,11 @@ export default function CognitiveDiagnostic({
                   {isHi ? "दैनिक असाइनमेंट स्तर" : "Calibrated Day Tier"}
                 </span>
                 <div style={{ fontSize: "1.4rem", fontWeight: 700, color: "var(--accent-amber)", marginTop: "0.2rem" }}>
-                  {scoreData.percentage >= 75 ? "High Agility" : scoreData.percentage >= 50 ? "Standard" : "Foundational Scaffold"}
+                  {isHi ? TIER_HI[tierFor(scoreData.percentage)] : tierFor(scoreData.percentage)}
                 </div>
                 <span style={{ fontSize: "0.75rem", color: "var(--text-secondary)" }}>
                   {isHi ? "कैलेंडर असाइनमेंट टियर" : "Assigned in Day Calendar"}
                 </span>
-              </div>
-
-              <div style={{ background: "rgba(255, 255, 255, 0.04)", padding: "1rem", borderRadius: "8px", border: "1px solid var(--border-color)" }}>
-                <span style={{ fontSize: "0.75rem", color: "var(--text-muted)" }}>
-                  {isHi ? "पूर्व-ज्ञान अंतर (Gap)" : "Detected Prerequisite Gap"}
-                </span>
-                <div style={{ fontSize: "0.92rem", fontWeight: 600, color: "var(--accent-rose)", marginTop: "0.3rem" }}>
-                  {scoreData.percentage >= 75
-                    ? (isHi ? "कोई गंभीर कमी नहीं (अग्रिम स्तर तैयार)" : "No critical blocker (Ready for Tier 1)")
-                    : (isHi ? "कक्षा 7 अनुपात व दर (Rate) में 2-दिवसीय सुदृढ़ीकरण" : "Class 7 Multi-variable Rates Bridge Needed")}
-                </div>
               </div>
             </div>
 

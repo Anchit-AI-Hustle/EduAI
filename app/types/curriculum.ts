@@ -83,6 +83,17 @@ export interface ChallengeItem {
   prerequisiteGrade: string;
 }
 
+// Mastery is reported per skill (items correct out of items asked), never as a
+// single intelligence score: a short quiz cannot measure intelligence.
+export interface SkillMastery {
+  skillId: string;
+  skill_en: string;
+  skill_hi: string;
+  correct: number;
+  total: number;
+  likelyGapClass: number | null;
+}
+
 export interface TimetableDay {
   dayNumber: number;
   dayOfWeek: string;
@@ -101,6 +112,7 @@ export interface TimetableDay {
     estimatedMinutes: number;
     completed: boolean;
     score?: number;
-    cognitiveIQDimension: string;
+    skillFocus: string;
+    skillFocus_hi: string;
   }[];
 }

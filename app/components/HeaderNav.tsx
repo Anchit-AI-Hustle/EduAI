@@ -31,7 +31,7 @@ export default function HeaderNav({
 
   const navItems = [
     { id: "overview", labelEn: "Venture Thesis", labelHi: "रणनीतिक शोध", badge: "Live" },
-    { id: "diagnostic", labelEn: "Cognitive Diagnostic & IQ", labelHi: "बुद्धिमता व क्षमता परीक्षण", badge: "Adaptive" },
+    { id: "diagnostic", labelEn: "Skill Mastery Diagnostic", labelHi: "कौशल दक्षता निदान", badge: "Adaptive" },
     { id: "timetable", labelEn: "Day-Level Calendar", labelHi: "दैनिक समय-सारणी", badge: "Dynamic" },
     { id: "lesson-loop", labelEn: "Daily Lesson Loop", labelHi: "दैनिक अभ्यास चक्र", badge: "Interactive" },
     { id: "mock-engine", labelEn: "Mock Exam Engine", labelHi: "बोर्ड व प्रवेश परीक्षा", badge: "CBSE/JEE" },

@@ -48,8 +48,8 @@ export default function DailyLessonLoop({ lang }: DailyLessonLoopProps) {
         </h2>
         <p style={{ color: "var(--text-secondary)", fontSize: "0.88rem" }}>
           {isHi
-            ? "प्रत्येक दिन का पाठ्यचक्र संज्ञानात्मक वार्म-अप से शुरू होता है, प्राथमिक स्रोत से सत्यापित संकल्पना सिखाता है, और छात्र के आईक्यू के अनुसार अनुकूलित असाइनमेंट हल करवाता है।"
-            : "Every daily session activates cognitive agility first, presents primary-source verified concepts, and challenges the student with adaptive problem-solving assignments."}
+            ? "प्रत्येक दिन का पाठ्यचक्र एक छोटे पैटर्न वार्म-अप से शुरू होता है, प्राथमिक स्रोत से सत्यापित संकल्पना सिखाता है, और उन कौशलों पर असाइनमेंट देता है जिनमें छात्र की दक्षता अभी अधूरी है।"
+            : "Every daily session starts with a short pattern warm-up, presents primary-source verified concepts, and sets assignments on the skills the student has not yet mastered."}
         </p>
       </div>
 
@@ -94,8 +94,8 @@ export default function DailyLessonLoop({ lang }: DailyLessonLoopProps) {
         {currentStep === 1 && (
           <div>
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "0.75rem" }}>
-              <span className="badge badge-indigo">{isHi ? "त्वरित तर्क वार्म-अप (2 मिनट)" : "Fluid Logic Warm-Up (2 mins)"}</span>
-              <span style={{ fontSize: "0.8rem", color: "var(--accent-cyan)" }}>IQ Booster #48</span>
+              <span className="badge badge-indigo">{isHi ? "पैटर्न वार्म-अप (2 मिनट)" : "Pattern Warm-Up (2 mins)"}</span>
+              <span style={{ fontSize: "0.8rem", color: "var(--accent-cyan)" }}>{isHi ? "पैटर्न अभ्यास #48" : "Pattern Practice #48"}</span>
             </div>
             <h3 style={{ fontSize: "1.15rem", fontWeight: 600, marginBottom: "0.5rem" }}>
               {isHi ? "दृश्य ज्यामितीय आव्यूह पहेली" : "Visual Geometric Pattern Invariance"}
@@ -236,7 +236,7 @@ export default function DailyLessonLoop({ lang }: DailyLessonLoopProps) {
                   {isHi ? "← संकल्पना" : "← Back to Concept"}
                 </button>
                 <button type="submit" className="btn-primary">
-                  {isHi ? "असाइनमेंट सबमिट करें और आईक्यू जांचें ✓" : "Submit Assignment & Verify Mastery ✓"}
+                  {isHi ? "असाइनमेंट सबमिट करें और दक्षता जांचें ✓" : "Submit Assignment & Verify Mastery ✓"}
                 </button>
               </div>
             </form>
