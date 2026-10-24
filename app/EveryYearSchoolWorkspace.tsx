@@ -5,6 +5,8 @@ import Link from "next/link";
 import MiddleSchoolDeepDive from "./components/MiddleSchoolDeepDive";
 import GamificationHub, { Quest, BadgeItem } from "./components/GamificationHub";
 import VentureThesisView from "./components/VentureThesisView";
+import { useLanguage } from "./components/useLanguage";
+import LanguageToggle from "./components/LanguageToggle";
 
 type Localized = { en: string; hi: string };
 
@@ -201,7 +203,7 @@ const UI_TEXT = {
 };
 
 export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula }: Props) {
-  const [lang, setLang] = useState<"en" | "hi">("en");
+  const [lang, setLang] = useLanguage();
   const [ventureBrand, setVentureBrand] = useState<string>(masterIndex.venture.ventureName || "EveryYear");
   const [activeTab, setActiveTab] = useState<
     "planner" | "diagnostic" | "middleStage" | "lesson" | "mocks" | "tracks" | "evolution" | "parent" | "venture" | "gamification"
@@ -422,20 +424,7 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
             >
               <span>Venture Thesis &amp; 6 Q&amp;A</span>
             </Link>
-            <button
-              type="button"
-              className={`control-pill ${lang === "en" ? "active" : ""}`}
-              onClick={() => setLang("en")}
-            >
-              English
-            </button>
-            <button
-              type="button"
-              className={`control-pill ${lang === "hi" ? "active" : ""}`}
-              onClick={() => setLang("hi")}
-            >
-              हिन्दी
-            </button>
+            <LanguageToggle lang={lang} onChange={setLang} />
           </div>
         </div>
 

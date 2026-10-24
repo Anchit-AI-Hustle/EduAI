@@ -7,7 +7,7 @@ const ROOT = process.cwd();
 
 const THESIS_FILES = [
   "docs/00-venture-strategy-and-naming.md",
-  "app/justification/page.tsx",
+  "app/components/EveryYearJustification.tsx",
   "app/components/VentureThesisView.tsx"
 ];
 
