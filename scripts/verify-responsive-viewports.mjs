@@ -75,6 +75,19 @@ async function run() {
         "about 20 lakh",
         "INR 199 or 499 / month"
       ]
+    },
+    {
+      file: "pariksha-saathi.html",
+      name: "Pariksha Saathi (/pariksha-saathi)",
+      headingMatch: "Pariksha Saathi",
+      requiredMarkers: [
+        "Pariksha Saathi",
+        "Independent pitch, not affiliated with Amar Ujala",
+        "~54 lakh",
+        "छात्र अनुभव",
+        "Revenue model",
+        "Why it fits Amar Ujala"
+      ]
     }
   ];
 
