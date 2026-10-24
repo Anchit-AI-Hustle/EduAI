@@ -28,6 +28,9 @@ export default function ParikshaSaathiPage() {
             </p>
           </div>
           <div className="header-controls">
+            <Link href="/pariksha-saathi/justification" className="control-pill" style={{ textDecoration: "none", display: "inline-flex", alignItems: "center", gap: "0.4rem", background: "var(--primary)", color: "#ffffff" }}>
+              Why it works: 6 questions →
+            </Link>
             <Link href="/" className="control-pill" style={{ textDecoration: "none", display: "inline-flex", alignItems: "center", gap: "0.4rem" }}>
               ← EveryYear prototype
             </Link>

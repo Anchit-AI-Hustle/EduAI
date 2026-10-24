@@ -86,7 +86,23 @@ async function run() {
         "~54 lakh",
         "छात्र अनुभव",
         "Revenue model",
-        "Why it fits Amar Ujala"
+        "Why it fits Amar Ujala",
+        "Why it works: 6 questions"
+      ]
+    },
+    {
+      file: "pariksha-saathi/justification.html",
+      name: "Pariksha Saathi Justification (/pariksha-saathi/justification)",
+      headingMatch: "Why It Is Worth a Pilot",
+      requiredMarkers: [
+        "Independent pitch, not affiliated with Amar Ujala",
+        "Who will use it?",
+        "What do they use currently?",
+        "How many users face this problem?",
+        "Why will it be better?",
+        "Will they pay?",
+        "What is the real problem not solved right now?",
+        "What Would Prove It Wrong"
       ]
     }
   ];
