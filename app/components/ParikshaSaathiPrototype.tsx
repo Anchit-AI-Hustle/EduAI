@@ -57,7 +57,7 @@ const QUESTIONS: Question[] = [
     text: "sin 30° × cos 60° का मान क्या है?",
     options: ["1/4", "1/2", "√3/4", "1"],
     answer: 0,
-    gap: "कक्षा 10: मानक कोणों के मान, कक्षा 7: भिन्नों का गुणा"
+    gap: "कक्षा 10: मानक कोणों (30°, 45°, 60°) के मान"
   }
 ];
 
@@ -280,7 +280,7 @@ export default function ParikshaSaathiPrototype() {
                 <div style={{ color: "var(--text-secondary)", fontSize: "0.9rem" }}>
                   {score === QUESTIONS.length
                     ? "शानदार! अगले हफ़्ते कठिन स्तर का टेस्ट आपका इंतज़ार करेगा।"
-                    : "अंक से ज़्यादा ज़रूरी है: कौन सी पिछली कक्षा की कमी इन गलतियों की जड़ है।"}
+                    : "अंक से ज़्यादा ज़रूरी है: इन गलतियों के पीछे किन पिछली कक्षाओं के कौशल हो सकते हैं।"}
                 </div>
               </div>
 
@@ -290,7 +290,7 @@ export default function ParikshaSaathiPrototype() {
                     <tr style={{ background: "var(--surface-elevated)" }}>
                       <th style={{ padding: "0.7rem" }}>अध्याय</th>
                       <th style={{ padding: "0.7rem" }}>परिणाम</th>
-                      <th style={{ padding: "0.7rem" }}>कमी की जड़ (पिछली कक्षा)</th>
+                      <th style={{ padding: "0.7rem" }}>संभावित कारण: यह कौशल दोहराएँ</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -307,8 +307,8 @@ export default function ParikshaSaathiPrototype() {
                               </span>
                             )}
                           </td>
-                          <td data-label="कमी की जड़" style={{ padding: "0.7rem", color: "var(--text-secondary)" }}>
-                            {ok ? "कोई कमी नहीं" : q.gap}
+                          <td data-label="संभावित कारण" style={{ padding: "0.7rem", color: "var(--text-secondary)" }}>
+                            {ok ? "अभी दोहराने की ज़रूरत नहीं" : q.gap}
                           </td>
                         </tr>
                       );
@@ -316,6 +316,11 @@ export default function ParikshaSaathiPrototype() {
                   </tbody>
                 </table>
               </div>
+
+              <p style={{ fontSize: "0.85rem", color: "var(--text-secondary)", margin: 0, lineHeight: 1.6 }}>
+                एक प्रश्न से पक्का निदान नहीं होता: गलती जल्दबाज़ी या गणना की भी हो सकती है। जो कारण अगले हफ़्तों के टेस्ट में भी
+                दोहराया जाए, वही असली कमी मानी जाती है। (One question cannot confirm a gap; a cause counts only when it repeats across weekly tests.)
+              </p>
 
               {missed.length > 0 && (
                 <div style={PANEL}>
