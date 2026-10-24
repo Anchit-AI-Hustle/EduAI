@@ -1048,6 +1048,11 @@ tr:hover td {
   color: #7c3a06;
   border: 1px solid #f3d7a6;
 }
+.ak-alert-neutral {
+  background: var(--ak-muted-surface);
+  color: var(--ak-ink-2);
+  border: 1px solid var(--ak-line);
+}
 .ak-check {
   display: flex;
   gap: 0.55rem;

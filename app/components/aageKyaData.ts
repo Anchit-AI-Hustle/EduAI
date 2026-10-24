@@ -1,13 +1,13 @@
 // Data for the Aage Kya concept prototype. Course, exam and scholarship facts
 // are public and linked to official portals; rules change every year, so the
 // UI always says "confirm on the official site". Colleges and enquiries are
-// fictional demo data. The fake-university list is copied from the UGC page
-// "List of Fake Universities (as of February 2026)".
+// fictional demo data. The fake-university list is the UGC page "List of Fake
+// Universities" as of February 2026 (32 entries).
 
 export type Stream = "pcm" | "pcb" | "commerce" | "arts";
 export type Interest = "tech" | "health" | "teach" | "business" | "govt" | "unsure";
 export type Budget = "low" | "mid" | "high";
-export type Income = "upto2" | "upto45" | "above45" | "skip";
+export type Income = "upto2" | "upto25" | "upto45" | "above45" | "skip";
 export type Reach = "district" | "state";
 
 export interface Bi {
@@ -31,6 +31,9 @@ export interface Exam {
   by: Bi;
   url: string;
   window: Bi;
+  // Status on UP Board result day (late April): can it still be used this year?
+  open: boolean;
+  thisYear: Bi;
 }
 
 export const STREAMS: { id: Stream; label: Bi }[] = [
@@ -57,7 +60,8 @@ export const BUDGETS: { id: Budget; label: Bi; max: number }[] = [
 
 export const INCOMES: { id: Income; label: Bi }[] = [
   { id: "upto2", label: { en: "Up to ₹2 lakh", hi: "₹2 लाख तक" } },
-  { id: "upto45", label: { en: "₹2 lakh to ₹4.5 lakh", hi: "₹2 लाख से ₹4.5 लाख" } },
+  { id: "upto25", label: { en: "₹2 lakh to ₹2.5 lakh", hi: "₹2 लाख से ₹2.5 लाख" } },
+  { id: "upto45", label: { en: "₹2.5 lakh to ₹4.5 lakh", hi: "₹2.5 लाख से ₹4.5 लाख" } },
   { id: "above45", label: { en: "More than ₹4.5 lakh", hi: "₹4.5 लाख से अधिक" } },
   { id: "skip", label: { en: "Prefer not to say", hi: "नहीं बताना चाहते" } }
 ];
@@ -219,8 +223,8 @@ export const COURSES: Course[] = [
     interests: ["govt", "business"],
     name: { en: "B.A. LL.B. (5-year law)", hi: "बी.ए. एलएल.बी. (5 वर्षीय कानून)" },
     what: {
-      en: "Law degree after Class 12. National law universities admit through CLAT.",
-      hi: "कक्षा 12 के बाद कानून की डिग्री। राष्ट्रीय विधि विश्वविद्यालय CLAT से प्रवेश देते हैं।"
+      en: "Law degree after Class 12. National law universities admit through CLAT; many state colleges admit on their own test or merit.",
+      hi: "कक्षा 12 के बाद कानून की डिग्री। राष्ट्रीय विधि विश्वविद्यालय CLAT से प्रवेश देते हैं; कई राज्य कॉलेज अपनी परीक्षा या मेरिट से।"
     },
     years: { en: "5 years", hi: "5 वर्ष" },
     exams: ["clat"]
@@ -231,10 +235,10 @@ export const COURSES: Course[] = [
     interests: ["govt"],
     name: { en: "NDA (Army, Navy, Air Force)", hi: "एनडीए (थल सेना, नौसेना, वायु सेना)" },
     what: {
-      en: "Officer training after Class 12. The Army wing is open to all streams; Navy and Air Force need Physics and Maths.",
-      hi: "कक्षा 12 के बाद अधिकारी प्रशिक्षण। थल सेना सभी संकायों के लिए खुली है; नौसेना और वायु सेना के लिए भौतिकी और गणित ज़रूरी हैं।"
+      en: "Officer training after Class 12. The Army wing is open to all streams; Navy and Air Force need Physics, Chemistry and Maths.",
+      hi: "कक्षा 12 के बाद अधिकारी प्रशिक्षण। थल सेना सभी संकायों के लिए खुली है; नौसेना और वायु सेना के लिए भौतिकी, रसायन और गणित ज़रूरी हैं।"
     },
-    years: { en: "3 years training", hi: "3 वर्ष प्रशिक्षण" },
+    years: { en: "3 years of training", hi: "3 वर्ष का प्रशिक्षण" },
     exams: ["nda"]
   }
 ];
@@ -245,9 +249,11 @@ export const EXAMS: Record<string, Exam> = {
     name: { en: "CUET (UG)", hi: "CUET (UG)" },
     by: { en: "National Testing Agency", hi: "राष्ट्रीय परीक्षा एजेंसी (NTA)" },
     url: "https://cuet.nta.nic.in/",
-    window: {
-      en: "Usually registration in February to March, exam in May to June.",
-      hi: "आमतौर पर पंजीकरण फरवरी से मार्च, परीक्षा मई से जून।"
+    window: { en: "Usually registration in February to March, exam in May to June.", hi: "आमतौर पर पंजीकरण फरवरी से मार्च, परीक्षा मई से जून।" },
+    open: false,
+    thisYear: {
+      en: "If you registered, the exam is still ahead. If not, state universities and many colleges admit on Class 12 merit: apply to them now.",
+      hi: "अगर पंजीकरण किया है तो परीक्षा अभी बाकी है। नहीं किया तो राज्य विश्वविद्यालय और कई कॉलेज कक्षा 12 की मेरिट पर प्रवेश देते हैं: अभी वहाँ आवेदन करें।"
     }
   },
   jee: {
@@ -255,9 +261,11 @@ export const EXAMS: Record<string, Exam> = {
     name: { en: "JEE Main", hi: "JEE Main" },
     by: { en: "National Testing Agency", hi: "राष्ट्रीय परीक्षा एजेंसी (NTA)" },
     url: "https://jeemain.nta.nic.in/",
-    window: {
-      en: "Two sessions, usually January and April. If you missed it, ask about state counselling or plan for next year.",
-      hi: "दो सत्र, आमतौर पर जनवरी और अप्रैल। छूट गया हो तो राज्य काउंसलिंग के बारे में पूछें या अगले वर्ष की तैयारी करें।"
+    window: { en: "Two sessions, usually January and April.", hi: "दो सत्र, आमतौर पर जनवरी और अप्रैल।" },
+    open: false,
+    thisYear: {
+      en: "Closed for this year. If you have a JEE Main score, watch the UP state counselling (UPTAC) notice; otherwise plan for next January.",
+      hi: "इस वर्ष के लिए बंद। JEE Main स्कोर है तो यूपी राज्य काउंसलिंग (UPTAC) की सूचना देखें; नहीं तो अगली जनवरी की तैयारी करें।"
     }
   },
   neet: {
@@ -265,9 +273,11 @@ export const EXAMS: Record<string, Exam> = {
     name: { en: "NEET (UG)", hi: "NEET (UG)" },
     by: { en: "National Testing Agency", hi: "राष्ट्रीय परीक्षा एजेंसी (NTA)" },
     url: "https://neet.nta.nic.in/",
-    window: {
-      en: "Usually one exam in early May, registration in February to March.",
-      hi: "आमतौर पर मई की शुरुआत में एक परीक्षा, पंजीकरण फरवरी से मार्च।"
+    window: { en: "Usually one exam in early May, registration in February to March.", hi: "आमतौर पर मई की शुरुआत में एक परीक्षा, पंजीकरण फरवरी से मार्च।" },
+    open: false,
+    thisYear: {
+      en: "Registration has usually closed by result day. If you registered, the exam is days away; if not, plan for next year.",
+      hi: "रिजल्ट के दिन तक पंजीकरण आमतौर पर बंद हो चुका होता है। पंजीकरण किया है तो परीक्षा कुछ ही दिन दूर है; नहीं तो अगले वर्ष की योजना बनाएँ।"
     }
   },
   clat: {
@@ -275,9 +285,11 @@ export const EXAMS: Record<string, Exam> = {
     name: { en: "CLAT", hi: "CLAT" },
     by: { en: "Consortium of National Law Universities", hi: "राष्ट्रीय विधि विश्वविद्यालयों का संघ" },
     url: "https://consortiumofnlus.ac.in/",
-    window: {
-      en: "Usually held in December for admission the following year.",
-      hi: "आमतौर पर दिसंबर में, अगले वर्ष के प्रवेश के लिए।"
+    window: { en: "Usually held in December for admission the following year.", hi: "आमतौर पर दिसंबर में, अगले वर्ष के प्रवेश के लिए।" },
+    open: false,
+    thisYear: {
+      en: "Closed for this year. State law colleges may still admit on their own test or merit.",
+      hi: "इस वर्ष के लिए बंद। राज्य के लॉ कॉलेज अपनी परीक्षा या मेरिट से अभी भी प्रवेश दे सकते हैं।"
     }
   },
   ncet: {
@@ -285,9 +297,11 @@ export const EXAMS: Record<string, Exam> = {
     name: { en: "NCET (for ITEP)", hi: "NCET (ITEP के लिए)" },
     by: { en: "National Testing Agency", hi: "राष्ट्रीय परीक्षा एजेंसी (NTA)" },
     url: "https://nta.ac.in/",
-    window: {
-      en: "Dates vary each year: check the NTA notice.",
-      hi: "तिथियाँ हर वर्ष बदलती हैं: NTA की सूचना देखें।"
+    window: { en: "Dates vary each year: check the NTA notice.", hi: "तिथियाँ हर वर्ष बदलती हैं: NTA की सूचना देखें।" },
+    open: false,
+    thisYear: {
+      en: "Registration has often closed by result day: check the NTA notice today.",
+      hi: "रिजल्ट के दिन तक पंजीकरण अक्सर बंद हो चुका होता है: आज ही NTA की सूचना देखें।"
     }
   },
   nda: {
@@ -295,9 +309,11 @@ export const EXAMS: Record<string, Exam> = {
     name: { en: "NDA and NA exam", hi: "एनडीए और एनए परीक्षा" },
     by: { en: "UPSC", hi: "संघ लोक सेवा आयोग (UPSC)" },
     url: "https://upsc.gov.in/",
-    window: {
-      en: "Twice a year, usually April and September.",
-      hi: "वर्ष में दो बार, आमतौर पर अप्रैल और सितंबर।"
+    window: { en: "Twice a year, usually April and September.", hi: "वर्ष में दो बार, आमतौर पर अप्रैल और सितंबर।" },
+    open: true,
+    thisYear: {
+      en: "Still possible: the second exam of the year (NDA II) usually opens for applications in May to June.",
+      hi: "अभी संभव: वर्ष की दूसरी परीक्षा (NDA II) के आवेदन आमतौर पर मई से जून में खुलते हैं।"
     }
   },
   ca: {
@@ -305,9 +321,11 @@ export const EXAMS: Record<string, Exam> = {
     name: { en: "CA Foundation", hi: "CA फाउंडेशन" },
     by: { en: "ICAI", hi: "भारतीय चार्टर्ड अकाउंटेंट्स संस्थान (ICAI)" },
     url: "https://www.icai.org/",
-    window: {
-      en: "Held more than once a year; register with ICAI first.",
-      hi: "वर्ष में एक से अधिक बार; पहले ICAI में पंजीकरण करें।"
+    window: { en: "Held more than once a year; register with ICAI first.", hi: "वर्ष में एक से अधिक बार; पहले ICAI में पंजीकरण करें।" },
+    open: true,
+    thisYear: {
+      en: "Still possible: register with ICAI now for a later attempt.",
+      hi: "अभी संभव: बाद के प्रयास के लिए अभी ICAI में पंजीकरण करें।"
     }
   }
 };
@@ -317,7 +335,7 @@ export interface Scholarship {
   name: Bi;
   rule: Bi;
   url: string;
-  fits: (income: Income) => boolean;
+  fits: (income: Income, marks: number) => boolean;
 }
 
 export const SCHOLARSHIPS: Scholarship[] = [
@@ -325,11 +343,11 @@ export const SCHOLARSHIPS: Scholarship[] = [
     id: "up_postmatric",
     name: { en: "UP post-matric scholarship", hi: "यूपी पोस्ट-मैट्रिक छात्रवृत्ति" },
     rule: {
-      en: "For UP residents. Family income below ₹2 lakh a year (General, OBC, minority) or ₹2.5 lakh (SC, ST).",
+      en: "For UP residents. Family income below ₹2 lakh a year (General, OBC, minority) or below ₹2.5 lakh (SC, ST).",
       hi: "यूपी के निवासियों के लिए। परिवार की सालाना आय ₹2 लाख से कम (सामान्य, ओबीसी, अल्पसंख्यक) या ₹2.5 लाख से कम (एससी, एसटी)।"
     },
     url: "https://scholarship.up.gov.in/",
-    fits: (income) => income === "upto2" || income === "upto45" || income === "skip"
+    fits: (income) => income === "upto2" || income === "upto25" || income === "skip"
   },
   {
     id: "csss",
@@ -338,11 +356,13 @@ export const SCHOLARSHIPS: Scholarship[] = [
       hi: "केंद्रीय क्षेत्र छात्रवृत्ति योजना (राष्ट्रीय छात्रवृत्ति पोर्टल)"
     },
     rule: {
-      en: "Class 12 marks above the 80th percentile of your board's pass list in your stream, family income up to ₹4.5 lakh, regular course. Published guides list ₹10,000 a year at graduation.",
-      hi: "कक्षा 12 के अंक आपके बोर्ड की अपने संकाय की उत्तीर्ण सूची के 80वें पर्सेंटाइल से ऊपर, परिवार की आय ₹4.5 लाख तक, नियमित कोर्स। प्रकाशित गाइड के अनुसार स्नातक में ₹10,000 सालाना।"
+      en: "For students whose Class 12 marks are above the 80th percentile of their board's pass list in their stream, with family income up to ₹4.5 lakh, in a regular course. Published guides list ₹10,000 to ₹12,000 a year at graduation level, depending on the course.",
+      hi: "उन छात्रों के लिए जिनके कक्षा 12 के अंक बोर्ड में अपने संकाय के उत्तीर्ण छात्रों के 80वें पर्सेंटाइल से ऊपर हों, परिवार की आय ₹4.5 लाख तक हो, और कोर्स नियमित हो। प्रकाशित गाइड के अनुसार स्नातक स्तर पर कोर्स के हिसाब से ₹10,000 से ₹12,000 सालाना।"
     },
     url: "https://scholarships.gov.in/",
-    fits: (income) => income !== "above45"
+    // The 80th-percentile cut-off is published per board and stream each year;
+    // 75% is a conservative screen so the hint is not shown to clear misses.
+    fits: (income, marks) => income !== "above45" && marks >= 75
   }
 ];
 
@@ -354,10 +374,11 @@ export interface College {
   fee: number;
   km: number;
   recognition: Bi;
-  sponsored?: boolean;
+  paying: boolean;
 }
 
 // Fictional colleges, the same set placed in whichever district is chosen.
+// "paying" marks colleges that pay per enquiry; it never changes the order.
 export const DEMO_COLLEGES: College[] = [
   {
     id: "c1",
@@ -366,7 +387,8 @@ export const DEMO_COLLEGES: College[] = [
     courses: ["ba", "bcom", "bsc_pcm", "bsc_bio"],
     fee: 9000,
     km: 4,
-    recognition: { en: "Affiliated to the state university", hi: "राज्य विश्वविद्यालय से संबद्ध" }
+    recognition: { en: "Affiliated to the state university", hi: "राज्य विश्वविद्यालय से संबद्ध" },
+    paying: false
   },
   {
     id: "c2",
@@ -376,7 +398,7 @@ export const DEMO_COLLEGES: College[] = [
     fee: 92000,
     km: 11,
     recognition: { en: "AICTE approved, affiliated to the state technical university", hi: "AICTE से अनुमोदित, राज्य तकनीकी विश्वविद्यालय से संबद्ध" },
-    sponsored: true
+    paying: true
   },
   {
     id: "c3",
@@ -385,7 +407,8 @@ export const DEMO_COLLEGES: College[] = [
     courses: ["ba", "bcom", "bba", "bca", "itep"],
     fee: 24000,
     km: 7,
-    recognition: { en: "Affiliated to the state university; ITEP approved by NCTE", hi: "राज्य विश्वविद्यालय से संबद्ध; ITEP को NCTE की मंज़ूरी" }
+    recognition: { en: "Affiliated to the state university; ITEP recognised by NCTE", hi: "राज्य विश्वविद्यालय से संबद्ध; ITEP को NCTE से मान्यता प्राप्त" },
+    paying: true
   },
   {
     id: "c4",
@@ -394,7 +417,8 @@ export const DEMO_COLLEGES: College[] = [
     courses: ["bpharm", "bsc_bio"],
     fee: 140000,
     km: 18,
-    recognition: { en: "Pharmacy Council of India approved", hi: "फार्मेसी काउंसिल ऑफ इंडिया से अनुमोदित" }
+    recognition: { en: "Pharmacy Council of India approved", hi: "फार्मेसी काउंसिल ऑफ इंडिया से अनुमोदित" },
+    paying: true
   },
   {
     id: "c5",
@@ -403,7 +427,8 @@ export const DEMO_COLLEGES: College[] = [
     courses: ["law", "ba", "bba"],
     fee: 55000,
     km: 9,
-    recognition: { en: "Bar Council of India approved", hi: "बार काउंसिल ऑफ इंडिया से अनुमोदित" }
+    recognition: { en: "Bar Council of India approved", hi: "बार काउंसिल ऑफ इंडिया से अनुमोदित" },
+    paying: false
   },
   {
     id: "c6",
@@ -412,37 +437,88 @@ export const DEMO_COLLEGES: College[] = [
     courses: ["ba", "bsc_pcm", "bsc_bio", "bcom"],
     fee: 4500,
     km: 26,
-    recognition: { en: "Affiliated to the state university", hi: "राज्य विश्वविद्यालय से संबद्ध" }
+    recognition: { en: "Affiliated to the state university", hi: "राज्य विश्वविद्यालय से संबद्ध" },
+    paying: false
   }
 ];
 
-// UGC: List of Fake Universities, as of February 2026, Uttar Pradesh entries.
-export const UGC_FAKE_UP: { en: string; hi: string; keys: string[] }[] = [
-  {
-    en: "Gandhi Hindi Vidyapith, Prayag, Allahabad",
-    hi: "गांधी हिंदी विद्यापीठ, प्रयाग, इलाहाबाद",
-    keys: ["gandhi hindi vidyapith", "gandhi hindi vidyapeeth", "गांधी हिंदी विद्यापीठ", "गाँधी हिंदी विद्यापीठ"]
-  },
-  {
-    en: "Netaji Subhash Chandra Bose University (Open University), Aligarh",
-    hi: "नेताजी सुभाष चंद्र बोस विश्वविद्यालय (मुक्त विश्वविद्यालय), अलीगढ़",
-    keys: ["netaji subhash chandra bose university", "netaji subhash chandra bose open university", "नेताजी सुभाष चंद्र बोस विश्वविद्यालय"]
-  },
-  {
-    en: "Bhartiya Shiksha Parishad, Lucknow",
-    hi: "भारतीय शिक्षा परिषद, लखनऊ",
-    keys: ["bhartiya shiksha parishad", "bharatiya shiksha parishad", "भारतीय शिक्षा परिषद"]
-  },
-  {
-    en: "Mahamaya Technical University, Noida",
-    hi: "महामाया टेक्निकल यूनिवर्सिटी, नोएडा",
-    keys: ["mahamaya technical university", "महामाया टेक्निकल यूनिवर्सिटी", "महामाया तकनीकी विश्वविद्यालय"]
-  }
+// UGC "List of Fake Universities" as of February 2026: all 32 entries.
+// Optional Hindi spellings are added for the UP entries.
+export const UGC_FAKE: { name: string; place: string; state: string; hi?: string }[] = [
+  { name: "Christ New Testament Deemed University", place: "Guntur", state: "Andhra Pradesh" },
+  { name: "Bible Open University of India", place: "Visakhapatnam", state: "Andhra Pradesh" },
+  { name: "Indian Institute of Alternative Medicine", place: "Itanagar", state: "Arunachal Pradesh" },
+  { name: "Mountain Institute of Management and Technology", place: "New Delhi", state: "Delhi" },
+  { name: "World Peace of United Nations University", place: "New Delhi", state: "Delhi" },
+  { name: "Institute of Management and Engineering", place: "Delhi", state: "Delhi" },
+  { name: "National Institute of Management Solution", place: "Delhi", state: "Delhi" },
+  { name: "All India Institute of Public and Physical Health Sciences", place: "Delhi", state: "Delhi" },
+  { name: "Commercial University", place: "Delhi", state: "Delhi" },
+  { name: "United Nations University", place: "Delhi", state: "Delhi" },
+  { name: "Vocational University", place: "Delhi", state: "Delhi" },
+  { name: "ADR-Centric Juridical University", place: "New Delhi", state: "Delhi" },
+  { name: "Indian Institute of Science and Engineering", place: "New Delhi", state: "Delhi" },
+  { name: "Viswakarma Open University for Self-Employment", place: "Delhi", state: "Delhi" },
+  { name: "Adhyatmik Vishwavidyalaya", place: "Delhi", state: "Delhi" },
+  { name: "Magic and Art University", place: "Faridabad", state: "Haryana" },
+  { name: "Daksha University", place: "Ranchi", state: "Jharkhand" },
+  { name: "Global Human Peace University", place: "Bengaluru", state: "Karnataka" },
+  { name: "Sarva Bharatiya Shiksha Peeth", place: "Tumkur", state: "Karnataka" },
+  { name: "International Islamic University of Prophetic Medicine", place: "Kozhikode", state: "Kerala" },
+  { name: "St. John's University", place: "Kishanattam", state: "Kerala" },
+  { name: "Raja Arabic University", place: "Nagpur", state: "Maharashtra" },
+  { name: "National Backward Krushi Vidyapeeth", place: "Solapur", state: "Maharashtra" },
+  { name: "Usha Latchumanan College of Education", place: "Thirukkanur", state: "Puducherry" },
+  { name: "Sree Bodhi Academy of Higher Education", place: "Puducherry", state: "Puducherry" },
+  { name: "Rajeev Gandhi Institute of Technology and Management", place: "Bhiwadi", state: "Rajasthan" },
+  { name: "Gandhi Hindi Vidyapith", place: "Prayagraj", state: "Uttar Pradesh", hi: "गांधी हिंदी विद्यापीठ" },
+  { name: "Netaji Subhash Chandra Bose University (Open University)", place: "Aligarh", state: "Uttar Pradesh", hi: "नेताजी सुभाष चंद्र बोस विश्वविद्यालय" },
+  { name: "Bhartiya Shiksha Parishad", place: "Lucknow", state: "Uttar Pradesh", hi: "भारतीय शिक्षा परिषद" },
+  { name: "Mahamaya Technical University", place: "Noida", state: "Uttar Pradesh", hi: "महामाया टेक्निकल यूनिवर्सिटी" },
+  { name: "Indian Institute of Alternative Medicine", place: "Kolkata", state: "West Bengal" },
+  { name: "Institute of Alternative Medicine and Research", place: "Kolkata", state: "West Bengal" }
 ];
+
+const GENERIC = new Set([
+  "university", "universities", "vishwavidyalaya", "college", "institute", "institution", "open", "national", "india", "indian",
+  "of", "and", "the", "for", "deemed", "academy", "education", "higher", "technical", "technology", "management", "school",
+  "विश्वविद्यालय", "यूनिवर्सिटी", "कॉलेज", "महाविद्यालय", "संस्थान", "भारतीय", "राष्ट्रीय"
+]);
+
+export const normaliseName = (s: string) =>
+  s
+    .toLowerCase()
+    .replace(/&/g, " and ")
+    .replace(/[^\p{L}\p{M}\p{N}\s]/gu, " ")
+    .replace(/\bvidyapeeth\b/g, "vidyapith")
+    .replace(/\bbharatiya\b/g, "bhartiya")
+    .replace(/\s+/g, " ")
+    .trim();
+
+const distinctive = (s: string) => normaliseName(s).split(" ").filter((w) => w.length > 1 && !GENERIC.has(w));
+
+// A match needs the whole listed name inside the query, or a query whose
+// distinctive words (at least two, ignoring words like "university") all
+// appear in one listed name. Typing "university" alone never matches.
+export function findFakeUniversity(query: string) {
+  const q = normaliseName(query);
+  const qWords = distinctive(query);
+  if (q.length < 4) return null;
+  for (const u of UGC_FAKE) {
+    for (const nm of [u.name, u.hi].filter((x): x is string => Boolean(x))) {
+      const n = normaliseName(nm);
+      if (q.includes(n)) return u;
+      const nWords = distinctive(nm);
+      if (qWords.length >= 2 && qWords.every((w) => nWords.includes(w))) return u;
+    }
+  }
+  return null;
+}
 
 export const SOURCES = {
   upBoard2025: "https://news.careers360.com/up-board-class-12th-result-2025-out-upmsp-edu-in-upresults-nic-in-81-15-percent-qualify-how-to-check-digilocker-scorecard/amp",
   upBoardIans: "https://ianslive.in/up-board-results-declared-9011-pc-pass-in-high-school-8115-pc-in-intermediate--20250425132203",
+  upBoardReg: "https://results.amarujala.com/exam-alerts/up-board-exam-2025-27-4-lakh-candidates-registered-for-high-school-26-98-lakh-for-intermediate",
   aishe: "https://news.careers360.com/up-has-highest-number-of-colleges-in-country-followed-maharashtra-karnataka-aishe-report",
   tam2025: "https://www.storyboard18.com/advertising/education-sector-leads-print-advertising-with-17-percent-share-in-jan-sep-2025-tam-85352.htm",
   auno: "https://amarujalaolympiad.com/",
