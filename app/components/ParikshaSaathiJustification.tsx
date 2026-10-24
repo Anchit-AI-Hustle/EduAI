@@ -298,6 +298,9 @@ export default function ParikshaSaathiJustification() {
             <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", flexWrap: "wrap", marginBottom: "0.5rem" }}>
               <span className="brand-badge">{t.badges[0]}</span>
               <span className="badge badge-warn">{t.badges[1]}</span>
+              <Link href="/aage-kya" className="badge badge-green" style={{ textDecoration: "none" }}>
+                {lang === "en" ? "Newer concept: Aage Kya →" : "नया कॉन्सेप्ट: आगे क्या →"}
+              </Link>
             </div>
             <h1 style={{ margin: "0.2rem 0 0.4rem 0", fontSize: "1.85rem", fontWeight: 800 }}>{t.title}</h1>
             <p style={{ margin: 0, color: "var(--text-secondary)", fontSize: "0.95rem", maxWidth: "920px", lineHeight: 1.55 }}>{t.subtitle}</p>
