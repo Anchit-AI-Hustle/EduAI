@@ -2577,7 +2577,7 @@ DIAGNOSTIC_AND_MOCK_BANK.mockBlueprints[5].sampleItems[0].explanation = {
 
 writeJson("content/assessments/diagnostic-and-mock-bank.json", DIAGNOSTIC_AND_MOCK_BANK);
 
-// Generate Synthetic Learner Profiles (validated against schemas/learner-profile.schema.json)
+// Generate Synthetic Learner Profiles (validated against schemas/content-learner-profile.schema.json)
 const SYNTHETIC_LEARNERS = [
   {
     schemaVersion: "1.0.0",

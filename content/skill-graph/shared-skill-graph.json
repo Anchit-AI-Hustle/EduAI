@@ -1534,7 +1534,11 @@
         }
       ],
       "trackBranches": [
-        "jee-main"
+        {
+          "trackId": "jee",
+          "role": "foundation",
+          "officialExamRef": "JEE Main"
+        }
       ],
       "status": "active"
     },
@@ -1570,7 +1574,11 @@
         }
       ],
       "trackBranches": [
-        "jee-main"
+        {
+          "trackId": "jee",
+          "role": "foundation",
+          "officialExamRef": "JEE Main"
+        }
       ],
       "status": "active"
     },
@@ -1606,7 +1614,11 @@
         }
       ],
       "trackBranches": [
-        "neet-ug"
+        {
+          "trackId": "neet",
+          "role": "foundation",
+          "officialExamRef": "NEET UG"
+        }
       ],
       "status": "active"
     },
@@ -1642,7 +1654,11 @@
         }
       ],
       "trackBranches": [
-        "neet-ug"
+        {
+          "trackId": "neet",
+          "role": "foundation",
+          "officialExamRef": "NEET UG"
+        }
       ],
       "status": "active"
     },
@@ -1679,7 +1695,11 @@
         }
       ],
       "trackBranches": [
-        "jee-main"
+        {
+          "trackId": "jee",
+          "role": "foundation",
+          "officialExamRef": "JEE Main"
+        }
       ],
       "status": "active"
     },
@@ -1716,7 +1736,11 @@
         }
       ],
       "trackBranches": [
-        "jee-main"
+        {
+          "trackId": "jee",
+          "role": "foundation",
+          "officialExamRef": "JEE Main"
+        }
       ],
       "status": "active"
     },
@@ -1845,7 +1869,11 @@
         }
       ],
       "trackBranches": [
-        "jee-main"
+        {
+          "trackId": "jee",
+          "role": "foundation",
+          "officialExamRef": "JEE Main"
+        }
       ],
       "status": "active"
     },
@@ -1915,7 +1943,11 @@
         }
       ],
       "trackBranches": [
-        "jee-main"
+        {
+          "trackId": "jee",
+          "role": "foundation",
+          "officialExamRef": "JEE Main"
+        }
       ],
       "status": "active"
     },
@@ -1951,7 +1983,11 @@
         }
       ],
       "trackBranches": [
-        "jee-main"
+        {
+          "trackId": "jee",
+          "role": "foundation",
+          "officialExamRef": "JEE Main"
+        }
       ],
       "status": "active"
     },
@@ -1987,7 +2023,11 @@
         }
       ],
       "trackBranches": [
-        "jee-main"
+        {
+          "trackId": "jee",
+          "role": "foundation",
+          "officialExamRef": "JEE Main"
+        }
       ],
       "status": "active"
     },
@@ -2023,7 +2063,11 @@
         }
       ],
       "trackBranches": [
-        "jee-main"
+        {
+          "trackId": "jee",
+          "role": "foundation",
+          "officialExamRef": "JEE Main"
+        }
       ],
       "status": "active"
     },
@@ -2093,7 +2137,11 @@
         }
       ],
       "trackBranches": [
-        "neet-ug"
+        {
+          "trackId": "neet",
+          "role": "foundation",
+          "officialExamRef": "NEET UG"
+        }
       ],
       "status": "active"
     },
@@ -2129,8 +2177,16 @@
         }
       ],
       "trackBranches": [
-        "jee-main",
-        "neet-ug"
+        {
+          "trackId": "jee",
+          "role": "foundation",
+          "officialExamRef": "JEE Main"
+        },
+        {
+          "trackId": "neet",
+          "role": "foundation",
+          "officialExamRef": "NEET UG"
+        }
       ],
       "status": "active"
     },
@@ -2166,8 +2222,16 @@
         }
       ],
       "trackBranches": [
-        "jee-main",
-        "neet-ug"
+        {
+          "trackId": "jee",
+          "role": "foundation",
+          "officialExamRef": "JEE Main"
+        },
+        {
+          "trackId": "neet",
+          "role": "foundation",
+          "officialExamRef": "NEET UG"
+        }
       ],
       "status": "active"
     },
@@ -2203,8 +2267,16 @@
         }
       ],
       "trackBranches": [
-        "jee-main",
-        "neet-ug"
+        {
+          "trackId": "jee",
+          "role": "foundation",
+          "officialExamRef": "JEE Main"
+        },
+        {
+          "trackId": "neet",
+          "role": "foundation",
+          "officialExamRef": "NEET UG"
+        }
       ],
       "status": "active"
     },
@@ -2240,8 +2312,16 @@
         }
       ],
       "trackBranches": [
-        "jee-main",
-        "neet-ug"
+        {
+          "trackId": "jee",
+          "role": "foundation",
+          "officialExamRef": "JEE Main"
+        },
+        {
+          "trackId": "neet",
+          "role": "foundation",
+          "officialExamRef": "NEET UG"
+        }
       ],
       "status": "active"
     },
@@ -2311,8 +2391,16 @@
         }
       ],
       "trackBranches": [
-        "jee-main",
-        "neet-ug"
+        {
+          "trackId": "jee",
+          "role": "foundation",
+          "officialExamRef": "JEE Main"
+        },
+        {
+          "trackId": "neet",
+          "role": "foundation",
+          "officialExamRef": "NEET UG"
+        }
       ],
       "status": "active"
     },
@@ -2348,7 +2436,11 @@
         }
       ],
       "trackBranches": [
-        "neet-ug"
+        {
+          "trackId": "neet",
+          "role": "foundation",
+          "officialExamRef": "NEET UG"
+        }
       ],
       "status": "active"
     },
@@ -2452,7 +2544,11 @@
         }
       ],
       "trackBranches": [
-        "jee-main"
+        {
+          "trackId": "jee",
+          "role": "foundation",
+          "officialExamRef": "JEE Main"
+        }
       ],
       "status": "active"
     },
@@ -2488,7 +2584,11 @@
         }
       ],
       "trackBranches": [
-        "jee-main"
+        {
+          "trackId": "jee",
+          "role": "foundation",
+          "officialExamRef": "JEE Main"
+        }
       ],
       "status": "active"
     },
@@ -2524,7 +2624,11 @@
         }
       ],
       "trackBranches": [
-        "neet-ug"
+        {
+          "trackId": "neet",
+          "role": "foundation",
+          "officialExamRef": "NEET UG"
+        }
       ],
       "status": "active"
     },
@@ -2560,8 +2664,16 @@
         }
       ],
       "trackBranches": [
-        "jee-main",
-        "neet-ug"
+        {
+          "trackId": "jee",
+          "role": "foundation",
+          "officialExamRef": "JEE Main"
+        },
+        {
+          "trackId": "neet",
+          "role": "foundation",
+          "officialExamRef": "NEET UG"
+        }
       ],
       "status": "active"
     },
@@ -2597,7 +2709,11 @@
         }
       ],
       "trackBranches": [
-        "jee-main"
+        {
+          "trackId": "jee",
+          "role": "foundation",
+          "officialExamRef": "JEE Main"
+        }
       ],
       "status": "active"
     },
@@ -2633,7 +2749,11 @@
         }
       ],
       "trackBranches": [
-        "neet-ug"
+        {
+          "trackId": "neet",
+          "role": "foundation",
+          "officialExamRef": "NEET UG"
+        }
       ],
       "status": "active"
     },
@@ -2669,8 +2789,16 @@
         }
       ],
       "trackBranches": [
-        "jee-main",
-        "neet-ug"
+        {
+          "trackId": "jee",
+          "role": "foundation",
+          "officialExamRef": "JEE Main"
+        },
+        {
+          "trackId": "neet",
+          "role": "foundation",
+          "officialExamRef": "NEET UG"
+        }
       ],
       "status": "active"
     }

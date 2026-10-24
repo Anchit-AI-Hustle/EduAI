@@ -8,6 +8,11 @@ const root = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..")
 const graphPath = path.join(root, "content/skill-graph/shared-skill-graph.json");
 const graph = JSON.parse(fs.readFileSync(graphPath, "utf8"));
 
+// trackBranches entries use the object shape required by
+// schemas/content-skill-graph.schema.json and the track ids in content/tracks/.
+const JEE_FOUNDATION = { trackId: "jee", role: "foundation", officialExamRef: "JEE Main" };
+const NEET_FOUNDATION = { trackId: "neet", role: "foundation", officialExamRef: "NEET UG" };
+
 const allPhase3Skills = [
   // Class 5 foundational bridges
   {
@@ -61,7 +66,7 @@ const allPhase3Skills = [
     successCriteria: ["Identifies nth term in figurate number sequences"],
     evidenceTypes: ["diagnostic", "assignment"],
     boardAlignments: [{ boardId: "cbse", yearId: "class-06", subject: "Mathematics", sourceId: "SRC-NCERT-NCFSE-2023", alignmentStrength: "direct" }],
-    trackBranches: ["jee-main"],
+    trackBranches: [JEE_FOUNDATION],
     status: "active"
   },
   {
@@ -74,7 +79,7 @@ const allPhase3Skills = [
     successCriteria: ["Solves complementary and supplementary angle relationships"],
     evidenceTypes: ["diagnostic", "practical"],
     boardAlignments: [{ boardId: "cbse", yearId: "class-06", subject: "Mathematics", sourceId: "SRC-NCERT-NCFSE-2023", alignmentStrength: "direct" }],
-    trackBranches: ["jee-main"],
+    trackBranches: [JEE_FOUNDATION],
     status: "active"
   },
   {
@@ -87,7 +92,7 @@ const allPhase3Skills = [
     successCriteria: ["Applies divisibility tests and solves cryptarithms"],
     evidenceTypes: ["diagnostic", "assignment"],
     boardAlignments: [{ boardId: "cbse", yearId: "class-06", subject: "Mathematics", sourceId: "SRC-NCERT-NCFSE-2023", alignmentStrength: "direct" }],
-    trackBranches: ["jee-main"],
+    trackBranches: [JEE_FOUNDATION],
     status: "active"
   },
   {
@@ -113,7 +118,7 @@ const allPhase3Skills = [
     successCriteria: ["Calculates HCF and LCM for real-world synchronisation problems"],
     evidenceTypes: ["diagnostic", "assignment"],
     boardAlignments: [{ boardId: "cbse", yearId: "class-06", subject: "Mathematics", sourceId: "SRC-NCERT-NCFSE-2023", alignmentStrength: "direct" }],
-    trackBranches: ["jee-main"],
+    trackBranches: [JEE_FOUNDATION],
     status: "active"
   },
   {
@@ -126,7 +131,7 @@ const allPhase3Skills = [
     successCriteria: ["Computes area and perimeter in floor plan and fencing problems"],
     evidenceTypes: ["diagnostic", "assignment"],
     boardAlignments: [{ boardId: "cbse", yearId: "class-06", subject: "Mathematics", sourceId: "SRC-NCERT-NCFSE-2023", alignmentStrength: "direct" }],
-    trackBranches: ["jee-main"],
+    trackBranches: [JEE_FOUNDATION],
     status: "active"
   },
   {
@@ -139,7 +144,7 @@ const allPhase3Skills = [
     successCriteria: ["Performs unlike fraction arithmetic accurately"],
     evidenceTypes: ["diagnostic", "assignment"],
     boardAlignments: [{ boardId: "cbse", yearId: "class-06", subject: "Mathematics", sourceId: "SRC-NCERT-NCFSE-2023", alignmentStrength: "direct" }],
-    trackBranches: ["jee-main"],
+    trackBranches: [JEE_FOUNDATION],
     status: "active"
   },
   {
@@ -152,7 +157,7 @@ const allPhase3Skills = [
     successCriteria: ["Executes classical compass constructions without protractor"],
     evidenceTypes: ["practical", "assignment"],
     boardAlignments: [{ boardId: "cbse", yearId: "class-06", subject: "Mathematics", sourceId: "SRC-NCERT-NCFSE-2023", alignmentStrength: "direct" }],
-    trackBranches: ["jee-main"],
+    trackBranches: [JEE_FOUNDATION],
     status: "active"
   },
   {
@@ -180,7 +185,7 @@ const allPhase3Skills = [
     successCriteria: ["Distinguishes independent, dependent, and controlled variables"],
     evidenceTypes: ["practical", "diagnostic"],
     boardAlignments: [{ boardId: "cbse", yearId: "class-06", subject: "Integrated Science", sourceId: "SRC-NCERT-NCFSE-2023", alignmentStrength: "direct" }],
-    trackBranches: ["neet-ug"],
+    trackBranches: [NEET_FOUNDATION],
     status: "active"
   },
   {
@@ -193,7 +198,7 @@ const allPhase3Skills = [
     successCriteria: ["Correlates leaf venation with root system type"],
     evidenceTypes: ["diagnostic", "practical"],
     boardAlignments: [{ boardId: "cbse", yearId: "class-06", subject: "Integrated Science", sourceId: "SRC-NCERT-NCFSE-2023", alignmentStrength: "direct" }],
-    trackBranches: ["neet-ug"],
+    trackBranches: [NEET_FOUNDATION],
     status: "active"
   },
   {
@@ -206,7 +211,7 @@ const allPhase3Skills = [
     successCriteria: ["Identifies chemical indicator reactions and deficiency causes"],
     evidenceTypes: ["diagnostic", "practical"],
     boardAlignments: [{ boardId: "cbse", yearId: "class-06", subject: "Integrated Science", sourceId: "SRC-NCERT-NCFSE-2023", alignmentStrength: "direct" }],
-    trackBranches: ["neet-ug"],
+    trackBranches: [NEET_FOUNDATION],
     status: "active"
   },
   {
@@ -219,7 +224,7 @@ const allPhase3Skills = [
     successCriteria: ["Applies laws of magnetic attraction and repulsion"],
     evidenceTypes: ["diagnostic", "practical"],
     boardAlignments: [{ boardId: "cbse", yearId: "class-06", subject: "Integrated Science", sourceId: "SRC-NCERT-NCFSE-2023", alignmentStrength: "direct" }],
-    trackBranches: ["jee-main", "neet-ug"],
+    trackBranches: [JEE_FOUNDATION, NEET_FOUNDATION],
     status: "active"
   },
   {
@@ -232,7 +237,7 @@ const allPhase3Skills = [
     successCriteria: ["Calculates correct length avoiding broken zero and classifies motions"],
     evidenceTypes: ["diagnostic", "practical"],
     boardAlignments: [{ boardId: "cbse", yearId: "class-06", subject: "Integrated Science", sourceId: "SRC-NCERT-NCFSE-2023", alignmentStrength: "direct" }],
-    trackBranches: ["jee-main", "neet-ug"],
+    trackBranches: [JEE_FOUNDATION, NEET_FOUNDATION],
     status: "active"
   },
   {
@@ -245,7 +250,7 @@ const allPhase3Skills = [
     successCriteria: ["Selects appropriate materials based on physical properties"],
     evidenceTypes: ["diagnostic", "practical"],
     boardAlignments: [{ boardId: "cbse", yearId: "class-06", subject: "Integrated Science", sourceId: "SRC-NCERT-NCFSE-2023", alignmentStrength: "direct" }],
-    trackBranches: ["jee-main", "neet-ug"],
+    trackBranches: [JEE_FOUNDATION, NEET_FOUNDATION],
     status: "active"
   },
   {
@@ -258,7 +263,7 @@ const allPhase3Skills = [
     successCriteria: ["Reads thermometers accurately and converts scales"],
     evidenceTypes: ["diagnostic", "practical"],
     boardAlignments: [{ boardId: "cbse", yearId: "class-06", subject: "Integrated Science", sourceId: "SRC-NCERT-NCFSE-2023", alignmentStrength: "direct" }],
-    trackBranches: ["jee-main", "neet-ug"],
+    trackBranches: [JEE_FOUNDATION, NEET_FOUNDATION],
     status: "active"
   },
   {
@@ -284,7 +289,7 @@ const allPhase3Skills = [
     successCriteria: ["Designs multi-step separation pipelines for complex mixtures"],
     evidenceTypes: ["diagnostic", "practical"],
     boardAlignments: [{ boardId: "cbse", yearId: "class-06", subject: "Integrated Science", sourceId: "SRC-NCERT-NCFSE-2023", alignmentStrength: "direct" }],
-    trackBranches: ["jee-main", "neet-ug"],
+    trackBranches: [JEE_FOUNDATION, NEET_FOUNDATION],
     status: "active"
   },
   {
@@ -297,7 +302,7 @@ const allPhase3Skills = [
     successCriteria: ["Differentiates breathing from cellular energy release"],
     evidenceTypes: ["diagnostic", "practical"],
     boardAlignments: [{ boardId: "cbse", yearId: "class-06", subject: "Integrated Science", sourceId: "SRC-NCERT-NCFSE-2023", alignmentStrength: "direct" }],
-    trackBranches: ["neet-ug"],
+    trackBranches: [NEET_FOUNDATION],
     status: "active"
   },
   {
@@ -329,6 +334,19 @@ const allPhase3Skills = [
 
   // Class 7 Skills
   {
+    id: "math-integers-operations-c07",
+    name: { en: "Advanced Signed Integer Arithmetic & Properties", hi: "उन्नत चिन्हित पूर्णांक अंकगणित और गुणधर्म" },
+    domainId: "mathematical-thinking-quant",
+    stage: { fromYearId: "class-07", toYearId: "class-07" },
+    description: "Applies closure, commutativity, associativity, and distributivity across signed integer multiplication and division.",
+    prerequisites: ["math-integers-number-patterns"],
+    successCriteria: ["Applies distributive property to simplify large products", "Solves real-world elevation, temperature, and financial word problems"],
+    evidenceTypes: ["diagnostic", "assignment"],
+    boardAlignments: [{ boardId: "cbse", yearId: "class-07", subject: "Mathematics", sourceId: "SRC-NCERT-NCFSE-2023", alignmentStrength: "direct" }],
+    trackBranches: [JEE_FOUNDATION],
+    status: "active"
+  },
+  {
     id: "math-fractions-decimals-c07",
     name: { en: "Fraction Division & Decimal Operations", hi: "भिन्न भाग और दशमलव संक्रियाएं" },
     domainId: "mathematical-thinking-quant",
@@ -338,7 +356,7 @@ const allPhase3Skills = [
     successCriteria: ["Solves division of fractions by multiplying by reciprocal"],
     evidenceTypes: ["diagnostic", "assignment"],
     boardAlignments: [{ boardId: "cbse", yearId: "class-07", subject: "Mathematics", sourceId: "SRC-NCERT-NCFSE-2023", alignmentStrength: "direct" }],
-    trackBranches: ["jee-main"],
+    trackBranches: [JEE_FOUNDATION],
     status: "active"
   },
   {
@@ -351,7 +369,7 @@ const allPhase3Skills = [
     successCriteria: ["Solves linear equations in one variable"],
     evidenceTypes: ["diagnostic", "assignment"],
     boardAlignments: [{ boardId: "cbse", yearId: "class-07", subject: "Mathematics", sourceId: "SRC-NCERT-NCFSE-2023", alignmentStrength: "direct" }],
-    trackBranches: ["jee-main"],
+    trackBranches: [JEE_FOUNDATION],
     status: "active"
   },
   {
@@ -364,7 +382,7 @@ const allPhase3Skills = [
     successCriteria: ["Formulates balanced photosynthesis equation"],
     evidenceTypes: ["diagnostic", "practical"],
     boardAlignments: [{ boardId: "cbse", yearId: "class-07", subject: "Science", sourceId: "SRC-NCERT-NCFSE-2023", alignmentStrength: "direct" }],
-    trackBranches: ["neet-ug"],
+    trackBranches: [NEET_FOUNDATION],
     status: "active"
   },
   {
@@ -377,11 +395,24 @@ const allPhase3Skills = [
     successCriteria: ["Explains sea breeze and thermos flask thermal insulation"],
     evidenceTypes: ["diagnostic", "practical"],
     boardAlignments: [{ boardId: "cbse", yearId: "class-07", subject: "Science", sourceId: "SRC-NCERT-NCFSE-2023", alignmentStrength: "direct" }],
-    trackBranches: ["jee-main", "neet-ug"],
+    trackBranches: [JEE_FOUNDATION, NEET_FOUNDATION],
     status: "active"
   },
 
   // Class 8 Skills
+  {
+    id: "math-rational-numbers-c08",
+    name: { en: "Rational Number Arithmetic & Density Property", hi: "परिमेय संख्या अंकगणित और सघनता गुणधर्म" },
+    domainId: "mathematical-thinking-quant",
+    stage: { fromYearId: "class-08", toYearId: "class-08" },
+    description: "Rigorous rational operations, multiplicative inverse, and proof of infinite density on the real line.",
+    prerequisites: ["math-integers-operations-c07"],
+    successCriteria: ["Computes rational arithmetic with sign consistency", "Inserts rational numbers between any two given endpoints using mean method"],
+    evidenceTypes: ["diagnostic", "assignment"],
+    boardAlignments: [{ boardId: "cbse", yearId: "class-08", subject: "Mathematics", sourceId: "SRC-NCERT-NCFSE-2023", alignmentStrength: "direct" }],
+    trackBranches: [JEE_FOUNDATION],
+    status: "active"
+  },
   {
     id: "math-linear-equations-c08",
     name: { en: "Multi-Step Linear Equations & Rate Problems", hi: "बहु-चरणीय रैखिक समीकरण और दर समस्याएं" },
@@ -392,7 +423,7 @@ const allPhase3Skills = [
     successCriteria: ["Solves two-digit number problems algebraically"],
     evidenceTypes: ["diagnostic", "assignment"],
     boardAlignments: [{ boardId: "cbse", yearId: "class-08", subject: "Mathematics", sourceId: "SRC-NCERT-NCFSE-2023", alignmentStrength: "direct" }],
-    trackBranches: ["jee-main"],
+    trackBranches: [JEE_FOUNDATION],
     status: "active"
   },
   {
@@ -405,7 +436,7 @@ const allPhase3Skills = [
     successCriteria: ["Compares fertilizer degradation with organic manure"],
     evidenceTypes: ["diagnostic", "assignment"],
     boardAlignments: [{ boardId: "cbse", yearId: "class-08", subject: "Science", sourceId: "SRC-NCERT-NCFSE-2023", alignmentStrength: "direct" }],
-    trackBranches: ["neet-ug"],
+    trackBranches: [NEET_FOUNDATION],
     status: "active"
   },
   {
@@ -418,7 +449,7 @@ const allPhase3Skills = [
     successCriteria: ["Calculates pressure from force and contact area"],
     evidenceTypes: ["diagnostic", "practical"],
     boardAlignments: [{ boardId: "cbse", yearId: "class-08", subject: "Science", sourceId: "SRC-NCERT-NCFSE-2023", alignmentStrength: "direct" }],
-    trackBranches: ["jee-main", "neet-ug"],
+    trackBranches: [JEE_FOUNDATION, NEET_FOUNDATION],
     status: "active"
   }
 ];

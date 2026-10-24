@@ -36,9 +36,9 @@ test("Phase 1: All 16 education stages (home-0-3 through class-12) have curricul
   assert.equal(index.summary.totalBoardYearPlans >= 59, true);
 });
 
-test("Phase 1: Every board-year file validates against curriculum-year.schema.json and cites verified sources", () => {
+test("Phase 1: Every board-year file validates against content-curriculum-year.schema.json and cites verified sources", () => {
   const ajv = new Ajv2020({ allErrors: true, strict: false, validateFormats: false });
-  const schema = readJson("schemas/curriculum-year.schema.json");
+  const schema = readJson("schemas/content-curriculum-year.schema.json");
   const validate = ajv.compile(schema);
   const sources = readJson("content/sources/official-source-catalog.json");
   const sourceSet = new Set(sources.sources.map((s) => s.sourceId));
@@ -57,7 +57,7 @@ test("Phase 1: Every board-year file validates against curriculum-year.schema.js
 
 test("Phase 1: Shared skill graph is a valid DAG and connects all 8 competitive/abroad tracks", () => {
   const ajv = new Ajv2020({ allErrors: true, strict: false, validateFormats: false });
-  const schema = readJson("schemas/skill-graph.schema.json");
+  const schema = readJson("schemas/content-skill-graph.schema.json");
   const validate = ajv.compile(schema);
   const graph = readJson("content/skill-graph/shared-skill-graph.json");
   assert.equal(validate(graph), true, JSON.stringify(validate.errors));
