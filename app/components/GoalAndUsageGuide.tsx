@@ -251,6 +251,27 @@ export default function GoalAndUsageGuide({
                         <strong>Parent Hub:</strong> {isHi ? "60 मिनट स्क्रीन सीमा व 1-क्लिक व्हाट्सऐप रिपोर्ट" : "60-min IAP screen cap & 1-click WhatsApp progress report"}
                       </li>
                     </ul>
+
+                    {/* Hyper-Personalized Education Callout */}
+                    <div
+                      style={{
+                        marginTop: "0.75rem",
+                        padding: "0.65rem 0.85rem",
+                        borderRadius: "8px",
+                        background: "rgba(99, 102, 241, 0.15)",
+                        border: "1px solid rgba(99, 102, 241, 0.35)"
+                      }}
+                    >
+                      <div style={{ fontSize: "0.8rem", fontWeight: 700, color: "#a5b4fc", display: "flex", alignItems: "center", gap: "0.35rem" }}>
+                        <span>🎯</span>
+                        <span>{isHi ? "मुख्य लक्ष्य: व्यक्तिगत शिक्षा व सर्वोच्च अंक" : "Core Goal: Hyper-Personalized Education for Top Grades"}</span>
+                      </div>
+                      <p style={{ margin: "0.3rem 0 0", fontSize: "0.78rem", color: "#e2e8f0", lineHeight: 1.45 }}>
+                        {isHi
+                          ? "बच्चे की समझ क्षमता (understanding), स्मरण शक्ति (memory retention curve), और परिश्रम (study grit) के आधार पर व्यक्तिगत शिक्षण। सतत स्व-मूल्यांकन से योजना स्वतः विकसित (evolve) होती है।"
+                          : "Custom-tailored teaching based on student's Understanding Capability, Memory Retaining Power & Hardworking Grit. Continuous self-evaluation dynamically evolves the study plan in real-time."}
+                      </p>
+                    </div>
                   </div>
                   <div style={{ marginTop: "1rem", display: "flex", gap: "0.5rem", flexWrap: "wrap" }}>
                     <button

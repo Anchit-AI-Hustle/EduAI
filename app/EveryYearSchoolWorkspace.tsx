@@ -6,6 +6,12 @@ import MiddleSchoolDeepDive from "./components/MiddleSchoolDeepDive";
 import GamificationHub, { Quest, BadgeItem } from "./components/GamificationHub";
 import VentureThesisView from "./components/VentureThesisView";
 import GoalAndUsageGuide from "./components/GoalAndUsageGuide";
+import DayLevelCalendarTimetable from "./components/DayLevelCalendarTimetable";
+import CognitiveDiagnostic from "./components/CognitiveDiagnostic";
+import DailyLessonLoop from "./components/DailyLessonLoop";
+import MockExamEngine from "./components/MockExamEngine";
+import CurriculumExplorer from "./components/CurriculumExplorer";
+import GovernanceAndRiskHub from "./components/GovernanceAndRiskHub";
 import { useLanguage } from "./components/useLanguage";
 import LanguageToggle from "./components/LanguageToggle";
 
@@ -390,6 +396,15 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
   const [evolvingPlanMode, setEvolvingPlanMode] = useState<"standard" | "scaffolded" | "olympiad">("standard");
   const [showCognitiveModal, setShowCognitiveModal] = useState<boolean>(false);
 
+  // Sub-view toggles for complete integrated modules
+  const [plannerSubView, setPlannerSubView] = useState<"summary" | "calendar">("summary");
+  const [diagnosticSubView, setDiagnosticSubView] = useState<"standard" | "cognitive">("standard");
+  const [lessonSubView, setLessonSubView] = useState<"curriculum" | "reasoning">("curriculum");
+  const [mocksSubView, setMocksSubView] = useState<"blueprints" | "engine">("blueprints");
+  const [tracksSubView, setTracksSubView] = useState<"tracks" | "explorer">("tracks");
+  const [parentSubView, setParentSubView] = useState<"governance" | "legalHub">("governance");
+  const [evolutionSubView, setEvolutionSubView] = useState<"studentEvolution" | "governanceLayers">("studentEvolution");
+
   const handleLaunchStudent = (targetTab: string = "planner") => {
     setActiveRole("student");
     setActiveTab(targetTab as any);
@@ -742,6 +757,7 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
               onClick={() => {
                 setActiveRole("student");
                 setActiveTab("planner");
+                setPlannerSubView("summary");
                 triggerHaptic("light");
               }}
             >
@@ -753,6 +769,7 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
               onClick={() => {
                 setActiveRole("parent");
                 setActiveTab("parent");
+                setParentSubView("governance");
                 triggerHaptic("light");
               }}
             >
@@ -763,7 +780,8 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
               className={`role-tab-btn ${activeRole === "explorer" ? "active" : ""}`}
               onClick={() => {
                 setActiveRole("explorer");
-                setActiveTab("middleStage");
+                setActiveTab("tracks");
+                setTracksSubView("explorer");
                 triggerHaptic("light");
               }}
             >
@@ -1245,6 +1263,36 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
             actionText={lang === "en" ? "Start Lesson →" : "पाठ शुरू करें →"}
             onAction={() => setActiveTab("lesson")}
           />
+
+          {/* Planner View Toggle: Weekly Overview vs 180-Day Calendar */}
+          <div style={{ display: "flex", gap: "0.5rem", marginBottom: "1rem", flexWrap: "wrap" }}>
+            <button
+              type="button"
+              className={`btn ${plannerSubView === "summary" ? "btn-primary" : ""}`}
+              onClick={() => setPlannerSubView("summary")}
+            >
+              {lang === "en" ? "📋 Weekly Summary & Subject Balance" : "📋 साप्ताहिक सारांश व विषय संतुलन"}
+            </button>
+            <button
+              type="button"
+              className={`btn ${plannerSubView === "calendar" ? "btn-primary" : ""}`}
+              onClick={() => setPlannerSubView("calendar")}
+            >
+              {lang === "en" ? "📅 Full 180-Day Interactive Day-by-Day Calendar" : "📅 पूर्ण 180-दिवसीय इंटरैक्टिव कैलेंडर"}
+            </button>
+          </div>
+
+          {plannerSubView === "calendar" && (
+            <div style={{ marginBottom: "1.25rem" }}>
+              <DayLevelCalendarTimetable
+                lang={lang}
+                calibratedTier={evolvingPlanMode === "olympiad" ? "High Agility" : evolvingPlanMode === "scaffolded" ? "Foundational" : "High Agility"}
+              />
+            </div>
+          )}
+
+          {plannerSubView === "summary" && (
+            <>
           <div className="card">
             <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", gap: "0.75rem", alignItems: "center" }}>
               <div>
@@ -1525,6 +1573,8 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
               </div>
             </div>
           </div>
+          </>
+          )}
 
           {/* Workflow Step Progression */}
           <WorkflowNextBar
@@ -1549,6 +1599,51 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
                 : "नीचे दिए गए प्रश्नों के उत्तर दें। इंजन पिछली कक्षा की कमियों को पहचानता है और सीखने की योजना को स्वतः समायोजित करता है।"
             }
           />
+
+          {/* Diagnostic View Toggle */}
+          <div style={{ display: "flex", gap: "0.5rem", margin: "1rem 0", flexWrap: "wrap" }}>
+            <button
+              type="button"
+              className={`btn ${diagnosticSubView === "standard" ? "btn-primary" : ""}`}
+              onClick={() => setDiagnosticSubView("standard")}
+            >
+              {lang === "en" ? "🎯 Grade & Prerequisite Placement Test" : "🎯 कक्षा व पूर्व-आवश्यकता स्तर निर्धारण"}
+            </button>
+            <button
+              type="button"
+              className={`btn ${diagnosticSubView === "cognitive" ? "btn-primary" : ""}`}
+              onClick={() => setDiagnosticSubView("cognitive")}
+            >
+              {lang === "en" ? "🧠 Cognitive Puzzles & Logical Diagnostic" : "🧠 संज्ञानात्मक पहेलियाँ व तार्किक निदान"}
+            </button>
+          </div>
+
+          {diagnosticSubView === "cognitive" && (
+            <div style={{ margin: "1rem 0" }}>
+              <CognitiveDiagnostic
+                lang={lang}
+                onAssessmentComplete={(results) => {
+                  awardXp(50, lang === "en" ? "Cognitive Assessment Completed! 🧠" : "संज्ञानात्मक निदान पूर्ण! 🧠");
+                  const isHigh = results.recommendedTier.toLowerCase().includes("accelerated") || results.recommendedTier.toLowerCase().includes("agility");
+                  const isLow = results.recommendedTier.toLowerCase().includes("foundational") || results.recommendedTier.toLowerCase().includes("scaffold");
+                  if (isHigh) {
+                    setEvolvingPlanMode("olympiad");
+                    setUnderstandingGrip(96);
+                    setHardworkingGrit(95);
+                  } else if (isLow) {
+                    setEvolvingPlanMode("scaffolded");
+                    setUnderstandingGrip(64);
+                  } else {
+                    setEvolvingPlanMode("standard");
+                    setUnderstandingGrip(88);
+                  }
+                }}
+              />
+            </div>
+          )}
+
+          {diagnosticSubView === "standard" && (
+            <>
           <h2>
             {lang === "en"
               ? "Per-Domain Adaptive Skill Diagnostic & Year Placement Engine"
@@ -1696,6 +1791,8 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
               </div>
             </div>
           </div>
+          </>
+          )}
 
           {/* Workflow Step Progression */}
           <WorkflowNextBar
@@ -1745,6 +1842,33 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
                 : "5 चरणों में सीखें: 1. परिचय ➔ 2. अवधारणा ➔ 3. अभ्यास ➔ 4. वास्तविक अनुप्रयोग ➔ 5. क्विज़। कठिनाई होने पर 'संकेत देखें' पर क्लिक करें।"
             }
           />
+
+          {/* Lesson View Toggle */}
+          <div style={{ display: "flex", gap: "0.5rem", margin: "1rem 0", flexWrap: "wrap" }}>
+            <button
+              type="button"
+              className={`btn ${lessonSubView === "curriculum" ? "btn-primary" : ""}`}
+              onClick={() => setLessonSubView("curriculum")}
+            >
+              {lang === "en" ? "📖 5-Step Panchpadi Sourced Lesson & Audio" : "📖 5-चरणीय पंचपदी पाठ व ऑडियो"}
+            </button>
+            <button
+              type="button"
+              className={`btn ${lessonSubView === "reasoning" ? "btn-primary" : ""}`}
+              onClick={() => setLessonSubView("reasoning")}
+            >
+              {lang === "en" ? "✍️ Student Reasoning Submission & AI Evaluation (Standard vs Olympiad)" : "✍️ विद्यार्थी तर्क प्रस्तुति व एआई मूल्यांकन"}
+            </button>
+          </div>
+
+          {lessonSubView === "reasoning" && (
+            <div style={{ margin: "1rem 0" }}>
+              <DailyLessonLoop lang={lang} />
+            </div>
+          )}
+
+          {lessonSubView === "curriculum" && (
+            <>
           <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: "0.5rem" }}>
             <div>
               <span className="badge badge-blue">
@@ -1987,6 +2111,8 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
               </div>
             </div>
           </div>
+          </>
+          )}
 
           {/* Workflow Step Progression */}
           <WorkflowNextBar
@@ -2011,6 +2137,33 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
                 : "आधिकारिक परीक्षा ब्लूप्रिंट (सीबीएसई कक्षा 10/12, जेईई मेन, नीट) चुनें। वास्तविक समय सीमा में प्रश्न हल करें और तुरंत विश्लेषण देखें।"
             }
           />
+
+          {/* Mocks View Toggle */}
+          <div style={{ display: "flex", gap: "0.5rem", margin: "1rem 0", flexWrap: "wrap" }}>
+            <button
+              type="button"
+              className={`btn ${mocksSubView === "blueprints" ? "btn-primary" : ""}`}
+              onClick={() => setMocksSubView("blueprints")}
+            >
+              {lang === "en" ? "📋 Official Exam Blueprints & Syllabus Bank" : "📋 आधिकारिक परीक्षा ब्लूप्रिंट व पाठ्यक्रम"}
+            </button>
+            <button
+              type="button"
+              className={`btn ${mocksSubView === "engine" ? "btn-primary" : ""}`}
+              onClick={() => setMocksSubView("engine")}
+            >
+              {lang === "en" ? "⏱️ Live Timed Mock Exam Simulator (CBSE 10, JEE, NEET)" : "⏱️ लाइव समयबद्ध मॉक परीक्षा सिमुलेटर (CBSE 10, JEE, NEET)"}
+            </button>
+          </div>
+
+          {mocksSubView === "engine" && (
+            <div style={{ margin: "1rem 0" }}>
+              <MockExamEngine lang={lang} />
+            </div>
+          )}
+
+          {mocksSubView === "blueprints" && (
+            <>
           <h2>
             {lang === "en"
               ? "Official-Blueprint Mock Exam Engine (Board, JEE, NEET, CUET, UPSC, SAT/IELTS/TOEFL)"
@@ -2139,6 +2292,8 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
               </div>
             </div>
           )}
+          </>
+          )}
         </div>
       )}
 
@@ -2154,6 +2309,33 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
                 : "देखें कि कैसे स्कूल के विषय सीधे जेईई, नीट, सीयूईटी और सैट से जुड़ते हैं। आपको स्कूल और कोचिंग में एक ही पाठ दो बार नहीं पढ़ना पड़ेगा।"
             }
           />
+
+          {/* Tracks View Toggle */}
+          <div style={{ display: "flex", gap: "0.5rem", marginBottom: "1rem", flexWrap: "wrap" }}>
+            <button
+              type="button"
+              className={`btn ${tracksSubView === "tracks" ? "btn-primary" : ""}`}
+              onClick={() => setTracksSubView("tracks")}
+            >
+              {lang === "en" ? "🚀 Competitive & Study-Abroad Exam Bridges" : "🚀 प्रतियोगी व विदेश अध्ययन परीक्षाएं"}
+            </button>
+            <button
+              type="button"
+              className={`btn ${tracksSubView === "explorer" ? "btn-primary" : ""}`}
+              onClick={() => setTracksSubView("explorer")}
+            >
+              {lang === "en" ? "🧭 68-Year National Curriculum Matrix Explorer (All Boards)" : "🧭 68-वर्षीय राष्ट्रीय पाठ्यक्रम मैट्रिक्स एक्सप्लोरर"}
+            </button>
+          </div>
+
+          {tracksSubView === "explorer" && (
+            <div style={{ marginBottom: "1.25rem" }}>
+              <CurriculumExplorer lang={lang} catalogData={masterIndex} />
+            </div>
+          )}
+
+          {tracksSubView === "tracks" && (
+            <>
           <div className="card">
             <h2>
               {lang === "en"
@@ -2212,6 +2394,8 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
               </div>
             ))}
           </div>
+          </>
+          )}
         </div>
       )}
 
@@ -2227,6 +2411,293 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
                 : "'Simulate Official Board Circular Diff' पर क्लिक करके देखें कि कैसे एआई सरकारी आदेश पकड़कर प्रश्न बैंक को सुरक्षित रूप से अपडेट करता है।"
             }
           />
+
+          {/* Evolution Sub-View Toggle */}
+          <div style={{ display: "flex", gap: "0.5rem", marginBottom: "1rem", flexWrap: "wrap" }}>
+            <button
+              type="button"
+              className={`btn ${evolutionSubView === "studentEvolution" ? "btn-primary" : ""}`}
+              onClick={() => setEvolutionSubView("studentEvolution")}
+            >
+              {lang === "en" ? "🧬 Student Continuous Self-Evaluation & Plan Evolution" : "🧬 विद्यार्थी सतत मूल्यांकन व स्वतः विकसित योजना"}
+            </button>
+            <button
+              type="button"
+              className={`btn ${evolutionSubView === "governanceLayers" ? "btn-primary" : ""}`}
+              onClick={() => setEvolutionSubView("governanceLayers")}
+            >
+              {lang === "en" ? "🏛️ National Board Governance & Circular Diff Gates (L1-L5)" : "🏛️ सरकारी सर्कुलर व पाठ्यक्रम सुरक्षा गेट्स (L1-L5)"}
+            </button>
+          </div>
+
+          {evolutionSubView === "studentEvolution" && (
+            <div style={{ display: "flex", flexDirection: "column", gap: "1.25rem", marginBottom: "1.25rem" }}>
+              {/* Core Engine Mission Banner */}
+              <div
+                className="card"
+                style={{
+                  background: "linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(30, 41, 59, 0.95) 100%)",
+                  borderLeft: "4px solid #6366f1"
+                }}
+              >
+                <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", flexWrap: "wrap", marginBottom: "0.4rem" }}>
+                  <span className="badge badge-cyan">{lang === "en" ? "Continuous Assessment Engine" : "सतत मूल्यांकन इंजन"}</span>
+                  <span className="badge badge-green">{lang === "en" ? "Real-Time Self-Evolving Plan" : "स्वतः विकसित योजना"}</span>
+                  <span className="badge badge-purple">{lang === "en" ? "Target: Top Board Marks (95%+)" : "लक्ष्य: 95%+ बोर्ड अंक"}</span>
+                </div>
+                <h2 style={{ fontSize: "1.35rem", fontWeight: 700, margin: "0.2rem 0 0.4rem 0" }}>
+                  {lang === "en"
+                    ? "Hyper-Personalized Education Engine: Understanding, Retention & Diligence"
+                    : "अति-व्यक्तिगत शिक्षण इंजन: समझ क्षमता, स्मरण शक्ति एवं परिश्रम आधारित"}
+                </h2>
+                <p style={{ color: "var(--text-secondary)", fontSize: "0.88rem", margin: 0, lineHeight: 1.55 }}>
+                  {lang === "en"
+                    ? "Every child is unique. Our engine continuously measures concept comprehension velocity, retention resistance against the Ebbinghaus forgetting curve, and daily study discipline to tailor the exact teaching method and evolve the study schedule in real time."
+                    : "प्रत्येक बच्चा अनूठा है। हमारा इंजन अवधारणा समझ की गति, विस्मरण वक्र (स्मरण शक्ति), और दैनिक अध्ययन अनुशासन का निरंतर मापन करके शिक्षण पद्धति तय करता है और समय-सारणी को स्वतः विकसित करता है।"}
+                </p>
+              </div>
+
+              {/* 4 Feedback Gauges */}
+              <div className="grid-4" style={{ gap: "0.75rem" }}>
+                <div className="card" style={{ padding: "0.9rem" }}>
+                  <div style={{ fontSize: "0.78rem", color: "var(--text-secondary)", fontWeight: 600 }}>
+                    🧠 {lang === "en" ? "Understanding Capability" : "अवधारणा समझ क्षमता"}
+                  </div>
+                  <div style={{ fontSize: "1.6rem", fontWeight: 800, color: "#38bdf8", margin: "0.25rem 0" }}>
+                    {understandingGrip}%
+                  </div>
+                  <div style={{ fontSize: "0.76rem", color: "var(--text-muted)" }}>
+                    {understandingGrip >= 90
+                      ? (lang === "en" ? "High Agility (Abstract Proofs)" : "उच्च गति (अमूर्त सिद्धांत)")
+                      : understandingGrip >= 75
+                      ? (lang === "en" ? "Fast Concept Grip (1.4x Speed)" : "तेज समझ (1.4x गति)")
+                      : (lang === "en" ? "Developing (Concrete Scaffolding)" : "विकासशील (चित्रमय सहयोग)")}
+                  </div>
+                </div>
+
+                <div className="card" style={{ padding: "0.9rem" }}>
+                  <div style={{ fontSize: "0.78rem", color: "var(--text-secondary)", fontWeight: 600 }}>
+                    📈 {lang === "en" ? "Memory Retaining Power" : "स्मरण शक्ति व विस्मरण वक्र"}
+                  </div>
+                  <div style={{ fontSize: "1.6rem", fontWeight: 800, color: "#34d399", margin: "0.25rem 0" }}>
+                    {retentionPower}%
+                  </div>
+                  <div style={{ fontSize: "0.76rem", color: "var(--text-muted)" }}>
+                    {lang === "en" ? "Spaced Revision: Days 1, 3, 7, 14" : "अंतराल पुनरावृत्ति: दिन 1, 3, 7, 14"}
+                  </div>
+                </div>
+
+                <div className="card" style={{ padding: "0.9rem" }}>
+                  <div style={{ fontSize: "0.78rem", color: "var(--text-secondary)", fontWeight: 600 }}>
+                    ⏱️ {lang === "en" ? "Study Grit & Diligence" : "परिश्रम व अध्ययन अनुशासन"}
+                  </div>
+                  <div style={{ fontSize: "1.6rem", fontWeight: 800, color: "#fbbf24", margin: "0.25rem 0" }}>
+                    {hardworkingGrit}%
+                  </div>
+                  <div style={{ fontSize: "0.76rem", color: "var(--text-muted)" }}>
+                    {lang === "en" ? "18/20 Days Consistent Focus" : "18/20 दिन निरंतर अध्ययन"}
+                  </div>
+                </div>
+
+                <div className="card" style={{ padding: "0.9rem" }}>
+                  <div style={{ fontSize: "0.78rem", color: "var(--text-secondary)", fontWeight: 600 }}>
+                    🎯 {lang === "en" ? "Top Marks Readiness" : "सर्वोच्च अंक तत्परता"}
+                  </div>
+                  <div style={{ fontSize: "1.6rem", fontWeight: 800, color: "#c084fc", margin: "0.25rem 0" }}>
+                    {evolvingPlanMode === "olympiad" ? "99%" : evolvingPlanMode === "scaffolded" ? "91%" : "96%"}
+                  </div>
+                  <div style={{ fontSize: "0.76rem", color: "var(--text-muted)" }}>
+                    {lang === "en" ? "Class 10/12 Target: 95%+" : "कक्षा 10/12 लक्ष्य: 95%+"}
+                  </div>
+                </div>
+              </div>
+
+              {/* Dynamic Pedagogical Decision & Recipe */}
+              <div className="card" style={{ background: "rgba(15, 23, 42, 0.6)" }}>
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "0.5rem", marginBottom: "0.75rem" }}>
+                  <h3 style={{ margin: 0, fontSize: "1.1rem" }}>
+                    {lang === "en" ? "Active Pedagogical Recipe (How He Is Taught Today):" : "सक्रिय शिक्षण विधि (आज कैसे पढ़ाया जा रहा है):"}
+                  </h3>
+                  <span className={`badge ${evolvingPlanMode === "olympiad" ? "badge-green" : evolvingPlanMode === "scaffolded" ? "badge-warn" : "badge-blue"}`}>
+                    {evolvingPlanMode === "olympiad" ? (lang === "en" ? "Tier: Olympiad & High Agility" : "स्तर: ओलंपियाड") : evolvingPlanMode === "scaffolded" ? (lang === "en" ? "Tier: Scaffolding & Foundational Bridge" : "स्तर: फाउंडेशन ब्रिज") : (lang === "en" ? "Tier: Standard CBSE Balanced" : "स्तर: मानक सीबीएसई")}
+                  </span>
+                </div>
+                <div className="grid-3" style={{ gap: "0.75rem" }}>
+                  <div style={{ background: "var(--surface-muted)", padding: "0.75rem", borderRadius: "8px" }}>
+                    <div style={{ fontWeight: 700, fontSize: "0.82rem", color: "#38bdf8" }}>
+                      {lang === "en" ? "1. Pacing & Delivery" : "1. गति एवं प्रस्तुति"}
+                    </div>
+                    <div style={{ fontSize: "0.82rem", marginTop: "0.25rem" }}>
+                      {evolvingPlanMode === "olympiad"
+                        ? (lang === "en" ? "Accelerated. Skips rote drills, presents open inquiry." : "तीव्र गति। सामान्य अभ्यास छोड़कर सीधे गहन प्रश्न।")
+                        : evolvingPlanMode === "scaffolded"
+                        ? (lang === "en" ? "Concrete-Pictorial-Abstract (CPA) with visual aids." : "चित्रमय व सरल चरणबद्ध प्रस्तुति।")
+                        : (lang === "en" ? "Balanced 60-min pace with audio-visual Panchpadi." : "संतुलित 60-मिनट पंचपदी गति।")}
+                    </div>
+                  </div>
+
+                  <div style={{ background: "var(--surface-muted)", padding: "0.75rem", borderRadius: "8px" }}>
+                    <div style={{ fontWeight: 700, fontSize: "0.82rem", color: "#34d399" }}>
+                      {lang === "en" ? "2. Memory Retention Schedule" : "2. स्मरण प्रतिधारण अनुसूची"}
+                    </div>
+                    <div style={{ fontSize: "0.82rem", marginTop: "0.25rem" }}>
+                      {retentionPower < 65
+                        ? (lang === "en" ? "Urgent Spaced Drill inserted in tomorrow's plan." : "कल की योजना में 10-मिनट त्वरित पुनरावृत्ति शामिल।")
+                        : (lang === "en" ? "Micro-retrieval flashcards at Day 3, 7, 14." : "दिन 3, 7, 14 पर स्वचालित सूक्ष्म प्रश्नोत्तरी।")}
+                    </div>
+                  </div>
+
+                  <div style={{ background: "var(--surface-muted)", padding: "0.75rem", borderRadius: "8px" }}>
+                    <div style={{ fontWeight: 700, fontSize: "0.82rem", color: "#fbbf24" }}>
+                      {lang === "en" ? "3. Diligence & Grit Reinforcement" : "3. परिश्रम प्रोत्साहन"}
+                    </div>
+                    <div style={{ fontSize: "0.82rem", marginTop: "0.25rem" }}>
+                      {hardworkingGrit >= 90
+                        ? (lang === "en" ? "High streak multiplier (1.5x XP) + bonus quests." : "उच्च स्ट्रीक गुणक (1.5x XP) और बोनस क्वेस्ट।")
+                        : (lang === "en" ? "Pomodoro 15-min sprint intervals + badge rewards." : "15-मिनट पोमोडोरो अंतराल व बैज प्रोत्साहन।")}
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Interactive Simulation Controls */}
+              <div className="card" style={{ border: "1.5px solid rgba(99, 102, 241, 0.3)" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", marginBottom: "0.6rem" }}>
+                  <span className="badge badge-purple">{lang === "en" ? "Interactive Simulation Sandbox" : "इंटरैक्टिव सिमुलेटर"}</span>
+                  <span style={{ fontSize: "0.84rem", color: "var(--text-secondary)" }}>
+                    {lang === "en" ? "Test how continuous assessments dynamically evolve the study plan:" : "देखें कि सतत मूल्यांकन कैसे योजना को स्वतः बदलता है:"}
+                  </span>
+                </div>
+                <div style={{ display: "flex", gap: "0.5rem", flexWrap: "wrap" }}>
+                  <button
+                    type="button"
+                    className="btn"
+                    onClick={() => {
+                      setEvolvingPlanMode("scaffolded");
+                      setUnderstandingGrip(62);
+                      setRetentionPower(68);
+                      triggerHaptic("medium");
+                      awardXp(20, lang === "en" ? "Plan Evolved: Scaffolding Bridge Added 📉" : "योजना विकसित: फाउंडेशन ब्रिज सक्रिय 📉");
+                    }}
+                    style={{
+                      fontSize: "0.8rem",
+                      background: evolvingPlanMode === "scaffolded" ? "rgba(245, 158, 11, 0.25)" : "rgba(255, 255, 255, 0.06)",
+                      borderColor: evolvingPlanMode === "scaffolded" ? "#f59e0b" : "rgba(255, 255, 255, 0.12)"
+                    }}
+                  >
+                    <span>🔴</span>
+                    <span>{lang === "en" ? "Simulate Concept Struggle (<60%): Auto-Insert Bridge Lesson" : "कठिनाई सिमुलेट करें: स्वतः ब्रिज जोड़ें"}</span>
+                  </button>
+
+                  <button
+                    type="button"
+                    className="btn"
+                    onClick={() => {
+                      setRetentionPower(58);
+                      triggerHaptic("medium");
+                      awardXp(20, lang === "en" ? "Plan Evolved: Spaced Retrieval Scheduled 📈" : "योजना विकसित: त्वरित पुनरावृत्ति 📈");
+                    }}
+                    style={{
+                      fontSize: "0.8rem",
+                      background: retentionPower < 65 ? "rgba(56, 189, 248, 0.25)" : "rgba(255, 255, 255, 0.06)",
+                      borderColor: retentionPower < 65 ? "#38bdf8" : "rgba(255, 255, 255, 0.12)"
+                    }}
+                  >
+                    <span>🟡</span>
+                    <span>{lang === "en" ? "Simulate Retention Decay (Day 7 Drop): Auto-Schedule Spaced Retrieval" : "विस्मरण सिमुलेट करें: पुनरावृत्ति जोड़ें"}</span>
+                  </button>
+
+                  <button
+                    type="button"
+                    className="btn"
+                    onClick={() => {
+                      setEvolvingPlanMode("olympiad");
+                      setUnderstandingGrip(96);
+                      setHardworkingGrit(98);
+                      setRetentionPower(94);
+                      triggerHaptic("heavy");
+                      awardXp(40, lang === "en" ? "Plan Evolved: Olympiad Fast-Track Unlocked! 🚀" : "योजना विकसित: ओलंपियाड ट्रैक सक्रिय! 🚀");
+                    }}
+                    style={{
+                      fontSize: "0.8rem",
+                      background: evolvingPlanMode === "olympiad" ? "rgba(16, 185, 129, 0.25)" : "rgba(255, 255, 255, 0.06)",
+                      borderColor: evolvingPlanMode === "olympiad" ? "#10b981" : "rgba(255, 255, 255, 0.12)"
+                    }}
+                  >
+                    <span>🟢</span>
+                    <span>{lang === "en" ? "Simulate 100% Mastery & High Grit: Fast-Track to Olympiad" : "100% निपुणता सिमुलेट करें: ओलंपियाड ट्रैक"}</span>
+                  </button>
+
+                  <button
+                    type="button"
+                    className="btn"
+                    onClick={() => {
+                      setEvolvingPlanMode("standard");
+                      setUnderstandingGrip(88);
+                      setRetentionPower(74);
+                      setHardworkingGrit(92);
+                      triggerHaptic("light");
+                    }}
+                    style={{ fontSize: "0.8rem" }}
+                  >
+                    <span>🔄</span>
+                    <span>{lang === "en" ? "Reset to Baseline" : "रीसेट करें"}</span>
+                  </button>
+                </div>
+
+                {/* Mutated Timetable Preview */}
+                <div style={{ marginTop: "1rem", padding: "0.85rem", borderRadius: "8px", background: "rgba(0, 0, 0, 0.35)", border: "1px solid rgba(255, 255, 255, 0.08)" }}>
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "0.5rem" }}>
+                    <strong style={{ fontSize: "0.85rem", color: "#ffffff" }}>
+                      {lang === "en" ? "Tomorrow's Dynamically Evolved Timetable Schedule:" : "कल की स्वतः विकसित समय-सारणी:"}
+                    </strong>
+                    <span className="badge badge-green">
+                      {lang === "en" ? "Auto-Mutated by Assessment Loop" : "सतत मूल्यांकन द्वारा स्वतः अद्यतित"}
+                    </span>
+                  </div>
+                  <div style={{ display: "flex", flexDirection: "column", gap: "0.45rem", fontSize: "0.83rem" }}>
+                    {evolvingPlanMode === "scaffolded" ? (
+                      <>
+                        <div style={{ padding: "0.45rem 0.65rem", borderRadius: "6px", background: "rgba(245, 158, 11, 0.15)", border: "1px solid rgba(245, 158, 11, 0.3)" }}>
+                          <strong>09:00 - 09:25 AM:</strong> {lang === "en" ? "Bridge Module: Class 6 Fraction & Ratio Concrete Scaffolding (Visual Number Line)" : "फाउंडेशन ब्रिज: कक्षा 6 भिन्न व अनुपात चित्रमय अभ्यास"}
+                        </div>
+                        <div style={{ padding: "0.45rem 0.65rem", borderRadius: "6px", background: "rgba(255, 255, 255, 0.04)" }}>
+                          <strong>09:30 - 09:50 AM:</strong> {lang === "en" ? "Science: Force & Friction Interactive Friction Simulator" : "विज्ञान: बल और घर्षण सिमुलेटर परीक्षण"}
+                        </div>
+                        <div style={{ padding: "0.45rem 0.65rem", borderRadius: "6px", background: "rgba(255, 255, 255, 0.04)" }}>
+                          <strong>09:50 - 10:00 AM:</strong> {lang === "en" ? "Micro-Check: 3-Minute Confidence Pulse (No Marks Penalty)" : "सूक्ष्म जांच: 3-मिनट आत्मविश्वास परीक्षण"}
+                        </div>
+                      </>
+                    ) : evolvingPlanMode === "olympiad" ? (
+                      <>
+                        <div style={{ padding: "0.45rem 0.65rem", borderRadius: "6px", background: "rgba(16, 185, 129, 0.15)", border: "1px solid rgba(16, 185, 129, 0.3)" }}>
+                          <strong>09:00 - 09:35 AM:</strong> {lang === "en" ? "Olympiad Challenge: Non-Routine Ratio Invariance & Combinatorics Proof" : "ओलंपियाड चुनौती: अनुपात अपरिवर्तनीयता व क्रमचय-संचय प्रमाण"}
+                        </div>
+                        <div style={{ padding: "0.45rem 0.65rem", borderRadius: "6px", background: "rgba(255, 255, 255, 0.04)" }}>
+                          <strong>09:40 - 10:00 AM:</strong> {lang === "en" ? "Advanced Science: Mechanical Advantage in Gear Trains Simulator" : "उन्नत विज्ञान: गियर चक्रों में यांत्रिक लाभ"}
+                        </div>
+                      </>
+                    ) : (
+                      <>
+                        <div style={{ padding: "0.45rem 0.65rem", borderRadius: "6px", background: "rgba(56, 189, 248, 0.1)", border: "1px solid rgba(56, 189, 248, 0.2)" }}>
+                          <strong>09:00 - 09:25 AM:</strong> {lang === "en" ? "Mathematics: Inverse Variation Micro-Proof Challenge (NCERT Ch 3)" : "गणित: प्रतिलोम समानुपात प्रमाण चुनौती (NCERT अध्याय 3)"}
+                        </div>
+                        <div style={{ padding: "0.45rem 0.65rem", borderRadius: "6px", background: "rgba(255, 255, 255, 0.04)" }}>
+                          <strong>09:30 - 09:55 AM:</strong> {lang === "en" ? "Science: Force & Friction Interactive Friction Simulator" : "विज्ञान: बल और घर्षण सिमुलेटर परीक्षण"}
+                        </div>
+                        <div style={{ padding: "0.45rem 0.65rem", borderRadius: "6px", background: "rgba(255, 255, 255, 0.04)" }}>
+                          <strong>09:55 - 10:00 AM:</strong> {lang === "en" ? "Panchpadi Step 5: Sourced Exit Competency Check" : "पंचपदी चरण 5: दक्षता सत्यापन"}
+                        </div>
+                      </>
+                    )}
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {evolutionSubView === "governanceLayers" && (
+            <>
           <div className="card">
             <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: "0.75rem" }}>
               <div>
@@ -2347,6 +2818,8 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
               </div>
             ))}
           </div>
+          </>
+          )}
         </div>
       )}
 
@@ -2362,6 +2835,32 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
                 : "माता-पिता को पूर्ण नियंत्रण: डॉक्टरों द्वारा तय स्क्रीन समय सीमा देखें, गोपनीयता सहमति प्रबंधित करें और 1-क्लिक में रिपोर्ट डाउनलोड करें।"
             }
           />
+
+          {/* Parent Sub-View Toggle */}
+          <div style={{ display: "flex", gap: "0.5rem", marginBottom: "1rem", flexWrap: "wrap" }}>
+            <button
+              type="button"
+              className={`btn ${parentSubView === "governance" ? "btn-primary" : ""}`}
+              onClick={() => setParentSubView("governance")}
+            >
+              {lang === "en" ? "👨‍👩‍👧 Parent Dashboard & 1-Click WhatsApp Report" : "👨‍👩‍👧 अभिभावक डैशबोर्ड व व्हाट्सऐप रिपोर्ट"}
+            </button>
+            <button
+              type="button"
+              className={`btn ${parentSubView === "legalHub" ? "btn-primary" : ""}`}
+              onClick={() => setParentSubView("legalHub")}
+            >
+              {lang === "en" ? "🛡️ Institutional Legal Routes, DPDP & Child Health Hub" : "🛡️ कानूनी प्रमाणीकरण, DPDP व बाल स्वास्थ्य"}
+            </button>
+          </div>
+
+          {parentSubView === "legalHub" && (
+            <div style={{ marginBottom: "1.25rem" }}>
+              <GovernanceAndRiskHub lang={lang} />
+            </div>
+          )}
+
+          {parentSubView === "governance" && (
           <div className="grid-2">
           <div className="card">
             <span className="badge badge-green">{activeCurriculum.parentViewPlan.cadence}</span>
@@ -2571,6 +3070,7 @@ DPDP 2023 Consent: Verified Parental Consent active`}
             ))}
           </div>
         </div>
+        )}
         </div>
       )}
 
