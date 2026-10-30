@@ -124,7 +124,7 @@ test("AT-08", "Learner profile schema", () => {
 });
 
 test("AT-09", "No em or en dashes in authored files", () => {
-  const files = walk(root, ["node_modules", ".git", "snapshots"]);
+  const files = walk(root, ["node_modules", ".git", "snapshots", ".next"]);
   return files.filter((f) => /\.(md|json|mjs|js|html|css|txt)$/.test(f))
     .filter((f) => /[\u2013\u2014]/.test(fs.readFileSync(f, "utf8")))
     .map((f) => `dash found in ${path.relative(root, f)}`);

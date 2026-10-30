@@ -5,6 +5,7 @@ import Link from "next/link";
 import MiddleSchoolDeepDive from "./components/MiddleSchoolDeepDive";
 import GamificationHub, { Quest, BadgeItem } from "./components/GamificationHub";
 import VentureThesisView from "./components/VentureThesisView";
+import GoalAndUsageGuide from "./components/GoalAndUsageGuide";
 import { useLanguage } from "./components/useLanguage";
 import LanguageToggle from "./components/LanguageToggle";
 
@@ -159,21 +160,80 @@ const INITIAL_BADGES: BadgeItem[] = [
   }
 ];
 
+function TabTipBanner({
+  icon,
+  title,
+  text,
+  actionText,
+  onAction
+}: {
+  icon: string;
+  title: string;
+  text: string;
+  actionText?: string;
+  onAction?: () => void;
+}) {
+  return (
+    <div
+      style={{
+        background: "rgba(99, 102, 241, 0.08)",
+        border: "1px solid rgba(99, 102, 241, 0.22)",
+        borderRadius: "10px",
+        padding: "0.65rem 0.95rem",
+        marginBottom: "1rem",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "space-between",
+        flexWrap: "wrap",
+        gap: "0.5rem"
+      }}
+    >
+      <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+        <span style={{ fontSize: "1.15rem" }}>{icon}</span>
+        <div>
+          <span style={{ fontWeight: 700, fontSize: "0.85rem", color: "#a5b4fc" }}>
+            {title}:{" "}
+          </span>
+          <span style={{ fontSize: "0.84rem", color: "var(--text-secondary)" }}>
+            {text}
+          </span>
+        </div>
+      </div>
+      {actionText && onAction && (
+        <button
+          type="button"
+          className="btn"
+          onClick={onAction}
+          style={{
+            padding: "0.25rem 0.65rem",
+            fontSize: "0.76rem",
+            background: "rgba(99, 102, 241, 0.2)",
+            borderColor: "rgba(99, 102, 241, 0.4)",
+            color: "#ffffff"
+          }}
+        >
+          {actionText}
+        </button>
+      )}
+    </div>
+  );
+}
+
 const UI_TEXT = {
   en: {
     subtitle:
       "Prototype: a plan for every year of school, starting with CBSE Classes 6-8. Other boards, early years and exam tracks are included as data architecture.",
     tabs: {
-      planner: "1. Year, Week & Day Planner",
-      diagnostic: "2. Adaptive Diagnostic",
-      middleStage: "3. Middle Stage Deep Dive (Grades 6-8)",
-      lesson: "4. Daily Lesson Loop",
-      mocks: "5. Mock Exam Engine",
-      tracks: "6. Competitive & Global Tracks",
-      evolution: "7. Self-Evolving Engine (L1-L5)",
-      parent: "8. Parent View & Legal Risks",
-      venture: "9. Venture Thesis & 6 Q&A",
-      gamification: "10. Quests, Badges & XP Hub"
+      planner: "1. Year, Week & Day Planner (📅 Day Schedule)",
+      diagnostic: "2. Adaptive Diagnostic (🔍 Find Gaps)",
+      middleStage: "3. Middle Stage Deep Dive (📖 Grades 6-8)",
+      lesson: "4. Daily Lesson Loop (✍️ 15-Min Step)",
+      mocks: "5. Mock Exam Engine (📝 CBSE/JEE)",
+      tracks: "6. Competitive & Global Tracks (🚀 Tracks)",
+      evolution: "7. Self-Evolving Engine (L1-L5) (🔄 Auto-Update)",
+      parent: "8. Parent View & Legal Risks (🛡️ Parent Safety)",
+      venture: "9. Venture Thesis & 6 Q&A (💡 Goal & FAQ)",
+      gamification: "10. Quests, Badges & XP Hub (🏆 Rewards)"
     },
     boardLabel: "Select Board / Framework",
     yearLabel: "Select Stage / Year (All 16 Stages)",
@@ -184,16 +244,16 @@ const UI_TEXT = {
     subtitle:
       "प्रोटोटाइप: स्कूल के हर वर्ष की योजना, शुरुआत सीबीएसई कक्षा 6-8 से। अन्य बोर्ड, प्रारंभिक वर्ष और प्रतियोगी परीक्षा ट्रैक डेटा संरचना के रूप में शामिल हैं।",
     tabs: {
-      planner: "1. वार्षिक, साप्ताहिक व दैनिक योजना",
-      diagnostic: "2. अनुकूलित निदान (Diagnostic)",
-      middleStage: "3. माध्यमिक चरण गहरा अध्ययन (कक्षा 6-8)",
-      lesson: "4. दैनिक पाठ चक्र (Lesson Loop)",
-      mocks: "5. मॉक परीक्षा इंजन",
-      tracks: "6. प्रतियोगी व विदेश ट्रैक",
-      evolution: "7. स्व-विकसित इंजन (L1-L5)",
-      parent: "8. अभिभावक दृश्य व विधिक जोखिम",
-      venture: "9. वेंचर रणनीति व 6 मुख्य प्रश्न",
-      gamification: "10. दैनिक क्वेस्ट, बैज व एक्सपी हब"
+      planner: "1. वार्षिक, साप्ताहिक व दैनिक योजना (📅)",
+      diagnostic: "2. अनुकूलित निदान (Diagnostic 🔍)",
+      middleStage: "3. माध्यमिक चरण गहरा अध्ययन (📖 कक्षा 6-8)",
+      lesson: "4. दैनिक पाठ चक्र (Lesson Loop ✍️)",
+      mocks: "5. मॉक परीक्षा इंजन (📝)",
+      tracks: "6. प्रतियोगी व विदेश ट्रैक (🚀)",
+      evolution: "7. स्व-विकसित इंजन (L1-L5 🔄)",
+      parent: "8. अभिभावक दृश्य व विधिक जोखिम (🛡️)",
+      venture: "9. वेंचर रणनीति व 6 मुख्य प्रश्न (💡)",
+      gamification: "10. दैनिक क्वेस्ट, बैज व एक्सपी हब (🏆)"
     },
     boardLabel: "बोर्ड / फ्रेमवर्क चुनें",
     yearLabel: "चरण / कक्षा चुनें (सभी 16 चरण)",
@@ -205,6 +265,7 @@ const UI_TEXT = {
 export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula }: Props) {
   const [lang, setLang] = useLanguage();
   const [ventureBrand, setVentureBrand] = useState<string>(masterIndex.venture.ventureName || "EveryYear");
+  const [showGuide, setShowGuide] = useState<boolean>(true);
   const [activeTab, setActiveTab] = useState<
     "planner" | "diagnostic" | "middleStage" | "lesson" | "mocks" | "tracks" | "evolution" | "parent" | "venture" | "gamification"
   >("planner");
@@ -424,6 +485,24 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
             >
               <span>Venture Thesis &amp; 6 Q&amp;A</span>
             </Link>
+            <button
+              type="button"
+              className={`control-pill ${showGuide ? "active" : ""}`}
+              onClick={() => setShowGuide(!showGuide)}
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "0.35rem",
+                background: showGuide ? "linear-gradient(135deg, #4f46e5, #06b6d4)" : "rgba(255, 255, 255, 0.08)",
+                borderColor: showGuide ? "#6366f1" : "rgba(255, 255, 255, 0.16)",
+                color: "#ffffff",
+                fontWeight: 700
+              }}
+              title="Toggle Goal & Usage Guide"
+            >
+              <span>💡</span>
+              <span>{showGuide ? (lang === "en" ? "Hide Guide" : "मार्गदर्शिका छिपाएं") : (lang === "en" ? "Goal & How To Use" : "लक्ष्य व उपयोग मार्गदर्शिका")}</span>
+            </button>
             <LanguageToggle lang={lang} onChange={setLang} />
           </div>
         </div>
@@ -461,6 +540,18 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
           </div>
         </div>
       </header>
+
+      {/* Visual Platform Goal and Usage Guide */}
+      <GoalAndUsageGuide
+        lang={lang}
+        brandName={ventureBrand}
+        onSelectTab={(tabKey) => {
+          setActiveTab(tabKey);
+          triggerHaptic("light");
+        }}
+        isOpen={showGuide}
+        onToggle={() => setShowGuide(!showGuide)}
+      />
 
       {/* Floating Celebratory XP Toast */}
       {xpToast && (
@@ -600,6 +691,17 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
       {/* TAB 1: YEAR, WEEK & DAY PLANNER */}
       {activeTab === "planner" && activeCurriculum && (
         <div>
+          <TabTipBanner
+            icon="📅"
+            title={lang === "en" ? "How to use this view" : "इस दृश्य का उपयोग कैसे करें"}
+            text={
+              lang === "en"
+                ? "Review your child's 60-min daily schedule below. Adjust the study slider on the right to rebalance subjects automatically."
+                : "नीचे 60 मिनट की दैनिक समय-सारणी देखें। दाईं ओर दिए गए स्लाइडर से दैनिक अध्ययन समय को अपनी आवश्यकता अनुसार बदलें।"
+            }
+            actionText={lang === "en" ? "Start Lesson →" : "पाठ शुरू करें →"}
+            onAction={() => setActiveTab("lesson")}
+          />
           <div className="card">
             <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", gap: "0.75rem", alignItems: "center" }}>
               <div>
@@ -886,6 +988,15 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
       {/* TAB 2: ADAPTIVE DIAGNOSTIC PLACEMENT ENGINE */}
       {activeTab === "diagnostic" && (
         <div className="card">
+          <TabTipBanner
+            icon="🔍"
+            title={lang === "en" ? "How to use this view" : "इस दृश्य का उपयोग कैसे करें"}
+            text={
+              lang === "en"
+                ? "Answer the diagnostic questions below. The engine detects previous-grade prerequisite gaps (e.g. Class 6 integers before Class 7 algebra) and recalibrates the plan."
+                : "नीचे दिए गए प्रश्नों के उत्तर दें। इंजन पिछली कक्षा की कमियों को पहचानता है और सीखने की योजना को स्वतः समायोजित करता है।"
+            }
+          />
           <h2>
             {lang === "en"
               ? "Per-Domain Adaptive Skill Diagnostic & Year Placement Engine"
@@ -1038,21 +1149,41 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
 
       {/* TAB: MIDDLE STAGE DEEP DIVE (CLASSES 6-8) */}
       {activeTab === "middleStage" && (
-        <MiddleSchoolDeepDive
-          deepeningData={masterIndex.middleStageDeepening}
-          lang={lang}
-          onAwardXp={(amt, reason) => {
-            awardXp(amt, reason);
-            setQuests((prev) =>
-              prev.map((q) => (q.id === "quest-challenge" ? { ...q, progress: 1, completed: true } : q))
-            );
-          }}
-        />
+        <div>
+          <TabTipBanner
+            icon="📖"
+            title={lang === "en" ? "How to use this view" : "इस दृश्य का उपयोग कैसे करें"}
+            text={
+              lang === "en"
+                ? "Explore new NCERT textbooks (Ganita Prakash, Curiosity, Poorvi) and solve 3-tier challenge problems to earn bonus XP."
+                : "नई एनसीईआरटी पाठ्यपुस्तकों (गणित प्रकाश, जिज्ञासा) का अध्ययन करें और बोनस XP जीतने के लिए स्तर-वार प्रश्नों को हल करें।"
+            }
+          />
+          <MiddleSchoolDeepDive
+            deepeningData={masterIndex.middleStageDeepening}
+            lang={lang}
+            onAwardXp={(amt, reason) => {
+              awardXp(amt, reason);
+              setQuests((prev) =>
+                prev.map((q) => (q.id === "quest-challenge" ? { ...q, progress: 1, completed: true } : q))
+              );
+            }}
+          />
+        </div>
       )}
 
       {/* TAB: DAILY LESSON LOOP */}
       {activeTab === "lesson" && activeCurriculum && (
         <div className="card">
+          <TabTipBanner
+            icon="✍️"
+            title={lang === "en" ? "How to use this view" : "इस दृश्य का उपयोग कैसे करें"}
+            text={
+              lang === "en"
+                ? "Work through the 5 phases: 1. Introduction ➔ 2. Concept ➔ 3. Practice ➔ 4. Real-world Application ➔ 5. Exit Quiz. Need help? Click 'Reveal Hint'."
+                : "5 चरणों में सीखें: 1. परिचय ➔ 2. अवधारणा ➔ 3. अभ्यास ➔ 4. वास्तविक अनुप्रयोग ➔ 5. क्विज़। कठिनाई होने पर 'संकेत देखें' पर क्लिक करें।"
+            }
+          />
           <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: "0.5rem" }}>
             <div>
               <span className="badge badge-blue">
@@ -1210,6 +1341,15 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
       {/* TAB 4: MOCK EXAM ENGINE */}
       {activeTab === "mocks" && (
         <div className="card">
+          <TabTipBanner
+            icon="📝"
+            title={lang === "en" ? "How to use this view" : "इस दृश्य का उपयोग कैसे करें"}
+            text={
+              lang === "en"
+                ? "Pick an official board or entrance blueprint (CBSE Class 10/12, JEE Main, NEET). Solve questions under real timed conditions and view your mastery analytics."
+                : "आधिकारिक परीक्षा ब्लूप्रिंट (सीबीएसई कक्षा 10/12, जेईई मेन, नीट) चुनें। वास्तविक समय सीमा में प्रश्न हल करें और तुरंत विश्लेषण देखें।"
+            }
+          />
           <h2>
             {lang === "en"
               ? "Official-Blueprint Mock Exam Engine (Board, JEE, NEET, CUET, UPSC, SAT/IELTS/TOEFL)"
@@ -1344,6 +1484,15 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
       {/* TAB 5: COMPETITIVE & STUDY-ABROAD TRACKS */}
       {activeTab === "tracks" && (
         <div>
+          <TabTipBanner
+            icon="🚀"
+            title={lang === "en" ? "How to use this view" : "इस दृश्य का उपयोग कैसे करें"}
+            text={
+              lang === "en"
+                ? "See how school subjects branch seamlessly into JEE, NEET, CUET, and SAT without duplicate study hours."
+                : "देखें कि कैसे स्कूल के विषय सीधे जेईई, नीट, सीयूईटी और सैट से जुड़ते हैं। आपको स्कूल और कोचिंग में एक ही पाठ दो बार नहीं पढ़ना पड़ेगा।"
+            }
+          />
           <div className="card">
             <h2>
               {lang === "en"
@@ -1408,6 +1557,15 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
       {/* TAB 6: SELF-EVOLVING ENGINE (L1-L5) & GOVERNANCE */}
       {activeTab === "evolution" && (
         <div>
+          <TabTipBanner
+            icon="🔄"
+            title={lang === "en" ? "How to use this view" : "इस दृश्य का उपयोग कैसे करें"}
+            text={
+              lang === "en"
+                ? "Click 'Simulate Official Board Circular Diff' to see how the AI automatically catches government circulars and updates question banks safely."
+                : "'Simulate Official Board Circular Diff' पर क्लिक करके देखें कि कैसे एआई सरकारी आदेश पकड़कर प्रश्न बैंक को सुरक्षित रूप से अपडेट करता है।"
+            }
+          />
           <div className="card">
             <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: "0.75rem" }}>
               <div>
@@ -1533,7 +1691,17 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
 
       {/* TAB 7: PARENT VIEW & LEGAL / RISK REGISTER */}
       {activeTab === "parent" && activeCurriculum && (
-        <div className="grid-2">
+        <div>
+          <TabTipBanner
+            icon="🛡️"
+            title={lang === "en" ? "How to use this view" : "इस दृश्य का उपयोग कैसे करें"}
+            text={
+              lang === "en"
+                ? "Parents have complete control: check daily screen minutes against medical guidelines (IAP), manage privacy consent (DPDP Act), and export profile data."
+                : "माता-पिता को पूर्ण नियंत्रण: डॉक्टरों द्वारा तय स्क्रीन समय सीमा देखें, गोपनीयता सहमति प्रबंधित करें और 1-क्लिक में रिपोर्ट डाउनलोड करें।"
+            }
+          />
+          <div className="grid-2">
           <div className="card">
             <span className="badge badge-green">{activeCurriculum.parentViewPlan.cadence}</span>
             <h2>
@@ -1678,6 +1846,7 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
               </div>
             ))}
           </div>
+        </div>
         </div>
       )}
 
