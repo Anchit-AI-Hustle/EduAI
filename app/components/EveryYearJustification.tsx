@@ -401,6 +401,51 @@ export default function EveryYearJustification() {
 
   return (
     <div className="app-shell" lang={lang}>
+      {/* Top Global Mode Navigation Bar (Separates Platform Prototype vs Venture Justification) */}
+      <nav className="global-mode-header" aria-label="Global Mode Navigation">
+        <div className="global-mode-brand">
+          <span className="brand-logo-gem">✦</span>
+          <span className="brand-title">EveryYear</span>
+          <span className="badge badge-green" style={{ fontSize: "0.72rem" }}>
+            {lang === "en" ? "Venture Strategy Dossier" : "उद्यम रणनीति दस्तावेज"}
+          </span>
+        </div>
+        <div className="global-mode-pills" role="tablist" aria-label="Platform and Thesis Modes">
+          <Link
+            href="/"
+            className="global-pill"
+            title={lang === "en" ? "Launch Interactive Student and Parent Learning App" : "सक्रिय विद्यार्थी अध्ययन ऐप खोलें"}
+          >
+            <span>🎒</span>
+            <span>{lang === "en" ? "Launch Usable Platform (App)" : "लर्निंग ऐप चलाएं"}</span>
+          </Link>
+          <button
+            type="button"
+            className="global-pill active"
+            title={lang === "en" ? "Currently Viewing 6 Core Venture Questions" : "6 मुख्य रणनीतिक प्रश्न"}
+          >
+            <span>📊</span>
+            <span>{lang === "en" ? "Venture Justification (Active)" : "उद्यम औचित्य (सक्रिय)"}</span>
+          </button>
+          <Link
+            href="/pariksha-saathi"
+            className="global-pill secondary-pill"
+            title="Pariksha Saathi Newspaper Prototype"
+          >
+            <span>📰</span>
+            <span>Pariksha Saathi</span>
+          </Link>
+          <Link
+            href="/aage-kya"
+            className="global-pill secondary-pill"
+            title="Aage Kya Career Navigator"
+          >
+            <span>🧭</span>
+            <span>Aage Kya</span>
+          </Link>
+        </div>
+      </nav>
+
       <header className="top-header">
         <div className="header-row">
           <div>
@@ -439,6 +484,55 @@ export default function EveryYearJustification() {
           </a>
         ))}
       </nav>
+
+      {/* Executive Comparison Banner */}
+      <div
+        style={{
+          background: "linear-gradient(135deg, rgba(99, 102, 241, 0.12) 0%, rgba(16, 185, 129, 0.12) 100%)",
+          border: "1.5px solid rgba(99, 102, 241, 0.35)",
+          borderRadius: "14px",
+          padding: "1.1rem 1.35rem",
+          margin: "1rem 0 1.25rem 0",
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          flexWrap: "wrap",
+          gap: "1rem"
+        }}
+      >
+        <div style={{ maxWidth: "820px" }}>
+          <span className="badge badge-blue" style={{ marginBottom: "0.35rem" }}>
+            {lang === "en" ? "Architecture Note: Two Distinct Experiences" : "संरचना स्पष्टीकरण: दो अलग-अलग अनुभव"}
+          </span>
+          <h3 style={{ margin: "0.2rem 0 0.35rem 0", fontSize: "1.2rem", fontWeight: 800 }}>
+            {lang === "en"
+              ? "Separately Usable: Learning Platform Prototype vs. Venture Justification"
+              : "अलग-अलग उपयोग योग्य: लर्निंग प्लेटफॉर्म प्रोटोटाइप बनाम उद्यम औचित्य"}
+          </h3>
+          <p style={{ margin: 0, color: "var(--text-secondary)", fontSize: "0.9rem", lineHeight: 1.55 }}>
+            {lang === "en"
+              ? "You are currently reading the strategic venture dossier (6 core questions, bottom-up TAM/SAM/SOM market models, and regulatory defensibility). To test the day-to-day student experience (15-min Panchpadi lesson, interactive practice, screen-time caps, and WhatsApp updates), launch the learning app prototype."
+              : "आप अभी रणनीतिक उद्यम दस्तावेज पढ़ रहे हैं (6 मुख्य प्रश्न, बाजार आकार और नियमन सुरक्षा)। विद्यार्थी और अभिभावक के वास्तविक दैनिक अनुभव के लिए सक्रिय प्लेटफॉर्म प्रोटोटाइप चलाएं।"}
+          </p>
+        </div>
+        <Link
+          href="/"
+          className="btn btn-primary"
+          style={{
+            textDecoration: "none",
+            display: "inline-flex",
+            alignItems: "center",
+            gap: "0.45rem",
+            padding: "0.65rem 1.35rem",
+            fontWeight: 800,
+            fontSize: "0.92rem",
+            boxShadow: "0 4px 14px rgba(99, 102, 241, 0.4)"
+          }}
+        >
+          <span>🚀</span>
+          <span>{lang === "en" ? "Launch Usable Platform (App)" : "सक्रिय ऐप चलाएं"}</span>
+        </Link>
+      </div>
 
       <section id="reality-check" className="card" style={{ borderColor: "rgba(245, 158, 11, 0.35)" }}>
         <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", marginBottom: "0.75rem", flexWrap: "wrap" }}>

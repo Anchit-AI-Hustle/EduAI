@@ -219,6 +219,44 @@ function TabTipBanner({
   );
 }
 
+function WorkflowNextBar({
+  currentStep,
+  nextStepTitle,
+  nextStepTab,
+  onNavigate,
+  lang
+}: {
+  currentStep: string;
+  nextStepTitle: string;
+  nextStepTab: any;
+  onNavigate: (tab: any) => void;
+  lang: "en" | "hi";
+}) {
+  return (
+    <div className="workflow-next-container">
+      <div>
+        <div style={{ fontSize: "0.76rem", fontWeight: 700, color: "#a5b4fc", textTransform: "uppercase" }}>
+          {lang === "en" ? "Daily Learning Journey" : "दैनिक अध्ययन यात्रा"}
+        </div>
+        <div style={{ fontSize: "0.92rem", fontWeight: 700, color: "#ffffff" }}>
+          ✓ {currentStep}
+        </div>
+      </div>
+      <button
+        type="button"
+        className="workflow-next-btn"
+        onClick={() => {
+          onNavigate(nextStepTab);
+          triggerHaptic("light");
+        }}
+      >
+        <span>{lang === "en" ? "Next Step:" : "अगला चरण:"} {nextStepTitle}</span>
+        <span>→</span>
+      </button>
+    </div>
+  );
+}
+
 const UI_TEXT = {
   en: {
     subtitle:
@@ -339,6 +377,33 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
   const [parentScreenCap, setParentScreenCap] = useState<number>(60);
   const [exportedProfileJson, setExportedProfileJson] = useState<string>("");
 
+  // Usable Workflow & Persona state
+  const [activeRole, setActiveRole] = useState<"student" | "parent" | "explorer">("student");
+  const [copiedWaToast, setCopiedWaToast] = useState<boolean>(false);
+  const [isSpeaking, setIsSpeaking] = useState<boolean>(false);
+  const [abhyasChoice, setAbhyasChoice] = useState<number | null>(null);
+
+  const handleSpeakLesson = (text: string) => {
+    if (typeof window === "undefined") return;
+    if ("speechSynthesis" in window) {
+      if (isSpeaking) {
+        window.speechSynthesis.cancel();
+        setIsSpeaking(false);
+        return;
+      }
+      window.speechSynthesis.cancel();
+      const utter = new SpeechSynthesisUtterance(text);
+      utter.rate = 0.95;
+      utter.onend = () => setIsSpeaking(false);
+      utter.onerror = () => setIsSpeaking(false);
+      setIsSpeaking(true);
+      window.speechSynthesis.speak(utter);
+    }
+    if (soundEnabled) {
+      playRewardSound();
+    }
+  };
+
   const t = UI_TEXT[lang];
 
   // Filter valid years for selected board
@@ -444,6 +509,56 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
 
   return (
     <div className="app-shell">
+      {/* Top Global Mode Navigation Bar (Separates Platform Prototype vs Venture Justification) */}
+      <nav className="global-mode-header" aria-label="Global Mode Navigation">
+        <div className="global-mode-brand">
+          <span className="brand-logo-gem">✦</span>
+          <span className="brand-title">{ventureBrand}</span>
+          <span className="badge badge-cyan" style={{ fontSize: "0.72rem" }}>
+            {lang === "en" ? "Usable Platform Prototype" : "सक्रिय प्लेटफॉर्म प्रोटोटाइप"}
+          </span>
+        </div>
+        <div className="global-mode-pills" role="tablist" aria-label="Platform and Thesis Modes">
+          <button
+            type="button"
+            className="global-pill active"
+            onClick={() => {
+              setActiveRole("student");
+              setActiveTab("planner");
+              triggerHaptic("light");
+            }}
+            title={lang === "en" ? "Interactive Student and Parent Learning App" : "विद्यार्थी व अभिभावक अध्ययन ऐप"}
+          >
+            <span>🎒</span>
+            <span>{lang === "en" ? "Learning Platform (App)" : "लर्निंग प्लेटफॉर्म (ऐप)"}</span>
+          </button>
+          <Link
+            href="/justification"
+            className="global-pill"
+            title={lang === "en" ? "6 Core Strategic Questions and Market Model" : "6 रणनीतिक प्रश्न और बाजार मॉडल"}
+          >
+            <span>📊</span>
+            <span>{lang === "en" ? "Venture Justification (Thesis)" : "उद्यम औचित्य (थीसिस)"}</span>
+          </Link>
+          <Link
+            href="/pariksha-saathi"
+            className="global-pill secondary-pill"
+            title="Pariksha Saathi Newspaper Prototype"
+          >
+            <span>📰</span>
+            <span>Pariksha Saathi</span>
+          </Link>
+          <Link
+            href="/aage-kya"
+            className="global-pill secondary-pill"
+            title="Aage Kya Career Navigator"
+          >
+            <span>🧭</span>
+            <span>Aage Kya</span>
+          </Link>
+        </div>
+      </nav>
+
       <header className="top-header">
         <div className="header-row">
           <div>
@@ -552,6 +667,173 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
         isOpen={showGuide}
         onToggle={() => setShowGuide(!showGuide)}
       />
+
+      {/* User Persona and Workflow Navigator */}
+      <section className="user-workflow-ribbon" aria-label="User Persona and Guided Workflow">
+        <div className="workflow-ribbon-header">
+          <div style={{ display: "flex", alignItems: "center", gap: "0.6rem" }}>
+            <span style={{ fontSize: "1.4rem" }}>
+              {activeRole === "student" ? "🎓" : activeRole === "parent" ? "👨‍👩‍👧" : "🧭"}
+            </span>
+            <div>
+              <div style={{ fontSize: "0.75rem", color: "#a5b4fc", textTransform: "uppercase", letterSpacing: "0.06em", fontWeight: 800 }}>
+                {lang === "en" ? "Active App Perspective" : "सक्रिय ऐप दृष्टिकोण"}
+              </div>
+              <div style={{ fontWeight: 800, fontSize: "1.05rem", color: "#ffffff" }}>
+                {activeRole === "student" && (lang === "en" ? "Student Learning Desk (Aarav, Class 7 CBSE)" : "विद्यार्थी अध्ययन डेस्क (आरव, कक्षा 7)")}
+                {activeRole === "parent" && (lang === "en" ? "Parent Dashboard & Digital Safety Guard" : "अभिभावक डैशबोर्ड व सुरक्षा")}
+                {activeRole === "explorer" && (lang === "en" ? "Curriculum, Board & Exam Tracks Explorer" : "पाठ्यक्रम, बोर्ड व परीक्षा अन्वेषक")}
+              </div>
+            </div>
+          </div>
+
+          <div className="role-switcher-buttons" role="group" aria-label="Select User Role">
+            <button
+              type="button"
+              className={`role-tab-btn ${activeRole === "student" ? "active" : ""}`}
+              onClick={() => {
+                setActiveRole("student");
+                setActiveTab("planner");
+                triggerHaptic("light");
+              }}
+            >
+              🎓 {lang === "en" ? "Student Mode" : "विद्यार्थी मोड"}
+            </button>
+            <button
+              type="button"
+              className={`role-tab-btn ${activeRole === "parent" ? "active" : ""}`}
+              onClick={() => {
+                setActiveRole("parent");
+                setActiveTab("parent");
+                triggerHaptic("light");
+              }}
+            >
+              👨‍👩‍👧 {lang === "en" ? "Parent Mode" : "अभिभावक मोड"}
+            </button>
+            <button
+              type="button"
+              className={`role-tab-btn ${activeRole === "explorer" ? "active" : ""}`}
+              onClick={() => {
+                setActiveRole("explorer");
+                setActiveTab("middleStage");
+                triggerHaptic("light");
+              }}
+            >
+              🧭 {lang === "en" ? "Curriculum Explorer" : "पाठ्यक्रम अन्वेषक"}
+            </button>
+          </div>
+        </div>
+
+        {/* Guided Daily Workflow for Student Mode */}
+        {activeRole === "student" && (
+          <div className="student-journey-bar">
+            <div className="journey-step-indicator">
+              <span className="step-tag">
+                {lang === "en" ? "Your 4-Step Daily Learning Journey:" : "आपकी 4-चरणीय दैनिक अध्ययन यात्रा:"}
+              </span>
+            </div>
+            <div className="journey-steps-grid">
+              <button
+                type="button"
+                className={`journey-step-card ${activeTab === "planner" ? "current" : ""}`}
+                onClick={() => {
+                  setActiveTab("planner");
+                  triggerHaptic("light");
+                }}
+              >
+                <span className="step-num">{lang === "en" ? "Step 1" : "चरण 1"}</span>
+                <span className="step-title">📅 {lang === "en" ? "Today's Schedule" : "दैनिक समय-सारणी"}</span>
+                <span className="step-sub">{customDailyMinutes}m {lang === "en" ? "Balanced Study Plan" : "संतुलित अध्ययन"}</span>
+              </button>
+              <button
+                type="button"
+                className={`journey-step-card ${activeTab === "lesson" ? "current" : ""}`}
+                onClick={() => {
+                  setActiveTab("lesson");
+                  triggerHaptic("light");
+                }}
+              >
+                <span className="step-num">{lang === "en" ? "Step 2" : "चरण 2"}</span>
+                <span className="step-title">✍️ {lang === "en" ? "5-Step Lesson" : "5-चरणीय पाठ"}</span>
+                <span className="step-sub">{lang === "en" ? "Panchpadi Audio & Practice" : "पंचपदी अभ्यास"}</span>
+              </button>
+              <button
+                type="button"
+                className={`journey-step-card ${activeTab === "diagnostic" ? "current" : ""}`}
+                onClick={() => {
+                  setActiveTab("diagnostic");
+                  triggerHaptic("light");
+                }}
+              >
+                <span className="step-num">{lang === "en" ? "Step 3" : "चरण 3"}</span>
+                <span className="step-title">🔍 {lang === "en" ? "Adaptive Quiz" : "दक्षता क्विज़"}</span>
+                <span className="step-sub">{lang === "en" ? "Find Gaps & Level Up" : "कमियां खोजें"}</span>
+              </button>
+              <button
+                type="button"
+                className={`journey-step-card ${activeTab === "gamification" ? "current" : ""}`}
+                onClick={() => {
+                  setActiveTab("gamification");
+                  triggerHaptic("light");
+                }}
+              >
+                <span className="step-num">{lang === "en" ? "Step 4" : "चरण 4"}</span>
+                <span className="step-title">🏆 {lang === "en" ? "XP & Badges" : "रिवार्ड्स व बैच"}</span>
+                <span className="step-sub">{xp} XP • {streak}d {lang === "en" ? "Flame Streak" : "लगातार"}</span>
+              </button>
+            </div>
+          </div>
+        )}
+
+        {/* Quick Highlights for Parent Mode */}
+        {activeRole === "parent" && (
+          <div className="student-journey-bar">
+            <div className="journey-step-indicator">
+              <span className="step-tag">
+                {lang === "en" ? "Parent Safety & Oversight Highlights:" : "अभिभावक सुरक्षा व निगरानी मुख्य बिंदु:"}
+              </span>
+            </div>
+            <div className="journey-steps-grid">
+              <button
+                type="button"
+                className={`journey-step-card ${activeTab === "parent" ? "current" : ""}`}
+                onClick={() => setActiveTab("parent")}
+              >
+                <span className="step-num">{lang === "en" ? "Health Guard" : "स्वास्थ्य सुरक्षा"}</span>
+                <span className="step-title">⏱️ {lang === "en" ? "Screen Time Cap" : "स्क्रीन समय सीमा"}</span>
+                <span className="step-sub">{customDailyMinutes}/{parentScreenCap}m (IAP Pediatric Standard)</span>
+              </button>
+              <button
+                type="button"
+                className={`journey-step-card ${activeTab === "parent" ? "current" : ""}`}
+                onClick={() => setActiveTab("parent")}
+              >
+                <span className="step-num">{lang === "en" ? "Communication" : "संवाद"}</span>
+                <span className="step-title">📱 {lang === "en" ? "WhatsApp Daily Report" : "व्हाट्सऐप दैनिक रिपोर्ट"}</span>
+                <span className="step-sub">{lang === "en" ? "1-Click Formatted Summary" : "1-क्लिक सारांश"}</span>
+              </button>
+              <button
+                type="button"
+                className={`journey-step-card ${activeTab === "parent" ? "current" : ""}`}
+                onClick={() => setActiveTab("parent")}
+              >
+                <span className="step-num">{lang === "en" ? "Compliance" : "नियमन"}</span>
+                <span className="step-title">🛡️ {lang === "en" ? "DPDP 2023 Consent" : "डीपीडीपी 2023 सहमति"}</span>
+                <span className="step-sub">{lang === "en" ? "Zero Tracking • Data Protected" : "सुरक्षित डेटा"}</span>
+              </button>
+              <button
+                type="button"
+                className={`journey-step-card ${activeTab === "diagnostic" ? "current" : ""}`}
+                onClick={() => setActiveTab("diagnostic")}
+              >
+                <span className="step-num">{lang === "en" ? "Academics" : "शैक्षणिक"}</span>
+                <span className="step-title">📊 {lang === "en" ? "Concept Mastery" : "अवधारणा दक्षता"}</span>
+                <span className="step-sub">{lang === "en" ? "Live Skill Graph Gaps" : "कौशल ग्राफ"}</span>
+              </button>
+            </div>
+          </div>
+        )}
+      </section>
 
       {/* Floating Celebratory XP Toast */}
       {xpToast && (
@@ -982,6 +1264,15 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
               </div>
             </div>
           </div>
+
+          {/* Workflow Step Progression */}
+          <WorkflowNextBar
+            currentStep={lang === "en" ? "Step 1: Daily 60-Minute Plan Reviewed" : "चरण 1: 60-मिनट दैनिक योजना देखी गई"}
+            nextStepTitle={lang === "en" ? "Start 5-Step Panchpadi Lesson" : "5-चरणीय पंचपदी पाठ शुरू करें"}
+            nextStepTab="lesson"
+            onNavigate={setActiveTab}
+            lang={lang}
+          />
         </div>
       )}
 
@@ -1144,6 +1435,15 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
               </div>
             </div>
           </div>
+
+          {/* Workflow Step Progression */}
+          <WorkflowNextBar
+            currentStep={lang === "en" ? "Step 3: Adaptive Diagnostic & Gaps Assessed" : "चरण 3: कौशल निदान व कमियां जांची गईं"}
+            nextStepTitle={lang === "en" ? "Claim Quests & View XP Rewards" : "रिवार्ड्स व बैच देखें"}
+            nextStepTab="gamification"
+            onNavigate={setActiveTab}
+            lang={lang}
+          />
         </div>
       )}
 
@@ -1232,9 +1532,32 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
               background: "var(--surface-muted)"
             }}
           >
-            <h3>
-              {loc(activeCurriculum.dailyLessonTemplate.steps[lessonStepIndex]?.title)}
-            </h3>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "0.5rem" }}>
+              <h3 style={{ margin: 0 }}>
+                {loc(activeCurriculum.dailyLessonTemplate.steps[lessonStepIndex]?.title)}
+              </h3>
+              <button
+                type="button"
+                className="btn"
+                onClick={() => {
+                  const speechText = `${loc(activeCurriculum.dailyLessonTemplate.steps[lessonStepIndex]?.title)}. ${activeCurriculum.dailyLessonTemplate.steps[lessonStepIndex]?.description}. Active unit: ${loc(activeCurriculum.subjects[0]?.units[0]?.title)}.`;
+                  handleSpeakLesson(speechText);
+                }}
+                style={{
+                  fontSize: "0.78rem",
+                  padding: "0.25rem 0.65rem",
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: "0.35rem",
+                  background: isSpeaking ? "rgba(239, 68, 68, 0.2)" : "rgba(99, 102, 241, 0.2)",
+                  borderColor: isSpeaking ? "#ef4444" : "#6366f1",
+                  color: "#ffffff"
+                }}
+              >
+                <span>{isSpeaking ? "⏹️" : "🔊"}</span>
+                <span>{isSpeaking ? (lang === "en" ? "Stop Audio" : "आवाज रोकें") : (lang === "en" ? "Listen to Lesson" : "पाठ की व्याख्या सुनें")}</span>
+              </button>
+            </div>
             <p>{activeCurriculum.dailyLessonTemplate.steps[lessonStepIndex]?.description}</p>
 
             <div
@@ -1287,6 +1610,74 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
                 )}
               </div>
 
+              {/* Interactive Step 3 Guided Practice Drill */}
+              {lessonStepIndex === 2 && (
+                <div
+                  style={{
+                    background: "rgba(99, 102, 241, 0.08)",
+                    border: "1px solid rgba(99, 102, 241, 0.25)",
+                    borderRadius: "8px",
+                    padding: "0.85rem",
+                    marginTop: "0.75rem"
+                  }}
+                >
+                  <div style={{ fontWeight: 700, fontSize: "0.88rem", color: "#a5b4fc", marginBottom: "0.4rem" }}>
+                    ✍️ {lang === "en" ? "Interactive Practice Drill (Step 3 Abhyas):" : "इंटरएक्टिव अभ्यास ड्रिल:"}
+                  </div>
+                  <p style={{ fontSize: "0.86rem", margin: "0.2rem 0 0.5rem" }}>
+                    {lang === "en"
+                      ? "Solve this practice item before proceeding to the application challenge:"
+                      : "वास्तविक अनुप्रयोग पर जाने से पहले इस अभ्यास प्रश्न को हल करें:"}
+                  </p>
+                  <div style={{ fontWeight: 600, fontSize: "0.9rem", marginBottom: "0.5rem" }}>
+                    {lang === "en"
+                      ? `Which calculation rule applies to ${loc(activeCurriculum.subjects[0]?.units[0]?.title) || "this topic"}?`
+                      : "इस विषय के लिए कौन सा गणना नियम लागू होता है?"}
+                  </div>
+                  {[
+                    lang === "en" ? "Follow foundational order of operations and verify unit consistency" : "बुनियादी नियमों का पालन करें और इकाइयों की जांच करें",
+                    lang === "en" ? "Guess the answer without step verification" : "बिना सत्यापन के उत्तर का अनुमान लगाएं",
+                    lang === "en" ? "Skip the prerequisite and jump straight to the answer" : "प्रारंभिक चरण छोड़ें और सीधे उत्तर पर जाएं"
+                  ].map((optText, oIdx) => (
+                    <button
+                      key={oIdx}
+                      type="button"
+                      className={`option-btn ${abhyasChoice === oIdx ? "selected" : ""}`}
+                      onClick={() => {
+                        setAbhyasChoice(oIdx);
+                        if (oIdx === 0) {
+                          awardXp(35, "Abhyas Practice Solved! ✍️");
+                        }
+                      }}
+                      style={{
+                        display: "block",
+                        width: "100%",
+                        textAlign: "left",
+                        marginBottom: "0.4rem"
+                      }}
+                    >
+                      {String.fromCharCode(65 + oIdx)}. {optText}
+                    </button>
+                  ))}
+                  {abhyasChoice !== null && (
+                    <div
+                      style={{
+                        padding: "0.5rem 0.75rem",
+                        borderRadius: "6px",
+                        background: abhyasChoice === 0 ? "rgba(16, 185, 129, 0.15)" : "rgba(245, 158, 11, 0.15)",
+                        fontSize: "0.82rem",
+                        color: abhyasChoice === 0 ? "#34d399" : "#fbbf24",
+                        fontWeight: 600
+                      }}
+                    >
+                      {abhyasChoice === 0
+                        ? (lang === "en" ? "✓ Correct! Step 3 Practice complete. Ready for Step 4 Application." : "✓ सही! चरण 3 अभ्यास पूर्ण।")
+                        : (lang === "en" ? "Try again - select Option A to apply standard NCERT method." : "पुनः प्रयास करें - विकल्प A चुनें।")}
+                    </div>
+                  )}
+                </div>
+              )}
+
               {/* Mastery Exit Check */}
               <div style={{ marginTop: "1rem", borderTop: "1px solid var(--border)", paddingTop: "0.85rem" }}>
                 <h4>Mastery Exit Ticket (Emits Append-Only Mastery Evidence Event)</h4>
@@ -1335,6 +1726,15 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
               </div>
             </div>
           </div>
+
+          {/* Workflow Step Progression */}
+          <WorkflowNextBar
+            currentStep={lang === "en" ? "Step 2: 5-Step Panchpadi Lesson Completed" : "चरण 2: 5-चरणीय पंचपदी पाठ पूर्ण"}
+            nextStepTitle={lang === "en" ? "Run Adaptive Skill Diagnostic" : "कौशल निदान क्विज़ करें"}
+            nextStepTab="diagnostic"
+            onNavigate={setActiveTab}
+            lang={lang}
+          />
         </div>
       )}
 
@@ -1781,6 +2181,69 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
                 {exportedProfileJson}
               </pre>
             )}
+
+            {/* Interactive WhatsApp Daily Progress Report */}
+            <div
+              style={{
+                marginTop: "1.25rem",
+                padding: "1rem",
+                borderRadius: "12px",
+                background: "rgba(16, 185, 129, 0.08)",
+                border: "1px solid rgba(16, 185, 129, 0.25)"
+              }}
+            >
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "0.5rem" }}>
+                <div>
+                  <span style={{ fontSize: "0.75rem", fontWeight: 800, textTransform: "uppercase", color: "#34d399" }}>
+                    {lang === "en" ? "Parent WhatsApp Report Generator" : "अभिभावक व्हाट्सऐप रिपोर्ट जनरेटर"}
+                  </span>
+                  <h4 style={{ margin: "0.2rem 0" }}>
+                    {lang === "en" ? "Daily Progress Summary for Parents" : "अभिभावकों के लिए दैनिक प्रगति सारांश"}
+                  </h4>
+                  <p style={{ margin: 0, fontSize: "0.85rem", color: "var(--text-secondary)" }}>
+                    {lang === "en"
+                      ? "Replaces chaotic tuition diary notes with an instant, structured daily update."
+                      : "ट्यूशन डायरी के बिखरे नोट्स की जगह एक क्लिक में संरचित दैनिक प्रगति रिपोर्ट।"}
+                  </p>
+                </div>
+                <button
+                  type="button"
+                  className="btn btn-primary"
+                  onClick={() => {
+                    const waText = `*EveryYear Daily Progress Report*\nLearner: ${activeLearner.identity.displayName} (${activeCurriculum.boardName} ${loc(activeCurriculum.yearLabel)})\nScreen Focus: ${customDailyMinutes}/${parentScreenCap} min (IAP safe limit)\nCompleted: ${loc(activeCurriculum.subjects[0]?.units[0]?.title) || "Daily Lesson Unit"}\nExit Mastery: 100% verified\nStreak: ${streak} Days | Level: ${currentLevelInfo.title} (${xp} XP)\nDPDP 2023 Consent: Active & Monitored`;
+                    if (typeof navigator !== "undefined" && navigator.clipboard) {
+                      navigator.clipboard.writeText(waText);
+                      setCopiedWaToast(true);
+                      awardXp(25, "WhatsApp Daily Report Generated! 📱");
+                      setTimeout(() => setCopiedWaToast(false), 3000);
+                    }
+                  }}
+                  style={{ display: "inline-flex", alignItems: "center", gap: "0.4rem" }}
+                >
+                  <span>📋</span>
+                  <span>{copiedWaToast ? (lang === "en" ? "Copied to Clipboard! ✓" : "कॉपी हो गया! ✓") : (lang === "en" ? "Copy WhatsApp Update" : "व्हाट्सऐप रिपोर्ट कॉपी करें")}</span>
+                </button>
+              </div>
+
+              {/* Realistic WhatsApp Preview Box */}
+              <div className="whatsapp-preview-box">
+                <div className="whatsapp-header">
+                  <span style={{ fontSize: "1.1rem" }}>💬</span>
+                  <span style={{ fontSize: "0.84rem", fontWeight: 700, color: "#e9edef" }}>
+                    {lang === "en" ? "WhatsApp Message Preview (Tap Copy above)" : "व्हाट्सऐप संदेश पूर्वावलोकन"}
+                  </span>
+                </div>
+                <div className="whatsapp-bubble">
+{`*EveryYear Daily Progress Report*
+Learner: ${activeLearner.identity.displayName} (${activeCurriculum.boardName} ${loc(activeCurriculum.yearLabel)})
+Screen Focus: ${customDailyMinutes}/${parentScreenCap} min (IAP safe limit)
+Completed: ${loc(activeCurriculum.subjects[0]?.units[0]?.title) || "Daily Lesson Unit"}
+Exit Mastery: 100% verified
+Streak: ${streak} Days | Level: ${currentLevelInfo.title} (${xp} XP)
+DPDP 2023 Consent: Verified Parental Consent active`}
+                </div>
+              </div>
+            </div>
           </div>
 
           <div className="card">
@@ -1851,24 +2314,80 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
       )}
 
       {/* TAB 8: VENTURE THESIS & 6 CORE QUESTIONS */}
-      {activeTab === "venture" && <VentureThesisView lang={lang} brandName={ventureBrand} />}
+      {activeTab === "venture" && (
+        <div>
+          <div
+            style={{
+              background: "linear-gradient(135deg, rgba(99, 102, 241, 0.15) 0%, rgba(6, 182, 212, 0.15) 100%)",
+              border: "1.5px solid rgba(99, 102, 241, 0.4)",
+              borderRadius: "12px",
+              padding: "1rem 1.25rem",
+              marginBottom: "1.25rem",
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+              flexWrap: "wrap",
+              gap: "0.75rem"
+            }}
+          >
+            <div>
+              <span className="badge badge-cyan" style={{ marginBottom: "0.3rem" }}>
+                {lang === "en" ? "Venture Justification & Business Case" : "उद्यम औचित्य व व्यवसाय मॉडल"}
+              </span>
+              <h3 style={{ margin: "0.2rem 0", fontSize: "1.2rem", fontWeight: 800 }}>
+                {lang === "en" ? "6 Core Strategic Questions Answered from Primary Data" : "6 मुख्य रणनीतिक प्रश्न और प्राथमिक डेटा"}
+              </h3>
+              <p style={{ margin: 0, fontSize: "0.88rem", color: "var(--text-secondary)" }}>
+                {lang === "en"
+                  ? "This section provides the strategic thesis, market sizing (24.69 crore national, 20 lakh wedge), unit economics (INR 199 or 499 / month), and defensible moat."
+                  : "यह अनुभाग रणनीतिक थीसिस, बाजार आकार और यूनिट इकोनॉमिक्स प्रस्तुत करता है।"}
+              </p>
+            </div>
+            <Link
+              href="/justification"
+              className="btn btn-primary"
+              style={{
+                textDecoration: "none",
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "0.45rem",
+                padding: "0.6rem 1.25rem",
+                fontWeight: 700
+              }}
+            >
+              <span>{lang === "en" ? "Open Full Dedicated Justification Page" : "संपूर्ण औचित्य पृष्ठ खोलें"}</span>
+              <span>↗</span>
+            </Link>
+          </div>
+          <VentureThesisView lang={lang} brandName={ventureBrand} />
+        </div>
+      )}
 
       {/* TAB 10: GAMIFICATION HUB (QUESTS, BADGES & XP) */}
       {activeTab === "gamification" && (
-        <GamificationHub
-          xp={xp}
-          streak={streak}
-          level={currentLevelInfo.level}
-          levelTitle={currentLevelInfo.title}
-          currentLevelBaseXp={currentLevelInfo.minXp}
-          nextLevelXp={currentLevelInfo.nextXp}
-          quests={quests}
-          badges={badges}
-          soundEnabled={soundEnabled}
-          onToggleSound={() => setSoundEnabled(!soundEnabled)}
-          onClaimQuest={handleClaimQuest}
-          lang={lang}
-        />
+        <div>
+          <GamificationHub
+            xp={xp}
+            streak={streak}
+            level={currentLevelInfo.level}
+            levelTitle={currentLevelInfo.title}
+            currentLevelBaseXp={currentLevelInfo.minXp}
+            nextLevelXp={currentLevelInfo.nextXp}
+            quests={quests}
+            badges={badges}
+            soundEnabled={soundEnabled}
+            onToggleSound={() => setSoundEnabled(!soundEnabled)}
+            onClaimQuest={handleClaimQuest}
+            lang={lang}
+          />
+          <WorkflowNextBar
+            currentStep={lang === "en" ? "Step 4: Rewards Claimed & Flame Streak Maintained" : "चरण 4: रिवार्ड्स प्राप्त व स्ट्रीक जारी"}
+            nextStepTitle={lang === "en" ? "View Parent Report & Screen Guard" : "अभिभावक रिपोर्ट देखें"}
+            nextStepTab="parent"
+            onNavigate={setActiveTab}
+            lang={lang}
+          />
+        </div>
       )}
       </div>
 

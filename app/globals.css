@@ -1234,3 +1234,238 @@ tr:hover td {
     color: var(--ak-ink-3);
   }
 }
+
+/* GLOBAL MODE SWITCHER & WORKFLOW RIBBON */
+.global-mode-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  background: rgba(13, 21, 39, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 0.65rem 1rem;
+  margin-bottom: 1rem;
+  backdrop-filter: blur(12px);
+}
+.global-mode-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.brand-logo-gem {
+  color: #818cf8;
+  font-size: 1.15rem;
+}
+.brand-title {
+  font-weight: 800;
+  font-size: 1.15rem;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+.global-mode-pills {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.global-pill {
+  padding: 0.4rem 0.85rem;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-secondary);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.global-pill:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+.global-pill.active {
+  background: linear-gradient(135deg, #4f46e5, #06b6d4);
+  border-color: #6366f1;
+  color: #ffffff;
+  box-shadow: 0 2px 10px rgba(99, 102, 241, 0.3);
+}
+.global-pill.secondary-pill {
+  border-style: dashed;
+  opacity: 0.85;
+}
+
+/* USER WORKFLOW RIBBON */
+.user-workflow-ribbon {
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(20, 30, 58, 0.95) 100%);
+  border: 1.5px solid rgba(99, 102, 241, 0.35);
+  box-shadow: 0 8px 24px -4px rgba(0, 0, 0, 0.4);
+  padding: 1.1rem;
+  border-radius: 14px;
+  margin-bottom: 1.25rem;
+}
+.workflow-ribbon-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.role-switcher-buttons {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+.role-tab-btn {
+  padding: 0.45rem 0.9rem;
+  border-radius: 8px;
+  font-size: 0.84rem;
+  font-weight: 700;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.role-tab-btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+}
+.role-tab-btn.active {
+  background: linear-gradient(135deg, #4f46e5, #06b6d4);
+  border-color: #6366f1;
+  color: #ffffff;
+  box-shadow: 0 2px 10px rgba(99, 102, 241, 0.35);
+}
+.student-journey-bar {
+  margin-top: 1rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+.journey-step-indicator {
+  margin-bottom: 0.6rem;
+}
+.step-tag {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #a5b4fc;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.journey-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.6rem;
+}
+@media (max-width: 860px) {
+  .journey-steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .journey-steps-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.journey-step-card {
+  display: flex;
+  flex-direction: column;
+  padding: 0.65rem 0.85rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.journey-step-card:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(99, 102, 241, 0.4);
+}
+.journey-step-card.current {
+  background: rgba(99, 102, 241, 0.18);
+  border-color: #818cf8;
+  box-shadow: 0 0 12px rgba(99, 102, 241, 0.25);
+}
+.journey-step-card .step-num {
+  font-size: 0.68rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #a5b4fc;
+  margin-bottom: 0.15rem;
+}
+.journey-step-card .step-title {
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+.journey-step-card .step-sub {
+  font-size: 0.74rem;
+  color: var(--text-muted);
+  margin-top: 0.15rem;
+}
+
+/* WORKFLOW NEXT STEP ACTION BAR */
+.workflow-next-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.12) 0%, rgba(6, 182, 212, 0.12) 100%);
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  border-radius: 12px;
+  padding: 0.85rem 1.15rem;
+  margin-top: 1.25rem;
+}
+.workflow-next-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: linear-gradient(135deg, #4f46e5, #06b6d4);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.55rem 1.25rem;
+  font-weight: 700;
+  font-size: 0.88rem;
+  cursor: pointer;
+  box-shadow: 0 3px 12px rgba(99, 102, 241, 0.35);
+  transition: transform 0.12s ease;
+}
+.workflow-next-btn:hover {
+  transform: translateY(-1px);
+}
+
+/* WHATSAPP REPORT PREVIEW */
+.whatsapp-preview-box {
+  background: #0b141a;
+  border: 1px solid rgba(37, 211, 102, 0.3);
+  border-radius: 12px;
+  overflow: hidden;
+  max-width: 600px;
+  margin: 1rem 0;
+}
+.whatsapp-header {
+  background: #202c33;
+  padding: 0.6rem 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.whatsapp-bubble {
+  background: #005c4b;
+  color: #e9edef;
+  padding: 0.85rem 1rem;
+  border-radius: 8px;
+  margin: 0.85rem;
+  font-size: 0.86rem;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  font-family: inherit;
+}

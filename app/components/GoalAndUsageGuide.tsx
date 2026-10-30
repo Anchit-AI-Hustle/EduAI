@@ -18,7 +18,7 @@ export default function GoalAndUsageGuide({
   onToggle
 }: GoalAndUsageGuideProps) {
   const isHi = lang === "hi";
-  const [activeGuideView, setActiveGuideView] = useState<"goal" | "usage" | "modules" | "jargon">("goal");
+  const [activeGuideView, setActiveGuideView] = useState<"goal" | "usage" | "modules" | "jargon" | "roles">("roles");
 
   return (
     <section
@@ -128,6 +128,15 @@ export default function GoalAndUsageGuide({
           >
             <button
               type="button"
+              className={`control-pill ${activeGuideView === "roles" ? "active" : ""}`}
+              onClick={() => setActiveGuideView("roles")}
+              style={{ display: "inline-flex", alignItems: "center", gap: "0.35rem" }}
+            >
+              <span>⚖️</span>
+              <span>{isHi ? "0. ऐप बनाम थीसिस (अलग-अलग उपयोग)" : "0. App vs. Justification"}</span>
+            </button>
+            <button
+              type="button"
               className={`control-pill ${activeGuideView === "goal" ? "active" : ""}`}
               onClick={() => setActiveGuideView("goal")}
               style={{ display: "inline-flex", alignItems: "center", gap: "0.35rem" }}
@@ -163,6 +172,169 @@ export default function GoalAndUsageGuide({
               <span>{isHi ? "4. कठिन शब्दों का सरल अर्थ" : "4. Jargon Buster (Dictionary)"}</span>
             </button>
           </div>
+
+          {/* VIEW 0: APP VS. JUSTIFICATION (SEPARATE USABILITY) */}
+          {activeGuideView === "roles" && (
+            <div>
+              <div
+                style={{
+                  background: "linear-gradient(135deg, rgba(99, 102, 241, 0.15) 0%, rgba(16, 185, 129, 0.15) 100%)",
+                  border: "1.5px solid rgba(99, 102, 241, 0.35)",
+                  borderRadius: "12px",
+                  padding: "1rem 1.25rem",
+                  marginBottom: "1.25rem"
+                }}
+              >
+                <div style={{ fontSize: "0.82rem", fontWeight: 800, color: "#818cf8", textTransform: "uppercase", letterSpacing: "0.05em" }}>
+                  {isHi ? "स्पष्ट विभाजन: दो अलग-अलग उपयोग" : "CLEAR SEPARATION: TWO DISTINCT EXPERIENCES"}
+                </div>
+                <div style={{ fontSize: "1.15rem", fontWeight: 800, color: "#ffffff", marginTop: "0.3rem" }}>
+                  {isHi
+                    ? "1. दैनिक अध्ययन ऐप (विद्यार्थी व अभिभावक) और 2. उद्यम औचित्य (रणनीति व निवेशक थीसिस)"
+                    : "1. Usable Learning Platform (Students & Parents) vs. 2. Venture Justification (Strategy & Investors)"}
+                </div>
+                <p style={{ margin: "0.4rem 0 0", fontSize: "0.9rem", color: "var(--text-secondary)", lineHeight: 1.55 }}>
+                  {isHi
+                    ? "यह प्लेटफॉर्म दो अलग-अलग उपयोगकर्ताओं के लिए अलग-अलग पूर्ण कार्यक्षमता प्रदान करता है। नीचे अपनी आवश्यकता अनुसार सही अनुभाग चुनें:"
+                    : "This platform is built with two completely distinct, fully functional workflows so you never get lost in technical documentation:"}
+                </p>
+              </div>
+
+              <div className="grid-2" style={{ gap: "1.25rem", marginBottom: "1.25rem" }}>
+                {/* Branch 1: Usable Platform */}
+                <div
+                  style={{
+                    background: "rgba(14, 23, 42, 0.85)",
+                    border: "1.5px solid rgba(99, 102, 241, 0.4)",
+                    borderRadius: "14px",
+                    padding: "1.25rem",
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "space-between"
+                  }}
+                >
+                  <div>
+                    <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", marginBottom: "0.5rem" }}>
+                      <span style={{ fontSize: "1.6rem" }}>🎒</span>
+                      <div>
+                        <span className="badge badge-blue">
+                          {isHi ? "दैनिक अध्ययन प्लेटफॉर्म" : "Daily Usable Platform"}
+                        </span>
+                        <h3 style={{ margin: "0.2rem 0 0", fontSize: "1.15rem", color: "#ffffff" }}>
+                          {isHi ? "सक्रिय शिक्षण ऐप (App Prototype)" : "Interactive Learning App"}
+                        </h3>
+                      </div>
+                    </div>
+                    <p style={{ fontSize: "0.86rem", color: "var(--text-secondary)", lineHeight: 1.5 }}>
+                      {isHi
+                        ? "विद्यार्थी और अभिभावकों के वास्तविक उपयोग के लिए निर्मित। इसमें स्पष्ट 4-चरणीय दैनिक अध्ययन प्रवाह है:"
+                        : "Built for students and parents to actually study, practice, and track progress every single day:"}
+                    </p>
+                    <ul style={{ paddingLeft: "1.2rem", fontSize: "0.85rem", color: "#cbd5e1", lineHeight: 1.6, margin: "0.6rem 0" }}>
+                      <li>
+                        <strong>Step 1:</strong> {isHi ? "दैनिक समय-सारणी व विषय संतुलन (Planner)" : "Daily 60-min balanced schedule & timetable"}
+                      </li>
+                      <li>
+                        <strong>Step 2:</strong> {isHi ? "5-चरणीय पंचपदी पाठ (ऑडियो व अभ्यास सहित)" : "5-step Panchpadi lesson with audio read-aloud & practice"}
+                      </li>
+                      <li>
+                        <strong>Step 3:</strong> {isHi ? "अनुकूलित दक्षता निदान (कमियां पहचानें)" : "Adaptive skill diagnostic test to identify concept gaps"}
+                      </li>
+                      <li>
+                        <strong>Step 4:</strong> {isHi ? "विद्यार्थी रिवार्ड्स (XP, लपट स्ट्रीक, बैज)" : "Gamified student rewards (XP, Flame streaks & badges)"}
+                      </li>
+                      <li>
+                        <strong>Parent Hub:</strong> {isHi ? "60 मिनट स्क्रीन सीमा व 1-क्लिक व्हाट्सऐप रिपोर्ट" : "60-min IAP screen cap & 1-click WhatsApp progress report"}
+                      </li>
+                    </ul>
+                  </div>
+                  <div style={{ marginTop: "1rem", display: "flex", gap: "0.5rem", flexWrap: "wrap" }}>
+                    <button
+                      type="button"
+                      className="btn btn-primary"
+                      onClick={() => onSelectTab("planner")}
+                      style={{ flex: 1, minWidth: "140px" }}
+                    >
+                      {isHi ? "🎓 विद्यार्थी प्रवाह शुरू करें →" : "🎓 Launch Student Flow →"}
+                    </button>
+                    <button
+                      type="button"
+                      className="btn"
+                      onClick={() => onSelectTab("parent")}
+                      style={{ flex: 1, minWidth: "140px" }}
+                    >
+                      {isHi ? "👨‍👩‍👧 अभिभावक डैशबोर्ड →" : "👨‍👩‍👧 Open Parent Hub →"}
+                    </button>
+                  </div>
+                </div>
+
+                {/* Branch 2: Venture Justification */}
+                <div
+                  style={{
+                    background: "rgba(14, 23, 42, 0.85)",
+                    border: "1.5px solid rgba(16, 185, 129, 0.4)",
+                    borderRadius: "14px",
+                    padding: "1.25rem",
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "space-between"
+                  }}
+                >
+                  <div>
+                    <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", marginBottom: "0.5rem" }}>
+                      <span style={{ fontSize: "1.6rem" }}>📊</span>
+                      <div>
+                        <span className="badge badge-green">
+                          {isHi ? "रणनीतिक दस्तावेज" : "Strategic Venture Dossier"}
+                        </span>
+                        <h3 style={{ margin: "0.2rem 0 0", fontSize: "1.15rem", color: "#ffffff" }}>
+                          {isHi ? "उद्यम औचित्य व 6 प्रश्न" : "Venture Justification & 6 Q&A"}
+                        </h3>
+                      </div>
+                    </div>
+                    <p style={{ fontSize: "0.86rem", color: "var(--text-secondary)", lineHeight: 1.5 }}>
+                      {isHi
+                        ? "संस्थापकों, निवेशकों और शिक्षकों के लिए आधिकारिक सरकारी आंकड़ों के साथ गहन व्यावसायिक औचित्य:"
+                        : "Built for founders, evaluators, and investors with grounded primary data from official sources:"}
+                    </p>
+                    <ul style={{ paddingLeft: "1.2rem", fontSize: "0.85rem", color: "#cbd5e1", lineHeight: 1.6, margin: "0.6rem 0" }}>
+                      <li>
+                        <strong>Q1 Buyer & User:</strong> {isHi ? "क्रेता अभिभावक है, उपयोगकर्ता बच्चा है" : "The buyer is the parent; the user is the child"}
+                      </li>
+                      <li>
+                        <strong>Q2 Alternatives:</strong> {isHi ? "स्थानीय ट्यूशन शिक्षक, यूट्यूब, चैटबॉट बनाम एवरीईयर" : "Tuition teachers, YouTube videos & general AI chatbots"}
+                      </li>
+                      <li>
+                        <strong>Q3 Market Sizing:</strong> {isHi ? "24.69 करोड़ छात्र, 20 लाख शुरुआती ट्यूशन परिवार" : "24.69 crore national enrolment, 20 lakh urban wedge"}
+                      </li>
+                      <li>
+                        <strong>Q4 Defensible Moat:</strong> {isHi ? "एनसीएफ-एसई पंचपदी व 59 डीएजी कौशल ग्राफ" : "NCF-SE Panchpadi & 59 shared DAG skill graph"}
+                      </li>
+                      <li>
+                        <strong>Q5 Pricing Model:</strong> {isHi ? "रुपये 199 या 499 प्रति माह (ट्यूशन खर्च का अंश)" : "INR 199 or 499 / month (vs INR 3,988 coaching spend)"}
+                      </li>
+                    </ul>
+                  </div>
+                  <div style={{ marginTop: "1rem" }}>
+                    <a
+                      href="/justification"
+                      className="btn"
+                      style={{
+                        display: "block",
+                        textAlign: "center",
+                        textDecoration: "none",
+                        background: "linear-gradient(135deg, #059669, #0d9488)",
+                        color: "#ffffff",
+                        fontWeight: 700
+                      }}
+                    >
+                      {isHi ? "📊 संपूर्ण उद्यम औचित्य पृष्ठ खोलें ↗" : "📊 Open Dedicated Justification Page ↗"}
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
 
           {/* VIEW 1: THE BIG GOAL */}
           {activeGuideView === "goal" && (
