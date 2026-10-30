@@ -383,6 +383,47 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
   const [isSpeaking, setIsSpeaking] = useState<boolean>(false);
   const [abhyasChoice, setAbhyasChoice] = useState<number | null>(null);
 
+  // Cognitive & Hardworking Personalization Metrics State
+  const [understandingGrip, setUnderstandingGrip] = useState<number>(88);
+  const [retentionPower, setRetentionPower] = useState<number>(74);
+  const [hardworkingGrit, setHardworkingGrit] = useState<number>(92);
+  const [evolvingPlanMode, setEvolvingPlanMode] = useState<"standard" | "scaffolded" | "olympiad">("standard");
+  const [showCognitiveModal, setShowCognitiveModal] = useState<boolean>(false);
+
+  const handleLaunchStudent = (targetTab: string = "planner") => {
+    setActiveRole("student");
+    setActiveTab(targetTab as any);
+    setShowGuide(false);
+    triggerHaptic("medium");
+    awardXp(15, lang === "en" ? "Student Workspace Active! 🎓" : "विद्यार्थी कार्यक्षेत्र सक्रिय! 🎓");
+    setTimeout(() => {
+      const el = document.getElementById("active-workspace-view");
+      if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 60);
+  };
+
+  const handleLaunchParent = () => {
+    setActiveRole("parent");
+    setActiveTab("parent");
+    setShowGuide(false);
+    triggerHaptic("medium");
+    setTimeout(() => {
+      const el = document.getElementById("active-workspace-view");
+      if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 60);
+  };
+
+  React.useEffect(() => {
+    if (typeof window === "undefined") return;
+    const hash = window.location.hash.toLowerCase();
+    const search = window.location.search.toLowerCase();
+    if (hash.includes("parent") || search.includes("parent")) {
+      handleLaunchParent();
+    } else if (hash.includes("student") || search.includes("student")) {
+      handleLaunchStudent("planner");
+    }
+  }, []);
+
   const handleSpeakLesson = (text: string) => {
     if (typeof window === "undefined") return;
     if ("speechSynthesis" in window) {
@@ -521,16 +562,21 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
         <div className="global-mode-pills" role="tablist" aria-label="Platform and Thesis Modes">
           <button
             type="button"
-            className="global-pill active"
-            onClick={() => {
-              setActiveRole("student");
-              setActiveTab("planner");
-              triggerHaptic("light");
-            }}
-            title={lang === "en" ? "Interactive Student and Parent Learning App" : "विद्यार्थी व अभिभावक अध्ययन ऐप"}
+            className={`global-pill ${activeRole === "student" ? "active" : ""}`}
+            onClick={() => handleLaunchStudent("planner")}
+            title={lang === "en" ? "Interactive Student Learning Desk" : "विद्यार्थी अध्ययन डेस्क"}
           >
-            <span>🎒</span>
-            <span>{lang === "en" ? "Learning Platform (App)" : "लर्निंग प्लेटफॉर्म (ऐप)"}</span>
+            <span>🎓</span>
+            <span>{lang === "en" ? "Student Learning Desk" : "विद्यार्थी अध्ययन डेस्क"}</span>
+          </button>
+          <button
+            type="button"
+            className={`global-pill ${activeRole === "parent" ? "active" : ""}`}
+            onClick={handleLaunchParent}
+            title={lang === "en" ? "Parent Dashboard, Screen Cap & WhatsApp Reports" : "अभिभावक डैशबोर्ड व सुरक्षा"}
+          >
+            <span>👨‍👩‍👧</span>
+            <span>{lang === "en" ? "Parent & Safety Hub" : "अभिभावक व सुरक्षा हब"}</span>
           </button>
           <Link
             href="/justification"
@@ -664,6 +710,8 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
           setActiveTab(tabKey);
           triggerHaptic("light");
         }}
+        onLaunchStudent={handleLaunchStudent}
+        onLaunchParent={handleLaunchParent}
         isOpen={showGuide}
         onToggle={() => setShowGuide(!showGuide)}
       />
@@ -951,6 +999,219 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
         </div>
       </section>
 
+      {/* Cognitive Learner Profile & Adaptive Personalization Engine */}
+      <section
+        className="card"
+        style={{
+          border: "1.5px solid rgba(99, 102, 241, 0.35)",
+          background: "linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(20, 30, 58, 0.95) 100%)",
+          marginBottom: "1.25rem",
+          boxShadow: "0 8px 24px -4px rgba(0, 0, 0, 0.4)"
+        }}
+        aria-label="Cognitive Learner Profile and Adaptive Personalization Engine"
+      >
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "0.75rem" }}>
+          <div>
+            <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", flexWrap: "wrap" }}>
+              <span className="badge badge-cyan" style={{ fontSize: "0.72rem" }}>
+                {lang === "en" ? "Adaptive Personalization Engine" : "अनुकूलित व्यक्तिगत इंजन"}
+              </span>
+              <span
+                className={`badge ${evolvingPlanMode === "scaffolded" ? "badge-warn" : evolvingPlanMode === "olympiad" ? "badge-green" : "badge-blue"}`}
+                style={{ fontSize: "0.72rem" }}
+              >
+                {evolvingPlanMode === "scaffolded"
+                  ? (lang === "en" ? "Plan Auto-Evolved: Scaffolding Bridge Added" : "योजना स्व-विकसित: फाउंडेशन ब्रिज सक्रिय")
+                  : evolvingPlanMode === "olympiad"
+                  ? (lang === "en" ? "Plan Auto-Evolved: Olympiad Tier Unlocked" : "योजना स्व-विकसित: ओलंपियाड स्तर सक्रिय")
+                  : (lang === "en" ? "Plan Status: Calibrated to Learner" : "योजना स्थिति: संतुलित")}
+              </span>
+            </div>
+            <h3 style={{ margin: "0.3rem 0 0.15rem 0", fontSize: "1.22rem", color: "#ffffff" }}>
+              {lang === "en"
+                ? `Personalized Learning Profile: ${activeLearner.identity.displayName}`
+                : `व्यक्तिगत शिक्षण प्रोफ़ाइल: ${activeLearner.identity.displayName}`}
+            </h3>
+            <p style={{ margin: 0, fontSize: "0.86rem", color: "var(--text-secondary)" }}>
+              {lang === "en"
+                ? "Calibrated to your child's understanding capability, memory retaining power, and hardworking study grit to ensure top grades."
+                : "बच्चे की समझ क्षमता, स्मरण शक्ति और अध्ययन परिश्रम के आधार पर व्यक्तिगत शिक्षण ताकि सर्वोच्च अंक प्राप्त हों।"}
+            </p>
+          </div>
+          <div style={{ display: "flex", gap: "0.5rem" }}>
+            <button
+              type="button"
+              className="btn btn-primary"
+              onClick={() => setShowCognitiveModal(!showCognitiveModal)}
+              style={{ fontSize: "0.82rem", padding: "0.35rem 0.85rem", display: "inline-flex", alignItems: "center", gap: "0.35rem" }}
+            >
+              <span>🧠</span>
+              <span>{showCognitiveModal ? (lang === "en" ? "Minimize Personalization Recipe ▲" : "संक्षिप्त करें ▲") : (lang === "en" ? "Inspect Personalization Recipe ▼" : "व्यक्तिगत शिक्षण विधि देखें ▼")}</span>
+            </button>
+          </div>
+        </div>
+
+        {/* 4 Core Cognitive & Diligence Gauges */}
+        <div className="grid-4" style={{ gap: "0.75rem", marginTop: "1rem" }}>
+          {/* Gauge 1: Understanding Capability */}
+          <div style={{ background: "rgba(255, 255, 255, 0.04)", border: "1px solid rgba(56, 189, 248, 0.25)", borderRadius: "10px", padding: "0.85rem" }}>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+              <span style={{ fontSize: "0.76rem", fontWeight: 700, color: "#38bdf8", textTransform: "uppercase" }}>
+                {lang === "en" ? "Understanding Capability" : "समझने की क्षमता"}
+              </span>
+              <span style={{ fontSize: "1rem" }}>💡</span>
+            </div>
+            <div style={{ fontSize: "1.5rem", fontWeight: 800, color: "#ffffff", margin: "0.2rem 0" }}>
+              {understandingGrip}%
+            </div>
+            <div style={{ fontSize: "0.76rem", color: "var(--text-secondary)" }}>
+              {understandingGrip >= 80
+                ? (lang === "en" ? "Fast Abstract Grasp • Fast-tracks Theory" : "तीव्र अवधारणा समझ")
+                : (lang === "en" ? "Needs Step-by-Step Visual Scaffolding" : "दृश्य उदाहरण आवश्यक")}
+            </div>
+            <div style={{ height: "4px", background: "rgba(255, 255, 255, 0.1)", borderRadius: "2px", marginTop: "0.5rem", overflow: "hidden" }}>
+              <div style={{ width: `${understandingGrip}%`, height: "100%", background: "linear-gradient(90deg, #38bdf8, #06b6d4)", transition: "width 0.4s ease" }} />
+            </div>
+          </div>
+
+          {/* Gauge 2: Memory Retaining Power */}
+          <div style={{ background: "rgba(255, 255, 255, 0.04)", border: "1px solid rgba(16, 185, 129, 0.25)", borderRadius: "10px", padding: "0.85rem" }}>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+              <span style={{ fontSize: "0.76rem", fontWeight: 700, color: "#34d399", textTransform: "uppercase" }}>
+                {lang === "en" ? "Memory Retaining Power" : "स्मरण व अवधारण शक्ति"}
+              </span>
+              <span style={{ fontSize: "1rem" }}>💾</span>
+            </div>
+            <div style={{ fontSize: "1.5rem", fontWeight: 800, color: "#ffffff", margin: "0.2rem 0" }}>
+              {retentionPower}%
+            </div>
+            <div style={{ fontSize: "0.76rem", color: "var(--text-secondary)" }}>
+              {retentionPower >= 70
+                ? (lang === "en" ? "Spaced Repetition Active • Ebbinghaus Safe" : "स्पेस पुनरावृत्ति सक्रिय")
+                : (lang === "en" ? "Requires Daily Morning Flash Recalls" : "दैनिक स्मरण आवश्यक")}
+            </div>
+            <div style={{ height: "4px", background: "rgba(255, 255, 255, 0.1)", borderRadius: "2px", marginTop: "0.5rem", overflow: "hidden" }}>
+              <div style={{ width: `${retentionPower}%`, height: "100%", background: "linear-gradient(90deg, #10b981, #34d399)", transition: "width 0.4s ease" }} />
+            </div>
+          </div>
+
+          {/* Gauge 3: Hardworking Metric / Study Grit */}
+          <div style={{ background: "rgba(255, 255, 255, 0.04)", border: "1px solid rgba(251, 191, 36, 0.25)", borderRadius: "10px", padding: "0.85rem" }}>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+              <span style={{ fontSize: "0.76rem", fontWeight: 700, color: "#fbbf24", textTransform: "uppercase" }}>
+                {lang === "en" ? "Hardworking & Grit Metric" : "परिश्रम व अभ्यास निरंतरता"}
+              </span>
+              <span style={{ fontSize: "1rem" }}>⚡</span>
+            </div>
+            <div style={{ fontSize: "1.5rem", fontWeight: 800, color: "#ffffff", margin: "0.2rem 0" }}>
+              {hardworkingGrit}%
+            </div>
+            <div style={{ fontSize: "0.76rem", color: "var(--text-secondary)" }}>
+              {hardworkingGrit >= 85
+                ? (lang === "en" ? `${streak}d Flame Streak • High Problem Stamina` : "उच्च अभ्यास निरंतरता")
+                : (lang === "en" ? "Building Daily Habit • Needs Shorter Sprints" : "आदत निर्माण जारी")}
+            </div>
+            <div style={{ height: "4px", background: "rgba(255, 255, 255, 0.1)", borderRadius: "2px", marginTop: "0.5rem", overflow: "hidden" }}>
+              <div style={{ width: `${hardworkingGrit}%`, height: "100%", background: "linear-gradient(90deg, #f59e0b, #fbbf24)", transition: "width 0.4s ease" }} />
+            </div>
+          </div>
+
+          {/* Gauge 4: Top Grades Engineering */}
+          <div style={{ background: "rgba(255, 255, 255, 0.04)", border: "1px solid rgba(168, 85, 247, 0.25)", borderRadius: "10px", padding: "0.85rem" }}>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+              <span style={{ fontSize: "0.76rem", fontWeight: 700, color: "#c084fc", textTransform: "uppercase" }}>
+                {lang === "en" ? "Top Grades Engineering" : "सर्वोच्च अंक तत्परता"}
+              </span>
+              <span style={{ fontSize: "1rem" }}>🎯</span>
+            </div>
+            <div style={{ fontSize: "1.5rem", fontWeight: 800, color: "#ffffff", margin: "0.2rem 0" }}>
+              {evolvingPlanMode === "olympiad" ? "99%" : evolvingPlanMode === "scaffolded" ? "91%" : "96%"}
+            </div>
+            <div style={{ fontSize: "0.76rem", color: "var(--text-secondary)" }}>
+              {lang === "en" ? "CBSE Marking Scheme • Step Marks Verified" : "सीबीएसई मार्किंग स्कीम अनुसार"}
+            </div>
+            <div style={{ height: "4px", background: "rgba(255, 255, 255, 0.1)", borderRadius: "2px", marginTop: "0.5rem", overflow: "hidden" }}>
+              <div style={{ width: evolvingPlanMode === "olympiad" ? "99%" : evolvingPlanMode === "scaffolded" ? "91%" : "96%", height: "100%", background: "linear-gradient(90deg, #a855f7, #c084fc)", transition: "width 0.4s ease" }} />
+            </div>
+          </div>
+        </div>
+
+        {/* Expanded Recipe & Interactive Continuous Assessment / Plan Evolving Controls */}
+        {showCognitiveModal && (
+          <div style={{ marginTop: "1rem", paddingTop: "1rem", borderTop: "1px solid rgba(255, 255, 255, 0.08)" }}>
+            <div style={{ background: "rgba(99, 102, 241, 0.08)", border: "1px solid rgba(99, 102, 241, 0.2)", borderRadius: "10px", padding: "0.9rem", marginBottom: "0.85rem" }}>
+              <h4 style={{ margin: "0 0 0.35rem 0", color: "#a5b4fc" }}>
+                {lang === "en" ? "Personalized Teaching Recipe for Aarav:" : "आरव के लिए व्यक्तिगत शिक्षण रणनीति:"}
+              </h4>
+              <ul style={{ margin: 0, paddingLeft: "1.2rem", fontSize: "0.85rem", color: "var(--text-secondary)", lineHeight: 1.6 }}>
+                <li>
+                  <strong>{lang === "en" ? "Targeted Memory Retention:" : "लक्षित स्मरण शक्ति:"}</strong> {lang === "en" ? "Retention is 74%. Schedule 5-minute morning flash retrievals on previous-grade fraction prerequisites before introducing algebraic equations." : "रिटेंशन 74% है। बीजगणित शुरू करने से पहले सुबह 5 मिनट भिन्न (fractions) का त्वरित अभ्यास कराया जाएगा।"}
+                </li>
+                <li>
+                  <strong>{lang === "en" ? "Abstract Concept Scaffolding:" : "अवधारणा समझ सहारा:"}</strong> {lang === "en" ? "Understanding grip is 88%. Fast-track foundational NCERT theory; jump straight into guided Bodh step-by-step problem sets." : "समझ 88% है। बुनियादी सिद्धांत तेजी से पूरा कर सीधे बोध अभ्यास पर जाएं।"}
+                </li>
+                <li>
+                  <strong>{lang === "en" ? "Hardworking & Grit Push:" : "परिश्रम व अभ्यास निरंतरता:"}</strong> {lang === "en" ? "Study grit is 92% with 7-day flame streak. Automatically challenge with Tier-3 Olympiad questions without hints to engineer 98%+ marks." : "परिश्रम 92% है। बिना संकेत के ओलंपियाड स्तर के प्रश्न देकर सर्वोच्च अंक प्राप्त कराएं।"}
+                </li>
+              </ul>
+            </div>
+
+            {/* Interactive Simulation: Continuous Assessment & Evolving Plan */}
+            <div>
+              <div style={{ fontSize: "0.78rem", fontWeight: 700, color: "#34d399", textTransform: "uppercase", marginBottom: "0.4rem" }}>
+                {lang === "en" ? "Test Continuous Assessment & Plan Self-Evolution:" : "निरंतर मूल्यांकन और स्व-विकसित योजना का परीक्षण करें:"}
+              </div>
+              <div style={{ display: "flex", gap: "0.5rem", flexWrap: "wrap" }}>
+                <button
+                  type="button"
+                  className="btn"
+                  onClick={() => {
+                    setUnderstandingGrip(64);
+                    setRetentionPower(60);
+                    setEvolvingPlanMode("scaffolded");
+                    awardXp(20, lang === "en" ? "Plan Evolved: Scaffolding Bridge Added! 🔄" : "योजना विकसित: फाउंडेशन ब्रिज सक्रिय! 🔄");
+                  }}
+                  style={{ fontSize: "0.78rem", background: evolvingPlanMode === "scaffolded" ? "rgba(245, 158, 11, 0.25)" : "rgba(255, 255, 255, 0.06)", borderColor: evolvingPlanMode === "scaffolded" ? "#f59e0b" : "rgba(255, 255, 255, 0.12)" }}
+                >
+                  <span>📉</span>
+                  <span>{lang === "en" ? "Simulate Concept Struggle (<70% Score): Auto-Add Scaffolding" : "कठिनाई सिमुलेट करें: स्वतः फाउंडेशन जोड़ें"}</span>
+                </button>
+                <button
+                  type="button"
+                  className="btn"
+                  onClick={() => {
+                    setUnderstandingGrip(96);
+                    setHardworkingGrit(98);
+                    setRetentionPower(89);
+                    setEvolvingPlanMode("olympiad");
+                    awardXp(30, lang === "en" ? "Plan Evolved: Olympiad Acceleration Active! ⚡" : "योजना विकसित: ओलंपियाड गति सक्रिय! ⚡");
+                  }}
+                  style={{ fontSize: "0.78rem", background: evolvingPlanMode === "olympiad" ? "rgba(16, 185, 129, 0.25)" : "rgba(255, 255, 255, 0.06)", borderColor: evolvingPlanMode === "olympiad" ? "#10b981" : "rgba(255, 255, 255, 0.12)" }}
+                >
+                  <span>📈</span>
+                  <span>{lang === "en" ? "Simulate 100% Mastery & High Grit: Fast-Track to Olympiad" : "100% निपुणता सिमुलेट करें: ओलंपियाड स्तर"}</span>
+                </button>
+                <button
+                  type="button"
+                  className="btn"
+                  onClick={() => {
+                    setUnderstandingGrip(88);
+                    setRetentionPower(74);
+                    setHardworkingGrit(92);
+                    setEvolvingPlanMode("standard");
+                    awardXp(10, lang === "en" ? "Reset to Baseline Profile ✓" : "मूल प्रोफ़ाइल पर रीसेट ✓");
+                  }}
+                  style={{ fontSize: "0.78rem" }}
+                >
+                  <span>🔄</span>
+                  <span>{lang === "en" ? "Reset to Baseline" : "रीसेट करें"}</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+      </section>
+
       {/* Main Navigation Tabs */}
       <nav className="nav-tabs" aria-label="Primary Workspace Modules">
         {(Object.keys(t.tabs) as Array<keyof typeof t.tabs>).map((tabKey) => (
@@ -969,7 +1230,7 @@ export default function EveryYearSchoolWorkspace({ masterIndex, initialCurricula
       </nav>
 
       {/* Smooth Animated Tab Content Container */}
-      <div key={activeTab} className="tab-content-enter">
+      <div id="active-workspace-view" key={activeTab} className="tab-content-enter">
       {/* TAB 1: YEAR, WEEK & DAY PLANNER */}
       {activeTab === "planner" && activeCurriculum && (
         <div>

@@ -6,6 +6,8 @@ interface GoalAndUsageGuideProps {
   lang: "en" | "hi";
   brandName: string;
   onSelectTab: (tabKey: any) => void;
+  onLaunchStudent?: (targetTab?: string) => void;
+  onLaunchParent?: () => void;
   isOpen: boolean;
   onToggle: () => void;
 }
@@ -14,6 +16,8 @@ export default function GoalAndUsageGuide({
   lang,
   brandName,
   onSelectTab,
+  onLaunchStudent,
+  onLaunchParent,
   isOpen,
   onToggle
 }: GoalAndUsageGuideProps) {
@@ -252,7 +256,10 @@ export default function GoalAndUsageGuide({
                     <button
                       type="button"
                       className="btn btn-primary"
-                      onClick={() => onSelectTab("planner")}
+                      onClick={() => {
+                        if (onLaunchStudent) onLaunchStudent("planner");
+                        else onSelectTab("planner");
+                      }}
                       style={{ flex: 1, minWidth: "140px" }}
                     >
                       {isHi ? "🎓 विद्यार्थी प्रवाह शुरू करें →" : "🎓 Launch Student Flow →"}
@@ -260,7 +267,10 @@ export default function GoalAndUsageGuide({
                     <button
                       type="button"
                       className="btn"
-                      onClick={() => onSelectTab("parent")}
+                      onClick={() => {
+                        if (onLaunchParent) onLaunchParent();
+                        else onSelectTab("parent");
+                      }}
                       style={{ flex: 1, minWidth: "140px" }}
                     >
                       {isHi ? "👨‍👩‍👧 अभिभावक डैशबोर्ड →" : "👨‍👩‍👧 Open Parent Hub →"}
@@ -441,6 +451,82 @@ export default function GoalAndUsageGuide({
                   </p>
                   <div style={{ marginTop: "auto", paddingTop: "0.5rem", fontSize: "0.78rem", color: "#fbbf24", fontWeight: 600 }}>
                     ✓ {isHi ? "सत्यापित स्रोत आधारित" : "Verified primary source grounding"}
+                  </div>
+                </div>
+              </div>
+
+              {/* Pillar 4: Cognitive & Diligence Personalization Engine */}
+              <div
+                style={{
+                  background: "linear-gradient(135deg, rgba(99, 102, 241, 0.15) 0%, rgba(16, 185, 129, 0.15) 100%)",
+                  border: "1.5px solid rgba(99, 102, 241, 0.35)",
+                  borderRadius: "14px",
+                  padding: "1.25rem",
+                  marginBottom: "1.25rem"
+                }}
+              >
+                <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", marginBottom: "0.4rem" }}>
+                  <span className="badge badge-cyan" style={{ fontSize: "0.72rem" }}>
+                    {isHi ? "व्यक्तिगत शिक्षण इंजन" : "Adaptive Cognitive Engine"}
+                  </span>
+                  <span className="badge badge-green" style={{ fontSize: "0.72rem" }}>
+                    {isHi ? "सर्वोच्च अंक गारंटी" : "Top Grades Engineering"}
+                  </span>
+                </div>
+                <h3 style={{ margin: "0.2rem 0 0.4rem 0", fontSize: "1.2rem", color: "#ffffff" }}>
+                  {isHi
+                    ? "🧠 बच्चे की समझ क्षमता, स्मरण शक्ति और परिश्रम के अनुसार व्यक्तिगत पढ़ाई"
+                    : "🧠 How It Adapts: Understanding Capability, Memory Retention & Hardworking Metrics"}
+                </h3>
+                <p style={{ margin: "0 0 0.85rem 0", fontSize: "0.9rem", color: "var(--text-secondary)", lineHeight: 1.55 }}>
+                  {isHi
+                    ? "हर बच्चा अलग होता है। हमारा एआई लगातार 4 मुख्य पैमानों का स्व-मूल्यांकन करता है और सीखने की योजना को स्वतः विकसित (evolve) करता है ताकि बोर्ड व प्रतियोगी परीक्षाओं में सर्वोच्च अंक आएं:"
+                    : "Every student learns differently. Our engine continuously assesses 4 core dimensions to decide exactly how each child must be taught for top board marks:"}
+                </p>
+
+                <div className="grid-2" style={{ gap: "0.85rem" }}>
+                  <div style={{ background: "rgba(14, 23, 42, 0.75)", border: "1px solid rgba(56, 189, 248, 0.25)", borderRadius: "10px", padding: "0.85rem" }}>
+                    <div style={{ fontWeight: 700, fontSize: "0.92rem", color: "#38bdf8", marginBottom: "0.25rem" }}>
+                      💡 {isHi ? "1. समझ क्षमता (Understanding Capability):" : "1. Understanding Capability & Concept Grip:"}
+                    </div>
+                    <p style={{ margin: 0, fontSize: "0.84rem", color: "#cbd5e1", lineHeight: 1.5 }}>
+                      {isHi
+                        ? "यदि बच्चा अमूर्त सिद्धांतों (abstract theory) को समझने में समय लेता है, तो प्रणाली स्वतः दृश्य व्याख्या (Panchpadi Bodh) और चरण-दर-चरण मॉडलों में बदल जाती है।"
+                        : "Measures abstract comprehension speed. If theory is challenging, the system automatically shifts to visual analogies, physical anchors, and stepped scaffolding."}
+                    </p>
+                  </div>
+
+                  <div style={{ background: "rgba(14, 23, 42, 0.75)", border: "1px solid rgba(52, 211, 153, 0.25)", borderRadius: "10px", padding: "0.85rem" }}>
+                    <div style={{ fontWeight: 700, fontSize: "0.92rem", color: "#34d399", marginBottom: "0.25rem" }}>
+                      💾 {isHi ? "2. स्मरण व अवधारण शक्ति (Memory Retaining Power):" : "2. Retaining Power & Ebbinghaus Recall Curve:"}
+                    </div>
+                    <p style={{ margin: 0, fontSize: "0.84rem", color: "#cbd5e1", lineHeight: 1.5 }}>
+                      {isHi
+                        ? "स्पेस पुनरावृत्ति (Spaced Repetition) द्वारा जांचा जाता है कि बच्चा पिछले सूत्र कितनी अच्छी तरह याद रखता है। भूलने से पहले सुबह 5-मिनट का त्वरित रिकॉल कराया जाता है।"
+                        : "Tracks the forgetting curve. If retention dips, the system automatically schedules 5-minute spaced retrieval micro-drills before introducing new topics."}
+                    </p>
+                  </div>
+
+                  <div style={{ background: "rgba(14, 23, 42, 0.75)", border: "1px solid rgba(251, 191, 36, 0.25)", borderRadius: "10px", padding: "0.85rem" }}>
+                    <div style={{ fontWeight: 700, fontSize: "0.92rem", color: "#fbbf24", marginBottom: "0.25rem" }}>
+                      ⚡ {isHi ? "3. परिश्रम व अभ्यास निरंतरता (Hardworking Metric & Grit):" : "3. Hardworking Metric & Problem-Solving Grit:"}
+                    </div>
+                    <p style={{ margin: 0, fontSize: "0.84rem", color: "#cbd5e1", lineHeight: 1.5 }}>
+                      {isHi
+                        ? "अभ्यास प्रयासों, दैनिक लपट स्ट्रीक और कठिन प्रश्नों से न डरने के आधार पर मापा जाता है। परिश्रमी छात्रों को सीधे ओलंपियाड व उन्नत स्तर दिए जाते हैं।"
+                        : "Measures study consistency, attempt persistence, and problem-solving stamina. Hardworking learners are fast-tracked to Tier-3 Olympiad challenge questions."}
+                    </p>
+                  </div>
+
+                  <div style={{ background: "rgba(14, 23, 42, 0.75)", border: "1px solid rgba(168, 85, 247, 0.25)", borderRadius: "10px", padding: "0.85rem" }}>
+                    <div style={{ fontWeight: 700, fontSize: "0.92rem", color: "#c084fc", marginBottom: "0.25rem" }}>
+                      🔄 {isHi ? "4. निरंतर स्व-मूल्यांकन व स्व-विकसित योजना:" : "4. Continuous Self-Evaluation & Auto-Evolving Plan:"}
+                    </div>
+                    <p style={{ margin: 0, fontSize: "0.84rem", color: "#cbd5e1", lineHeight: 1.5 }}>
+                      {isHi
+                        ? "प्रत्येक पाठ के बाद एग्जिट टिकट से स्व-मूल्यांकन होता है। यदि किसी बिंदु पर 70% से कम अंक आते हैं, तो समय-सारणी तुरंत बदलकर आवश्यक फाउंडेशन जोड़ देती है।"
+                        : "Exit diagnostics evaluate mastery after every session. If mastery drops below 70%, the timetable automatically recalibrates to reinforce foundational prerequisites."}
+                    </p>
                   </div>
                 </div>
               </div>
